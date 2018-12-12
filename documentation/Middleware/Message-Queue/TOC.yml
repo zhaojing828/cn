@@ -1,131 +1,131 @@
-  name: Message Queue
+  name: 消息队列 JCQ
   href: 
   items:
-  - name: Introduction
+  - name: 产品简介
     items:
-      - name: Product Overview
+      - name: 产品概述
         href: Introduction/Product-Overview.md
-      - name: Core Concepts
+      - name: 核心概念
         href: Introduction/Core-Concepts.md
-      - name: Basic Infrastructure
+      - name: 基础架构
         href: Introduction/Basic-Infrastructure.md
-      - name: Benefits
+      - name: 产品优势
         href: Introduction/Benefits.md
-      - name: Features
+      - name: 产品功能
         href: Introduction/Features.md
-      - name: Restrictions
+      - name: 限制说明
         href: Introduction/Restrictions.md
-      - name: Application Scenarios 
+      - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
-  - name: Pricing
+  - name: 产品定价
     items:
-      - name: Billing Overview
+      - name: 计费概述
         href: Pricing/Billing-Overview.md
-      - name: Billing Rules
+      - name: 计费规则
         href: Pricing/Billing-Rules.md
-      - name: Price Overview
+      - name: 价格总览
         href: Pricing/Price-Overview.md
-      - name: Purchase Process
+      - name: 购买流程
         href: Pricing/Purchase-Process.md 
-  - name: Getting Started
+  - name: 入门指南
     items:
-      - name: Introduction
+      - name: 使用须知
         href: Getting-Started/Getting-Started.md
-      - name: Create Resources
+      - name: 创建资源
         href: Getting-Started/Create-Resource.md
-      - name: Produce and Consumer Message
+      - name: 生产和消费消息
         href: Getting-Started/Produce-And-Consume-Message.md
-  - name: Operation Guide
+  - name: 操作指南
     items:
-      - name: Topic Management
+      - name: 主题管理
         items:
-          - name: Create Topic
+          - name: 创建Topic
             href: Operation-Guide/Topic-Management/Create-Topic.md
-          - name: Subscribe Topic
+          - name: 订阅topic
             href: Operation-Guide/Topic-Management/Subscribe.md
-          - name: Delete and Manage Topic
+          - name: 删除和管理topic
             href: Operation-Guide/Topic-Management/Delete-And-Manage-Topic.md
-      - name: Message Management
+      - name: 消息管理
         items:
-          - name: Send Message
+          - name: 发送消息
             href: Operation-Guide/Message-Management/Send-Message.md      
-          - name: Query Message
+          - name: 查询消息
             href: Operation-Guide/Message-Management/Query-Message.md    
-          - name: Resend Message
+          - name: 重发消息
             href: Operation-Guide/Message-Management/Redrive-Message.md   
-      - name: Monitoring and Alarms
+      - name: 监控报警
         items:
-          - name: View Monitoring Information
+          - name: 查看监控信息
             href: Operation-Guide/Monitoring/Monitoring.md
-          - name: Set Alarm Rules
+          - name: 设置报警规则
             href: Operation-Guide/Monitoring/Alarm-Rules.md
-      - name: API Reference
+      - name: API参考
         items:
-          - name: Invoke Method
+          - name: 调用方式
             items:
-            - name: Common Parameters
+            - name: 公共参数
               href: Operation-Guide/API-Reference/Call-Method/Common-parameters.md
-            - name: Response Result
+            - name: 返回结果
               href: Operation-Guide/API-Reference/Call-Method/Response-Result.md
-            - name: Signature Algorithm
+            - name: 签名算法
               href: Operation-Guide/API-Reference/Call-Method/Signature-Algorithm.md
-          - name: API Standard
+          - name: 接口规范
             items:
-            - name: Send Message
+            - name: 发送消息
               href: Operation-Guide/API-Reference/Interface-Specification/Send-Message-Http.md
-            - name: Ack Message
+            - name: 确认消息
               href: Operation-Guide/API-Reference/Interface-Specification/Ack-Message.md
-            - name: Consume Message
+            - name: 消费消息
               href: Operation-Guide/API-Reference/Interface-Specification/Consume-Message.md
-  - name: SDK Reference
+  - name: SDK参考
     items:
-      - name: Example Download
-        href: SDK-Rerference/Demo.md
+      - name: 示例下载
+            href: SDK-Rerference/Demo.md
       - name: Java SDK
         items:
-          - name: Version Description
+          - name: 版本说明
             href: SDK-Rerference/Java-SDK/JavaSDK-Versions.md
-          - name: Environment Preparation
+          - name: 环境准备
             href: SDK-Rerference/Java-SDK/Environment-Preparation.md
-          - name: Creating Initialization
+          - name: 初始化创建
             href: SDK-Rerference/Java-SDK/Initialization.md
-          - name: Normal Production Message
+          - name: 生产普通消息
             href: SDK-Rerference/Java-SDK/Produce-Standard-Message.md
-          - name: Production Sequence Message
+          - name: 生产顺序消息
             href: SDK-Rerference/Java-SDK/Produce-FIFO-Message.md
-          - name: Consumption Message(Push)
+          - name: 消费消息（Push）
             href: SDK-Rerference/Java-SDK/Consume-Message-SDK.md
-          - name: Consumption Message(Pull)
+          - name: 消费消息（Pull）
             href: SDK-Rerference/Java-SDK/Pull-Consume-Messgae-SDK.md
-  - name: Best Practices
+  - name: 最佳实践
     items:
     status: 0
-  - name: Tutorial
+  - name: 教程
     items:
     status: 0
-  - name: Troubleshooting
+  - name: 问题排查
     items:
     status: 0     
-  - name: FAQ
+  - name: 常见问题
     items:
       - name: FAQ
         href: FAQ/FAQ.md
-  - name: User Agreements
+  - name: 用户协议
     status: 0
     items:
-    - name: Product Terms of Service
+    - name: 服务条款
       href: User-Agreements/Product-Terms-of-Service.md           
       status: 0      
     - name: SLA
       href: User-Agreements/SLA.md           
       status: 0       
-  - name: Related Resources
+  - name: 相关资源
     items:
-    - name: Document History
+    - name: 文档历史记录
       href: Related-Resources/Document-History.md   
-    - name: ICP Filing
+    - name: 备案
       href: Related-Resources/Filing.md           
       status: 0        
-    - name: Glossary
+    - name: 词汇表
       href: Related-Resources/Glossary.md           
       status: 0
