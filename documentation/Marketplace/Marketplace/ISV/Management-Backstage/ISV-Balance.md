@@ -17,4 +17,4 @@
 
  
 
-如有疑问可邮件咨询fuwushichang@jd.com
+如有疑问可邮件咨询yunshichang@jd.com

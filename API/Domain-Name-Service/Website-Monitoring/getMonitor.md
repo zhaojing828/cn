@@ -12,32 +12,31 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|String|True||域名ID|
-|**regionId**|String|True||实例所属的地域ID|
+|**domainId**|String|True| |域名ID，请使用getDomains接口获取。|
+|**regionId**|String|True| |实例所属的地域ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**pageIndex**|Integer|False||当前页数，起始值为1，默认为1|
-|**pageSize**|Integer|False||分页查询时设置的每页行数|
-|**searchValue**|String|False||查询的值|
+|**pageIndex**|Integer|False| |当前页数，起始值为1，默认为1|
+|**pageSize**|Integer|False| |分页查询时设置的每页行数|
+|**searchValue**|String|False| |查询的值|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|此次请求的ID|
-|**result**|[Result](##Result)||
+|**result**|Result| |
 
-
-### <a name="Result">Result</a>
+### Result
 |名称|类型|描述|
 |---|---|---|
 |**currentCount**|Integer|当前页面网站监控项的个数|
-|**dataList**|[Monitor[]](##Monitor)|当前页面的网站监控项的列表|
+|**dataList**|Monitor[]|当前页面的网站监控项的列表|
 |**totalCount**|Integer|所有网站监控项的个数|
 |**totalPage**|Integer|所有网站监控项的页数|
-### <a name="Monitor">Monitor</a>
+### Monitor
 |名称|类型|描述|
 |---|---|---|
 |**alarmLimit**|Integer|连续几次触发报警|
@@ -58,7 +57,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 |**manualBackupStatus**|Integer|手动切换的地址的状态，0正常，1异常|
 |**manualBackupType**|Integer|手动切换的地址的类型，1为ip 2为域名|
 |**monitorEnable**|Integer|监控状况 开启监控 2，暂停监控 4|
-|**monitorFreq**|Integer|监控频率，单位s|
+|**monitorFreq**|Integer|监控频率，单位秒|
 |**monitorPort**|Integer|监控端口|
 |**monitorRule**|Integer|不做任何修改0，强制暂停解析记录1，自动切换到备用地址2|
 |**monitorUri**|String|监控路径|

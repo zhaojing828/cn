@@ -1,9 +1,15 @@
 # 监控日志查看
 
-1、在DDoS基础防护的监控页面，可以查看最近15分钟的监控报表。
+ 基础防护的监控报表如下：
 
-![创建对象](https://github.com/jdcloudcom/cn/blob/edit/image/Basic%20Anti-DDos/report01.png)
+![监控报表](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Basic%20Anti-DDos/report.png)
 
-2、在DDoS基础防护的防护明细页，能查看最近一个月的攻击日志。
+分为三个部分：
 
-![创建对象](https://github.com/jdcloudcom/cn/blob/edit/image/Basic%20Anti-DDos/report02.png)
+第一部分显示的是所选时间的攻击统计情况，包括黑洞次数，攻击次数，攻击峰值；
+
+第二部分显示的是网络流量监控以及攻击类型的统计情况；
+
+第三部分显示的是防护明细。
+
+支持90天内的报表日志查询。

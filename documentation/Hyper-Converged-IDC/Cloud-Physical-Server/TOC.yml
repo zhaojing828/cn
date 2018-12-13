@@ -91,8 +91,10 @@
             href: Operation-Guide/Adjust-Public-Network-Bandwidth/Steps-Adjust-Public-Network-Bandwidth.md
   - name: 最佳实践
     items:
-    - name: 创建与配置云物理服务器
-      href: Best-Practices/Create-And-Configure-Cloud-Physical-Server.md
+    - name: NAT网关网络安全方案
+      href: Best-Practices/NAT-Gateway-Network-Safety.md
+    - name: CPS到VPC专线通信配置方法
+      href: Best-Practices/CPS-VPC-DirectConnection.md 
   - name: 教程
     items:
     status: 0

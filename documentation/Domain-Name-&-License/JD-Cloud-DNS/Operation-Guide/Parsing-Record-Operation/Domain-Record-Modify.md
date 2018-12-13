@@ -6,10 +6,10 @@
 
   3、点击操作下的修改按钮
 
-  ![img](file:///C:\Users\ZHANGJ~1\AppData\Local\Temp\msohtmlclip1\01\clip_image002.png)
+  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/dns-img/modify-record1.png)
 
   **规则说明：**
 
   1、修改记录后，具体的生效时间会取决于本地DNS的（local dns ）TTL的缓存时间。
 
-  2、修改记录提示记录冲突，请参考[记录冲突规则](https://www.jcloud.com/help/detail/2184/isCatalog/1)。
+  2、修改记录提示记录冲突，请参考[记录冲突规则](Domain-Record-Conflict.md)。

@@ -26,6 +26,10 @@
 | sourceType     | ips：IP列表，domain：域名，oss:oss回源                       |
 | source         | 回源信息，ips和domain 返回json字符串,oss返回域名             |
 | backSourceType | 回源类型，只能为http（80端口回源）或者https（443端口回源），默认为http |
+| status         | 域名状态，如部署中、审核中、运行、停止、封禁等信息 |
+| dailyBandWidth | 日峰值带宽 |
+| archiveNo      | 备案号 |
+
 
  
 

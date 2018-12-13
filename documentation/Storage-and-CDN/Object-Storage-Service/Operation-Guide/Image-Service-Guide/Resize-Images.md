@@ -23,6 +23,9 @@
 
 示例：将图片保持宽高比内缩放，缩放后宽高不大于200*300
 
+http://s3.cn-north-1.jcloudcs.com/downloads/example.jpg?x-oss-process=img/s/200/300
+
 http://oss.cn-north-1.jcloudcs.com/downloads/example.jpg?x-oss-process=img/s/200/300
+
 
 ![图片缩放](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-058.jpg)

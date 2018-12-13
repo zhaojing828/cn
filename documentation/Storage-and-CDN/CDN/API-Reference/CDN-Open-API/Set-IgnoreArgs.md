@@ -13,7 +13,6 @@
 | domain    | String   | 是           | 加速域名                                                     |
 | status    | String   | 否           | off 关闭，on 打开,参数不填则默认为off                        |
 
-## 
 
 ## **3、返回参数**
 
@@ -23,7 +22,6 @@
 | msg      | 提示信息                                                  |
 | data     | 返回数据                                                  |
 
-## 
 
 ## **4、调用示例**
 
@@ -39,11 +37,11 @@ http://opencdn.jcloud.com/api/setIgnoreArgs
 
 ```
 {
-“username” :“test_user”, 
-“signature” :“d00f58f89e8cd55dc080aec0d8051845”, 
-“domain” :“www.a.com”, 
-“status” :“on”
-}
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "status" :"on"
+ }
 ```
 
 - ### **返回示例**

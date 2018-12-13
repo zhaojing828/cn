@@ -1,5 +1,5 @@
 name: API 网关
-href: 
+href:
 items:
 - name: 产品简介
   items:
@@ -15,6 +15,7 @@ items:
       herf: Introduction/Features.md
     - name: 产品规格
       herf: Introduction/Specifications.md
+      status: 0
     - name: 限制说明
       herf: Introduction/Restrictions.md
     - name: 应用场景 
@@ -37,7 +38,7 @@ items:
     - name: 概述
       herf: Getting-Started/Getting-Started.md
     - name: 创建API分组
-      herf: Getting-Started/STEP1-Create -APIGroup.md
+      herf: Getting-Started/STEP1-Create-APIGroup.md
     - name: 创建API
       herf: Getting-Started/STEP2-Create-API.md
     - name: 自定义域名
@@ -52,14 +53,14 @@ items:
       herf: Getting-Started/STEP5-Create-Auth.md
 - name: 操作指南
   items:
-    - name: 创建API
-      items:
-        - name: 创建API
-          herf: Create-API/Create-API.md
     - name: 创建API分组
       items:
         - name: 创建API分组
           herf: Create-APIGroup/Create-APIGroup.md
+    - name: 创建API
+      items:
+        - name: 创建API
+          herf: Create-API/Create-API.md
     - name: API的访问授权
       items:
         - name: API的访问授权
@@ -85,44 +86,10 @@ items:
   items:
   - name: 最佳实践
     herf: Best-Practices/BestPractices.md
- 
-- name: 教程
-  items:
-  status: 0
-- name: 问题排查
-  items:
-  - name: 云主机无法连接MongoDB实例？
-    herf: Troubleshooting/Connect-Failed.md
-    status: 0 
-  - name: 云数据库 MongoDB 不支持哪些命令？
-    herf: Troubleshooting/Command.md
-    status: 0 
-  - name: 账号密码正确，连接提示无权限？
-    herf: Troubleshooting/Authentication.md    
-    status: 0 
 - name: 常见问题
   herf: FAQ/faq.md
-- name: API参考
-  herf:
-  status: 0 
-- name: SDK参考
-  herf:
-  status: 0 
 - name: 相关资源
   items:
   - name: 文档历史记录
-    herf: Related-Resources/Document-History.md     
-  - name: 服务条款
-    herf: Related-Resources/Service-Terms.md           
-    status: 0      
-  - name: SLA
-    herf: Related-Resources/SLA.md           
-    status: 0       
-  - name: 备案
-    herf: Related-Resources/Filing.md           
-    status: 0        
-  - name: 词汇表
-    herf: Related-Resources/Glossary.md           
-    status: 0          
-          
-          
+    herf: Related-Resources/Document-History.md 
+    

@@ -15,7 +15,6 @@
 | referList  | String   | 是           | 逗号隔开的域名列表，如果referList传空则为删除即无黑白名单限制 |
 | allowEmpty | String   | 否           | 是否允许空refer访问，取值：on(允许),off（拒绝），默认是on    |
 
-## 
 
 ## **3、返回参数**
 
@@ -25,7 +24,6 @@
 | msg      | 提示信息                                                  |
 | data     | 返回数据                                                  |
 
-## 
 
 ## **4、调用示例**
 
@@ -35,19 +33,19 @@ http://opencdn.jcloud.com/api/setReferConfig
 
 - ### **请求示例**
 
-html http://opencdn.jcloud.com/api/setReferConfig
+ http://opencdn.jcloud.com/api/setReferConfig
 
 \* json格式
 
 ```
 {
-“username” :“test_user”, 
-“signature” :“d00f58f89e8cd55dc080aec0d8051845”, 
-“domain” :“www.a.com”, 
-“referType” :“block”, 
-“referList” :“www.baidu.com,www.alibaba.com”, 
-“allowEmpty” :“on”
-}
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "referType" :"block",
+    "referList" :"www.blanck1.com,www.blanck2.com",
+    "allowEmpty" :"on"
+ }
 ```
 
 - ### **返回示例**

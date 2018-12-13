@@ -26,6 +26,6 @@
 
 ![image.png](https://img1.jcloudcs.com/cms/40c7cf69-7feb-4cea-86a4-2036abd0a89a20180423110737.png)
 
-6、       开通CDN服务后，即可在【CDN】--【域名列表】--【添加域名】，可参考[入门指南](https://www.jdcloud.com/help/detail/1475/isCatalog/1)
+6、       开通CDN服务后，即可在【CDN】--【域名列表】--【添加域名】，可参考[入门指南](Getting-Started.md)
 
 ![image.png](https://img1.jcloudcs.com/cms/1057c887-2b25-4aaf-835c-3e5adf559b1020180423110839.png)

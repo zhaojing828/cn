@@ -11,7 +11,7 @@
         items:
           - name: getPackageId
             href: DMP-APIs/getPackageId.md
-      - name: 画像单标签输出相关API
+      - name: 大屏数据查询接口
         items:
-          - name: getProfile
-            href: Profile-Single-Lable-Output-APIs/getProfile.md
+          - name: getLargeScreenData
+            href: Large-Screen-APIs/getLargeScreenData.md

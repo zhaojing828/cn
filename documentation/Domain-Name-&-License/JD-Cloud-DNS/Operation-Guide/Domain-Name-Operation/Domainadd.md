@@ -4,7 +4,7 @@
 
   1、登录京东云控制台，找到云解析-域名解析，点击添加域名按钮。
 
-    
+  ![img](https://github.com/jdcloudcom/cn/blob/edit/image/dns-img/add-domain-name.png)  
 
   添加域名规则：
 

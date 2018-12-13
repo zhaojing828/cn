@@ -2,24 +2,35 @@
 
 将编译完毕的程序包发布到云主机上。
 
-**注意事项**
-
-编译构建和线上发布通过模块相关联，只有将二者关联后，上线时才能选到所属模块下的编译的程序包版本
-
 **操作步骤**
 
-1.基本设置
+1.【前提】基本设置
 
-选中左侧服务树中某应用，选择菜单“持续交付-线上发布”，进入“上线”页。点击“基本设置”分页，设置执行账户，将应用与所属模块绑定
+选中左侧服务树中应用，选择菜单“持续交付-线上发布”，进入“基本设置”分页，点击设置。
 
-2.分组配置
-在“分组配置”页，点击“配置”，可对各分组设置配置文件及环境变量。
-![image](https://github.com/jdcloudcom/cn/blob/DevOps/image/DevOps/Getting-Started3.png) 
+![Alt text](https://github.com/jdcloudcom/cn/blob/DevOps/image/DevOps/Starting12.png)
+
+
+设置执行账户，将应用与所属模块绑定。
+
+- 执行账户：root
+- 端口：9011
+- 所属模块：devops-demo/java-demo
+
+请注意：编译构建和线上发布通过模块相关联，只有将二者关联后，上线时才能选到所属模块下编译的程序包版本
+
+2.分组配置 
+
+在“分组配置”页，点击指定分组的“配置”按钮，可对各分组设置配置文件及环境变量。 
+
+这里我们的示例代码无需进行配置。
 
 3.上线
 
 在“上线”页，选择要上线的分组，并对上线并发度、超时时间进行设置，选择需要上线的包版本进行上线。在“上线动态”页可查看上线详情及进行回滚操作。
-![image](https://github.com/jdcloudcom/cn/blob/DevOps/image/DevOps/Getting-Started4.png)
+
+![Alt text](https://github.com/jdcloudcom/cn/blob/DevOps/image/DevOps/Starting11.png)
+
 
 至此，基本的上线发布过程结束。
 

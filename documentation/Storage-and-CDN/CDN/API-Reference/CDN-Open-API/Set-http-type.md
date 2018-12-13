@@ -16,7 +16,6 @@
 | rsaKey      | String   | 否           | 证书私钥，当httpType为https时必须设置                        |
 | jumpType    | String   | 否           | 设置跳转类型，有三种类型：default、http、https；默认是default，遵循源站，当httpType为https时必须设置 |
 
-## 
 
 ## **3、返回参数**
 
@@ -26,7 +25,6 @@
 | msg      | 提示信息                                                  |
 | data     | 返回数据                                                  |
 
-## 
 
 ## **4、调用示例**
 
@@ -47,14 +45,14 @@ curl -H “Content-type: application/json” -X POST -d ‘{“username”:“te
 ```
 html http://opencdn.jcloud.com/api/setHttpType
 {
-  “username” :“test_user”, 
-  “signature” :“d00f58f89e8cd55dc080aec0d8051845”, 
-  “domain” :“www.a.com”, 
-  “httpType” :“https”, 
-  “certificate” :“start—-stop”, 
-  “rsaKey” :“start—stop”, 
-  “jumpType” :“https”
-}
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "httpType" :"https",
+    "certificate" :"start----stop",
+    "rsaKey" :"start---stop",
+    "jumpType" :"https"
+ }
 ```
 
 - ### **返回示例**

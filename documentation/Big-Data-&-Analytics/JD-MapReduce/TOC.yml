@@ -60,14 +60,13 @@ items:
   - name: JMR问题排查说明
     href: Troubleshooting/Troubleshooting-Instructions.md
 - name: 常见问题
-  href: FAQ/FAQ.md
-- name: API参考
-  href: API-Reference/API.md
-- name: SDK参考
-  href: SDK-Reference/Overview.md
+  items:
+  - name: JMR特点和优势
+    href: FAQ/FAQ.md
+  - name: 如何与OSS交互
+    href: FAQ/uploadOSS.md
 - name: 相关资源
   items:
   - name: 文档历史记录
     href: Related-Resources/Document-History.md     
-  - name: SLA
-    href: Related-Resources/SLA.md
+
