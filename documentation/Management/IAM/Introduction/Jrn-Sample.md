@@ -1,4 +1,5 @@
 # 支持IAM的云产品JRN示例
+
  | 产品线名称   |                           JRN示例                            |
 | :----------- | :---------------------------------------------------------- |
 | DDoS         |        jrn:baseanti:region:accountid:ipResources/{ip}        |
