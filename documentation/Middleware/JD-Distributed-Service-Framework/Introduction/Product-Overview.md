@@ -18,7 +18,7 @@
 	- [删除分析服务](../Operation-Guide/Analysis-Service/del-Analysis-Service.md)
 	- [修改服务](../Operation-Guide/Analysis-Service/Update-Analysis-Service.md)
 - 服务管理
-	- [服务鉴权配置](../Operation-Guide/Service-List/Service-Assignuse.md)
+	
 
 
 
