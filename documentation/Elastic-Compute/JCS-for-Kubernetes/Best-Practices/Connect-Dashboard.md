@@ -3,7 +3,7 @@
 
 京东云Kubernetes集群服务已预置Dashboard插件。
 
-## 一、访问dashboard，有以下两种方式**  
+## 一、访问dashboard，有以下两种方式  
 
 **方式一：通过 API server 访问 dashboard（https 6443端口）；**  
 使用这种方式访问dashboard需要先基于集群的config文件生成并安装P12安全证书，具体操作步骤如下：  
