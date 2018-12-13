@@ -44,10 +44,10 @@
 线上申请的合同带有京东云电子红章，具有法律效力，可以直接使用。
 
 框架协议生效后，可进入控制台费用管理/合同管理，选择对应合同的申请线下盖章，根据提示信息进行相应操作。
-![file-list](https://github.com/jdcloudcom/cn/blob/edit/image/Contract%20Management/%E7%94%B3%E8%AF%B7%E7%BA%B8%E8%B4%A8%E5%90%88%E5%90%8C.jpeg)
+![file-list](https://github.com/jdcloudcom/cn/blob/edit/image/Contract%20Management/%E7%94%B3%E8%AF%B7%E7%BA%B8%E8%B4%A8%E5%90%88%E5%90%8C.png)
 
 如您备案时，需要盖鲜章的合同。请在申请合同后，再进入 纸质合同申请 页面，按页面提示填写信息。合同编号，请在 合同管理 页面查看。
-![file-list](https://github.com/jdcloudcom/cn/blob/edit/image/Contract%20Management/%E7%BA%B8%E8%B4%A8%E5%90%88%E5%90%8C.jpeg)
+![file-list](https://github.com/jdcloudcom/cn/blob/edit/image/Contract%20Management/%E7%BA%B8%E8%B4%A8%E5%90%88%E5%90%8C.png)
 
 我们会在收到您的申请后10个工作日内，为您邮寄盖鲜章的纸质合同。
 
