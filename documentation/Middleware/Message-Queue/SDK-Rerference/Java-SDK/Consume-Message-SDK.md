@@ -1,4 +1,4 @@
-# 消费消息
+# 消费消息（Push）
 
 在使用消息队列 JCQ SDK消费消息的时候可以进行消息过滤，如果多个consumer在同一consumerGroup下，进行消费实现的集群消费的语义，如果多个consumer分别在不同consumerGroup下，进行消费实现的广播消费的语义。
 
@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 /**
- * 消费者 demo.
+ * 推送型消费者 demo.
  * @date 2018-05-17
  */
 public class ConsumerDemo {

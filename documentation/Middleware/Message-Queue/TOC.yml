@@ -93,8 +93,10 @@
             href: SDK-Rerference/Java-SDK/Produce-Standard-Message.md
           - name: 生产顺序消息
             href: SDK-Rerference/Java-SDK/Produce-FIFO-Message.md
-          - name: 消费消息
-            href: SDK-Rerference/Java-SDK/Consumer-Message-SDK.md
+          - name: 消费消息（Push）
+            href: SDK-Rerference/Java-SDK/Consume-Message-SDK.md
+          - name: 消费消息（Pull）
+            href: SDK-Rerference/Java-SDK/Pull-Consume-Messgae-SDK.md
   - name: 最佳实践
     items:
     status: 0
