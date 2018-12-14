@@ -113,8 +113,14 @@ sudo s3fs bucketname /new -o passwd_file=~/.passwd-s3fs -o url="https://s3.cn-no
 
 - 使用`cp`命令拷贝文件，`s3fs-fuse`工具底层进行的操作依赖于`/etc/mime.types`文件，这个文件决定了`cp`命令目的文件的mime-type属性。
 
+<<<<<<< HEAD
 - 默认情况下，京东云的centos7版本并不包含`/etc/mime.types`文件，所以需要通过拷贝，或者安装`httpd`获得，安装命令为`yum install httpd`
 
 - 对于已经通过`s3fs`命令挂载的目录，需要先`umount`，然后再次执行`s3fs`命令才能生效。
 
 4.如果您在使用S3fs挂载Bucket之前开启了静态网站托管，会导致挂载失败；如果您使用S3fs挂载Bucket之后开启了静态网站托管，会导致文件操作失效。
+=======
+1. 使用`cp`命令拷贝文件，`s3fs-fuse`工具底层进行的操作依赖于`/etc/mime.types`文件，这个文件决定了`cp`命令目的文件的mime-type属性。
+2. 默认情况下，京东云的centos7版本并不包含`/etc/mime.types`文件，所以需要通过拷贝，或者安装`httpd`获得，安装命令为`yum install httpd`
+3. 对于已经通过`s3fs`命令挂载的目录，需要先`umount`，然后再次执行`s3fs`命令才能生效。
+>>>>>>> 871aaa7d8b0c51bd95531bc4dfc0ca87fdc70f2b
