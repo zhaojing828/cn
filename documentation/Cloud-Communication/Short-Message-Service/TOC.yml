@@ -1,0 +1,37 @@
+name: 短信服务
+href: 
+items:
+- name: 产品简介
+  items:
+    - name: 产品概述
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Introduction/Overview.md
+    - name: 名词解释
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Introduction/Glossary.md
+    - name: 审核标准
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Introduction/standard.md
+- name: 产品定价
+  items:
+    - name: 价格总览
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Pricing/Price-Overview.md
+- name: 入门指南
+  items:
+    - name: 应用管理
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Getting-Started/Application.md
+- name: 操作指南
+  items:
+    - name: 业务规则
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/rule.md
+    - name: 短信签名
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/signature.md
+    - name: 短信模板
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/content.md
+    - name: 发送短信
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/send.md
+    - name: 统计分析
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/stat.md
+- name: 相关协议
+  items:
+    - name: 服务协议
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Service-Agreements-and-Guarantees/Short-Message-Service-Term.md
+    - name: SLA服务等级协议
+      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Service-Agreements-and-Guarantees/Short-Message-Service-SLA.md
