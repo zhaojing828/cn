@@ -6,7 +6,7 @@
 
 **IP回源**
 
-![image.png](https://img1.jcloudcs.com/cms/4b305baa-c773-4922-9cd7-b7afc64cd44d20180118102439.png)
+![image.png](https://github.com/jdcloudcom/cn/blob/cdn-new/image/CDN/IP%E5%9B%9E%E6%BA%90.jpg)
 
 回源IP最多可支持10个IP回源，回源的权重等比分配，CDN自动依次按IP列表顺序轮询回源，达到均衡回源的效果。
 
@@ -15,7 +15,7 @@ IP回源支持主备回源，在主源没有响应的情况下会自动回备源
 
 **域名回源**
 
-![image.png](https://img1.jcloudcs.com/cms/c9c40a4e-2042-47bd-98f6-4cce01c3284f20180118102533.png)
+![image.png](https://github.com/jdcloudcom/cn/blob/cdn-new/image/CDN/%E5%9F%9F%E5%90%8D%E5%9B%9E%E6%BA%90.png)
 
 l  域名回源最多可配置5个域名，区分优先级进行回源，优先级1为最高，当优先级为1 的域名不能访问时自动访问优先级为2的域名，以此类推。
 
@@ -37,7 +37,7 @@ l  域名回源最多可配置5个域名，区分优先级进行回源，优先�
 
 默认回源host指IP回源或者域名回源时，回源地址均对应同一个回源host，如回源域名为test1.com和test2.com，默认回源host为origin.com，即test1.com和test2.com的回源host均为origin.com
 
- ![image.png](https://img1.jcloudcs.com/cms/35c3ff38-b7a9-45c3-8509-c323488936f520180118102722.png)
+ ![image.png](https://github.com/jdcloudcom/cn/blob/cdn-new/image/CDN/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%9E%E6%BA%90host.png)
 
 **源站监控**
 
