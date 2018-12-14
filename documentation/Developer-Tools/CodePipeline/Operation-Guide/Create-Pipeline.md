@@ -8,7 +8,7 @@
 
 * [快速创建](../Getting-Started/Quick-Creation.md)
 
-* [自定义创建](https://github.com/jdcloudcom/cn/blob/codepipeline/documentation/Developer-Tools/CodePipeline/Getting-Started/Create-Customized-Instance.md)
+* [自定义创建](../Getting-Started/Create-Customized-Instance.md)
 
 其中，使用快速创建时，CodePipeline 会创建阶段名为source、build、deploy的三个阶段，您可以为这些阶段添加更多的操作。
 
