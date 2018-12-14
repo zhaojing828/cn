@@ -4,8 +4,6 @@
 
 ### Http Response Status Code
 
-[error code](https://github.com/jdcloudcom/cn/blob/edit/API/Common-Declaration/Error-Codes.md)
-
 | HTTP状态码 | 错误状态码              | message                                             | 描述            | 建议                    |
 | ---------- | ----------------------- | --------------------------------------------------- | --------------- | ----------------------- |
 | **400**    | INVALID_ARGUMENT        | Invalid request parameters：[ error parameter name] | 参数校验失败    | 建议检查提示错误的参数  |
