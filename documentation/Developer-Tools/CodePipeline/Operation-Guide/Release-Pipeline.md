@@ -2,6 +2,7 @@
 
 ## 手动发布
 点击 发布 按钮，手动执行流水线。
+
 ![](../../../../image/codepipeline/Release-Pipeline.png) 
 
 执行过程，stage的不同颜色表示不同的状态
