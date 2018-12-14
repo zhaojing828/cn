@@ -12,7 +12,5 @@
  - 云主机
  - 云硬盘
  - SQL Server数据库
- - 云缓存 Memcached
- - 云搜索 Elasticsearch
- 
+ - 缓存 Memcached
 后续会继续增加支持绑定标签的资源类型。
