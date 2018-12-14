@@ -143,7 +143,7 @@ fail：
 
 ## CLI上报 
 ### 安装CLI  
-如何安装请参看 https://docs.jdcloud.com/cn/cli/installation
+如何安装请参看<a href="https://docs.jdcloud.com/cn/cli/installation">安装说明</a> 。
 ### 配置环境  
 
 配置KEY、所在区域region-id和网关地址endpoint，编辑 /root/.jdc/config
