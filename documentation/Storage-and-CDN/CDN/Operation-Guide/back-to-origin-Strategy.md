@@ -1,6 +1,6 @@
 # 回源策略
 
-添加域名后，点击【加速域名】进入域名配置基本信息，可输入【回源配置】信息，回源方式分为IP回源、域名回源、oss回源三种。
+添加域名后，点击【加速域名】进入域名配置基本信息，可输入【回源配置】信息，回源方式分为IP回源、域名回源、oss回源三种，同时支持ip回源和域名回源自定义端口，如1.1.1.1:80。
 
 ![image.png](https://img1.jcloudcs.com/cms/cf317c03-b662-4a37-a564-cee61f253fa220180118102313.png)                                               
 
@@ -8,9 +8,10 @@
 
 ![image.png](https://img1.jcloudcs.com/cms/4b305baa-c773-4922-9cd7-b7afc64cd44d20180118102439.png)
 
-l  回源IP最多可支持10个IP回源，回源的权重等比分配，CDN自动依次按IP列表顺序轮询回源，达到均衡回源的效果。
+回源IP最多可支持10个IP回源，回源的权重等比分配，CDN自动依次按IP列表顺序轮询回源，达到均衡回源的效果。
 
-l  IP回源支持主备回源，在主源没有响应的情况下会自动回备源请求内容。
+IP回源支持主备回源，在主源没有响应的情况下会自动回备源请求内容。
+
 
 **域名回源**
 
@@ -28,7 +29,13 @@ l  域名回源最多可配置5个域名，区分优先级进行回源，优先�
 
 指的是CDN节点回源过程中所需访问的服务器域名。
 
-例如回源host是www.a.com，CDN节点在回源时请求到www.a.com解析后对应的服务器
+例如回源host是www.a.com，CDN节点在回源时请求到www.a.com解析后对应的服务器；
+
+不配置任何回源host时，回源host是您的加速域名
+
+支持域名回源的自定义回源host，如回源域名分别为test1.com和test2.com，则可分别设置test1.com对应的回源host为：origin1.com，test2.com对应的回源host为origin2.com
+
+默认回源host指IP回源或者域名回源时，回源地址均对应同一个回源host，如回源域名为test1.com和test2.com，默认回源host为origin.com，即test1.com和test2.com的回源host均为origin.com
 
  ![image.png](https://img1.jcloudcs.com/cms/35c3ff38-b7a9-45c3-8509-c323488936f520180118102722.png)
 
