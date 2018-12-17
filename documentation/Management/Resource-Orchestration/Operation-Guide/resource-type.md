@@ -154,7 +154,7 @@
   
 　　如下图所示，以 JDCLOUD::VM::Disk 为例，它的返回值名称是Status，描述为云硬盘状态，取值为 creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend 之一。
   
-![返回值](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/resourcetype002.png)
+![返回值](https://raw.githubusercontent.com/jdcloudcom/cn/edit/image/Resource-Orchestration/resourcetype002.png)
 
 ### 属性
 
@@ -162,6 +162,6 @@
   
 　　如下图所示，以 JDCLOUD::VM::Disk 为例，如AZ、Charge、Description等等。
 
-![属性](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/resourcetype003.png)
+![属性](https://raw.githubusercontent.com/jdcloudcom/cn/edit/image/Resource-Orchestration/resourcetype003.png)
 
 
