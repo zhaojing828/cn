@@ -5,11 +5,11 @@
 
 一、选中需要删除的资源栈，点击“删除”按钮，弹出删除资源栈的确认页面，提示：“确定删除资源栈？”。如下图所示：
 
-![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/delete%20stack001.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/edit/image/Resource-Orchestration/delete%20stack001.png)
 
 二、点击“确定”，完成删除操作，进入资源栈列表页面，删除的资源栈的状态显示“删除中”
 
-![](https://raw.githubusercontent.com/jdclouddocs/cn/resource-orchestration/image/resource/delete%20stack002.png)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/edit/image/Resource-Orchestration/delete%20stack002.png)
 
 
 ## 注意事项
