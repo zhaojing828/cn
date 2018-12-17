@@ -30,7 +30,7 @@
 
 **支付卡行业数据安全标准 (PCI-DSS)认证 ：** 京东云通过6大领域、12项规范、近300项标准审核，获得了目前全球范围最权威的支付卡行业数据安全标准之一PCI-DSS。标志着京东云有能力为银行、保险、证券等金融机构用户提供高级别的安全体验及服务，其他行业用户也能享受到"金融级"的安全性，极大地保障用户隐私及信息安全。
 
-![图 2 京东云资质认证](https://github.com/jdcloudcom/cn/blob/edit/image/Security-Information/qualification44.png)
+![图 2 京东云资质认证](https://github.com/jdcloudcom/cn/blob/edit/image/Security-Information/qualification_new.png)
 
 ## 2. 隐私保护
 
