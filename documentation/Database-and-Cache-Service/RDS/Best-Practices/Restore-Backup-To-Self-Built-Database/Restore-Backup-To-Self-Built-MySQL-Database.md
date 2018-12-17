@@ -14,10 +14,10 @@
     
     ```
     # 查看帮助手册
-    ./percona_backup_extract.py -h
+    ./mysql_backup_extract.py -h
      
      # 解压云数据库 Percona 实例的备份数据
-     ./percona_backup_extract.py  -v 5.7 -f ./backup.xbstream
+     ./mysql_backup_extract.py  -v 5.7 -f ./backup.xbstream
     ```
 3. 下载备份文件
 
