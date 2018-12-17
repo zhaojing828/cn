@@ -84,7 +84,7 @@
 
 至此，在API网关控制台的界面操作已经完成，接下来可以通过SDK进行调用。
 
-### 通过Java SDK调用：
+### 通过Java SDK调用(![下载地址](./PetStoreTest_javaSDK.zip))：
 
 #### 1.	解压下载的Java SDK。
 
@@ -144,7 +144,7 @@ public class SDKTest {
 
 ![Java返回结果](../../../../image/Internet-Middleware/API-Gateway/exap_Java_return.png)
 
-### 通过Python SDK调用：
+### 通过Python SDK调用(![下载地址](./PetStoreTest_pythonSDK.zip))：：
 
 #### 1.	解压下载的Python SDK，执行setup.py文件。
 
