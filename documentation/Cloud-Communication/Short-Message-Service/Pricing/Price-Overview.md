@@ -90,5 +90,5 @@
 
 余量预警设置:<br>
 为了防止套餐余量用尽,防止影响到您的业务, 在套餐管理页面中您可以进行预警设置<br><br>
-![预警设置](../../../../image/Short-Message-Service/dx-001.png?raw=true)<br><br>
+![预警设置](../../../../image/Short-Message-Service/dx-001.png)<br><br>
 当到达您设置的阈值, 系统将给您发送短信余量提醒短信
