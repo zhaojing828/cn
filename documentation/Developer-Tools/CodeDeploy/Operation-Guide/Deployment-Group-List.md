@@ -1,8 +1,8 @@
-##应用部署组列表
+## 应用部署组列表
 
 在应用详情页，有两个分页，分别展示了应用中的部署组、里程牌。
 
-![Alt text](./starting11.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation11.png)
 
 
 在部署组分页中，列出此应用下所有的部署组，并可支持“新建部署组”。
