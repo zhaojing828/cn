@@ -1,9 +1,9 @@
-  name: DevOps
+  name: 云部署
   href: 
   items:
   - name: 产品简介
     items:
-      - name: DevOps概述
+      - name: 云部署概述
         href: Introduction/Product-Overview.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
@@ -13,8 +13,6 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         href: Introduction/Features.md
-      - name: 产品规格
-        href: Introduction/Specifications.md
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景 
@@ -23,101 +21,53 @@
     items:
       - name: 计费概述
         href: Pricing/Billing-Overview.md
-      - name: 计费规则
-        href: Pricing/Billing-Rules.md
-      - name: 价格总览
-        href: Pricing/Price-Overview.md
-      - name: 购买流程
-        href: Pricing/Purchase-Process.md 
-      - name: 续费流程
-        href: Pricing/Renew-Process.md
   - name: 入门指南
     items:
-      - name: 入门指南概述
+      - name: 概述
         href: Getting-Started/Getting-started.md
-      - name: 在云主机中安装超级Agent
-        href: Getting-Started/Install-Agent.md
-      - name: 创建服务树节点
-        href: Getting-Started/Create-Instance.md
-      - name: 导入京东云主机
-        href: Getting-Started/Import-Source.md
-      - name: 创建构建任务
-        href: Getting-Started/Create-Compilejob.md
-      - name: 配置线上发布
-        href: Getting-Started/Config-Deployment.md
-      - name: 接入智能监控
-        href: Getting-Started/Quick-start-monitoring.md
+      - name: 创建云主机
+        href: Getting-Started/Create-VM.md
+      - name: 新建应用及部署组
+        href: Getting-Started/Create-Application.md
+      - name: 新建部署
+        href: Getting-Started/Create-Deployment.md
+      - name: 查看部署详情
+        href: Getting-Started/Details.md
   - name: 操作指南
     items:
-      - name: 使用须知
-        href: Operation-Guide/Operation-Instruction.md
-      - name: 了解DevOps主界面
+      - name: 部署应用列表
+        href: Operation-Guide/Deployment-Application-List.md
+      - name: 新建应用
+        href: Operation-Guide/Create-Application.md
+      - name: 在应用中新建部署组
+        href: Operation-Guide/Create-Deployment-Group.md
+      - name: 部署类型
+        href: Operation-Guide/Deployment-Type.md
+      - name: 部署组高级选项
+        href: Operation-Guide/Advanced-Option.md
+      - name: 应用部署组列表
+        href: Operation-Guide/Deployment-Group-List.md
+      - name: 应用里程牌列表
+        href: Operation-Guide/Milestone-List.md
+      - name: 编辑部署组
+        href: Operation-Guide/Edit-Deployment-Group.md
+      - name: 新建部署
+        href: Operation-Guide/Create-Deployment.md
+      - name: 部署历史
+        href: Operation-Guide/Deployment-History.md
+      - name: 部署详情
+        href: Operation-Guide/Details.md
+      - name: 部署工作流
         href: Operation-Guide/Introduction-index.md
-      - name: 服务树
-        href: Operation-Guide/Service-Tree.md
-      - name: 资源池
-        href: Operation-Guide/Resource-Pool.md
-      - name: 规格模板
-        href: Operation-Guide/Specification-Templates.md
-      - name: 编译构建
-        href: Operation-Guide/CI.md
-      - name: 线上发布
-        href: Operation-Guide/CD.md
-      - name: 编排上线
-        href: Operation-Guide/Arrange-Online.md
-      - name: 采集配置
-        items:
-          - name: 机器监控
-            href: Operation-Guide/Collection-Conf/Machine-Monitoring.md
-          - name: 端口监控
-            href: Operation-Guide/Collection-Conf/Port-Monitoring.md
-          - name: 进程监控
-            href: Operation-Guide/Collection-Conf/Process-Monitoring.md
-          - name: 日志监控
-            href: Operation-Guide/Collection-Conf/Log-Monitoring.md
-          - name: 域名监控
-            href: Operation-Guide/Collection-Conf/Domain-Monitoring.md
-          - name: 自定义监控
-            href: Operation-Guide/Collection-Conf/Custom-Monitoring.md
-      - name: 聚合配置
-        href: Operation-Guide/Converge.md
-      - name: 数据可视化
-        href: Operation-Guide/Data-Visualization.md
-      - name: 报警组&值班组
-        href: Operation-Guide/Alarm-Contacts.md
-      - name: 报警配置
-        href: Operation-Guide/Alarm-Conf.md
-      - name: 报警管理
-        href: Operation-Guide/Alarm-Management.md
-      - name: Tags使用说明
-        href: Operation-Guide/Tags.md
-      - name: 镜像广场
-        href: Operation-Guide/Image-Packaging.md
-      - name: 脚本管理
-        href: Operation-Guide/Script.md
-      - name: 文件分发
-        href: Operation-Guide/File-Distribution.md
-      - name: 账户管理
-        href: Operation-Guide/Account-management.md
-  - name: 问题排查
-    items:
-      - name: 配置类问题
-        href: Troubleshooting/Configuration.md
+      - name: AppSec文件
+        href: Operation-Guide/AppSec.md
+      - name: Agent安装
+        href: Operation-Guide/Install-Agent.md
+      - name: 约定
+        href: Operation-Guide/.md
   - name: 常见问题
-    href: FAQ/FAQ.md
-  - name: API参考
-    href: API/API-Reference.md
-  - name: SDK参考
-    href: SDK/SDK-Reference.md
-  - name: 用户协议
-    items:
-      - name: 服务条款
-        href: User-Agreements/Product-Terms-of-Service.md                 
-      - name: SLA
-        href: User-Agreements/SLA.md               
+    href: FAQ/FAQ.md          
   - name: 相关资源
     items:
       - name: 文档历史记录
-        href: Related-Resources/Document-History.md                
-      - name: 词汇表
-        href: Related-Resources/Glossary.md           
+        href: Related-Resources/Document-History.md                        
