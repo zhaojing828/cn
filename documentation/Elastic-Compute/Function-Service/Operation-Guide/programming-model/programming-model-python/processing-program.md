@@ -11,11 +11,7 @@
 
  
 
-`context`:function通过context参数向您的处理程序提供运行时信息。包括您的个人信息和其他信息。格式参考如下：
-
-代码
-
-  
+`context`:function通过context参数向您的处理程序提供运行时信息。包括您的个人信息和其他信息。格式参考context对象
 
  
 
