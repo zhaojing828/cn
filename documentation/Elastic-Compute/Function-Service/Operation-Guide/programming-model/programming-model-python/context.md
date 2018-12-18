@@ -1,10 +1,28 @@
-## context对象 
+# context对象 
 
-通过context可获取函数运行时的函数相关信息。context对象属性详情见表1。
+通过Context可获取函数运行时的函数相关信息。例如：获取函数基本信息，在context中获得本次请求的 ID，并记录到函数运行日志中。后续通过该 ID 来追踪请求执行的详细信息。
 
-例如：获取函数基本信息，在context中获得本次请求的 ID，并记录到函数运行日志中。后续通过该 ID 来追踪请求执行的详细信息。
+ 其定义如下：
 
- 
+```
+class FunctionMeta:
+    def __init__(self, invoked_function_id, function_name, function_version, function_handler, memory_size, timeout):
+        self.invoked_function_id = invoked_function_id
+        self.function_name = function_name
+        self.function_version = function_version
+        self.function_handler = function_handler
+        self.memory_size = memory_size
+        self.timeout = timeout
+
+class FContext:
+    def __init__(self, request_id, function_meta, logset, logtopic):
+        self.request_id = request_id
+        self.function = function_meta
+        self.logset = logset
+        self.logtopic = logtopic
+```
+
+
 
 表1：context对象属性
 
