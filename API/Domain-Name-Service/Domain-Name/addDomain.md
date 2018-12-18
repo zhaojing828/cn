@@ -35,9 +35,9 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domainAdd
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**data**|Domain|新添加的的域名结构|
+|**data**|DomainAdded|新添加的的域名结构|
 |**order**|String|添加收费版域名的订单号|
-### Domain
+### DomainAdded
 |名称|类型|描述|
 |---|---|---|
 |**createTime**|Long|创建时间，格式Unix timestamp，时间单位：毫秒|
