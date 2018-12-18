@@ -90,6 +90,7 @@ items:
                         href: Troubleshooting/Fault-problem .md
                   - name: 常见问题
                     items:
+                      - name: FAQ
                         href: FAQ/FAQ.md
                   - name: API参考
                     items:
