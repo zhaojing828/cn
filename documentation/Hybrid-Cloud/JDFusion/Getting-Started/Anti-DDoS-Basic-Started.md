@@ -1,31 +1,72 @@
-# 开启DDoS基础防护
-
-**前提条件**
-
-- 已注册京东云账号，并完成实名认证。如果还没有账号请[注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud%26ReturnUrl=%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3dhttp%3A%2F%2Fuc.jdcloud.com%2Fredirect%2FloginRouter%3FreturnUrl%3Dhttps%253A%252F%252Fwww.jdcloud.com%252Fhelp%252Fdetail%252F734%252FisCatalog%252F1)，或[实名认证](https://uc.jdcloud.com/account/certify).
-
-**操作步骤**
-
-1、请确认已经拥有了京东云内的公网IP。
-
-a. 弹性公网IP的确认方式：
-
-请登录京东云[弹性公网IP 控制台](http://cns-console.jdcloud.com/host/pip/list),控制台目录为“网络->私有网络->弹性公网IP”目录下，确认已经添加了弹性公网IP。
-![创建弹性公网IP实例](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Basic%20Anti-DDos/instance%2003.png)
-
-b. 云物理服务器的确认方式：
-
-请登录京东云[云物理服务器 控制台](http://cps-console.jdcloud.com/list),控制台目录为“超融合数据中心->云物理服务器”目录下，确认已经添加了实例。
-
-
-2、切换到云安全菜单下的DDos基础防护，您已购买的弹性公网IP或云物理服务器IP已经自动加入基础防护。
-
-![创建实例](../../../../image/Basic%20Anti-DDos/Instance02.png)
-
-**注意**：基础防护是默认开启的，无法关闭。 如某公网IP已经在防护包实例里进行里绑定，则黑洞阈值将显示其最终在防护包中的黑洞阈值。
-
-# 相关参考
-- [什么是DDoS基础防护](../Introduction/Product-Overview.md)
-- [功能特性](../Introduction/Features.md)
-- [应用场景](../Introduction/Application-Scenarios.md)
-- [基础架构](../Introduction/Basic-Infrastructure.md)
+# 入门指南
+## 概述
+JDFusion CLI程序的运行，需要相应的运行环境。
+目前，我们提供了两种方式来安装JD Fusion CLI。第一种RPM包，第二种Dokcer容器。
+## 环境部署
+### 安装准备
+要安装、运行JDFusion CLI需要准备一些必要信息
+>* JDFusion平台的用户AK
+>* JDFusion平台的用户SK
+下面的信息为可个性化配置信息：
+>* JDFusion平台的服务入口
+>* JDFusion平台大区编号
+若不知如何获取，请查看[JD Fusion平台用户认证](https://github.com/jdfusion/jdfusion.github.io)
+#### 以RPM的方式安装运行
+使用本文档中提供的[fusion-cli.rpm](http://jd-fusion-pub-storage.oss.cn-north-1.jcloudcs.com/releases/cli/rpm/fusion-cli-0.1.2~RELEASE.x86_64.rpm)包，安装JD Fusion CLI。目前，仅提供64位版本。
+下载RPM包到你的Linux系统中，在终端中运行命令：
+```bash
+rpm -i fusion-cli-*.x86_64.rpm
+```
+在当前用户的home目录下，创建一个".fusion-cloud"文件，在文件中，以property的方式配置AK，SK等信息。
+示例如下：
+```bash
+cd ~
+cat > .fusion-cloud << EOF
+x.jdcloud.fusion.ak=$AK
+x.jdcloud.fusion.sk=$SK
+x.jdcloud.fusion.endpoint=http://api.test.fusion.jdcloud.com/zuul
+x.jdcloud.fusion.region=cn-north-1a
+EOF
+```
+将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。
+另外，JD Fusion CLI的运行需要JRE1.8及以上版本，并且需要设置JAVA_HOME。
+在配置完成后即可以使用JD Fusion CLI了。
+例如：
+```bash
+fusion list clouds --vendor jdcloud
+```
+#### 以Docker容器的方式安装运行
+使用本文档中提供的CLI运行环境Docker镜像[jdfusion/cli](https://hub.docker.com/r/jdfusion/cli/)。这需要你本地的电脑上安装了Docker程序，关于Docker相关的文档，请参考[Docker官方文档](https://www.docker.com/)
+可以使用以下两种方式来启动Docker容器：
+##### 命令行列举环境变量
+命令如下：
+```bash
+docker run -ti \
+-e X_JDCLOUD_FUSION_AK=$AK \
+-e X_JDCLOUD_FUSION_SK=$SK \
+-e X_JDCLOUD_FUSION_ENDPOINT=http://api.test.fusion.jdcloud.com/zuul \
+-e X_JDCLOUD_FUSION_REGION=cn-north-1a \
+jdfusion/cli list clouds
+```
+将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。以上命令基于Linux操作系统，如需在Windows系统上执行，可将每行结尾的"\"替换为"`"。
+示例中，
+`-e` 为设置程序运行所需要的环境变量
+`jdfusion/cli`为官方提供的jdfusion/cli运行环境镜像
+`list clouds`为实际运行的指令，用于展示用户注册的云信息列表
+##### 命令行使用环境变量文件
+命令如下：
+```bash
+# docker run -ti --env-file env.list jdfusion/cli list clouds
+```
+env.list的文件内容格式为：
+```properties
+X_JDCLOUD_FUSION_AK=$AK
+X_JDCLOUD_FUSION_SK=$SK
+X_JDCLOUD_FUSION_ENDPOINT=http://api.test.fusion.jdcloud.com/zuul
+X_JDCLOUD_FUSION_REGION=cn-north-1a
+```
+将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。
+示例中，
+`--env-file` 为设置程序运行所需要的环境变量的文件
+`jdfusion/cli`为官方提供的jdfusion/cli运行环境镜像
+`list clouds`为实际运行的指令，用于展示用户注册的云信息列表
