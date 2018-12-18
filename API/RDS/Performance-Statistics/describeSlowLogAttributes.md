@@ -39,9 +39,9 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 |名称|类型|描述|
 |---|---|---|
 |**dbName**|String|数据库名，表示该SQL是在哪个数据库中执行的|
-|**elapsedTime**|Number|SQL语句执行的时长，单位秒|
+|**elapsedTime**|Float|SQL语句执行的时长，单位秒|
 |**executionTime**|String|SQL语句执行的开始时间，格式为YYYY-MM-DD hh:mm:ss|
-|**lockTime**|Number|SQL语句等待锁的时间，单位秒|
+|**lockTime**|Float|SQL语句等待锁的时间，单位秒|
 |**rowsExamined**|Integer|SQL语句扫描的行数|
 |**rowsReturned**|Integer|SQL语句返回的行数|
 |**sql**|String|SQL语句|

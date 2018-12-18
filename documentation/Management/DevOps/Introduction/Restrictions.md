@@ -6,6 +6,6 @@
 
 **Agent**
 
-部署对象中需安装超级Agent，具体操作方法见操作指南。  
+部署对象中需安装超级Agent。  
 
-详见[操作指南](../Operation-Guide/Operation-Instruction.md)
+详见操作指南

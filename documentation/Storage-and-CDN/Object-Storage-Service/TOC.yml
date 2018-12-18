@@ -63,6 +63,8 @@ items:
              href: Operation-Guide/Manage-Bucket/Set-Custom-Domain-Name-2.md
            - name: 回调通知
              href: Operation-Guide/Manage-Bucket/Callback-Notification-2.md
+           - name: 默认加密
+             href: Operation-Guide/Manage-Bucket/Default-Encryption-For-Oss-Buckets-2.md             
       - name: 文件管理
         items:
           - name: 新建文件夹
@@ -123,22 +125,28 @@ items:
             href: Operation-Guide/Video-Service-Guide/Query-Video-Task.md
           - name: 删除视频任务
             href: Operation-Guide/Video-Service-Guide/Delete-Video-Task.md	
- - name:  新版API（兼容S3）
+ - name:  API文档
    items:
-      - name: 概述
-        href: API-Reference-S3-Compatible/Introduction-2.md
+      - name: 兼容S3 API 概述
+        href:  API-Reference-S3-Compatible/Introduction-2.md
       - name: 服务器域名
-        href: API-Reference-S3-Compatible/Regions-And-Endpoints.md
-      - name: 兼容签名认证
-        href: API-Reference-S3-Compatible/User-Signature-Authentication-s3.md  
-      - name: 兼容公共头
-        href: API-Reference-S3-Compatible/Compatibility-Header.md      
-      - name: 兼容接口
+        href:  API-Reference-S3-Compatible/Regions-And-Endpoints.md
+      - name:  兼容签名认证
+        href:  API-Reference-S3-Compatible/User-Signature-Authentication-s3.md  
+      - name:  兼容公共头
+        href:  API-Reference-S3-Compatible/Compatibility-Header.md      
+      - name:  兼容接口
         items:
            - name: 兼容接口概览
              href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-overview.md
            - name: Post Object
              href: API-Reference-S3-Compatible/Compatibility-API/Post-Object-2.md
+           - name: Get Bucket Encryption
+             href:  API-Reference-S3-Compatible/Compatibility-API/Get-Bucket-Encryption-2.md
+           - name: Put Bucket Encryption
+             href:  API-Reference-S3-Compatible/Compatibility-API/Put-Bucket-Encryption-2.md
+           - name: Delete Bucket encryption
+             href:  API-Reference-S3-Compatible/Compatibility-API/Delete-Bucket-Encryption-2.md             
       - name: 错误响应
         href: API-Reference-S3-Compatible/Error-Response-2.md                
       - name: 扩展接口
@@ -149,31 +157,9 @@ items:
              href: API-Reference-S3-Compatible/Extension-API/ImgProtected.md
       - name: 兼容工具
         items:
-           - name: 概述
-             href: API-Reference-S3-Compatible/Compatibility-Tools/Introduction-3.md
-           - name: SDK-Java
-             items:
-                - name: 安装
-                  href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Installation-S3.md
-                - name: 初始化
-                  href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Initialization-S3.md
-                - name: 简单上传
-                  href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Simple-Upload-S3.md
-                - name: 分片上传
-                  href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Multipart-Upload-S3.md          
-           - name: SDK-Python
-             href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Python.md
-           - name: SDK-PHP
-             href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-PHP.md
-           - name: SDK-Android
-             href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Android.md
-           - name: SDK-iOS
-             href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md
            - name: CloudBerry
-             href: API-Reference-S3-Compatible/Compatibility-Tools/CloudBerry-1.md                
- - name: 旧版API
-   items:
-      - name: OSS API 简介
+             href: API-Reference-S3-Compatible/Compatibility-Tools/CloudBerry-1.md 
+      - name: 旧版OSS API 简介
         items:
            - name: 基本概念
              href: API-Reference/Introduction/Basic-Concepts.md
@@ -183,68 +169,88 @@ items:
              href: API-Reference/Introduction/OSS-Compared-With-File-System.md 
            - name: OSS术语表
              href: API-Reference/Introduction/OSS-Concepts.md 
-      - name: API 概览
-        href: API-Reference/API-Overview.md
-      - name: 通用HTTP头定义
-        items:
-           - name: 通用请求头
-             href: API-Reference/HTTP-Header/Request-Headers.md
-           - name: 公共响应头
-             href: API-Reference/Introduction/Response-Headers.md
-      - name: 访问控制
-        items:             
-           - name: 在Header中包含签名
-             href: API-Reference/Access-Control/Signature-In-Header.md
-           - name: 在URL中包含签名
-             href: API-Reference/Access-Control/Signature-In-URL.md
-      - name: 关于Service的操作
-        items:
-           - name: GetService
-             href: API-Reference/Service-Operations/GetService.md
-      - name: 关于Bucket的操作
-        items:
-           - name: PutBucket
-             href: API-Reference/Bucket-Operations/PutBucket-1.md
-           - name: GetBucket
-             href: API-Reference/Bucket-Operations/GetBucket.md             
-           - name: PutBucketReferer
-             href: API-Reference/Bucket-Operations/PutBucketReferer.md 
-           - name: GetBucketReferer
-             href: API-Reference/Bucket-Operations/GetBucketReferer.md 
-           - name: DeleteBucket
-             href: API-Reference/Bucket-Operations/DeleteBucket-1.md             
-      - name: 关于Object的操作
-        items:
-           - name: PutObject
-             href: API-Reference/Object-Operations/PutObject.md
-           - name: GetObject
-             href: API-Reference/Object-Operations/GetObject.md
-           - name: DeleteObject
-             href: API-Reference/Object-Operations/DeleteObject.md
-      - name: 关于MultipartUpload的操作
-        items:
-          - name: InitiateMultipartUpload
-            href: API-Reference/MultipartUpload-Operations/InitiateMultipartUpload.md
-          - name: UploadPart
-            href: API-Reference/MultipartUpload-Operations/UploadPart.md
-          - name: CompleteMultipartUpload
-            href: API-Reference/MultipartUpload-Operations/CompleteMultipartUpload.md
-          - name: ListMultipartUploads
-            href: API-Reference/MultipartUpload-Operations/ListMultipartUploads.md 
-          - name: AbortMultipartUpload
-            href: API-Reference/MultipartUpload-Operations/AbortMultipartUpload.md 
-          - name: ListParts
-            href: API-Reference/MultipartUpload-Operations/ListParts.md
-      - name: 错误响应
-        items:
-          - name: 错误响应列表
-            href: API-Reference/Response-To-Errors/Error-List.md
-          - name: 错误响应结构
-            href: API-Reference/Response-To-Errors/Response-Structure.md
- - name: 旧版SDK
+           - name: API 概览
+             href: API-Reference/API-Overview.md
+           - name: 通用HTTP头定义
+             items:
+               - name: 通用请求头
+                 href: API-Reference/HTTP-Header/Request-Headers.md
+               - name: 公共响应头
+                 href: API-Reference/Introduction/Response-Headers.md
+               - name: 访问控制
+                 items:             
+               - name: 在Header中包含签名
+                 href: API-Reference/Access-Control/Signature-In-Header.md
+               - name: 在URL中包含签名
+                 href: API-Reference/Access-Control/Signature-In-URL.md
+           - name:  关于Service的操作
+             items:
+               - name: GetService
+                 href: API-Reference/Service-Operations/GetService.md
+           - name: 关于Bucket的操作
+             items:
+               - name: PutBucket
+                 href: API-Reference/Bucket-Operations/PutBucket-1.md
+               - name: GetBucket
+                 href: API-Reference/Bucket-Operations/GetBucket.md             
+               - name: PutBucketReferer
+                 href: API-Reference/Bucket-Operations/PutBucketReferer.md 
+               - name: GetBucketReferer
+                 href: API-Reference/Bucket-Operations/GetBucketReferer.md 
+               - name: DeleteBucket
+                 href: API-Reference/Bucket-Operations/DeleteBucket-1.md               
+           - name: 关于Object的操作
+             items:
+              - name: PutObject
+                href: API-Reference/Object-Operations/PutObject.md
+              - name: GetObject
+                href: API-Reference/Object-Operations/GetObject.md
+              - name: DeleteObject
+                href: API-Reference/Object-Operations/DeleteObject.md
+           - name: 关于MultipartUpload的操作
+             items:
+              - name: InitiateMultipartUpload
+                href: API-Reference/MultipartUpload-Operations/InitiateMultipartUpload.md
+              - name: UploadPart
+                href: API-Reference/MultipartUpload-Operations/UploadPart.md
+              - name: CompleteMultipartUpload
+                href: API-Reference/MultipartUpload-Operations/CompleteMultipartUpload.md
+              - name: ListMultipartUploads
+                href: API-Reference/MultipartUpload-Operations/ListMultipartUploads.md 
+              - name: AbortMultipartUpload
+                href: API-Reference/MultipartUpload-Operations/AbortMultipartUpload.md 
+              - name: ListParts
+                href: API-Reference/MultipartUpload-Operations/ListParts.md
+           - name:  错误响应
+             items:
+              - name: 错误响应列表
+                href:  API-Reference/Response-To-Errors/Error-List.md 
+              - name: 错误响应结构
+                href: API-Reference/Response-To-Errors/Response-Structure.md   
+ - name: SDK文档
    items:
-      - name: Java SDK
-        items:
+       - name: 概述
+         href: API-Reference-S3-Compatible/Compatibility-Tools/Introduction-3.md   
+       - name: 兼容S3 Java SDK（推荐）
+         items:
+            - name: 安装
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Installation-S3.md
+            - name: 初始化
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Initialization-S3.md
+            - name: 简单上传
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Simple-Upload-S3.md
+            - name: 分片上传
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Multipart-Upload-S3.md              
+       - name:  兼容S3  SDK-Python（推荐）
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Python.md   
+       - name: 兼容S3  SDK-PHP
+         href:  API-Reference-S3-Compatible/Compatibility-Tools/SDK-PHP.md
+       - name:  兼容S3  SDK-Android
+         href:  API-Reference-S3-Compatible/Compatibility-Tools/SDK-Android.md
+       - name: 兼容S3  SDK-iOS
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md         
+       - name: 旧版 Java SDK（不推荐）
+         items:
            - name: 安装
              href: SDK-Reference/Java-SDK/Installation-3.md
            - name: 初始化
@@ -272,7 +278,9 @@ items:
            - name: 移动文件
              href: SDK-Reference/Java-SDK/Move-Object-3.md
            - name: 授权访问
-             href: SDK-Reference/Java-SDK/User-Signature-Authentication-3.md                          
+             href: SDK-Reference/Java-SDK/User-Signature-Authentication-3.md
+           - name: 视频转码
+             href: SDK-Reference/Java-SDK/Video-Transcoding.md
  - name: 最佳实践
    items:
       - name: 使用S3fs在Linux实例上挂载Bucket
@@ -296,4 +304,6 @@ items:
       - name: OSS线上服务快速验证工具
         href: Best-Practices/OSS-Verification-Tool.md
  - name: 常见问题
-   status: 0
+   items:
+      - name: 一般性问题
+        href: FAQ/General-Problem.md

@@ -1,6 +1,6 @@
 # 购买流程
 
-本文介绍 负载均衡 实例的购买入口。
+本文介绍 应用负载均衡 实例的购买入口。
 
 ## 入口1：[产品介绍页](https://www.jdcloud.com/products/loadbalance)
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。

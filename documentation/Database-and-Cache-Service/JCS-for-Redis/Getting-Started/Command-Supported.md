@@ -2,7 +2,8 @@
 
 
 
-云数据库Redis基于2.8.19版本，命令请参见：http://redis.io/commands
+云缓存Redis基于2.8.19版本，命令请参见：http://redis.io/commands
+
 
 
 

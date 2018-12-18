@@ -14,6 +14,6 @@
 
 **计费**
 
-京东云DevOps支持企业版（SaaS版）计费类型。详细说明请参见：产品定价
+京东云DevOps支持企业版（SaaS版）计费类型。
 
 详见[产品定价](../Pricing/Billing-Overview.md)

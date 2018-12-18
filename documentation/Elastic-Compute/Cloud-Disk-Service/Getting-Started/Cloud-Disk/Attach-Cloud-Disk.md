@@ -129,11 +129,11 @@
 
 **Linux**
 
-磁盘挂载执行成功后，您还需要登录实例，对挂载的磁盘进行分区格式化和挂载新分区。具体操作步骤，请参见[Linux分区、格式化和创建文件系统](https://www.jdcloud.com/help/detail/515/isCatalog/1)。
+磁盘挂载执行成功后，您还需要登录实例，对挂载的磁盘进行分区格式化和挂载新分区。具体操作步骤，请参见[Linux分区、格式化和创建文件系统](https://docs.jdcloud.com/cn/cloud-disk-service/linux-partition)。
 
 **Windows**
 
-磁盘挂载执行成功后，您还需要登录实例，对挂载的磁盘进行分区格式化和挂载新分区。具体操作步骤，请参见[Windows分区、格式化和创建文件系统](https://www.jdcloud.com/help/detail/515/isCatalog/1)。 
+磁盘挂载执行成功后，您还需要登录实例，对挂载的磁盘进行分区格式化和挂载新分区。具体操作步骤，请参见[Windows分区、格式化和创建文件系统](https://docs.jdcloud.com/cn/cloud-disk-service/windows-partition)。 
 
 <br>
 

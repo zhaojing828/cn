@@ -4,8 +4,3 @@
 
   京东云Web应用防火墙是基于京东商城多年的安全防护能力，结合大数据分析能力，结合集团应急响应能力，为用户提供的一款网站应用安全防护产品。
 
-### **相关参考**
-
-- [产品简介](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/Advanced-Anti-DDoS/Introduction/What-Is-Advanced-Anti-DDoS.md)
-- [产品定价](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/Advanced-Anti-DDoS/Pricing/Billing-Rules.md)
-- [常见问题](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/Advanced-Anti-DDoS/Pricing/Billing-Rules.md)

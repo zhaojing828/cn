@@ -18,11 +18,11 @@ CloudBerry下载地址：http://www.cloudberrylab.com/download-thanks.aspx?prod=
 
 步骤 1 在右侧的 Source 下拉菜单中点击“New Storage Account”，在弹框中选择S3 Compatible
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-079.jpg)
+![](../../../../image/Object-Storage-Service/OSS-079.jpg)
 
 步骤 2 在弹出的对话框中，填写相应参数：
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-080.jpg)
+![](../../../../image/Object-Storage-Service/OSS-080.jpg)
 
 Display name：显示名称，一般填自己的用户名即可。
 
@@ -30,7 +30,7 @@ Service point：填写京东云[兼容S3的服务域名]((../../API-Reference-S3
 
 Access key、Secret key：接入 OSS 服务的 AK、SK。
 
-Use SSL：是否使用 SSL。不勾选该选项。
+Use SSL：是否使用 SSL，建议勾选该选项。
 
 Use native multipart upload（recommended）：是否使用分片上传
 

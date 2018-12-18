@@ -8,7 +8,7 @@
 GET
 
 ## 请求地址
-https://monitor.jcloud.com/v1/metrics
+https://monitor.jdcloud-api.com/v1/metrics
 
 
 ## 请求参数

@@ -31,10 +31,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/importF
 ### ImportFile
 |名称|类型|描述|
 |---|---|---|
+|**importTime**|String|导入完成时间,格式为：YYYY-MM-DD HH:mm:ss<br>- 仅支持SQL Server|
 |**isLocal**|String|是否所属当前实例.<br> 1：当前实例；<br>0：不是当前实例，为共享文件|
 |**name**|String|文件名称|
 |**sharedFileGid**|String|如果该文件是共享文件，则有全局ID，如不是共享文件，则为空。该全局ID在文件删除时，需要用到|
 |**sizeByte**|Integer|文件大小，单位Byte|
+|**status**|String|文件状态<br>- 仅支持SQL Server|
 |**uploadTime**|String|文件上传完成时间，格式为：YYYY-MM-DD HH:mm:ss|
 
 ## 返回码

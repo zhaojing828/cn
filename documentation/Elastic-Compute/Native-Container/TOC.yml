@@ -11,6 +11,8 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         href: Introduction/Features.md
+      - name: 地域及可用区
+        href: Introduction/Regions-and-AvailabilityZones.md
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景 
@@ -37,26 +39,48 @@
         href: Getting-Started/Create-Images.md
       - name: 创建容器实例
         href: Getting-Started/Create-to-Instance.md
+      - name: 创建Pod
+        href: Getting-Started/Create-to-Pod.md
   - name: 操作指南
     items:
-      - name: 容器实例
+      - name: 原生容器
         items:
-          - name: 容器实例概述
+          - name: 原生容器概述
             href: Operation-Guide/Instance/Container-Instance-Overview.md
-          - name: 实例配置推荐
+          - name: 原生容器推荐
             href: Operation-Guide/Instance/Recommend-Instance.md
-          - name: 实例生命周期
+          - name: 原生容器生命周期
             href: Operation-Guide/Instance/Life-Cycle.md
-          - name: 创建实例
-            href: Operation-Guide/Instance/Create-Instance.md
-          - name: 登录实例
-            href: Operation-Guide/Instance/Login-Instance.md
-          - name: 启动实例
-            href: Operation-Guide/Instance/Start-Instance.md
-          - name: 停止实例
-            href: Operation-Guide/Instance/Stop-Instance.md
-          - name: 删除实例
-            href: Operation-Guide/Instance/Delete-Instance.md
+          - name: 实例
+            items:  
+              - name: 创建实例
+                href: Operation-Guide/Instance/Create-Instance.md
+              - name: 登录实例
+                href: Operation-Guide/Instance/Login-Instance.md
+              - name: 启动实例
+                href: Operation-Guide/Instance/Start-Instance.md
+              - name: 停止实例
+                href: Operation-Guide/Instance/Stop-Instance.md
+              - name: 删除实例
+                href: Operation-Guide/Instance/Delete-Instance.md
+          - name: Pod
+            items:  
+              - name: 创建Pod
+                href: Operation-Guide/Instance/Create-Pod.md
+              - name: 登录Pod
+                href: Operation-Guide/Instance/Login-Pod.md
+              - name: 启动Pod
+                href: Operation-Guide/Instance/Start-Pod.md
+              - name: 停止Pod
+                href: Operation-Guide/Instance/Stop-Pod.md
+              - name: 删除实例
+                href: Operation-Guide/Instance/Delete-Pod.md
+          - name: Kubernetes集群创建Pod
+            items:
+              - name: 部署Virtual-Kubelet
+                href: Operation-Guide/Instance/Deploy-Virtual-Kubelet.md
+              - name: 在Kubernetes集群中创建Pod
+                href: Operation-Guide/Instance/Create-Pod-InKubernetes.md
           - name: 日志
             href: Operation-Guide/Instance/Log.md
       - name: 网络
@@ -71,12 +95,14 @@
             href: Operation-Guide/Certified-Repository/Describe-Repository.md
           - name: 删除仓库认证信息
             href: Operation-Guide/Certified-Repository/Delete-Repository.md
-      - name: 监控预报警
+      - name: 监控与报警
         items:
           - name: 监控与报警概述
             href: Operation-Guide/Monitoring-Alarm/Overview.md
           - name: 获取实例监控数据
             href: Operation-Guide/Monitoring-Alarm/Retrieve-Data.md
+          - name: 获取Pod监控数据
+            href: Operation-Guide/Monitoring-Alarm/Retrieve-PodData.md
   - name: 最佳实践
     items:
     - name: 制作带SSH的镜像

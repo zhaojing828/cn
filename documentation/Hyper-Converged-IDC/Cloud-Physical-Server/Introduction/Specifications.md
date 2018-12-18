@@ -40,7 +40,7 @@
         <td align="center"><B>标准存储型<br/>（cps.s.normal）<B></td>
 		    <td align="center">2*2650V4<br/>（12核 2.2G）</td>
 		    <td align="center">256G（8*32G）DDR4</td>
-		    <td >1*240GB（SSD）+<br/>12*6TB（SATA）</td>
+		    <td >2*300GB（SAS）+<br/>12*6TB（SATA）</td>
 		    <td align="center">独立管理口1块+<br/>2*10GE网卡</td>
 		<td align="center">NO RAID</td>
     </tr>
