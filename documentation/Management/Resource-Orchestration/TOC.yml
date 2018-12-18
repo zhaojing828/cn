@@ -13,8 +13,8 @@ items:
       href: Introduction/Features.md
     - name: 限制说明
       href: Introduction/Restrictions.md      
-- name: 应用场景 
-  items:
+    - name: 应用场景 
+      items:
         - name: 跨区域的模板复用
           href: Introduction/Cross-regional-replication .md
         - name: 快速复制多套环境
