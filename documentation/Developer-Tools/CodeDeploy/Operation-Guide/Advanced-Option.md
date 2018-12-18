@@ -20,3 +20,4 @@
 默认选项：否
 
 
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation12.png)
