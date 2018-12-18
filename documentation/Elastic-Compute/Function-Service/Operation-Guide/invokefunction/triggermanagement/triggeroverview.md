@@ -6,7 +6,7 @@ Function Servcie是事件触发的Serverless服务，核心组件是function函�
 
  
 
-触发器配置
+触发器配置:
 
 `TriggerName`：触发器名称
 
