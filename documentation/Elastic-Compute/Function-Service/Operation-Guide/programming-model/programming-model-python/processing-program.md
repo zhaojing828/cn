@@ -1,7 +1,10 @@
 # 处理程序
 
 在创建function函数时，需要指定一个事件处理程序，并指定对象 `event`、`context` 和 `callback`。遵循以下通用的语法结构：
-
+```
+   def my_handler(event, context):
+   return 'hello world'
+   ```
    
 
 `event`:function从event参数中获取函数的输入事件，调用函数时传入的数据。此参数通常是Python dict类型。也可以是list、str、int、float或NoneType类型。您可以根据function定义好的格式编写代码从event参数中获取需要的信息。
