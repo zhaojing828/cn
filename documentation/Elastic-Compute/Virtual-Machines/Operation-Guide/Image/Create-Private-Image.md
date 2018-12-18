@@ -24,7 +24,8 @@
 7. 制作镜像过程中，任一资源创建失败均会导致镜像为“错误”状态，如选择了主机挂载的数据盘制作整机镜像，则操作失败会自动删除此次操作创建的所有快照，私有镜像需要您自行确认后删除。
 ![](../../../../../image/vm/Operation-Guide-Image-create4.png)
  
- ## 相关参考
+ 
+## 相关参考
  
 [镜像类型转换](Convert-Image.md)
  
@@ -36,4 +37,5 @@
   [3]: ./images/Operation-Guide-Image-create1.png "Operation-Guide-Image-create1.png"
   [4]: ./images/Operation-Guide-Image-create2.png "Operation-Guide-Image-create2.png"
   [5]: ./images/Operation-Guide-Image-create3.png "Operation-Guide-Image-create3.png"
+
   [6]: ./images/Operation-Guide-Image-create4.png "Operation-Guide-Image-create4.png"
