@@ -18,5 +18,5 @@
 配置好映射关系后,点击确认完成归档设置<br><br>
 
 **异常数据处理:**<br>
-![消息样式](https://github.com/jdcloudcom/cn/blob/edit/image/DataBus/db-011.png?raw=true)<br><br>
+![异常数据](https://github.com/jdcloudcom/cn/blob/edit/image/DataBus/db-011.png?raw=true)<br><br>
 当在数据归档时遇到异常数据, 您可以开启上图中的 “忽略异常数据,并保存” , 异常数据可以保存到京东云对象存储
