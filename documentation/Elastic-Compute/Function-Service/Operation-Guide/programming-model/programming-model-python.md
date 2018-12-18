@@ -109,4 +109,4 @@ def lambda_handler(event, context):
   return 'Hello World!'`   
 ```  
 
-在此示例中，仅将传递到打印方法的文本发送到日志服务。日志条目将不会具有 `logging.*` 函数返回的额外信息。
+在此示例中，仅将打印文本发送到日志服务。日志条目将不会包含 `logging.*` 函数返回的额外信息。
