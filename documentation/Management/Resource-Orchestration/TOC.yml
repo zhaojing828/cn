@@ -89,8 +89,7 @@ items:
     - name: 故障类问题
       href: Troubleshooting/Fault-problem.md
 - name: 常见问题
-  items:
-    href: FAQ/FAQ.md
+  href: FAQ/FAQ.md
 - name: API参考
   items:
     - name: API使用说明
