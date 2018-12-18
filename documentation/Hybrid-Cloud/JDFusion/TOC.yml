@@ -51,3 +51,8 @@ items:
       href: Operation-Guide/jdfusion-http-description.md  
       - name: 其他相关命令
       href: Operation-Guide/jdfusion-other-description.md
+      
+      - name: 历史发布
+  items:
+    - name: 文档历史发布
+      href: Related-Resources/Document-History.md
