@@ -78,6 +78,7 @@ Context对象属性
 
 您可以通过使用`logging`模块将信息写入函数日志，示例如下： 
 
+```
 import logging
 
 logger = logging.getLogger()
@@ -86,11 +87,13 @@ logger.setLevel(logging.INFO)
 
 def my_logging_handler(event, context):
 
-* logger.info('got event{}'.format(event))
+  logger.info('got event{}'.format(event))
 
-* logger.error('something is error')
+  logger.error('something is error')
 
 return 'function is worked'  
+```
+
 
  
 
@@ -100,12 +103,14 @@ return 'function is worked'
 
 您可以通过`print`语句打印函数日志，示例如下：
 
+```
 from __future__ import print_function
 
 def lambda_handler(event, context):
 
-* print('it is running')
+  print('it is running')`
 
-* return 'Hello World!'   
+  return 'Hello World!'`   
+```  
 
 在此示例中，仅将传递到打印方法的文本发送到日志服务。日志条目将不会具有 `logging.*` 函数返回的额外信息。
