@@ -81,9 +81,9 @@
           - name: importKeypair
             href: SSH-Keypair/importKeypair.md
           - name: describeKeypairs
-            href：SSH-Keypair/describeKeypairs.md
-          - name；deleteKeypair
-            href：SSH-Keypair/deleteKeypair.md
+            href: SSH-Keypair/describeKeypairs.md
+          - name: deleteKeypair
+            href: SSH-Keypair/deleteKeypair.md
       - name: 规格类型
         items:
           - name: describeInstanceTypes
