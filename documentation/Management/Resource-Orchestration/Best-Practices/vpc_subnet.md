@@ -28,114 +28,114 @@
 ## 示例模板：
 ```  
 {
-    "JDCLOUDTemplateFormatVersion": "2018-10-01",
-    "Description": "JDRO VPC_SUBNET TEMPLATE",
-    "Parameters": {
-        "VPCName": {
-            "Default": "vpc",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "The VPC Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen ."
-        },
-        "SubnetName": {
-            "Default": "subnet",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "My Subnet Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline and hyphen ."
+  "JDCLOUDTemplateFormatVersion": "2018-10-01",
+  "Description": "JDRO VPC_SUBNET TEMPLATE",
+  "Parameters": {
+    "VPCName": {
+      "Default": "vpc",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "Define the VPC Name. It cannot be same as an existing VPC name, otherwise the resource will fail to be created",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen ."
+    },
+    "SubnetName": {
+      "Default": "subnet",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "Define the Subnet Name. It cannot be same as an existing Subnet name, otherwise the resource will fail to be created",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen ."
+    },
+    "AddressPrefix": {
+      "Default": "10.0.0.0/16",
+      "Type": "String",
+      "Description": "Give an CIDR",
+      "AllowedValues": [
+        "192.168.0.0/16",
+        "172.16.0.0/16",
+        "10.0.0.0/16"
+      ],
+      "ConstraintDescription": "Need give an exact CIDR."
+    }
+  },
+  "Mappings": {
+    "AZInfo": {
+      "cn-north-1": {
+        "az1": "cn-north-1a",
+        "az2": "cn-north-1b"
+      },
+      "cn-east-1": {
+        "az1": "cn-east-1a"
+      },
+      "cn-east-2": {
+        "az1": "cn-east-2a",
+        "az2": "cn-east-2b"
+      },
+      "cn-south-1": {
+        "az1": "cn-south-1a"
+      }
+    },
+    "ImageInfo": {
+      "cn-north-1": {
+        "image": "img-2qz094wxaz"
+      },
+      "cn-east-1": {
+        "image": "img-nfrxl97pal"
+      },
+      "cn-east-2": {
+        "image": "img-ssazsh60t6"
+      },
+      "cn-south-1": {
+        "image": "img-xkjedl0lgm"
+      }
+    }
+  },
+  "Resources": {
+    "MyVPC": {
+      "Type": "JDCLOUD::VPC::VPC",
+      "Properties": {
+        "VpcName": {
+          "Ref": "VPCName"
+        }
+      }
+    },
+    "MySubnet": {
+      "Type": "JDCLOUD::VPC::Subnet",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVPC"
         },
         "AddressPrefix": {
-            "Default": "10.0.0.0/16",
-            "Type": "String",
-            "Description": "Give an CIDR",
-            "AllowedValues": [
-                "192.168.0.0/16",
-                "172.16.0.0/16",
-                "10.0.0.0/16"
-            ],
-            "ConstraintDescription": "Need give an exact CIDR."
-        }
-    },
-    "Mappings": {
-        "AZInfo": {
-            "cn-north-1": {
-                "az1": "cn-north-1a",
-                "az2": "cn-north-1b"
-            },
-            "cn-east-1": {
-                "az1": "cn-east-1a"
-            },
-            "cn-east-2": {
-                "az1": "cn-east-2a",
-                "az2": "cn-east-2b"
-            },
-            "cn-south-1": {
-                "az1": "cn-south-1a"
-            }
+          "Ref": "AddressPrefix"
         },
-        "ImageInfo": {
-            "cn-north-1": {
-                "image": "img-2qz094wxaz"
-            },
-            "cn-east-1": {
-                "image": "img-nfrxl97pal"
-            },
-            "cn-east-2": {
-                "image": "img-wcewkxc5c1"
-            },
-            "cn-south-1": {
-                "image": "img-xkjedl0lgm"
-            }
+        "SubnetName": {
+          "Ref": "SubnetName"
         }
-    },
-    "Resources": {
-        "MyVPC": {
-            "Type": "JDCLOUD::VPC::VPC",
-            "Properties": {
-                "VpcName": {
-                    "Ref": "VPCName"
-                }
-            }
-        },
-        "MySubnet": {
-            "Type": "JDCLOUD::VPC::Subnet",
-            "Properties": {
-                "VpcId": {
-                    "Ref": "MyVPC"
-                },
-                "AddressPrefix": {
-                    "Ref": "AddressPrefix"
-                },
-                "SubnetName": {
-                    "Ref": "SubnetName"
-                }
-            }
-        }
-    },
-    "Outputs": {
-        "VPC_ID": {
-            "Value": {
-                "Ref": "MyVPC"
-            }
-        },
-        "Subnet_ID": {
-            "Value": {
-                "Ref": "MySubnet"
-            }
-        },
-        "Subnet_AddressPrefix": {
-            "Value": {
-                "Fn::GetAtt": [
-                    "MySubnet",
-                    "AddressPrefix"
-                ]
-            }
-        }
+      }
     }
+  },
+  "Outputs": {
+    "VPC_ID": {
+      "Value": {
+        "Ref": "MyVPC"
+      }
+    },
+    "Subnet_ID": {
+      "Value": {
+        "Ref": "MySubnet"
+      }
+    },
+    "Subnet_AddressPrefix": {
+      "Value": {
+        "Fn::GetAtt": [
+          "MySubnet",
+          "AddressPrefix"
+        ]
+      }
+    }
+  }
 }
 ```

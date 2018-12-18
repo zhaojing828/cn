@@ -1,4 +1,4 @@
-﻿  name: 服务链路
+﻿  name: 服务链路 ServiceLink
   href: 
   items:
   - name: 产品简介
@@ -19,54 +19,74 @@
     items:
       - name: 计费概述
         href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md 
   - name: 入门指南
     items:
-      - name: 业务流量分离
-        href: Getting-Started/Business-Traffic-Separation.md
-      - name: 高可用应用
-        href: Getting-Started/High-Availability-Scenario.md
-      - name: 云主机承载多业务
-        href: Getting-Started/VM-with-Multiple-Businesses.md
+      - name: 服务链路基础教程
+        href: Getting-Started/Service-Link-Fundamental-Tutorial.md
   - name: 操作指南
     items:
-      - name: 弹性网卡管理
+      - name: 服务后端
         items:
-          - name: 创建弹性网卡
-            href: Operation-Guide/Elastic-Network-Interface-Management/Create-Elastic-Network-Interface.md
-          - name: 删除弹性网卡
-            href: Operation-Guide/Elastic-Network-Interface-Management/Delete-Elastic-Network-Interface.md
-          - name: 绑定弹性网卡
-            href: Operation-Guide/Elastic-Network-Interface-Management/Associate-Elastic-Network-Interface.md
-          - name: 解绑弹性网卡
-            href: Operation-Guide/Elastic-Network-Interface-Management/Disassociate-Elastic-Network-Interface.md
-          - name: 启用弹性网卡随实例删除
-            href: Operation-Guide/Elastic-Network-Interface-Management/Enable-Delete-with-VM.md
-          - name: 取消弹性网卡随实例删除
-            href: Operation-Guide/Elastic-Network-Interface-Management/Disable-Delete-with-VM.md
-      - name: 内网IP管理
+          - name: 创建服务后端
+            href: Operation-Guide/Service-Backend/Create-Service-Backend.md
+          - name: 删除服务后端
+            href: Operation-Guide/Service-Backend/Delete-Service-Backend.md
+          - name: 接受连接
+            href: Operation-Guide/Service-Backend/Accept-Service-Endpoint-Connection.md
+          - name: 拒绝连接
+            href: Operation-Guide/Service-Backend/Reject-Service-Endpoint-Connection.md
+          - name: 批量接受连接
+            href: Operation-Guide/Service-Backend/Batch-Accept-Service-Endpoint-Connection.md
+          - name: 批量拒绝连接
+            href: Operation-Guide/Service-Backend/Batch-Reject-Service-Endpoint-Connection.md
+          - name: 启用自动接受连接
+            href: Operation-Guide/Service-Backend/Enable-Service-Backend-Auto-Accept.md
+          - name: 停用自动接受连接
+            href: Operation-Guide/Service-Backend/Disable-Service-Backend-Auto-Accept.md
+          - name: 添加白名单用户
+            href: Operation-Guide/Service-Backend/Add-White-List-User.md
+          - name: 移除白名单用户
+            href: Operation-Guide/Service-Backend/Remove-White-List-User.md
+          - name: 批量添加白名单用户
+            href: Operation-Guide/Service-Backend/Batch-Add-White-List-User.md
+          - name: 批量移除白名单用户
+            href: Operation-Guide/Service-Backend/Batch-Remove-White-List-User.md
+      - name: 服务端点
         items:
-          - name: 分配内网IP
-            href: Operation-Guide/Private-IP-Management/Assign-Secondary-IP.md
-          - name: 释放内网IP
-            href: Operation-Guide/Private-IP-Management/Unassign-Secondary-IP.md
-          - name: 绑定弹性公网IP
-            href: Operation-Guide/Private-IP-Management/Associate-Elastic-IP.md
-          - name: 解绑弹性公网IP
-            href: Operation-Guide/Private-IP-Management/Disassociate-Elastic-IP.md
-      - name: 安全组管理
-        items:
+          - name: 创建服务端点
+            href: Operation-Guide/Service-Endpoint/Create-Service-Endpoint.md
+          - name: 删除服务端点
+            href: Operation-Guide/Service-Endpoint/Delete-Service-Endpoint.md
           - name: 添加安全组
-            href: Operation-Guide/Security-Group-Management/Associate-Security-Group.md
+            href: Operation-Guide/Service-Endpoint/Add-Security-Group.md
           - name: 移除安全组
-            href: Operation-Guide/Security-Group-Management/Disassociate-Security-Group.md
-      - name: 云主机配置
-        items:
-          - name: Linux临时配置
-            href: Operation-Guide/VM-Configuration/Linux-Temporary-Configuration.md    
-          - name: Linux永久配置
-            href: Operation-Guide/VM-Configuration/Linux-Permanent-Configuration.md   
+            href: Operation-Guide/Service-Endpoint/Remove-Security-Group.md
+          - name: 查看监控数据
+            href: Operation-Guide/Service-Endpoint/View-Monitoring-Data.md  
+  - name: 最佳实践
+    items:
+    status: 0
+  - name: 问题排查
+    items:
+    status: 0      
   - name: 常见问题
-    href: FAQ/FAQ.md         
+    href: FAQ/FAQ.md
+  - name: API参考
+    href:
+    status: 0      
+  - name: SDK参考
+    href:
+    status: 0      
+  - name: 用户协议
+    items:
+    - name: 服务条款
+      href: User-Agreements/Product-Terms-of-Service.md          
   - name: 相关资源
     items:
     - name: 文档历史记录

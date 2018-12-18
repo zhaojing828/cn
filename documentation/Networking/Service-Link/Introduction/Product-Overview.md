@@ -49,8 +49,8 @@
 
 ### 服务端点
 
-- [创建服务后端](../Operation-Guide/Service-Endpoint/Create-Service-Endpoint.md)
-- [删除服务后端](../Operation-Guide/Service-Endpoint/Delete-Service-Endpoint.md)
+- [创建服务端点](../Operation-Guide/Service-Endpoint/Create-Service-Endpoint.md)
+- [删除服务端点](../Operation-Guide/Service-Endpoint/Delete-Service-Endpoint.md)
 - [添加安全组](../Operation-Guide/Service-Endpoint/Add-Security-Group.md)
 - [移除安全组](../Operation-Guide/Service-Endpoint/Remove-Security-Group.md)
 - [查看监控数据](../Operation-Guide/Service-Endpoint/View-Monitoring-Data.md)
