@@ -27,7 +27,7 @@
 
 * 如果您使用 Event 调用类型（异步调用），则丢弃该值。
 
-例如：一个函数名为 my_handler 的函数。代码从event参数接收输入事件并返回包含数据的消息。
+例如：创建一个函数名为 my_handler 的函数，入口函数设置为index.handler。执行代码从event参数接收输入事件并返回包含数据的消息。
 ```
  def my_handler(event, context):
     message = 'Hello {} {}!'.format(event['first_name'], 
