@@ -1,37 +1,37 @@
-name: ¶ÌĞÅ·şÎñ
-href: 
+name: çŸ­ä¿¡æœåŠ¡
+href:
 items:
-- name: ²úÆ·¼ò½é
+- name: äº§å“ç®€ä»‹
   items:
-    - name: ²úÆ·¸ÅÊö
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Introduction/Overview.md
-    - name: Ãû´Ê½âÊÍ
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Introduction/Glossary.md
-    - name: ÉóºË±ê×¼
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Introduction/standard.md
-- name: ²úÆ·¶¨¼Û
+    - name: äº§å“æ¦‚è¿°
+      href: Introduction/Overview.md
+    - name: åè¯è§£é‡Š
+      href: Introduction/Glossary.md
+    - name: å®¡æ ¸æ ‡å‡†
+      href: Introduction/standard.md
+- name: äº§å“å®šä»·
   items:
-    - name: ¼Û¸ñ×ÜÀÀ
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Pricing/Price-Overview.md
-- name: ÈëÃÅÖ¸ÄÏ
+    - name: ä»·æ ¼æ€»è§ˆ
+      href: Pricing/Price-Overview.md
+- name: å…¥é—¨æŒ‡å—
   items:
-    - name: Ó¦ÓÃ¹ÜÀí
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Getting-Started/Application.md
-- name: ²Ù×÷Ö¸ÄÏ
+    - name: åº”ç”¨ç®¡ç†
+      href: Getting-Started/Application.md
+- name: æ“ä½œæŒ‡å—
   items:
-    - name: ÒµÎñ¹æÔò
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/rule.md
-    - name: ¶ÌĞÅÇ©Ãû
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/signature.md
-    - name: ¶ÌĞÅÄ£°å
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/content.md
-    - name: ·¢ËÍ¶ÌĞÅ
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/send.md
-    - name: Í³¼Æ·ÖÎö
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Operation-Guide/stat.md
-- name: Ïà¹ØĞ­Òé
+    - name: ä¸šåŠ¡è§„åˆ™
+      href: Operation-Guide/rule.md
+    - name: çŸ­ä¿¡ç­¾å
+      href: Operation-Guide/signature.md
+    - name: çŸ­ä¿¡æ¨¡æ¿
+      href: Operation-Guide/content.md
+    - name: å‘é€çŸ­ä¿¡
+      href: Operation-Guide/send.md
+    - name: ç»Ÿè®¡åˆ†æ
+      href: Operation-Guide/stat.md
+- name: ç›¸å…³åè®®
   items:
-    - name: ·şÎñĞ­Òé
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Service-Agreements-and-Guarantees/Short-Message-Service-Term.md
-    - name: SLA·şÎñµÈ¼¶Ğ­Òé
-      href: https://github.com/jdcloudcom/cn/blob/cn-sl-duanxin/documentation/Cloud-Communication/Short-Message-Service/Service-Agreements-and-Guarantees/Short-Message-Service-SLA.md
+    - name: æœåŠ¡åè®®
+      href: Service-Agreements-and-Guarantees/Short-Message-Service-Term.md
+    - name: SLAæœåŠ¡ç­‰çº§åè®®
+      href: Service-Agreements-and-Guarantees/Short-Message-Service-SLA.md
