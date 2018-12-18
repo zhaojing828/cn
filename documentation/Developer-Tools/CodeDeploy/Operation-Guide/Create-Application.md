@@ -12,6 +12,6 @@
 - 平台：目前仅支持“云主机”
 - 应用描述：非必填，请填写应用的描述信息
 
-
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation18.png)
 
 接下来，在应用中新建部署组，详见“操作指南-在应用中创建部署组”。
