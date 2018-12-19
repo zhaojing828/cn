@@ -2,11 +2,11 @@
 
 对象存储服务（OSS：Object Storage Service）是京东云自主研发的大规模分布式对象存储服务，面向企业和个人开发者提供高可用、低成本、强安全的云端存储服务。您可以实现对数据的统一管理，满足各类存储需求。
 
- 
+  
 
 **OSS事件定义**
 
-当OSS系统捕获到相关事件后，会将事件信息编码为JSON字符串，传递给事件处理函数OSS当前的事件触发类型与OSS支持事件类型相同，见表1。
+当OSS系统捕获到相关事件后，会将事件信息编码为JSON字符串，传递给事件处理函数OSS当前的事件触发类型与[OSS回调通知](../../../../../../../documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Callback-Notification-2.md )支持事件类型相同，见表1。
 
 表1 OSS支持事件类型
 
