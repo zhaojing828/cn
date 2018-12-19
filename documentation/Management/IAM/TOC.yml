@@ -15,8 +15,6 @@ items:
         href: Introduction/Restrictions.md
       - name: 支持IAM的云产品
         href: Introduction/Support-Services.md
-      - name: 支持IAM的云产品JRN示例
-        href: Introduction/Jrn-Sample.md
   - name: 操作指南
     items:
       - name: 身份管理
