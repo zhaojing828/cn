@@ -4,6 +4,8 @@
 
 ![wholepage](../../../../image/Tag/Taglist/wholepage.png)
 
+[JDCLOUD.COM](WWW.JDCLOUD.COM)
+
 ## 搜索
 
 您可以在右上方的搜索栏中，按照“标签键”或“标签值”对标签进行搜索，以找到您所想找寻的标签键或值，及它们绑定的资源。
