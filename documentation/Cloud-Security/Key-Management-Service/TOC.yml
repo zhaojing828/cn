@@ -33,6 +33,8 @@ items:
           href: Operation-Guide/Key-Management/Key-Encrypt.md
         - name: 删除密钥
           href: Operation-Guide/Key-Management/Key-Delete.md
+        - name: 密钥状态
+          href: Operation-Guide/Key-Management/Key-Status.md
         - name: 在线工具
           href: Operation-Guide/Key-Management/Key-Tools.md
     - name: 机密数据
