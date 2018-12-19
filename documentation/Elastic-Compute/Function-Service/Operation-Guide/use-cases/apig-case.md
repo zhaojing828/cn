@@ -4,15 +4,22 @@
 本示例对 API 网关触发函数计算的使用步骤进行详细介绍。
 本示例介绍如何配置API网关触发器，使用API网关函数模板，实现上传本地文件至指定OSS Bucket中。
 
-创建API 
-
-创建触发器前，请您先开通API网关服务，并创建一个region为华北-北京的API。
-
-创建函数
+**创建API** 
 
 
+1．创建触发器前，请您先开通API网关服务，并创建一个region为华北-北京的API。
 
-测试函数
+2．登陆API控制台，创建API分组及API
+
+详细操作指南参见[API网关操作指南](../../../../../documentation/Middleware/API-Gateway/Operation-Guide/Create-APIGroup/Create-APIGroup.md  )。
+
+完成API创建。
+
+**创建函数**
 
 
-创建API网关触发器
+
+**测试函数**
+
+
+**创建API网关触发器**
