@@ -28,17 +28,17 @@
       - name: 创建云主机
         href: Getting-Started/Create-VM.md
       - name: 新建应用及部署组
-        href: Getting-Started/Create-Application.md
+        href: Getting-Started/Create-Application1.md
       - name: 新建部署
-        href: Getting-Started/Create-Deployment.md
+        href: Getting-Started/Create-Deployment1.md
       - name: 查看部署详情
-        href: Getting-Started/Details.md
+        href: Getting-Started/Details1.md
   - name: 操作指南
     items:
       - name: 部署应用列表
         href: Operation-Guide/Deployment-Application-List.md
       - name: 新建应用
-        href: Operation-Guide/Create-Application.md
+        href: Operation-Guide/Create-Application2.md
       - name: 在应用中新建部署组
         href: Operation-Guide/Create-Deployment-Group.md
       - name: 部署类型
@@ -52,11 +52,11 @@
       - name: 编辑部署组
         href: Operation-Guide/Edit-Deployment-Group.md
       - name: 新建部署
-        href: Operation-Guide/Create-Deployment.md
+        href: Operation-Guide/Create-Deployment2.md
       - name: 部署历史
         href: Operation-Guide/Deployment-History.md
       - name: 部署详情
-        href: Operation-Guide/Details.md
+        href: Operation-Guide/Details2.md
       - name: 部署工作流
         href: Operation-Guide/Workflow.md
       - name: AppSec文件
