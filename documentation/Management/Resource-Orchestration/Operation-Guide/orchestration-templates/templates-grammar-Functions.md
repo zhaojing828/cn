@@ -4,31 +4,31 @@
 
 JDRO 提供多个内置函数帮助您管理您的堆栈。可以在模板中资源（Resources) 和输出 (Outputs) 时使用。
 
-[Fn::Base64](#fnbase64)
+[Fn::Base64](templates-grammar-Functions#Base64)
 
-[Fn::FindInMap](#fnfindinmap)
+[Fn::FindInMap](templates-grammar-Functions#FindInMap)
 
-[Fn::GetAtt](#fngetatt)
+[Fn::GetAtt](templates-grammar-Functions#GetAtt)
 
-[Fn::Join](#fnjoin)
+[Fn::Join](templates-grammar-Functions#Join)
 
-[Fn::Select](#fnselect)
+[Fn::Select](templates-grammar-Functions#Select)
 
-[Fn::Split](#fnsplit)
+[Fn::Split](templates-grammar-Functions#Split)
 
-[Fn::Sub](#fnsub)
+[Fn::Sub](templates-grammar-Functions#Sub)
 
-[Ref](#ref)
+[Ref](templates-grammar-Functions#Ref)
 
-[Fn::And](#fnand)
+[Fn::And](templates-grammar-Functions#And)
 
-[Fn::Equals](#fnequals)
+[Fn::Equals](templates-grammar-Functions#Equals)
 
-[Fn::If](#fnif)
+[Fn::If](templates-grammar-Functions#If)
 
-[Fn::Not](#fnnot)
+[Fn::Not](templates-grammar-Functions#Not)
 
-[Fn::Or](#fnor)
+[Fn::Or](templates-grammar-Functions#Or)
 
 ---
 
@@ -244,6 +244,7 @@ index：待检索数据元的索引。0 到 N-1 之间的某个值（其中 N �
 ---
 
 ## Ref
+<div id="Ref"></div>
 内部函数 Ref 返回指定参数或资源的值。
 
 如果指定参数是资源逻辑ID，则返回资源的值。否则系统将认为指定参数是参数，将尝试返回参数的值。
