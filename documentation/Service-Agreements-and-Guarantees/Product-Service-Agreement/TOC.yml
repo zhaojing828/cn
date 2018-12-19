@@ -76,6 +76,10 @@ items:
     href: Message-Queuing-JCQ-Service-Level-Protocol-SLA.md
   - name: 分布式关系数据库DRDS试用服务协议
     href: Distributed-Relational-Database-DRDS-Trial-Service-Clause.md
+  - name: 分布式关系数据库DRDS服务协议
+    href: Distributed-Relational-Database-DRDS-Service-Clause.md
+  - name: 分布式关系数据库DRDS服务等级协议（SLA）
+    href: Distributed-Relational-Database-DRDS-Service-Level-Agreement-SLA.md
   - name: DDoS防护包服务条款
     href: DDoS-Protection-Package-Terms-Of-Service.md
   - name: DDoS防护包服务等级协议(SLA)
