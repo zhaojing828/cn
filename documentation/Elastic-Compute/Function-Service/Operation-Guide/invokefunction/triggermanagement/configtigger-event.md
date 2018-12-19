@@ -8,7 +8,7 @@
 
 **配置触发器**
 
-**触发器示例**：ossTrigger.yml
+触发器示例：ossTrigger.yml
 
 ```
 triggerConfig:
