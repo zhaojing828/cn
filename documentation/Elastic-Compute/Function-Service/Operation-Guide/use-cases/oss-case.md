@@ -7,7 +7,7 @@
 本示例介绍如何配置OSS触发器，使用OSS函数模板，实现上传本地文件至指定OSS Bucket中。
 
  
-创建OSS Bucket
+**创建OSS Bucket**
 
 1．   创建触发器前，请您先开通OSS对象存储服务，并创建一个region为华北-北京的Bucket
 
@@ -16,6 +16,7 @@
 3．   在新创建的Bucket中的Object中，选择“新建文件夹”，文件夹名称命名为filesource。
 
 4．   在filesource文件夹中，上传一个名为test.txt的文件。
+详细步骤参见[创建存储空间](../../../../../documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md )。
 
 完成OSS Bucket创建及对象上传。
 
