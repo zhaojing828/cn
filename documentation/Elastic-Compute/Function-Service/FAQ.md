@@ -54,13 +54,13 @@ serverless 服务的突出的优点就是可弹性伸缩所需资源，函数服
 
 Function函数是否支持环境变量？
 
-创建函数时可以设置环境变量，无需对代码进行任何更改，可以设置动态参数，传递到函数代码和库，请参考使用[环境变量](../Function-Service/Operation-Guide/version.md)。
+创建函数时可以设置环境变量，无需对代码进行任何更改，可以设置动态参数，传递到函数代码和库，请参考使用[环境变量](../Function-Service/Operation-Guide/ENV-variable.md )。
 
  
 
 Function函数是否支持版本控制？
 
-Function函数支持版本控制。默认情况下，每个函数拥有单一的当前版本（latest）的代码。函数客户端可调用特定的版本或获取最新的实现，请参考[版本管理](../Function-Service/Operation-Guide/ENV-variable.md )。
+Function函数支持版本控制。默认情况下，每个函数拥有单一的当前版本（latest）的代码。函数客户端可调用特定的版本或获取最新的实现，请参考[版本管理](../Function-Service/Operation-Guide/version.md)。
 
  
 
