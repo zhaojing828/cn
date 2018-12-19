@@ -47,7 +47,7 @@
 #### Parameters（可选）
 　　定义创建资源栈时，模板用户可以定制化的参数。在运行时 (创建或更新堆栈时) 传递到模板。您可在模板的 Resources 和 Outputs 部分中引用定义的这些参数。使用参数可以增强模板的灵活性，提高复用性。
 
-　　更多详细信息，请参见 [参数（Parameters）](#参数parameters)。
+　　更多详细信息，请参见 [参数（Parameters）](../Operation-Guide/orchestration-templates/templates-grammar-Parameters.md)。
 
 #### Mappings（可选）
 　　可用来指定条件参数值的密钥和关键值的映射，与查找表类似。您可通过使用 Resources 和 Outputs 部分中的 Fn::FindInMap 内部函数将键与相应的值匹配。
