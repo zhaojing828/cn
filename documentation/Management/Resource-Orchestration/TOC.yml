@@ -4,7 +4,7 @@ items:
 - name: 产品简介
   items:
     - name: 产品概述
-      href: Introduction/Product-overview .md
+      href: Introduction/Product-overview.md
     - name: 核心概念
       href: Introduction/Core-Concepts.md
     - name: 产品优势
@@ -16,7 +16,7 @@ items:
     - name: 应用场景 
       items:
         - name: 跨区域的模板复用
-          href: Introduction/Cross-regional-replication .md
+          href: Introduction/Cross-regional-replication.md
         - name: 快速复制多套环境
           href: Introduction/Fast-Clone.md
         - name: 应用一键上云
@@ -87,10 +87,9 @@ items:
     - name: 配置类问题
       href: Troubleshooting/Configuration-problem.md
     - name: 故障类问题
-      href: Troubleshooting/Fault-problem .md
+      href: Troubleshooting/Fault-problem.md
 - name: 常见问题
-  items:
-    href: FAQ/FAQ.md
+  href: FAQ/FAQ.md
 - name: API参考
   items:
     - name: API使用说明
@@ -101,5 +100,5 @@ items:
     - name: 文档历史记录
       href: Related-Resources/Document-history.md
     - name: 词汇表
-      href: Related-Resources/ vocabulary .md 
+      href: Related-Resources/vocabulary.md 
 
