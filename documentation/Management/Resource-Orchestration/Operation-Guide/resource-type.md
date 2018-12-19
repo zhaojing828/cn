@@ -7,7 +7,7 @@
 ## 支持的资源类型列表
 
  | 资源类型 | 描述 | 
- |---|---|
+ |:-----|:-----|
  |JDCLOUD::VM::Instance |创建云主机实例 |
  |JDCLOUD::VM::Disk | 创建云硬盘|
  |JDCLOUD::VM::AttachDisk| 将已有硬盘挂载到运行中的实例 | 
