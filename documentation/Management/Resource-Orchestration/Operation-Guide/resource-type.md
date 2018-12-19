@@ -27,9 +27,7 @@
 ### 云主机
 #### 云主机Userdata 使用指南
 
-关于云主机的Userdata功能，请参考<[云主机Userdata介绍链接]()>
-
-创建云主机过程中，如果需要使用云主机的Userdata功能，同时监控传入的Userdata脚本执行结果，用户可以使用资源编排提供的 JDCLOUD::ResourceOrchestration::WaitConditionHandle 和 JDCLOUD::ResourceOrchestration::WaitCondition。 详见 <[资源类型列表]()>
+创建云主机过程中，如果需要使用云主机的Userdata功能，同时监控传入的Userdata脚本执行结果，用户可以使用资源编排提供的 JDCLOUD::ResourceOrchestration::WaitConditionHandle 和 JDCLOUD::ResourceOrchestration::WaitCondition。 
 
 ##### 资源编排Userdata Linux 脚本示例
 
