@@ -35,7 +35,7 @@ Resources 由资源逻辑 ID 和资源描述组成。请参见以下 Resources �
 
 #### 资源类型（Type）
 
-资源类型表示正在声明的资源的类型。例如，JDCLOUD::VM::Instance 表示京东云vm实例。有关 JDRO 支持的所有资源类型列表和详细信息，请参见 [资源类型列表](https://github.com/jdcloudcom/cn/blob/jdro/documentation/Management/Resource-Orchestration/Operation-Guide/resource-type.md)。
+资源类型表示正在声明的资源的类型。例如，JDCLOUD::VM::Instance 表示京东云vm实例。有关 JDRO 支持的所有资源类型列表和详细信息，请参见 [资源类型列表](https://github.com/jdcloudcom/cn/blob/edit/documentation/Management/Resource-Orchestration/Operation-Guide/resource-type.md)。
 
 #### 创建条件（Condition）
 在模板中，使用 Condition 属性可以指定是否需要创建此资源。只有 Condition 所指定的条件值为 true 时，才会创建此资源。
