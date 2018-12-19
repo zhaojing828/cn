@@ -79,9 +79,6 @@ items:
       href: Best-Practices/wordpress_with_cluster.md
     - name: 创建一个Nodejs Web开发测试环境
       href: Best-Practices/nodejs_web_instance.md
-- name: 教程
-  items:
-  status: 0
 - name: 问题排查
   items:
     - name: 配置类问题
@@ -90,11 +87,6 @@ items:
       href: Troubleshooting/Fault-problem.md
 - name: 常见问题
   href: FAQ/FAQ.md
-- name: API参考
-  items:
-    - name: API使用说明
-      href: API-Reference/Overview.md
-  status: 0
 - name: 相关资源
   items:
     - name: 文档历史记录
