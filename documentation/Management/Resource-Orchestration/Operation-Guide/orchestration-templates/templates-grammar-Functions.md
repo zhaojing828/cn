@@ -31,9 +31,8 @@ JDRO 提供多个内置函数帮助您管理您的堆栈。可以在模板中资
 [Fn::Or](templates-grammar-Functions#Or)
 
 ---
-
-## Fn::Base64
 <div id="base64"></div>
+## Fn::Base64
 内部函数 Fn::Base64 返回输入字符串的 Base64 编码结果。
 
 ### 声明
@@ -55,8 +54,8 @@ JDRO 提供多个内置函数帮助您管理您的堆栈。可以在模板中资
 
 ---
 
-## Fn::FindInMap
 <div id="findinmap"></div>
+## Fn::FindInMap
 内部函数 Fn::FindInMap 返回与 Mappings 声明的双层映射中的键对应的值。
 
 ### 声明
@@ -102,8 +101,8 @@ JDRO 提供多个内置函数帮助您管理您的堆栈。可以在模板中资
 
 ---
 
-## Fn::GetAtt
 <div id="getatt"></div>
+## Fn::GetAtt
 内部函数 Fn::GetAtt 返回模板中的资源的属性值。
 
 ### 声明
@@ -128,8 +127,8 @@ JDRO 提供多个内置函数帮助您管理您的堆栈。可以在模板中资
 
 ---
 
-## Fn::Join
 <div id="join"></div>
+## Fn::Join
 内部函数 Fn::Join 将一组值连接起来，用特定分隔符隔开。
 
 ### 声明
@@ -155,8 +154,8 @@ JDRO 提供多个内置函数帮助您管理您的堆栈。可以在模板中资
 
 ---
 
-## Fn::Select
 <div id="select"></div>
+## Fn::Select
 内部函数 Fn::Select 通过索引返回数据元列表中的单个数据元。
 
 ### 声明
@@ -178,8 +177,8 @@ index：待检索数据元的索引。0 到 N-1 之间的某个值（其中 N �
 
 ---
 
-## Fn::Split
 <div id="split"></div>
+## Fn::Split
 内部函数 Fn::Split 通过指定分隔符对字符串进行切片，并返回所有切片组成的列表。
 
 ### 声明
@@ -204,8 +203,8 @@ index：待检索数据元的索引。0 到 N-1 之间的某个值（其中 N �
 
 ---
 
-## Fn::Sub
 <div id="sub"></div>
+## Fn::Sub
 内部函数 Fn::Sub 将输入字符串中的变量替换为您指定的值。
 
 ### 声明
@@ -243,8 +242,8 @@ index：待检索数据元的索引。0 到 N-1 之间的某个值（其中 N �
 
 ---
 
-## Ref
 <div id="ref"></div>
+## Ref
 内部函数 Ref 返回指定参数或资源的值。
 
 如果指定参数是资源逻辑ID，则返回资源的值。否则系统将认为指定参数是参数，将尝试返回参数的值。
@@ -323,8 +322,8 @@ index：待检索数据元的索引。0 到 N-1 之间的某个值（其中 N �
 
 ---
 
-## Fn::And
 <div id="and"></div>
+## Fn::And
 代表 AND 运算符，最少包含两个条件。如果所有指定条件计算为 true，则返回 true；如果任意条件计算为 false，则返回 false。
 
 ### 声明
@@ -360,8 +359,8 @@ true 或 false。
 ---
 
 
-## Fn::Equals
 <div id="equals"></div>
+## Fn::Equals
 比较两个值是否相等。如果两个值相等，则返回 true；如果不相等，则返回 false。
 
 ### 声明
@@ -394,8 +393,8 @@ true 或 false。
 
 ---
 
-## Fn::If
 <div id="if"></div>
+## Fn::If
 如果指定的条件计算为 true，则返回一个值；如果指定的条件计算为 false，则返回另一个值。在模板 Resources 和 Outputs 属性值中支持 Fn::If 内部函数。
 
 
@@ -453,8 +452,8 @@ true 或 false。
 }
 ```
 
-## Fn::Not
 <div id="not"></div>
+## Fn::Not
 代表 NOT 运算符。对计算为 false 的条件，返回 true；对计算为 true 的条件，返回 false。
 
 ### 声明
@@ -486,8 +485,8 @@ true 或 false。
 
 ---
 
-## Fn::Or
 <div id="or"></div>
+## Fn::Or
 代表 OR 运算符，最少包含两个条件。如果任意一个指定条件计算为 true，则返回 true；如果所有条件都计算为 false，则返回 false。
 
 ### 声明
