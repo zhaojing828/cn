@@ -10,11 +10,11 @@
 
 1.目前存储网关为公测阶段，创建前请提交[公测申请](https://www.jdcloud.com/cn/public/testApply/storagegateway)。公测申请通过后可在控制台-云主机-镜像-共享镜像页面下查看到存储网关的镜像。
 
-[]!()
+![存储网关镜像]()
 
 2.可在当前存储网关镜像下点击 **创建云主机** 完成云主机创建，或者在 **创建云主机** 页面中设置共享镜像，并选择存储网关镜像。更多帮助请查看[创建Linux实例](https://docs.jdcloud.com/cn/virtual-machines/create-linux-instance)
 
-[]!()
+![创建云主机]()
 
 注：Bucket与存储网关需在同一个地域，创建云主机时请根据您的业务需要选择地域。
 
@@ -42,9 +42,11 @@
 ./gw start
 ```
 
-3.执行```df -h```命令查看是否启动成功。
+3.执行```df -h```命令查看是否启动成功，如图所示，127.0.0.1:/gw为已成功开启的NFS共享文件系统。
 
-[]!()
+![启动服务]()
+
+注：127.0.0.1为本地回送地址，即Localhost。
 
 4.存储网关配置文件路径为```/etc/gateway/gw.conf```，相关配置项为accessKeyID、accessKeySecret、endpoint、bucket。若配置项修改后，重启NFS服务后，新配置项才会生效。重启NFS服务命令示例如下：
 
