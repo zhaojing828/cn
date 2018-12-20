@@ -1,4 +1,4 @@
-## AppSec文件
+## AppSpec文件
 
 在“新建部署”时，若“部署操作命令”选择“使用代码根目录的appSpec.”，那么，云部署将执行appSpec.yaml的全部内容。这里需要注意的是，appSpec.yaml文件所在目录必须为代码根目录，文件名称为appSpec.yaml。（大小写敏感）
 
