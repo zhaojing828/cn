@@ -3,15 +3,15 @@
 
 ## 函数运行时
 
-函数支持Python运行时，详情请参考Python函数开发。
+公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型（Python）](../../Function-Service/Operation-Guide/buildfunction/programming-model/processing-program.md)。
 
 ## 函数支持多种代码上传方式
 
-函数代码管理方式支持在线编辑、OSS导入、本地ZIP包导入。
+函数代码管理方式支持在线编辑和本地ZIP包上传。
 
 ## 函数支持多种触发器类型
 
-函数支持触发器类型及调用方式见表1：
+公测期间，函数支持触发器类型及调用方式见表1：
 
 表1：支持触发器信息
 
