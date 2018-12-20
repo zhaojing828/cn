@@ -22,24 +22,24 @@ items:
     - name: 3. 基础图表组件配置
       href: Operation-Guide/BasicChart.md
       items:
-       - name: 柱折图
+       - name: 3.1 柱折图
          href: Operation-Guide/BarandLine.md
-       - name: 饼图
+       - name: 3.2 饼图
          href: Operation-Guide/Pie.md
-       - name: 雷达图
+       - name: 3.3 雷达图
          href: Operation-Guide/leida.md
-       - name: 榜单
+       - name: 3.4 榜单
          href: Operation-Guide/leida.md
-       - name: 日期热力图
+       - name: 3.5 日期热力图
          href: Operation-Guide/hot.md     
     - name: 4. 地图组件配置
       href: Operation-Guide/Map.md
       items:
-       - name: 3D边界地图
+       - name: 4.1 3D边界地图
          href: Operation-Guide/3DmapStyle.md
-       - name: 2D边界地图
+       - name: 4.2 2D边界地图
          href: Operation-Guide/2DmapStyle.md   
-       - name: 地图交互设置
+       - name: 4.3 地图交互设置
          href: Operation-Guide/MapInteractive.md    
     - name: 5. 文本组件配置
       href: Operation-Guide/text.md
