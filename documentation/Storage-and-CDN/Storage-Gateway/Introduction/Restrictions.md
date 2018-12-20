@@ -15,7 +15,7 @@
 - NFS来访客户端需使用Root用户挂载使用，暂不支持其他用户访问。
 
 ### 相关参考
-- [产品概述]()
-- [核心概念]()
-- [部署存储网关]()
-- [使用存储网关]()
+- [产品概述](../Introduction/Product-Overview.md)
+- [核心概念](../Introduction/Core-Concepts.md)
+- [部署存储网关](../Operation-Guide/Installation-Configuration.md)
+- [使用存储网关](../Operation-Guide/Use-Storage-Gateway.md)
