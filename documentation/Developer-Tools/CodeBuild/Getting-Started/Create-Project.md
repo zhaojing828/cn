@@ -50,7 +50,7 @@
   
    ![](../../../../image/codebuild/package.png)
    
-   存储空间：oss的存储bucket
+   存储空间：用户在编译任务所在区域对象存储bucket
   
    存储目录：指定bucket下的目录
   
