@@ -47,25 +47,25 @@
 #### Parameters（可选）
 　　定义创建资源栈时，模板用户可以定制化的参数。在运行时 (创建或更新堆栈时) 传递到模板。您可在模板的 Resources 和 Outputs 部分中引用定义的这些参数。使用参数可以增强模板的灵活性，提高复用性。
 
-　　更多详细信息，请参见 [参数（Parameters）](#参数parameters)。
+　　更多详细信息，请参见 [参数（Parameters）](templates-grammar-Parameters.md)。
 
 #### Mappings（可选）
 　　可用来指定条件参数值的密钥和关键值的映射，与查找表类似。您可通过使用 Resources 和 Outputs 部分中的 Fn::FindInMap 内部函数将键与相应的值匹配。
 
-　　更多详细信息，请参见 [映射（Mappings）](#映射mappings)。
+　　更多详细信息，请参见 [映射（Mappings）](templates-grammar-Mappings.md)。
 
 #### Conditions（可选）
 　　Conditions 使用 Fn::And、Fn::Or、Fn::Not、Fn::Equals 等定义条件。在创建或更新资源栈时，系统先计算模板中的所有条件，然后再创建资源。创建与 true 条件关联的所有资源，忽略与 false 条件关联的所有资源。
 
-　　更多详细信息，请参见 [条件（Conditions）](#条件conditions)。
+　　更多详细信息，请参见 [条件（Conditions）](templates-grammar-Conditions.md)。
 
 #### Resources（可选）
 　　用于详细定义使用该模板创建的资源栈所包含的资源，包括资源间的依赖关系、配置细节等。
 
-　　更多详细信息，请参见 [资源（Resources）](#资源resources)。
+　　更多详细信息，请参见 [资源（Resources）](templates-grammar-Resources.md)。
 
 #### Outputs（可选）
 　　用于输出一些资源属性等有用信息。可以通过 API 或控制台获取输出的内容。
 
-　　更多详细信息，请参见 [输出（Outputs）](#输出outputs)。
+　　更多详细信息，请参见 [输出（Outputs）](templates-grammar-Outputs.md)。
 

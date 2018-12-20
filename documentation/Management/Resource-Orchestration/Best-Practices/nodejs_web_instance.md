@@ -119,16 +119,16 @@
     },
     "ImageInfo": {
       "cn-north-1": {
-        "image": "img-wbnwemkixm"
+        "image": "img-9ha1rgelkq"
       },
       "cn-east-1": {
-        "image": "img-nfrxl97pal"
+        "image": "img-htaupmjlqq"
       },
       "cn-east-2": {
         "image": "img-ssazsh60t6"
       },
       "cn-south-1": {
-        "image": "img-xkjedl0lgm"
+        "image": "img-uxgb28v2y3"
       }
     }
   },
