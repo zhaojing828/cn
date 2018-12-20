@@ -55,8 +55,8 @@ GPU型云物理服务器实例规格如下：
 		    <td align="center"><B>内存</B></td>
 		    <td align="center"><B>硬盘</B></td>
 		    <td align="center"><B>网卡</B></td>
-	    	<td align="center"><B>GPU</B></td>
-	    <td align="center">支持RAID模式</td>
+	    	<td align="center" ><B>GPU</B></td>
+	    <td align="center"><B>支持RAID模式</B></td>
     </tr>
     <tr>   
         <td align="center"><B>GPUⅠ<br/>（cps.gpu.1）<B></td>
@@ -74,6 +74,15 @@ GPU型云物理服务器实例规格如下：
 		    <td >2*300GB（SAS）+<br/>4*4000GB（SATA）</td>
 		    <td align="center">独立管理口1块+<br/>2*10GE网卡</td>
 		<td align="center">NVIDIA P40*4</td>
+		<td align="center">NO RAID/RAID0/RAID10</td>
+    </tr>
+    <tr>   
+        <td align="center"><B>GPUⅢ<br/>（cps.gpu.3）<B></td>
+		    <td align="center">2*2650V4<br/>（12核 2.2G）</td>
+		    <td align="center">256G（8*32G）DDR4</td>
+		    <td >2*300GB（SAS）+<br/>6*6000GB（SATA）</td>
+		    <td align="center">独立管理口1块+<br/>2*10GE网卡</td>
+		<td align="center">NVIDIA V100*4</td>
 		<td align="center">NO RAID/RAID0/RAID10</td>
     </tr>
 </table>
