@@ -1,35 +1,47 @@
-# 处理程序
+# 基本概念
 
-在创建function函数时，需要指定一个事件处理程序，并指定对象 `event`、`context` 和 `callback`。遵循以下通用的语法结构：
-```
-   def my_handler(event, context):
-   return 'hello world'
-   ```
-   
+用户使用京东云函数服务支持的语言编写代码时，都采用一个通用的、包含以下核心概念的编写代码模式：
 
-`event`:function从event参数中获取函数的输入事件，调用函数时传入的数据。此参数通常是Python dict类型。也可以是list、str、int、float或NoneType类型。您可以根据function定义好的格式编写代码从event参数中获取需要的信息。
+
+处理程序
+
+Function从处理程序开始执行您的代码，入口函数格式为：文件名.函数名。例如，用户指定入口函数为：index.handler，则函数服务会在代码程序包中寻找index文件，并从handler处开始执行。
+
+
+函数参数
+
+函数参数是函数被调用时，传递给函数的内容，包括event和context。
 
  
 
-`context`:function通过context参数向您的处理程序提供运行时信息。包括您的个人信息和其他信息。格式参考context对象
+event数据 
 
- 
+函数服务将event数据作为第一个参数传递给处理函数，是调用函数是的输入数据。
 
-`callback`（可选）：处理程序返回值，通知终止运行函数并返回信息给调用方。您必须主动和调用callback函数，否则会出现超时错误。
+例如：由于文件的上传触发了函数执行，代码可从Event参数中获取该文件的所有信息，包括文件名、下载路径、文件类型、大小等。
 
-* 如果您使用 RequestResponse 调用类型（同步调用），function会将 Python 函数调用的结果返回到调用 function函数的客户端。例如，function控制台使用 RequestResponse 调用类型，因此当您使用控制台调用函数时，控制台将显示返回的值。
+不同触发器在触发函数时 传递的event数据结构有所不同，数据结构详情参见配置触发器和事件格式。
 
-  如果处理程序返回 NONE，function将返回 null。
 
-* 如果您使用 Event 调用类型（异步调用），则丢弃该值。
 
-例如：创建一个函数名为 my_handler 的函数，入口函数设置为index.handler。执行代码从event参数接收输入事件并返回包含数据的消息。
-```
- def my_handler(event, context):
-    message = 'Hello {} {}!'.format(event['first_name'], 
-                                    event['last_name'])  
-    return { 
-        'message' : message
-    }  
-```
+context对象
 
+函数服务将context作为第二个参数传递给函数入口，通过此context对象，您的代码可以与函数服务交互。例如，通过context对象，您的代码可获取本次请求ID函数的基本信息等。
+
+
+
+日志记录
+
+函数服务会将函数执行日志写入日志服务。日志包括系统日志及函数日志，具体取决于您的函数代码。函数的运行日志结构如下所示：
+
+
+
+
+
+函数返回
+
+您的函数需要将执行结果传递给function。根据调用方式的不同进行处理。
+
+同步调用：通过同步方式触发的云函数，在函数执行期间，请求不会返回。在函数执行完成后，会将函数返回值封装为 JSON 格式以后返回给调用方。例如：API网关触发。
+
+异步调用：通过异步方式触发的云函数，在触发事件由 SCF 平台接收后，触发请求就会返回。在函数执行完成后，函数的返回值会封装为 JSON 格式后存储在日志中。如果用户需要在异步触发后获取到函数返回值，可通过记录请求返回中的 requestId，并在函数执行完成后，通过 requestId 查询日志，获取到此次执行的函数返回值。例如：OSS触发。
