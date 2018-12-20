@@ -9,29 +9,61 @@
 3、	配置构建。
 阶段名默认为 构建阶段，添加构建的原子操作。
 1）	原子操作中选择 codebuild，输入操作选择前面配置的源代码操作，如下图。
- ![](../../../../image/vm/Getting-Start-Linux-mount6.png)
+ ![](../../../../image/codepipeline/best-build.png)
 2）	在云编译项目中创建需要编译的项目。示例配置如下：
- ![](../../../../image/vm/Getting-Start-Linux-mount6.png)
+ ![](../../../../image/codepipeline/best-build-2.png)
 4、	配置部署。
 阶段名默认为 部署阶段，添加部署的原子操作。
 1）	原子操作中选择 Kubernetes集群，输入操作选择前面配置的构建操作。需要用户提前创建好集群，在pipeline中提供部署的deployment。示例如下：
+ ![](../../../../image/codepipeline/best-k8s.png)
+
+   样例deployment：
  	
 	```
-	blkid /dev/vdb1
+	apiVersion: apps/v1beta1
+	kind: Deployment
+	metadata:
+	  name: golang-test-demo-deployment
+	spec:
+	  replicas: 3
+	  template:
+	    metadata:
+	      labels:
+		app: golang-test-demo
+	    spec:
+	      containers:
+		- name: golang-test-demo
+		  image: nginx:1.7.9
+		  ports:
+		    - containerPort: 8088
+	      imagePullSecrets:
+		- name: my-secret	
 	```
 
-样例deployment：
- 	
-	```
-	blkid /dev/vdb1
-	```
-
-其中，image需要用构建操作的产出做替换，
+  其中，image需要用构建操作的产出做替换，
   ![](../../../../image/vm/Getting-Start-Linux-mount6.png)
 2）	在k8s集群页面，给这个deployment添加一个负载均衡服务。
 	
 	```
-	blkid /dev/vdb1
+	kind: Service
+	apiVersion: v1
+	metadata:
+	  name: lb-test
+	  namespace: default
+	  labels:
+	    k8s-app: kubernetes-test
+	spec:
+	  ports:
+	    - protocol: TCP
+	      port: 80
+	      targetPort: 80
+	      nodePort: 30090
+	  selector:
+	    app: nginx
+	  type: LoadBalancer
+	  sessionAffinity: None
+	  externalTrafficPolicy: Cluster
+  
 	```
 
 5、	保存并发布。
