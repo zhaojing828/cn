@@ -5,9 +5,9 @@
 1、在新建项目页面，依次填写项目名称（必填）
 
 2、编译镜像：选择编译环境，支持Java、golang、node、static_resource等主流编译语言环境；支持用户自定义编译镜像。
- ![](../../../../image/build/image.png)
+ ![](../../../../image/codebuild/image.png)
 
-3、源提供商：支持京东云代码托管、itHub私有/公有仓库及其他git公有仓库
+3、源提供商：支持京东云代码托管、GitHub私有/公有仓库及其他git公有仓库
 
 4、仓库地址：远程仓库的URL地址,与 git clone 命令的地址相同
 
@@ -44,16 +44,16 @@
       # 抽包路径, 这个是必选项
       out_dir: 'output'
 	```
-7、构建类型：应用包、镜像
+7、构建类型：应用包\镜像
  
   当选择 构建类型为 应用包 时，需要提供构建产出物存放oss地址。
   存储空间：oss的存储bucket
   存储目录：指定bucket下的目录
-   ![](../../../../image/build/package.png)
+   ![](../../../../image/codebuild/package.png)
   
   当选择 构建类型为 镜像 时，需要提供镜像仓库地址。
   镜像仓库：选择编译任务所在区域下的 容器镜像仓库。如没有创建相应的注册表及镜像仓库，通过 新建仓库 链接，跳转到容器镜像仓库页面。
-   ![](../../../../image/build/docker.png)
+   ![](../../../../image/codebuild/docker.png)
 
 8、显示高级设置：
 
