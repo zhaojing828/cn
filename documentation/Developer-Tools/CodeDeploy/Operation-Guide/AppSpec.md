@@ -1,6 +1,6 @@
 ## AppSpec文件
 
-在“新建部署”时，若“部署操作命令”选择“使用代码根目录的appSpec.”，那么，云部署将执行appSpec.yaml的全部内容。这里需要注意的是，appSpec.yaml文件所在目录必须为代码根目录，文件名称为appSpec.yaml。（大小写敏感）
+在“新建部署”时，若“部署操作命令”选择“使用代码根目录的appSpec.yml”，那么，云部署将执行appSpec.yml的全部内容。这里需要注意的是，appSpec.yml文件所在目录必须为代码根目录，文件名称为appSpec.yml。（大小写敏感）
 
 **模板**
 
@@ -160,9 +160,9 @@ hooks:
 ```
 将在部署过程中，将在工作流中的：
 
-- 执行部署前置脚本：以hadoop用户执行/home/bin/stop.sh，超时时间为100s，接下来以root用户执行/home/bin/stop2.sh，超时时间为100s
-- 执行启动脚本：以root用户执行/home/bin/start.sh，超时时间为100s
 - 执行部署前置脚本：以root用户执行/home/bin/config.sh，超时时间为10s
+- 执行启动脚本：以root用户执行/home/bin/start.sh，超时时间为100s
+- 执行部署后置脚本：以hadoop用户执行/home/bin/stop.sh，超时时间为100s，接下来以root用户执行/home/bin/stop2.sh，超时时间为100s
 
 
 建议在hook脚本中，设置 set -e
