@@ -1,10 +1,10 @@
 # 日志记录
 
-您可在函数中使用日志记录语句，function会将这些日志写入函数日志，若您使用控制台调用函数，控制台将显示相同日志。
+您可以使用日志记录语句在函数中记录函数执行情况，function会将这些日志写入函数日志，若您使用控制台调用函数，控制台将显示相同日志。您可以在日志服务的对应函数页面查看代码中的函数日志，函数日志配置与查询详情请参见[函数日志](../../../../Operation-Guide/log.md)。
 
-以下 Python 语句生成日志条目：
+通过以下 Python 语句生成日志条目：
 
-* `print` 语句。
+* `print` 语句
 
 * `logging` 模块中的 `Logger` 函数
 
@@ -30,10 +30,8 @@ def my_logging_handler(event, context):
 return 'function is worked'  
 ```
 
-
  
 
-您可以在日志服务的对应函数页面查看代码中的函数日志。日志级别标志日志的类型，如：info、warn、error、debug。
  
 **使用 `print` 语句写入日志**
 
