@@ -44,6 +44,11 @@
 		<td >cps.gpu.2</td>
 		<td >19900</td>
     </tr>
+	<tr>   
+		<td >GPUⅢ</td>
+		<td >cps.gpu.3</td>
+		<td >32000</td>
+    </tr>	
 </table>
 
 
