@@ -34,7 +34,7 @@
 		<td >4500</td>
     </tr>
 	<tr>   
-		<td rowspan="2">GPU型</td>
+		<td rowspan="3">GPU型</td>
 		<td >GPUⅠ</td>
 		<td >cps.gpu.1</td>
 		<td >23000</td>
