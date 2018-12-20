@@ -22,7 +22,7 @@
 
 函数（Function）是调度与运行的基本单位，是一段代码的处理逻辑。您需要根据函数计算提供的函数接口形式编写代码，并将代码以函数的形式部署到函数计算。
 
-函数详细信息请参阅函数构建。
+函数详细信息请参阅[函数构建](../../Function-Service/Operation-Guide/buildfunction/function-overview.md)。
 
  
 
@@ -30,9 +30,9 @@
 
 函数由事件触发，函数服务目前支持OSS触发器、API网关触发器。
 
-触发器详细信息请参阅触发器管理。
+触发器详细信息请参阅[触发器管理](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/triggeroverview.md)。
 
-如不配置触发器，您也可以使用控制台、SDK等方式直接调用函数执行。
+此外，如不配置触发器，您也可以使用控制台、SDK等方式直接调用函数执行。
 
 
 
@@ -40,11 +40,12 @@
 
 函数被执行后，您可以给通过函数日志查询函数执行情况，function将函数日志记录在日志服务中，您可以通过配置日志服务获取函数日志。
 
-函数日志详细信息请参阅函数日志。
+函数日志详细信息请参阅[函数日志](../../Function-Service/Operation-Guide/log.md)。
 
 
 
 ##### 查看函数监控
+
 通过云监控，用户可实时监控函数运行状况，保证业务平稳运行。
 
-函数监控详细信息请参阅函数监控。
+函数监控详细信息请参阅[函数监控](../../Function-Service/Operation-Guide/monitor.md)。
