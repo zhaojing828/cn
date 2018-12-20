@@ -56,7 +56,7 @@ GPU型云物理服务器实例规格如下：
 		    <td align="center"><B>硬盘</B></td>
 		    <td align="center"><B>网卡</B></td>
 	    	<td align="center" ><B>GPU</B></td>
-	    <td align="center">支持RAID模式</td>
+	    <td align="center"><B>支持RAID模式</B></td>
     </tr>
     <tr>   
         <td align="center"><B>GPUⅠ<br/>（cps.gpu.1）<B></td>
