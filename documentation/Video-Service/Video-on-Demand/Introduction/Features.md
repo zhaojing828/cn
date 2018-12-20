@@ -7,42 +7,30 @@
     <td>详细内容</td>
 </tr>
 <tr>
-    <td rowspan="5"> 推拉流方式及协议<br/>
-    <td>推流协议</td>
-    <td>支持RTMP协议推流</td>
+    <td rowspan="4"> 格式支持<br/>
+    <td>源文件视频格式</td>
+    <td>支持市面几乎所有常见文件格式上传作为源文件（支持3GP、ASF、AVI、DAT、DV、FLV、F4V、GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、SWF、TS、VOB、WMV、WEBM 等视频格式上传 , 音频支持aac, ac3, acm, amr, ape, caf, flac, m4a, mp3, ra, wav, wma）</td>
 </tr>
 <tr>
-    <td>推流方式</td>
-    <td>支持常见的第三方如OBS/XSplit/FMLE等推流软件，同时支持终端SDK推流</td>
+    <td>源文件音频格式</td>
+    <td>支持上传MP3，OGG，WAV，WMA，APE，FLAC，AAC，AC3，MMF，AMR，M4A，M4R，WV，MP2音频格式</td>
 </tr>
 <tr>
-    <td>推流设备</td>
-    <td>支持常见的基于RTMP推流协议的第三方摄像头、编解码器等设备推流</td>
+    <td>目标文件</td>
+    <td>支持MP4、FLV、HLS文件格式</td>
 </tr>
 <tr>
-    <td>播放协议</td>
-    <td>支持RTMP、HDL及HLS三种播放协议</td>
+    <td>编码格式</td>
+    <td>支持H.265、H.264编码格式</td>
 </tr>
 <tr>
-    <td>播放方式</td>
-    <td>支持常见的第三方如VLC等播流软件，同时支持终端SDK播放</td>
+    <td rowspan="3"> 文件上传<br/>
+    <td>上传方式</td>
+    <td>支持控制台界面上传文件</td>
 </tr>
 <tr>
-    <td rowspan="4"> 直播功能<br/>
-    <td>直播录制</td>
-    <td>支持对直播流录制成文件，可自定义录制时长，格式支持FLV</td>
-</tr>
-<tr>
-    <td>直播截图</td>
-    <td>支持对直播流实时截图，质量两种截图方式覆盖与不覆盖，可自定义设置截图间隔时间</td>
-</tr>
-<tr>
-    <td>实时转码</td>
-    <td>支持对直播流的实时转码，流畅、标清、高清多种分辨率、码率转码</td>
-</tr>
-<tr>
-    <td>直播回调</td>
-    <td>支持推流、录制、截图回调</td>
+    <td rowspan="2"> 上传机制<br/>
+    <td>上传过程支持断点续传</td>
 </tr>
 <tr>
     <td rowspan="4"> 直播管理<br/>
