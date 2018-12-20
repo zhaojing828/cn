@@ -11,7 +11,6 @@
 * 单独[创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-cloud-disk)时，勾选加密选项；
 * [使用快照创建云硬盘](http://docs.jdcloud.com/cn/cloud-disk-service/create-disk-by-snapshot)时，如果所选快照为加密状态，则创建的云硬盘必定为加密状态。
 
-
 		请注意：
 		* 使用快照创建云硬盘或使用云硬盘创建快照时，加密属性自动继承且不可更改；
         * 已有云硬盘和快照的加密属性不可更改；
