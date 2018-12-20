@@ -8,10 +8,9 @@ Function Servcie是事件触发的Serverless服务，核心组件是function函�
 
 触发器配置:
 
-`TriggerName`：触发器名称
 
-`TiggerType`：触发器类型（例如：OSS、AIPW）
+`eventSource`：触发器类型（例如：OSS、AIP网关）。
 
-`resourceid`：触发器执行的资源描述符。OSS触发器的sourceid格式为：acs:oss:region:accountId:bucketName
+`eventSourceId`：触发器执行的资源描述符。事件源Id，分别对应apiId和BucketId。
 
-`Triggerconfig`：触发器配置信息，各触发器配置信息根据触发器类型不同请参考对应触发器文档
+`configurationId`：触发器配置信息，分别对应apiId和ConfigurationId，各触发器配置信息根据触发器类型不同请参考对应[事件源服务](../../invokefunction/triggermanagement/eventsourceservice/eventsource-service.md)。
