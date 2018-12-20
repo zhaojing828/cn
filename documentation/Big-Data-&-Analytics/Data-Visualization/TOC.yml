@@ -13,8 +13,26 @@ items:
       href: Operation-Guide/Mydashboard.md
     - name: 3. 基础图表组件配置
       href: Operation-Guide/BasicChart.md
+      items:
+       - name: 柱折图
+         href: Operation-Guide/BarandLine.md
+       - name: 饼图
+         href: Operation-Guide/Pie.md
+       - name: 雷达图
+         href: Operation-Guide/leida.md
+       - name: 榜单
+         href: Operation-Guide/leida.md
+       - name: 日期热力图
+         href: Operation-Guide/hot.md     
     - name: 4. 地图组件配置
       href: Operation-Guide/Map.md
+      items:
+       - name: 3D边界地图
+         href: Operation-Guide/3DmapStyle.md
+       - name: 2D边界地图
+         href: Operation-Guide/2DmapStyle.md   
+       - name: 地图交互设置
+         href: Operation-Guide/MapInteractive.md    
     - name: 5. 文本组件配置
       href: Operation-Guide/text.md
     - name:  6. 交互组件配置
