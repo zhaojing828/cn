@@ -106,7 +106,6 @@ OSS事件定义详见[OSS触发器](../triggermanagement/eventsourceservice/oss-
 
 ## API网关触发器
 
-[API网关触发器详细说明](https://help.aliyun.com/document_detail/54788.html)
 
 **事件格式**
 
@@ -149,12 +148,11 @@ OSS事件定义详见[OSS触发器](../triggermanagement/eventsourceservice/oss-
   "base64OwnerPin": ""
 }
 ```
-
+API网关事件定义详见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
 
 **参数说明**：
 
  网关与function间的body内容不经过Base64编码。
-
 
 事件示例：
 
