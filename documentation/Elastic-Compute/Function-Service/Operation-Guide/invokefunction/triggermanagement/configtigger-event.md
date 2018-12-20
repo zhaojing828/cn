@@ -139,7 +139,7 @@ OSS事件定义详见。
                 "accountId": "", //userid
                 "apiKey": "", //ak
                 "user": ""  //pin
-                "authType": "" //身份认证的类型 免鉴权/jdcloud鉴权/hufu
+                "authType": "" //身份认证的类型 公测默认鉴权/jdcloud鉴权
             }
             "requestId":"c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
             "sourceIp":"10.0.2.14"
