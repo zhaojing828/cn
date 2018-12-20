@@ -7,7 +7,7 @@
    ```
    
 
-`event`:function从event参数中获取函数的输入事件，调用函数时传入的数据，此参数是Python dict类型。您可以根据function定义好的格式编写代码从event参数中获取需要的信息。格式规则请参考[context对象](../../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)。
+`event`:function从event参数中获取函数的输入事件，调用函数时传入的数据，此参数是Python dict类型。您可以根据function定义好的格式编写代码从event参数中获取需要的信息。格式规则请参考[事件格式](../../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)。
 
  
 
