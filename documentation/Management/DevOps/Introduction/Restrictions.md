@@ -8,4 +8,4 @@
 
 部署对象中需安装超级Agent。  
 
-详见[操作指南](https://github.com/jdcloudcom/cn/tree/edit/documentation/Management-and-Monitoring/DevOps/Operation-Guide)
+详见操作指南

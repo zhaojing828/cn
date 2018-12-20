@@ -4,7 +4,7 @@
 
 1、在创建容器实例前，您需要完成以下步骤  
 2、注册京东云账号并激活、认证账号，可分别访问[注册京东云](https://accounts.jdcloud.com/p/regPage?source=jdcloud%26ReturnUrl=%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3d//www.jdcloud.com/)、[登录京东云](https://console.jdcloud.com/overview)、[实名认证](https://uc.jdcloud.com/account/verify)进行操作；  
-3、若您需要创建按配置计费实例，您需要保证您的余额不低于50元，若当前余额不足请进行[充值](https://uc.jdcloud.com/cost/capital/recharg；  
+3、若您需要创建按配置计费实例，您需要保证您的余额不低于50元，若当前余额不足请进行[充值](https://uc.jdcloud.com/cost/capital/recharg)；  
 4、您必选先创建私有网络、子网；  
 5、若您需要使用安全组进行实例的安全访问控制，您可预先创建安全组或重新配置安全组出站规则、入站规则。  
 
@@ -12,7 +12,7 @@
 
  1. 打开控制台，选择[弹性计算>>容器服务>>容器实例](https://cns-console.jdcloud.com/host/container/list)；  
  2. 选择创建容器实例所属地域，点击“创建”按钮，进入容器实例购买页面，建议您根据业务情况选择实例所在地域及可用区；  
- 备注：目前支持华北-北京、、华东-上海地域，提供可用区A和可用区B两个可用区，其他地域上线时间，敬请期待。  
+ 备注：目前支持华北-北京、、华东-上海、华南-广州地域，其他地域上线时间，敬请期待。  
  3. 选择计费模式：包年包月和按配置计费，包年包月按月付费购买资源，按配置计费按实际使用的时长（精确至秒）进行计费。关于两种计费方式的区别，请查阅[计费规则](https://docs.jdcloud.com/cn/native-container/billing-rules)。  
  4. 地域与可用区选择：在此步骤仍可以选择容器对应的地域（华北-北京）及可用区，请注意“不同地域资源内网不互通，创建之后不可更改”，如果所选地域限额已满，可以通过提交工单提升限额。  
  5. 选择镜像：  

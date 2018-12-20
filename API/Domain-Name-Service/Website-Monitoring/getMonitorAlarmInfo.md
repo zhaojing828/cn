@@ -40,9 +40,10 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 |名称|类型|描述|
 |---|---|---|
 |**domainId**|Integer|域名ID|
+|**endTime**|Long|故障结束时间，格式Unix timestamp，时间单位：毫秒|
 |**host**|String|故障IP/域名|
 |**id**|Integer| |
-|**startTime**|Integer|故障开始时间|
+|**startTime**|Long|故障开始时间，格式Unix timestamp，时间单位：毫秒|
 |**subDomainName**|String|子域名|
 
 ## 返回码

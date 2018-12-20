@@ -40,12 +40,12 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/userview/getUserVi
 ### UserViewInput
 |名称|类型|描述|
 |---|---|---|
-|**createTime**|Integer|创建时间|
+|**createTime**|Integer|创建时间，格式Unix timestamp，时间单位：秒|
 |**creator**|String|创建者|
 |**domainId**|Integer|域名ID|
 |**ipRanges**|String[]|用户输入的IP段|
 |**isDelete**|Integer|是否删除，0:没有删除，1:已删除|
-|**updateTime**|Integer|更新时间|
+|**updateTime**|Integer|更新时间，格式Unix timestamp，时间单位：秒|
 |**updator**|String|更新者|
 |**viewId**|Integer|自定义线路ID|
 |**viewName**|String|自定义线路名称, 最多64个字符|

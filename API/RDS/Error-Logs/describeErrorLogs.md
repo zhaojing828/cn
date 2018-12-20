@@ -35,7 +35,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/errorLo
 |**lastUpdateTime**|String|错误日志最后更新时间，格式为：YYYY-MM-DD HH:mm:ss|
 |**name**|String|错误日志文件名称|
 |**publicURL**|String|公网下载链接|
-|**sizeByte**|Integer|错误日志文件大小，单位Byte|
+|**sizeByte**|Long|错误日志文件大小，单位Byte|
 |**uploadTime**|String|错误日志上传时间，格式为：YYYY-MM-DD HH:mm:ss|
 
 ## 返回码

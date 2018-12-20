@@ -23,16 +23,16 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 ### UpdateRR
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainName**|String|False| |主域名|
-|**hostRecord**|String|False| |主机记录|
-|**hostValue**|String|False| |解析记录的值|
-|**id**|Integer|False| |域名解析的唯一ID|
+|**domainName**|String|True| |主域名|
+|**hostRecord**|String|True| |主机记录|
+|**hostValue**|String|True| |解析记录的值|
+|**id**|Integer|True| |域名解析的唯一ID|
 |**jcloudRes**|Boolean|False| |是否是京东云资源|
 |**mxPriority**|Integer|False| |优先级，只存在于某些解析记录类型|
 |**port**|Integer|False| |端口，只存在于某些解析记录类型|
-|**ttl**|Integer|False| |解析记录的生存时间|
-|**type**|String|False| |解析的类型|
-|**viewValue**|Integer|False| |解析线路的ID|
+|**ttl**|Integer|True| |解析记录的生存时间|
+|**type**|String|True| |解析的类型|
+|**viewValue**|Integer|True| |解析线路的ID|
 |**weight**|Integer|False| |解析记录的权重|
 
 ## 返回参数

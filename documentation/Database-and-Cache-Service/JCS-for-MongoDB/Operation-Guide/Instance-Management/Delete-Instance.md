@@ -12,7 +12,7 @@
 1. 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb?dataCenter=bj_02)。
 2. 在实例列表页面，选择目标实例，在操作项中，点击 **删除**，打开确认弹窗。
  
-   ![删除实例](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-014.png)
+    ![删除实例](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-014.png)
 
 3. 在确认弹窗中，点击 **确定**，等待实例删除完成。
 4. 实例删除后，"实例列表"中将不再有该实例的信息。

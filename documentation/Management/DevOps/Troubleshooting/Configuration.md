@@ -16,7 +16,6 @@
 - servers/ # 基础系统软件目录 
 - Backup/ # 【包部署】存放编译包的备份目录 
 - Packages/ # 程序目录（包+配置文件） 
-  - moduleName/ # 【镜像部署】应用键值 
   - appKey/ # 【包部署】应用键值 
     - latest -> /export/Packages/moduleName/version # 软链到对应最新版本 
     - version # 版本号 

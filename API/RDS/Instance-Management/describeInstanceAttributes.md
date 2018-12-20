@@ -48,8 +48,10 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**instanceStorageGB**|Integer|磁盘，单位GB|
 |**instanceType**|String|实例类型，例如主实例，只读实例等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**internalDomainName**|String|实例公网域名|
+|**primaryNode**|DBInstanceNode|高可用集群中主节点的信息<br>- 仅支持SQL Server|
 |**publicDomainName**|String|实例内网域名|
 |**regionId**|String|地域ID，参见[地域及可用区对照表](../Enum-Definitions/Regions-AZ.md)|
+|**secondaryNode**|DBInstanceNode|高可用集群中从节点的信息<br>- 仅支持SQL Server|
 |**subnetId**|String|子网的ID|
 |**vpcId**|String|VPC的ID|
 ### Charge
@@ -60,6 +62,12 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 |**chargeStartTime**|String|计费开始时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 |**chargeStatus**|String|费用支付状态，取值为：normal、overdue、arrear，normal表示正常，overdue表示已到期，arrear表示欠费|
+### DBInstanceNode
+|名称|类型|描述|
+|---|---|---|
+|**id**|String|节点id|
+|**name**|String|节点名称|
+|**status**|String|节点状态|
 
 ## 返回码
 |返回码|描述|

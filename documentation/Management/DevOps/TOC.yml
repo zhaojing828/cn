@@ -45,8 +45,8 @@
         href: Getting-Started/Create-Compilejob.md
       - name: 配置线上发布
         href: Getting-Started/Config-Deployment.md
-      - name: 查看基础监控
-        href: Getting-Started/Base-Monitor.md
+      - name: 接入智能监控
+        href: Getting-Started/Quick-start-monitoring.md
   - name: 操作指南
     items:
       - name: 使用须知
@@ -59,14 +59,38 @@
         href: Operation-Guide/Resource-Pool.md
       - name: 规格模板
         href: Operation-Guide/Specification-Templates.md
-      - name: 编辑构建
+      - name: 编译构建
         href: Operation-Guide/CI.md
       - name: 线上发布
         href: Operation-Guide/CD.md
       - name: 编排上线
         href: Operation-Guide/Arrange-Online.md
-      - name: 智能监控
-        href: Operation-Guide/Monitoring.md
+      - name: 采集配置
+        items:
+          - name: 机器监控
+            href: Operation-Guide/Collection-Conf/Machine-Monitoring.md
+          - name: 端口监控
+            href: Operation-Guide/Collection-Conf/Port-Monitoring.md
+          - name: 进程监控
+            href: Operation-Guide/Collection-Conf/Process-Monitoring.md
+          - name: 日志监控
+            href: Operation-Guide/Collection-Conf/Log-Monitoring.md
+          - name: 域名监控
+            href: Operation-Guide/Collection-Conf/Domain-Monitoring.md
+          - name: 自定义监控
+            href: Operation-Guide/Collection-Conf/Custom-Monitoring.md
+      - name: 聚合配置
+        href: Operation-Guide/Converge.md
+      - name: 数据可视化
+        href: Operation-Guide/Data-Visualization.md
+      - name: 报警组&值班组
+        href: Operation-Guide/Alarm-Contacts.md
+      - name: 报警配置
+        href: Operation-Guide/Alarm-Conf.md
+      - name: 报警管理
+        href: Operation-Guide/Alarm-Management.md
+      - name: Tags使用说明
+        href: Operation-Guide/Tags.md
       - name: 镜像广场
         href: Operation-Guide/Image-Packaging.md
       - name: 脚本管理

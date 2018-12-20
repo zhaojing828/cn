@@ -75,10 +75,19 @@
             href: Image/shareImage.md
           - name: unShareImage
             href: Image/unShareImage.md
+      - name: SSH密钥
+          - name: createKeypair
+            href: SSH-Keypair/createKeypair.md
+          - name: importKeypair
+            href: SSH-Keypair/importKeypair.md
+          - name: describeKeypairs
+            href: SSH-Keypair/describeKeypairs.md
+          - name: deleteKeypair
+            href: SSH-Keypair/deleteKeypair.md
       - name: 规格类型
         items:
           - name: describeInstanceTypes
-            href: Specification-Type/describeInstanceTypes.md
+            href: Instance-Type/describeInstanceTypes.md
       - name: 配额
         items:
           - name: describeQuotas

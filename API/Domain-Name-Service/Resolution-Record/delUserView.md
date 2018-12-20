@@ -22,10 +22,10 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/userview/delUserVi
 ### DelView
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|Integer|False| |域名ID|
-|**domainName**|String|False| |主域名|
-|**viewId**|String|False| |自定义线路ID|
-|**viewName**|String|False| |自定义线路名称, 最多64个字符|
+|**domainId**|Integer|True| |域名ID|
+|**domainName**|String|True| |主域名|
+|**viewId**|String|True| |自定义线路ID|
+|**viewName**|String|True| |自定义线路名称, 最多64个字符|
 
 ## 返回参数
 |名称|类型|描述|

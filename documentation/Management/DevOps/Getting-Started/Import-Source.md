@@ -20,6 +20,6 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/DevOps/image/DevOps/Starting6.png)
 
-点击“新增实例”，选择“所属分组”为默认创建好的分组“”，点击“选择服务器”，在选择服务器页面，勾选云主机，即将此云主机加入到分组中
+点击“新增实例”，选择“所属分组”为默认创建好的分组“group-pre-template-租户名”，点击“选择服务器”，在选择服务器页面，勾选云主机，即将此云主机加入到分组中
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/DevOps/image/DevOps/Starting7.png)

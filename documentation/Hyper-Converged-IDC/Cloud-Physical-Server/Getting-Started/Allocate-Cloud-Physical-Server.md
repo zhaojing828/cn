@@ -29,7 +29,14 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **防火墙** ：操作系统安装完成后，系统对外网网络只开放IN方向的22端口。操作系统安装成功后，用户可自行登录操作系统更改iptable设置。详情请参考[防火墙设置操作指南](../Operation-Guide/Network-And-Security/Steps-Network-And-Security.md)。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **公网带宽** ：用户可以选择不购买公网IP，但是后期不可添加公网IP。若选择购买公网IP，公网IP和云物理服务器带宽绑定。公网IP由系统自动分配，用户不可以修改公网IP。创建时不展示公网IP地址。创建后在列表页和详情页展示公网IP地址。基础网络模式下，用户可选择1-200Mbps的公网带宽速率。具体操作步骤参见[调整公网带宽](../Operation-Guide/Adjust-Public-Network-Bandwidth/Description.md)章节。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **公网带宽** ：
+
+网络类型为基础网络情况下，公网IP、公网带宽和云物理服务器是绑定的。
+
+用户可以在创建云物理服务器时选择购买或不购买公网IP。**但是云物理服务器创建后不可添加公网IP** 。公网IP由系统自动分配，用户不可修改公网IP。在IPV6支持的区域（目前宿迁地域支持公网IPV6），用户可选择是否同时启用公网IPV6。
+
+用户可选择1-200Mbps的公网带宽速率，并可在创建后做升配操作。
+具体操作步骤参见[调整公网带宽](../Operation-Guide/Adjust-Public-Network-Bandwidth/Description-Adjust-Public-Network-Bandwidth.md)章节。
 
 - 配置服务器基本信息：
 配置服务器名称、描述、操作系统密码。

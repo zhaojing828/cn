@@ -22,10 +22,10 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/userview/delUserVi
 ### DelViewIP
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|Integer|False| |域名ID|
-|**ipRanges**|String[]|False| |此线路需要删除的ip段。<br><br>ip段支持1.2.3.4-5.6.7.8和1.2.3.4/16两种格式。    <br>|
-|**viewId**|Integer|False| |自定义线路ID|
-|**viewName**|String|False| |自定义线路名称, 最多64个字符|
+|**domainId**|Integer|True| |域名ID|
+|**ipRanges**|String[]|True| |此线路需要删除的ip段。<br><br>ip段支持1.2.3.4-5.6.7.8和1.2.3.4/16两种格式。    <br>|
+|**viewId**|Integer|True| |自定义线路ID|
+|**viewName**|String|True| |自定义线路名称, 最多64个字符|
 
 ## 返回参数
 |名称|类型|描述|

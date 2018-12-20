@@ -93,6 +93,8 @@
     items:
     - name: NAT网关网络安全方案
       href: Best-Practices/NAT-Gateway-Network-Safety.md
+    - name: CPS到VPC专线通信配置方法
+      href: Best-Practices/CPS-VPC-DirectConnection.md 
   - name: 教程
     items:
     status: 0

@@ -25,11 +25,11 @@
   - name: 入门指南
     items:
     - name: 创建实例
-      herf: Getting-Started/Create-Instance.md
+      herf: Getting-Started/Create-TiDB-Instance.md
     - name: 连接实例
-      herf: Getting-Started/Connect-Instance.md
+      herf: Getting-Started/Connect-TiDB-Instance.md
     - name: 监控实例
-      herf: Getting-Started/Monitor.md
+      herf: Getting-Started/TiDB-Monitor.md
 
   - name: 操作指南
     items:
