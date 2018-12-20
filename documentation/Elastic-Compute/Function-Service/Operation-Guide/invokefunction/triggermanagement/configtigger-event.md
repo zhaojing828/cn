@@ -39,7 +39,7 @@ s3:ObjectRemoved:*
 
 s3:ObjectRemoved:Delete
 
-OSS事件定义详见[OSS触发器](../triggermanagement/eventsourceservice/oss-tirgger.md)。 
+OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceservice/oss-tirgger.md)。 
 
  
 
@@ -148,7 +148,7 @@ OSS事件定义详见[OSS触发器](../triggermanagement/eventsourceservice/oss-
   "base64OwnerPin": ""
 }
 ```
-API网关事件定义详见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
+API网关触发器配置详清参见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
 
 **参数说明**：
 
