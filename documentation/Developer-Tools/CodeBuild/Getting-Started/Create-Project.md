@@ -50,8 +50,9 @@
   
    ![](../../../../image/codebuild/package.png)
    
-  存储空间：oss的存储bucket
-  存储目录：指定bucket下的目录
+   存储空间：oss的存储bucket
+  
+   存储目录：指定bucket下的目录
   
   * 当选择 构建类型为 镜像 时，需要提供镜像仓库地址。
  
