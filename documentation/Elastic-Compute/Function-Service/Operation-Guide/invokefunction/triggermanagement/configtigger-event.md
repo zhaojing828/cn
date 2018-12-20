@@ -62,18 +62,18 @@ OSS事件定义详见[OSS触发器](../triggermanagement/eventsourceservice/oss-
     "detail": {
     "callBackVar": {
     "callBackVars": {}
- },
+   },
     "eventName": "s3:ObjectRemoved:Delete",   //事件类型
     "responseElements": {
     "x-amz-request-id": "B3165BF6148041A9"   //发起事件的请求ID
- },
+    },
     "s3": {
     "bucket": {
        "name": "automation-function-a-test-cn-func-2", //Bucket名称
        "ownerIdentity": {
-       "principalId": "104064078905"  //Bucket owner用户ID
-       }
-       },
+               "principalId": "104064078905"  //Bucket owner用户ID
+                }
+            },
     "configurationId": "bgd32g0tpenuipc0thog",  //事件通知配置中ConfigurationId
     "object": {
             "eTag": "9b391b800374bebcd515158e67e07923", //Object的etag，与GetObject请求返回的ETag头的内容相同
@@ -94,7 +94,7 @@ OSS事件定义详见[OSS触发器](../triggermanagement/eventsourceservice/oss-
     "time": "2018-12-20T10:57:48.518Z",
     "version": 0
       }
-    ]
+  ]
 }
 
 ```
