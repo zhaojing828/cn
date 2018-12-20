@@ -7,6 +7,8 @@ items:
         href: Introduction/Product-Overview.md
       - name: 核心概念
         href: Introduction/Core-Concepts.md
+      - name: 产品优势
+        href: Introduction/Benefits.md    
       - name: 产品功能
         href: Introduction/Features.md
       - name: 限制说明
@@ -23,4 +25,3 @@ items:
         href: Operation-Guide/Installation-Configuration.md
       - name: 使用存储网关
         href: Operation-Guide/Use-Storage-Gateway.md
-        
