@@ -15,8 +15,6 @@
             href: Virtual-Machines/attachDisk.md
           - name: attachNetworkInterface
             href: Virtual-Machines/attachNetworkInterface.md
-          - name: createImage
-            href: Virtual-Machines/createImage.md
           - name: createInstances
             href: Virtual-Machines/createInstances.md
           - name: deleteInstance
@@ -55,6 +53,8 @@
             href: Virtual-Machines/stopInstance.md
       - name: 镜像
         items:
+          - name: createImage
+            href: Image/createImage.md          
           - name: copyImages
             href: Image/copyImages.md
           - name: deleteImage
