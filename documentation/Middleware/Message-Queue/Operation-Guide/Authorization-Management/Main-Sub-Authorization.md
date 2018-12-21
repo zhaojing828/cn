@@ -6,7 +6,7 @@
 
 消息队列 JCQ已全面对接访问控制服务，用户需要去[访问控制菜单](https://cm-console.jdcloud.com/cmSummary)设置子账户的用户权限。
 
-现在系统已经预置5种策略，用户可以授权给子账户。同时，用户也可以根据访问控制的[操作指南](https://docs.jdcloud.com/cn/iam/policy-management)，自定义策略授权给子账号。
+现在系统已经预置5种策略，用户可以按需授权给子账户。同时，用户也可以根据访问控制的[操作指南](https://docs.jdcloud.com/cn/iam/policy-management)，自定义策略授权给子账号。
 
 系统预置策略如下：
 
