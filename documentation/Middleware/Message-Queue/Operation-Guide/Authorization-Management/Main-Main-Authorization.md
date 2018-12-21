@@ -4,7 +4,7 @@
 
 1. 进入消息队列 JCQ控制台，找到需要授权的topic，点击操作更多下的授权操作，
 
-   (../image/Internet-Middleware/Message-Queue/主主授权1.png)
+   ！[主主授权1](../image/Internet-Middleware/Message-Queue/主主授权1.png)
    
 2. 弹出授权页面，需要输入被授权主账户的账户ID（可从用户账户管理中的基本信息里查询到，为12位的一组数字）和授权类型进行授权。
 
