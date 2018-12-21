@@ -4,11 +4,11 @@
 
 1. 进入消息队列 JCQ控制台，找到需要授权的topic，点击操作更多下的授权操作，
 
-   ！[主主授权1]((https://github.com/jdcloudcom/cn/blob/MessageQueue/image/Internet-Middleware/Message-Queue/主主授权1.png)
+   ![主主授权1]((https://github.com/jdcloudcom/cn/blob/MessageQueue/image/Internet-Middleware/Message-Queue/主主授权1.png)
    
 2. 弹出授权页面，需要输入被授权主账户的账户ID（可从用户账户管理中的基本信息里查询到，为12位的一组数字）和授权类型进行授权。
 
-   ![1545302977746](C:\Users\jiangshanqi\AppData\Roaming\Typora\typora-user-images\1545302977746.png)
+   ![主主授权2]((https://github.com/jdcloudcom/cn/blob/MessageQueue/image/Internet-Middleware/Message-Queue/主主授权2.png)
 
    主主授权的授权类型如下：
 
@@ -20,4 +20,4 @@
 
 3. 点击操作更多下的查看授权信息，查看某个资源topic授权情况，并且可以删除授权。
 
-   ![1545303359293](C:\Users\jiangshanqi\AppData\Roaming\Typora\typora-user-images\1545303359293.png)
+ ![主主授权3]((https://github.com/jdcloudcom/cn/blob/MessageQueue/image/Internet-Middleware/Message-Queue/主主授权3.png)
