@@ -1,6 +1,6 @@
 
 # Hello World示例
-本章展示Hello World示例，介绍快速使用函数服务编写Hello World示例的步骤。
+本章展示Hello World示例，介绍使用函数服务快速编写Hello World示例的步骤。
 
 准备工作：开始示例操作前，请申请开通函数服务。
 
