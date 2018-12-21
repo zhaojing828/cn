@@ -20,7 +20,6 @@
 
 4. 在“配置测试事件”窗口填写测试信息，测试信息配置如表1所示，带*参数为必填项。
 
-![测试函数2](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/test2.PNG)
 
 表1 测试信息
 
