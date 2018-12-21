@@ -23,7 +23,7 @@
      
    - 使用代码根目录的appSpec.yml：在代码根目录中，添加包含了部署操作命令的appSpec文件，文件名为appSpec.yml。书写规范详见“操作指南-AppSpec文件”
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation15.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation19.png)
 
 
 填写部署任务信息后，请点击“部署”，将触发部署操作。
