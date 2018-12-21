@@ -4,6 +4,7 @@
 
 ## OSS触发器
 
+当以函数服务作为OSS的事件通知类型时，OSS会把请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`，Function通过如下结构去获取和处理需要的参数。
 
 ## 配置触发器
 
@@ -110,8 +111,7 @@ OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceser
 
 输入格式
 
-当以函数计算作为API网关的后端服务时，API网关会把请求参数通过一个固定的Mapping结构传给函数计算的请求参数 `event`，函数计算通过如下结构去获取和处理需要的参数。请求参数Mapping结构如下所示：
-
+当以函数服务作为API网关的后端服务时，API网关会把请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`，Function通过如下结构去获取和处理需要的参数。
 
 ```
 {
