@@ -9,7 +9,7 @@
 
 在“新建应用”页，首先填写应用信息。应用名称：codedeploy-app-demo01
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting6.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation18.png)
 
 点击"新建"，即新建应用。
 
