@@ -21,7 +21,7 @@
      
       - 检查脚本：部署完成后，检查部署结果的脚本。返回0为成功，返回非0为失败
      
-   - 使用代码根目录的AppSpec：在代码根目录中，添加包含了部署操作命令的AppSpec文件，文件名为appSpec.yaml。书写规范详见“操作指南-AppSpec文件”
+   - 使用代码根目录的appSpec.yml：在代码根目录中，添加包含了部署操作命令的appSpec文件，文件名为appSpec.yml。书写规范详见“操作指南-AppSpec文件”
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation15.png)
 
