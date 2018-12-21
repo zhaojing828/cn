@@ -101,7 +101,6 @@ OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceser
 
 
 
-
  
 
 ## API网关触发器
@@ -152,14 +151,14 @@ API网关触发器配置详清参见[API网关触发器](../triggermanagement/ev
 
 **参数说明**：
 
- 网关与function间的body内容不经过Base64编码。
+ 网关与Function间的body内容不经过Base64编码。
 
 事件示例：
 
 
 **输出格式**
 
-API网关解析function返回内容，将输出内容通过规范化，以如下JSON格式返回：
+API网关解析Function返回内容，将输出内容通过规范化，以如下JSON格式返回：
 
 ```
 {     
