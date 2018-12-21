@@ -18,7 +18,7 @@ Tag：标签，一般用于某个Topic下的消息进一步分类，同一Topic�
 - 消费者在订阅Topic时，可以选择是否使用Tag过滤消息。如果带Tag订阅，则只能收到带同样Tag的消息，其余消息会被丢弃；否则，将会收到所有消息，
 
 
-#### 订阅一致
+#### 消费一致
 
 消息队列 JCQ中采取的Pub/Sub模式，消费者想要消费消息需要通过订阅的方式用ConsumerGroup去订阅某个Topic，而为了提升消费效率，ConsumerGroup下允许多个Consumer进行消费。由于模型关系，为了不丢失消息，需要ConsumerGroup下的所有Consumer设置的Tag保持一致，保证同一订阅下的同一ConsumerGroup中的不同Consumer消费的行为一致。
 
