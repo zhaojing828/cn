@@ -12,13 +12,13 @@
 
 | 事件名称                                  | 说明                                                         |
 | ----------------------------------------- | ------------------------------------------------------------ |
-| OSS:ObjectCreated:*                       | 创建Object的行为，包含Put   Object，   Post Object，Copy Object，Complete Multipart Upload |
-| OSS:ObjectCreated:Put                     | 使用Put Object上传文件                                       |
-| OSS:ObjectCreated:Post                    | 使用Post Object上传文件                                      |
-| OSS:ObjectCreated:Copy                    | 使用Put Object-Copy复制文件                                  |
-| OSS:ObjectCreated:CompleteMultipartUpload | 完成分片上传                                                 |
-| OSS:ObjectRemoved:*                       | 删除Object的行为，包含Delete   Object                        |
-| OSS:ObjectRemoved:Delete                  | 删除文件                                                     |
+| s3:ObjectCreated:*                       | 创建Object的行为，包含Put   Object，   Post Object，Copy Object，Complete Multipart Upload |
+| s3:ObjectCreated:Put                     | 使用Put Object上传文件                                       |
+| s3:ObjectCreated:Post                    | 使用Post Object上传文件                                      |
+| s3:ObjectCreated:Copy                    | 使用Put Object-Copy复制文件                                  |
+| s3:ObjectCreated:CompleteMultipartUpload | 完成分片上传                                                 |
+| s3:ObjectRemoved:*                       | 删除Object的行为，包含Delete   Object                        |
+| s3:ObjectRemoved:Delete                  | 删除文件                                                     |
 
  
 
@@ -36,14 +36,19 @@ OSS触发器触发器配置参数说明见表2。
 
  
 
-OSS触发器绑定限制如下：
+OSS触发器使用说明：
 
-* 
-* 同一个bucket的不同事件和前缀后缀组合，限制同一组规则只能触发绑定的第一个function。按照OSS回调通知的规则，为同一事件重复绑定function，只会触发第一个绑定的function。
-
-* 当使用前缀、后缀过滤规则时，同一个bucket若使用相同或包含的前缀、后缀或前缀和后缀的组合为统一事件类型定义筛选规则，例如，当您给函数 A 配置了 bucket test 事件类型为 “Put ”和后缀过滤为 “.jpg” 的事件触发，那么该 bucket test下就不能再创建 “Put” 和后缀过滤为 “.jpg”的事件触发。
-
-* 目前，OSS网关触发器仅支持同地域function绑定。
+* 资源与事件是组成OSS触发器的两个要素：
+ 
+  资源由bucket和前缀后缀组合组成。同一个Bucket，相同或包含的前缀、后缀或前缀后缀视为同一个资源。
+ 
+  事件是触发事件，包括表1中事件类型。
+  
+  目前，OSS网关触发器仅支持同地域function绑定，OSS触发器与函数的重复绑定不做限制。
+  
+  **场景一**：同一个OSS资源和同一个事件可以绑定同一个或多个函数，当重复绑定时，事件只会触发绑定的第一个函数。
+  
+  **场景二**：同一个OSS资源和不同事件可以绑定同一个或多个函数，当重复绑定时，若事件类型有包含，例如:配置两个触发器，同一个Bucket，事件类型分别为： s3:ObjectCreated:* 和s3:ObjectCreated:Put （s3:ObjectCreated:*包含s3:ObjectCreated:Put事件），当用户上传一个文件至Bucket，只会触发第一个被绑定函数。
 
  
 注意：使用 OSS 触发器一定要避免 **循环触发**。一个典型的循环触发场景是 OSS 的某个 Bucket 上传文件触发函数执行，这个函数又生成了一个或多个文件，写回到 OSS 的 Bucket 里，这个写入动作又触发了函数执行，形成了链状循环。
