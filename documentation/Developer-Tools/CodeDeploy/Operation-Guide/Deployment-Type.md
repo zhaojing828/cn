@@ -75,7 +75,7 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/bluegreendeploy4.png)
 
-2）开始部署，蓝组组中的主机，进行新版本的部署。
+2）开始部署，蓝组中的主机，进行新版本的部署。
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/bluegreendeploy5.png)
 
