@@ -1,6 +1,6 @@
 ## Agent安装
 
-目前仅支持Linux中安装Agent
+目前仅支持Linux中安装Agent。
 
 **安装**
 
