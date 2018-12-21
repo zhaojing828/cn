@@ -1,9 +1,30 @@
 # 消息分类
-## Topic&Tag
-
 Topic和Tag都可以用来进行消息区分，作为业务上消息的不同标识。
 
+## 利用不同Topic进行消息分类
+
 - Topic：主题，一般对于不同业务的消息进行区分，具有消息隔离性，即订阅者如果只订阅了TopicA，那么它不会接收到TopicB的消息。
+
+## 同一Topic下，利用Tag进行消息分类
+
+- Tag：标签，一般用于某个Topic下的消息进一步分类，消息队列 JCQ允许对消费者和消息设置标签Tag来进行消息过滤，确保最终只消费到消息者想要获得的消息。同一Topic内的消息不具有消息隔离性，消费者只是对消息进行筛选，如果不设置标签，那么消费者可以获得Topic内的全量消息。
+
+消息队列 JCQ 允许生产者在发送消息的时候，对消息设置Tag标签，带Tag标签的消息与无Tag标签的消息，同等对待被投递到JCQ消息系统中。
+
+消费者在订阅Topic时，可以选择是否使用Tag过滤消息。如果带Tag订阅，则只能收到带同样Tag的消息，其余消息会被丢弃；否则，将会收到所有消息，
+
+
+### 订阅一致
+
+消息队列 JCQ中采取的Pub/Sub模式，消费者想要消费消息需要通过订阅的方式用ConsumerGroup去订阅某个Topic，而为了提升消费效率，ConsumerGroup下允许多个Consumer进行消费。由于模型关系，为了不丢失消息，需要ConsumerGroup下的所有Consumer设置的Tag保持一致，保证同一订阅下的同一ConsumerGroup中的不同Consumer消费的行为一致。
+
+保持订阅一致即：
+- 同一ConsumerGroup下的所有Consumer设置的Tag一致
+
+相关代码请前往[SDK参考](https://docs.jdcloud.com/cn/message-queue/produce-standard-message)。
+
+
+
 
 - Tag：标签，一般用于某个Topic下的消息进一步分类，消息队列 JCQ允许对消费者和消息设置标签Tag来进行消息过滤，确保最终只消费到消息者想要获得的消息。同一Topic内的消息不具有消息隔离性，消费者只是对消息进行筛选，如果不设置标签，那么消费者可以获得Topic内的全量消息。
 
@@ -18,16 +39,5 @@ Topic和Tag都可以用来进行消息区分，作为业务上消息的不同标
 
 
 
-## 消息过滤
 
-消息队列 JCQ允许对消费者和消息设置标签Tag来进行消息过滤，消息过滤的方式是消费者对于消息的筛选。用户对某个Topic下的消息用Tag进行分类，消费者按照 Tag 对消息进行过滤，确保最终只消费到消息者想要获得的消息。
-
-### 订阅一致
-
-消息队列 JCQ中采取的Pub/Sub模式，消费者想要消费消息需要通过订阅的方式用ConsumerGroup去订阅某个Topic，而为了提升消费效率，ConsumerGroup下允许多个Consumer进行消费。由于模型关系，为了不丢失消息，需要ConsumerGroup下的所有Consumer设置的Tag保持一致，保证同一订阅下的同一ConsumerGroup中的不同Consumer消费的行为一致。
-
-保持订阅一致即：
-- 同一ConsumerGroup下的所有Consumer设置的Tag一致
-
-相关代码请前往[SDK参考](https://docs.jdcloud.com/cn/message-queue/produce-standard-message)。
 
