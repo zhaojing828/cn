@@ -1,6 +1,6 @@
 ## 新建部署
 
-在“应用”页，进入到“部署组”分页，可见上一步中创建完成的部署组。
+在“应用”页，进入到“部署组”分页，可见上一步中新建完成的部署组。
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting9.png)
 
