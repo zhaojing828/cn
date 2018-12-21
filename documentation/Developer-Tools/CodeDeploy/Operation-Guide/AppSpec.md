@@ -98,14 +98,17 @@ folder1/file3.txt
 2）hooks（非必须）
 
 location：
+
 - 脚本的位置，为绝对路径
 - 必须
 
 timeout：
+
 - 脚本的超时时间，单位为s
 - 非必须，默认为10s
 
 runas：
+
 - 执行脚本的用户
 - 非必须，默认为root
 
