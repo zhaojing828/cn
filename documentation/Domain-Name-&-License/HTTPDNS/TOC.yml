@@ -4,11 +4,11 @@
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/Introduction.md
+        href: Introduction/Product-Overview.md
       - name: 产品优势
-        href: Introduction/advantage.md
+        href: Introduction/Benefits.md
       - name: 应用场景 
-        href: Introduction/scene.md    
+        href: Introduction/Application-Scenarios.md
   - name: 快速入门
     items:
       - name: 使用方法
