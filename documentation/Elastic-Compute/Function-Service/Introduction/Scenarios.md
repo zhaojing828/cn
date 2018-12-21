@@ -6,6 +6,6 @@
 
  ![OSS场景](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/scenarios1.png)
  
-**Serverless后端服务** –您可以在创建网站时在Function上托管后端逻辑。通过HTTP调用Function函数，使用API网关作为HTTP终端节点。通过 Web 客户端调用 API，API网关将请求路由到Function来调用函数，完成用户网站后端逻辑的处理。
+**Serverless后端服务** –在创建网站时，您可以在Function上托管后端逻辑。通过HTTP调用Function函数，使用API网关作为HTTP终端节点。通过 Web 客户端调用 API，API网关将请求路由到Function来调用函数，完成用户网站后端逻辑的处理。
 
  ![APIG场景](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/scenarios2.png)
