@@ -86,13 +86,13 @@
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/bluegreendeploy6.png)
 
 
-**负载均衡虚拟服务器组命名规则**
+**自动创建的负载均衡虚拟服务器组命名规则**
 
 deploy_R_${group id}_${random string}：滚动部署时的虚拟服务器组
 
-deploy_B_${group id}_${random string}：蓝绿部署时蓝组的虚拟服务器组
+deploy_B_${group id}_${random string}：蓝绿部署时蓝组对应的虚拟服务器组
 
-deploy_G_${group id}_${random string}：滚动部署时绿组的虚拟服务器组
+deploy_G_${group id}_${random string}：滚动部署时绿组对应的虚拟服务器组
 
 其中的变量说明如下：
 
