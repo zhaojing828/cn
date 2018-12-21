@@ -5,7 +5,7 @@
 准备工作：开始示例操作前，请申请开通函数服务。
 
 ## 新建函数
-用户登陆函数服务，进入“概览”页面或”函数列表“页面，单击”创建函数“；
+用户登陆函数服务，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
   * 函数模板：Python 3.6 自定义模板；
   
@@ -33,7 +33,7 @@ def handler(event,context):
 
 ## 测试函数 
 1. 创建测试事件
-进入”函数列表“页面，单击”HelloWorld“函数，进入函数详情页面，选择”配置测试事件”，选择创建新的测试事件-空白模板-名称为：test，单击“保存”； 
+进入”函数列表“页面，单击”HelloWorld“函数，进入函数详情页面，选择”配置测试事件”，选择创建新的测试事件-空白模板-名称为：test，单击“保存”。 
 ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/hello%20world%20test.PNG)
 
 2. 测试函数
