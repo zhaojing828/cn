@@ -14,7 +14,7 @@ hooks:
    AfterInstall:
      - location: /opt/Control/Test1.sh
        timeout: 100
-       runas:root
+       runas: root
      - location: /opt/Control/Test2.sh
        timeout: 100
 ```
