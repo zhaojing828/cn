@@ -1,4 +1,4 @@
-# OSS触发器示例
+ # OSS触发器示例
 
 京东云OSS可将事件（例如：在bucket中删除对象）映射至function函数，将event参数传递至function处理函数来调用您的函数。
 
@@ -29,21 +29,21 @@
  
  登陆函数服务控制台，在华北-北京region，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
-函数模板：OSS模板；
+* 函数模板：OSS模板
 
-函数名称：OSSfunction（您可以设置自己的函数名）；
+* 函数名称：OSSfunction（您可以设置自己的函数名）
 
-函数入口：根据提示填写，默认index.handler；
+* 函数入口：根据提示填写，默认index.handler
 
-函数代码：默认选中的API网关模板；
+* 函数代码：默认选中的API网关模板
 
-函数执行内存：128MB；
+* 函数执行内存：128MB
 
-超时时间：3秒；
+* 超时时间：3秒
 
-描述、环境变量及高级配置：无需填写；
+* 描述、环境变量及高级配置：无需填写
 
-触发器：不配置触发器；
+* 触发器：不配置触发器
 
 单击”完成“，完成函数创建。
 
@@ -57,11 +57,11 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 1. 创建测试事件
 
 进入”函数列表“页面，单击”OSSfunction“函数，进入函数详情页面，选择”配置测试事件”，
-配置测试事件：创建新的测试事件；
+* 配置测试事件：创建新的测试事件
 
-事件模板：OSS-event-template；
+* 事件模板：OSS-event-template
 
-事件名称：test
+* 事件名称：test
 
 单击“保存”，完成测试事件创建。
 
@@ -78,15 +78,15 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 
 1. 在“APIGfunction”函数详情页面，选择”触发器”tab,单击“创建触发器”。
 
-触发器类型：OSS触发器
+* 触发器类型：OSS触发器
 
-Bucket：选择已创建准备绑定Function的Bucket:"function-test"；
+* Bucket：选择已创建准备绑定Function的Bucket:"function-test"
 
-事件类型：s3:ObjectCreated:Put
+* 事件类型：s3:ObjectCreated:Put
 
-前缀：空
+* 前缀：空
 
-后缀：.gif
+* 后缀：.gif
 
 2. 上传一个.gif文件至"function-test"Bucket，Function被触发，文件被删除。
 
