@@ -11,7 +11,7 @@
 
  
 
-`context`:function通过context参数向您的处理程序提供运行时信息。包括您的个人信息和其他信息。格式规则请参考[context对象](../python/context.md)。
+`context`:Function通过context参数向您的处理程序提供运行时信息。包括您的个人信息和其他信息。格式规则请参考[context对象](../python/context.md)。
 
  
 
