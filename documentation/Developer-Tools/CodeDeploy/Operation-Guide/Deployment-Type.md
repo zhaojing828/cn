@@ -61,7 +61,8 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/bluegreendeploy2.png)
 
-3）当绿组部署完毕，将绿组主机注册到指定负载均衡后端服务所关联的虚拟服务器组列表中，此虚拟服务器组为自动新建，名称为deploy_G_${group id}_${random string}，与此同时，将蓝组所在的，名称为deploy_B_${group id}_${random string}的虚拟服务器组删除。即将流量由路由到蓝组改为路由到绿组，蓝组不再提供服务，绿组提供服务。
+3）当绿组部署完毕，将绿组主机注册到指定负载均衡后端服务所关联的虚拟服务器组列表中，此虚拟服务器组为自动新建，名称为deploy_G_${group id}_${random string}。
+与此同时，将蓝组所在的，名称为deploy_B_${group id}_${random string}的虚拟服务器组删除。即将流量由路由到蓝组改为路由到绿组，蓝组不再提供服务，绿组提供服务。
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/bluegreendeploy3.png)
 
