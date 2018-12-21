@@ -26,4 +26,4 @@
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation15.png)
 
 
-填写部署任务信息后，请点击“部署”，将触发部署操作
+填写部署任务信息后，请点击“部署”，将触发部署操作。
