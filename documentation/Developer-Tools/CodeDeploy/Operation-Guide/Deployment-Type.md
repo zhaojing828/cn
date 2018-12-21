@@ -39,7 +39,7 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/rollingdeploy7.png)
 
-3）部署成功后，创建名为deploy_R_\${group id}_${random string}的虚拟服务器组（在指定负载均衡实例中），将这部分主机注册到虚拟服务器组中，并将此虚拟服务器组与指定负载均衡后端服务相关联。
+3）部署成功后，创建名为deploy_R_${group id}_${random string}的虚拟服务器组（在指定负载均衡实例中），将这部分主机注册到虚拟服务器组中，并将此虚拟服务器组与指定负载均衡后端服务相关联。
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/rollingdeploy8.png)
 
@@ -67,7 +67,7 @@
 
 在此之后，再次部署时，会将蓝组更新为V4，并承接流量，绿组不承接流量。
 
-对于初次部署的情况，会自动创建名为deploy_B_\${group id}_${random string}的虚拟服务器组，并与指定负载均衡后端服务相关联：
+对于初次部署的情况，会自动创建名为deploy_B_${group id}_${random string}的虚拟服务器组，并与指定负载均衡后端服务相关联：
 
 1）上线前部署组（蓝组、绿组）中全部主机未承接流量，提供服务。
 
