@@ -1,4 +1,4 @@
-# 处理程序
+ # 处理程序
 
 在创建Function函数时，需要指定一个事件处理程序，并指定对象 `event`、`context` 和 `callback`。遵循以下通用的语法结构：
 ```
@@ -7,11 +7,11 @@
    ```
    
 
-`event`:Function从event参数中获取函数的输入事件，调用函数时传入的数据，此参数是Python dict类型。您可以根据Function定义好的格式编写代码从event参数中获取需要的信息。格式规则请参考[事件格式](../../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)。
+`event`: Function从event参数中获取函数的输入事件，调用函数时传入的数据，此参数是Python dict类型。您可以根据Function定义好的格式编写代码从event参数中获取需要的信息。格式规则请参考[事件格式](../../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)。
 
  
 
-`context`:Function通过context参数向您的处理程序提供运行时信息。包括您的个人信息和其他信息。格式规则请参考[context对象](../python/context.md)。
+`context`: Function通过context参数向您的处理程序提供运行时信息。包括您的个人信息和其他信息。格式规则请参考[context对象](../python/context.md)。
 
  
 
