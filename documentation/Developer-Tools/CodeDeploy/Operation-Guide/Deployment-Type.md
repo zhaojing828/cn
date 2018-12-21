@@ -25,7 +25,7 @@
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/rollingdeploy5.png)
 
 
-对于初次部署的情况，会自动创建名为deploy_R_\${group id}_${random string}的虚拟服务器组，并与指定负载均衡后端服务相关联。
+对于初次部署的情况，会自动创建名为deploy_R_${group id}_${random string}的虚拟服务器组，并与指定负载均衡后端服务相关联。
 
 由于一个负载均衡后端服务仅可关联一个虚拟服务器组，因此，初次部署时将用默认新建的虚拟服务器组替换原本与此后端服务关联的虚拟服务器组，原本与此后端服务关联的虚拟服务器组保留，不做处理。
 
