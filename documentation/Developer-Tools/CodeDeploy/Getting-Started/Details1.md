@@ -13,3 +13,5 @@
 在浏览器中输入，云主机公网ip:8080，可见Tomcat欢迎页
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting14.png)
+
+至此，本次部署任务成功。
