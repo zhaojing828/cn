@@ -17,6 +17,4 @@
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting15.png)
 
 
-填写部署任务信息后，请点击“部署”，将触发部署操作。
-
-将跳转到“部署详情”页。
+填写部署任务信息后，请点击“部署”，将触发部署操作，跳转到“部署详情”页。
