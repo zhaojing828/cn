@@ -33,7 +33,11 @@ def handler(event,context):
 
 ## 测试函数 
 1. 创建测试事件
-进入”函数列表“页面，单击”HelloWorld“函数，进入函数详情页面，选择”配置测试事件”，选择创建新的测试事件-空白模板-名称为：test，单击“保存”。 
+进入”函数列表“页面，单击”HelloWorld“函数，进入函数详情页面，选择”配置测试事件”，
+* 配置测试事件：创建新的测试事件；
+* 事件模板：空白模板；
+* 事件名称：test
+单击“保存”，完成测试事件创建。 
 ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/hello%20world%20test.PNG)
 
 2. 测试函数
