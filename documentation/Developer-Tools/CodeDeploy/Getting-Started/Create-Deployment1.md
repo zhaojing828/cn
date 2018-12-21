@@ -14,7 +14,7 @@
 - 文件类型：请选择.tar.gz
 - 部署操作命令：请选择“输入部署操作命令”，使用“表单”填写功能，填写具体操作命令，如下：
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting15.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting15-2.png)
 
 
 填写部署任务信息后，请点击“部署”，将触发部署操作，跳转到“部署详情”页。
