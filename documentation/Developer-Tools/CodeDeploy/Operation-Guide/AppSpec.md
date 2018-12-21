@@ -170,4 +170,4 @@ hooks:
 - 执行部署后置脚本：以hadoop用户执行/home/bin/stop.sh，超时时间为100s，接下来以root用户执行/home/bin/stop2.sh，超时时间为100s。两个location间由上至下顺序执行
 
 
-建议在hook脚本中，设置 set -e
+建议在hooks脚本中，设置 set -e
