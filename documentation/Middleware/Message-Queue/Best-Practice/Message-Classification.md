@@ -22,7 +22,7 @@ Tag：标签，一般用于某个Topic下的消息进一步分类，同一Topic�
 
 消息队列 JCQ中采取的Pub/Sub模式，消费者想要消费消息需要通过订阅的方式用ConsumerGroup去订阅某个Topic，而为了提升消费效率，ConsumerGroup下允许多个Consumer进行消费。由于模型关系，为了不丢失消息，需要ConsumerGroup下的所有Consumer设置的Tag保持一致，保证同一订阅下的同一ConsumerGroup中的不同Consumer消费的行为一致。
 
-保持订阅一致即：
+保持消费一致即：
 - 同一ConsumerGroup下的所有Consumer设置的Tag一致
 
 相关代码请前往[SDK参考](https://docs.jdcloud.com/cn/message-queue/produce-standard-message)。
