@@ -4,7 +4,7 @@
 
 场景：应用程序可以通过为其Bucket关联函数，通过事件触发函数实现对用户上传文件直接进行处理，并可将结果存入OSS或其他服务，简化了应用开发和使用流程。
 
-本示例介绍如何配置OSS触发器，使用OSS函数模板，实现上传本地文件（以.gif为后缀）至指定OSS Bucket中。
+本示例介绍如何配置OSS触发器，使用OSS函数模板，实现上传本地文件（以.gif为后缀）至指定OSS Bucket中后执行删除。
 
  
 ## 创建OSS Bucket
@@ -76,17 +76,18 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 
 
 
-在OSS网关控制台，创建API。
+1. 在“APIGfunction”函数详情页面，选择”触发器”tab,单击“创建触发器”。
 
-在“APIGfunction”函数详情页面，选择”触发器”tab,单击“创建触发器”。
+触发器类型：OSS触发器
 
-触发器类型：API网管触发器
+Bucket：选择已创建准备绑定Function的Bucket:"function-test"；
 
-API分组：选择已创建准备绑定Function的未发布的API分组
+事件类型：s3:ObjectCreated:Put
 
-版本号：选择API版本号
+前缀：空
 
-API：选择API
+后缀：.gif
 
-测试成功后，在API网关控制台，发布API即可。
-完成API网关触发器触发Function的简单示例。
+2. 上传一个.gif文件至"function-test"Bucket，Function被触发，文件被删除。
+
+完成OSS触发器触发Function的简单示例。
