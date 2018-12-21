@@ -163,7 +163,7 @@ hooks:
     - location: /home/bin/config.sh
       timeout: 10
 ```
-将在部署过程中，将在工作流中的：
+将在部署过程中，将在工作流中的对应如下操作：
 
 - 执行部署前置脚本：以root用户执行/home/bin/config.sh，超时时间为10s
 - 执行启动脚本：以root用户执行/home/bin/start.sh，超时时间为100s
