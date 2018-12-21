@@ -1,6 +1,6 @@
-## AppSec文件
+## AppSpec文件
 
-在“新建部署”时，若“部署操作命令”选择“使用代码根目录的appSpec.”，那么，云部署将执行appSpec.yaml的全部内容。这里需要注意的是，appSpec.yaml文件所在目录必须为代码根目录，文件名称为appSpec.yaml。（大小写敏感）
+在“新建部署”时，若“部署操作命令”选择“使用代码根目录的appSpec.yml”，那么，云部署将执行appSpec.yml的全部内容。这里需要注意的是，appSpec.yml文件所在目录必须为代码根目录，文件名称为appSpec.yml。（大小写敏感）
 
 **模板**
 
@@ -14,7 +14,7 @@ hooks:
    AfterInstall:
      - location: /opt/Control/Test1.sh
        timeout: 100
-       runas:root
+       runas: root
      - location: /opt/Control/Test2.sh
        timeout: 100
 ```
@@ -24,11 +24,13 @@ hooks:
 1）files（必须）
 
 source：
+
 - 支持文件和目录，若为文件，那么将复制指定文件；若为目录，那么将复制目录内的文件（不包括本目录）；若为一个单斜杠（/），则将复制所有文件。
 - 相对路径：从代码包的根目录开始
 
 
 destination：
+
 - 复制source中的内容到此位置
 - 绝对路径
 
@@ -51,8 +53,8 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:./file1.txt
-  destination:/home
+- source: ./file1.txt
+  destination: /home
 # 执行结果如下：
 /home/file1.txt
 ```
@@ -61,10 +63,10 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:./file1.txt
-  destination:/home
-- source:./file2.txt
-  destination:/home  
+- source: ./file1.txt
+  destination: /home
+- source: ./file2.txt
+  destination: /home  
 # 执行结果如下：
 /home/file1.txt
 /home/file2.txt
@@ -74,8 +76,8 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:/
-  destination:/home
+- source: /
+  destination: /home
 # 执行结果如下：
 /home/file1.txt
 /home/file2.txt
@@ -86,8 +88,8 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:./folder1
-  destination:/home/test01
+- source: ./folder1
+  destination: /home/test01
 # 执行结果如下：
 /home/test01/file3.txt
 ```
@@ -96,14 +98,17 @@ folder1/file3.txt
 2）hooks（非必须）
 
 location：
+
 - 脚本的位置，为绝对路径
 - 必须
 
 timeout：
+
 - 脚本的超时时间，单位为s
 - 非必须，默认为10s
 
 runas：
+
 - 执行脚本的用户
 - 非必须，默认为root
 
@@ -155,14 +160,14 @@ hooks:
       timeout: 100
       runas: root
   BeforeInstall:
-	- location: /home/bin/config.sh
+    - location: /home/bin/config.sh
       timeout: 10
 ```
-将在部署过程中，将在工作流中的：
+将在部署过程中，将在工作流中的对应如下操作：
 
-- 执行部署前置脚本：以hadoop用户执行/home/bin/stop.sh，超时时间为100s，接下来以root用户执行/home/bin/stop2.sh，超时时间为100s
-- 执行启动脚本：以root用户执行/home/bin/start.sh，超时时间为100s
 - 执行部署前置脚本：以root用户执行/home/bin/config.sh，超时时间为10s
+- 执行启动脚本：以root用户执行/home/bin/start.sh，超时时间为100s
+- 执行部署后置脚本：以hadoop用户执行/home/bin/stop.sh，超时时间为100s，接下来以root用户执行/home/bin/stop2.sh，超时时间为100s。两个location间由上至下顺序执行
 
 
-建议在hook脚本中，设置 set -e
+建议在hooks脚本中，设置 set -e
