@@ -52,7 +52,7 @@
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/line23.png)
 
 
-1）下载程序包：缓存到\${root dir}/app-\${app id}/group-\${group id}/deploy-\${deploy id}/
+1）下载程序包：缓存到${root dir}/app-${app id}/group-${group id}/deploy-${deploy id}/
 
 2）执行取消注册的前置脚本：对应yaml文件中“hooks”下的“BeforeBlockTraffic”
 
@@ -122,7 +122,7 @@
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/line25.png)
 
 
-1）下载程序包：缓存到\${root dir}/app-\${app id}/group-\${group id}/deploy-\${deploy id}/
+1）下载程序包：缓存到${root dir}/app-${app id}/group-${group id}/deploy-${deploy id}/
 
 2）执行停止脚本：对应表单填写中的“停止脚本”，对应yaml文件中“hooks”下的“ApplicationStop”。
 
