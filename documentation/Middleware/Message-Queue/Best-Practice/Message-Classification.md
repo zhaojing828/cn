@@ -24,7 +24,7 @@ Topic和Tag都可以用来进行消息区分，作为业务上消息的不同标
 
 ### 订阅一致
 
-消息队列 JCQ中采取的Pub/Sub模式，消费者想要消费消息需要通过订阅的方式用ConsumerGroup去订阅某个Topic，而为了提升消费效率，ConsumerGroup下允许多个Consumer进行消费。由于模型关系，为了不丢失消息，需要ConsumerGroup下的所有Consumer设置的Tag要一致，保证同一订阅下的同一ConsumerGroup中的不同Consumer消费的行为一致。
+消息队列 JCQ中采取的Pub/Sub模式，消费者想要消费消息需要通过订阅的方式用ConsumerGroup去订阅某个Topic，而为了提升消费效率，ConsumerGroup下允许多个Consumer进行消费。由于模型关系，为了不丢失消息，需要ConsumerGroup下的所有Consumer设置的Tag保持一致，保证同一订阅下的同一ConsumerGroup中的不同Consumer消费的行为一致。
 
 保持订阅一致即：
 - 同一ConsumerGroup下的所有Consumer设置的Tag一致
