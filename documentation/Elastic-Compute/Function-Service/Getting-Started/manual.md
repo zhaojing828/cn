@@ -27,7 +27,7 @@
  
 ## 触发函数
 
-函数由事件触发，函数服务目前支持OSS触发器、API网关触发器。
+函数由事件触发，函数服务目前支持OSS触发器和API网关触发器。
 
 触发器详细信息请参阅[触发器管理](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/triggeroverview.md)。
 
