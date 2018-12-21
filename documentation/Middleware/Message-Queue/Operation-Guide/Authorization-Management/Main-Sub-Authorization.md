@@ -1,6 +1,6 @@
 # 主子账号授权
 
-消息队列 JCQ主子账号授权的功能通过[访问控制 IAM](https://docs.jdcloud.com/cn/iam/product-overview)（Identity and Access Management， IAM）来实现的。
+消息队列 JCQ主子账号授权的功能是通过[访问控制 IAM](https://docs.jdcloud.com/cn/iam/product-overview)（Identity and Access Management， IAM）来实现的。
 
 访问控制服务的核心功能主要是用户身份管理与资源访问控制。用户可以通过使用IAM创建、管理子用户，并控制这些子用户访问京东云资源的操作权限。使用访问控制，主账号可以向他人授权管理账户中的资源，而不必共享账户密码或访问秘钥，按需为用户分配所需的最小权限，从而降低企业信息安全风险。更多关于 IAM 的介绍可前往[IAM访问控制](https://docs.jdcloud.com/cn/iam/product-overview)查看。
 
