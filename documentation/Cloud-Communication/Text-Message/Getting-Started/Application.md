@@ -38,4 +38,4 @@
 屏蔽名单:<br>
 ![屏蔽名单](../../../../image/Text-Message/dx-008.png)<br><br>
 
-Text-Message
+在屏蔽名单中的号码，将不会收到任何类型的短信。
