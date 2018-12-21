@@ -13,7 +13,7 @@
   
   函数入口：根据提示填写，默认index.handler；
   
-  函数代码：在代码编辑页面输入Hello World 函数，控制台编辑器默认函数为Hello World函数。
+  函数代码：在代码编辑页面输入Hello World 函数，控制台编辑器默认函数为Hello World函数；
   
  
   ```
