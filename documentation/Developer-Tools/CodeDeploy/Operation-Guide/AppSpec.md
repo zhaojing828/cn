@@ -53,8 +53,8 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:./file1.txt
-  destination:/home
+- source: ./file1.txt
+  destination: /home
 # 执行结果如下：
 /home/file1.txt
 ```
@@ -63,10 +63,10 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:./file1.txt
-  destination:/home
-- source:./file2.txt
-  destination:/home  
+- source: ./file1.txt
+  destination: /home
+- source: ./file2.txt
+  destination: /home  
 # 执行结果如下：
 /home/file1.txt
 /home/file2.txt
@@ -76,8 +76,8 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:/
-  destination:/home
+- source: /
+  destination: /home
 # 执行结果如下：
 /home/file1.txt
 /home/file2.txt
@@ -88,8 +88,8 @@ folder1/file3.txt
 
 ```
 # files如下
-- source:./folder1
-  destination:/home/test01
+- source: ./folder1
+  destination: /home/test01
 # 执行结果如下：
 /home/test01/file3.txt
 ```
@@ -157,7 +157,7 @@ hooks:
       timeout: 100
       runas: root
   BeforeInstall:
-	- location: /home/bin/config.sh
+    - location: /home/bin/config.sh
       timeout: 10
 ```
 将在部署过程中，将在工作流中的：
