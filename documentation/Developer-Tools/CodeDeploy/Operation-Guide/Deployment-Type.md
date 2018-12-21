@@ -47,7 +47,7 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/rollingdeploy9.png)
 
-以上为滚动部署的具体情况，下面来介绍下另一种部署方式：
+以上为滚动部署的具体情况，下面来介绍下另一种部署类型：
 
 **蓝绿部署**
 
