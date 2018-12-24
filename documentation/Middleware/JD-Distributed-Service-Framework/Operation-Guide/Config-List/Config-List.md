@@ -11,7 +11,7 @@
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-list.png)
 
 ### 发布历史
-选择配置管理列表中某条配置，可查看某条配置的发布历史信息。
+选择配置管理列表中某条配置，可查看该条配置的发布历史信息。
 
 
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-history.png)
