@@ -41,4 +41,9 @@ items:
         items:
           - name: 停止操作
             href: Operation-Guide/Working-With-Action/Check-Action.md     
+    - name: 最佳实践
+    items:
+      - name: 构建并部署到Kubernetes集群
+        href: Best-Practices/Deployment-On-K8S.md
+  
   
