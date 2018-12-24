@@ -10,7 +10,7 @@
 ###  服务管理列表
 
 
-  ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-fwgl.png)
+  ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/service-list.png)
  
 ####  说明：
 -	在服务管理列表中，将根据不同的注册中心，展示该注册中心下的所有服务信息。
