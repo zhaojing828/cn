@@ -23,7 +23,7 @@ items:
       href: 
       items:
        - name: 3.0 基础图表
-         href:Operation-Guide/BasicChart.md
+         href: Operation-Guide/BasicChart.md
        - name: 3.1 柱折图
          href: Operation-Guide/BarandLine.md
        - name: 3.2 饼图
@@ -38,7 +38,7 @@ items:
       href: 
       items:
        - name: 4.0 地图组件
-         Operation-Guide/Map.md
+         href: Operation-Guide/Map.md
        - name: 4.1 3D边界地图
          href: Operation-Guide/3DmapStyle.md
        - name: 4.2 2D边界地图
