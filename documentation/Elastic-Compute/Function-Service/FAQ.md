@@ -16,13 +16,13 @@ Serverless 服务的突出的优点就是可弹性伸缩所需资源，函数服
 
 * 如何用函数访问VPC内资源？
 
-您可以为您的函数配置VPC及子网等VPC信息，函数服务通过您提供的VPC信息设置ENI，将向每ENI分配一个来子您指定子网中IP地址范威的私有IP地址，单不会分配公共IP地址，使得您的函数可以访问特定的 VPC。一旦 VPC 配置被启用，您的函数就可以运行在特定的 VPC 内部里。
+您可以为您的函数配置VPC及子网等信息，函数服务通过您提供的VPC信息设置ENI，使得您的函数可以访问特定的 VPC。一旦VPC配置被启用，您的函数就可以运行在特定的 VPC内。
 
  
 
 * 在VPC中的函数如何访问公网？
 
-当您的Function函数配置VPC后，它只能访问该VPC中的资源。如果Function函数既要访问VPC资源又要访问公共Internet，那么VPC内部必须具有网络地址转换实例（NAT）网关实例，详情请参考NAT网关实例。
+当您的Function函数配置VPC后，它只能访问该VPC中的资源。如果Function函数既要访问VPC资源又要访问公共Internet，那么VPC内部必须具有网络地址转换实例（NAT）网关实例，详情请参考[NAT实例网关](https://docs.jdcloud.com/cn/virtual-private-cloud/nat-instance-gateway)。
 
  
 
