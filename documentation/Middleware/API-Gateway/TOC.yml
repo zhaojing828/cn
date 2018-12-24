@@ -86,6 +86,8 @@ items:
   items:
   - name: 最佳实践
     herf: Best-Practices/BestPractices.md
+  - name: 使用示例构建API
+    herf: Best-Practices/example_for_create_api.md
 - name: 常见问题
   herf: FAQ/faq.md
 - name: 相关资源

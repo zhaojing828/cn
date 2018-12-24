@@ -76,9 +76,19 @@ items:
     href: Message-Queuing-JCQ-Service-Level-Protocol-SLA.md
   - name: 分布式关系数据库DRDS试用服务协议
     href: Distributed-Relational-Database-DRDS-Trial-Service-Clause.md
+  - name: 分布式关系数据库DRDS服务协议
+    href: Distributed-Relational-Database-DRDS-Service-Clause.md
+  - name: 分布式关系数据库DRDS服务等级协议（SLA）
+    href: Distributed-Relational-Database-DRDS-Service-Level-Agreement-SLA.md
   - name: DDoS防护包服务条款
     href: DDoS-Protection-Package-Terms-Of-Service.md
   - name: DDoS防护包服务等级协议(SLA)
     href: DDoS-Protection-Package-Terms-Of-Service-SLA.md
   - name: 云搜索Elasticsearch服务条款
     href: JCS-for-Elasticsearch-Service-Terms.md
+  - name: 云搜索Elasticsearch服务等级协议（SLA）
+    href: JCS-for-Elasticsearch-Service-Terms-SLA.md  
+  - name: 函数服务服务条款
+    href: Functional-Service-Terms-of-Service.md
+  - name: 云桌面服务协议
+    href: Cloud-Desktop-Service-Protocol.md   

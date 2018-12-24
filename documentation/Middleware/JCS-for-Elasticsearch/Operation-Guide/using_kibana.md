@@ -1,4 +1,7 @@
 ## 使用Kibana
+用户可以使用Kibana查询和分析存储在云搜索Elastisearch中的数据。
+![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana访问设置-01.png)
+
 ### 定义索引模式
 进入ES控制台，在实例列表页单击kibana，跳转到kibana web页面，单击左侧导航栏的Management ，选择Index Patterns，在该页面中可以定义新的索引模式。</br>
 

@@ -125,7 +125,7 @@
     </tbody>
 </table>
 
-您也可以点击[价格计算器](https://www.jdcloud.com/calculator/calDisk)查看所需云硬盘配置的价格，估算资源成本，加入购买预算清单。
+您也可以点击[价格计算器](https://www.jdcloud.com/cn/calculator/calDisk)查看所需云硬盘配置的价格，估算资源成本，加入购买预算清单。
 
 注：为保证您获取价格的准确性，请您登录后查看。
 

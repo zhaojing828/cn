@@ -1,11 +1,12 @@
-## 上报监控数据
-自定义监控功能为您提供上报监控数据的接口，方便您将自己采集的时序数据上报到云监控。目前支持OpenAPI的方式进行上报，可上报原始数据和已聚合的统计数据。
+# 上报监控数据
+自定义监控功能为您提供上报监控数据的接口，方便您将自己采集的时序数据上报到云监控。目前支持OpenAPI和命令行工具CLI的方式进行上报，可上报原始数据和已聚合的统计数据。  
+## OpenAPI上报
 
 ### 上报接口描述
 
 1. 接口名称：putMetricData
 
-2. 公网域名：
+2. 公网域名  
 
 地域 | 域名
 ---|---
@@ -14,7 +15,7 @@
 华东-宿迁 |monitor.cn-east-1.jdcloud-api.com
 华东-上海 |monitor.cn-east-2.jdcloud-api.com
 
-3. 支持批量上报方式。单次请求最多包含 50 个数据点；数据大小不超过 256k。
+3.  支持批量上报方式。单次请求最多包含 50 个数据点；数据大小不超过 256k。
 
 注：OpenAPI入门使用请参看<a href="http://docs.jdcloud.com/cn/common-declaration/api/introduction">公共说明</a>
 
@@ -30,7 +31,7 @@ POST   https://{公网域名}/v1/customMetrics
 ---|---|---|---
 metricDataList|	MetricDataCm[] |	False |	数据参数   
 
-### MetricDataCm
+#### MetricDataCm
 
 名称 | 类型 | 是否必选 | 描述
 ---|---|---|---
@@ -49,13 +50,13 @@ error |Object| 错误信息 。
 requestId|String |请求的标识id                        
 result |Result |                
                       
-### Result
+#### Result
 名称 | 类型 | 是否必选 
 ---|---|---
 errMetricDataList|MetricDataList[]|
 success|Boolean  |全部写入成功为true，否则为false   
 
-### MetricDataList
+#### MetricDataList
 名称 | 类型 | 是否必选 
 ---|---|---
 errDetail|string	| 错误数据描述
@@ -139,4 +140,49 @@ fail：
 	}
 }
 
+```
+
+## CLI上报 
+### 安装CLI  
+如何安装请参看<a href="https://docs.jdcloud.com/cn/cli/installation">安装说明</a> 。
+### 配置环境  
+
+配置KEY、所在区域region-id和网关地址endpoint，编辑 /root/.jdc/config
+```
+vi /root/.jdc/config
+```
+
+```
+[default]
+access_key = 4332FC1AF6D790660EEC9A7E4124380F
+secret_key = E1380087654E1CB0E64AB8A5536E568E
+region_id = cn-north-1
+endpoint = monitor.cn-north-1.jdcloud-api.com
+scheme = https
+timeout = 20
+```  
+不同地域的region_id 和 上报的网关endpoint地址如下：  
+
+地域 |region_id |endpoint
+---|---|---
+华北-北京 |cn-north-1| monitor.cn-north-1.jdcloud-api.com
+华南-广州 |cn-south-1| monitor.cn-south-1.jdcloud-api.com
+华东-宿迁 |cn-east-1 |monitor.cn-east-1.jdcloud-api.com
+华东-上海 |cn-east-2 | monitor.cn-east-2.jdcloud-api.com
+
+### 上报监控数据  
+使用 put-metric-data 接口上报监控数据，示例如下：  
+```
+jdc monitor put-metric-data --input-json '{"metricDataList": [{"namespace": "test_ns","metric": "vm.cpu.usage1","dimensions": {"host": "10.10.10.23","datacenter": "cn_north_1"},"timestamp": 1544425695,"type": 1,"values": {"value": "12342213"}}]}'
+```  
+返回成功示例如下：
+```
+{
+    "error": null, 
+    "result": {
+        "errMetricDataList": [], 
+        "success": true
+    }, 
+    "request_id": "bg9ofp78ikqqgvastas64owpqmoijk77"
+}
 ```

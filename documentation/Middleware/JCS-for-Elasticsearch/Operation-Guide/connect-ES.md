@@ -56,19 +56,8 @@ gunzip logs.jsonl.gz
 '，示例如下：
 
 ```
-curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/shakespeare" -H 'Content-Type: application/json' -d'
- {
-  "mappings" : {
-   "_default_" : {
-    "properties" : {
-     "speaker" : {"type": "keyword" },
-     "play_name" : {"type": "keyword" },
-     "line_id" : { "type" : "integer" },
-     "speech_number" : { "type" : "integer" }
-    }
-   }
- }
-}'
+curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/shakespeare" -H 'Content-Type: application/json' -d' { "mappings" : { "_default_" : { "properties" : { "speaker" : {"type": "keyword" }, "play_name" : {"type": "keyword" }, "line_id" : { "type" : "integer" }, "speech_number" : { "type" : "integer" } } } } } '
+
  
 ```
 响应如下时表示成功：
@@ -93,22 +82,7 @@ curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/shakespeare" 
 }' ，示例如下：
 
 ```
-curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/logstash-20181011" -H 'Content-Type: application/json' -d'
-{
-  "mappings": {
-    "log": {
-      "properties": {
-        "geo": {
-          "properties": {
-            "coordinates": {
-              "type": "geo_point"
-            }
-          }
-        }
-      }
-    }
-  }
-}'
+curl -X PUT "es-nlb-es-u92rc1eulw.jvessel-open-hb.jdcloud.com:9200/logstash-20181011" -H 'Content-Type: application/json' -d' { "mappings": { "log": { "properties": { "geo": { "properties": { "coordinates": { "type": "geo_point" } } } } } } }' 
 
 ```
 5. 加载数据集并验证加载是否成功，示例如下：

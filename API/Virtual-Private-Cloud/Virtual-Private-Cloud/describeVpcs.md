@@ -42,7 +42,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcs/
 ### Vpc
 |名称|类型|描述|
 |---|---|---|
-|**aclIds**|String[]| |
+|**aclIds**|String[]|同一vpc下的acl id 列表|
 |**addressPrefix**|String|如果为空，则不限制网段，如果不为空，10.0.0.0/8、172.16.0.0/12和192.168.0.0/16及它们包含的子网，且子网掩码长度为16-28之间|
 |**createdTime**|String|vpc创建时间|
 |**description**|String|VPC 描述，取值范围：1~120个字符|

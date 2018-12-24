@@ -96,7 +96,7 @@ Header特别提示:
 
 5.form 大小限制20K（不包含file大小）,否则返回400， MaxPostPreDataLengthExceeded
 
-6.Post请求的body总长度不允许超过5G。若文件长度过大，会返回错误码：EntityTooLarge。
+6.Post请求的body总长度不允许超过5G。若文件长度过大，会返回错误码：EntityTooLarge，如果您要上传大于5G的文件建议使用分片上传。
 
 7.key的value如果指定变量（仅支持变量${filename}），此时上传的文件名含有路径，即"/" 或"\"，那么${filename}将会被替换为最后一个"/" 或"\"之后的部分。例如：上传的文件名为：C:\Program Files\directory1\file.txt，那么key属性中${filename}将会被替换为file.txt
 

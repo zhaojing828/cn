@@ -1,4 +1,4 @@
-授权策略（Policy）是定义一条或多条权限的 JSON 文档。本文介绍了 IAM Policy 的基本元素、语法结构和示例。
+授权策略（Policy）是定义一条或多条权限的 JSON 文档。本文介绍IAM Policy 的基本元素、语法结构和示例。
 
 # Policy 的基本元素
 IAM Policy 包含以下基本元素：content（策略内容）、permission（允许的操作类型）、resource（允许操作的资源）、ids（指定资源的 IDs）、type（指定资源的类型）和 version（策略版本）。

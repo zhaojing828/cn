@@ -13,8 +13,6 @@
         href: Introduction/Core-Concepts.md        
       - name: 产品规格
         href: Introduction/Specifications.md       
-      - name: 公测说明 
-        href: Introduction/Public-Beta-Introduction.md
   - name: 产品定价
     items:
       - name: 计费概述
@@ -33,6 +31,8 @@
             href: Operation-Guide/Instance/Connect-Instance.md
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
+          - name: 调整配置
+            href: Operation-Guide/Instance/Modify-Instance-Spec.md            
       - name: 账号管理
         items:
           - name: 创建账号

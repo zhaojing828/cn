@@ -16,11 +16,10 @@
 ```
 
 ### **3.保存规则**
-
-[root@jd ~]# iptables -L –n    #查看是否设置好， 看到全部 DROP 了
-
-这样的设置好了，我们只是临时的， 重启服务器还是会恢复原来没有设置的状态。还要使用 service iptables save 进行保存。看到信息 firewall rules 防火墙的规则，其实就是保存在 /etc/sysconfig/iptables。可以打开文件查看 vi /etc/sysconfig/iptables
-
+```
+[root@jd ~]# iptables -L –n        #查看是否设置好， 看到全部 DROP 了。这条命令只是临时的， 重启服务器还是会恢复到原有规则。
+[root@jd ~]# service iptables save #将规则保存在 /etc/sysconfig/iptables，使重启后也可生效。
+```
 
 ### **4.添加规则**
 
@@ -52,13 +51,13 @@ HTTPS (开启443端口)
 ```
 允许ICMP（允许ping）
 ```
-[root@tp ~]# iptables -A OUTPUT -p icmp -j ACCEPT
-[root@tp ~]# iptables -A INPUT -p icmp -j ACCEPT
+[root@jd ~]# iptables -A OUTPUT -p icmp -j ACCEPT
+[root@jd ~]# iptables -A INPUT -p icmp -j ACCEPT
 ```
-允许loopback(不然会导致DNS无法正常关闭等问题)
+允许loopback(禁止loopback会导致DNS无法正常关闭等问题)
 ```
-IPTABLES -A INPUT -i lo -p all -j ACCEPT
-IPTABLES -A OUTPUT -o lo -p all -j ACCEPT
+[root@jd ~]# iptables -A INPUT -i lo -p all -j ACCEPT
+[root@jd ~]# iptables -A OUTPUT -o lo -p all -j ACCEPT
 ```
 禁止某个IP的tcp访问
 ```

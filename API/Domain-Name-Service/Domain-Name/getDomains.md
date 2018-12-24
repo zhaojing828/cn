@@ -44,6 +44,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain
 |**domainName**|String|域名字符串|
 |**expirationDate**|Long|过期时间，格式Unix timestamp，时间单位：毫秒|
 |**id**|Integer|域名的唯一ID|
+|**lockStatus**|Integer|域名的锁定状态，0:未锁定， 1:已锁定|
 |**packId**|Integer|套餐类型，0->免费 1->企业版 2->企业高级版|
 
 ## 返回码

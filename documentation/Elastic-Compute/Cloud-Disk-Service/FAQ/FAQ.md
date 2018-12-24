@@ -15,7 +15,7 @@ A：单用户支持创建15个手动备份，单硬盘备份数量受限于现�
 
 **Q：云硬盘恢复操作规则？**
 
-A：只有当云硬盘在可用状态下才可以进行恢复操作。详情参考帮助中心[恢复云硬盘](https://www.jdcloud.com/help/detail/512/isCatalog/1)。
+A：只有当云硬盘在可用状态下才可以进行恢复操作。详情参考帮助中心[恢复云硬盘](https://docs.jdcloud.com/cn/cloud-disk-service/recover-clouddisk)。
 
    
 **Q：云硬盘删除操作规则？**

@@ -19,6 +19,8 @@
         href: Introduction/Restrictions.md
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
+      - name: 新版本特性介绍 
+        href: Introduction/New-version.md 
   - name: 产品定价
     items:
       - name: 计费概述
