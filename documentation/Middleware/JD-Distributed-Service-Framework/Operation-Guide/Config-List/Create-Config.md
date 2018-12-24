@@ -3,7 +3,9 @@
 ## 操作步骤：
 
 
-### 第1步：进入配置管理列表，选择可用的区域region。
+### 第1步：选择可用的区域region，新建配置。
+-	进入配置管理列表，选择可用的区域region。
+-	点击新建配置按钮，进行新建操作
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-list.png)
  
 ### 第2步：在区域中，点击新建配置，进入新建页
