@@ -32,609 +32,645 @@
 ## 示例模板：
 ```  
 {
-    "JDCLOUDTemplateFormatVersion": "2018-10-01",
-    "Description": "JDRO WORDPRESS_WITH_CLUSTER TEMPLATE",
-    "Parameters": {
-        "VPCName": {
-            "Default": "vpc",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "My VPC Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen."
-        },
-        "SubnetName": {
-            "Default": "subnet",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "The Subnet Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen."
-        },
-        "InstanceName1": {
-            "Default": "vm1",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "Define the Instance Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline  and hyphen."
-        },
-        "InstanceName2": {
-            "Default": "vm2",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "Define the Instance Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline  and hyphen."
-        },
-        "DiskName1": {
-            "Default": "disk1",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "The Disk Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline  and hyphen."
-        },
-        "DiskName2": {
-            "Default": "disk2",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "Description": "The Disk Name",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline  and hyphen."
-        },
-        "DBName": {
-            "Default": "db",
-            "Description": "MySQL database name",
-            "Type": "String",
-            "MinLength": "2",
-            "MaxLength": "32",
-            "AllowedPattern": "^[a-z][a-z0-9]*$",
-            "ConstraintDescription": "The name only supports figures letters both in upper case and lower case and English underline, no less than 2 characters and no more than 32 characters."
-        },
-        "DBUser": {
-            "Default": "root",
-            "Description": "Username for MySQL database access",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "16",
-            "AllowedPattern": "^[a-zA-Z][a-zA-Z0-9]*$",
-            "ConstraintDescription": "must begin with a letter and contain only alphanumeric characters."
+  "JDCLOUDTemplateFormatVersion": "2018-10-01",
+  "Description": "JDRO WORDPRESS_WITH_CLUSTER TEMPLATE",
+  "Parameters": {
+    "VPCName": {
+      "Default": "vpc",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "Define the VPC Name. It cannot be same as an existing VPC name, otherwise the resource will fail to be created",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen ."
+    },
+    "SubnetName": {
+      "Default": "subnet",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "Define the Subnet Name. It cannot be same as an existing Subnet name, otherwise the resource will fail to be created",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen ."
+    },
+    "AddressPrefix": {
+      "Default": "10.0.0.0/16",
+      "Type": "String",
+      "Description": "Give an exact CIDR",
+      "AllowedValues": [
+        "192.168.0.0/16",
+        "172.16.0.0/16",
+        "10.0.0.0/16"
+      ],
+      "ConstraintDescription": "Need give an exact CIDR."
+    },
+    "InstanceName1": {
+      "Default": "vm1",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "Define the Instance Name",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen."
+    },
+    "InstanceName2": {
+      "Default": "vm2",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "Define the Instance Name",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen."
+    },
+    "VMPassword": {
+      "NoEcho": true,
+      "Description": "Password for vm access",
+      "Type": "String",
+      "MinLength": "8",
+      "MaxLength": "16",
+      "AllowedPattern": "[a-zA-Z0-9]*"
+    },
+    "DiskName1": {
+      "Default": "disk1",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "The Disk Name",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports numbers, capital and lowercase letters, English underline and hyphen."
+    },
+    "DiskName2": {
+      "Default": "disk2",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "Description": "The Disk Name",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline and hyphen."
+    },
+    "DBName": {
+      "Default": "wordpress",
+      "Description": "MySQL database name",
+      "Type": "String",
+      "MinLength": "2",
+      "MaxLength": "32",
+      "AllowedPattern": "^[a-z][a-z0-9_]*$",
+      "ConstraintDescription": "The name only supports lower case letters, numbers and English underline, no less than 2 characters and no more than 32 characters."
+    },
+    "DBUser": {
+      "Default": "wordpress",
+      "Description": "Username for MySQL database access",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "16",
+      "AllowedPattern": "^[a-zA-Z][a-zA-Z0-9]*$",
+      "ConstraintDescription": "must begin with a letter and contain only alphanumeric characters."
+    },
+    "DBPassword": {
+      "NoEcho": true,
+      "Description": "Password must contain and only supports letters both in upper case and lower case as well as figures, no less than 8 characters and no more than 16 characters. e.g. Ptest1130",
+      "Type": "String",
+      "MinLength": "8",
+      "MaxLength": "16",
+      "AllowedPattern": "[a-zA-Z0-9]*"
+    },
+    "LoadBalancerName": {
+      "Default": "lb",
+      "Description": "LoadBalancer name",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline  and hyphen."
+    },
+    "TargetGroupName": {
+      "Default": "lbtargetgroup",
+      "Description": "TargetGroup Name",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline  and hyphen."
+    },
+    "LBBackendName": {
+      "Default": "lbbackend",
+      "Description": "Backend Name",
+      "Type": "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
+      "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline  and hyphen."
+    }
+  },
+  "Mappings": {
+    "AZInfo": {
+      "cn-north-1": {
+        "az1": "cn-north-1a",
+        "az2": "cn-north-1b"
+      },
+      "cn-east-1": {
+        "az1": "cn-east-1a"
+      },
+      "cn-east-2": {
+        "az1": "cn-east-2a",
+        "az2": "cn-east-2b"
+      },
+      "cn-south-1": {
+        "az1": "cn-south-1a"
+      }
+    },
+    "ImageInfo": {
+      "cn-north-1": {
+        "image": "img-9ha1rgelkq"
+      },
+      "cn-east-1": {
+        "image": "img-htaupmjlqq"
+      },
+      "cn-east-2": {
+        "image": "img-ssazsh60t6"
+      },
+      "cn-south-1": {
+        "image": "img-uxgb28v2y3"
+      }
+    }
+  },
+  "Resources": {
+    "MyVPC": {
+      "Type": "JDCLOUD::VPC::VPC",
+      "Properties": {
+        "VpcName": {
+          "Ref": "VPCName"
+        }
+      }
+    },
+    "MySubnet": {
+      "Type": "JDCLOUD::VPC::Subnet",
+      "Properties": {
+        "VpcId": {
+          "Ref": "MyVPC"
         },
         "AddressPrefix": {
-            "Default": "10.0.0.0/16",
-            "Type": "String",
-            "Description": "Give an exact CIDR",
-            "AllowedValues": [
-                "192.168.0.0/16",
-                "172.16.0.0/16",
-                "10.0.0.0/16"
-            ],
-            "ConstraintDescription": "Need give an exact CIDR."
+          "Ref": "AddressPrefix"
+        },
+        "SubnetName": {
+          "Ref": "SubnetName"
+        }
+      }
+    },
+    "MyInstance1": {
+      "Type": "JDCLOUD::VM::Instance",
+      "Properties": {
+        "Name": {
+          "Ref": "InstanceName1"
+        },
+        "ImageId": {
+          "Fn::FindInMap": [
+            "ImageInfo",
+            {
+              "Ref": "JDCLOUD::Region"
+            },
+            "image"
+          ]
+        },
+        "ElasticIp": {
+          "BandwidthMbps": 1,
+          "Provider": "bgp"
+        },
+        "InstanceType": "g.n2.medium",
+        "AZ": {
+          "Fn::FindInMap": [
+            "AZInfo",
+            {
+              "Ref": "JDCLOUD::Region"
+            },
+            "az1"
+          ]
+        },
+        "PrimaryNetworkInterface": {
+          "NetworkInterface": {
+            "SubnetId": {
+              "Ref": "MySubnet"
+            }
+          }
         },
         "Password": {
-            "Default": "Ptest1130",
-            "NoEcho": true,
-            "Description": "Password for vm or dbuser access",
-            "Type": "String",
-            "MinLength": "8",
-            "MaxLength": "16",
-            "AllowedPattern": "[a-zA-Z0-9]*"
+          "Ref": "VMPassword"
         },
+        "DataDisks": [
+          {
+            "AutoDelete": true,
+            "CloudDiskSpec": {
+              "Name": {
+                "Ref": "DiskName1"
+              },
+              "AZ": {
+                "Fn::FindInMap": [
+                  "AZInfo",
+                  {
+                    "Ref": "JDCLOUD::Region"
+                  },
+                  "az1"
+                ]
+              },
+              "DiskSizeGB": 20,
+              "DiskType": "ssd"
+            },
+            "DiskCategory": "cloud"
+          }
+        ],
+        "Userdata": {
+          "Fn::Base64": {
+            "Fn::Join": [
+              "",
+              [
+                " #!/bin/bash \n",
+                " Region=",
+                {
+                  "Ref": "JDCLOUD::Region"
+                },
+                "\n",
+                " wget  jdro-userdata-${Region}.s3.${Region}.jcloudcs.com/signal.py -O /tmp/signal.py \n",
+                " chmod +x /tmp/signal.py \n",
+                " #user code begin \n",
+                "DatabaseUser=",
+                {
+                  "Ref": "DBUser"
+                },
+                "\n",
+                "DatabasePwd=",
+                {
+                  "Ref": "DBPassword"
+                },
+                "\n",
+                "DatabaseName=",
+                {
+                  "Ref": "DBName"
+                },
+                "\n",
+                "DatabaseHost=",
+                {
+                  "Fn::GetAtt": [
+                    "MyDBInstance",
+                    "InternalDomainName"
+                  ]
+                },
+                "\n",
+                "WebRootPath='/var/www/html'\n",
+                "mkdir -p $WebRootPath \n",
+                "yum install -y curl httpd mysql-server php php-common php-mysql\n",
+                "yum install -y php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc\n",
+                "chkconfig httpd on\n",
+                "wget http://wordpress.org/latest.tar.gz \n",
+                "tar -xzvf latest.tar.gz \n",
+                "sed -i \"s/database_name_here/$DatabaseName/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/username_here/$DatabaseUser/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/password_here/${DatabasePwd:-$DatabasePwdDef}/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/localhost/$DatabaseHost/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/bpache/apache/\" wordpress/wp-config-sample.php\n",
+                "mv wordpress/wp-config-sample.php wordpress/wp-config.php\n",
+                "cp -a wordpress/* $WebRootPath \n",
+                "rm -rf wordpress*\n",
+                "service httpd stop\n",
+                "usermod -d $WebRootPath apache &>/dev/null\n",
+                "chown apache:apache -R $WebRootPath\n",
+                "service httpd start\n",
+                " # user code end \n",
+                "/tmp/signal.py --exit-code $? ",
+                {
+                  "Ref": "MyWaitConditionHandle"
+                },
+                " \n "
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "MyInstance2": {
+      "Type": "JDCLOUD::VM::Instance",
+      "Properties": {
+        "Name": {
+          "Ref": "InstanceName2"
+        },
+        "ImageId": {
+          "Fn::FindInMap": [
+            "ImageInfo",
+            {
+              "Ref": "JDCLOUD::Region"
+            },
+            "image"
+          ]
+        },
+        "ElasticIp": {
+          "BandwidthMbps": 1,
+          "Provider": "bgp"
+        },
+        "InstanceType": "g.n2.medium",
+        "AZ": {
+          "Fn::FindInMap": [
+            "AZInfo",
+            {
+              "Ref": "JDCLOUD::Region"
+            },
+            "az1"
+          ]
+        },
+        "PrimaryNetworkInterface": {
+          "NetworkInterface": {
+            "SubnetId": {
+              "Ref": "MySubnet"
+            }
+          }
+        },
+        "Password": {
+          "Ref": "VMPassword"
+        },
+        "DataDisks": [
+          {
+            "AutoDelete": true,
+            "CloudDiskSpec": {
+              "Name": {
+                "Ref": "DiskName2"
+              },
+              "AZ": {
+                "Fn::FindInMap": [
+                  "AZInfo",
+                  {
+                    "Ref": "JDCLOUD::Region"
+                  },
+                  "az1"
+                ]
+              },
+              "DiskSizeGB": 20,
+              "DiskType": "ssd"
+            },
+            "DiskCategory": "cloud"
+          }
+        ],
+        "Userdata": {
+          "Fn::Base64": {
+            "Fn::Join": [
+              "",
+              [
+                " #!/bin/bash \n",
+                " Region=",
+                {
+                  "Ref": "JDCLOUD::Region"
+                },
+                "\n",
+                " wget  jdro-userdata-${Region}.s3.${Region}.jcloudcs.com/signal.py -O /tmp/signal.py \n",
+                " chmod +x /tmp/signal.py \n",
+                " #user code begin \n",
+                "DatabaseUser=",
+                {
+                  "Ref": "DBUser"
+                },
+                "\n",
+                "DatabasePwd=",
+                {
+                  "Ref": "DBPassword"
+                },
+                "\n",
+                "DatabaseName=",
+                {
+                  "Ref": "DBName"
+                },
+                "\n",
+                "DatabaseHost=",
+                {
+                  "Fn::GetAtt": [
+                    "MyDBInstance",
+                    "InternalDomainName"
+                  ]
+                },
+                "\n",
+                "WebRootPath='/var/www/html'\n",
+                "mkdir -p $WebRootPath \n",
+                "yum install -y curl httpd mysql-server php php-common php-mysql\n",
+                "yum install -y php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc\n",
+                "chkconfig httpd on\n",
+                "wget http://wordpress.org/latest.tar.gz \n",
+                "tar -xzvf latest.tar.gz \n",
+                "sed -i \"s/database_name_here/$DatabaseName/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/username_here/$DatabaseUser/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/password_here/${DatabasePwd:-$DatabasePwdDef}/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/localhost/$DatabaseHost/\" wordpress/wp-config-sample.php\n",
+                "sed -i \"s/bpache/apache/\" wordpress/wp-config-sample.php\n",
+                "mv wordpress/wp-config-sample.php wordpress/wp-config.php\n",
+                "cp -a wordpress/* $WebRootPath \n",
+                "rm -rf wordpress*\n",
+                "service httpd stop\n",
+                "usermod -d $WebRootPath apache &>/dev/null\n",
+                "chown apache:apache -R $WebRootPath\n",
+                "service httpd start\n",
+                " # user code end \n",
+                "/tmp/signal.py --exit-code $? ",
+                {
+                  "Ref": "MyWaitConditionHandle"
+                },
+                " \n "
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "MyDBInstance": {
+      "Type": "JDCLOUD::RDS::DBInstance",
+      "Properties": {
+        "Engine": "MySQL",
+        "AZId": [
+          {
+            "Fn::FindInMap": [
+              "AZInfo",
+              {
+                "Ref": "JDCLOUD::Region"
+              },
+              "az1"
+            ]
+          }
+        ],
+        "EngineVersion": "5.7",
+        "InstanceClass": "db.mysql.s1.micro",
+        "InstanceName": {
+          "Ref": "DBName"
+        },
+        "InstanceStorageGB": 20,
+        "VpcId": {
+          "Ref": "MyVPC"
+        },
+        "SubnetId": {
+          "Ref": "MySubnet"
+        },
+        "Database": {
+          "CharacterSetName": "utf8",
+          "DBName": {
+            "Ref": "DBName"
+          }
+        },
+        "Account": {
+          "AccountName": {
+            "Ref": "DBUser"
+          },
+          "AccountPassword": {
+            "Ref": "DBPassword"
+          }
+        }
+      }
+    },
+    "MyLoadBalancer": {
+      "Type": "JDCLOUD::LoadBalance::LoadBalancer",
+      "Properties": {
         "LoadBalancerName": {
-            "Default": "lb",
-            "Description": "LoadBalancer name",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline  and hyphen."
+          "Ref": "LoadBalancerName"
         },
+        "SubnetId": {
+          "Ref": "MySubnet"
+        },
+        "Azs": [
+          {
+            "Fn::FindInMap": [
+              "AZInfo",
+              {
+                "Ref": "JDCLOUD::Region"
+              },
+              "az1"
+            ]
+          }
+        ]
+      }
+    },
+    "MyElasticIp": {
+      "Type": "JDCLOUD::VPC::ElasticIp",
+      "Properties": {
+        "ElasticIPSpec": {
+          "BandwidthMbps": 1,
+          "Provider": "bgp"
+        }
+      }
+    },
+    "MyAssociateElasticIp": {
+      "Type": "JDCLOUD::VPC::AssociateElasticIp",
+      "Properties": {
+        "InstanceId": {
+          "Ref": "MyLoadBalancer"
+        },
+        "InstanceType": "lb",
+        "ElasticIpId": {
+          "Ref": "MyElasticIp"
+        }
+      }
+    },
+    "MyLoadBalancerTargetGroup": {
+      "Type": "JDCLOUD::LoadBalance::TargetGroup",
+      "Properties": {
         "TargetGroupName": {
-            "Default": "lbtargetgroup",
-            "Description": "TargetGroup Name",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline  and hyphen."
+          "Ref": "TargetGroupName"
         },
-        "LBBackendName": {
-            "Default": "lbbackend",
-            "Description": "Backend Name",
-            "Type": "String",
-            "MinLength": "1",
-            "MaxLength": "32",
-            "AllowedPattern": "^[a-zA-Z_][a-zA-Z0-9_-]*$",
-            "ConstraintDescription": "Name only supports  numbers, capital and lowercase letters, English underline  and hyphen."
+        "LoadBalancerId": {
+          "Ref": "MyLoadBalancer"
         }
+      }
     },
-    "Mappings": {
-        "AZInfo": {
-            "cn-north-1": {
-                "az1": "cn-north-1a",
-                "az2": "cn-north-1b"
-            },
-            "cn-east-1": {
-                "az1": "cn-east-1a"
-            },
-            "cn-east-2": {
-                "az1": "cn-east-2a",
-                "az2": "cn-east-2b"
-            },
-            "cn-south-1": {
-                "az1": "cn-south-1a"
-            }
+    "MyLoadBalancerRegisterTargets": {
+      "Type": "JDCLOUD::LoadBalance::RegisterTargets",
+      "Properties": {
+        "TargetGroupId": {
+          "Ref": "MyLoadBalancerTargetGroup"
         },
-        "ImageInfo": {
-            "cn-north-1": {
-                "image": "img-2qz094wxaz"
+        "TargetSpecs": [
+          {
+            "InstanceId": {
+              "Ref": "MyInstance1"
             },
-            "cn-east-1": {
-                "image": "img-nfrxl97pal"
+            "Port": 80
+          },
+          {
+            "InstanceId": {
+              "Ref": "MyInstance2"
             },
-            "cn-east-2": {
-                "image": "img-wcewkxc5c1"
-            },
-            "cn-south-1": {
-                "image": "img-xkjedl0lgm"
-            }
-        }
+            "Port": 80
+          }
+        ]
+      }
     },
-    "Resources": {
-        "MyVPC": {
-            "Type": "JDCLOUD::VPC::VPC",
-            "Properties": {
-                "VpcName": {
-                    "Ref": "VPCName"
-                }
-            }
+    "MyLoadBalancerBackend": {
+      "Type": "JDCLOUD::LoadBalance::Backend",
+      "Properties": {
+        "LoadBalancerId": {
+          "Ref": "MyLoadBalancer"
         },
-        "MySubnet": {
-            "Type": "JDCLOUD::VPC::Subnet",
-            "Properties": {
-                "VpcId": {
-                    "Ref": "MyVPC"
-                },
-                "AddressPrefix": {
-                    "Ref": "AddressPrefix"
-                },
-                "SubnetName": {
-                    "Ref": "SubnetName"
-                }
-            }
+        "Port": 80,
+        "BackendName": {
+          "Ref": "LBBackendName"
         },
-        "MyInstance1": {
-            "Type": "JDCLOUD::VM::Instance",
-            "Properties": {
-                "Name": {
-                    "Ref": "InstanceName1"
-                },
-                "ImageId": {
-                    "Fn::FindInMap": [
-                        "ImageInfo",
-                        {
-                            "Ref": "JDCLOUD::Region"
-                        },
-                        "image"
-                    ]
-                },
-                "InstanceType": "g.n2.medium",
-                "AZ": {
-                    "Fn::FindInMap": [
-                        "AZInfo",
-                        {
-                            "Ref": "JDCLOUD::Region"
-                        },
-                        "az1"
-                    ]
-                },
-                "PrimaryNetworkInterface": {
-                    "NetworkInterface": {
-                        "SubnetId": {
-                            "Ref": "MySubnet"
-                        }
-                    }
-                },
-                "Password": {
-                    "Ref": "Password"
-                },
-                "DataDisks": [
-                    {
-                        "AutoDelete": true,
-                        "CloudDiskSpec": {
-                            "Name": {
-                                "Ref": "DiskName1"
-                            },
-                            "AZ": {
-                                "Fn::FindInMap": [
-                                    "AZInfo",
-                                    {
-                                        "Ref": "JDCLOUD::Region"
-                                    },
-                                    "az1"
-                                ]
-                            },
-                            "DiskSizeGB": 20,
-                            "DiskType": "premium-hdd"
-                        }
-                    }
-                ],
-                "Userdata": {
-                    "Fn::Base64": {
-                        "Fn::Join": [
-                            "",
-                            [
-                                "#!/bin/bash \n",
-                                " Region=",
-                                {
-                                    "Ref": "JDCLOUD::Region"
-                                },
-                                "\n",
-                                " wget jdro-userdata-1031.s3.${Region}-stag.jcloudcs.com/jdro-signal.py -O /tmp/jdro-signal.py \n",
-                                " chmod +x /tmp/jdro-signal.py \n",
-                                " #user code begin \n",
-                                "DatabaseUser=",
-                                {
-                                    "Ref": "DBUser"
-                                },
-                                "\n",
-                                "DatabasePwd=",
-                                {
-                                    "Ref": "Password"
-                                },
-                                "\n",
-                                "DatabaseName=",
-                                {
-                                    "Ref": "DBName"
-                                },
-                                "\n",
-                                "DatabaseHost=",
-                                {
-                                    "Fn::GetAtt": [
-                                        "MyDBInstance",
-                                        "InternalDomainName"
-                                    ]
-                                },
-                                "\n",
-                                "WebRootPath='/var/www/html'\n",
-                                "yum install -y curl httpd mysql-server php php-common php-mysql\n",
-                                "yum install -y php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc\n",
-                                "chkconfig httpd on\n",
-                                "wget http://wordpress.org/latest.tar.gz \n",
-                                "tar -xzvf latest.tar.gz \n",
-                                "sed -i \"s/database_name_here/$DatabaseName/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/username_here/$DatabaseUser/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/password_here/${DatabasePwd:-$DatabasePwdDef}/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/localhost/$DatabaseHost/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/bpache/apache/\" wordpress/wp-config-sample.php\n",
-                                "mv wordpress/wp-config-sample.php wordpress/wp-config.php\n",
-                                "cp -a wordpress/* $WebRootPath \n",
-                                "rm -rf wordpress*\n",
-                                "service httpd stop\n",
-                                "usermod -d $WebRootPath apache &>/dev/null\n",
-                                "chown apache:apache -R $WebRootPath\n",
-                                "service httpd start\n",
-                                " # user code end \n",
-                                "/tmp/jdro-signal --exit-code $? ",
-                                {
-                                    "Ref": "MyWaitConditionHandle"
-                                },
-                                " \n "
-                            ]
-                        ]
-                    }
-                }
-            }
-        },
-        "MyInstance2": {
-            "Type": "JDCLOUD::VM::Instance",
-            "Properties": {
-                "Name": {
-                    "Ref": "InstanceName2"
-                },
-                "ImageId": {
-                    "Fn::FindInMap": [
-                        "ImageInfo",
-                        {
-                            "Ref": "JDCLOUD::Region"
-                        },
-                        "image"
-                    ]
-                },
-                "InstanceType": "g.n2.medium",
-                "AZ": {
-                    "Fn::FindInMap": [
-                        "AZInfo",
-                        {
-                            "Ref": "JDCLOUD::Region"
-                        },
-                        "az1"
-                    ]
-                },
-                "PrimaryNetworkInterface": {
-                    "NetworkInterface": {
-                        "SubnetId": {
-                            "Ref": "MySubnet"
-                        }
-                    }
-                },
-                "Password": {
-                    "Ref": "Password"
-                },
-                "DataDisks": [
-                    {
-                        "AutoDelete": true,
-                        "CloudDiskSpec": {
-                            "Name": {
-                                "Ref": "DiskName2"
-                            },
-                            "AZ": {
-                                "Fn::FindInMap": [
-                                    "AZInfo",
-                                    {
-                                        "Ref": "JDCLOUD::Region"
-                                    },
-                                    "az1"
-                                ]
-                            },
-                            "DiskSizeGB": 20,
-                            "DiskType": "premium-hdd"
-                        },
-                        "DiskCategory": "cloud"
-                    }
-                ],
-                "Userdata": {
-                    "Fn::Base64": {
-                        "Fn::Join": [
-                            "",
-                            [
-                                "#!/bin/bash \n",
-                                " Region=",
-                                {
-                                    "Ref": "JDCLOUD::Region"
-                                },
-                                "\n",
-                                " wget jdro-userdata-1031.s3.${Region}-stag.jcloudcs.com/jdro-signal.py -O /tmp/jdro-signal.py \n",
-                                " chmod +x /tmp/jdro-signal.py \n",
-                                " #user code begin \n",
-                                "DatabaseUser=",
-                                {
-                                    "Ref": "DBUser"
-                                },
-                                "\n",
-                                "DatabasePwd=",
-                                {
-                                    "Ref": "Password"
-                                },
-                                "\n",
-                                "DatabaseName=",
-                                {
-                                    "Ref": "DBName"
-                                },
-                                "\n",
-                                "DatabaseHost=",
-                                {
-                                    "Fn::GetAtt": [
-                                        "MyDBInstance",
-                                        "InternalDomainName"
-                                    ]
-                                },
-                                "\n",
-                                "WebRootPath='/var/www/html'\n",
-                                "yum install -y curl httpd mysql-server php php-common php-mysql\n",
-                                "yum install -y php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc\n",
-                                "chkconfig httpd on\n",
-                                "wget http://wordpress.org/latest.tar.gz \n",
-                                "tar -xzvf latest.tar.gz \n",
-                                "sed -i \"s/database_name_here/$DatabaseName/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/username_here/$DatabaseUser/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/password_here/${DatabasePwd:-$DatabasePwdDef}/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/localhost/$DatabaseHost/\" wordpress/wp-config-sample.php\n",
-                                "sed -i \"s/bpache/apache/\" wordpress/wp-config-sample.php\n",
-                                "mv wordpress/wp-config-sample.php wordpress/wp-config.php\n",
-                                "cp -a wordpress/* $WebRootPath \n",
-                                "rm -rf wordpress*\n",
-                                "service httpd stop\n",
-                                "usermod -d $WebRootPath apache &>/dev/null\n",
-                                "chown apache:apache -R $WebRootPath\n",
-                                "service httpd start\n",
-                                " # user code end \n",
-                                "/tmp/jdro-signal --exit-code $? ",
-                                {
-                                    "Ref": "MyWaitConditionHandle"
-                                },
-                                " \n "
-                            ]
-                        ]
-                    }
-                }
-            }
-        },
-        "MyDBInstance": {
-            "Type": "JDCLOUD::RDS::DBInstance",
-            "Properties": {
-                "Engine": "MySQL",
-                "AZId": [
-                    {
-                        "Fn::FindInMap": [
-                            "AZInfo",
-                            {
-                                "Ref": "JDCLOUD::Region"
-                            },
-                            "az1"
-                        ]
-                    }
-                ],
-                "ChargeSpec": {
-                    "ChargeMode": "postpaid_by_duration"
-                },
-                "EngineVersion": "5.7",
-                "InstanceClass": "db.mysql.s1.micro",
-                "InstanceName": {
-                    "Ref": "DBName"
-                },
-                "InstanceStorageGB": 20,
-                "VpcId": {
-                    "Ref": "MyVPC"
-                },
-                "SubnetId": {
-                    "Ref": "MySubnet"
-                }
-            }
-        },
-        "MyLoadBalancer": {
-            "Type": "JDCLOUD::LoadBalance::LoadBalancer",
-            "Properties": {
-                "LoadBalancerName": {
-                    "Ref": "LoadBalancerName"
-                },
-                "SubnetId": {
-                    "Ref": "MySubnet"
-                },
-                "Azs": [
-                    {
-                        "Fn::FindInMap": [
-                            "AZInfo",
-                            {
-                                "Ref": "JDCLOUD::Region"
-                            },
-                            "az1"
-                        ]
-                    }
-                ]
-            }
-        },
-        "MyElasticIp": {
-            "Type": "JDCLOUD::VPC::ElasticIp",
-            "Properties": {
-                "AutoDelete": true,
-                "ElasticIPSpec": {
-                    "BandwidthMbps": 1,
-                    "Provider": "bgp"
-                }
-            }
-        },
-        "MyAssociateElasticIp": {
-            "Type": "JDCLOUD::VPC::AssociateElasticIp",
-            "Properties": {
-                "InstanceId": {
-                    "Ref": "MyLoadBalancer"
-                },
-                "InstanceType": "lb",
-                "ElasticIpId": {
-                    "Ref": "MyElasticIp"
-                }
-            }
-        },
-        "MyLoadBalancerTargetGroup": {
-            "Type": "JDCLOUD::LoadBalance::TargetGroup",
-            "Properties": {
-                "TargetGroupName": {
-                    "Ref": "TargetGroupName"
-                },
-                "LoadBalancerId": {
-                    "Ref": "MyLoadBalancer"
-                }
-            }
-        },
-        "MyLoadBalancerRegisterTargets": {
-            "Type": "JDCLOUD::LoadBalance::RegisterTargets",
-            "Properties": {
-                "TargetGroupId": {
-                    "Ref": "MyLoadBalancerTargetGroup"
-                },
-                "TargetSpecs": [
-                    {
-                        "InstanceId": {
-                            "Ref": "MyInstance1"
-                        }
-                    },
-                    {
-                        "InstanceId": {
-                            "Ref": "MyInstance2"
-                        }
-                    }
-                ]
-            }
-        },
-        "MyLoadBalancerBackend": {
-            "Type": "JDCLOUD::LoadBalance::Backend",
-            "Properties": {
-                "LoadBalancerId": {
-                    "Ref": "MyLoadBalancer"
-                },
-                "Port": 80,
-                "BackendName": {
-                    "Ref": "LBBackendName"
-                },
-                "Protocol": "Http",
-                "HealthCheckSpec": {
-                    "Protocol": "Http",
-                    "HttpPath": "/"
-                }
-            }
-        },
-        "MyLoadBalancerListener": {
-            "Type": "JDCLOUD::LoadBalance::Listener",
-            "Properties": {
-                "BackendId": {
-                    "Ref": "MyLoadBalancerBackend"
-                },
-                "LoadBalancerId": {
-                    "Ref": "MyLoadBalancer"
-                },
-                "Protocol": "Http",
-                "Port": 80
-            }
-        },
-        "MyWaitCondition": {
-            "Type": "JDCLOUD::ResourceOrchestration::WaitCondition",
-            "DependsOn": [
-                "MyInstance1",
-                "MyInstance2"
-            ],
-            "Properties": {
-                "Count": 2,
-                "Handle": {
-                    "Ref": "MyWaitConditionHandle"
-                },
-                "Timeout": "3600"
-            }
-        },
-        "MyWaitConditionHandle": {
-            "Type": "JDCLOUD::ResourceOrchestration::WaitConditionHandle",
-            "Properties": {}
+        "TargetGroupIds": [
+          {
+            "Ref": "MyLoadBalancerTargetGroup"
+          }
+        ],
+        "Protocol": "Http",
+        "HealthCheckSpec": {
+          "Protocol": "Http",
+          "Port": 80,
+          "HttpPath": "/"
         }
+      }
     },
-    "Outputs": {
-        "wordpress_cluster_domain": {
-            "Value": {
-                "Fn::Join": [
-                    ":",
-                    [
-                        {
-                            "Fn::GetAtt": [
-                                "MyLoadBalancer",
-                                "ElasticIpAddress"
-                            ]
-                        },
-                        {
-                            "Fn::GetAtt": [
-                                "MyLoadBalancerListener",
-                                "Port"
-                            ]
-                        }
-                    ]
-                ]
-            }
-        }
+    "MyLoadBalancerListener": {
+      "Type": "JDCLOUD::LoadBalance::Listener",
+      "Properties": {
+        "BackendId": {
+          "Ref": "MyLoadBalancerBackend"
+        },
+        "LoadBalancerId": {
+          "Ref": "MyLoadBalancer"
+        },
+        "Protocol": "Http",
+        "Port": 80
+      }
+    },
+    "MyWaitCondition": {
+      "Type": "JDCLOUD::ResourceOrchestration::WaitCondition",
+      "DependsOn": [
+        "MyInstance1",
+        "MyInstance2"
+      ],
+      "Properties": {
+        "Count": 2,
+        "Handle": {
+          "Ref": "MyWaitConditionHandle"
+        },
+        "Timeout": "3600"
+      }
+    },
+    "MyWaitConditionHandle": {
+      "Type": "JDCLOUD::ResourceOrchestration::WaitConditionHandle",
+      "Properties": {}
     }
+  },
+  "Outputs": {
+    "wordpress_cluster_domain": {
+      "Value": {
+        "Fn::Join": [
+          ":",
+          [
+            {
+              "Fn::GetAtt": [
+                "MyLoadBalancer",
+                "ElasticIpAddress"
+              ]
+            },
+            {
+              "Fn::GetAtt": [
+                "MyLoadBalancerListener",
+                "Port"
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  }
 }
 ```

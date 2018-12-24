@@ -1,4 +1,5 @@
-## 编排模板基本语法说明
+# 编排模板基本语法说明
+
 ### 资源（Resources）
 
 资源（Resources） 用于描述资源栈中每个资源的属性和资源之间依赖关系。一个 Resources 可以被其他资源和 Outputs 所引用。
@@ -34,7 +35,7 @@ Resources 由资源逻辑 ID 和资源描述组成。请参见以下 Resources �
 
 #### 资源类型（Type）
 
-资源类型表示正在声明的资源的类型。例如，JDCLOUD::VM::Instance 表示京东云vm实例。有关 JDRO 支持的所有资源类型列表和详细信息，请参见 [资源类型列表](#)。
+资源类型表示正在声明的资源的类型。例如，JDCLOUD::VM::Instance 表示京东云vm实例。有关 JDRO 支持的所有资源类型列表和详细信息，请参见 [资源类型列表](../resource-type.md)。
 
 #### 创建条件（Condition）
 在模板中，使用 Condition 属性可以指定是否需要创建此资源。只有 Condition 所指定的条件值为 true 时，才会创建此资源。
@@ -213,5 +214,4 @@ Resources 由资源逻辑 ID 和资源描述组成。请参见以下 Resources �
     }
 }
 ```
-
 
