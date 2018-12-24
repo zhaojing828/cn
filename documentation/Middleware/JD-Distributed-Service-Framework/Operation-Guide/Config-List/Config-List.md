@@ -10,3 +10,7 @@
 
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-list.png)
 
+### 发布历史
+目前可支持查看某条配置的发布历史。
+ ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-history.png)
+
