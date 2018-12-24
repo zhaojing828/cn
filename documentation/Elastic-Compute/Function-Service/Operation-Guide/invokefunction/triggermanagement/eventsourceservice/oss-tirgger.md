@@ -6,7 +6,7 @@
 
 **OSS事件定义**
 
-当OSS捕获到事件发生后，会以[event参数](../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)传递给事件处理函数，OSS当前的事件触发类型与[OSS回调通知](../../../../../../../documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Callback-Notification-2.md )支持事件类型相同，详情见表1。
+当OSS捕获到事件发生后，会以[event参数](../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)传递给事件处理函数，OSS当前的事件触发类型与[OSS回调通知](../../../../../../../documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Callback-Notification-2.md )支持事件类型相同，详情见表1，*为必填项。
 
 表1 OSS支持事件类型
 
@@ -40,7 +40,7 @@ OSS触发器触发器配置参数说明见表2。
 
 资源与事件是组成OSS触发器的两个要素：
  
- * 资源由Bucket和前缀后缀组合组成。同一个Bucket，相同或包含的前缀、后缀或前缀后缀视为同一个资源。
+ * 资源由Bucket和前缀后缀组合组成。同一个Bucket，若前缀相同或为包含关系则视为同一个资源；同理，后缀相同或为包含关系亦视为同一个资源；前缀后缀同时相同或分别为包含关系同样视为同一个资源。
  
  * 事件是触发事件，包括表1中的事件类型。
   
