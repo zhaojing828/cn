@@ -24,7 +24,7 @@
 &emsp;- 手持您本人身份证反面照片</br>
 &emsp;- 手持A4白纸，纸上书写 “我同意《京东云账户注销须知》，申请注销京东云账号：用户名”</br></br>
 如果您已完成企业实名认证，您需要上传一张图片：</br>
-&emsp;- 《注销京东云账号同意书》加盖公章扫描图片（[下载模板](../../../image/User/Account%20Management/Account%20Revocation/download-resource)）
+&emsp;- 《注销京东云账号同意书》加盖公章扫描图片（[下载模板](../../../image/User/Account%20Management/Account%20Revocation/download-resource/注销京东云账号同意书.docx)）
 
 （3）在工单中留下能够联系到您的邮箱和联系电话
 
