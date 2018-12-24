@@ -36,7 +36,7 @@
 * 函数入口：根据提示填写，默认index.handler
 
 * 函数代码：默认选中的API网关模板
-
+以上，
 * 函数执行内存：128MB
 
 * 超时时间：3秒
@@ -90,4 +90,4 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 
 2. 上传一个.gif文件至"function-test"Bucket，Function被触发，文件被删除。
 
-完成OSS触发器触发Function的简单示例。
+以上，完成OSS触发器触发Function的简单示例。
