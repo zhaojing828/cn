@@ -13,12 +13,13 @@
 	- [新建注册中心](../Operation-Guide/Cluster/Create-Cluster.md)
 	- [删除注册中心](../Operation-Guide/Cluster/Delete-Cluster.md)
 	- [扩缩容](../Operation-Guide/Cluster/Expansion-Cluster.md)
+- 服务管理
+	- [服务管理列表](../Operation-Guide/Service-List/Service-List.md)	
+	- [实例管理列表](../Operation-Guide/Service-List/Instance-List.md)	
 - 调用链分析服务
 	- [新建分析服务](../Operation-Guide/Analysis-Service/Create-Analysis-Service.md)
 	- [删除分析服务](../Operation-Guide/Analysis-Service/del-Analysis-Service.md)
 	- [修改服务](../Operation-Guide/Analysis-Service/Update-Analysis-Service.md)
-
-	
 
 
 
