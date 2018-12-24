@@ -1,16 +1,15 @@
-# 删除注册中心
+# 删除调用链
 ## 操作步骤：
 
-###  第1步：选择您要删除的集群
+###  第1步：选择需要删除的服务
 进入注册中心列表页，选择您要删除的集群。在列表右侧单击删除此操作。
-  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-list.png)
+  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-list)
   
   
-###  第2步：删除操作
+###  第2步：点击确定进行删除。
 在确认弹框中单击确认完成操作。
-  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-sc-qr.png)
+  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-del.png)
   
   
 #### 注意：
-- 当集群下有资源时，无法执行删除，需要先移除资源才能删除操作。
 - 删除后只支持工单找回
