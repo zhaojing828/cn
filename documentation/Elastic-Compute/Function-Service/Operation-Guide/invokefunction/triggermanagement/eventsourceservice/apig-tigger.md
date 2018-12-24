@@ -25,6 +25,6 @@ API网关触发器触发器配置参数说明见表1。
 
 API网关触发器绑定限制如下：
 
-* API 网关中，一个 API 规则仅能绑定一个function，但一个function可以被多个 API 规则绑定为后端。
+* API 网关中，一个 API 规则仅能绑定一个Function，但一个Function可以被多个 API 规则绑定为后端。
 
-* 目前，API 网关触发器仅支持同地域function绑定。
+* 目前，API 网关触发器仅支持同地域Function绑定。
