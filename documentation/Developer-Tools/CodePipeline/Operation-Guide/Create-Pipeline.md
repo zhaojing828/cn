@@ -10,7 +10,7 @@
 
 * [自定义创建](../Getting-Started/Create-Customized-Instance.md)
 
-其中，使用快速创建时，CodePipeline 会创建阶段名为source、build、deploy的三个阶段，您可以为这些阶段添加更多的操作。
+其中，使用快速创建时，流水线会创建阶段名为source、build、deploy的三个阶段，您可以为这些阶段添加更多的操作。
 
 ## 操作步骤
 1. 创建流水线
