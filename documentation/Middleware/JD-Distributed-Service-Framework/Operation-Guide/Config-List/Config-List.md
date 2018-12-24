@@ -7,5 +7,6 @@
 
 
 ### 配置管理列表
+
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-list.png)
 
