@@ -17,7 +17,7 @@
 	- [新建分析服务](../Operation-Guide/Analysis-Service/Create-Analysis-Service.md)
 	- [删除分析服务](../Operation-Guide/Analysis-Service/del-Analysis-Service.md)
 	- [修改服务](../Operation-Guide/Analysis-Service/Update-Analysis-Service.md)
-- 服务管理
+
 	
 
 
