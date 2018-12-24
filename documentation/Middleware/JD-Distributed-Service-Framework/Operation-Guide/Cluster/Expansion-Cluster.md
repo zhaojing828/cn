@@ -1,15 +1,14 @@
-#  扩缩
+#  修改
 
-可通过扩缩容操作，增减实例个数。
+目前，仅支持对调用日志并发写入数量的修改，其余内容不可更改。
 
 ##  操作步骤：
-###  第1步：选择要操作的注册中心
+###  第1步：选择需要修改的服务
 点击列表右侧扩缩操作。
- ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-list.png)
+ ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-list.png)
  
-###   第2步：选择要更新的数量。
-在确认弹框中，选择服务实例数量，单击确认完成操作。
-  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-yyks.png)
+###   第2步：变更调用日志并发写入数量
+  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-up.png)
 
 #### 说明:
-非正常运行状态中的注册中心，不能进行扩缩容操作。
+非正常运行状态中的内容，不能进行扩缩容操作。
