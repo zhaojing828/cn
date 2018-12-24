@@ -8,10 +8,7 @@
  
  
 ### 第2步：填写新版本的版本详情
-点击操作中的生成新版本，进入新版本的编辑页。
-
-注意，
- 
+点击操作中的生成新版本，进入新版本的编辑页。 
   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-add.png)
   
 #### 说明：
@@ -23,7 +20,7 @@
 ### 第3步： 发布新版本。
 - 如果需要发布新版本，直接选择要发布的版本，点击发布按钮。
 - 然后填写发布信息，进行配置发布。
-  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-add.png)
+  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-publish.png)
   
   
   
