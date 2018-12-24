@@ -1,17 +1,54 @@
-# 使用Function函数构建API
+# 使用Function函数做为API后端服务
 
-为了帮助您开始使用基本工作流程来构建并测试API网关API，您可以使用京东云控制台API网关来创建并测试与 PetStore 网站进行 HTTP 集成的简单 API。API 定义预配置为Swagger 2.0文件。在将 API 定义加载到API网关中后，您可以使用API网关控制台来检查 API 的基本结构或直接部署并测试API。
+目前，API网关可以使用Function函数做为后端服务。对于选择函数计算为后端服务的API，当有请求到达网关时，API网关会触发函数的执行；函数收到请求后，会将执行结果再返回给API网关。以下，将通过示例对API网关触发函数计算的使用步骤进行详细介绍。
 
-示例 API支持使用以下方法来访问 HTTP 后端网站http://petstore-demo-endpoint.execute-api.com/petstore/pets 。
 
-- GET /pets/{petId}：用于对指定为传入请求 URL 的路径变量的 petId 值标识的宠物进行读取访问。后端会返回在 PetStore 中找到的指定宠物。后端服务地址是 http://petstore-demo-endpoint.execute-api.com/petstore/pets/n ，其中n是一个用作所查询宠物的标识符的整数。
 
-- POST /pets：用于对已与后端 /petstore/pets 资源集成的 API /pets 资源进行写入访问。收到正确请求后，后端会将指定的宠物添加到PetStore中并将结果返回给调用方。后端服务地址是 http://petstore-demo-endpoint.execute-api.com 。
+## 操作步骤
+###  第1步: 在Function函数中创建函数
+创建函数可参考：
 
-## 在 API 网关控制台中根据示例创建一个 API 并进行测试
 
-以下过程将指导您完成在API网关控制台中根据示例创建API并通过SDK进行测试的步骤。
+###  第2步: 创建API分组，创建分组下的API
+#### 创建API分组
 
-### 创建API分组-创建API-发布：
+1. 登录 [API网关 控制台](https://apigateway-console.jdcloud.com/apiGroupList)。
 
-#### 1.	登录API网关控制台，打开[API分组管理](https://apigateway-console.jdcloud.com/apiGroupList)。
+2. 在“API分组管理”页面，点击 **新建API分组** ，进入“创建”页面。
+
+3. 填写分组信息后，点击确定，即新建分组。当首次新建时，系统会自动将其保存为版本号为0.0.1的版本。后续可在版本管理中进行多版本维护。
+
+
+####  创建分组下的API
+
+API 分组创建完成您就可以创建 API 了，创建 API 是定义 API 请求的过程。您需要在创建中依次定义以下内容：
+
+- API 的基本信息：地域、API 名称、子路径、描述等。
+
+- API 请求：查询参数、请求体类型、请求体格式、响应体类型、响应体格式等。
+
+- API 后端：选择Function为后端服务
+
+
+###  第3步:  发布API分组到环境上
+
+在 **API分组管理**页，通过 **发布**操作，将API分组发布到环境。
+
+发布过程中，可选择需要发布的环境（测试、预发、线上），选择要发布的版本，配置后端地址，然后点击发布，即可将分组发布到环境中。
+
+
+
+###  第4步: 给API调用者授权访问
+
+- 授权访问
+
+当API提供者通过授权访问方式提供API调用时，API调用者需要先创建一个用于调用API的访问密钥，并将密钥提供给API提供者进行分组的授权绑定。之后API调用者才能使用下载的SDK包。
+
+- 免鉴权访问
+
+当API提供者通过免鉴权方式提供API调用时，API调用者可直接通过下载的SDK进行访问。
+
+###  第5步: API调用者下载和使用SDK包，进行函数调用
+
+- [快速发布和调用一个API应用](../Best-Practices/example_for_create_api.md)
+
