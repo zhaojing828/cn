@@ -5,15 +5,15 @@
 
 ###  第1步：选择要操作的服务
 点击列表右侧的实例详情操作。
-  ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/zczx-fwgl.png)
+  ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/service-list.png)
   
 ###  第2步：查看实例列表信息。
 实例详情列表展示的是当前服务下的所有实例信息。
-   ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fwgl-sllb.png)
+   ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/service-instance-list.png)
   
   
   
 ###   第3步：查看实例详情信息。
 点击列表右侧的详情信息操作，可查看某一实例的具体信息。
  
-   ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/fwgl-slxq.png)
+   ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/service-instance-detail.png)
