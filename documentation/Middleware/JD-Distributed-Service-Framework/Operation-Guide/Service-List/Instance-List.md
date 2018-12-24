@@ -4,7 +4,7 @@
 ## 操作步骤：
 
 ###  第1步：选择要操作的服务
-点击列表右侧的实例详情操作。
+比如选择名称为“game-client”的服务，点击列表右侧的实例详情操作。
   ![服务管理列表](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/service-list.png)
   
 ###  第2步：查看实例列表信息。
