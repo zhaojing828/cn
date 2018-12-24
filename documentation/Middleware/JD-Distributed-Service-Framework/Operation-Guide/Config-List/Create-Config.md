@@ -9,18 +9,17 @@
 ### 第2步：在区域中，点击新建配置，进入新建页
   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-create.png)
   
-### 第3步：填写信息，并保存。
 说明：
 -	应用的名称由用户自行录入，并保证名称的正确。
 -	同一服务上，不能创建同名配置。
 -	新建成功后，同步生成版本信息。
 
 
-### 第4步：查看配置项的版本管理
+### 第3步：查看配置项的版本管理
 点击配置项的名称。进入版本列表页。
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision.png)
    
    
-### 第5步：查看版本详情。
+### 第4步：查看版本详情。
 点击版本号名称可查看版本详情。
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-detail.png)
