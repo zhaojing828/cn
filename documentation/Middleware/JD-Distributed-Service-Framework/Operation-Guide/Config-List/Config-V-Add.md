@@ -7,8 +7,9 @@
  ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-list.png)
  
  
-### 第2步：填写新版本的版本详情
-点击操作中的生成新版本，进入新版本的编辑页。 
+### 第2步：选择当前版本作为父版本，进入配置详情，然后点击操作中的生成新版本，进入版本编辑页。保存后生成新版本。
+ 
+
   ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/config-vision-add.png)
   
 #### 说明：

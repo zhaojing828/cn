@@ -1,4 +1,4 @@
-#  删除
+#  删除服务
 ## 操作步骤：
 
 ###  第1步：选择需要删除的服务
@@ -8,4 +8,4 @@
    ![](../../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/dyl-del.png)
 
 说明：
-- 删除后仅支持工单方式找回。
+- 删除后调用链数据会丢弃，请谨慎操作。
