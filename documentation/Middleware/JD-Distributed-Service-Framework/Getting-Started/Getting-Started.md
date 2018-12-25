@@ -40,6 +40,6 @@
 
 ###  第6步：应用部署
 开发标准应用，按照创建的注册中心地址和调用链服务地址，设定应用相关参数，部署并运行。
-示例请参考[创建注册中心集群](../Getting-Started/Basic-Example.md)。
+在应用中使用服务地址示例请参考[入门示例](../Getting-Started/Basic-Example.md)。
 
 
