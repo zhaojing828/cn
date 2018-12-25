@@ -17,16 +17,16 @@
         href: Getting-Started/Restriction-Description.md     
   - name: 操作指南
     items:
-    - name: 添加网站
+    - name: 添加域名
       href: Operation-Guide/Add-Name.md
-    - name: 接入域名
+    - name: 数据统计
       href: Operation-Guide/Data-Count.md
-    - name: 修改域名
+    - name: 解析域名
       href: Operation-Guide/Interface-Specification.md
   - name: 常见问题
     items:
     - name: HTTP DNS的原理
-      href: FAQ/Principle.md.md  
+      href: FAQ/Principle.md 
   - name: 相关资源
     items:
     - name: 文档历史记录
