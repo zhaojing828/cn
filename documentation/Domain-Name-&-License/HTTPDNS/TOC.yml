@@ -4,25 +4,25 @@
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/Introduction.md
+        href: Introduction/Product-Overview.md
       - name: 产品优势
-        href: Introduction/advantage.md
+        href: Introduction/Benefits.md
       - name: 应用场景 
-        href: Introduction/scene.md    
+        href: Introduction/Application-Scenarios.md
   - name: 快速入门
     items:
       - name: 使用方法
-        href: Getting-Started/start1.md 
+        href: Getting-Started/Quick-Start.md
       - name: 限制说明
         href: Getting-Started/Restriction-Description.md     
   - name: 操作指南
     items:
     - name: 添加网站
-      href: Operation-Guide/Add.md
+      href: Operation-Guide/Add-Name.md
     - name: 接入域名
-      href: Operation-Guide/Count.md
+      href: Operation-Guide/Data-Count.md
     - name: 修改域名
-      href: Operation-Guide/use.md
+      href: Operation-Guide/Interface-Specification.md
   - name: 常见问题
     items:
     - name: HTTP DNS的原理
