@@ -34,7 +34,7 @@ parent配置表示我们配置哪个项目作为本项目的父项目，配置�
 ## 1.注册中心
 用户根据自己的服务实例数创建集群后，点击注册中心列表后的【集群信息】，在集群信息页面的"节点信息"部分的"节点地址"就是注册中心地址。如下图：<br />
 ![集群地址](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_cluster_nodes.png)<br />
-在配置文件(application.properties)的配置key和使用方式如下图：<br />
+分别修改server和client下的配置文件(src/main/resources/application.properties)的配置key和使用方式如下图：<br />
 ![配置使用](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_cluster.png)<br />
 开启服务注册和发现只需要在项目启动类上加上@EnableDiscoveryClient和@EnableFeignClients注解即可。@EnableDiscoveryClient注解是开启服务注册和发现，@EnableFeignClients注解是立即激活FeignClients，利用以下方式进行服务调用：<br />
 ![服务调用](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_FeignClient.png)<br />
