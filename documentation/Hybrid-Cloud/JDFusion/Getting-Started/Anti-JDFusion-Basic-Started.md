@@ -5,11 +5,11 @@ JDFusion CLI程序的运行，需要相应的运行环境。
 ## 环境部署
 ### 安装准备
 要安装、运行JDFusion CLI需要准备一些必要信息
-* JDFusion平台的用户AK
-* JDFusion平台的用户SK
+  * JDFusion平台的用户AK
+  * JDFusion平台的用户SK
 下面的信息为可个性化配置信息：
-* JDFusion平台的服务入口
-* JDFusion平台大区编号
+  * JDFusion平台的服务入口
+  * JDFusion平台大区编号
 若不知如何获取，请查看[JD Fusion平台用户认证](https://github.com/jdfusion/jdfusion.github.io)
 #### 以RPM的方式安装运行
 使用本文档中提供的[fusion-cli.rpm](http://jd-fusion-pub-storage.oss.cn-north-1.jcloudcs.com/releases/cli/rpm/fusion-cli-0.1.2~RELEASE.x86_64.rpm)包，安装JD Fusion CLI。目前，仅提供64位版本。
