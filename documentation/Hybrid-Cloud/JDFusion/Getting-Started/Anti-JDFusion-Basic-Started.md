@@ -24,8 +24,6 @@ cd ~
 cat > .fusion-cloud << EOF
 x.jdcloud.fusion.ak=$AK
 x.jdcloud.fusion.sk=$SK
-x.jdcloud.fusion.endpoint=http://api.test.fusion.jdcloud.com/zuul
-x.jdcloud.fusion.region=cn-north-1a
 EOF
 ```
 将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。
@@ -44,8 +42,6 @@ fusion list clouds --vendor jdcloud
 docker run -ti \
 -e X_JDCLOUD_FUSION_AK=$AK \
 -e X_JDCLOUD_FUSION_SK=$SK \
--e X_JDCLOUD_FUSION_ENDPOINT=http://api.test.fusion.jdcloud.com/zuul \
--e X_JDCLOUD_FUSION_REGION=cn-north-1a \
 jdfusion/cli list clouds
 ```
 将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。以上命令基于Linux操作系统，如需在Windows系统上执行，可将每行结尾的"\"替换为"`"。
@@ -62,8 +58,6 @@ env.list的文件内容格式为：
 ```properties
 X_JDCLOUD_FUSION_AK=$AK
 X_JDCLOUD_FUSION_SK=$SK
-X_JDCLOUD_FUSION_ENDPOINT=http://api.test.fusion.jdcloud.com/zuul
-X_JDCLOUD_FUSION_REGION=cn-north-1a
 ```
 将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。
 示例中，
