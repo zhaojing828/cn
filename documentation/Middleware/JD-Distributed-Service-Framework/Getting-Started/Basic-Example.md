@@ -3,7 +3,7 @@
 # 环境准备
 
 1. 要求jdk版本1.8以上；<br />
-2. 下载示例项目[示例项目下载地址](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/JDSF-Demo.zip)<br />
+2. 下载示例项目：[示例项目下载地址](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/JDSF-Demo.zip)<br />
 3. 本Demo为idea项目，构建工具为maven。如果您的环境也是idea+maven，那么可以直接下载使用。否则请按照自己的工具和环境来创建项目；
 
 
