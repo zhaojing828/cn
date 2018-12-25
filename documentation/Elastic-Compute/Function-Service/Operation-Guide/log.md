@@ -1,7 +1,7 @@
 
 # 函数日志
 
-函数服务通过京东云日志服务提供函数日志，详情请参考日志服务。
+函数服务通过京东云日志服务提供函数日志，详情请参考[日志服务](https://docs.jdcloud.com/cn/logservice/product-overview)。
 
 
 
