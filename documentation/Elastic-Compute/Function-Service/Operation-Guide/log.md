@@ -11,4 +11,4 @@
 
 * 若您想在不同日志集、日志主题中采集不同的函数日志，请将采集实例类型配置为“选择实例“，即可通过在函数高级配置中的日志服务选项，为不同函数配置不同的日志集和日志主题。
 
-日志服务采集配置方法想请个请参考[采集配置管理](../../../../../documentation/Management/LogService/Operation-Guide/LogSet/collectionConfigManagement.md )
+日志服务采集配置方法详情请参考[采集配置管理](../../../../../documentation/Management/LogService/Operation-Guide/LogSet/collectionConfigManagement.md )
