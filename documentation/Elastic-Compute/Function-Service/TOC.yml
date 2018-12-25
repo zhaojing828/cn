@@ -8,13 +8,13 @@
       - name: 核心概念
         href: Introduction/Core-Concepts.md
       - name: 产品优势
-        href: Introduction/Advantages.md
+        href: Introduction/Benefits.md
       - name: 产品功能
-        href: Introduction/Functions.md
+        href: Introduction/Features.md
       - name: 限制说明
-        href: Introduction/Limits.md
+        href: Introduction/Restrictions.md
       - name: 应用场景 
-        href: Introduction/Scenarios.md    
+        href: Introduction/Application-Scenarios.md  
   - name: 产品定价
     items:
       - name: 计费概述
@@ -22,7 +22,7 @@
       - name: 计费规则
         href: Pricing/Billing-Rules.md
       - name: 价格总览 
-        href: Pricing/Price.md   
+        href: Pricing/Price-Overview.md   
   - name: 入门指南
     items:
       - name: Hello World示例
@@ -93,8 +93,8 @@
     href: FAQ.md  
   - name: 相关资源
     item:
-       - name: 文档历史记录
-         href: related-resources/text-history.md   
+       - name: 文档发布历史
+         href: related-resources/Document-History.md   
   - name: API参考
     status: 0
     href:
