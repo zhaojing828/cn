@@ -8,9 +8,7 @@
 1.登录[云搜索Elasticsearch 控制台](https://es-console.jdcloud.com/clusters)。</br>
 
 2.在实例列表页面单击“创建集群”，进入“创建集群”页面。</br>
-
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/创建ES-01.png)
-
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/configes_10.png)
 
 3.进入“创建集群”页面后，指定集群“地域”和“可用区”。</br>
@@ -44,14 +42,11 @@
 * “私有网络”： 显示当前VPC列表，默认选择最新创建的VPC。单击列表后“新建私有网络”跳转至私有网络（VPC）页面。</br>
 * “子网”： 显示当前子网列表，默认选择最新创建的子网。单击列表后“新建子网”跳转至私有网络-子网页面。</br>
   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/配置ES-04.png)
-  
 8.已选配置列表显示当前已选配置信息，未选项显示默认配置。单击“立即购买”，进入规格确认界面。</br>
 
 9.规格确认完成后，单击“立即开通”开始创建集群。</br>
-
   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/配置ES-06.png)
   
 10.跳转支付确认页面成功付款后返回集群列表页面。您创建的集群将展现在集群列表中。且集群状态为“创建中”，耐心等待几分钟，创建成功后集群状态会变为“运行”。如果集群创建失败，请根据界面提示，重新创建集群。</br>
-
   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/配置ES-07.png)
   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/配置ES-08.png)

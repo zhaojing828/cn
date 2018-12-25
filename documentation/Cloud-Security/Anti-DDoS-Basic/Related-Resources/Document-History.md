@@ -10,4 +10,4 @@
 
 ## 相关参考
 
-- [产品概述](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/Basic-Anti-DDoS/Introduction/What-Is-Basic-Anti-DDoS.md)
+- [产品概述](https://github.com/jdcloudcom/cn/blob/edit/documentation/Cloud-Security/Anti-DDoS-Basic/Introduction/Product-Overview.md)

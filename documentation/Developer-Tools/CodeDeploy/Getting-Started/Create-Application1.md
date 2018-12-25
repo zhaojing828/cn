@@ -9,9 +9,9 @@
 
 在“新建应用”页，首先填写应用信息。应用名称：codedeploy-app-demo01
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting6.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation18.png)
 
-点击"创建"，即新建应用。
+点击"新建"，即新建应用。
 
 接下来，在应用中新建部署组，
 
@@ -28,6 +28,6 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting8.png)
 
-填写部署组的基本信息后，请点击“创建”，将进行应用中部署组的创建。
+填写部署组的基本信息后，请点击“新建”，将进行应用中部署组的新建。
 
-创建成功后，将跳转到“应用”页。
+新建成功后，将跳转到“应用”页。
