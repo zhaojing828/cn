@@ -3,7 +3,7 @@
 
 操作步骤
 
-1. 访问[流水线控制台](https://codepipeline-console.jdcloud.com/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【开发者工具】-【流水线】进入流水线列表页。
+1. 访问[流水线控制台](https://codepipeline-console.jdcloud.com/pipeline/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【开发者工具】-【流水线】进入流水线列表页。
 
 2. 在“流水线列表”页面，点击 快速创建 ，进入“快速创建”页面。
 ![](../../../../image/codepipeline/Quick-Creation.png) 
