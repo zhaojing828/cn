@@ -34,7 +34,7 @@ parent配置表示我们配置哪个项目作为本项目的父项目，配置�
 ## 1.注册中心
 用户根据自己的服务实例数创建集群后，点击注册中心列表后的【集群信息】，在集群信息页面的"节点信息"部分的"节点地址"就是注册中心地址。如下图：<br />
 ![集群地址](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_cluster_nodes.png)<br />
-分别修改server和client下的配置文件(src/main/resources/application.properties)的spring.cloud.consul.host配置和使用方式如下图：<br />
+分别修改示例程序server和client目录下的配置文件(src/main/resources/application.properties)的spring.cloud.consul.host配置和使用方式如下图：<br />
 ![配置使用](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_cluster.png)<br />
 开启服务注册和发现只需要在项目启动类上加上@EnableDiscoveryClient和@EnableFeignClients注解即可。@EnableDiscoveryClient注解是开启服务注册和发现，@EnableFeignClients注解是立即激活FeignClients，利用以下方式进行服务调用：<br />
 ![服务调用](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_FeignClient.png)<br />
@@ -45,7 +45,7 @@ parent配置表示我们配置哪个项目作为本项目的父项目，配置�
 ## 2.调用链
 用户根据调用链写入TPS数据创建调用链集群，然后点击【集群名称】进入调用链详情页，在集群详情页下方的"调用链地址"就显示了调用链提供的各个协议的地址和端口。如下图：<br  />
 ![调用链地址](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_callchain_addreslist.png)<br />
-分别修改server和client下的配置文件(src/main/resources/application.properties)的opentracing.jaeger.http-sender.url配置，注意示例中需要使用HTTP协议的地址。使用方式如下图：<br />
+分别修改示例程序server和client目录下的配置文件(src/main/resources/application.properties)的opentracing.jaeger.http-sender.url配置，注意示例中需要使用HTTP协议的地址。使用方式如下图：<br />
 ![配置使用](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_callchain_setting.png)<br />
 访问用户的服务并成功写入调用数据以后，点击调用链列表后的【依赖图谱】，会分析服务间的调用关系。结果如下图所示：<br />
 ![调用图谱](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_callchain_servicemap.png)<br />
@@ -54,7 +54,7 @@ parent配置表示我们配置哪个项目作为本项目的父项目，配置�
 ## 3.配置中心
 用户根据自己的业务创建需要的配置项和配置内容，然后发布到存储中——目前仅支持存储到注册中心中。如下图：<br />
 ![发布配置](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_config_deploy.png)<br />
-发布成功以后，分别修改server和client下的配置文件(src/main/resources/bootstrap.properties)的spring.cloud.consul.host等配置中心地址、端口等信息。如下图：<br />
+发布成功以后，分别修改示例程序server和client目录下的配置文件(src/main/resources/bootstrap.properties)的spring.cloud.consul.host等配置中心地址、端口等信息。如下图：<br />
 ![配置设置](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_config_setting.png)<br />
 然后用户在代码中以下方式使用——@Value方式：<br />
 ![配置代码](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_config_code.png)<br />
