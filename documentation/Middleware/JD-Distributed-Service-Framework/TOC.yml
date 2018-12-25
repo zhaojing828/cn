@@ -24,14 +24,14 @@ items:
   items:
     - name: 计费概述
       herf: Pricing/Billing-Overview.md
+    - name: 购买流程
+      herf: Pricing/Purchase-Process.md 
     - name: 计费规则
       herf: Pricing/Billing-Rules.md
       status: 0 
     - name: 价格总览
       herf: Pricing/Price-Overview.md
       status: 0 
-    - name: 购买流程
-      herf: Pricing/Purchase-Process.md 
     - name: 续费流程
       herf: Pricing/Renew-Process.md
       status: 0 
@@ -45,17 +45,17 @@ items:
   items:
     - name: 注册中心
       items:
-        - name: 创建集群
+        - name: 创建注册中心
           herf: Operation-Guide/Cluster/Create-Cluster.md
-        - name: 查看集群
+        - name: 查看注册中心信息
           herf: Operation-Guide/Cluster/Cluster-Detail.md
-        - name: 扩容集群
+        - name: 扩缩容
           herf: Operation-Guide/Cluster/Expansion-Cluster.md
-        - name: 删除集群
+        - name: 删除注册中心
           herf: Operation-Guide/Cluster/Delete-Cluster.md
     - name: 服务管理
       items:
-        - name: 服务列表
+        - name: 服务管理列表
           herf: Operation-Guide/Service-List/Service-List.md
         - name: 实例列表
           herf: Operation-Guide/Service-List/Instance-List.md
@@ -64,7 +64,7 @@ items:
           status: 0
     - name: 配置管理
       items:
-        - name: 配置列表
+        - name: 配置管理列表
           herf: Operation-Guide/Config-List/Config-List.md
         - name: 新建配置项
           herf: Operation-Guide/Config-List/Create-Config.md
@@ -74,9 +74,9 @@ items:
           herf: Operation-Guide/Config-List/Del-Config.md
     - name: 调用链分析
       items:
-        - name: 创建分析服务
+        - name: 新建分析服务
           herf: Operation-Guide/Analysis-Service/Create-Analysis-Service.md
-        - name: 调用链服务详情
+        - name: 查看调用链服务详情
           herf: Operation-Guide/Analysis-Service/Analysis-Detail.md
         - name: 依赖图谱
           herf: Operation-Guide/Analysis-Service/Analysis-Service-Dependline.md
@@ -90,11 +90,6 @@ items:
   - name: 最佳实践
     herf: Best-Practices/BestPractices.md 
     status: 0 
-  status: 0
 - name: 常见问题
   herf: FAQ/faq.md
-- name: 相关资源
-  items:
-  - name: 文档历史记录
-    herf: Related-Resources/Document-History.md 
-    
+
