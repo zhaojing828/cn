@@ -7,7 +7,7 @@
 
  - 子账号的登录名支持 4-20 位英文、汉字或数字以及短横线 “-” 和下划线 “_”；
  - 子账号的密码长度为 6-20 位，需包含英文字母和数字或符号中的一种字符（不含空格）。
- ![创建子账号](https://github.com/jdcloudcom/cn/blob/edit/image/IAM/%E5%88%9B%E5%BB%BA%E5%AD%90%E8%B4%A6%E6%88%B7.png)
+ ![创建子账号](../../../../image/IAM/SubUserManagement/创建子用户页面.jpg)
 
 # 为子账号重置密码
 
