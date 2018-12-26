@@ -5,9 +5,7 @@
 - 策略 policy 由版本 version 和语句 statement 构成。
 - 语句 statement 是由若干个数组构成。每个数组包括操作（action）、资源 （resource）、生效条件 （condition） 以及权限（effect） 四个元素，其中 condition 是非必填项。
 - 个块 block 的显示顺序无限制。例如，在策略中， version_block 可以跟在 effect_block 后面。
-  ![IAM语法结构](C:/Users/lulu10/Desktop/IAM%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/Operation-Guidance/Policy-Management/Policy_v3/Url)
-
-## JSON 格式
+  ![IAM语法结构](C:/Users/lulu10/Desktop/IAM%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/Operation-Guidance/Policy-Management/Policy_v3/Url)## JSON 格式
 
 策略是定义一条或多条权限的 JSON 文档，撰写策略需要遵循 JSON 语法规范。
 
