@@ -91,7 +91,6 @@ Expires
     ```
     
     说明：
-    
     1.传递所有 HTTP header会将所有header透传过去，
     包括host头（一般是bucketname.endpoint，如bucketname.s3.cn-north-1.jcloudcs.com），
     由于大部分源站会对host头做校验，可能导致源站无法识别请求，所以您要慎重勾选。如果您确定要透传所有 header，
