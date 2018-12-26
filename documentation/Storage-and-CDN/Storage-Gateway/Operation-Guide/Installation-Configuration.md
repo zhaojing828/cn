@@ -36,19 +36,19 @@
 
 注： accessKeyID及accessKeySecret获取请查看[AccessKey管理](https://uc.jdcloud.com/account/accesskey)；endpoint请查看[OSS服务器域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)；单个存储网关仅支持连接一个Bucket。
 
-2.配置完成后即可启动该存储网关上的NFS文件系统，启动脚本路径为```/root/bin/gw ```，执行该脚本启动NFS服务。执行命令示例如下：
+2.配置完成后即可启动该存储网关上的NFS文件系统，启动脚本路径为`/root/bin/gw `，执行该脚本启动NFS服务。执行命令示例如下：
 
 ```
 ./gw start
 ```
 
-3.执行```df -h```命令查看是否启动成功，如图所示，127.0.0.1:/gw为已成功开启的NFS共享文件系统。
+3.执行`df -h`命令查看是否启动成功，如图所示，127.0.0.1:/gw为已成功开启的NFS共享文件系统。
 
 ![启动服务](../../../../image/Storage-Gateway/storagegateway-3.png)
 
 注：127.0.0.1为本地回送地址，即Localhost。
 
-4.存储网关配置文件路径为```/etc/gateway/gw.conf```，相关配置项为accessKeyID、accessKeySecret、endpoint、bucket。若配置项修改后，重启NFS服务后，新配置项才会生效。重启NFS服务命令示例如下：
+4.存储网关配置文件路径为`/etc/gateway/gw.conf`，相关配置项为accessKeyID、accessKeySecret、endpoint、bucket。若配置项修改后，重启NFS服务后，新配置项才会生效。重启NFS服务命令示例如下：
 
 ```
 ./gw stop
