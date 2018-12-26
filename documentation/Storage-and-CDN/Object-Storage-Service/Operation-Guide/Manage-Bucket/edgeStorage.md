@@ -35,7 +35,7 @@
 
 2）确认无误后，点击“开启”按钮。
 
-![边缘存储-空间设置](../../../../../image/Object-Storage-Service/edgeStorage/开启-确认.png))
+![边缘存储-空间设置](../../../../../image/Object-Storage-Service/edgeStorage/开启-确认.png)
 
 ![边缘存储-空间设置](../../../../../image/Object-Storage-Service/edgeStorage/%E5%BC%80%E5%90%AF-%E7%A1%AE%E8%AE%A4%E5%90%8E.png)
 
@@ -78,7 +78,7 @@
 
 ## API统一信息
 
-- 服务域名：待补充（API的域名）
+- 服务域名：apigw-internal.cn-north-1.jcloudcs.com
 - 认证: [JD API 网关](https://www.jdcloud.com/cn/products/api-gateway) 统一认证
 
 ## API 详情
