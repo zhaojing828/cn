@@ -3,7 +3,7 @@
 目前产品处于公测期，公测期间申请购买和开通服务流程如下：
 
 ####   第1步：用户申请公测。
-在产品页点击申请公测。
+在产品页点击申请公测。 
   ![](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/gcsq.png)
 
 ####   第2步：运营审批。
