@@ -47,13 +47,21 @@ def handler(event,context):
 
 ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/hello%20world%20test.PNG)
 
-2. 测试函数
+
+
+2.测试函数
+
+
 
 在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
 
 ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/testwork.png)
 
-3. 查看执行结果
+
+
+3.查看执行结果
+
+
 
 在控制台可直接查看函数执行结果及日志。函数服务控制台只可在控制台测试后即时查看当前执行结果。函数历史日志、触发器触发函数执行结果及日志查询请参见[函数日志](../../Function-Service/Operation-Guide/log.md)。
 
