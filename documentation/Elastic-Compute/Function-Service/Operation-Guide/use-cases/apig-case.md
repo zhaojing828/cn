@@ -29,6 +29,28 @@
 
 * 函数代码：默认选中的API网关模板
 
+```
+#coding=utf-8
+
+import json
+
+def handler(event, context):
+    event = json.loads(event)
+
+    content = {
+        'time': event['time'],
+        'detail': event['detail'],
+        'body': event['detail']['body'],
+        'region': event['region'],
+        'id': event['id'],
+        'detailType': event['detailType'],
+        'version': event['version'],
+        'base64OwnerPin': event['base64OwnerPin'],
+    }
+
+    print(content)
+```
+
 * 函数执行内存：128MB
 
 * 超时时间：3秒
