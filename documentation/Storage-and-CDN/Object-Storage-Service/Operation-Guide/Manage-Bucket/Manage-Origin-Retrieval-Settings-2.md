@@ -93,16 +93,15 @@ Expires
     请尽量在[禁止传递指定 HTTP header]中配置禁止传递host头和其他可能会影响源站识别的header。
     
     2.以下HTTP header类型不支持设置HTTP header传递规则：
-    
-        - 以下前缀开头的header：
-            - x-oss-
-        - 所有标准HTTP header，例如：
-            - authorization2
-            - authorization
-            - content-length
-            - range
-            - date
-                 
+    - 以下前缀开头的header：
+        - x-oss-
+    - 所有标准HTTP header，例如：
+        - authorization2
+        - authorization
+        - content-length
+        - range
+        - date
+             
 4.单击确定,提交规则。
 
 ### 规则保存成功后，您可以在镜像回源规则列表中查看已设置的回源规则，并进行编辑、删除或是排序等操作。
