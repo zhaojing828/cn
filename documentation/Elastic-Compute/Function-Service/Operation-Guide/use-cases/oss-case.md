@@ -1,4 +1,4 @@
- # OSS触发器示例
+# OSS触发器示例
 
 京东云OSS可将事件（例如：在Bucket中删除对象）映射至Function函数，将event参数传递至Function处理函数来调用您的函数。
 
