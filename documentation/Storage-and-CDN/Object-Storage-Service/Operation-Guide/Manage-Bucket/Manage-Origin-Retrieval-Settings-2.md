@@ -71,7 +71,6 @@ Expires
   配置举例如下：
   ![](../../../../../image/Object-Storage-Service/OSS-101.png)
     根据以上配置，如果用户发送到OSS的请求（HTTP header部分）如下：
-    
     ```
     GET /object
     host : bucket.s3.cn-north-1.jcloudcs.com
@@ -79,27 +78,21 @@ Expires
     b-header : 222
     c-header : 333
     ```
-    
     则触发镜像回源后，OSS发送给源站的请求如下：
-    
     ```
     GET /object
     host : source.com
     a-header : 111
     c-header : 000
-    
     ```
-    
     说明：
     1.传递所有 HTTP header会将所有header透传过去，
     包括host头（一般是bucketname.endpoint，如bucketname.s3.cn-north-1.jcloudcs.com），
     由于大部分源站会对host头做校验，可能导致源站无法识别请求，所以您要慎重勾选。如果您确定要透传所有 header，
     请尽量在[禁止传递指定 HTTP header]中配置禁止传递host头和其他可能会影响源站识别的header。
-    
     2. 以下HTTP header类型不支持设置HTTP header传递规则：
         - 以下前缀开头的header：
             - x-oss-
-
         - 所有标准HTTP header，例如：
             - authorization2
             - authorization
