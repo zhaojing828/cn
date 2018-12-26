@@ -7,18 +7,23 @@
 
 2. 配置源代码
 
-阶段名默认为 源代码，添加源代码的原子操作。原子操作中选择codecommit，选择平台提供的golang-demo-for-k8s。
+  阶段名默认为 源代码，添加源代码的原子操作。原子操作中选择codecommit，选择平台提供的golang-demo-for-k8s。
 
-示例代码地址：https://code.jdcloud.com/devops-demo/golang-demo
+  示例代码地址：https://code.jdcloud.com/devops-demo/golang-demo
 
 3. 配置构建。
 
-阶段名默认为 构建阶段，添加构建的原子操作。
+  阶段名默认为 构建阶段，添加构建的原子操作。
 
    1.原子操作中选择 codebuild，输入操作选择前面配置的源代码操作，如下图。
  ![](../../../../image/codepipeline/best-build.png)
    2.在云编译项目中创建需要编译的项目。示例配置如下：
  ![](../../../../image/codepipeline/best-build-2.png)
+ 
+ 1. 第一个说明
+   1. 辅助说明
+   2. 辅助说明
+2. 第二个说明
  
 4. 配置部署。
 
