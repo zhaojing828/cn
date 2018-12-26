@@ -35,11 +35,11 @@
   - name: 操作指南
     items:
       - name: 函数构建
-        item:
+        items:
            - name: 函数概述
              href: Operation-Guide/buildfunction/function-overview.md 
            - name: 编程模型
-             item:
+             items:
                - name: 基本概念
                  href: Operation-Guide/buildfunction/programming-model/basic-concept.md 
                - name: 处理程序
@@ -54,7 +54,7 @@
              href: Operation-Guide/buildfunction/test-function.md                  
                
       - name: 函数调用
-        item:
+        items:
            - name: 函数调用
              href: Operation-Guide/invokefunction/invoke.md 
            - name: 触发器管理
@@ -68,7 +68,7 @@
                - name: 配置触发器和事件格式
                  href: Operation-Guide/invokefunction/triggermanagement/configtigger-event.md 
            - name: 事件源服务
-             item:
+             items:
                - name: 事件源服务   
                  href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/eventsource-service.md 
                - name: OSS触发器   
@@ -77,7 +77,7 @@
                  href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md  
                     
       - name: 使用案例
-        item:
+        items:
            - name: OSS触发器示例
              href: Operation-Guide/use-cases/oss-case.md  
            - name: API网关触发器示例
@@ -98,7 +98,7 @@
     href: FAQ.md  
     
   - name: 相关资源
-    item:
+    items:
        - name: 文档发布历史
          href: related-resources/Document-History.md   
   - name: API参考
