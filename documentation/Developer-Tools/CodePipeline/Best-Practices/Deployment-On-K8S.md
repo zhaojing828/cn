@@ -1,5 +1,5 @@
 # 构建并部署到Kubernetes集群
-本文档以构建一个 Golang软件项目并部署到京东云Kubernetes集群为例说明如何使用 CodePipeline。
+本文档以构建一个 Golang软件项目并部署到京东云Kubernetes集群为例说明如何使用 流水线。
 
 详细操作步骤如下：
 
@@ -10,6 +10,7 @@
 阶段名默认为 源代码，添加源代码的原子操作。原子操作中选择codecommit，选择平台提供的golang-demo-for-k8s。
 
 示例代码地址：https://code.jdcloud.com/devops-demo/golang-demo
+
 3. 配置构建。
 
 阶段名默认为 构建阶段，添加构建的原子操作。
@@ -18,6 +19,7 @@
  ![](../../../../image/codepipeline/best-build.png)
    2.在云编译项目中创建需要编译的项目。示例配置如下：
  ![](../../../../image/codepipeline/best-build-2.png)
+ 
 4. 配置部署。
 
 阶段名默认为 部署阶段，添加部署的原子操作。
@@ -50,6 +52,7 @@
 
   其中，image需要用构建操作的产出做替换，
   ![](../../../../image/codepipeline/best-docker.png)
+  
    2.在k8s集群页面，给这个deployment添加一个负载均衡服务。
 	
 	```
