@@ -2,7 +2,7 @@
 
 点击 查看 按钮，查看流水线。
 
-![](../../../../image/codepipeline/View-Pipeline.png) 
+![](/image/codepipeline/View-Pipeline.png) 
 
    * 流程缩略图：页面顶部以缩略图的方式展示流水线的阶段及最近一次执行的状态。绿色表示执行成功、红色表示执行失败、灰色表示未执行。
    * 操作框里面的展示内容：
