@@ -6,7 +6,7 @@
 1. 访问[流水线控制台](https://codepipeline-console.jdcloud.com/pipeline/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【开发者工具】-【流水线】进入流水线列表页。
 
 2. 在“流水线列表”页面，点击 快速创建 ，进入“快速创建”页面。
-![](../../../../image/codepipeline/Quick-Creation.png) 
+![](/image/codepipeline/Quick-Creation.png) 
 
 3. 默认流水线包含源代码、构建、部署阶段 
 
