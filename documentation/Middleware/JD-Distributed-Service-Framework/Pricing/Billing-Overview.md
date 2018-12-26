@@ -7,8 +7,7 @@
 
 更多详情请参见：
 
-* [计费方式说明](../../../Finance/Billing/Billing-rule/Pay-As-You-Go.md)
-
+* [预付费计费说明](../../../Finance/Billing/Billing-method/Prepay.md)。
 
 		
 		
