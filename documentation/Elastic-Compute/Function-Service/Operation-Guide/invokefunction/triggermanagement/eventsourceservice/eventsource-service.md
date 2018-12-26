@@ -12,5 +12,4 @@
 Function通过创建事件源触发器配置事件源服务，配置流程如下：
 
 1. 创建事件源服务触发器，设置触发函数的事件类型。
-
 2. 配置函数输入对象event，event对象格式因触发器而异，您编写的event为函数提供事件源信息，例如:对象存储OSS事件源，event包含指定的bucket信息，object信息，用户ID等。详情请参阅[处理程序](../../../../../Function-Service/Operation-Guide/buildfunction/programming-model/processing-program.md)和[配置触发器和事件格式](../../../invokefunction/triggermanagement/configtigger-event.md)。
