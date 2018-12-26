@@ -10,7 +10,7 @@
 
 更多计费详情请参见：
 
-* [预付费计费说明](../../../Finance/Billing/Billing-method/Prepay.md)。
+* [预付费计费说明](/documentation/Finance/Billing/Billing-method/Prepay.md)。
 
 		
 		
