@@ -26,7 +26,7 @@ mount -t nfs <IP>:/gw <local-directory>
 - IP：存储网关的内网IP
 - local-directory：本地待挂载目录，不能指定不存在的文件目录
 
-执行挂载命令后，使用```df -h```查看是否挂载成功。
+执行挂载命令后，使用`df -h`查看是否挂载成功。
 
 ![mount](../../../../image/Storage-Gateway/storagegateway-6.png)
 
