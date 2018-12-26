@@ -27,9 +27,10 @@
 
 * 有当GetObject()本应该返回404的情况下，OSS才会执行镜像回源，向源站请求文件，保存在OSS上。
 * 源站请求的URL为MirrorURL+object，回写到OSS的文件名为“object”，例如bucket为example-bucket，配置了镜像回写，MirrorURL为http://www.example-domain.com/ ，文件image/example_object.jpg不在这个bucket里面，此时去下载这个文件时，OSS将向http://www.example-domain.com/image/example_object.jpg 发起GET请求，并将结果同时返回给用户以及写入到OSS，当下载完成后，这个文件就已经存在OSS上了，文件名为image/example_object.jpg，此时相当于将源站的文件同名的迁移到了OSS上。如果MirrorURL带有path信息，比如http://www.example-domain.com/dir1/ ，则与上例相同，OSS回源的URL为http://www.example-domain.com/dir1/image/example_object.jpg ，写入到OSS的object依然是image/example_object.jpg，此时相当于将源站的某一个目录下的文件迁移到OSS上。
-* 给OSS的header信息默认是不会传递给源站。但是支持用户根据实际业务指定header，详见[设置回源规则](../../dd.md)。
-* querystring信息是否会传递给源站取决于用户的配置，详见[设置回源规则](../../dd.md)。
+* 给OSS的header信息默认是不会传递给源站。但是支持用户根据实际业务指定header。
+* querystring信息是否会传递给源站取决于用户的配置。
 * 如果源站是chunked编码返回，那么OSS返回给用户的也是chunked编码。
+* 如果从源站读取的文件将在OSS按照标准存储类型存储。
 * OSS会将源站的以下头信息返回并存为OSS的头信息：
 
  ``` 
@@ -55,14 +56,17 @@ Expires
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->镜像回源
 
-![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-96.png)
+![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-98.png)
 
 2.点击设置规则，进入镜像回源规则列表页。
 
-![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-95.png)
+![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-99.jpg)
 
-3. 单击**创建规则**，在创建弹框中设置**回源条件**和**回源地址**。还可以根据实际需要选择设置是否**携带请求字符串**；设置3xx 请求响应是否跟随源站重定向请求
+3. 单击创建规则，在创建弹框中设置回源条件和回源地址。还可以根据实际需要选择设置是否携带请求字符串；设置3xx 请求响应是否跟随源站重定向请求
    同时支持通过设置HTTP header传递规则，进行自定义透传、过滤或者修改。
+   
+   ![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-100.png)
+   
    **说明：** 
     -  镜像回源将按照外网流量正常收费。
     -  回源地址为必填项，支持域名与IP，支持端口。
@@ -75,16 +79,16 @@ Expires
 
     配置举例如下：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/4750/15350991919983_zh-CN.png)
+    ![](../../../../../image/Object-Storage-Service/OSS-101.png)
 
     根据以上配置，如果用户发送到OSS的请求（HTTP header部分）如下：
 
     ```
     GET /object
     host : bucket.s3.cn-north-1.jcloudcs.com
-    aaa-header : 111
-    bbb-header : 222
-    ccc-header : 333
+    a-header : 111
+    b-header : 222
+    c-header : 333
     ```
 
     则触发镜像回源后，OSS发送给源站的请求如下：
@@ -92,8 +96,8 @@ Expires
     ```
     GET /object
     host : source.com
-    aaa-header : 111
-    ccc-header : 000
+    a-header : 111
+    c-header : 000
     
     ```
 
@@ -110,19 +114,18 @@ Expires
     
         -   x-oss-
         
-        
     -   所有标准HTTP header，例如：
         -   authorization2
         -   authorization
         -   content-length
         -   range
         -   date
-8.  单击**确定**。
+8.  单击确定,提交规则。
 
 ## 规则保存成功后，您可以在镜像回源规则列表中查看已设置的回源规则，并进行编辑、删除或是排序等操作。
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->镜像回源
 
-![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-96.png)
+![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-102.png)
 
 
