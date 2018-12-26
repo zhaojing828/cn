@@ -1,4 +1,4 @@
-#  管理回源设置
+#  镜像回源设置
 
 通过回源设置，对于获取数据的请求通过镜像方式进行回源读取，满足您对于数据热迁移需求。
 
@@ -34,13 +34,11 @@
 * OSS会将源站的以下头信息返回并存为OSS的头信息：
 
  ``` 
- 
 Content-Type
 Content-Encoding
 Content-Disposition
 Cache-Control
 Expires
-
 ```
 
 * 假设文件已经通过镜像方式回写到了OSS，如果源站的相同文件发生了变化，那OSS不会更新已经存在于OSS上的文件，因为此时文件已经在OSS上，不符合镜像回写的条件。
@@ -48,9 +46,6 @@ Expires
 
 
 # 镜像回源规则设置 
-
- 
-
 
 ## 使用OSS管理控制台，设置镜像回源。
 
@@ -67,7 +62,7 @@ Expires
    
    ![存储空间默认加密](../../../../../image/Object-Storage-Service/OSS-100.png)
    
-   **说明：** 
+   说明：
     -  镜像回源将按照外网流量正常收费。
     -  回源地址为必填项，支持域名与IP，支持端口。
     -  携带请求字符串，会将 OSS 请求中的 queryString 传递到源站
@@ -82,7 +77,7 @@ Expires
     ![](../../../../../image/Object-Storage-Service/OSS-101.png)
 
     根据以上配置，如果用户发送到OSS的请求（HTTP header部分）如下：
-
+    
     ```
     GET /object
     host : bucket.s3.cn-north-1.jcloudcs.com
@@ -101,7 +96,7 @@ Expires
     
     ```
 
-    **说明：** 
+    说明：
     1.传递所有 HTTP header会将所有header透传过去，包括host头（一般是bucketname.endpoint，如bucketname.s3.cn-north-1.jcloudcs.com），
 
     由于大部分源站会对host头做校验，可能导致源站无法识别请求，所以您要慎重勾选。如果您确定要透传所有 header，请尽量在[禁止传递指定 HTTP header]中配置
