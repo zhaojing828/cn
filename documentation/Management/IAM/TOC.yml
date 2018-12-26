@@ -32,13 +32,13 @@ items:
           - name: 策略（v3）
             items:
               - name: 元素参考
-                href: Policy-Managemenent/Policy_v3/Elements.md
+                href: Policy-Management/Policy_v3/Elements.md
               - name: 语法结构
-                href: Policy-Managemenent/Policy_v3/Syntax-Structure.md
+                href: Policy-Management/Policy_v3/Syntax-Structure.md
               - name: 操作描述方式
-                href: Policy-Managemenent/Policy_v3/Action.md
+                href: Policy-Management/Policy_v3/Action.md
               - name: 资源描述方式
-                href: Policy-Managemenent/Policy_v3/Resource.md
+                href: Policy-Management/Policy_v3/Resource.md
       - name: 虚拟 MFA 设备
         items:
           - name: 概述
