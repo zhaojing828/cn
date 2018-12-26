@@ -1,4 +1,4 @@
-# 计费方式
+# 计费概述
 京东云分布式服务框架针对注册中心和调用链分析服务分别计费，价格与所选择的服务实例规格相关。配置管理服务依托注册中心，使用免费。
 
 
@@ -7,11 +7,8 @@
 
 *  **本产品价格不包含用户使用京东云上虚拟机的费用。**
 
-
 更多计费详情请参见：
 
-* [预付费计费说明](/documentation/Finance/Billing/Billing-method/Prepay.md)。
-
-		
+* [预付费计费说明](/documentation/Finance/Billing/Billing-method/Prepay.md)。		
 		
 		
