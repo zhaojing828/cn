@@ -1,4 +1,4 @@
-# 操作描述方式11
+# 操作描述方式
 
 操作有service name和具体操作名称组成，各产品线service name请参考[支持IAM的服务](https://docs.jdcloud.com/cn/iam/support-services)
 
