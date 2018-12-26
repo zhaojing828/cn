@@ -152,7 +152,9 @@
         items:
         - name: 设置白名单
           href: Operation-Guide/Security/Set-Whitelist.md
-       
+        - name: 透明数据加密 TDE
+          href: Operation-Guide/Security/tde.md
+          
       - name: 单库上云
         items:
         - name: 单库上云简介
