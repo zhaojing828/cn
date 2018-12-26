@@ -15,6 +15,7 @@
         href: Introduction/Restrictions.md
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md  
+        
   - name: 产品定价
     items:
       - name: 计费概述
@@ -22,13 +23,15 @@
       - name: 计费规则
         href: Pricing/Billing-Rules.md
       - name: 价格总览 
-        href: Pricing/Price-Overview.md   
+        href: Pricing/Price-Overview.md  
+        
   - name: 入门指南
     items:
       - name: Hello World示例
         href: Getting-Started/helloworld.md 
       - name: 使用流程
         href: Getting-Started/manual.md 
+        
   - name: 操作指南
     items:
       - name: 函数构建
@@ -47,10 +50,12 @@
                     href: Operation-Guide/buildfunction/programming-model/python/context.md 
                   - name: 日志记录
                     href: Operation-Guide/buildfunction/programming-model/python/log.md 
+                    
               - name: 配置函数
                 href: Operation-Guide/buildfunction/config-function.md  
               - name: 测试函数
                 href: Operation-Guide/buildfunction/test-function.md 
+                
       - name: 函数调用
         item:
            - name: 函数调用
@@ -73,6 +78,7 @@
                     href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md 
                   - name: API网关触发器   
                     href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md  
+                    
       - name: 使用案例
         item:
            - name: OSS触发器示例
@@ -88,9 +94,11 @@
       - name: 函数日志
         href: Operation-Guide/log.md            
       - name: 函数监控
-        href: Operation-Guide/monitor.md            
+        href: Operation-Guide/monitor.md        
+        
   - name: 常见问题
     href: FAQ.md  
+    
   - name: 相关资源
     item:
        - name: 文档发布历史
