@@ -7,18 +7,18 @@
 
 **说明：**
 - 创建微服务组件时会占用用户VPC子网中的内网IP资源，请保留足够子网IP资源，建议除云主机外请最少保留15个。
-- 在开始使用JDSF服务前，请先保证您已在京东云上 创建私有网络。请参考：[创建私有网络](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)
+- 在开始使用本产品服务前，请先保证您已在京东云上 创建私有网络。请参考：[创建私有网络](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)
 - 注册中心与调用链分析服务相互独立，您可以按需购买您需要的功能。
 
-###  第1步：开通JDSF服务
+###  第1步：开通服务
 #### 注册账号
 注册京东云账户 若您已有京东云账号，可跳过本步骤进行后续设置。 若您还未注册京东云账号，可在京东云官网进行注册，请参考 [注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud&ReturnUrl=https%3a%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3dhttps%3a%2f%2fwww.jdcloud.com)。
 
 #### 认证账号
 为了正常使用本服务，您还需要对您的账号进行认证。
-进入实名认证页面，可选择认证类型为个人或企业。请参考实名认证。
+进入实名认证页面，可选择认证类型为个人或企业。请参考[实名认证](https://uc.jdcloud.com/account/certify)。
 
-#### 开通JDSF服务
+#### 开通服务
 公测期间，在产品页点击申请公测开通服务。详情请参考[购买流程](../Pricing/Purchase-Process.md)。
 
 
@@ -40,6 +40,6 @@
 
 ###  第6步：应用部署
 开发标准应用，按照创建的注册中心地址和调用链服务地址，设定应用相关参数，部署并运行。
-示例请参考[创建注册中心集群](../Getting-Started/Basic-Example.md)。
+在应用中使用服务地址示例请参考[入门示例](../Getting-Started/Basic-Example.md)。
 
 
