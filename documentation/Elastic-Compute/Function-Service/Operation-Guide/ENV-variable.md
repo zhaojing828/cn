@@ -36,9 +36,7 @@
 
 ```
 import os
-
 value = os.environ.get('key')
-
 print(value)
 ```
 
