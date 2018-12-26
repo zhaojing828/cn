@@ -89,7 +89,7 @@
       - name: 版本管理
         href: Operation-Guide/version.md         
       - name: 函数日志
-        href: Operation-Guide/log.md            
+        href: Operation-Guide/function-log.md            
       - name: 函数监控
         href: Operation-Guide/monitor.md        
          
