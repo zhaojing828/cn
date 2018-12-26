@@ -24,7 +24,7 @@
 
   阶段名默认为 部署阶段，添加部署的原子操作。
 
-  1.原子操作中选择 Kubernetes集群，输入操作选择前面配置的构建操作。需要用户提前创建好集群，在pipeline中提供部署的deployment。示例如下：
+  1.原子操作中选择 Kubernetes集群，输入操作选择前面配置的构建操作。需要用户提前创建好集群，在流水线中提供部署的deployment。示例如下：
  ![](../../../../image/codepipeline/best-k8s.png)
 
    样例deployment：
