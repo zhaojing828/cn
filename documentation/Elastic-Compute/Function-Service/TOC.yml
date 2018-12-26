@@ -40,22 +40,19 @@
              href: Operation-Guide/buildfunction/function-overview.md 
            - name: 编程模型
              item:
-              - name: 基本概念
-                href: Operation-Guide/buildfunction/programming-model/basic-concept.md 
-              - name: 编程模型（Python）
-                item:
-                  - name: 处理程序
-                    href: Operation-Guide/buildfunction/programming-model/python/processing-program.md 
-                  - name: Context对象
-                    href: Operation-Guide/buildfunction/programming-model/python/context.md 
-                  - name: 日志记录
-                    href: Operation-Guide/buildfunction/programming-model/python/log.md 
-                    
-              - name: 配置函数
-                href: Operation-Guide/buildfunction/config-function.md  
-              - name: 测试函数
-                href: Operation-Guide/buildfunction/test-function.md 
-                
+               - name: 基本概念
+                 href: Operation-Guide/buildfunction/programming-model/basic-concept.md 
+               - name: 处理程序
+                 href: Operation-Guide/buildfunction/programming-model/python/processing-program.md 
+               - name: Context对象
+                 href: Operation-Guide/buildfunction/programming-model/python/context.md 
+               - name: 日志记录
+                 href: Operation-Guide/buildfunction/programming-model/python/log.md 
+           - name: 配置函数
+             href: Operation-Guide/buildfunction/config-function.md  
+           - name: 测试函数
+             href: Operation-Guide/buildfunction/test-function.md                  
+               
       - name: 函数调用
         item:
            - name: 函数调用
@@ -70,14 +67,14 @@
                  href: Operation-Guide/invokefunction/triggermanagement/triggeredit.md 
                - name: 配置触发器和事件格式
                  href: Operation-Guide/invokefunction/triggermanagement/configtigger-event.md 
-               - name: 事件源服务
-                item:
-                  - name: 事件源服务   
-                    href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/eventsource-service.md 
-                  - name: OSS触发器   
-                    href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md 
-                  - name: API网关触发器   
-                    href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md  
+           - name: 事件源服务
+             item:
+               - name: 事件源服务   
+                 href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/eventsource-service.md 
+               - name: OSS触发器   
+                 href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md 
+               - name: API网关触发器   
+                 href: Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md  
                     
       - name: 使用案例
         item:
@@ -95,7 +92,8 @@
         href: Operation-Guide/log.md            
       - name: 函数监控
         href: Operation-Guide/monitor.md        
-        
+         
+  
   - name: 常见问题
     href: FAQ.md  
     
