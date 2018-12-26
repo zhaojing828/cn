@@ -85,11 +85,6 @@ items:
         - name: 删除服务
           herf: Operation-Guide/Analysis-Service/del-Analysis-Service.md
     
-- name: 最佳实践
-  items:
-  - name: 最佳实践
-    herf: Best-Practices/BestPractices.md 
-    status: 0 
 - name: 常见问题
   herf: FAQ/faq.md
 
