@@ -3,7 +3,7 @@
 
 ## 函数运行时
 
-公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型（Python）](../../Function-Service/Operation-Guide/buildfunction/programming-model/processing-program.md)。
+公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型](../../Function-Service/Operation-Guide/buildfunction/programming-model/basic-concept.md)。
 
 ## 函数支持多种代码上传方式
 
