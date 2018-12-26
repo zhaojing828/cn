@@ -26,8 +26,7 @@
 
 函数由事件触发，函数服务目前支持OSS触发器和API网关触发器。
 
-触发器详细信息请参阅[触发器管理](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/triggeroverview.md)。
-
+触发器详细信息请参阅[触发器](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/triggeroverview.md)。
 此外，如不配置触发器，您也可以使用控制台、SDK等方式直接调用函数执行。
 
 
