@@ -51,7 +51,6 @@
 4.存储网关配置文件路径为`/etc/gateway/gw.conf`，相关配置项为accessKeyID、accessKeySecret、endpoint、bucket。若配置项修改后，重启NFS服务后，新配置项才会生效。重启NFS服务命令示例如下：
 
 ```
-./gw stop
-./gw start
+./gw restart
 ```
 
