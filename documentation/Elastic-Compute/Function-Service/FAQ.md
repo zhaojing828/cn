@@ -30,7 +30,7 @@ Serverless 服务的突出的优点就是可弹性伸缩所需资源，函数服
 
 **1. 函数分配磁盘空间有多少？**
 
-每个Function函数分配了512 MB临时存储空间，单个用户下最大允许部署包大小为1G，更多函数的资源限制，请参考[限制说明](../Function-Service/Introduction/Limits.md)。
+每个Function函数分配了512 MB临时存储空间，单个用户下最大允许部署包大小为1G，更多函数的资源限制，请参考[限制说明](../Function-Service/Introduction/Restrictions.md)。
 
  
 
@@ -48,13 +48,13 @@ Serverless 服务的突出的优点就是可弹性伸缩所需资源，函数服
 
 **4. 哪些事件可以触发Function函数？**
 
-有关事件源的完整列表，请参考[支持的事件源](../Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/eventsource-service.md )。
+有关事件源的详细信息，请参考[事件源服务](../Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/eventsource-service.md)。
 
  
 
 **5. Function函数是否支持环境变量？**
 
-您可以为函数设置环境变量，无需对代码进行任何更改，可以设置动态参数，传递到函数代码和库，请参考使用[环境变量](../Function-Service/Operation-Guide/ENV-variable.md )。
+您可以为函数设置环境变量，无需对代码进行任何更改，可以设置动态参数，传递到函数代码和库，请参考使用[环境变量](../Function-Service/Operation-Guide/ENV-variable.md)。
 
  
 
