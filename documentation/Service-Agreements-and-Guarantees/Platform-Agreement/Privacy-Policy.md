@@ -338,4 +338,3 @@
 
 **6. 注销本京东云账户并不代表本京东云账户注销前的账户行为和相关责任得到豁免或减轻。**
 
-[京东云隐私政策-PDF下载](/image/Service-Agreements-and-Guarantees/Platform-Agreement/Privacy-Policy-pdf.pdf)
