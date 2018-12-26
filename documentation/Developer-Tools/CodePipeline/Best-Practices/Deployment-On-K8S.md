@@ -16,16 +16,16 @@
   阶段名默认为 构建阶段，添加构建的原子操作。
 
    1.原子操作中选择 云编译，输入操作选择前面配置的源代码操作，如下图。
- ![](../../../../image/codepipeline/best-build.png)
+ ![](/image/codepipeline/best-build.png)
    2.在云编译项目中创建需要编译的项目。示例配置如下：
- ![](../../../../image/codepipeline/best-build-2.png)
+ ![](/image/codepipeline/best-build-2.png)
  
 4. 配置部署。
 
   阶段名默认为 部署阶段，添加部署的原子操作。
 
   1.原子操作中选择 Kubernetes集群，输入操作选择前面配置的构建操作。需要用户提前创建好集群，在流水线中提供部署的deployment。示例如下：
- ![](../../../../image/codepipeline/best-k8s.png)
+ ![](/image/codepipeline/best-k8s.png)
 
    样例deployment：
  	
@@ -51,7 +51,7 @@
 	```
 
   其中，image需要用构建操作的产出做替换，
-  ![](../../../../image/codepipeline/best-docker.png)
+  ![](/image/codepipeline/best-docker.png)
   
    2.在k8s集群页面，给这个deployment添加一个负载均衡服务。
 	
