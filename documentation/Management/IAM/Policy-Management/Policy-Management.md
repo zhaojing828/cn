@@ -34,9 +34,9 @@ IAM 支持两种类型的策略：京东云预置的系统策略和用户自行�
 - 完成一组产品线，资源和操作的指定后，您可以通过点击添加按钮，直至您完成整个策略。
 
 **V2版本可视化策略创建页面**
-![V2版本可视化策略创建页面](../../../../image/IAM/PolicyManagement/可视化策略创建 - v2.jpg)
+![V2版本可视化策略创建页面](../../../../image/IAM/PolicyManagement/可视化策略创建v2.jpg)
 **V3版本可视化策略创建页面**
-![V3版本可视化策略创建页面](../../../../image/IAM/PolicyManagement/可视化策略创建 - v3.jpg)
+![V3版本可视化策略创建页面](../../../../image/IAM/PolicyManagement/可视化策略创建v3.jpg)
 
 ### JSON 策略生成器
 
