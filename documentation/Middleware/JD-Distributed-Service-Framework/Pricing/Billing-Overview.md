@@ -7,6 +7,8 @@
 
 *  **本产品价格不包含用户使用京东云上虚拟机的费用。**
 
-		
+更多计费详情请参见：
+
+* [预付费计费说明](/documentation/Finance/Billing/Billing-method/Prepay.md)。		
 		
 		
