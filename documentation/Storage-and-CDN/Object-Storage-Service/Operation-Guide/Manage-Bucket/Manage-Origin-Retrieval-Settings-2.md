@@ -71,10 +71,9 @@ Expires
       默认传给OSS的header信息不会传递给源站
       自定义规则允许您指定允许、禁止、设置指定header参数，
        
+  配置举例如下：
 
-    配置举例如下：
-
-    ![](../../../../../image/Object-Storage-Service/OSS-101.png)
+  ![](../../../../../image/Object-Storage-Service/OSS-101.png)
 
     根据以上配置，如果用户发送到OSS的请求（HTTP header部分）如下：
     
