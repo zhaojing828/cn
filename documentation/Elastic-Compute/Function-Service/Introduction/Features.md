@@ -17,5 +17,5 @@
 
 | 触发器     | 函数调用方式 | 参考       |
 | ---------- | ------------ | ---------- |
-| OSS触发器  | 异步调用     | [OSS网关触发器](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
+| OSS触发器  | 异步调用     | [OSS触发器](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
 | API网关触发器 | 同步调用     | [API网关触发器](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md)|
