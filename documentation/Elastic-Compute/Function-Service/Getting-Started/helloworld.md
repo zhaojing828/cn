@@ -1,4 +1,3 @@
-
 # Hello World示例
 本章展示Hello World示例，介绍使用函数服务快速编写Hello World示例的步骤。
 
@@ -28,34 +27,20 @@ def handler(event,context):
   * 描述、环境变量及高级配置：无需填写；
   
   * 触发器：不配置触发器；
-  
-  单击”完成“，完成函数创建。
+    单击”完成“，完成函数创建。
 
 ## 测试函数 
 1. 创建测试事件
-
 进入”函数列表“页面，单击”HelloWorld“函数，进入函数详情页面，选择”配置测试事件”，
 * 配置测试事件：创建新的测试事件；
 * 事件模板：空白模板；
 * 事件名称：test；
 单击“保存”，完成测试事件创建。 
-
 ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/hello%20world%20test.PNG)
-
 2.测试函数
-
-
-
 在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
-
 ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/testwork.png)
-
-
-
 3.查看执行结果
-
-
-
 在控制台可直接查看函数执行结果及日志。函数服务控制台只可在控制台测试后即时查看当前执行结果。函数历史日志、触发器触发函数执行结果及日志查询请参见[函数日志](../../Function-Service/Operation-Guide/log.md)。
 
 
