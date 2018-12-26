@@ -31,13 +31,13 @@
 
 1）登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->边缘存储
 
-![边缘存储-空间设置](../../../../image/Object-Storage-Service/edgeStorage/%E7%A9%BA%E9%97%B4%E7%AE%A1%E7%90%86-%E5%BC%80%E5%90%AF.png)
+![边缘存储-空间设置](../../../../../image/Object-Storage-Service/edgeStorage/%E7%A9%BA%E9%97%B4%E7%AE%A1%E7%90%86-%E5%BC%80%E5%90%AF.png)
 
 2）确认无误后，点击“开启”按钮。
 
-![边缘存储-空间设置](../../../../image/Object-Storage-Service/edgeStorage/开启-确认.png))
+![边缘存储-空间设置](../../../../../image/Object-Storage-Service/edgeStorage/开启-确认.png))
 
-![边缘存储-空间设置](../../../../image/Object-Storage-Service/edgeStorage/%E5%BC%80%E5%90%AF-%E7%A1%AE%E8%AE%A4%E5%90%8E.png)
+![边缘存储-空间设置](../../../../../image/Object-Storage-Service/edgeStorage/%E5%BC%80%E5%90%AF-%E7%A1%AE%E8%AE%A4%E5%90%8E.png)
 
 备注：确认“边缘存储”服务是已经开启的状态，才能在进行一下操作。
 
@@ -45,15 +45,15 @@
 
 1）登入控制台->对象存储->空间管理->进入某个Bucket->Object管理
 
-![Object管理](../../../../image/Object-Storage-Service/edgeStorage/object管理.png)
+![Object管理](../../../../../image/Object-Storage-Service/edgeStorage/object管理.png)
 
 2）选择单个文件或批量文件同步。
 
-![Object管理](../../../../image/Object-Storage-Service/edgeStorage/批量或单个同步.png)
+![Object管理](../../../../../image/Object-Storage-Service/edgeStorage/批量或单个同步.png)
 
 3）单击“同步至边缘存储”或“批量同步至边缘存储”按钮，显示所选的文件及同步详情。
 
-![Object管理](../../../../image/Object-Storage-Service/edgeStorage/同步至边缘.png)
+![Object管理](../../../../../image/Object-Storage-Service/edgeStorage/同步至边缘.png)
 
 4）单击“确定”按钮，页面右上出现任务数量及查看详情。
 
@@ -61,19 +61,19 @@
 
 1）登入控制台->对象存储->边缘存储->文件管理
 
-![文件管理](../../../../image/Object-Storage-Service/edgeStorage/边缘存储-文件管理.png)
+![文件管理](../../../../../image/Object-Storage-Service/edgeStorage/边缘存储-文件管理.png)
 
 2）选择单个文件或批量文件同步。
 
-![批量同步](../../../../image/Object-Storage-Service/edgeStorage/同步至OSS.png)
+![批量同步](../../../../../image/Object-Storage-Service/edgeStorage/同步至OSS.png)
 
 若用户有自己的IPFS节点，希望将自己的文件存储到OSS中；此时不需要选择任何文件，直接点击“同步至OSS”按钮，填写下图信息即可。
 
-![同步OSS](../../../../image/Object-Storage-Service/edgeStorage/同步OSS.png)
+![同步OSS](../../../../../image/Object-Storage-Service/edgeStorage/同步OSS.png)
 
 3）查看同步日志
 
-![同步日志](../../../../image/Object-Storage-Service/edgeStorage/边缘存储-同步日志.png)
+![同步日志](../../../../../image/Object-Storage-Service/edgeStorage/边缘存储-同步日志.png)
 
 
 ## API统一信息
