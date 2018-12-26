@@ -3,7 +3,7 @@
 
 ### 2、选择域名服务>HTTPDNS
 ![img](https://github.com/jdcloudcom/cn/blob/edit/image/HTTPDNS/HTTP%20DNS%E9%A1%B5%E9%9D%A2.png)
-### 3、添加需要使用的域名
+### 3、点击域名管理图标添加需要使用的域名
 
 ![img](https://github.com/jdcloudcom/cn/blob/edit/image/HTTPDNS/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png)                   
 
