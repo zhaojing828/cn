@@ -17,7 +17,7 @@
 
 4．   在filesource文件夹中，上传一个名为test.txt的文件。
 
-详细操作指南参见[创建存储空间](../../../../../documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md )。
+详细操作指南参见[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md )。
 
 完成OSS Bucket创建及对象上传。
 
