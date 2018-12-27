@@ -28,9 +28,9 @@ OSS触发器触发器配置参数说明见表2。
 
 |  字段        |  说明                                                         |
 | ----------- | ------------------------------------------------------------ |
-| * 触发器类型 |  在下拉列表中选择“OSS对象存储触发器“                          |
-| * bucket列表 |  选择事件源的OSS存储桶。从已创建同region下的OSS存储桶中选择，OSS存储桶创建请参考[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md)。|
-| * 触发事件   |  选择要使其触发函数的事件。支持的事件类型请参考表1            |
+|* 触发器类型 |  在下拉列表中选择“OSS对象存储触发器“                          |
+|* bucket列表 |  选择事件源的OSS存储桶。从已创建同region下的OSS存储桶中选择，OSS存储桶创建请参考[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md)。|
+|* 触发事件   |  选择要使其触发函数的事件。支持的事件类型请参考表1            |
 |  前缀        |  匹配前缀，您可以将通知配置为按对象名称的前缀和后缀进行过滤   |
 |  后缀        |  匹配后缀，您可以将通知配置为按对象名称的前缀和后缀进行过滤   |
 
