@@ -10,7 +10,7 @@
 
 异步调用：事件在写入到消息队列后则返回，客户端不关注请求调用结果。例如：OSS触发器调用是异步调用。
 
-同步 / 异步请求对传入的事件有不同的限制，具体请参考 [限制说明](../../../Function-Service/Introduction/Restrictions.md)。
+同步 / 异步请求对传入的事件有不同的限制，具体请参考 [限制说明](../../Introduction/Restrictions.md)。
 
  
 
