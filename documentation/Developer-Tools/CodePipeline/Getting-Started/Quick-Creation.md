@@ -28,7 +28,7 @@
 
    3）设置构建阶段
   
-     构建阶段中，默认接入构建类型的操作。
+   构建阶段中，默认接入构建类型的操作。
      
  ![](/image/codepipeline/cre-build-stage.png)
     
@@ -43,8 +43,10 @@
 
    4）设置部署阶段
   
-      部署阶段中，默认接入部署类型的操作。
+   部署阶段中，默认接入部署类型的操作。
+   
   ![](/image/codepipeline/cre-deploy-stage.png)
+  
   ![](/image/codepipeline/cre-deploy-action.png)
 
  
