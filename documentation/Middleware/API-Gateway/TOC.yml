@@ -37,6 +37,10 @@ items:
   items:
     - name: 概述
       herf: Getting-Started/Getting-Started.md
+    - name: 在控制台中使用示例构建API
+      herf: Getting-Started/example_console.md
+    - name: 使用Function函数构建API
+      herf: Getting-Started/example_function.md
     - name: 创建API分组
       herf: Getting-Started/STEP1-Create-APIGroup.md
     - name: 创建API
