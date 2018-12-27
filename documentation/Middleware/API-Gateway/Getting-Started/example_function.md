@@ -6,7 +6,6 @@
 
 ## 操作步骤
 ###  第1步: 在Function函数中创建函数
-创建函数可参考： [创建函数](../../../Elastic-Compute/Function-Service/Operation-Guide/use-cases/apig-case.md)。
 
 
 ###  第2步: 创建API分组，创建分组下的API
