@@ -14,7 +14,7 @@
 
 ### 创建API分组-创建API-发布：
 
-#### 1.	登录API网关控制台，打开[API分组管理](https：//apigateway-console.jdcloud.com/apiGroupList)。
+#### 1.	登录API网关控制台，打开[API分组管理](https://apigateway-console.jdcloud.com/apiGroupList)。
 
 #### 2.	点击创建分组。
 
@@ -71,7 +71,7 @@
 
 ### 创建访问密钥-创建访问授权-绑定分组：
 
-#### 1.	打开[访问密钥](https：//apigateway-console.jdcloud.com/accessSecretKey)，点击创建访问密钥。
+#### 1.	打开[访问密钥](https://apigateway-console.jdcloud.com/accessSecretKey)，点击创建访问密钥。
 
 ![创建访问密钥](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_key_1.png)
 
@@ -83,7 +83,7 @@
 
 ![密钥详细信息](../../../../image/Internet-Middleware/API-Gateway/exap_access_key_info.png)
 
-#### 4.	打开[访问授权](https：//apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
+#### 4.	打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
 
 ![创建授权](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_1.png)
 
