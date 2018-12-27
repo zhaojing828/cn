@@ -13,7 +13,7 @@
 
 2．登陆API控制台，创建API分组及API
 
-详细操作指南参见[使用Function函数构建API](/documentation/Middleware/API-Gateway/Getting-Started/example_function.md )。
+详细操作指南参见[使用Function函数构建API](/documentation/Middleware/API-Gateway/Getting-Started/example_function.md)。
 
 完成API创建。
 
