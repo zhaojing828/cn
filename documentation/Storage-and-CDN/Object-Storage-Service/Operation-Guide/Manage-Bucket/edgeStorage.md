@@ -418,3 +418,15 @@ x-jdcloud-pin: "userPin"
 |ossKey|string|OSS的文件名|
 |createdTime|string|任务创建时间 GMT+8,格式为YYYY-MM-DD HH:mm:ss|
 |finishedTime|string|任务完成时间 GMT+8,格式为YYYY-MM-DD HH:mm:ss|
+
+
+## 常见问题
+### 1.常用命令及API列表
+ipfs add file 本地添加文件到 IPFS 网络
+ipfs object get <cid> 查询文件 object 信息
+ipfs files stat /ipfs/<cid> 查询文件状态信息
+ipfs cat <cid> file 下载 IPFS 网络中的文件到本地
+API列表：https://docs.ipfs.io/reference/api/cli/
+
+### 2.非公网IPFS文件能否同步至OSS？
+不能，同步任务会失败。
