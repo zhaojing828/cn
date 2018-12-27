@@ -4,8 +4,8 @@
 
 准备工作:
 
-1. 创建API网关触发器之前，请开通API网关服务，并在API网关服务中创建分组及API。创建过程请参考[创建API分组](../../../../../../documentation/Internet-Middleware/API-Gateway/Operation-Guide/Create-APIGroup/Create-APIGroup.md)及[创建API](../../../../../../documentation/Internet-Middleware/API-Gateway/Operation-Guide/Create-API/Create-API.md)。
-2. 创建OSS触发器之前，请开通对象存储服务，并在对象存储服务中创建存储桶。创建过程请参考[创建存储空间](../../../../../../documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket.md)。
+1. 创建API网关触发器之前，请开通API网关服务，并在API网关服务中创建分组及API。创建过程请参考[创建API分组](../../../../../../Internet-Middleware/API-Gateway/Operation-Guide/Create-APIGroup/Create-APIGroup.md)及[创建API](../../../../../../Internet-Middleware/API-Gateway/Operation-Guide/Create-API/Create-API.md)。
+2. 创建OSS触发器之前，请开通对象存储服务，并在对象存储服务中创建存储桶。创建过程请参考[创建存储空间](../../../../../../Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket.md)。
 
  
 
