@@ -53,6 +53,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**regionId**|String|地域ID，参见[地域及可用区对照表](../Enum-Definitions/Regions-AZ.md)|
 |**secondaryNode**|DBInstanceNode|高可用集群中从节点的信息<br>- 仅支持SQL Server|
 |**subnetId**|String|子网的ID|
+|**tags**|Tag[]|标签信息|
 |**vpcId**|String|VPC的ID|
 ### Charge
 |名称|类型|描述|
@@ -68,6 +69,11 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**id**|String|节点id|
 |**name**|String|节点名称|
 |**status**|String|节点状态|
+### Tag
+|名称|类型|描述|
+|---|---|---|
+|**key**|String|标签键|
+|**value**|String|标签值|
 
 ## 返回码
 |返回码|描述|
