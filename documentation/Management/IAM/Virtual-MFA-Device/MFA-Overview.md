@@ -8,3 +8,5 @@ MFA (Multi-Factor Authentication) 是一种简单有效的最佳安全实践，�
 
 ![京东云助手](../../../../image/IAM/Virtual MFA device/二维码.jpg)
 
+![京东云助手](https://github.com/jdcloudcom/cn/blob/edit/image/IAM/Virtual%20MFA%20device/IOS%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+
