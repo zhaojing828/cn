@@ -49,7 +49,7 @@ kind: CronJob
 metadata:
   name: jdcloud-jcr-credential-cron
 spec:
-  schedule: "* */1 * * *"
+  schedule: "*0 */1 * * *"
   successfulJobsHistoryLimit: 2
   failedJobsHistoryLimit: 2  
   jobTemplate:
