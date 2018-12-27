@@ -46,7 +46,14 @@ items:
        - name: 4.3 地图交互设置
          href: Operation-Guide/MapInteractive.md    
     - name: 5. 文本组件配置
-      href: Operation-Guide/text.md
+      href:
+      items:
+       - name: 5.1文本
+         href: Operation-Guide/text.md
+       - name: 5.2时间器
+         href: Operation-Guide/text_time.md
+       - name: 5.2词云
+         href: Operation-Guide/text_word.md
     - name:  6. 交互组件配置
       href: Operation-Guide/Interactive.md
     - name:  7. 辅助组件配置
