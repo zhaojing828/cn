@@ -94,7 +94,8 @@ spec:
               --docker-username=$DOCKER_USER \
               --docker-password=$DOCKER_PASSWORD \
               --docker-email=**@jd.com
-              kubectl patch serviceaccount default  -p '{"imagePullSecrets":[{"name":"my-secret"}]}'
+              kubectl patch serviceaccount default  -p '{"imagePullSecrets":[{"name":"my-secret"}]}' # kubectl patch  $SERVICEACCOUNT xxxxx  -n $NAMESPACEOFSERVICEACCOUNT  
+
 ```
 ```
 kubectl apply  -f  jcr-credential-rbac.yaml
