@@ -4,8 +4,9 @@
 
 准备工作:
 
-1. 创建API网关触发器之前，请开通API网关服务，并在API网关服务中创建分组及API。创建过程请参考[创建API分组](../../../../../Middleware/API-Gateway/Operation-Guide/Create-APIGroup/Create-APIGroup.md)及[创建API](../../../../../Middleware/API-Gateway/Operation-Guide/Create-API/Create-API.md)。
-2. 创建OSS触发器之前，请开通对象存储服务，并在对象存储服务中创建存储桶。创建过程请参考[创建存储空间](../../../../../Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket.md)。
+1. 创建API网关触发器之前，请开通API网关服务，并在API网关服务中创建分组及API。创建过程请参考[创建API分组](/documentation/Middleware/API-Gateway/Operation-Guide/Create-APIGroup/Create-APIGroup.md)及[创建API](/documentation/Middleware/API-Gateway/Operation-Guide/Create-API/Create-API.md)。
+2. 创建OSS触发器之前，请开通对象存储服务，并在对象存储服务中创建存储桶。创建过程请参考[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md)。
+
 
  
 
@@ -17,7 +18,7 @@
 2. 在函数列表中选择要配置的函数，单击函数名称进入该函数详情页。
 3. 在函数详情页中，选择要配置触发的函数的版本或别名后，单击“触发器“tab页。
 4. 在“触发器“tab页中，单击”创建触发器“，弹出”创建触发器“弹窗。
-5. 填写触发器信息，开始创建一个新的触发器，不同触发方式，对应的触发器配置信息不同，详情参见[事件源服务](../triggermanagement/eventsourceservice/eventsource-service.md)。
+5. 填写触发器信息，开始创建一个新的触发器，不同触发方式，对应的触发器配置信息不同，详情参见[事件源服务](eventsourceservice/eventsource-service.md)。
 6. 单击“保存“，创建触发器。
 
  

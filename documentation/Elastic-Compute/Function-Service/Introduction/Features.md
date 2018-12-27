@@ -3,7 +3,7 @@
 
 ## 函数运行时
 
-公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型](../../Function-Service/Operation-Guide/buildfunction/programming-model/basic-concept.md)。
+公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型](../Operation-Guide/buildfunction/programming-model/basic-concept.md)。
 
 ## 函数支持多种代码上传方式
 
@@ -17,5 +17,5 @@
 
 | 触发器     | 函数调用方式 | 参考       |
 | ---------- | ------------ | ---------- |
-| OSS触发器  | 异步调用     | [OSS触发器](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
-| API网关触发器 | 同步调用     | [API网关触发器](../../Function-Service/Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md)|
+| OSS触发器  | 异步调用     | [OSS触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/oss-tirgger.md)|
+| API网关触发器 | 同步调用     | [API网关触发器](../Operation-Guide/invokefunction/triggermanagement/eventsourceservice/apig-tigger.md)|

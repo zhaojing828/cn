@@ -16,11 +16,7 @@
 
  3. 在函数详情页面，选择函数版本或别名，单击“请选择测试事件”下拉菜单，选择“配置测试事件“，弹出“配置测试事件”窗口。
  ![测试函数1](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/test1.PNG)
-
-
  4. 在“配置测试事件”窗口填写测试信息，测试信息配置如表1所示，带*参数为必填项。
-
-
 表1 测试信息
 
 | 参数         | 说明                                                         |
@@ -52,7 +48,7 @@
 
  2. 在函数详情页可直接查看函数运行结果。
 
-说明：如需查看完整函数执行日志，请参考[函数日志](../../Operation-Guide/log.md)。
+说明：如需查看完整函数执行日志，请参考[函数日志](../function-log.md)。
 
  
 
