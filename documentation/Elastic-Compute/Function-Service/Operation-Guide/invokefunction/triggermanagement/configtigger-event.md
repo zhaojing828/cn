@@ -40,7 +40,7 @@ s3:ObjectRemoved:*
 
 s3:ObjectRemoved:Delete
 
-OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceservice/oss-tirgger.md)。 
+OSS触发器配置详清参见[OSS触发器](eventsourceservice/oss-tirgger.md)。 
 
  
 
