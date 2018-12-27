@@ -6,7 +6,7 @@
 
 **OSS事件定义**
 
-当OSS捕获到事件发生后，会以[event参数](../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)传递给事件处理函数，OSS当前的事件触发类型与[OSS回调通知](http://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)支持事件类型相同，详情见表1，* 为必填项。
+当OSS捕获到事件发生后，会以[event参数](../../triggermanagement/configtigger-event.md)传递给事件处理函数，OSS当前的事件触发类型与[OSS回调通知](http://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)支持事件类型相同，详情见表1，* 为必填项。
 
 表1 OSS支持事件类型
 
