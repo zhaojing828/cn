@@ -9,10 +9,10 @@
  
 ## 创建OSS Bucket
 
-1．   创建触发器前，请您先开通OSS对象存储服务，并创建一个region为华北-北京的Bucket。
-2．   登陆OSS控制台，在“空间管理“页面选择“新建空间”，配置“空间名称”（Bucket）为”function-test“，“访问权限”为“私有读写”。
-3．   在新创建的Bucket中的Object中，选择“新建文件夹”，文件夹名称命名为filesource。
-4．   完成创建。
+1．   创建触发器前，请您先开通OSS对象存储服务，并创建一个region为华北-北京的Bucket。<br>
+2．   登陆OSS控制台，在“空间管理“页面选择“新建空间”，配置“空间名称”（Bucket）为”function-test“，“访问权限”为“私有读写”。<br>
+3．   在新创建的Bucket中的Object中，选择“新建文件夹”，文件夹名称命名为filesource。<br>
+4．   完成创建。<br>
 
 详细操作指南参见[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md )。
 
