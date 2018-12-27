@@ -6,10 +6,10 @@
 ## 新建函数
 用户登陆函数服务，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
-  * 函数模板：Python 3.6 自定义模板；
-  * 函数名称：HelloWorld；
-  * 函数入口：根据提示填写，默认index.handler；  
-  * 函数代码：在代码编辑页面输入Hello World 函数，控制台编辑器默认函数为Hello World函数；
+  * 函数模板：Python 3.6 自定义模板；<br>
+  * 函数名称：HelloWorld；<br>
+  * 函数入口：根据提示填写，默认index.handler；<br>  
+  * 函数代码：在代码编辑页面输入Hello World 函数，控制台编辑器默认函数为Hello World函数；<br>
   
  
   ```
