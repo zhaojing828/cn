@@ -26,9 +26,9 @@ x.jdcloud.fusion.ak=$AK
 x.jdcloud.fusion.sk=$SK
 EOF
 ```
-将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。
-另外，JD Fusion CLI的运行需要JRE1.8及以上版本，并且需要设置JAVA_HOME。
-在配置完成后即可以使用JD Fusion CLI了。
+将`$AK`、`$SK`替换为你自己在JDFusion平台上AK、SK即可。
+另外，JDFusion CLI的运行需要JRE1.8及以上版本，并且需要设置JAVA_HOME。
+在配置完成后即可以使用JDFusion CLI了。
 例如：
 ```bash
 fusion list clouds --vendor jdcloud
@@ -44,7 +44,7 @@ docker run -ti \
 -e X_JDCLOUD_FUSION_SK=$SK \
 jdfusion/cli list clouds
 ```
-将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。以上命令基于Linux操作系统，如需在Windows系统上执行，可将每行结尾的"\"替换为"`"。
+将`$AK`、`$SK`替换为你自己在JDFusion平台上AK、SK即可。以上命令基于Linux操作系统，如需在Windows系统上执行，可将每行结尾的"\"替换为"`"。
 示例中，
 `-e` 为设置程序运行所需要的环境变量
 `jdfusion/cli`为官方提供的jdfusion/cli运行环境镜像
@@ -59,7 +59,7 @@ env.list的文件内容格式为：
 X_JDCLOUD_FUSION_AK=$AK
 X_JDCLOUD_FUSION_SK=$SK
 ```
-将`$AK`、`$SK`替换为你自己在JD Fusion平台上AK、SK即可。
+将`$AK`、`$SK`替换为你自己在JDFusion平台上AK、SK即可。
 示例中，
 `--env-file` 为设置程序运行所需要的环境变量的文件
 `jdfusion/cli`为官方提供的jdfusion/cli运行环境镜像
