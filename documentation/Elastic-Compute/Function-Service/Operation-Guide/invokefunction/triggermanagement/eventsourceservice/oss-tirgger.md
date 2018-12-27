@@ -6,7 +6,7 @@
 
 **OSS事件定义**
 
-当OSS捕获到事件发生后，会以[event参数](../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)传递给事件处理函数，OSS当前的事件触发类型与[OSS回调通知](../../../../../../../documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Callback-Notification-2.md )支持事件类型相同，详情见表1，*为必填项。
+当OSS捕获到事件发生后，会以[event参数](../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)传递给事件处理函数，OSS当前的事件触发类型与[OSS回调通知](http://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)支持事件类型相同，详情见表1，* 为必填项。
 
 表1 OSS支持事件类型
 
@@ -28,9 +28,9 @@ OSS触发器触发器配置参数说明见表2。
 
 | 字段        | 说明                                                         |
 | ----------- | ------------------------------------------------------------ |
-| *触发器类型 | 在下拉列表中选择“OSS对象存储触发器“                          |
-| *bucket列表 | 选择事件源的OSS存储桶。   从已创建同region下的OSS存储桶中选择，OSS存储桶创建请参考[创建存储桶](https://support.huaweicloud.com/usermanual-obs/zh-cn_topic_0045829050.html)。 |
-| *触发事件   | 选择要使其触发函数的事件。支持的事件类型请参考表1            |
+| * 触发器类型 | 在下拉列表中选择“OSS对象存储触发器“                          |
+| * bucket列表 | 选择事件源的OSS存储桶。   从已创建同region下的OSS存储桶中选择，OSS存储桶创建请参考[创建存储桶](https://support.huaweicloud.com/usermanual-obs/zh-cn_topic_0045829050.html)。 |
+| * 触发事件   | 选择要使其触发函数的事件。支持的事件类型请参考表1            |
 | 前缀        | 匹配前缀，您可以将通知配置为按对象名称的前缀和后缀进行过滤   |
 | 后缀        | 匹配后缀，您可以将通知配置为按对象名称的前缀和后缀进行过滤   |
 

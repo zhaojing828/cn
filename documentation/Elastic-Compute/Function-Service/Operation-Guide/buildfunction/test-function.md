@@ -15,7 +15,6 @@
  2. 在函数列表中选择要进行测试的函数，单击函数名称，进入该函数详情页面。
 
  3. 在函数详情页面，选择函数版本或别名，单击“请选择测试事件”下拉菜单，选择“配置测试事件“，弹出“配置测试事件”窗口。
-
  ![测试函数1](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/test1.PNG)
 
 

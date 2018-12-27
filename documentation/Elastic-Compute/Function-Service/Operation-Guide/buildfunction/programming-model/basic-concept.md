@@ -22,7 +22,7 @@ event参数是函数的输入数据，作为第一个参数传递给处理函数
 
 例如：因文件的上传触发了函数执行，代码可从event参数中获取该文件的所有信息，包括文件名、下载路径、文件类型、大小等。
 
-不同触发器在触发函数时，传递的event数据结构有所不同，数据结构详情参见[配置触发器和事件格式](../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)。
+不同触发器在触发函数时，传递的event数据结构有所不同，数据结构详情参见 [配置触发器和事件格式](../../../Operation-Guide/invokefunction/triggermanagement/configtigger-event.md)。
 
 
 

@@ -3,7 +3,7 @@
 
 ## 函数运行时
 
-公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型（Python）](../../Function-Service/Operation-Guide/buildfunction/programming-model/processing-program.md)。
+公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型](../../Function-Service/Operation-Guide/buildfunction/programming-model/basic-concept.md)。
 
 ## 函数支持多种代码上传方式
 
@@ -13,7 +13,7 @@
 
 公测期间，函数服务支持的触发器类型及调用方式见表1：
 
-表1：支持触发器信息
+表1：Function支持触发器信息
 
 | 触发器     | 函数调用方式 | 参考       |
 | ---------- | ------------ | ---------- |
