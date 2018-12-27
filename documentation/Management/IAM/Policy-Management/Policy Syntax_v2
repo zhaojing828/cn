@@ -19,13 +19,12 @@ IAM Policy 包含以下基本元素：content（策略内容）、permission（�
 - ids
   指定被授权的一个或多个资源 IDs。ids 支持通配符 *，用于授权对象是某一类资源，而不是指定资源 ID 的场景。
 - version
-
-​       Policy 的版本，v2。
+  Policy 的版本，v2。
 
 ## Policy 的语法结构
 
 Policy 的语法结构如下图所示。
-![语法结构](../../../../image/IAM/Strategy Management/policy语法结构.png)
+![语法结构](../../../../image/IAM/PolicyManagement/policy语法结构.png)
 
 Policy 的语法应符合 JSON 格式。如果您创建的授权策略不符合 JSON 语法，将无法保存成功。很多在线 JSON 格式检查工具都可以检查策略的格式错误。
 
