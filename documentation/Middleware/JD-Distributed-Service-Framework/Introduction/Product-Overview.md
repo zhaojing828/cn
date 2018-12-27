@@ -1,7 +1,7 @@
 
 # 产品概述
 
-京东云分布式服务框架JDSF（JDCloud Distributed Service Framework) 是一个围绕应用和微服务的 PaaS 平台。它是托管的服务治理框架，围绕微服务的整个生命周期，提供服务部署、注册、发现、调用、监控等全方位功能。
+京东云分布式服务框架（JDCloud Distributed Service Framework) 是一个围绕应用和微服务的 PaaS 平台。它是托管的服务治理框架，围绕微服务的整个生命周期，提供服务部署、注册、发现、调用、监控等全方位功能。
 
 
 

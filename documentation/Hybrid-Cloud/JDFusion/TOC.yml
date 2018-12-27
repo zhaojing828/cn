@@ -17,7 +17,7 @@ items:
 - name: 入门指南
   items:
     - name: 概述与环境部署
-      href: Pricing/Billing-Overview.md
+      href: Getting-Started/Anti-JDFusion-Basic-Started.md
       
 - name: 操作指南
   items:

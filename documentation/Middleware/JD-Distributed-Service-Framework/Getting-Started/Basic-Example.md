@@ -3,7 +3,8 @@
 # 环境准备
 
 1. 要求jdk版本1.8以上；<br />
-2. 本Demo为idea项目，构建工具为maven。如果您的环境也是idea+maven，那么可以直接下载使用。否则请按照自己的工具和环境来创建项目；
+2. 下载示例项目：[示例项目下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/JDSF-Demo.zip)<br />
+3. 本Demo为idea项目，构建工具为maven。如果您的环境也是idea+maven，那么可以直接下载使用。否则请按照自己的工具和环境来创建项目；
 
 
 # 项目结构
@@ -59,3 +60,6 @@ parent配置表示我们配置哪个项目作为本项目的父项目，配置�
 然后用户在代码中以下方式使用——@Value方式：<br />
 ![配置代码](../../../../image/Internet-Middleware/JD-Distributed-Service-Framework/demo_config_code.png)<br />
 注：@ConfigurationProperties方式请参照代码CloudConfig类。
+
+# 部署
+将名为server和client的两个示例程序部署在注册中心和调用链服务所在VPC和子网，运行后，即可以看到服务注册数据和调用链数据。
