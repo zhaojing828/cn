@@ -1,27 +1,17 @@
 # 视频上传
 
-（新内容）登陆视频点播控制台，点击左侧菜单栏“素材管理”-“素材上传”，进入“文件上传”页面，点击“添加文件”按钮，弹出框中再次点击“添加文件”，即可弹出本地文件浏览窗口，选择文件，点击“开始上传”即可。
+登陆视频点播控制台，点击左侧菜单栏“视频上传”或“视频管理”-“视频上传”，进入“文件上传”页面。
 
+![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E4%B8%8A%E4%BC%A01.png)
 
+点击“添加文件”按钮，弹出框中再次点击“添加文件”，即可弹出本地文件浏览窗口，选择文件，点击“开始上传”即可。
 
+![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E4%B8%8A%E4%BC%A02.png)
+  
+![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E4%B8%8A%E4%BC%A03.png)
 
+上传视频时，如需对文件进行分类、转码、水印设置，可在添加时调用已创建好的模板。如果没有模板，请先进入“全局配置”中配置模板。
+当文件状态更新为“上传成功”时，表示您的视频已经上传成功。
 
-打开推流工具（这里以OBS为例），点击“设定“按钮，打开设置页面
+![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E4%B8%8A%E4%BC%A04.png)
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/obs%E8%AE%BE%E5%AE%9A.jpg)
-
-点击左边“广播设定”菜单，在右侧将拼接的推流地址填写到URL和流秘钥区域中，在URL文本框中填写地址的前半段，也就是流名之前的部分，串流码文本框填写地址的后半部分，完成后“确定”退出设置界面
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/obs%E6%B7%BB%E5%8A%A0%E6%8E%A8%E6%B5%81%E5%9C%B0%E5%9D%80.jpg)
-
-在软件界面左下角的场景栏里点击鼠标右键，菜单中选择”添加场景“，在弹出的对话框中输入场景名称，点击”确定“按钮完成场景添加，如下图：
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/obs%E6%B7%BB%E5%8A%A0%E5%9C%BA%E6%99%AF.jpg)
-
-在软件界面左下角的来源栏里点击鼠标右键，菜单中选择“添加”，在子菜单中根据实际需求选择要添加的来源类型（来源即为视频推流的画面来源），然后在弹出的对话框中输入来源名称，点击“确定”按钮完成来源添加，并在添加完成后勾选添加的来源类型，如下图：
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/obs%E6%B7%BB%E5%8A%A0%E8%BE%93%E5%85%A5%E6%BA%90.jpg)
-
-保证配置信息都配置完成，服务器和串流码填写正确后，点击”开始串流“按钮即可开始推流，如下图：
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/live-video/obs%E5%BC%80%E5%A7%8B%E4%B8%B2%E6%B5%81.png)
