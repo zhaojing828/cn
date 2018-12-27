@@ -55,13 +55,13 @@ Policy 的语法应符合 JSON 格式。如果您创建的授权策略不符合 
 ]
 ```
 
-<permission> 中的内容 为（以管理员权限为例）：
+```<permission>``` 中的内容 为（以管理员权限为例）：
 
 ```
 "permission" : "R|M|D"
 ```
 
-<resource>中需要指定资源的类型和 IDs：
+```<resource>```中需要指定资源的类型和 IDs：
 
 ```
 "resource":[
@@ -72,7 +72,7 @@ Policy 的语法应符合 JSON 格式。如果您创建的授权策略不符合 
 ]
 ```
 
-<ids>中的可指定一个或多个资源（以指定资源 ID 为例）：
+```<ids>```中的可指定一个或多个资源（以指定资源 ID 为例）：
 
 ```
 "ids":[
@@ -81,7 +81,7 @@ Policy 的语法应符合 JSON 格式。如果您创建的授权策略不符合 
 ]
 ```
 
-<type>  为指定产品线的service name：
+```<type>```为指定产品线的service name：
 
 ```
 "type":"service name"
