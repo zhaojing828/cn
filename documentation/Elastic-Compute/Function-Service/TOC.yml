@@ -48,7 +48,7 @@ name: 函数服务
                - name: Context对象
                  href: Operation-Guide/buildfunction/programming-model/python/context.md 
                - name: 日志记录
-                 href: Operation-Guide/buildfunction/programming-model/python/log.md 
+                 href: Operation-Guide/buildfunction/programming-model/python/record.md 
            - name: 创建函数部署包
              href: Operation-Guide/buildfunction/programming-model/package.md  
            - name: 配置函数
