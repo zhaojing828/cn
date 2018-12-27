@@ -22,8 +22,7 @@
      1. 原子操作中选择 Kubernetes集群，输入操作选择前面配置的构建操作。需要用户提前创建好集群，在流水线中提供部署的deployment。
         示例如下：
         ![](/image/codepipeline/best-k8s.png)
-
-   样例deployment：
+        样例deployment：
  	
 	```
 	apiVersion: apps/v1beta1
@@ -46,11 +45,11 @@
 		- name: my-secret	
 	```
 
-  其中，image需要用构建操作的产出做替换，
-  ![](/image/codepipeline/best-docker.png)
-  
+       其中，image需要用构建操作的产出做替换，
+       ![](/image/codepipeline/best-docker.png)  
+       
      2. 在k8s集群页面，给这个deployment添加一个负载均衡服务。
-	
+      
 	```
 	kind: Service
 	apiVersion: v1
