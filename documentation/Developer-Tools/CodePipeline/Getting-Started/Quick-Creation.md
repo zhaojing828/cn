@@ -29,7 +29,9 @@
    3）设置构建阶段
   
      构建阶段中，默认接入构建类型的操作。
+     
     ![](/image/codepipeline/cre-build-stage.png)
+    
     ![](/image/codepipeline/cre-build-action.png)
  
    * 操作名称：操作名称，一个流水线内保证名称的唯一性。不可为空，只支持中文、数字、大小写字母、英文下划线“ _ ”及中划线“ - ”，且不能超过32字符
