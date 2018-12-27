@@ -58,7 +58,7 @@
            - name: 函数调用
              href: Operation-Guide/invokefunction/invoke.md 
            - name: 触发器管理
-             item:
+             items:
                - name: 触发器概述
                  href: Operation-Guide/invokefunction/triggermanagement/triggeroverview.md  
                - name: 触发器列表
