@@ -10,7 +10,7 @@
 GET
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/registries/{registryName}/tokens
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{registryName}/tokens
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

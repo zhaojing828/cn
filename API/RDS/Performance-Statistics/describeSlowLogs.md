@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询MySQL实例的慢日志的概要信息。<br>- 仅支持SQL Server
+查询MySQL实例的慢日志的概要信息。<br>- 仅支持MySQL
 
 ## 请求方式
 GET

@@ -13,7 +13,7 @@ digest和tag唯一表征单个镜像，其中imageDigest为sha256哈希，image 
 POST
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/registries/{registryName}/repositories/{repositoryName}:deleteImage
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{registryName}/repositories/{repositoryName}:deleteImage
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

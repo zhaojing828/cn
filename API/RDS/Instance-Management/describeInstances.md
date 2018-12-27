@@ -17,9 +17,22 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**filters**|Filter[]|False| |过滤参数，多个过滤参数之间的关系为“与”(and)<br>支持以下属性的过滤：<br>instanceId, 支持operator选项：eq<br>instanceName, 支持operator选项：eq<br>engine, 支持operator选项：eq<br>engineVersion, 支持operator选项：eq<br>instanceStatus, 支持operator选项：eq<br>chargeMode, 支持operator选项：eq<br>|
 |**pageNumber**|Integer|False| |显示数据的页码，默认为1，取值范围：[-1,∞)。pageNumber为-1时，返回所有数据页码；超过总页数时，显示最后一页;|
 |**pageSize**|Integer|False| |每页显示的数据条数，默认为100，取值范围：[10,100]，用于查询列表的接口|
+|**tagFilters**|TagFilter[]|False| |资源标签|
 
+### Filter
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
+|**operator**|String|False| |过滤条件的操作符，默认eq|
+|**values**|String[]|True| |过滤条件的值|
+### TagFilter
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**key**|String|True| |Tag键|
+|**values**|String[]|True| |Tag值|
 
 ## 返回参数
 |名称|类型|描述|
@@ -44,6 +57,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 |**instanceStatus**|String|实例状态，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**instanceType**|String|实例类别，例如主实例，只读实例等，参见[枚举参数定义](../Enum-Definitions/Enum-Definitions.md)|
 |**regionId**|String|地域ID，参见[地域及可用区对照表](../Enum-Definitions/Regions-AZ.md)|
+|**tags**|Tag[]|标签信息|
 ### Charge
 |名称|类型|描述|
 |---|---|---|
@@ -52,6 +66,11 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 |**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 |**chargeStartTime**|String|计费开始时间，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 |**chargeStatus**|String|费用支付状态，取值为：normal、overdue、arrear，normal表示正常，overdue表示已到期，arrear表示欠费|
+### Tag
+|名称|类型|描述|
+|---|---|---|
+|**key**|String|标签键|
+|**value**|String|标签值|
 
 ## 返回码
 |返回码|描述|
