@@ -10,7 +10,7 @@ IOS 系统|Google Authenticator|APP Store下载
 
 #### 1. 打开APP Store 搜索 ‘Google Authenticator’ 或者通过扫描下方二维码来直接安装。
 
-![IOS二维码](../../../../cn/image/IAM/MFA/IOS二维码.png)
+![IOS二维码](../../../../image/IAM/MFA/IOS二维码.png)
 
 #### 2. 打开Google Authenticator后，点击最下面的 ‘开始设置’ 按钮
 
