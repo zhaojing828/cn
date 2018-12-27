@@ -1,10 +1,3 @@
-#### 5. 文本组件配置
-
-文本类组件包括：文本标题、跑马灯、翻牌器、倒计时器、时间器以及词云组件。
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Data-Visualization/media/9127d57469c6bbd684f4e2312fe4634e.png)
-
-
 
 ##### 5.1 文本框、跑马灯
 
