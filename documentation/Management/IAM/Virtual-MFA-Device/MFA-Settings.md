@@ -4,7 +4,7 @@
 
 选择 账户管理 > 虚拟MFA设备 > 启用， 短信验证后，弹出MFA启用页面。
 
-![为主账号绑定虚拟MFA设备]( ../../../../image/IAM/Virtual MFA device/为主账号绑定虚拟MFA设备.png)
+![为主账号绑定虚拟MFA设备]( ../../../../image/IAM/Virtual MFA device/为主账号绑定虚拟MFA设备.jpg)
 
 
 ## 主账号为子用户绑定虚拟MFA设备
