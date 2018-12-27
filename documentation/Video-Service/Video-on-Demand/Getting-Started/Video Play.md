@@ -6,4 +6,4 @@
 
 点击“视频地址”即可查看转码后的文件地址（前提是已经对原文件进行了转码操作），可以直接复制地址嵌入播放器或者粘贴至浏览器进行视频文件的下载播放
 
-https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE2.png
+![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE2.png）
