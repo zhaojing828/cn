@@ -13,7 +13,7 @@ POST {Http接入点}/v1/messages HTTP/1.1
 |  字段名  |    字段类型     | 是否必填 | 说明                       |
 | :------ | :------------- | :------ | :------------------------- |
 |  topic   |     string      | Required |                            |
-|   type   |     string      | Required | NORMAL, ORDER, TRANSACTION |
+|   type   |     string      | Required | NORMAL, ORDER |
 | messages | list of Message | Required | 1 <= 消息条数 <= 32        |
 
   其中Message为Map类型，包含的字段如下：

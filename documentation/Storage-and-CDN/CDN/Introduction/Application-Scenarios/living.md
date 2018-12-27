@@ -3,7 +3,7 @@
 直播CDN服务基于京东云全国优质节点以及智能云计算能力，为各类视频直播平台提供高可用稳定的音视频内容分发服务，支持互动式推拉流直播、传统回源拉流模式，提供分布式转码、录制存储、访问控制、多维度统计查询一站式服务。
 
 ## 场景应用：
-![视频直播业务框架图](https://github.com/jdcloudcom/cn/blob/cdn-new/image/CDN/%E4%BA%AC%E4%B8%9C%E4%BA%91%E7%9B%B4%E6%92%AD%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF_png.png)
+![视频直播业务框架图](https://github.com/jdcloudcom/cn/blob/cdn-new/image/CDN/%E4%BA%AC%E4%B8%9C%E4%BA%91%E7%9B%B4%E6%92%AD%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF.png)
 
 ## 产品优势：
 **多终端多协议**

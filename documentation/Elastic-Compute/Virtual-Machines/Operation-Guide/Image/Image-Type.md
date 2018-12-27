@@ -40,6 +40,6 @@
 
 ## 相关参考
 
-[镜像类型转换](/Convert-Image.md)
+[镜像类型转换](Convert-Image.md)
 
 [重置系统](../Instance/Rebuild-Instance.md)

@@ -26,7 +26,6 @@ v1
 |**getDomainQueryCount**|GET|查看域名的解析次数|
 |**getDomainQueryTraffic**|GET|查看域名的查询流量|
 |**getDomains**|GET|查询用户名下的主域名列表。<br>    </br>请在调用域名相关的API之前，调用此API获取相关的domainId和domainName。</br>|
-|**getLB**|GET|查看当前域名所有的有负载均衡的解析记录<br></br>这些解析记录分页展示的列表</br>|
 |**getMonitor**|GET|查看主域名的监控项的配置以及状态|
 |**getMonitorAlarmInfo**|GET|主域名的监控项的报警信息|
 |**getTargets**|GET|查询子域名的可用监控对象|
@@ -36,7 +35,6 @@ v1
 |**operateMonitor**|POST|监控项的操作集合，包括：删除，暂停，启动, 手动恢复, 手动切换|
 |**operateRR**|POST|启用、停用、删除主域名下的解析记录|
 |**searchRR**|GET|查询主域名的解析记录。<br></br>在使用解析记录相关的接口之前，请调用此接口获取解析记录的列表。</br>|
-|**setLB**|POST|设置域名解析记录的负载均衡|
 |**updateDomain**|POST|修改主域名|
 |**updateMonitor**|POST|域名的监控项修改|
 |**updateRR**|POST|修改主域名的某个解析记录|

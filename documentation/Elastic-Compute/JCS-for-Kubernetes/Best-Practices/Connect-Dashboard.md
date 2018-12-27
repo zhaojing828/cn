@@ -3,8 +3,9 @@
 
 京东云Kubernetes集群服务已预置Dashboard插件。
 
-一、访问dashboard  
-1、通过 API server 访问 dashboard（https 6443端口）；  
+## 一、访问dashboard，有以下两种方式  
+
+**方式一：通过 API server 访问 dashboard（https 6443端口）；**  
 使用这种方式访问dashboard需要先基于集群的config文件生成并安装P12安全证书，具体操作步骤如下：  
 1）获取客户端证书，进行base64转码后保存到kubecfg.crt  
 `grep 'client-certificate-data' ~/.kube/config | head -n 1 | awk '{print $2}' | base64 -d > kubecfg.crt`  
@@ -23,7 +24,8 @@
 完成证书导入  
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/JCS-for-Kubernetes/导入证书5.png)  
 5）在浏览器中输入`https://****/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/`，其中`****`请使用Kubernetes集群详情页中查询到的服务端点替换，即可访问dashboard；  
-2、通过LoadBalance 服务访问dashboard；  
+
+**方式二：通过LoadBalance 服务访问dashboard**    
  1）通过LoadBalance服务访问dashboard，您需要现在集群中创建一个LoadBalance类型的服务，yaml文件如下所示： 
 ```
 kind: Service
@@ -51,7 +53,7 @@ kubectl create -f dashboard-lb.yaml --namespace=kube-system
 kubectl get services -n kube-system
 `  
 4）在浏览器中输入https://****:port，其中****使用LoadBalance服务关联的公网IP替换，port使用service spec中的port替换，本示例为8443，即可访问dashboard。  
-三、dashboard身份认证  
+## 二、dashboard身份认证  
 在dashboad中查看集群的资源信息，需要通过用户身份认证；  
 **以获取admin服务账户的令牌为例，具体操作方法如下：**  
 1、查看kube-system命名空间中的所有secret：  

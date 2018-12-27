@@ -32,16 +32,13 @@ spec:
 5、PersistentVolume 可以以资源提供者支持的任何方式挂载到主机上。  
 京东云云硬盘目前只支持一种模式ReadWriteOnce——该卷可以被单个节点以读/写模式挂载；  
 访问模式包括：  
-ReadWriteOnce——该卷可以被单个节点以读/写模式挂载  
-ReadOnlyMany——该卷可以被多个节点以只读模式挂载  
-ReadWriteMany——该卷可以被多个节点以读/写模式挂载  
+ReadWriteOnce——该卷可以被单个节点以读/写模式挂载    
 在命令行中，访问模式缩写为：    
 RWO - ReadWriteOnce  
-ROX - ReadOnlyMany  
-RWX - ReadWriteMany  
 京东云为PersistentVolume提供了插件，插件类型为：jdcloudElasticBlockStore  
+注：副本数只能指定1。  
 
-**2. 创建PVC**
+**2. 创建PVC**  
 
 声明可以指定一个标签选择器来进一步过滤该组卷。只有标签与选择器匹配的卷可以绑定到声明。选择器由两个字段组成：
 
@@ -51,7 +48,12 @@ RWX - ReadWriteMany
 
 matchLabels：volume 必须有具有该值的标签
 
-matchExpressions：这是一个要求列表，通过指定关键字，值列表以及与关键字和值相关的运算符组成。有效的运算符包括 In、NotIn、Exists 和 DoesNotExist。
+matchExpressions：这是一个要求列表，通过指定关键字，值列表以及与关键字和值相关的运算符组成。有效的运算符包括 In、NotIn、Exists 和 DoesNotExist。  
+访问模式包括：ReadWriteOnce——该卷可以被单个节点以读/写模式挂载  
+在命令行中，访问模式缩写为：RWO - ReadWriteOnce  
+京东云为PersistentVolume提供了插件，插件类型为：jdcloudElasticBlockStore  
+注：副本数只能指定1。  
+
 ```
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -90,8 +92,6 @@ spec:
         - mountPath: "/usr/share/mybusybox/"
           name: pv-static
 ```
-查看pod状态
-查看volume的挂载状态
 
 ## 二、使用京东云云硬盘定义动态存储
 
