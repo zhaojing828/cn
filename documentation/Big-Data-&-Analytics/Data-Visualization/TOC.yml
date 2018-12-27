@@ -18,7 +18,13 @@ items:
     - name: 1.登录京东云
       href: Operation-Guide/login.md
     - name: 2.我的大屏
-      href: Operation-Guide/Mydashboard.md
+      href: 
+      items:
+       - name: 2.1创建大屏
+         href: Operation-Guide/Mydashboard.md      
+       - name: 2.2编辑大屏
+         href: Operation-Guide/editDashboard.md            
+      
     - name: 3. 基础图表组件配置
       href: 
       items:
