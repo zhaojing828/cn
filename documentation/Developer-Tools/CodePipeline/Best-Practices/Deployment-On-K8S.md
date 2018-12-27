@@ -23,7 +23,6 @@
         示例如下：
         ![](/image/codepipeline/best-k8s.png)
         样例deployment：
- 	
 	```
 	apiVersion: apps/v1beta1
 	kind: Deployment
@@ -44,12 +43,10 @@
 	      imagePullSecrets:
 		- name: my-secret	
 	```
-
        其中，image需要用构建操作的产出做替换，
        ![](/image/codepipeline/best-docker.png)  
        
-     2. 在k8s集群页面，给这个deployment添加一个负载均衡服务。
-      
+     2. 在k8s集群页面，给这个deployment添加一个负载均衡服务。      
 	```
 	kind: Service
 	apiVersion: v1
@@ -68,8 +65,7 @@
 	    app: nginx
 	  type: LoadBalancer
 	  sessionAffinity: None
-	  externalTrafficPolicy: Cluster
-  
+	  externalTrafficPolicy: Cluster  
 	```
 
 5. 保存并发布。
