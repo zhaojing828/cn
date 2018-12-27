@@ -10,7 +10,7 @@
 
 ## 在 API 网关控制台中根据示例创建一个 API 并进行测试
 
-以下过程将指导您完成在API网关控制台中根据示例创建API并通过SDK进行测试的步骤。
+以下过程将指导您完成在API网关控制台中创建API并通过SDK进行测试。
 
 ### 创建API分组-创建API-发布：
 
@@ -29,6 +29,7 @@
 ![新建API分组成功](../../../../image/Internet-Middleware/API-Gateway/exap_create_apigroup_success.png)
 
 #### 5.	您可以通过以下两种方式部署API。
+
 - 新建API：点击新建API，配置API的“名称”、“子路径”、“查询参数”、“请求体格式”和“正常返回格式”后，点击确定.
 
 ![新建API1](../../../../image/Internet-Middleware/API-Gateway/exap_create_api_1.png)
@@ -69,27 +70,45 @@
 
 ![生成SDK和文档](../../../../image/Internet-Middleware/API-Gateway/exap_generate_SDK_doc.png)
 
-### 创建访问密钥-创建访问授权-绑定分组：
+### 获取密钥-创建访问授权-绑定分组：
 
-#### 1.	打开[访问密钥](https://apigateway-console.jdcloud.com/accessSecretKey)，点击创建访问密钥。
+#### 您可以通过两种方式获取密钥：
 
-![创建访问密钥](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_key_1.png)
+- 通过API调用者方式创建访问授权
 
-#### 2.	填写名称和描述（选填），点击确定。
+  - 打开[访问密钥](https://apigateway-console.jdcloud.com/accessSecretKey)，点击创建访问密钥。
 
-![创建访问密钥2](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_key_2.png)
+    ![创建访问密钥](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_key_1.png)
 
-#### 3.	点击密钥名，查看此访问密钥的详细信息，拷贝访问密钥ID、APIKey和APISecret。
+  - 填写名称和描述（选填），点击确定。
 
-![密钥详细信息](../../../../image/Internet-Middleware/API-Gateway/exap_access_key_info.png)
+    ![创建访问密钥2](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_key_2.png)
 
-#### 4.	打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
+  - 点击密钥名，查看此访问密钥的详细信息，拷贝访问密钥ID、APIKey和APISecret。
 
-![创建授权](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_1.png)
+    ![密钥详细信息](../../../../image/Internet-Middleware/API-Gateway/exap_access_key_info.png)
 
-#### 5.	填写用户标识（访问密钥的访问密钥ID）和描述（选填），点击确定。
+  - 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
 
-![创建授权2](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_2.png)
+    ![创建授权](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_1.png)
+
+  - 选择授权类型为API调用者，填写用户标识（访问密钥的访问密钥ID）和描述（选填），点击确定。
+
+    ![创建授权2](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_2.png)
+    
+- 通过京东云用户方式创建访问授权
+
+  - 打开[Access Key管理](https://uc.jdcloud.com/account/accesskey)，点击创建Access Key，手机验证通过后可获取Access Key ID和Access Key Secret。
+
+    ![Access Key管理](../../../../image/Internet-Middleware/API-Gateway/exap_Access_Key_admin.png)
+
+  - 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
+
+    ![创建授权](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_1.png)
+
+  - 选择授权类型为京东云用户，填写用户标识（Access Key ID）和描述（选填），点击确定。
+
+    ![创建授权2](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_3.png)
 
 #### 6.	点击“绑定”，将创建的PetStore分组移动到已绑定。
 
@@ -101,7 +120,7 @@
 
 #### 1.	解压下载的Java SDK。
 
-#### 2.	切换到PetStore目录下，新建SDKTest.java文件。([项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_javaSDK.zip))
+#### 2.	切换到PetStore目录下，编辑Demo.java文件。([项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_javaSDK.zip))
 
 - accessKeyId为查看密钥详细信息时的APIKey；
 - secretAccessKey为查看密钥详细信息时的APISecret；
