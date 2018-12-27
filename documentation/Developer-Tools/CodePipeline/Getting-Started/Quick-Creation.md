@@ -6,7 +6,7 @@
 1. 访问[流水线控制台](https://codepipeline-console.jdcloud.com/pipeline/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【开发者工具】-【流水线】进入流水线列表页。
 
 2. 在“流水线列表”页面，点击 快速创建 ，进入“快速创建”页面。
-![](/image/codepipeline/Quick-Creation.png) 
+ ![](/image/codepipeline/Quick-Creation.png) 
 
 3. 默认流水线包含源代码、构建、部署阶段 
 
@@ -17,7 +17,7 @@
    2）设置源代码
   
    源代码阶段中，默认接入源代码类型的操作。一个阶段下至少需要有一个操作。
-   ![](/image/codepipeline/cre-source-stage.png) 
+  ![](/image/codepipeline/cre-source-stage.png) 
  
    * 操作名称：操作名称，一个流水线内保证名称的唯一性。不可为空，只支持中文、数字、大小写字母、英文下划线“ _ ”及中划线“ - ”，且不能超过32字符
    * 操作类型：源代码
@@ -28,11 +28,11 @@
 
    3）设置构建阶段
   
-     构建阶段中，默认接入构建类型的操作。
+   构建阶段中，默认接入构建类型的操作。
      
-    ![](/image/codepipeline/cre-build-stage.png)
+ ![](/image/codepipeline/cre-build-stage.png)
     
-    ![](/image/codepipeline/cre-build-action.png)
+ ![](/image/codepipeline/cre-build-action.png)
  
    * 操作名称：操作名称，一个流水线内保证名称的唯一性。不可为空，只支持中文、数字、大小写字母、英文下划线“ _ ”及中划线“ - ”，且不能超过32字符
    * 操作类型：构建
@@ -43,9 +43,11 @@
 
    4）设置部署阶段
   
-      部署阶段中，默认接入部署类型的操作。
-    ![](/image/codepipeline/cre-deploy-stage.png)
-    ![](/image/codepipeline/cre-deploy-action.png)
+   部署阶段中，默认接入部署类型的操作。
+   
+  ![](/image/codepipeline/cre-deploy-stage.png)
+  
+  ![](/image/codepipeline/cre-deploy-action.png)
 
  
 
