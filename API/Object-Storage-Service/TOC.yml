@@ -16,8 +16,8 @@
       - name: putBucket
         href: OSS-APIs/putBucket.md    
       - name: putBackSourceConfiguration
-        href: ../Object-Storage-Service-2/back-source-configuration-openapi/putBackSourceConfiguration.md
+        href: OSS-APIs/putBackSourceConfiguration.md
       - name: getBackSourceConfiguration
-        href: ../Object-Storage-Service-2/back-source-configuration-openapi/getBackSourceConfiguration.md
+        href: OSS-APIs/getBackSourceConfiguration.md
       - name: deleteBackSourceConfiguration
-        href: ../Object-Storage-Service-2/back-source-configuration-openapi/deleteBackSourceConfiguration.md
+        href: OSS-APIs/deleteBackSourceConfiguration.md
