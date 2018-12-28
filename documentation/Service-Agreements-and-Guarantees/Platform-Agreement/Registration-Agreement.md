@@ -150,3 +150,6 @@
 12.3本协议内容中以黑体、加粗、下划线、斜体等方式显著标识的条款，请用户着重阅读。
 
 12.4 您点击本协议下方的 同意并继续 按钮即视为您完全接受本协议，在点击之前请您再次确认已知悉并完全理解本协议的全部内容。
+
+[京东用户注册协议](/image/Service-Agreements-and-Guarantees/Platform-Agreement/Registration-Agreement-pdf.pdf)
+
