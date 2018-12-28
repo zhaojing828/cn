@@ -63,7 +63,7 @@
 
 3.6服务商主动退出云市场的，可发送电子邮件至yunshichang@jd.com提交退出申请。云市场审核通过后，服务商须提前30日在服务商公告处公示关店通知。
 
-3.7服务商主动退出云市场的，需满足《京东云隐私政策》 中[《京东云账户注销须知》]（https://docs.jdcloud.com/cn/platform-agreement/privacy-policy）约定的条件。
+3.7服务商主动退出云市场的，需满足《京东云隐私政策》 中[《京东云账户注销须知》](https://docs.jdcloud.com/cn/platform-agreement/privacy-policy)约定的条件。
 
 
 4、资格要求及证明文件
