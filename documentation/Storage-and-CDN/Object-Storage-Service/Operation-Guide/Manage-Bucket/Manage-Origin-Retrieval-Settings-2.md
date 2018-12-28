@@ -47,7 +47,9 @@ Expires
 
 ## 镜像回源规则设置 
 
-### 使用OSS管理控制台，设置镜像回源。
+### 1.使用OSS Open API ，设置镜像回源。
+参考：[设置镜像回源](https://docs.jdcloud.com/cn/object-storage-service/api/putbacksourceconfiguration?content=API)
+### 2.使用OSS管理控制台，设置镜像回源。
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->镜像回源
 
