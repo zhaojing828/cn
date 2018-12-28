@@ -29,14 +29,14 @@ items:
          href: JDFusion/Disk/getDiskById
        - name: getDisks
          href: JDFusion/Disk/getDisks
-        - name: removeDiskById
+       - name: removeDiskById
          href: JDFusion/Disk/removeDiskById.md
    - name: 镜像相关接口
      items:
        - name: getVmImages
          href: JDFusion/Vm-Image/getVmImages.md
-    - name: 虚机实例相关接口
-      items:
+   - name: 虚机实例相关接口
+     items:
         - name: createVmInstance
           href: JDFusion/Vm-Instance/createVmInstance.md
         - name: deleteVmInstanceById
@@ -64,7 +64,7 @@ items:
        - name: getVmKeypairs
          href: JDFusion/Vm-Keypair/getVmKeypairs.md
        - name: getVmKeypairsByName
-          href: JDFusion/Vm-Keypair/getVmKeypairsByName.md
+         href: JDFusion/Vm-Keypair/getVmKeypairsByName.md
    - name: 弹性公网IP相关接口
      items:
        - name: createVpcEip
@@ -89,10 +89,10 @@ items:
          href: JDFusion/Vpc-NetworkInterface/deleteVpcNetworkInterfaceById.md
        - name: detachVpcNetworkInterfaceById
          href: JDFusion/Vpc-NetworkInterface/detachVpcNetworkInterfaceById.md
-        - name: getVpcNetworkInterfaceById
-          href: JDFusion/Vpc-NetworkInterface/getVpcNetworkInterfaceById.md
-        - name: getVpcNetworkInterfaces
-          href: JDFusion/Vpc-NetworkInterface/getVpcNetworkInterfaces.md
+       - name: getVpcNetworkInterfaceById
+         href: JDFusion/Vpc-NetworkInterface/getVpcNetworkInterfaceById.md
+       - name: getVpcNetworkInterfaces
+         href: JDFusion/Vpc-NetworkInterface/getVpcNetworkInterfaces.md
    - name: 负载均衡相关接口
      items:
        - name: createVpcSlb
