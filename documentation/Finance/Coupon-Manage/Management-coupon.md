@@ -8,7 +8,7 @@
 
 3.在支付确认页面使用代金券，选择相应代金券后金额会自动扣减。
 
-![TimLine截图20170818155053.png](http://img1.jcloudcs.com/cms/f02d6e03-6ef1-4f74-bed0-89e421d7b9fe20170818161128.png)
+![1](https://github.com/jdcloudcom/cn/blob/joytaobao-coupon-2018122801/image/Coupon-Manage/management-coupon-z-1.png)
 
 ### **后付费使用**
 
