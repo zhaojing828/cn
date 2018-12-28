@@ -81,32 +81,32 @@
     "region":"cn-north-1",
     "detailType":"ApiGatewayReceived",
     "detail":{
-        "path":"api request path", //请求路径
-        "httpMethod":"GET/POST/DELETE/PUT/PATCH",  //请求方法
-        "headers":{   //请求头
+        "path":"api request path",        //请求路径
+        "httpMethod":"GET/POST/DELETE/PUT/PATCH",  
+        "headers":{                 //请求头
             "header":"headerValue"
         },
-        "pathParameters":{  //路径参数
+        "pathParameters":{      //路径参数
             "pathParam":"pathValue"
         },
-        "queryParameters":{   //查询参数
+        "queryParameters":{            //查询参数
             "queryParam":"queryValue"
         },
         "body":"string of request payload",
         "requestContext":{
-            "stage": "test",          //环境别名
+            "stage": "test",             //环境别名 
             "apiId":"testsvc",
             "identity": {
-                "accountId": "", //userid
-                "apiKey": "", //ak
-                "user": ""  //pin
-                "authType": "" //身份认证的类型 公测免鉴权/jdcloud鉴权
-            }
+                "accountId": "",        //userid
+                "apiKey": "",           //ak
+                "user": "",          //pin
+                "authType": ""       //身份认证的类型 公测免鉴权/jdcloud鉴权
+            },
             "requestId":"c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
             "sourceIp":"10.0.2.14"
         }
     }
-}
+} 
 
 ```
 API网关触发器配置详清参见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
