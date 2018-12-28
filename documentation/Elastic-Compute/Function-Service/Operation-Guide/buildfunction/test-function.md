@@ -18,7 +18,8 @@
  ![测试函数1](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/test1.PNG)
  4. 在“配置测试事件”窗口填写测试信息，测试信息配置如表1所示，带*参数为必填项。
  5. 单击“保存”，创建测试事件。
-表1 测试信息
+
+表1 测试事件配置
 
 | 参数         | 说明                                                         |
 | ------------ | ------------------------------------------------------------ |
