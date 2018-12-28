@@ -511,4 +511,4 @@
   </tr>
 </table>
 
-[云市场服务商管理规范-PDF下载](https://)
+[云市场服务商管理规范-PDF下载](/image/Marketplace/PDF/云市场服务商管理规范-converted.pdf)
