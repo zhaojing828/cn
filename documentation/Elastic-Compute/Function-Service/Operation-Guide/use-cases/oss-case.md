@@ -14,7 +14,7 @@
 3．   在新创建的Bucket中的Object中，选择“新建文件夹”，文件夹名称命名为filesource。<br>
 4．   完成创建。<br>
 
-详细操作指南参见[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md )。
+详细操作指南参见[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md  )。
 
 
 

@@ -346,3 +346,169 @@
 第三十一条 京东云有权根据市场环境、合作商合作体系发展状况等因素对本管理规范做相应的修订。
 
 
+<table class="tg">
+  <tr>
+    <th class="tg-c3ow">违规类型</th>
+    <th class="tg-c3ow">违规内容</th>
+    <th class="tg-c3ow">扣分</th>
+    <th class="tg-c3ow">处理类型</th>
+    <th class="tg-c3ow">保证金扣除</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" rowspan="5">违反行为规范</td>
+    <td class="tg-0pky">未经京东云或其关联公司授权，服务商在其服务标识、服务标题、服务简介、服务详情、图片或其他页面服务中使用“京东”、“京东云”、“京东数科”或关联公司的名称、或上述品牌的附属标志及图案的任何变体、缩写或错误拼写；</td>
+    <td class="tg-0pky">12</td>
+    <td class="tg-0pky">服务冻结15天</td>
+    <td class="tg-0pky">5000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">服务商向运营行贿等行为；</td>
+    <td class="tg-0pky">24</td>
+    <td class="tg-0pky">清退</td>
+    <td class="tg-0pky">全部扣除</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">对于服务商引导云市场客户进行线下交易的行为，将采取零容忍政策，一经查证属实，将立即清退相关服务商，永久终止云市场业务合作。（服务商终止合作、商品下架等触发的未完成项目的退款除外。）详见：交易限制 第十四条。</td>
+    <td class="tg-0pky">24</td>
+    <td class="tg-0pky">清退</td>
+    <td class="tg-0pky">全部扣除</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">提供云市场禁止的服务或商品；详见：第十条 商品上架（七）</td>
+    <td class="tg-0pky">12</td>
+    <td class="tg-0pky">服务冻结7天</td>
+    <td class="tg-0pky">3000元</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">擅自出售、转让、向任何第三方泄露，或以其他方式违规使用京东云的经营信息和运营数据，及/或用户的个人信息和相关数据的；详见：十八条 行为规范（八）</td>
+    <td class="tg-c3ow">24</td>
+    <td class="tg-c3ow">清退</td>
+    <td class="tg-c3ow">全部扣除</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" rowspan="4">违反诚信经营</td>
+    <td class="tg-0pky">服务未完成恶意引导用户提前验收，引起的用户投诉；</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">3000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">对用户实施欺诈行为引起用户投诉，对用户造成严重损失的；</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">服务冻结15天</td>
+    <td class="tg-c3ow">5000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">当接到投诉时，假冒用户向京东云表示撤销投诉；</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">服务冻结7天</td>
+    <td class="tg-c3ow">3000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">当接到投诉时，虚构事实，隐瞒实情，阻碍京东云正常调查；</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">3000元</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" rowspan="11">服务或商品违规</td>
+    <td class="tg-0pky">辱骂、恐吓、威胁用户的行为；</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">服务冻结15天</td>
+    <td class="tg-c3ow">5000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">当接到投诉时，服务商未在30分钟内及时响应；</td>
+    <td class="tg-c3ow">3</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">店铺客服、电话在约定的服务时间内未能提供实时服务，或售后邮件、电话未能及时响应回复，导致用户投诉或者被云市场抽查发现的</td>
+    <td class="tg-c3ow">3</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">拒不履行双方已确认的服务承诺的，包括但不限于未完成的过度承诺引起用户投诉的；</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">服务商在或开发过程中出现帐号提权、安装后门程序等主动危害系统安全的行为；</td>
+    <td class="tg-c3ow">24</td>
+    <td class="tg-c3ow">清退</td>
+    <td class="tg-c3ow">全部扣除</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">上架的商品含有木马、黑客程序等有损网络安全的；</td>
+    <td class="tg-c3ow"></td>
+    <td class="tg-c3ow"></td>
+    <td class="tg-c3ow"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">上架的商品可能套取他人身份证、邮箱、手机号、银行账号、支付宝账号等个人或者企业隐私信息的；</td>
+    <td class="tg-c3ow"></td>
+    <td class="tg-c3ow"></td>
+    <td class="tg-c3ow"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">服务商在服务过程中擅自修改用户云产品安全配置引起用户投诉的；</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">服务冻结15天</td>
+    <td class="tg-c3ow">5000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">上架的商品内置未在云市场上架的商品/服务的售卖交易入口，对商品的续费必须通过云市场进行交易；</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">服务冻结15天</td>
+    <td class="tg-c3ow">5000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">上架的商品内置独立的用户管理系统并要求用户重新注册或录入用户信息</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">服务冻结15天</td>
+    <td class="tg-c3ow">5000元</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">上架的商品侵犯第三方知识产权或其他合法权利的；</td>
+    <td class="tg-c3ow">12</td>
+    <td class="tg-c3ow">服务冻结15天</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" rowspan="2">不正当竞争</td>
+    <td class="tg-0pky">服务商通过虚假交易等方式提高商品或服务的销量；</td>
+    <td class="tg-c3ow">3</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">服务商以恶意抄袭、评价、恶意投诉、诋毁、虚假订购等方式进行不正当竞争；</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">服务冻结7天</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" rowspan="3">违法入驻规则</td>
+    <td class="tg-0pky">使用虚假资质或虚假信息进行入驻云市场；</td>
+    <td class="tg-c3ow">24</td>
+    <td class="tg-c3ow">清退</td>
+    <td class="tg-c3ow">全部扣除</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">服务商未在其企业官网上展示在云市场上架的商品，产品购买入口未链接到云市场对应的商品详情页上，以及未注明与京东云的合作关系；</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">在云市场上架的商品，未运行在京东云资源之上、或未与云产品打包销售；</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">服务冻结7天</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+</table>
+
+[云市场服务商管理规范-PDF下载](/image/Marketplace/PDF/云市场服务商管理规范-converted.pdf)
