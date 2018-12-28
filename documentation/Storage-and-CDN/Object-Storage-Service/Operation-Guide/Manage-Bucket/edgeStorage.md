@@ -423,9 +423,13 @@ x-jdcloud-pin: "userPin"
 ## 常见问题
 ### 1.常用命令及API列表
 ipfs add file 本地添加文件到 IPFS 网络
+
 ipfs object get <cid> 查询文件 object 信息
+  
 ipfs files stat /ipfs/<cid> 查询文件状态信息
+  
 ipfs cat <cid> file 下载 IPFS 网络中的文件到本地
+  
 API列表：https://docs.ipfs.io/reference/api/cli/
 
 ### 2.非公网IPFS文件能否同步至OSS？
