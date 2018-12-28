@@ -38,7 +38,7 @@
 
 ![导入API2](../../../../image/Internet-Middleware/API-Gateway/exap_create_api_3.png)
 
-- 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（[Yaml文件下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_Yaml.zip)）
+- 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（[Yaml文件下载地址](https://docs-downloads.oss.cn-north-1.jcloudcs.com/PetStoreTest_Yaml.zip)）
 
 ![导入API](../../../../image/Internet-Middleware/API-Gateway/exap_import_api_1.png)
 
@@ -122,7 +122,7 @@
 
 #### 1.	解压下载的Java SDK。
 
-#### 2.	切换到PetStore目录下，编辑Demo.java文件。（[项目下载地址](https://docs-downloads.oss.cn-north-1.jcloudcs.com/PetStoreTest_pythonSDK.zip)）
+#### 2.	切换到PetStore目录下，编辑Demo.java文件。（[项目下载地址](https://docs-downloads.oss.cn-north-1.jcloudcs.com/PetStoreTest_javaSDK.zip)）
 
 - accessKeyId为查看密钥详细信息时的APIKey；
 - secretAccessKey为查看密钥详细信息时的APISecret；
@@ -192,7 +192,7 @@ public class Demo {
 
 #### 1.	解压下载的Python SDK，执行setup.py文件。
 
-#### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。（[项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_pythonSDK.zip)）
+#### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。（[项目下载地址](https://docs-downloads.oss.cn-north-1.jcloudcs.com/PetStoreTest_pythonSDK.zip)）
 
 ```
 # coding=utf8
