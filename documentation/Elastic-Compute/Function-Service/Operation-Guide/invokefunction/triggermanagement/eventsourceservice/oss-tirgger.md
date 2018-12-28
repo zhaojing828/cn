@@ -17,8 +17,7 @@ triggerConfig:
           suffix: .gif
 ```
 
-OSS触发器配置详清参见[OSS触发器](eventsourceservice/oss-tirgger.md)。 
-
+**说明：**
 
 ``filter `` 为OSS对象过滤参数，满足过滤条件的OSS对象才可以触发函数，包含如下属性：
 
