@@ -1,4 +1,4 @@
-# 配置触发器和事件格式
+# 事件格式
 
 触发器在触发函数时会将事件传递给Function，事件在传递时以一个特定的数据结构以JSON 格式传递。对于不同的触发器参数设定的配置文件的内容格式不同，本文列举了配置文件的格式样板，并说明了支持的属性。另外，由不同触发器触发的事件，传递到函数接口的事件（event）对象的格式有所不同。
 
@@ -71,37 +71,43 @@
 
 ```
 {
-  "time": "2018-12-18T13:58:50Z",
-  "detail": {
-    "requestContext": {
-      "identity": {
-        "apiKey": "",   //ak
-        "accountId": "",   //userid
-        "authType": "none"  //身份认证的类型 公测默认鉴权/jdcloud鉴权
-      },
-      "stage": "test",
-      "sourceIp": "  ",
-      "requestId": "bgcfr6iumcb2k2g07b1gro22e926sdad",
-      "apiId": "api-xhkj27dxn12p"
-    },
-    "path": "/zdz/request",  //请求路径
-    "httpMethod": "GET",    //请求方法
-    "queryParameters": {},     //查询参数
-    "headers": {       //请求头
-       "header":"headerValue"
-    },
-    "body": "{}",
-    "pathParameters": {}
-  },
-  "region": "cn-north-1",
-  "id": "c9a46dba-3efb-4f70-af21-74a311f6cbae",
-  "resources": [
-    "jrn:apigateway:cn-north-1::api/function"
-  ],
-  "detailType": "ApiGatewayReceived",
-  "version": "0",
-  "base64OwnerPin": ""
+    "version":"0",
+    "id":"6a7e8feb-b491-4cf7-a9f1-bf3703467718",
+    "time":"2006-01-02T15:04:05.999999999Z",
+    "source":"apigateway",
+    "base64OwnerPin":"NTk0MDM1MjYzMDE5",
+    "resources":[    
+    ],
+    "region":"cn-north-1",
+    "detailType":"ApiGatewayReceived",
+    "detail":{
+        "path":"api request path", //请求路径
+        "httpMethod":"GET/POST/DELETE/PUT/PATCH",  //请求方法
+        "headers":{   //请求头
+            "header":"headerValue"
+        },
+        "pathParameters":{  //路径参数
+            "pathParam":"pathValue"
+        },
+        "queryParameters":{   //查询参数
+            "queryParam":"queryValue"
+        },
+        "body":"string of request payload",
+        "requestContext":{
+            "stage": "test",          //环境别名
+            "apiId":"testsvc",
+            "identity": {
+                "accountId": "", //userid
+                "apiKey": "", //ak
+                "user": ""  //pin
+                "authType": "" //身份认证的类型 免鉴权/jdcloud鉴权/hufu
+            }
+            "requestId":"c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
+            "sourceIp":"10.0.2.14"
+        }
+    }
 }
+
 ```
 API网关触发器配置详清参见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
 
