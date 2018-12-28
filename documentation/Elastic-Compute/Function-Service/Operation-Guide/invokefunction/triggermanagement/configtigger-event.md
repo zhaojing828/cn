@@ -56,7 +56,7 @@
 }
 ```
 
-
+OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceservice/oss-tirgger.md)。 
 
  
 
