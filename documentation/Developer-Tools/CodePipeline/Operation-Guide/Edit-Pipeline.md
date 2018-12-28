@@ -2,7 +2,7 @@
 
 点击流水线列表中的 编辑 按钮，编辑流水线。正在运行状态的流水线是不可编辑的。
 
-![](../../../../image/codepipeline/Edit-Pipeline.png) 
+![](/image/codepipeline/Edit-Pipeline.png) 
 
    * 添加阶段：提供了两种添加阶段的方式。单击导航流中的加号或者单击页面上的 添加阶段 按钮
    * 编辑阶段：可编辑阶段名称

@@ -35,13 +35,26 @@
 
 ![导入API2](../../../../image/Internet-Middleware/API-Gateway/exap_create_api_2.png)
 
-- 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。
+- 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。([Yaml文件下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_Yaml.zip))
 
 ![导入API](../../../../image/Internet-Middleware/API-Gateway/exap_import_api_1.png)
 
 ![导入API2](../../../../image/Internet-Middleware/API-Gateway/exap_import_api_2.png)
 
-#### 6.	点击“版本修订列表”标签页，点击发布，配置好如下几项后，点击确定。
+#### 6. 部署完API后，您可以通过API的高级配置为每个API配置独立的后端地址。
+
+![API高级配置1](../../../../image/Internet-Middleware/API-Gateway/exap_advanced_configuration_1.png)
+
+![API高级配置1](../../../../image/Internet-Middleware/API-Gateway/exap_advanced_configuration_2.png)
+
+- 后端服务配置： 勾选在发布分组时统一配置时，当前API将使用发布分组时配置的统一后端服务。
+- 不勾选在发布分组时统一配置时，可为当前API后端服务进行单独的配置，服务类型如下：
+
+    - HTTP/HTTPS：可为此API配置HTTP/HTTPS类型的后端地址；
+    - Mock后端：可为此API配置API网关提供的Mock后端；
+    - Function Service：函数（Function Service）是一项基于事件驱动的函数托管计算服务。如果无可用Function存在，您可以点击 此处 创建新的Function。
+
+#### 7.	点击“版本修订列表”标签页，点击发布，配置好如下几项后，点击确定。
 
 - 发布版本：0.0.1；
 - 发布为：线上；
@@ -52,7 +65,7 @@
 
 ![发布2](../../../../image/Internet-Middleware/API-Gateway/exap_deploy_2.png)
 
-#### 7.	发布成功后，点击“生成SDK和文档”，可下载JavaSDK、PythonSDK和API文档。
+#### 8.	发布成功后，点击“生成SDK和文档”，可下载JavaSDK、PythonSDK和API文档。
 
 ![生成SDK和文档](../../../../image/Internet-Middleware/API-Gateway/exap_generate_SDK_doc.png)
 
@@ -84,11 +97,11 @@
 
 至此，在API网关控制台的界面操作已经完成，接下来可以通过SDK进行调用。
 
-### 通过Java SDK调用([下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_javaSDK.zip))：
+### 通过Java SDK调用
 
 #### 1.	解压下载的Java SDK。
 
-#### 2.	切换到PetStore目录下，新建SDKTest.java文件。
+#### 2.	切换到PetStore目录下，新建SDKTest.java文件。([项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_javaSDK.zip))
 
 - accessKeyId为查看密钥详细信息时的APIKey；
 - secretAccessKey为查看密钥详细信息时的APISecret；
@@ -99,42 +112,52 @@ package net.jdcloud.PetStore;
 
 import com.jdcloud.sdk.auth.CredentialsProvider;
 import com.jdcloud.sdk.auth.StaticCredentialsProvider;
+import com.jdcloud.sdk.client.Environment;
 import com.jdcloud.sdk.http.HttpRequestConfig;
 import com.jdcloud.sdk.http.Protocol;
 import net.jdcloud.PetStore.client.PetStoreClient;
-import net.jdcloud.PetStore.model.ApiName0Response;
-import net.jdcloud.PetStore.model.ApiName0Request;
-import net.jdcloud.PetStore.model.ApiName1Response;
-import net.jdcloud.PetStore.model.ApiName1Request;
-import net.jdcloud.PetStore.model.ReqBody;
-import com.google.gson.Gson;
+import net.jdcloud.PetStore.model.*;
+
 import java.math.BigDecimal;
 
+/**
+ * Demo
+ */
+public class Demo {
 
-public class SDKTest {
-    public static void main (String[] args){
-        String accessKeyId = "5A327AA1AD791A49F358A7E1325E414C"; //APIKey
-        String secretAccessKey = "9FD89EF6099EB319FCD36C525B517047"; //APISecret
-        CredentialsProvider credentialsProvider = new StaticCredentialsProvider(accessKeyId, secretAccessKey);
-        PetStoreClient client = PetStoreClient.builder().
-                credentialsProvider(credentialsProvider)
-                .httpRequestConfig(new HttpRequestConfig.Builder().protocol(Protocol.HTTP).build()) //默认为HTTPS
+    private static String accessKeyId = "0E91C3765B78CBD71715F9BF24997AF3";
+    private static String secretKey = "AF7B13C8010F50F03A52C01458714701";
+    private static CredentialsProvider credentialsProvider = new StaticCredentialsProvider(accessKeyId, secretKey);
+    private static PetStoreClient client = PetStoreClient.builder()
+                .credentialsProvider(credentialsProvider)
+                .httpRequestConfig(new HttpRequestConfig.Builder().connectionTimeout(10000).protocol(Protocol.HTTPS).build())
+//                .environment(new Environment.Builder().endpoint("xv3xbwah945y-test.cn-north-1.jdcloud-api.net").build()) // 测试环境地址
+//                .environment(new Environment.Builder().endpoint("xv3xbwah945y-preview.cn-north-1.jdcloud-api.net").build()) // 预发环境地址
+                .environment(new Environment.Builder().endpoint("xv3xbwah945y.cn-north-1.jdcloud-api.net").build()) // 线上环境地址
                 .build();
-//        ApiName0
-        ApiName0Request request = new ApiName0Request();
-        request.setPetId("1");
-        ApiName0Response response = client.apiName0(request);
-        System.out.println(new Gson().toJson(response));
 
-//        ApiName1
-        ApiName1Request request1 = new ApiName1Request();
-        ReqBody reqBody1 = new ReqBody();
-        reqBody1.setId(1);
-        reqBody1.setPrice(new BigDecimal(3.3));
-        reqBody1.setType("dog");
-        request1.setReqBody(reqBody1);
-        ApiName1Response response1 = client.apiName1(request1);
-        System.out.println(new Gson().toJson(response1));
+    public static void main (String[] args){
+//        GetPetInfo
+        GetPetInfoRequest getPetInfoRequest = new GetPetInfoRequest();
+        getPetInfoRequest.setPetId(1);
+        GetPetInfoResponse getPetInfoResponse = client.getPetInfo(getPetInfoRequest);
+        System.out.println(getPetInfoResponse.getGetPetInfoResult());
+
+//        CreatePet
+        CreatePetRequest createPetRequest = new CreatePetRequest();
+        CreatePetBody CreatePetBody = new CreatePetBody();
+        CreatePetBody.setId(1);
+        CreatePetBody.setPrice(new BigDecimal(3.3));
+        CreatePetBody.setType("dog");
+        createPetRequest.setBody(CreatePetBody);
+        CreatePetResponse createPetResponse = client.createPet(createPetRequest);
+        System.out.println(createPetResponse.getCreatePetResult());
+
+//        TestFunction
+        TestFunctionRequest testFunctionRequest = new TestFunctionRequest();
+        TestFunctionResponse testFunctionResponse = client.testFunction(testFunctionRequest);
+        System.out.println(testFunctionResponse.getTestFunctionResult());
+
     }
 }
 
@@ -144,63 +167,73 @@ public class SDKTest {
 
 ![Java返回结果](../../../../image/Internet-Middleware/API-Gateway/exap_Java_return.png)
 
-### 通过Python SDK调用([下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_pythonSDK.zip))：：
+### 通过Python SDK调用
 
 #### 1.	解压下载的Python SDK，执行setup.py文件。
 
-#### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。
+#### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。([项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_pythonSDK.zip))
 
 ```
 # coding=utf8
 
 from jdcloud_sdk.core.credential import Credential
 from jdcloud_sdk.core.config import Config
-from jdcloud_sdk.core.const import SCHEME_HTTP
+from jdcloud_sdk.core.const import SCHEME_HTTPS
 from PetStore.apis.create_pet_request import *
 from PetStore.apis.get_pet_info_request import *
+from PetStore.apis.test_function_request import *
 from PetStore.client.PetStore_client import PetStoreClient
-from PetStore.models.body import Body
+from PetStore.models.create_pet_body import *
 
 
-class PetStoreTest(object):
+class PetStoreTest(object)：
 
-    def __init__(self, access_key, secret_key, end_point):
+    def __init__(self, access_key, secret_key, end_point)：
         self.access_key = access_key
         self.secret_key = secret_key
         self.end_point = end_point
         self.credential = Credential(self.access_key, self.secret_key)
-        self.config = Config(self.end_point, scheme=SCHEME_HTTP)
+        self.config = Config(self.end_point, scheme=SCHEME_HTTPS)
         self.client = PetStoreClient(self.credential, self.config)
 
-    def create_pet_test(self):
-        req_body = Body(id=1, type="dog", price=12).to_dict()
+    def create_pet_test(self)：
+        req_body = CreatePetBody(id=1, type="dog", price=12).to_dict()
         parameters = CreatePetParameters()
         request = CreatePetRequest(parameters=parameters, bodyParameters=req_body)
         res = self.client.send(request)
         return res
 
-    def get_pet_info_test(self):
+    def get_pet_info_test(self)：
         parameters = GetPetInfoParameters(petId=1)
         request = GetPetInfoRequest(parameters=parameters, bodyParameters=None)
         res = self.client.send(request)
         return res
 
+    def function_test(self)：
+        parameters = TestFunctionParameters()
+        request = TestFunctionRequest(parameters=parameters, bodyParameters=None)
+        res = self.client.send(request)
+        return res
 
-if __name__ == "__main__":
+
+if __name__ == "__main__"：
     # 访问密钥详细信息中的APIKey
-    APIKey = "5A327AA1AD791A49F358A7E1325E414C"
+    APIKey = "0E91C3765B78CBD71715F9BF24997AF3"
     # 访问密钥详细信息中的APISecert
-    APISecert = "9FD89EF6099EB319FCD36C525B517047"
+    APISecert = "AF7B13C8010F50F03A52C01458714701"
     # API分组信息中分组路径去掉前缀的部分
     endpoint = "xv3xbwah945y.cn-north-1.jdcloud-api.net"
 
     pet_store = PetStoreTest(APIKey, APISecert, endpoint)
     print pet_store.create_pet_test().content
     print pet_store.get_pet_info_test().content
+    print pet_store.function_test().content
 
 ```
 
 #### 3.	运行PetStoreTest.py，得到返回结果。
+
+![Python返回结果](../../../../image/Internet-Middleware/API-Gateway/exap_Python_return.png)
 
 ### 您可以通过[API网关监控](http://cms-console-north-2a-backup.jdcloud.com/monitor/apigateway)实时获取您的API调用情况：成功数、流量、响应时间、请求异常等信息以及设置异常情况报警。
 

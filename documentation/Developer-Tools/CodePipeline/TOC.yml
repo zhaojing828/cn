@@ -34,7 +34,7 @@ items:
           - name: 发布流水线
             href: Operation-Guide/Working-With-Pipelines/Release-Pipeline.md
           - name: 查看执行历史记录
-            href: Operation-Guide/Working-With-Pipelines/Exe-Pipeline.md
+            href: Operation-Guide/Working-With-Pipelines/View-Execution-History.md
           - name: 删除流水线
             href: Operation-Guide/Working-With-Pipelines/Delete-Pipeline.md        
       - name: 使用操作

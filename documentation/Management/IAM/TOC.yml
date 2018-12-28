@@ -17,6 +17,8 @@ items:
         href: Introduction/Support-Services.md
   - name: 操作指南
     items:
+      - name: 概览
+        href: Overview.md
       - name: 身份管理
         items:
           - name: 子用户
@@ -25,10 +27,22 @@ items:
             href: Identity-Management/Group.md
       - name: 策略管理
         items:
-          - name: 授权策略管理
+          - name: 策略管理
             href: Policy-Managemenent/Policy-Management.md
-          - name: 授权策略语法（v2）
-            href: Policy-Managemenent/Policy-Grammar.md
+          - name: 策略语法（v2）
+            href: Policy-Management/Policy Syntax_v2.md
+          - name: 策略（v3）
+            items:
+              - name: 元素参考
+                href: Policy-Management/Policy_v3/Elements.md
+              - name: 语法结构
+                href: Policy-Management/Policy_v3/Syntax-Structure.md
+              - name: 操作描述方式
+                href: Policy-Management/Policy_v3/Action.md
+              - name: 资源描述方式
+                href: Policy-Management/Policy_v3/Resource.md
+      - name: 设置
+        href: Setting.md        
       - name: 虚拟 MFA 设备
         items:
           - name: 概述
@@ -41,5 +55,7 @@ items:
             href: Virtual-MFA-Management/Operation-Protection.md
           - name: 第三方应用程序安装及使用指导
             href: Virtual-MFA-Management/Third-Party-Apps.md
-          - name: MFA 登录验证常见问题
-            href: Virtual-MFA-Management/MFA-FAQs.md
+  - name: 常见问题
+    items:
+      - name: MFA 登录验证常见问题
+        href: Virtual-MFA-Management/MFA-FAQs.md
