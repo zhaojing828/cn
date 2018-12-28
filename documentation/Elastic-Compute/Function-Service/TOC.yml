@@ -67,7 +67,7 @@ items:
                  href: Operation-Guide/invokefunction/triggermanagement/triggerlist.md  
                - name: 触发器的增删改查
                  href: Operation-Guide/invokefunction/triggermanagement/triggeredit.md 
-               - name: 配置触发器和事件格式
+               - name: 事件格式
                  href: Operation-Guide/invokefunction/triggermanagement/configtigger-event.md 
            - name: 事件源服务
              items:

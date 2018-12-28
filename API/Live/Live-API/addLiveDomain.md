@@ -2,31 +2,28 @@
 
 
 ## 描述
-查询直播域名网络带宽监控数据
+添加直播域名
 
 ## 请求方式
-GET
+POST
 
 ## 请求地址
-https://live.jdcloud-api.com/v1/liveDomainNetworks
+https://live.jdcloud-api.com/v1/domains
 
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**playDomain**|String|True| |直播的播放域名|
 |**publishDomain**|String|True| |直播的推流域名|
+|**region**|String|True| |区域ID|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**feedback**|Boolean|返回结果|
 
 ## 返回码
 |返回码|描述|

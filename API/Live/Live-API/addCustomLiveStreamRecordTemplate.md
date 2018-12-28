@@ -2,7 +2,7 @@
 
 
 ## 描述
-添加录制模板
+添加直播录制模板
 
 ## 请求方式
 POST
@@ -25,12 +25,7 @@ https://live.jdcloud-api.com/v1/recordCustoms:template
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**feedback**|Boolean|返回结果|
 
 ## 返回码
 |返回码|描述|

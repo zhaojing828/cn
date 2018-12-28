@@ -1,32 +1,28 @@
-# addLiveRecord
+# setLiveStreamNotifyConfig
 
 
 ## 描述
-查询直播域名录制时长数据
+设置直播流状态通知
 
 ## 请求方式
-GET
+POST
 
 ## 请求地址
-https://live.jdcloud-api.com/v1/liveDomainRecords
+https://live.jdcloud-api.com/v1/streamNotifys
 
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**publishDomain**|String|True| |直播的推流域名|
+|**notifyUrl**|String|True| |设置直播流信息推送到的 URL 地址|
+|**publishDomain**|String|True| |您的加速域名|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**feedback**|Boolean|返回结果|
 
 ## 返回码
 |返回码|描述|

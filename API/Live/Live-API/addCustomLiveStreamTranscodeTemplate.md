@@ -1,4 +1,4 @@
-# addCustomLiveStreamTranscode
+# addCustomLiveStreamTranscodeTemplate
 
 
 ## 描述
@@ -30,12 +30,7 @@ https://live.jdcloud-api.com/v1/transcodeCustoms:template
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**templateId**|Number|模板ID|
 
 ## 返回码
 |返回码|描述|

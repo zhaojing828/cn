@@ -36,7 +36,7 @@ https://live.jdcloud-api.com/v1/domains/{publishDomain}
 |**domainStatus**|String|直播域名状态|
 |**playDomain**|String|播放域名|
 |**playDomainCname**|String|播放域名(Cname)|
-|**regionId**|String|地域编码|
+|**region**|String|地域编码|
 |**updateTime**|String|更新时间|
 ### PublishDomain
 |名称|类型|描述|
@@ -45,7 +45,7 @@ https://live.jdcloud-api.com/v1/domains/{publishDomain}
 |**domainStatus**|String|直播域名状态|
 |**publishDomain**|String|推流域名|
 |**publishDomainCname**|String|推流域名(Cname)|
-|**regionId**|String|地域编码|
+|**region**|String|地域编码|
 |**updateTime**|String|更新时间|
 
 ## 返回码

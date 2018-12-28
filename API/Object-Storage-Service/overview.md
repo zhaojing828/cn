@@ -12,10 +12,10 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
-|**deleteBackSourceConfiguration**|DELETE|删除回源配置|
-|**deleteBucket**|DELETE|删除一个bucket</br>|
-|**getBackSourceConfiguration**|GET|获取回源配置|
-|**headBucket**|HEAD|查询bucket是否存在</br>|
-|**listBuckets**|GET|列出当前用户的所有bucket</br>|
-|**putBackSourceConfiguration**|PUT|添加修改回源配置|
-|**putBucket**|PUT|创建bucket</br>|
+|**deleteBackSourceConfiguration**|DELETE|删除回源配置(ossopenapi)|
+|**deleteBucket**|DELETE|删除一个bucket(oss)</br>|
+|**getBackSourceConfiguration**|GET|获取回源配置(ossopenapi)|
+|**headBucket**|HEAD|查询bucket是否存在(oss)</br>|
+|**listBuckets**|GET|列出当前用户的所有bucket(oss)</br>|
+|**putBackSourceConfiguration**|PUT|添加修改回源配置(ossopenapi)|
+|**putBucket**|PUT|创建bucket(oss)</br>|

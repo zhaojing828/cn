@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除app
+删除APP
 
 ## 请求方式
 DELETE
@@ -23,12 +23,7 @@ https://live.jdcloud-api.com/v1/apps/{publishDomain}/appNames/{appName}
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**publishDomain**|String|直播的推流域名|
 
 ## 返回码
 |返回码|描述|
