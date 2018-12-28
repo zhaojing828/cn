@@ -9,7 +9,7 @@
   * 函数模板：Python 3.6 自定义模板；<br>
   * 函数名称：HelloWorld；<br>
   * 函数入口：根据提示填写，默认index.handler；<br>  
-  * 函数代码：在代码编辑页面输入Hello World 函数，控制台编辑器默认函数为Hello World函数；<br>
+  * 函数代码：在代码编辑页面输入Hello World 函数，控制台编辑器默认函数为HelloWorld函数；<br>
   
  
   ```
@@ -19,7 +19,7 @@ return "hello world"
 ```
      
   * 函数执行内存：默认128MB；  
-  * 超时时间：默认3秒； 
+  * 超时时间：默认100秒； 
   * 描述、环境变量及高级配置：无需填写；  
   * 触发器：不配置触发器；
     单击”完成“，完成函数创建。
@@ -35,7 +35,7 @@ return "hello world"
 
 2. 测试函数<br>
 在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
-![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/testwork.png)                  
+![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/test3.PNG)                  
 
 3. 查看执行结果<br>
 在控制台可直接查看函数执行结果及日志。
