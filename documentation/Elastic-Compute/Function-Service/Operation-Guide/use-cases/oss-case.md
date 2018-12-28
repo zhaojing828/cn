@@ -67,6 +67,7 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 * 事件类型：s3:ObjectCreated:Put
 * 前缀：空
 * 后缀：空
+
 2.上传任意一个文件至"function-test"Bucket，Function被触发，执行。
 
 以上，完成OSS触发器触发Function的简单示例。
