@@ -4,55 +4,9 @@
 
 ## OSS触发器
 
-当以函数服务作为OSS的事件通知类型时，OSS会把请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`，Function通过如下结构去获取和处理需要的参数。
+当以函数服务作为OSS的事件通知类型时，OSS会把请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`。
 
-## 配置触发器
-
-触发器示例：ossTrigger.yml
-
-```
-triggerConfig:
-   events:
-       s3:ObjectCreated:Put
-       s3:ObjectCreated:Post
-   filter:
-      key:
-          prefix: sourcefile/
-          suffix: .gif
-```
-  
-
-**触发器参数说明**：
-
-`events` 为OSS端触发函数执行的事件，取值范围：
-
-s3:ObjectCreated:*
-
-s3:ObjectCreated:Put
-
-s3:ObjectCreated:Post
-
-s3:ObjectCreated:Copy
-
-s3:ObjectCreated:CompleteMultipartUpload
-
-s3:ObjectRemoved:*
-
-s3:ObjectRemoved:Delete
-
-OSS触发器配置详清参见[OSS触发器](eventsourceservice/oss-tirgger.md)。 
-
- 
-
-``filter `` 为OSS对象过滤参数，满足过滤条件的OSS对象才可以触发函数，包含如下属性：
-
-   ``key``：过滤器支持过滤对象键（Key），包含如下属性：
-            `` prefix``：匹配前缀
-            ``suffix``：匹配后缀
-
- 
-
-**事件格式**
+### 事件格式
 
 
 ```
@@ -107,9 +61,9 @@ OSS触发器配置详清参见[OSS触发器](eventsourceservice/oss-tirgger.md)�
 ## API网关触发器
 
 
-**事件格式**
+### 事件格式
 
-输入格式
+#### 输入格式
 
 当以函数服务作为API网关的后端服务时，API网关会把请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`，Function通过如下结构去获取和处理需要的参数。
 
@@ -156,7 +110,7 @@ API网关触发器配置详清参见[API网关触发器](../triggermanagement/ev
 事件示例：
 
 
-**输出格式**
+#### 输出格式
 
 API网关解析Function返回内容，将输出内容通过规范化，以如下JSON格式返回：
 
