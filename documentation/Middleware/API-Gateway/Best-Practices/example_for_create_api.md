@@ -53,7 +53,7 @@
 
     - HTTP/HTTPS：可为此API配置HTTP/HTTPS类型的后端地址；
     - Mock后端：可为此API配置API网关提供的Mock后端；
-    - Function Service：函数（Function Service）是一项基于事件驱动的函数托管计算服务。如果无可用Function存在，您可以点击 此处 创建新的Function。
+    - Function Service：函数（Function Service）是一项基于事件驱动的函数托管计算服务。如果无可用Function存在，您可以访问[函数服务](https://function-console.jdcloud.com)创建新的Function。
 
 #### 7.	点击“版本修订列表”标签页，点击发布，配置好如下几项后，点击确定。
 
@@ -110,7 +110,7 @@
 
     ![创建授权2](../../../../image/Internet-Middleware/API-Gateway/exap_create_access_auth_3.png)
 
-#### 6.	点击“绑定”，将创建的PetStore分组移动到已绑定。
+#### 点击“绑定”，将创建的PetStore分组移动到已绑定。
 
 ![绑定](../../../../image/Internet-Middleware/API-Gateway/exap_bind.png)
 
