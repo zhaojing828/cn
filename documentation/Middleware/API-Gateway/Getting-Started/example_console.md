@@ -122,7 +122,7 @@
 
 #### 1.	解压下载的Java SDK。
 
-#### 2.	切换到PetStore目录下，编辑Demo.java文件。（[项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_javaSDK.zip)）
+#### 2.	切换到PetStore目录下，编辑Demo.java文件。（[项目下载地址](https://docs-downloads.oss.cn-north-1.jcloudcs.com/PetStoreTest_pythonSDK.zip)）
 
 - accessKeyId为查看密钥详细信息时的APIKey；
 - secretAccessKey为查看密钥详细信息时的APISecret；
