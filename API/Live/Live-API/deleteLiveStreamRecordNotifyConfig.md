@@ -22,12 +22,7 @@ https://live.jdcloud-api.com/v1/recordNotifys/{publishDomain}
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**publishDomain**|String|您的推流加速域名|
 
 ## 返回码
 |返回码|描述|
