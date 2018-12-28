@@ -1,11 +1,9 @@
-# iOS
-
-## 简介
+# 简介
 
 &emsp;&emsp;欢迎使用京东云开发者  iOS 工具套件（使用 swift 语言编写）。使用京东云 iOS SDK，您无需复杂编程就可以访问京东云提供的各种服务。    
 &emsp;&emsp;为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看OpenAPI使用入门。要了解每个API的具体参数和含义，请参考程序注释或参考[OpenAPI&SDK](https://www.jdcloud.com/help/faq?act=3)下具体产品线的API文档。
 
-## 环境准备 & 编译
+# 环境准备 & 编译
 
 * 此代码使用 Xcode 10.1 编写，swift 版本为 4.2 如果编译请注意开发 IDE 的版本和 Swift 的版本。
 
@@ -15,7 +13,7 @@
 
 * 目前没有验证对 `linux（ubuntu 18.04 LTS and 16.04 LTS）`的编译和使用支持，如有需求遇到使用问题请在项目中提交Issues。
 
-## SDK 使用方法
+# SDK 使用方法
 
 * 使用 Cocoapods 进行包管理的请使用 `pod install` 命令进行安装 需要使用的框架，目标框架会自动引用
     例如：
@@ -35,7 +33,7 @@
 
 * 此外可以使用代码编译framework 直接引用 framework，或者直接将代码拷贝到项目中与项目一起编译
 
-## 调用方法
+# 调用方法
 
     1. 设置accessKey和secretKey
     2. 创建Client
