@@ -1,21 +1,21 @@
-# addLiveStreamRecordNotifyConfig
+# describeLiveStreamNotifyConfig
 
 
 ## 描述
-添加录制回调配置
+查询直播流状态通知
 
 ## 请求方式
-POST
+GET
 
 ## 请求地址
-https://live.jdcloud-api.com/v1/recordNotifys:config
+https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
 
-
-## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**notifyUrl**|String|True| |设置直播流信息推送到的 URL 地址|
-|**publishDomain**|String|True| |您的推流加速域名|
+|**publishDomain**|String|True| |推流域名|
+
+## 请求参数
+无
 
 
 ## 返回参数
@@ -27,7 +27,8 @@ https://live.jdcloud-api.com/v1/recordNotifys:config
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**publishDomain**|String|您的推流加速域名|
+|**notifyUrl**|String|回调地址|
+|**publishDomain**|String|您的加速域名|
 
 ## 返回码
 |返回码|描述|

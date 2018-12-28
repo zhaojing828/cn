@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除app水印配置
+删除APP水印配置
 
 ## 请求方式
 DELETE
@@ -24,12 +24,7 @@ https://live.jdcloud-api.com/v1/watermarkApps/{publishDomain}/appNames/{appName}
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**feedback**|Boolean|返回结果|
 
 ## 返回码
 |返回码|描述|

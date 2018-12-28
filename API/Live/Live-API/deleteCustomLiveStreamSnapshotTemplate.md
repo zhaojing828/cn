@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除直播截图模板
+删除用户自定义直播截图模板
 
 ## 请求方式
 DELETE
@@ -22,12 +22,7 @@ https://live.jdcloud-api.com/v1/snapshotCustoms/{template}
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**feedback**|Boolean|返回结果|
 
 ## 返回码
 |返回码|描述|

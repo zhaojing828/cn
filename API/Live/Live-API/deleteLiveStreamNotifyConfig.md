@@ -1,11 +1,11 @@
-# describeLiveStreamNotifyUrlConfig
+# deleteLiveStreamNotifyConfig
 
 
 ## 描述
-查询NotifyURL
+删除直播流状态通知
 
 ## 请求方式
-GET
+DELETE
 
 ## 请求地址
 https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
@@ -22,13 +22,7 @@ https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**notifyUrl**|String|回调地址|
-|**publishDoamin**|String|您的加速域名|
 
 ## 返回码
 |返回码|描述|

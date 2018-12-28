@@ -2,7 +2,7 @@
 
 
 ## 描述
-添加app直播截图配置
+添加APP直播截图配置
 
 ## 请求方式
 POST
@@ -23,12 +23,7 @@ https://live.jdcloud-api.com/v1/snapshotApps:template
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|ruquestId|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**feedback**|Boolean|返回结果|
 
 ## 返回码
 |返回码|描述|
