@@ -4,7 +4,7 @@
 
   
 
-**OSS事件定义**
+## OSS事件定义
 
 当OSS捕获到事件发生后，会以[event参数](../configtigger-event.md)传递给事件处理函数，OSS当前的事件触发类型与[OSS回调通知](http://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)支持事件类型相同，详情见表1，* 为必填项。
 
@@ -36,7 +36,7 @@ OSS触发器触发器配置参数说明见表2。
 
  
 
-**OSS触发器使用说明：**
+## OSS触发器使用说明：
 
 资源与事件是组成OSS触发器的两个要素：
  
