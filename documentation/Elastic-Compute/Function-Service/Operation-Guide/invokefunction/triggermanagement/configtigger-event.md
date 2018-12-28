@@ -11,47 +11,49 @@
 
 ```
 {
- "Records": [
- {
-    "base64OwnerPin": "ZnVuY3Rpb24tYS10ZXN0",
-    "detail": {
-    "callBackVar": {
-    "callBackVars": {}
-   },
-    "eventName": "s3:ObjectRemoved:Delete",   //事件类型
-    "responseElements": {
-    "x-amz-request-id": "B3165BF6148041A9"   //发起事件的请求ID
-    },
-    "s3": {
-    "bucket": {
-       "name": "automation-function-a-test-cn-func-2", //Bucket名称
-       "ownerIdentity": {
-               "principalId": "104064078905"  //Bucket owner用户ID
+     "Records": [
+        {
+            "version": "0", 
+            "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
+            "time": "2006-01-02T15:04:05.999999999Z",
+            "source": "oss",
+            "base64OwnerPin": "NTk0MDM1MjYzMDE5",
+            "resources": [
+                "jrn:oss:cn-north-1:accountID:bucketname/objectname"
+            ],
+            "region": "cn-north-1",
+            "detailType": "MessageReceived",
+            "detail": { 
+                "eventName":"event-type",  //事件类型
+                "responseElements":{  
+                    "x-amz-request-id":"OSS generated request ID"  //发起事件的请求ID
+                },
+                "s3":{  
+                    "s3SchemaVersion":"1.0",  //通知内容版本号，目前为"1.0"
+                    "configurationId":"ID found in the bucket notification configuration",  //事件通知配置中ConfigurationId
+                    "bucket":{  
+                        "name":"bucket-name",  //Bucket名称
+                        "ownerIdentity":{  
+                            "principalId":"userId-of-the-bucket-owner"  //Bucket owner用户ID
+                        }
+                     },
+                    "object":{  
+                        "key":"object-key",  //Object名称
+                        "eTag":"object eTag",  //Object的etag，与GetObject请求返回的ETag头的内容相同
+                        "size":"object size",  //Object的size
+                        "type":"object type"  //Object的type 
+                    }
+                },
+                "callBackVar": {  //回调通知配置中的自定义参数
+                    "callBackVars": {                 
+                        "var1":["value1","value3"],
+                        "var2":["value2"]
+                    }
                 }
-            },
-    "configurationId": "bgd32g0tpenuipc0thog",  //事件通知配置中ConfigurationId
-    "object": {
-            "eTag": "9b391b800374bebcd515158e67e07923", //Object的etag，与GetObject请求返回的ETag头的内容相同
-            "key": "groupPhoto.tif",   //Object名称
-            "size": 839376,     //Object的size
-            "type": "image/tiff"  //Object的type 
-             },
-      "s3SchemaVersion": "1.0"
-          }
-        },
-     "detailType": "json",
-     "id": "9655e8b8-e9ab-4f25-a566-ab8c4cd1fb1e",
-     "region": "cn-func-2",
-     "resources": [
-        "jrn:oss:cn-func-2:104064078905:automation-function-a-test-cn-func-2/groupPhoto.tif"
-       ],
-    "source": "oss",
-    "time": "2018-12-20T10:57:48.518Z",
-    "version": 0
-      }
-  ]
+            }       
+        }
+    ]
 }
-
 ```
 
 
