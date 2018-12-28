@@ -1,4 +1,4 @@
-  # 什么是Policy v2
+# 什么是Policy v2
 
 本文介绍IAM Policy V2版本的基本元素、语法结构和示例。
 
