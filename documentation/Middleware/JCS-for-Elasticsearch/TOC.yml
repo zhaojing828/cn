@@ -57,8 +57,9 @@
           href: Operation-Guide/Monitoring.md 
         - name: 查看状态信息
           href: Operation-Guide/status.md
-      - name: 专用主节点
-        href: Operation-Guide/Dedicated-master.md
+        - name: 创建告警规则
+          href: Operation-Guide/Monitor_Rules.md
+
       - name: 标签
         items:
         - name: 标签概述
