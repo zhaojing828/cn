@@ -103,16 +103,12 @@
 ```
 API网关触发器配置详清参见[API网关触发器](../triggermanagement/eventsourceservice/apig-tigger.md)。 
 
-**参数说明**：
-
- 网关与Function间的body内容不经过Base64编码。
-
-事件示例：
+**参数说明**：网关与Function间的body内容不经过Base64编码。
 
 
 #### 输出格式
 
-API网关解析Function返回内容，将输出内容通过规范化，以如下JSON格式返回：
+Function将输出内容通过规范化，以如下JSON格式返回API网关：
 
 ```
 {     
