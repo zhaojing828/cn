@@ -36,6 +36,8 @@
 
 ![导入API2](../../../../image/Internet-Middleware/API-Gateway/exap_create_api_2.png)
 
+![导入API2](../../../../image/Internet-Middleware/API-Gateway/exap_create_api_3.png)
+
 - 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。([Yaml文件下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_Yaml.zip))
 
 ![导入API](../../../../image/Internet-Middleware/API-Gateway/exap_import_api_1.png)
