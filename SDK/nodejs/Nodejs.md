@@ -3,7 +3,7 @@
 
 欢迎使用京东云开发者Node.js工具套件（Node.js SDK）。使用京东云Node.js SDK，您无需复杂编程就可以访问京东云提供的各种服务。
 
-为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看[OpenAPI使用入门](../../API/Common-Declaration/Introduction.md )。要了解每个API的具体参数和含义，请参考程序注释或参考[OpenAPI&SDK](https://www.jdcloud.com/help/faq?act=3)下具体产品线的API文档。
+为了方便您理解SDK中的一些概念和参数的含义，使用SDK前建议您先查看[OpenAPI使用入门](../../API/Common-Declaration/Introduction.md )。要了解每个API的具体参数和含义，请参考程序注释或参考[OpenAPI&SDK](https://docs.jdcloud.com/cn/?act=3)下具体产品线的API文档。
 
 
 # 环境准备 #
