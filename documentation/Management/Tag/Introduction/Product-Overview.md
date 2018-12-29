@@ -14,5 +14,5 @@
  - SQL Server数据库
  - 云缓存 Memcached
  - 云搜索 Elasticsearch
- 
+ - DRDS
 后续会继续增加支持绑定标签的资源类型。
