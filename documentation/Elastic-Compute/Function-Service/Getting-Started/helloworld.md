@@ -31,7 +31,7 @@ return "hello world"
     * 事件模板：空白模板；
     * 事件名称：test；
     单击“保存”，完成测试事件创建。 
-    ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/hello%20world%20test.PNG)
+    ![测试事件](https://github.com/jdcloudcom/cn/blob/functionservice/image/Elastic-Compute/functionservice/test3.PNG)
 
 2. 测试函数<br>
 在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
