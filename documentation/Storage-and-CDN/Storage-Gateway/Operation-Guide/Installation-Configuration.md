@@ -36,7 +36,7 @@
 
 注： accessKeyID及accessKeySecret获取请查看[AccessKey管理](https://uc.jdcloud.com/account/accesskey)；endpoint请查看[OSS服务器域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)；单个存储网关仅支持连接一个Bucket。
 
-2.初始化云硬盘，初始化脚本路径为`/root/bin/auto_fdisk.sh`，该操作将会初始化云硬盘并设置为存储网关的本地缓存。示例如下：
+2.初始化云硬盘，初始化脚本路径为`/root/bin/auto_fdisk.sh`，该操作将会初始化云硬盘并设置为存储网关的本地缓存。执行命令示例如下：
 
 ```
 auto_fdisk.sh /dev/vdb /cache ext4
