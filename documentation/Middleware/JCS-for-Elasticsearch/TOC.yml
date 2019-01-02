@@ -47,6 +47,8 @@
           href: Getting-Started/Delete-ES.md
   - name: 操作指南
     items:
+      - name: 专用主节点
+        href: Operation-Guide/Dedicated-master.md
       - name: 访问集群
         href: Operation-Guide/connect-ES.md
       - name: 使用kibana
