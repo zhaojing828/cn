@@ -43,9 +43,12 @@ auto_fdisk.sh /dev/vdb /cache ext4
 ```
 
 注：
- - `/dev/vdb`为您的云硬盘设备名，可根据您需要初始化为本地缓存的云硬盘自行设置；
- - `/cache ext4`等参数不允许修改。关于初始化云硬盘请参考[数据盘的分区、格式化及挂载](https://docs.jdcloud.com/cn/cloud-disk-service/linux-partition)。弹出`Warning：This directory exists , is this ok ? [Y/N]`，请输入`Y`。
- - 存储网关的缓存目录为`/cache`，其下缓存有您近期访问的数据，该缓存可手动清理。
+
+- `/dev/vdb`为您的云硬盘设备名，可根据您需要初始化为本地缓存的云硬盘自行设置；
+
+- `/cache ext4`等参数不允许修改。关于初始化云硬盘请参考[数据盘的分区、格式化及挂载](https://docs.jdcloud.com/cn/cloud-disk-service/linux-partition)。弹出`Warning：This directory exists , is this ok ? [Y/N]`，请输入`Y`。
+
+- 存储网关的缓存目录为`/cache`，其下缓存有您近期访问的数据，该缓存可手动清理。
  
 3.配置完成后即可启动该存储网关上的NFS文件系统，启动脚本路径为`/root/bin/gw `，执行该脚本启动NFS服务。执行命令示例如下：
 
