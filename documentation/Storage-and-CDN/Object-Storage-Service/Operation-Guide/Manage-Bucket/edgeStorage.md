@@ -61,7 +61,7 @@
 
 1）登入控制台->对象存储->边缘存储->文件管理
 
-![文件管理](../../../../../image/Object-Storage-Service/edgeStorage/%20文件管理new.png)
+![文件管理](../../../../../image/Object-Storage-Service/edgeStorage/ 文件管理new.png)
                       
 2）选择单个文件或批量文件同步。
 
