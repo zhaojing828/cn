@@ -50,5 +50,5 @@
 单击添加解析后，打开添加解析页面。
 在记录类型下拉列表中，选择CNAME；在记录值框中，填写对应的存储空间外网域名（即Bucket域名，如BucketName.oss.cn-north-1.jcloudcs.com）。
 单击确认，域名解析完成。
-具体参考[京东云云解析DNS-添加解析记录](../../../../Domain-Name-and-Website/JD-Cloud-DNS/Introduction/What-Is-DNS.md)
+具体参考[京东云云解析DNS-添加解析记录](https://docs.jdcloud.com/cn/jd-cloud-dns/domain-record-add)
 

@@ -23,21 +23,21 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 ### UpdateMonitor
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**alarmLimit**|Integer|False| |连续几次触发报警|
-|**id**|Integer|False| |监控项ID|
-|**ipBackup01**|String|False| |备用地址1|
-|**ipBackup02**|String|False| |备用地址2|
-|**monitorEnable**|Integer|False| |监控状况 开启监控 2，暂停监控 4|
-|**monitorFreq**|Integer|False| |监控频率，单位秒|
-|**monitorPort**|Integer|False| |监控端口|
-|**monitorRule**|Integer|False| |不做任何修改0，强制暂停解析记录1，自动切换到备用地址2|
-|**monitorUri**|String|False| |监控路径|
-|**notifyEmailEnable**|Integer|False| |不发送邮件0， 发送邮件1|
-|**notifyMsgBarEnable**|Integer|False| |不发送通知栏 0， 发送通知栏 1|
+|**alarmLimit**|Integer|True| |连续几次触发报警|
+|**id**|Integer|True| |监控项ID|
+|**ipBackup01**|String|True| |备用地址1|
+|**ipBackup02**|String|True| |备用地址2|
+|**monitorEnable**|Integer|True| |监控状况 开启监控 2，暂停监控 4|
+|**monitorFreq**|Integer|True| |监控频率，单位秒|
+|**monitorPort**|Integer|True| |监控端口|
+|**monitorRule**|Integer|True| |不做任何修改0，强制暂停解析记录1，自动切换到备用地址2|
+|**monitorUri**|String|True| |监控路径|
+|**notifyEmailEnable**|Integer|True| |不发送邮件0， 发送邮件1|
+|**notifyMsgBarEnable**|Integer|True| |不发送通知栏 0， 发送通知栏 1|
 |**notifySmsEnable**|Integer|False| |不发送短信 0， 发送短信 1|
-|**protocol**|Integer|False| |https 0，https 1|
-|**stopRecoverRule**|Integer|False| |0自动恢复 1手动恢复|
-|**switchRecoverRule**|Integer|False| |0自动恢复至主host 1手动恢复至主host|
+|**protocol**|Integer|True| |https 0，https 1|
+|**stopRecoverRule**|Integer|True| |0自动恢复 1手动恢复|
+|**switchRecoverRule**|Integer|True| |0自动恢复至主host 1手动恢复至主host|
 
 ## 返回参数
 |名称|类型|描述|

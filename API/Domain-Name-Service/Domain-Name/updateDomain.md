@@ -25,20 +25,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domainUpdate
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|此次请求的ID|
-|**result**|Result| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**updateDomain**|Domain|修改后的域名结构|
-### Domain
-|名称|类型|描述|
-|---|---|---|
-|**createTime**|Integer|创建时间，格式Unix timestamp|
-|**domainName**|String|域名字符串|
-|**expirationDate**|Integer|过期时间，格式Unix timestamp|
-|**id**|Integer|域名的唯一ID|
-|**packId**|Integer|套餐类型，0->免费 1->企业版 2->企业高级版|
 
 ## 返回码
 |返回码|描述|

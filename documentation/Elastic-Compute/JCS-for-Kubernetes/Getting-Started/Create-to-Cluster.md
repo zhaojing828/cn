@@ -29,8 +29,8 @@
  7.添加Accesskey：选择启动状态下的Accesskey；如果无可用Access Key，请前往Access Key管理页面创建新的Access Key，并在开启状态。可参考Accesskey管理。  
 新建工作节点组：  
  ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/JCS-for-Kubernetes/新建Kubernetes集群工作节点组.png)   
-8.私有网络：选择创建的私有网络。可参考私有网络VPC配置。  
-9.工作节点CIDR：设置规则参考私有网络下子网CIDR的规则，CIDR掩码取值范围为16~24。    
+8.私有网络：选择创建的私有网络。建议新建私有网络，掩码取值范围16~18。  
+9.工作节点CIDR：设置规则参考私有网络下子网CIDR的规则，CIDR掩码取值范围为16~18。    
 10.镜像：仅支持京东云定制镜像。  
 11.规格：根据具体业务情况选择不同云主机规格类型，支持云主机第二代规格。可参考实例规格类型。  
 12.数量：默认数量为3，可根据需求，可以点击增加、减少按键或者输入数量，最大数量为Node CIDR中可创建的主机数量、云主机配额中的最小值。  

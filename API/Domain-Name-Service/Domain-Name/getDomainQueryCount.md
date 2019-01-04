@@ -32,8 +32,8 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**time**|Integer[]|时间序列|
-|**traffic**|Integer[]|与时间序列对应的数据序列，单位：次数|
+|**time**|Long[]|时间序列|
+|**traffic**|Long[]|与时间序列对应的数据序列，单位：次数|
 
 ## 返回码
 |返回码|描述|

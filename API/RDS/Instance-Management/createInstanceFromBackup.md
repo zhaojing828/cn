@@ -2,7 +2,7 @@
 
 
 ## 描述
-根据源实例全量备份创建一个新实例，新实例的数据跟源实例在创建备份时的数据状态一样。<br>例如根据源实例A的一个全量备份“mybak”新建一个实例B，该备份是在“‘2018-8-18 03:23:54”创建的。那么新建实例B的数据状态跟实例A‘2018-8-18 03:23:54’的状态一致<br>- 仅支持MySQL
+根据源实例全量备份创建一个新实例，新实例的数据跟源实例在创建备份时的数据状态一样。<br>例如根据源实例A的一个全量备份“mybak”新建一个实例B，该备份是在“‘2018-8-18 03:23:54”创建的。那么新建实例B的数据状态跟实例A‘2018-8-18 03:23:54’的状态一致
 
 ## 请求方式
 POST
@@ -29,6 +29,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances:createInstanceFromBa
 |**instanceClass**|String|True| |实例规格代码，可以通过[describeInstanceClasses](../instance/describeInstanceClasses.md)接口获取|
 |**instanceName**|String|False| |数据库实例名，名称的限制可参考[帮助中心文档](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**instanceStorageGB**|Integer|True| |磁盘大小，单位GB|
+|**parameterGroup**|String|False| |参数组ID, 缺省系统会创建一个默认参数组<br>- 仅支持MySQL|
 |**subnetId**|String|True| |子网ID|
 |**vpcId**|String|True| |VPC的ID|
 ### ChargeSpec

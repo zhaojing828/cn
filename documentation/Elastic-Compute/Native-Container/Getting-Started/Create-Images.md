@@ -11,7 +11,9 @@ Docker Hub是Docker的官方镜像仓库，拥有大量高质量镜像，可以�
 [root@docker ~]# mkdir nginx-dockerfile
 [root@docker ~]# cd nginx-dockerfile
 [root@docker nginx-dockerfile]# vi Dockerfile
-Dockerfile内容如下：
+```  
+Dockerfile内容如下：  
+```
 FROM nginx
 RUN echo ' <h1> Hello, Docker! </h1> ' > /usr/share/nginx/html/index.html
 ```  
@@ -41,7 +43,7 @@ docker.io/nginx         latest              3f8a4339aadd        2 weeks ago     
 ## 5.把镜像保存到镜像仓库
     
    镜像仓库分为私有镜像仓库和公有镜像仓库，关于私有镜像仓库，还请详见部署私有镜像仓库。以下以公有镜像仓库DockerHub为例。  
-   i.在DockerHub上创建账号：https://hub.docker.com/，记住用户名（例myname）和密码  
+   i.在DockerHub上创建账号：https://hub.docker.com/ ,记住用户名（例myname）和密码  
    ii. 为镜像打tag  
 ```
 [root@docker nginx-dockerfile]# docker tag newnginx myname/newnginx

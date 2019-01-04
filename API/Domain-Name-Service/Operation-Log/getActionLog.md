@@ -48,7 +48,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/log/actionLog
 |**failReason**|String|操作失败的原因|
 |**id**|Integer|操作记录的ID|
 |**success**|Boolean|操作的结果，成功true, 失败false|
-|**time**|Integer|操作发生的时间|
+|**time**|Long|操作发生的时间|
 |**type**|Integer|操作类型：1新增 2修改 3删除|
 |**userPin**|String|用户名|
 

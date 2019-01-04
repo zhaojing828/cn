@@ -18,6 +18,7 @@ v1
 |**addRR**|POST|添加域名的解析记录|
 |**addUserView**|POST|添加域名的自定义解析线路|
 |**addUserViewIP**|POST|添加域名的自定义解析线路的IP段|
+|**batchSetDnsResolve**|POST|同一个主域名下，批量新增、更新导入解析记录<br></br>如果解析记录的ID为0，是新增解析记录，如果不为0，则是更新解析记录。</br>|
 |**delDomain**|DELETE|删除主域名|
 |**delUserView**|POST|删除域名的自定义解析线路|
 |**delUserViewIP**|POST|删除域名的自定义解析线路的IP段|

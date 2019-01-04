@@ -33,7 +33,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/audit:d
 |---|---|---|
 |**lastUpdateTime**|String|审计日志文件最后更新时间|
 |**name**|String|审计日志文件名称|
-|**sizeByte**|Integer|审计日志文件大小，单位Byte|
+|**sizeByte**|Long|审计日志文件大小，单位Byte|
 |**uploadTime**|String|审计日志文件上传时间|
 
 ## 返回码

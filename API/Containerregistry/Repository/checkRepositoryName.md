@@ -9,7 +9,7 @@
 POST
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/repositories:checkRepositoryName
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/repositories:checkRepositoryName
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

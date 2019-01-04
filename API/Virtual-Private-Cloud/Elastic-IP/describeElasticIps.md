@@ -42,6 +42,7 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/elasticIps/
 ### ElasticIp
 |名称|类型|描述|
 |---|---|---|
+|**az**|String|弹性ip可用区属性，如果为空，表示全可用区|
 |**bandwidthMbps**|Integer|弹性ip的限速（单位：Mbps)|
 |**charge**|Charge|计费配置|
 |**createdTime**|String|弹性ip创建时间|

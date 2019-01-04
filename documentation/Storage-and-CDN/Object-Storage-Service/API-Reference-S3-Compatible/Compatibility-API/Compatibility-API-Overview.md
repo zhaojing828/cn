@@ -1,9 +1,9 @@
 # 兼容接口
 
-京东云OSS兼容S3的API在下表列出，详见[OSS兼容S3 API文档](https://github.com/jdcloud-cmw/oss/tree/master/S3-API-Document)。
+京东云OSS兼容S3的API在下表列出，详见[JD Cloud S3 API文档](https://github.com/jdcloud-cmw/oss/tree/master/S3-API-Document)。
 
 
-|OSS支持的api|api简介|OSS兼容S3 API参考| AWS S3 API参考 |
+|对象存储支持的api|api简介|JD Cloud S3 API参考| AWS S3 API参考 |
 |-|-|-|-|
 |GET Service（List Bucket）|获取一个User下的所有Bucket|兼容[GET Service](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-the%20-Service/Get-Service.md)| [GET Service](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTServiceGET.html)|
 |PUT Bucket|新建一个Bucket，默认的权限为Private|兼容[PUT Bucket](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/Put-Bucket.md)| [PUT Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUT.html)|
@@ -40,3 +40,6 @@
 |Delete Bucket Replication|删除已开启的跨区域复制配置，删除后目标Bucket和objcet依然存在|兼容[Delete Bucket replication](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/Delete-Bucket-replication.md)|[Delete Bucket replication](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETEreplication.html)|
 |PUT Bucket notification|指定Bucket添加回调通知配置|未支持：CloudFunction，Queue<br>仅支持：Topic <br>详见 [回调通知](../../Operation-Guide/Manage-Bucket/Callback-Notification-2.md) <br>兼容[PUT Bucket notification](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/PUT-Bucket-notification.md)|[PUT Bucket notification](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTnotification.html)|
 |GET Bucket notification|返回设置在Bucket上的回调通知配置|兼容[GET Bucket notification](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/GET-Bucket-notification.md)|[GET Bucket notification](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETnotification.html)|
+|GET Bucket encryption|返回用户对于OSS存储空间的默认加密配置|兼容[GET Bucket encryption](./Get-Bucket-Encryption-2.md)|[GET Bucket encryption](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETencryption.html)|
+|PUT Bucket encryption|用于设定bucket默认加密方式置|兼容[PUT Bucket encryption](./Put-Bucket-Encryption-2.md)|[PUT Bucket encryption](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTencryption.html)|
+|DELETE Bucket encryption|删除OSS存储空间的默认加密配置|兼容[DELETE Bucket encryption](./Delete-Bucket-Encryption-2.md)|[DELETE Bucket encryption](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETEencryption.html)|

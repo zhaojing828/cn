@@ -9,7 +9,7 @@
 POST
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/listRepositories
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/listRepositories
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -48,7 +48,7 @@ https://openapi.cr.jdcloud.com/v1/regions/{regionId}/listRepositories
 |**registryName**|String|注册表名称。|
 |**repositoryName**|String|镜像仓库名称。|
 |**repositoryUri**|String|镜像仓库中的镜像总个数。|
-|**totalSpaceUsedMB**|Number|镜像仓库大小。|
+|**totalSpaceUsedMB**|Double|镜像仓库大小。|
 |**updatedAt**|String|记录用户repository更新的时间。|
 
 ## 返回码

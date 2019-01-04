@@ -31,6 +31,7 @@ v1
 |**describeVpcPeerings**|GET|查询VpcPeering资源列表|
 |**describeVpcs**|GET|查询私有网络列表|
 |**disassociateElasticIp**|POST|给网卡解绑弹性Ip接口|
+|**modifyElasticIp**|PATCH|修改弹性IP|
 |**modifyNetworkInterface**|PATCH|修改弹性网卡接口|
 |**modifyVpcPeering**|PUT|修改VpcPeering接口|
 |**unassignSecondaryIps**|POST|给网卡删除secondaryIp接口|
