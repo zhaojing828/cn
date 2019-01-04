@@ -12,7 +12,15 @@
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品规格
-        href: Introduction/Specifications.md
+        items:
+        - name: MySQL 产品规格
+          href: Introduction/Specifications/MySQL-Specifications.md
+        - name: Percona 产品规格
+          href: Introduction/Specifications/Percona-Specifications.md
+        - name: MariaDB 产品规格
+          href: Introduction/Specifications/MariaDB-Specifications.md
+        - name: SQL Server 产品规格
+          href: Introduction/Specifications/SQLServer-Specifications.md       
       - name: 限制说明
         items:
         - name: MySQL 限制说明
