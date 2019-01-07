@@ -191,7 +191,7 @@
       - name: MySQL 实例规格
         href: Instance-Specifications/Instance-Specifications-MySQL.md
       - name: SQL Server 实例规格
-        href: Instance-Specifications/Instance-Specifications-MySQL.md
+        href: Instance-Specifications/Instance-Specifications-SQLServer.md
 
   - name: 枚举参数说明
     items:
