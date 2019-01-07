@@ -20,7 +20,7 @@
         - name: MariaDB 产品规格
           href: Introduction/Specifications/MariaDB-Specifications.md
         - name: SQL Server 产品规格
-          href: Introduction/Specifications/SQLServer-Specifications.md       
+          href: Introduction/Specifications/SQL-Server-Specifications.md       
       - name: 限制说明
         items:
         - name: MySQL 限制说明
