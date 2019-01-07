@@ -5,11 +5,11 @@
 |实例规格|规格代码|存储空间(GB)|
 |---|---|---|
 |2核 8GB|db.sqlsvr.s1.large|200|
-|   |db.sqlsvr.s1.large|300|
-  |2核 8GB|db.sqlsvr.s1.large|400|
-  |2核 8GB|db.sqlsvr.s1.large|500|
+| |db.sqlsvr.s1.large|300|
+| |db.sqlsvr.s1.large|400|
+| |db.sqlsvr.s1.large|500|
 |4核 16GB|db.sqlsvr.s1.xlarge|400|
-  |4核 16GB|db.sqlsvr.s1.xlarge|500|
+| |db.sqlsvr.s1.xlarge|500|
 | |db.sqlsvr.s1.xlarge|600|
 | |db.sqlsvr.s1.xlarge|800|
 |8核 32GB|db.sqlsvr.s1.2xlarge|600|
