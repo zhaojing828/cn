@@ -4,7 +4,7 @@
 
 京东云应用安全网关（VPC-WAF）的逻辑部署示意图如下：
 
- ![https://github.com/jdcloudcom/cn/blob/cn-waf/image/AppliAcation-Security-Gateway/01-overview.png](../image/AppliAcation-Security-Gateway/01-overview.png)
+ ![https://github.com/jdcloudcom/cn/blob/cn-waf/image/AppliAcation-Security-Gateway/01-overview.png](https://github.com/jdcloudcom/cn/blob/cn-waf/image/AppliAcation-Security-Gateway/01-overview.png)
 
 京东云应用安全网关（VPC-WAF）基于京东云高性能负载均衡集群，只需要在控制台创建VPC-WAF防护实例绑定负载均衡即可对所有经过负载均衡的HTTP/HTTPs流量，无域名也可实现防护，不需要对网站进行任何修改。
 
@@ -15,7 +15,7 @@
 - 快速上手
   - [创建VPC-WAF实例](../Operation-Guide/Instance-Management/Create-Application-Security-Gateway.md)
 - 套餐介绍
-  - [套餐介绍](../Cloud-Security/Application-Security-Gateway/Introduction/Specifications.md)
+  - [套餐介绍](../Introduction/Specifications.md)
 
 ## 计费
 
