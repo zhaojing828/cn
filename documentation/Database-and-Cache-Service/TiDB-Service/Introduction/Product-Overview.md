@@ -15,4 +15,4 @@
 - [监控](../Operation-Guide/Monitor.md)
   
 ## 计费
-分布式数据库 TiDB 支持“**包年包月**”和“**按配置**”两种计费类型。详细说明请参见“[计费规则](../Pricing/Billing-Rules.md)”。
+TiDB 目前处于公测阶段，暂时对通过申请的用户免费。
