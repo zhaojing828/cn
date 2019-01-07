@@ -31,7 +31,7 @@ kind: CronJob
 metadata:
   name: jdcloud-jcr-credential-cron
 spec:
-  schedule: "* */1 * * *"
+  schedule: "0 */1 * * *" # 0代表每小时的整点，您可以根据需要修改时间，如改成15代表每小时的第15分钟获取临时令牌。
   successfulJobsHistoryLimit: 2
   failedJobsHistoryLimit: 2  
   jobTemplate:
@@ -76,7 +76,8 @@ spec:
               --docker-username=$DOCKER_USER \
               --docker-password=$DOCKER_PASSWORD \
               --docker-email=**@jd.com
-              kubectl patch serviceaccount default  -p '{"imagePullSecrets":[{"name":"my-secret"}]}'
+              kubectl patch serviceaccount default  -p '{"imagePullSecrets":[{"name":"my-secret"}]}' # kubectl patch  $SERVICEACCOUNT xxxxx  -n $NAMESPACEOFSERVICEACCOUNT
+
 ```
 ```
 kubectl apply  -f  jcr-credential-rbac.yaml
