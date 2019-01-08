@@ -36,7 +36,10 @@ ReadWriteOnce——该卷可以被单个节点以读/写模式挂载
 在命令行中，访问模式缩写为：    
 RWO - ReadWriteOnce  
 京东云为PersistentVolume提供了插件，插件类型为：jdcloudElasticBlockStore  
-注：副本数只能指定1。  
+注：  
+- 由于云硬盘限制一个云硬盘只能同时挂载一个云主机,在使用基于pvc的pod时，建议使用replicas=1来创建一个部署集。StatefulSet可解决多副本问题。  
+- pod迁移,pvc迁移(卸载旧实例/挂载新实例)默认35秒。  
+- 通过deployment部署，删除deployment之后，可重新挂载原有pvc到新的pod里面。  
 
 **2. 创建PVC**  
 
