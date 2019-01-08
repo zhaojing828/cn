@@ -49,7 +49,7 @@ kind: CronJob
 metadata:
   name: jdcloud-jcr-credential-cron
 spec:
-  schedule: "*0 */1 * * *"
+  schedule: "*0 */1 * * *" # 0代表每小时的整点，您可以根据需要修改时间，如改成15代表每小时的第15分钟获取临时令牌。
   successfulJobsHistoryLimit: 2
   failedJobsHistoryLimit: 2  
   jobTemplate:
