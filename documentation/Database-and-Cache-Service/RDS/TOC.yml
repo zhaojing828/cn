@@ -296,6 +296,10 @@
         href: Best-Practices/Connect-Database-Instance/Client-Connect-SQLServer.md
       - name: 从云主机连接 SQL Server
         href: Best-Practices/Connect-Database-Instance/Host-Connect-SQLServer.md  
+  - name: 教程 
+    items:
+    - name: MySQL 性能测试 
+      href: Tutorial/MySQL-Performance-Test.md 
   - name: 常见问题
     items:
     - name: FAQ
