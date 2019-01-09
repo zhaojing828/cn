@@ -67,6 +67,10 @@
         href: Operation-Guide/Install-Agent.md
       - name: 约定
         href: Operation-Guide/Convention.md
+  - name: 最佳实践
+    items: 
+      - name: 蓝绿部署
+        href: Best-Practice/Blue-green-Deployment.md
   - name: 常见问题
     href: FAQ/FAQ.md          
   - name: 相关资源
