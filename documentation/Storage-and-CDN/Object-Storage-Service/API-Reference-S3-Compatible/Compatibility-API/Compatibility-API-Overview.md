@@ -10,7 +10,7 @@
 
 |对象存储支持的api|api简介|JD Cloud S3 API参考| AWS S3 API参考 |
 |-|-|-|-|
-|PUT Bucket|新建一个Bucket，默认的权限为Private|兼容[PUT Bucket](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/Put-Bucket.md)| [PUT Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUT.html)|
+|PUT Bucket|新建一个Bucket，默认的权限为Private|兼容[PUT Bucket](./Operations-On-Bucket/Put-Bucket-2.md)| [PUT Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUT.html)|
 |HEAD Bucket|确定一个Bucket是否存在且有权利访问<br>如果Bucket存在且有权利访问，则返回200 OK。如果指定的bucket不存在，则返回404 Not Found|兼容[HEAD Bucket](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/Head-Bucket.md)| [HEAD Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketHEAD.html)|
 |GET Bucket（List Object）|获取某个Bucket下的部分或者全部Object信息（兼容Version2）|兼容[GET Bucket](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/Get-Bucket(ListObjects).md)| [GET Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/v2-RESTBucketGET.html)|
 |DELETE Bucket|删除指定的Bucket|兼容[DELETE Bucket](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/Delete-Bucket.md)| [DELETE Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETE.html)|
