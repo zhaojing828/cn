@@ -1,6 +1,6 @@
 ## 查看部署详情
 
-在“部署详情”页，可见本次部署的进展情况。在部署过程中，支持“取消”。在部署结束后，支持“回滚”。
+在“部署详情”页，可见本次部署的进展情况。在部署过程中，支持“取消”。在部署结束后，支持“回滚”。（仅限最近一次且非首次部署成功的部署任务）
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting12.png)
 
