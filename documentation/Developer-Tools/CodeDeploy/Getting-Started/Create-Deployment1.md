@@ -4,7 +4,7 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/starting9.png)
 
-对于单个部署组，可支持的操作有：编辑、部署、部署历史、删除。
+对于单个部署组，可支持的操作有：发起部署、部署历史、编辑、删除。
 
 点击“发起部署”按钮，进入到“新建部署”页，有以下选项：
 
