@@ -157,7 +157,7 @@ out_dir: 'output'
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice14.png)
 
-对于单个部署组，可支持的操作有：编辑、部署、部署历史、删除。
+对于单个部署组，可支持的操作有：发起部署、部署历史、编辑、删除。
 
 点击“部署”按钮，进入到“新建部署”页，有以下选项：
 
@@ -169,10 +169,10 @@ out_dir: 'output'
 - 部署操作命令：请选择“输入部署操作命令”，使用“表单填写”功能，填写具体操作命令，如下：
 ```
 部署路径: 源文件/目录：/       目标目录：/home
-执行账户：  root       
-超时时间（s）：100
-停止脚本：/home/bin/stop.sh
-启动脚本：/home/bin/start.sh
+脚本执行账户：  root       
+脚本超时时间（s）：100
+停止脚本路径：/home/bin/stop.sh
+启动脚本路径：/home/bin/start.sh
 ```
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice15.png)
