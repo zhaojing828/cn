@@ -50,7 +50,6 @@ wget -c http://devops-hb.oss-internal.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-
 - 地域：华北-北京
 - 可用区：可用区A
 - 私有网络：请选择与云主机一致的私有网络
-- 带宽：
 - 名称：codedeploy-lb-demo03
 
 接下来，在此负载均衡实例中，新建监听器，点击“添加监听”，进入到新建监听器页面。
@@ -137,7 +136,7 @@ out_dir: 'output'
 有以下选项：
 
 - 部署组名称：请填写部署组名称，codedeploy-group-demo03
-- 部署类型：请选择“滚动部署”
+- 部署类型：请选择“蓝绿部署”
 - 部署目标：点击“选择”按钮，在弹窗中选择云主机。支持三种选择过滤条件：高可用组、标签、IP。这里请选择在上一步中创建的云主机，即主机名为：codedeploy-demo031加入蓝组，主机名为：codedeploy-demo032加绿组
 - 使用负载均衡：是
 - 负载均衡实例：请选择华北-北京地域中已有的负载均衡实例，codedeploy-lb-demo03
