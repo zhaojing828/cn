@@ -174,7 +174,7 @@ PUT /sign.txt   HTTP/1.1
 京东云对象存储所有的请求都必须使用HTTP 1.1协议规定的GMT时间格式。其中，日期的格式为：Wed, 22 May 2017 05:29:49 GMT
 
 
-# 在URL中包含签名
+# 2.在URL中包含签名
 
 除了使用Authorization Head，用户还可以在URL中加入签名信息，这样用户就可以把该URL转给第三方实现授权访问。
 
