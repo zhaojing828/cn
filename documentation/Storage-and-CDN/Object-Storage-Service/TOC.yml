@@ -150,7 +150,7 @@ items:
            - name:  关于Bucket操作 
              items:
                - name: Delete Bucket
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-2.md
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-2-Compatibility-API.md
                - name: Delete Bucket cors
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Cors-2.md           
                - name: Delete Bucket encryption
@@ -166,7 +166,7 @@ items:
                - name: GET Bucket notification
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Notification-2.md
                - name: Get Bucket(ListObjects)
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket(ListObjects)-2.md 
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-2.md 
                - name: Get Bucket cors
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Cors-2.md
                - name: Get Bucket encryption
