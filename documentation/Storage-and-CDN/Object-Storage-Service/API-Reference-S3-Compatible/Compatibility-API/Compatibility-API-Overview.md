@@ -14,7 +14,7 @@
 |HEAD Bucket|确定一个Bucket是否存在且有权利访问<br>如果Bucket存在且有权利访问，则返回200 OK。如果指定的bucket不存在，则返回404 Not Found|兼容[HEAD Bucket](./Operations-On-Bucket/Head-Bucket-2.md)| [HEAD Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketHEAD.html)|
 |GET Bucket（List Object）|获取某个Bucket下的部分或者全部Object信息（兼容Version2）|兼容[GET Bucket](./Operations-On-Bucket/Get-Bucket(ListObjects)-2.md)| [GET Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/v2-RESTBucketGET.html)|
 |DELETE Bucket|删除指定的Bucket|兼容[DELETE Bucket](./Operations-On-Bucket/Delete-Bucket-2.md)| [DELETE Bucket](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETE.html)|
-|List MultiPart Uploads|获取一个Bucket下面正在进行的分块上传任务|兼容[List MultiPart Uploads](./Operations-On-Objects/List-Multipart-Uploads-2.md)| [List MultiPart Uploads](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/mpUploadListMPUpload.html)|
+|List MultiPart Uploads|获取一个Bucket下面正在进行的分块上传任务|兼容[List MultiPart Uploads](./Operations-On-Bucket/List-Multipart-Uploads-2.md)| [List MultiPart Uploads](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/mpUploadListMPUpload.html)|
 |GET Bucket policy|获取指定的Bucket上的policy|兼容[GET Bucket policy](./Operations-On-Bucket/Get-Bucket-Policy-2.md)| [GET Bucket policy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETpolicy.html)|
 |PUT Bucket policy|为指定的Bucket上添加或编辑policy|兼容[PUT Bucket policy](./Operations-On-Bucket/Put-Bucket-Policy-2.md)| [PUT Bucket policy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTpolicy.html)|
 |DELETE Bucket policy|删除指定的Bucket上的policy|兼容[DELETE Bucket policy](./Operations-On-Bucket/Delete-Bucket-Policy-2.md)| [DELETE Bucket policy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETEpolicy.html)|
