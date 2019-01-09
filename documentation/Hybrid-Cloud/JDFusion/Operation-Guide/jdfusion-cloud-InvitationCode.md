@@ -11,7 +11,6 @@
 ![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/yaoqingma-1.png)
 管理AK/SK
 ![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/yaoqingma-2.png)
-
 ## 3、提交公测申请
 进入[京东云控制台](https://console.jdcloud.com)点击导航栏按钮【产品】-【混合云】-【JDFusion】-【公测申请】进入JDFusion产品页面。
 ![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/yaoqingma-3.png)
