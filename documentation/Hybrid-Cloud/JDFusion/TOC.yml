@@ -21,36 +21,9 @@ items:
       
 - name: 操作指南
   items:
-    - name: 云信息相关命令
-      href: Operation-Guide/jdfusion-cloud-description.md
-    - name: 虚拟机相关命令
-      href: Operation-Guide/jdfusion-vm-description.md    
-    - name: 云硬盘相关命令
-      href: Operation-Guide/jdfusion-cbs-description.md
-    - name: 公网IP相关命令
-      href: Operation-Guide/jdfusion-ip-description.md
-    - name: 镜像相关命令
-      href: Operation-Guide/jdfusion-mirroring-description.md
-    - name: 实例类型相关命令
-      href: Operation-Guide/jdfusion-instance-description.md
-     - name: 密钥对相关命令
-      href: Operation-Guide/jdfusion-key-description.md 
-     - name: 网卡相关命令
-      href: Operation-Guide/jdfusion-network-description.md
-     - name: 安全组相关命令
-      href: Operation-Guide/jdfusion-SecurityGroups-description.md      
-     - name: 负载均衡相关命令
-      href: Operation-Guide/jdfusion-lb-description.md
-     - name: 子网相关命令
-      href: Operation-Guide/jdfusion-subnet-description.md
-     - name: 专有网络相关命令
-      href: Operation-Guide/jdfusion-vpc-description.md  
-     - name: 服务器组相关命令
-      href: Operation-Guide/jdfusion-server-description.md 
-      - name: HTTP监听相关命令
-      href: Operation-Guide/jdfusion-http-description.md  
-      - name: 其他相关命令
-      href: Operation-Guide/jdfusion-other-description.md
+    - name: 如何获取邀请码
+      href: Operation-Guide/jdfusion-cloud-InvitationCode.md
+  
       
       - name: 历史发布
   items:
