@@ -39,7 +39,7 @@
 
 |对象存储支持的api|api简介|JD Cloud S3 API参考| AWS S3 API参考 |
 |-|-|-|-|
-|PUT Object|上传一个Object到OSS|兼容[PUT Object](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Objects/Put-Object.md)| [PUT Object](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectPUT.html)
+|PUT Object|上传一个Object到OSS|兼容[PUT Object](./Operations-On-Objects/Put-Object-2.md)| [PUT Object](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectPUT.html)
 |GET Object|获取一个Object的Meta及数据，可以获取全部数据或者使用Range指定获取部分数据|兼容[GET Object](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Objects/Get-Object.md)| [GET Object](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectGET.html)|
 |HEAD Object|获取一个Object的Meta|兼容[HEAD Object](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Objects/Head-Object.md)| [HEAD Object](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectHEAD.html)|
 |DELETE Object|删除一个Object|兼容[DELETE Object](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Objects/Delete-Object.md)| [DELETE Object](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTObjectDELETE.html)|
