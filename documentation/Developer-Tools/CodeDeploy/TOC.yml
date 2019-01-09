@@ -51,6 +51,8 @@
         href: Operation-Guide/Milestone-List.md
       - name: 编辑部署组
         href: Operation-Guide/Edit-Deployment-Group.md
+      - name: 部署组详情
+        href: Operation-Guide/Deployment-Group-Detail.md
       - name: 新建部署
         href: Operation-Guide/Create-Deployment2.md
       - name: 部署历史
