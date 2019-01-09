@@ -4,7 +4,7 @@
 # 关于 Service 操作
 |对象存储支持的api|api简介|JD Cloud S3 API参考| AWS S3 API参考 |
 |-|-|-|-|
-|GET Service（List Bucket）|获取一个User下的所有Bucket|兼容[GET Service](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-the%20-Service/Get-Service-2.md)| [GET Service](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTServiceGET.html)|
+|GET Service（List Bucket）|获取一个User下的所有Bucket|兼容[GET Service](./Service-Related/Get-Service-2.md)| [GET Service](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTServiceGET.html)|
 
 # 关于 Bucket 操作
 
