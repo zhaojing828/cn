@@ -43,7 +43,7 @@ Content-Length|实体长度<br>Type: String<br>Default: None|是
 ---|---|---
 Delete|请求集合。<br>Ancestor: None<br>Type: Container<br>一个或多个Object元素和可选的Quiet元素。|是
 Quiet|开启quiet模式，当添加此元素时，必须指定该值为true。<br>Ancestor: Delete<br>Type: Boolean<br>Default: false|否
-Object|删除请求中指定Object的集合。<br>Ancestor: Delete<br>Type: Container<br>Children: Key是
+Object|删除请求中指定Object的集合。<br>Ancestor: Delete<br>Type: Container<br>Children: Key|是
 Key|object名称<br>Ancestor: Object<br>Type: String|是
 
 ## 响应

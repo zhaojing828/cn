@@ -19,7 +19,7 @@ Date: <date>
 
 名称|描述|必须
 ---|---|---
-Range|指定字节范围下载Object<br>|Type: String<br>Default: None<br>Constraints: None|否
+Range|指定字节范围下载Object<br>Type: String<br>Default: None<br>Constraints: None|否
 If-Modified-Since|若Object在指定时间后修改，则返回该Object，否则返回304（not modified）<br>Type: String<br>Default: None<br>Constraints: None|否
 If-Unmodified-Since|若Object在指定时间后未修改，则返回该Object，否则返回412（precondition failed）。<br>Type: String<br>Default: None<br>Constraints: None|否
 If-Match|如果ETag与指定的相同，则返回该Object，否则返回412（precondition failed）。<br>Type: String<br>Default: None<br>Constraints: None|否

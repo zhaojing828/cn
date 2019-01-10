@@ -26,14 +26,14 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 
 名称|描述
 ---|---
-AccessControlList|acl信息集合<br>Type: Container<br>Ancestors: AccessControlPolicy|否
-AccessControlPolicy|每个被授予人的ACL元素集合。<br>Type: String<br>Ancestors: None|否
-DisplayName|Bucket拥有者名称。<br>Type: String<br>Ancestors: AccessControlPolicy.Owner|否
-Grant|被授权者及权限信息集合<br>Type: Container<br>Ancestors: AccessControlPolicy.AccessControlList|否
-Grantee|被授权者<br>Type: String<br>Ancestors: AccessControlPolicy.AccessControlList.Grant|否
+AccessControlList|acl信息集合<br>Type: Container<br>Ancestors: AccessControlPolicy
+AccessControlPolicy|每个被授予人的ACL元素集合。<br>Type: String<br>Ancestors: None
+DisplayName|Bucket拥有者名称。<br>Type: String<br>Ancestors: AccessControlPolicy.Owner
+Grant|被授权者及权限信息集合<br>Type: Container<br>Ancestors: AccessControlPolicy.AccessControlList
+Grantee|被授权者<br>Type: String<br>Ancestors: AccessControlPolicy.AccessControlList.Grant
 ID|bucket拥有者或者被授权者的ID<br>Type: String<br>Ancestors: AccessControlPolicy.Owner<br> AccessControlPolicy.AccessControlList.Grant
-Owner|bucket拥有者的信息集合<br>Type: Container<br>Ancestors: AccessControlPolicy|是
-Permission|指定的权限<br>Type: String<br>Valid Values: FULL_CONTROL、WRITE、READ <br>Ancestors: AccessControlPolicy.AccessControlList.Grant|否
+Owner|bucket拥有者的信息集合<br>Type: Container<br>Ancestors: AccessControlPolicy
+Permission|指定的权限<br>Type: String<br>Valid Values: FULL_CONTROL、WRITE、READ <br>Ancestors: AccessControlPolicy.AccessControlList.Grant
 
 ## 示例
 ### 请求示例
