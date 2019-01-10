@@ -44,6 +44,11 @@
             herf: Audit-Management/enableAudit.md
           - name: modifyAudit
             herf: Audit-Management/modifyAudit.md
+
+      - name: 可用区管理
+        items:
+          - name: describeAzs
+            herf: AvailabilityZones/describeAzs.md
             
       - name: 备份管理
         items:
@@ -62,9 +67,13 @@
             herf: Binlog/describeBinlogDownloadURL.md
           - name: describeBinlogs
             herf: Binlog/describeBinlogs.md
+          - name: describeBinlogs
+            herf: Binlog/describeBinlogs.md
 
       - name: 单库上云
         items:
+          - name: deleteImportFile
+            herf: Cloud-on-Single-Database/deleteImportFile.md
           - name: describeImportFiles
             herf: Cloud-on-Single-Database/describeImportFiles.md
           - name: getUploadKey
@@ -117,6 +126,8 @@
             herf: Instance-Management/describeInstanceAttributes.md
           - name: describeInstances
             herf: Instance-Management/describeInstances.md
+          - name: describeLatestRestoreTime
+            herf: Instance-Management/describeLatestRestoreTime.md
           - name: disableInternetAccess
             href: Instance-Management/disableInternetAccess.md
           - name: enableInternetAccess
@@ -135,6 +146,20 @@
             herf: Instance-Management/rebootInstance.md
           - name: restoreInstance
             herf: Instance-Management/restoreInstance.md
+
+      - name: 参数组管理
+        items:
+          - name: deleteParameterGroup
+            herf: Parameter-Group/deleteParameterGroup.md
+          - name: modifyParameterGroupAttribute
+            herf: Parameter-Group/modifyParameterGroupAttribute.md
+
+      - name: 参数管理
+        items:
+          - name: describeParameters
+            herf: Parameters/describeParameters.md
+          - name: modifyParameters
+            herf: Parameters/modifyParameters.md
      
       - name: 性能统计
         items:
@@ -146,6 +171,13 @@
             herf: Performance-Statistics/describeSlowLogAttributes.md
           - name: describeSlowLogs
             herf: Performance-Statistics/describeSlowLogs.md
+
+      - name: SQL 拦截
+        items:
+          - name: disableIntercept
+            herf: SQL-Interception/disableIntercept.md
+          - name: enableIntercept
+            herf: SQL-Interception/enableIntercept.md
             
       - name: 白名单
         items:
@@ -159,7 +191,7 @@
       - name: MySQL 实例规格
         href: Instance-Specifications/Instance-Specifications-MySQL.md
       - name: SQL Server 实例规格
-        href: Instance-Specifications/Instance-Specifications-MySQL.md
+        href: Instance-Specifications/Instance-Specifications-SQLServer.md
 
   - name: 枚举参数说明
     items:

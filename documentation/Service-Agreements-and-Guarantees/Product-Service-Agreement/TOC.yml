@@ -20,12 +20,14 @@ items:
     href: Object-Storage-Service-Clause.md
   - name: 对象存储服务等级协议（SLA）
     href: Object-Storage-Service-Level-Agreement-SLA.md 
-  - name: 缓存Redis服务协议
+  - name: 云缓存Redis服务协议
     href: Caching-Redis-Service-Clause.md
-  - name: 缓存Redis服务等级协议（SLA）
+  - name: 云缓存Redis服务等级协议（SLA）
     href: Caching-Redis-Service-Level-Agreement-SLA.md
-  - name: 缓存 Memcached服务协议
+  - name: 云缓存 Memcached服务协议
     href: JCS-for-Memcached-Service-Terms.md
+  - name: 云缓存 Memcached服务等级协议（SLA）
+    href: JCS-for-Memcached-Service-TermsSLA.md
   - name: CDN服务协议
     href: CDN-Terms-Of-Service.md
   - name: CDN服务等级协议（SLA）
@@ -86,3 +88,11 @@ items:
     href: DDoS-Protection-Package-Terms-Of-Service-SLA.md
   - name: 云搜索Elasticsearch服务条款
     href: JCS-for-Elasticsearch-Service-Terms.md
+  - name: 云搜索Elasticsearch服务等级协议（SLA）
+    href: JCS-for-Elasticsearch-Service-Terms-SLA.md  
+  - name: 函数服务服务条款
+    href: Functional-Service-Terms-of-Service.md
+  - name: 云桌面服务条款
+    href: Cloud-Desktop-Service-Protocol.md   
+  - name: 云桌面服务等级协议（SLA）
+    href: Cloud-Desktop-Service-ProtocolSLA.md

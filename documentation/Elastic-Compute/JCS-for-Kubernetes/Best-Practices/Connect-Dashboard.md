@@ -44,6 +44,7 @@ spec:
   selector:
      k8s-app: kubernetes-dashboard
 ```  
+注：该服务会自动创建一个带公网IP的负载均衡，可以在控制台-网络-负载均衡-实例查看，会占用在该地域的负载均衡和公网IP的配额。  
 2）执行如下命令，在kube-system命名空间中创建服务：  
 `
 kubectl create -f dashboard-lb.yaml --namespace=kube-system

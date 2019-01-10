@@ -9,7 +9,7 @@
 GET
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/registries/{registryName}
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{registryName}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -37,7 +37,7 @@ https://openapi.cr.jdcloud.com/v1/regions/{regionId}/registries/{registryName}
 |**description**|String|注册表描述，<a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">参考公共参数规范</a>。|
 |**name**|String|注册表名称，<a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">参考公共参数规范</a>。|
 |**registryUri**|String|registry endporint url|
-|**totalSpaceUsedMB**|Number|regsitry 使用的总存储空间 单位 (MB)|
+|**totalSpaceUsedMB**|Double|regsitry 使用的总存储空间 单位 (MB)|
 
 ## 返回码
 |返回码|描述|

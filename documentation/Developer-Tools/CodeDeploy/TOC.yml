@@ -51,6 +51,8 @@
         href: Operation-Guide/Milestone-List.md
       - name: 编辑部署组
         href: Operation-Guide/Edit-Deployment-Group.md
+      - name: 部署组详情
+        href: Operation-Guide/Deployment-Group-Detail.md
       - name: 新建部署
         href: Operation-Guide/Create-Deployment2.md
       - name: 部署历史
@@ -59,12 +61,16 @@
         href: Operation-Guide/Details2.md
       - name: 部署工作流
         href: Operation-Guide/Workflow.md
-      - name: AppSec文件
-        href: Operation-Guide/AppSec.md
+      - name: AppSpec文件
+        href: Operation-Guide/AppSpec.md
       - name: Agent安装
         href: Operation-Guide/Install-Agent.md
       - name: 约定
         href: Operation-Guide/Convention.md
+  - name: 最佳实践
+    items: 
+      - name: 蓝绿部署
+        href: Best-Practice/Blue-green-Deployment.md
   - name: 常见问题
     href: FAQ/FAQ.md          
   - name: 相关资源

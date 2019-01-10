@@ -9,7 +9,7 @@
 DELETE
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/registries/{registryName}/repositories/{repositoryName}
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{registryName}/repositories/{repositoryName}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

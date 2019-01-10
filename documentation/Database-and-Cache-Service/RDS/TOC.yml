@@ -12,7 +12,15 @@
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品规格
-        href: Introduction/Specifications.md
+        items:
+        - name: MySQL 产品规格
+          href: Introduction/Specifications/MySQL-Specifications.md
+        - name: Percona 产品规格
+          href: Introduction/Specifications/Percona-Specifications.md
+        - name: MariaDB 产品规格
+          href: Introduction/Specifications/MariaDB-Specifications.md
+        - name: SQL Server 产品规格
+          href: Introduction/Specifications/SQL-Server-Specifications.md       
       - name: 限制说明
         items:
         - name: MySQL 限制说明
@@ -152,7 +160,9 @@
         items:
         - name: 设置白名单
           href: Operation-Guide/Security/Set-Whitelist.md
-       
+        - name: 透明数据加密 TDE
+          href: Operation-Guide/Security/tde.md
+          
       - name: 单库上云
         items:
         - name: 单库上云简介
@@ -286,6 +296,10 @@
         href: Best-Practices/Connect-Database-Instance/Client-Connect-SQLServer.md
       - name: 从云主机连接 SQL Server
         href: Best-Practices/Connect-Database-Instance/Host-Connect-SQLServer.md  
+  - name: 教程 
+    items:
+    - name: MySQL 性能测试 
+      href: Tutorial/MySQL-Performance-Test.md 
   - name: 常见问题
     items:
     - name: FAQ

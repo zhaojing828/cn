@@ -59,6 +59,14 @@
             href: Operation-Guide/Monitoring/Monitoring.md
           - name: 设置报警规则
             href: Operation-Guide/Monitoring/Alarm-Rules.md
+      - name: 授权管理
+        items:
+          - name: 权限控制概述
+            href: Operation-Guide/Authorization-Management/Authorization-Overview.md
+          - name: 主主账号授权
+            href: Operation-Guide/Authorization-Management/Main-Main-Authorization.md
+          - name: 主子账号授权
+            href: Operation-Guide/Authorization-Management/Main-Sub-Authorization.md
       - name: API参考
         items:
           - name: 调用方式
@@ -80,7 +88,7 @@
   - name: SDK参考
     items:
       - name: 示例下载
-            href: SDK-Rerference/Demo.md
+        href: SDK-Rerference/Demo.md
       - name: Java SDK
         items:
           - name: 版本说明
@@ -99,7 +107,8 @@
             href: SDK-Rerference/Java-SDK/Pull-Consume-Messgae-SDK.md
   - name: 最佳实践
     items:
-    status: 0
+      - name: 消息分类
+        href: Best-Practice/Message-Classification.md
   - name: 教程
     items:
     status: 0

@@ -5,16 +5,17 @@
 构建规范语法如下：
 
 ```
-envs:
-name: TEST_ENV
-value: test
 cmds:
-name: who
-cmd: id
-name: see
-cmd: pwd
-name: build
-cmd: ./build.sh
-out_dir: output
+  - name: 'list current dir'
+    cmd: 'ls'
+  - name: 'make output dir'
+    cmd: 'mkdir -p output'
+  - name: 'touch some files'
+    cmd: 'touch a b c'
+  - name: 'copy to output dir'
+    cmd: 'cp a b c output'
+
+# 抽包路径, 这个是必选项
+out_dir: 'output'
 ```
 
