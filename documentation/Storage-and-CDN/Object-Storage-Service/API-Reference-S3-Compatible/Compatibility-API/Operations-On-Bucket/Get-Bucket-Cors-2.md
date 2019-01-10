@@ -26,7 +26,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 名称|描述
 ---|---
 CORSConfiguration|CORSRule元素的集合，最多100个。<br>Type: Container<br>Children: CORSRules<br>Ancestor: None
-CORSRule|允许的来源和方法。最多100个。<br>Type: Container<br>Children: AllowedOrigin, AllowedMethod, MaxAgeSeconds, ExposeHeader, ID.<br>Ancestor: CORSConfiguration|是
+CORSRule|允许的来源和方法。最多100个。<br>Type: Container<br>Children: AllowedOrigin, AllowedMethod, MaxAgeSeconds, ExposeHeader, ID.<br>Ancestor: CORSConfiguration
 ID|每条规则的唯一标识ID。ID最长255个字符。<br>Type: String<br>Ancestor: CORSRule
 AllowedMethod|允许来源执行的HTTP方法。<br>Type: Enum (GET, PUT, HEAD, POST, DELETE)<br>Ancestor: CORSRule
 AllowedOrigin|允许跨域请求的来源，支持通配符"*",且最多包含一个通配符<br>Type: String<br>Ancestor: CORSRule
