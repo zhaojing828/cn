@@ -53,6 +53,8 @@
         href: Operation-Guide/connect-ES.md
       - name: 使用kibana
         href: Operation-Guide/using_kibana.md
+      - name: 插件支持
+        href: Operation-Guide/IK.md 
       - name: 监控集群
         items: 
         - name: 查看监控信息
@@ -61,7 +63,6 @@
           href: Operation-Guide/status.md
         - name: 创建告警规则
           href: Operation-Guide/Monitor_Rules.md
-
       - name: 标签
         items:
         - name: 标签概述
