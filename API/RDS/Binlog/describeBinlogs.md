@@ -40,7 +40,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/binlogs
 |**binlogBackupId**|String|binlog日志备份ID|
 |**binlogEndTime**|String|binlog结束时间,格式为：YYYY-MM-DD HH:mm:ss|
 |**binlogName**|String|binlog日志名称|
-|**binlogSizeKB**|Integer|binlog日志大小，单位KB|
+|**binlogSizeKB**|Long|binlog日志大小，单位KB|
 |**binlogStartTime**|String|binlog开始时间,格式为：YYYY-MM-DD HH:mm:ss|
 
 ## 返回码

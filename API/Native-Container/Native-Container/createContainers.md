@@ -86,7 +86,7 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/containers
 |**envs**|EnvVar[]|False| |容器执行的环境变量；如果和镜像中的环境变量Key相同，会覆盖镜像中的值；</br> 最大10对|
 |**hostAliases**|HostAlias[]|False| |域名和IP映射的信息；</br> 最大10个alias|
 |**hostname**|String|False| |主机名，规范请参考说明文档；默认容器ID|
-|**image**|String|False| |镜像名称 </br> 1. Docker Hub官方镜像通过类似nginx, mysql/mysql-server的名字指定 </br> </br> repository长度最大256个字符，tag最大128个字符，registry最大255个字符 </br> 下载镜像超时时间：10分钟|
+|**image**|String|True| |镜像名称 </br> 1. Docker Hub官方镜像通过类似nginx, mysql/mysql-server的名字指定 </br> </br> repository长度最大256个字符，tag最大128个字符，registry最大255个字符 </br> 下载镜像超时时间：10分钟|
 |**instanceType**|String|True| |实例类型；参考[文档](https://www.jdcloud.com/help/detail/1992/isCatalog/1)|
 |**logConfiguration**|LogConfiguration|False| |容器日志配置信息；默认会在本地分配10MB的存储空间|
 |**name**|String|True| |容器名称|
@@ -120,7 +120,6 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/containers
 |**description**|String|False| |云硬盘描述|
 |**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G，premium-hdd 类型取值范围[20,3000]GB，步长为10G|
 |**diskType**|String|True| |云硬盘类型，取值为ssd、premium-hdd之一|
-|**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
 |**name**|String|True| |云硬盘名称|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
 ### ElasticIpSpec

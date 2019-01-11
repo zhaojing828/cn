@@ -2,7 +2,9 @@
 
 
 ## 描述
-查询云解析所有的基础解析线路
+查询云解析所有的基础解析线路。<br>
+在使用解析线路的参数之前，请调用此接口获取解析线路的ID。
+
 
 ## 请求方式
 GET
@@ -12,14 +14,14 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|String|True| |域名ID|
+|**domainId**|String|True| |域名ID，请使用getDomains接口获取。|
 |**regionId**|String|True| |实例所属的地域ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**loadMode**|Integer|False| |展示方式|
-|**packId**|Integer|True| |套餐ID|
+|**loadMode**|Integer|False| |展示方式，暂时不使用|
+|**packId**|Integer|True| |套餐ID，0->免费版 1->企业版 2->企业高级版|
 |**viewId**|Integer|True| |view ID，默认为0|
 
 

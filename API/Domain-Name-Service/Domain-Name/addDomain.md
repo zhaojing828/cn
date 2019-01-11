@@ -18,7 +18,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domainAdd
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**billingType**|Integer|False| |计费类型，收费套餐的域名必填|
-|**buyType**|Integer|False| |1->新购买、2->升级，收费套餐的域名必填|
+|**buyType**|Integer|False| |1->新购买、3->升级，收费套餐的域名必填|
 |**domainId**|Integer|False| |域名ID，升级高级版必填|
 |**domainName**|String|True| |要添加的域名|
 |**packId**|Integer|True| |域名的套餐类型, 0->免费 ,1->企业版, 2->高级版|
@@ -35,16 +35,16 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domainAdd
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**data**|Domain|新添加的的域名结构|
+|**data**|DomainAdded|新添加的的域名结构|
 |**order**|String|添加收费版域名的订单号|
-### Domain
+### DomainAdded
 |名称|类型|描述|
 |---|---|---|
-|**createTime**|Integer|创建时间，格式Unix timestamp|
+|**createTime**|Long|创建时间，格式Unix timestamp，时间单位：毫秒|
 |**domainName**|String|域名字符串|
-|**expirationDate**|Integer|过期时间，格式Unix timestamp|
+|**expirationDate**|Long|过期时间，格式Unix timestamp，时间单位：毫秒|
 |**id**|Integer|域名的唯一ID|
-|**packId**|Integer|套餐类型，0->免费 1->企业版 2->高级版|
+|**packId**|Integer|套餐类型，0->免费 1->企业版 2->企业高级版|
 
 ## 返回码
 |返回码|描述|

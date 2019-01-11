@@ -12,7 +12,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|String|True| |域名ID|
+|**domainId**|String|True| |域名ID，请使用getDomains接口获取。|
 |**regionId**|String|True| |实例所属的地域ID|
 
 ## 请求参数
@@ -57,7 +57,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 |**manualBackupStatus**|Integer|手动切换的地址的状态，0正常，1异常|
 |**manualBackupType**|Integer|手动切换的地址的类型，1为ip 2为域名|
 |**monitorEnable**|Integer|监控状况 开启监控 2，暂停监控 4|
-|**monitorFreq**|Integer|监控频率，单位s|
+|**monitorFreq**|Integer|监控频率，单位秒|
 |**monitorPort**|Integer|监控端口|
 |**monitorRule**|Integer|不做任何修改0，强制暂停解析记录1，自动切换到备用地址2|
 |**monitorUri**|String|监控路径|

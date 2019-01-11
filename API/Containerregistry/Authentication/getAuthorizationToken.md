@@ -11,7 +11,7 @@
 POST
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/registries/{registryName}:getAuthorizationToken
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{registryName}:getAuthorizationToken
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -33,13 +33,9 @@ https://openapi.cr.jdcloud.com/v1/regions/{regionId}/registries/{registryName}:g
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**authorizationData**|AuthorizationData| |
-### AuthorizationData
-|名称|类型|描述|
-|---|---|---|
-|**authorizationToken**|String|基于base64编码的字符串，包含指定JCR registry的授权信息。解码后可用于docker login。|
-|**expiresAt**|String|Unix 时钟，记录authorization token的过期时间。默认Authorization tokens有效期为12小时。|
-|**loginCmdLine**|String|用户直接使用的docker login 命令行|
+|**authorizationToken**|String| |
+|**expiresAt**|String| |
+|**loginCmdLine**|String| |
 
 ## 返回码
 |返回码|描述|

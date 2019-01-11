@@ -12,7 +12,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|String|True| |域名ID|
+|**domainId**|String|True| |域名ID，请使用getDomains接口获取。|
 |**regionId**|String|True| |实例所属的地域ID|
 
 ## 请求参数
@@ -40,9 +40,10 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 |名称|类型|描述|
 |---|---|---|
 |**domainId**|Integer|域名ID|
+|**endTime**|Long|故障结束时间，格式Unix timestamp，时间单位：毫秒|
 |**host**|String|故障IP/域名|
 |**id**|Integer| |
-|**startTime**|Integer|故障开始时间|
+|**startTime**|Long|故障开始时间，格式Unix timestamp，时间单位：毫秒|
 |**subDomainName**|String|子域名|
 
 ## 返回码

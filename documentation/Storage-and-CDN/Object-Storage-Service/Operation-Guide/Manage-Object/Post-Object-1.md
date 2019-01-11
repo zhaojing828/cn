@@ -61,7 +61,7 @@ Post请求的Policy表单域用于验证请求的合法性。例如可以指定�
 
 功能使用参考
 
-API：[PostObject](../../API-Reference-S3-Compatible/Compatibility-API/Post-Object-2.md)
+API：[PostObject](https://docs.jdcloud.com/cn/object-storage-service/post-object-2)
 
 示例 Demo
 

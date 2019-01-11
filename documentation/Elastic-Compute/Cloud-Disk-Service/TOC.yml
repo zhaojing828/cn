@@ -23,9 +23,9 @@
       - name: 性能测试
         href: Introduction/Performance-Test.md
       - name: 使用约束
-        href: Introduction/Restrictions.md
-        
-  - name: 产品定价
+        href: Introduction/Restrictions.md       
+
+- name: 产品定价
     items:
     - name: 计费模式说明
       items:

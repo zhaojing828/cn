@@ -8,7 +8,7 @@
 GET
 
 ## 请求地址
-https://openapi.cr.jdcloud.com/v1/regions/{regionId}/quotas
+https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/quotas
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

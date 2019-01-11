@@ -16,7 +16,10 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**pageNumber**|Integer|False| |显示数据的页码，默认为1，取值范围：[-1,∞)。pageNumber为-1时，返回所有数据页码；超过总页数时，显示最后一页;|
+|**pageSize**|Integer|False| |每页显示的数据条数，默认为100，取值范围：[10,100]，用于查询列表的接口|
 
 
 ## 返回参数
@@ -28,6 +31,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/account
 |名称|类型|描述|
 |---|---|---|
 |**accounts**|Account[]| |
+|**totalCount**|Integer| |
 ### Account
 |名称|类型|描述|
 |---|---|---|

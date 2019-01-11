@@ -13,8 +13,12 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         href: Introduction/Features.md
-      - name: 应用场景 
-        href: Introduction/Application-Scenarios.md    
+      - name: 应用场景
+        items:
+          - name: 场景概述
+            href: Introduction/Application-Scenarios/Overview.md
+          - name: 视频直播
+            href: Introduction/Application-Scenarios/living.md  
   - name: 产品定价
     items:
       - name: 计费概述

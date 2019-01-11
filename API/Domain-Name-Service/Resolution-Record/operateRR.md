@@ -12,7 +12,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|String|True| |域名ID|
+|**domainId**|String|True| |域名ID，请使用getDomains接口获取。|
 |**regionId**|String|True| |实例所属的地域ID|
 
 ## 请求参数

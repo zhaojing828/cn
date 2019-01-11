@@ -40,7 +40,7 @@ https://datastar.cn-south-1.jdcloud-api.com/v1/regions/{regionId}/largeScreen/ge
 ### RegionIndustryDataList
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|RegionIndustryData[]|区域|
+|**dataList**|RegionIndustryData[]|查询结果的数组类型|
 ### RegionIndustryData
 |名称|类型|描述|
 |---|---|---|

@@ -34,7 +34,7 @@
 		<td >4500</td>
     </tr>
 	<tr>   
-		<td rowspan="2">GPU型</td>
+		<td rowspan="3">GPU型</td>
 		<td >GPUⅠ</td>
 		<td >cps.gpu.1</td>
 		<td >23000</td>
@@ -44,6 +44,11 @@
 		<td >cps.gpu.2</td>
 		<td >19900</td>
     </tr>
+	<tr>   
+		<td >GPUⅢ</td>
+		<td >cps.gpu.3</td>
+		<td >32000</td>
+    </tr>	
 </table>
 
 
@@ -99,4 +104,7 @@
 </table>
 
 请注意：
+
 公网IP的价格依据地域和线路而不同，具体价格请以购买时选择的地域和线路为准。表中的地域不代表全部已开放，部分地域正在开放筹备中。
+
+公网IPV4和公网IPV6共享此带宽额度。

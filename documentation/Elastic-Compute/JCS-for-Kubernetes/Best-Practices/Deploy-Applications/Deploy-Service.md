@@ -2,9 +2,10 @@
 # 部署Service
 
 **Kubernetes Service**   
--Kubernetes Service定义了这样一种抽象：一个 Pod 的逻辑分组，一种可以访问它们的策略-通常称为微服务。这一组 Pod 能够被 Service 访问到，通常是通过 Label Selector（查看下面了解，为什么可能需要没有 selector 的 Service）实现的。一个 Service 在 Kubernetes 中是一个REST对象，和Pod类似.像所有的 REST 对象一样， Service 定义可以基于 POST 方式，请求 apiserver 创建新的实例。  
+- Kubernetes Service定义了这样一种抽象：一个 Pod 的逻辑分组，一种可以访问它们的策略-通常称为微服务。这一组 Pod 能够被 Service 访问到，通常是通过 Label Selector（查看下面了解，为什么可能需要没有 selector 的 Service）实现的。一个 Service 在 Kubernetes 中是一个REST对象，和Pod类似.像所有的 REST 对象一样， Service 定义可以基于 POST 方式，请求 apiserver 创建新的实例。  
 
 **京东云Kubernetes集成负载均衡服务，支持创建LoadBalance类型的Service，为应用提供安全、可靠的网络。**  
+- 创建的负载均衡会占用本地域的负载均衡配额，需要保证有足够配额。  
 1、创建支持LoadBalance类型的service，命名为myservice.yaml文件定义如下：
 ```
 kind: Service
@@ -60,17 +61,17 @@ kubectl create -f mynginx.yaml
 NAME       DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 my-nginx   2         2         2            2           4m
 ```
-6、查看相应的pod运行状态，
-`kubectl get pods -l run=myapp -o wide`
-返回结果如下：
+6、查看相应的pod运行状态，  
+`kubectl get pods -l run=myapp -o wide`  
+返回结果如下：  
 ```
 NAME                        READY     STATUS    RESTARTS   AGE       IP            NODE
 my-nginx-864b5bfdc7-6297s   1/1       Running   0          23m       172.16.0.10   k8s-node-vmtwjb-0vy9nuo0ym
 my-nginx-864b5bfdc7-lr7gq   1/1       Running   0          23m       172.16.0.42   k8s-node-vm25q1-0vy9nuo0ym
 ```
-7、查看service详情：
-`kubectl describe service servicetest`
-可以查看绑定到service的endpoints:
+7、查看service详情：  
+`kubectl describe service servicetest`  
+可以查看绑定到service的endpoints: 
 ```
 Name:                     servicetest
 Namespace:                default
@@ -92,10 +93,11 @@ Events:
   Normal   EnsuringLoadBalancer        11m (x9 over 26m)  service-controller  Ensuring load balancer
   Normal   EnsuredLoadBalancer         10m                service-controller  Ensured load balancer
 
-```
-8、执行如下命令查询绑定到service的enpoints列表：
+```  
+**注：LoadBalancer Ingress:114.67.227.25为外部公网IP**  
+8、执行如下命令查询绑定到service的enpoints列表：  
 `kubectl get ep servicetest`  
-  返回：
+  返回：  
 ```
 NAME          ENDPOINTS                       AGE
 servicetest   172.16.0.10:80,172.16.0.42:80   28m

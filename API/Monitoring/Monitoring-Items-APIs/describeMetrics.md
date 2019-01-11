@@ -2,13 +2,13 @@
 
 
 ## 描述
-根据产品线查询可用监控项列表
+根据产品线查询可用监控项列表,metric介绍：<a href="https://docs.jdcloud.com/cn/monitoring/metrics">Metrics</a>
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://monitor.jcloud.com/v1/metrics
+https://monitor.jdcloud-api.com/v1/metrics
 
 
 ## 请求参数

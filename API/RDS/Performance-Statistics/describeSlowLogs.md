@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询MySQL实例的慢日志的概要信息。<br>- 仅支持SQL Server
+查询MySQL实例的慢日志的概要信息。<br>- 仅支持MySQL
 
 ## 请求方式
 GET
@@ -50,11 +50,11 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ### DigestData
 |名称|类型|描述|
 |---|---|---|
-|**avg**|Number|执行结果的平均值|
-|**max**|Number|执行结果的最大值|
-|**min**|Number|执行结果的最小值|
-|**pct95**|Number|表示执行结果中95% 数据小于或等于此数值|
-|**total**|Number|执行结果的合计值|
+|**avg**|Float|执行结果的平均值|
+|**max**|Float|执行结果的最大值|
+|**min**|Float|执行结果的最小值|
+|**pct95**|Float|表示执行结果中95% 数据小于或等于此数值|
+|**total**|Double|执行结果的合计值|
 
 ## 返回码
 |返回码|描述|

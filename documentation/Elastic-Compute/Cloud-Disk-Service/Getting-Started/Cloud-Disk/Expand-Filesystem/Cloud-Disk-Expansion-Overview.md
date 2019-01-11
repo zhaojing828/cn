@@ -10,19 +10,19 @@
 
 
 
-- 扩容 Windows 实例的数据盘，请参考[扩容文件系统（Windows）](https://www.jdcloud.com/help/detail/1634/isCatalog/1)。
+- 扩容 Windows 实例的数据盘，请参考[扩容文件系统（Windows）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-file-system-windows)。
 
 
 
-- 扩容 Linux 实例的数据盘，请参考[扩容文件系统（Linux）](https://www.jdcloud.com/help/detail/509/isCatalog/1)。
+- 扩容 Linux 实例的数据盘，请参考[扩容文件系统（Linux）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-file-system-linux)。
 
 
 
-- 如果 Linux 实例之前并未划分过分区，只是使用裸盘格式化使用，请参考[扩容裸盘文件系统（Linux）](https://www.jdcloud.com/help/detail/1494/isCatalog/1)。
+- 如果 Linux 实例之前并未划分过分区，只是使用裸盘格式化使用，请参考[扩容裸盘文件系统（Linux）](https://docs.jdcloud.com/cn/cloud-disk-service/expand-raw-disk-file-system)。
 
 
 
-- 扩容多分区磁盘，请参考[扩容多分区磁盘](https://www.jdcloud.com/help/detail/1635/isCatalog/1)。
+- 扩容多分区磁盘，请参考[扩容多分区磁盘](https://docs.jdcloud.com/cn/cloud-disk-service/expand-file-system-multi-partition)。
 
 
 ## 扩容限制

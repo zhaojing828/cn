@@ -53,7 +53,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/perform
 ### MissingIndexResult
 |名称|类型|描述|
 |---|---|---|
-|**avgUserImpact**|Number|实现此缺失索引后，用户查询可能获得的平均百分比收益。 该值表示如果实现此缺失索引，则查询成本将按此百分比平均下降。|
+|**avgUserImpact**|Float|实现此缺失索引后，用户查询可能获得的平均百分比收益。 该值表示如果实现此缺失索引，则查询成本将按此百分比平均下降。|
 |**db**|String|数据库名|
 |**equalityColumns**|String|构成相等谓词的列的逗号分隔列表，谓词的形式如下：<br>table.column =constant_value|
 |**includedColumns**|String|构成不等谓词的列的逗号分隔列表，例如以下形式的谓词：<br>table.column > constant_value<br>“=”之外的任何比较运算符都表示不相等。|

@@ -46,9 +46,9 @@ curl -H "Content-type: application/json" -X POST -d '{"username":" testuser ","s
     "domain" :"www.a.com",
     "type" :"web",
     "sourceType" :"ips",
-    "source" :"[{'ip':'1.1.1.1','priority':'master'},{'ip':'2.2.2.2','priority':'master'},      {'ip':'3.3.3.3','priority':'slave'}]",
+    "source" :"[{'ip':'1.1.1.1','priority':'master'},{'ip':'2.2.2.2','priority':'master'},{'ip':'3.3.3.3','priority':'slave'}]",
     "backSourceType" :"http",
-    "dailyBandWidth" :200,
+    "dailyBandWidth" :200
  }
 ```
 -  **返回示例**

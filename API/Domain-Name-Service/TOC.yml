@@ -33,6 +33,8 @@
             href: Resolution-Record/searchRR.md
           - name: updateRR
             href: Resolution-Record/updateRR.md
+          - name: batchSetDnsResolve
+            href: Resolution-Record/batchSetDnsResolve.md
       - name:  网站监控相关的接口
         items:
           - name: addMonitor
@@ -48,4 +50,8 @@
           - name: operateMonitor
             href: Website-Monitoring/operateMonitor.md
           - name: updateMonitor
-            href: Website-Monitoring/updateMonitor.md            
+            href: Website-Monitoring/updateMonitor.md   
+       - name: 操作列表相关的接口            
+         items:
+          - name: getActionLog
+            href: Operation-Log/getActionLog.md   

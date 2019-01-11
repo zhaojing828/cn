@@ -2,7 +2,9 @@
 
 
 ## 描述
-查询主域名的解析记录
+查询主域名的解析记录。<br>
+在使用解析记录相关的接口之前，请调用此接口获取解析记录的列表。
+
 
 ## 请求方式
 GET
@@ -12,7 +14,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**domainId**|String|True| |域名ID|
+|**domainId**|String|True| |域名ID，请使用getDomains接口获取。|
 |**regionId**|String|True| |实例所属的地域ID|
 
 ## 请求参数

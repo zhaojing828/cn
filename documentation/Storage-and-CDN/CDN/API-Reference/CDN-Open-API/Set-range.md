@@ -37,11 +37,11 @@ http://opencdn.jcloud.com/api/setRangeArgs
 
 ```
 {
-“username” :“test_user”, 
-“signature” :“d00f58f89e8cd55dc080aec0d8051845”, 
-“domain” :“www.a.com”, 
-“status” :“on”
-}
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "status" :"on"
+ }
 ```
 
 - ###  **返回示例**

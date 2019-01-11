@@ -12,7 +12,15 @@
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品规格
-        href: Introduction/Specifications.md
+        items:
+        - name: MySQL 产品规格
+          href: Introduction/Specifications/MySQL-Specifications.md
+        - name: Percona 产品规格
+          href: Introduction/Specifications/Percona-Specifications.md
+        - name: MariaDB 产品规格
+          href: Introduction/Specifications/MariaDB-Specifications.md
+        - name: SQL Server 产品规格
+          href: Introduction/Specifications/SQL-Server-Specifications.md       
       - name: 限制说明
         items:
         - name: MySQL 限制说明
@@ -152,7 +160,9 @@
         items:
         - name: 设置白名单
           href: Operation-Guide/Security/Set-Whitelist.md
-       
+        - name: 透明数据加密 TDE
+          href: Operation-Guide/Security/tde.md
+          
       - name: 单库上云
         items:
         - name: 单库上云简介
@@ -176,6 +186,8 @@
            href: Operation-Guide/Parameter-Group/Copy-Parameter-Group.md
          - name: 删除参数组
            href: Operation-Guide/Parameter-Group/Delete-Parameter-Group.md
+         - name: 修改参数
+           href: Operation-Guide/Parameter-Group/Modify-Parameter.md
          - name: 修改历史 
            href: Operation-Guide/Parameter-Group/Parameter-Group-History.md
           
@@ -253,21 +265,21 @@
       - name: 导入 MySQL
         items:
         - name: 从本地 MySQL 导入
-          href: Best-Practices/Data-Migration/Import-Data-Into-MySQL-Instance/VM-to-MySQL.md
-        - name: 从云主机 MySQL 导入
           href: Best-Practices/Data-Migration/Import-Data-Into-MySQL-Instance/Local-to-MySQL.md
+        - name: 从云主机 MySQL 导入
+          href: Best-Practices/Data-Migration/Import-Data-Into-MySQL-Instance/VM-to-MySQL.md
       - name: 导入 Percona
         items:
         - name: 从本地 Percona 导入
-          href: Best-Practices/Data-Migration/Import-Data-Into-Percona-Instance/VM-to-Percona.md
-        - name: 从云主机 Percona 导入
           href: Best-Practices/Data-Migration/Import-Data-Into-Percona-Instance/Local-to-Percona.md
+        - name: 从云主机 Percona 导入
+          href: Best-Practices/Data-Migration/Import-Data-Into-Percona-Instance/VM-to-Percona.md
       - name: 导入 MariaDB 
         items:
         - name: 从本地 MariaDB 导入
-          href: Best-Practices/Data-Migration/Import-Data-Into-Percona-Instance/VM-to-MariaDB.md
-        - name: 从云主机 Percona 导入
           href: Best-Practices/Data-Migration/Import-Data-Into-Percona-Instance/Local-to-MariaDB.md
+        - name: 从云主机 Percona 导入
+          href: Best-Practices/Data-Migration/Import-Data-Into-Percona-Instance/VM-to-MariaDB.md
     - name: 将备份文件恢复到自建数据库
       items:
       - name: 将备份恢复到自建 MySQL
@@ -284,6 +296,10 @@
         href: Best-Practices/Connect-Database-Instance/Client-Connect-SQLServer.md
       - name: 从云主机连接 SQL Server
         href: Best-Practices/Connect-Database-Instance/Host-Connect-SQLServer.md  
+  - name: 教程 
+    items:
+    - name: MySQL 性能测试 
+      href: Tutorial/MySQL-Performance-Test.md 
   - name: 常见问题
     items:
     - name: FAQ

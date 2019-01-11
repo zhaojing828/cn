@@ -8,7 +8,7 @@
 POST
 
 ## 请求地址
-https://monitor.jcloud.com/v1/regions/{regionId}/alarms/{alarmId}:enable
+https://monitor.jdcloud-api.com/v1/regions/{regionId}/alarms/{alarmId}/enable
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -23,6 +23,7 @@ https://monitor.jcloud.com/v1/regions/{regionId}/alarms/{alarmId}:enable
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|请求的标识id|
+|**result**|Object| |
 
 
 ## 返回码
