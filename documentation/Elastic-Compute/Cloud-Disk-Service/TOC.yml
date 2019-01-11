@@ -1,4 +1,3 @@
-
   name: 云硬盘
   href:
   items:
@@ -25,10 +24,10 @@
       - name: 使用约束
         href: Introduction/Restrictions.md       
 
-- name: 产品定价
+  - name: 产品定价
     items:
-    - name: 计费模式说明
-      items:
+      - name: 计费模式说明
+        items:
           - name: 计费规则
             href: Pricing/Billing-Mode-Instructions/Billing-Rules.md
           - name: 续费规则
@@ -37,10 +36,10 @@
             href: Pricing/Billing-Mode-Instructions/Owe-Rules.md
           - name: 到期&欠费提醒
             href: Pricing/Billing-Mode-Instructions/Owe-Remind.md
-    - name: 价格总览
-      href: Pricing/Price-Overview.md
-    - name:  购买渠道
-      items:
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name:  购买渠道
+        items:
           - name: 官网购买
             href: Pricing/Purchase-Channel/Buy-on-Website.md      
         
@@ -65,7 +64,6 @@
          items:
             - name: 云硬盘扩容概述
               href: Getting-Started/Cloud-Disk/Expand-Filesystem/Cloud-Disk-Expansion-Overview.md
-
             - name: 扩容文件系统（Windows）
               href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Windows.md
             - name: 扩容文件系统（Linux）
@@ -74,7 +72,6 @@
               href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-Raw-Disk-File-System.md
             - name: 扩容文件系统（多分区）
               href: Getting-Started/Cloud-Disk/Expand-Filesystem/Expand-File-System-Multi-Partition.md
-
        - name: 卸载云硬盘
          href: Getting-Started/Cloud-Disk/Detach-Cloud-Disk.md
        - name: 删除云硬盘
