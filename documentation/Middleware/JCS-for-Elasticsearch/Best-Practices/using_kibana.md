@@ -30,7 +30,7 @@ Kibana是一个开源的数据分析和可视化的平台，用户可以使用Ki
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_5.png)
 4.默认搜索匹配所有文档。
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_6.png)
-定义bucket：在样本数据集account.json中，每一个account都包含balance，通过建立一个bucket，可以定义balance的ranges，并且可以查看到有多少account在每个rangs中。
+5.定义bucket。在样本数据集account.json中，每一个account都包含balance，通过建立一个bucket，可以定义balance的ranges，并且可以查看到有多少account在每个rangs中。</br>
 a)	点击“Split Slices” bucket type</br>
 b)	在“Aggregation”的下拉框中选择“Range”</br>
 c)	在“Field”下拉框中选择“balance”</br>
@@ -44,7 +44,7 @@ e)	定义以下的ranges：</br>
 31000       50000</br>
 于是可以看到account在每个balance range的比例。
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_7.png)
-定义子bucket：使用account的holder’s age作为度量单位，通过添加另一个bucket，可以看到在每一个balance range中account holder的age。</br>
+6.定义子bucket：使用account的holder’s age作为度量单位，通过添加另一个bucket，可以看到在每一个balance range中account holder的age。</br>
 a)	点击“Add sub-buckets” bucket type</br>
 b)	点击“Split Slices” bucket type</br></br>
 c)	在“sub Aggregation”的下拉框中选择“Terms”</br>
@@ -53,7 +53,7 @@ e)	点击“Apply changes”</br>
 现在可以看到account holder的age环绕在balance range中。</br>
 
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_8.png)
-点击“Save“，输入”Pie Example “进行保存。</br>
+7.点击“Save“，输入”Pie Example “进行保存。</br>
 也可以根据您的需要创建其他类型的可视化，如Coordinate Map,Markdown,Vertical Bar。
 
 ### 结合仪表盘
