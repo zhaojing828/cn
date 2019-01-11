@@ -12,10 +12,10 @@
 ### 操作步骤
 
 1.登录京东云控制台，选择对象存储->空间管理->空间设置，选择**权限设置**，展示您当前的权限设置内容，如图：
-![修改空间权限](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-103.png)
+![修改空间权限](../../../../../image/Object-Storage-Service/OSS-103.png)
 2.修改空间权限
  如图：
- ![修改空间权限](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-104.png)
+ ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-104.png)
  **说明：**
  
  * 若修改ACL，则点击读写权限设置下拉框，选择私有读写、公有读私有写、公有读写3中权限，点击确定。
@@ -55,7 +55,7 @@ d. Referer白名单：由于京东云对象存储是按用量收费，为避免�
 
 （3）除了通过表单来创建Bucket Policy之外，您也可以通过自定义权限编辑器进行Policy设置（注：编辑器中会展示出当前Bucket下全部的Policy，编辑器中无法添加注释，且最多允许输入16KB），效果如下：
 
-![自定义权限编辑器](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-035.png)
+![自定义权限编辑器](../../../../../image/Object-Storage-Service/OSS-035.png)
 
 （4）若您是通过API或SDK创建的Bucket，并且在创建时并未指定Bucket的权限，则系统会为该Bucket赋予默认的私有读写（Private）权限，即只有Bucket Owner可对该Bucket下的资源进行操作和访问，全部其他用户的所有请求都会被拒绝，若要允许某些用户对于该Bucket下的资源进行访问和操作，请在Bucket Policy中进行授权或将Bucket的权限改为公有读或公有读写（Public-Read或Public-Read-Write）。
 
@@ -89,7 +89,7 @@ Referer白名单语义解释：
 
 参考效果如下：
 
-![Referer白名单](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-036.png)
+![Referer白名单](../../../../../image/Object-Storage-Service/OSS-036.png)
 
  
  
