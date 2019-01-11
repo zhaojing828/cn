@@ -48,52 +48,52 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     示例
     例如，给定账户 ID 为 123456789012 的情况下，您可以使用以下任一方法来在 Principal 元素中指定账户：
     
-    ```
-        //单个账号
+```
+    //单个账号
 
-        "Principal":{"AWS":"arn:aws:iam::123456789012:root"}
-        // 或者
-        "Principal": { "AWS": "123456789012"}
+    "Principal":{"AWS":"arn:aws:iam::123456789012:root"}
+    // 或者
+    "Principal": { "AWS": "123456789012"}
 
-        //多个账号
+    //多个账号
 
-        "Principal": {
-        "AWS": [
-        "arn:aws:iam::123456789012:root",
-        "111111111111"
-        ]
-        }  
-    
-    ```
+    "Principal": {
+    "AWS": [
+    "arn:aws:iam::123456789012:root",
+    "111111111111"
+    ]
+    }  
+
+```
     
 2.要授予京东云IAM 子用户权限
 
   指定IAM 子用户:"AWS": "arn:aws:iam::account-ID:user/user-name"
   user-name 为您想要授权的子用户用户名
     
-       ```
-            //单个IAM 子用户
-            "Principal": { "AWS": "arn:aws:iam::123456789012:user/user-name" }  
-            //多个IAM 子用户
-            "Principal": {
-            "AWS": [
-                "arn:aws:iam::123456789012/user-name-1",
-                "arn:aws:iam::111111111111:user/UserName2"
-             ]
-            }
+```
+    //单个IAM 子用户
+    "Principal": { "AWS": "arn:aws:iam::123456789012:user/user-name" }  
+    //多个IAM 子用户
+    "Principal": {
+    "AWS": [
+        "arn:aws:iam::123456789012/user-name-1",
+        "arn:aws:iam::111111111111:user/UserName2"
+     ]
+    }
 
-        ``` 
+``` 
     
 3.要授予每个人权限，也称为匿名访问
  
   例如，如果您将存储空间配置为网站，您需要该存储空间中的所有对象都可公开访问，请将Principal的值设置为 "*" 
   示例：
   
-      ```
-          "Principal":"*"
-          //或者
-          "Principal":{"AWS":"*"}
-      ```
+```
+  "Principal":"*"
+  //或者
+  "Principal":{"AWS":"*"}
+```
 ### 指定Effect
 Effect 代表本条的Statement的授权的结果，分为 允许（Allow） 和 显示禁止（Deny）。多条 Statement 同时匹配成功时，显示禁止（Deny）的优先级更高。
 如果没有显式授予（允许）对资源的访问权限，则隐式拒绝访问。您也可显式禁止（deny）对资源的访问，这样可确保用户无法访问该资源，即使有其他策略授予了访问权限的情况下也是如此。
