@@ -57,6 +57,7 @@ html http://opencdn.jcloud.com/api/changeSource
     "source" :"[{'domain':'source1.a.com','priority':'1'},{'domain':'source2.a.com','priority':'2'}]"
  }
 ```
+```
 IP回源示例
 
 {
@@ -67,7 +68,7 @@ IP回源示例
     "sourceType" :"ips",
     "source" :"[{'ip':'1.1.1.1','master':'1','ratio':0.6},{'ip':'2.2.2.2','master':'1','ratio':0.4},{'ip':'3.3.3.3','master':'2','ratio':'0.3'},{'ip':'4.4.4.4','master':'2','ratio':'0.7'}]"
  }
- 
+``` 
 - ### **返回示例**
 
 •        json格式
