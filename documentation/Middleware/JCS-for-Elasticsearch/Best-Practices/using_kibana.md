@@ -17,17 +17,18 @@ Kibana是一个开源的数据分析和可视化的平台，用户可以使用Ki
 3.在此搜索条件将返回account_number在【0，99】之间并且balance的值大于47500的结果。</br>
 
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_1.png)
-另外，还可以通过增加过滤属性作为条件筛选搜索结果。在“Available Fields list ”下的过滤条件中选择“Add”作为Fileds。例如选择“account_number”作为Fileds时，则搜索结果中只包含account_number列。</br>
+另外，还可以通过增加过滤属性作为条件筛选搜索结果。在“Available Fields list ”下的过滤条件中选择“Add”作为Fileds，若选择“account_number”作为Fileds时，则搜索结果中只包含account_number列。</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_2.png)
 ### 数据可视化
 单击kibana页面左侧导航栏的“Visualize”，进行数据的可视化。
-首先，单击屏幕中央的“Create a visualization”
+#### 操作示例
+1.单击屏幕中央的“Create a visualization”；</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_3.png)
-然后，选择pie。
+2.选择pie。</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_4.png)
-可以从已经保存的搜索结果中创建可视化，也可以重新输入新的检索规则，若要重新输入检索规则，需要指定一个索引模式。例如，选择索引模式为“ba*”，进行数据可视化。
+3.选择索引模式为“ba*”，进行数据可视化。可以从已经保存的搜索结果中创建可视化，也可以重新输入新的检索规则，若要重新输入检索规则，需要指定一个索引模式；</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_5.png)
-默认搜索匹配所有文档。
+4.默认搜索匹配所有文档。
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_6.png)
 定义bucket：在样本数据集account.json中，每一个account都包含balance，通过建立一个bucket，可以定义balance的ranges，并且可以查看到有多少account在每个rangs中。
 a)	点击“Split Slices” bucket type</br>
