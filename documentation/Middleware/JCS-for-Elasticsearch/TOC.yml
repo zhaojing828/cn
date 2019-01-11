@@ -69,14 +69,14 @@
           href: Operation-Guide/Tag/Filter-by-Tag.md
   - name: 最佳实践
     items:
-    - name: 规格容量评估
-        href: Operation-Guide/Capacity-Assessment.md
-    - name: 访问集群
-        href: Operation-Guide/connect-ES.md
-    - name: 使用kibana
-        href: Operation-Guide/using_kibana.md
-    - name: 性能指标
-        href: Best-Practices/performance.md
+     - name: 规格容量评估
+       href: Operation-Guide/Capacity-Assessment.md
+     - name: 访问集群
+       href: Operation-Guide/connect-ES.md
+     - name: 使用kibana
+       href: Operation-Guide/using_kibana.md
+     - name: 性能指标
+       href: Best-Practices/performance.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考
