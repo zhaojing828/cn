@@ -53,6 +53,8 @@
         href: Operation-Guide/connect-ES.md
       - name: 使用kibana
         href: Operation-Guide/using_kibana.md
+      - name: 专用主节点
+        href: Operation-Guide/Dedicated-master.md 
       - name: 插件支持
         href: Operation-Guide/IK.md 
       - name: 监控集群
