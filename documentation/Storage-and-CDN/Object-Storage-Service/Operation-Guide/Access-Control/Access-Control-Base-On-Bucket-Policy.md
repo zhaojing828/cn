@@ -47,6 +47,7 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     在指定主账号时，您可以使用账户 AWS: arn:aws:iam::account-ID:root 或 AWS: 前缀后加账户 ID 构成的简略格式。
     示例
     例如，给定账户 ID 为 123456789012 的情况下，您可以使用以下任一方法来在 Principal 元素中指定账户：
+    
     ```
     //单个账号
 
@@ -62,7 +63,9 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     "111111111111"
     ]
     }  
+    
     ```
+    
 2.要授予京东云IAM 子用户权限
 
   指定IAM 子用户:"AWS": "arn:aws:iam::account-ID:user/user-name"
