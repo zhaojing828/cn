@@ -1,6 +1,6 @@
 # 访问控制权限修改
 
-当你创建存储空间后有修改Bucket的访问权限需求的时候可以使用以下方法完成修改。可以满足您更改整个存储空间访问权限或者实现更加细致的权限粒度控制。
+京东云对象存储提供灵活权限控制机制，您可以在创建存储空间的时候设置存储空间的访问权限，也可以在创建之后修改空间权限，除了提供存储空间级别的访问权限控制，您也可以对文件和目录级别进行灵活的权限访问配置。目前针对Bucket级有四种访问权限：
 
 |权限名称|权限英文值|权限说明|
 |-|-|-|
@@ -9,12 +9,14 @@
 |公有读写|Public-Read-Write|Bucket Owner获得全部可执行的操作权限，其他人获得READ和WRITE权限；所有这些操作产生的费用由该Bucket的Owner承担，请慎用该权限。|
 自定义权限|User-Defined|可对指定用户设置GetObject、PutObject、DeleteObject、ListObjects、DeleteBucket的权限，并可指定该权限可访问的资源，以及指定具有该权限的IP地址和Referer白名单等.|
 
+细节说明：
+若您是通过API或SDK创建的Bucket，并且在创建时并未指定Bucket的权限，则系统会为该Bucket赋予默认的私有读写（Private）权限，您可根据自身业务情况修改存储空间权限。
+
 ### 控制台中操作步骤
 
 1.登录京东云控制台，选择对象存储->空间管理->空间设置，选择**权限设置**，展示您当前的权限设置内容，如图：
 ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-103.png)
-2.修改空间权限
- 如图：
+2.修改空间权限 ，如图：
  ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-104.png)
  **说明：**
  
@@ -24,34 +26,34 @@
  ![修改空间权限-Bucket policy](../../../../../image/Object-Storage-Service/OSS-105.png)
  支持权限表单设置和编辑器两种方式：
  - 【添加自定义权限】--您可以使用方便简单的表单，填写设置项完成设置。
+   ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-106.png)
+      - （1）每个Bucket最多允许创建10个Bucket Policy；
+      - （2）Bucket Policy中各个字段的定义如下：
+         a. 用户授权：定义了该Bucket Policy所影响到的用户，默认值为*，语义是对全部用户生效，若需要只针对部分用户生效，请点击“自定义用户”，并在文本框中 输入对应用户的用户ID（注：用户ID不同为用户Pin，您的用户ID可以到用户管理中去查询，效果如下图），每行一个用户ID，即通过换行符间隔多个用户ID。
+
+        ![用户授权1](../../../../../image/Object-Storage-Service/OSS-033.png)
+
+        ![用户授权2](../../../../../image/Object-Storage-Service/OSS-034.png)
+
+        b. 涉及操作：定义了对该Bucket可以进行的操作，可进行单选也可进行全选，但至少要勾选一项，每项操作定义如下：
+
+        |操作项名称|操作项说明|
+        |-|-|
+        |PutObject|上传某个Object到该Bucket，支持普通上传和分块上传|
+        |GetObject|获取该Bucket内某个Object及其相关信息|
+        |DeleteObject|删除该Bucket内某个Object|
+        |ListBucket|列出该Bucket内的Objcet|
+        |DeleteBucket|删除该Bucket|
+
+        c. 影响资源：定义了对该Bucket下的哪些资源可操作或不可操作（即Allow或Deny），默认选中“可操作资源”，文本框中默认值为bucketname/*，语义为对当前Bucket下的全部资源是可操作的，输入格式示例：myBucket/myfolder/object* ，myBucket/*，内容必须以Bucket名称开始，资源如果只有1个斜杠，不能以斜杠结尾，资源可以设置多个，每行1个且每行最多1个通配符，最多可以增加10条记录。
+
+        d. Referer白名单：由于京东云对象存储是按用量收费，为避免您存储在京东云对象存储的数据被其他人盗链，京东云对象存储支持基于HTTP Header中表头字段的Referer防盗链方法，您可以在对象存储控制台的自定义权限中或者通过API的方式对一个Bucket设置Referer字段的白名单和是否允许Referer为空的请求访问，下文会对Referer白名单的规则作出详解。
  - 【添加自定义编辑器】--您可以可视化编辑器，直接填写JSON指定合法的Bucket policy。
-  ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-106.png)
   ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-107.png)
-**细节说明：**
-（1）每个Bucket最多允许创建10个Bucket Policy；
-（2）Bucket Policy中各个字段的定义如下：
-a. 用户授权：定义了该Bucket Policy所影响到的用户，默认值为*，语义是对全部用户生效，若需要只针对部分用户生效，请点击“自定义用户”，并在文本框中输入对应用户的用户ID（注：用户ID不同为用户Pin，您的用户ID可以到用户管理中去查询，效果如下图），每行一个用户ID，即通过换行符间隔多个用户ID。
-
-![用户授权1](../../../../../image/Object-Storage-Service/OSS-033.png)
-
-![用户授权2](../../../../../image/Object-Storage-Service/OSS-034.png)
-
-b. 涉及操作：定义了对该Bucket可以进行的操作，可进行单选也可进行全选，但至少要勾选一项，每项操作定义如下：
-
-|操作项名称|操作项说明|
-|-|-|
-|PutObject|上传某个Object到该Bucket，支持普通上传和分块上传|
-|GetObject|获取该Bucket内某个Object及其相关信息|
-|DeleteObject|删除该Bucket内某个Object|
-|ListBucket|列出该Bucket内的Objcet|
-|DeleteBucket|删除该Bucket|
-
-c. 影响资源：定义了对该Bucket下的哪些资源可操作或不可操作（即Allow或Deny），默认选中“可操作资源”，文本框中默认值为bucketname/*，语义为对当前Bucket下的全部资源是可操作的，输入格式示例：myBucket/myfolder/object* ，myBucket/*，内容必须以Bucket名称开始，资源如果只有1个斜杠，不能以斜杠结尾，资源可以设置多个，每行1个且每行最多1个通配符，最多可以增加10条记录。
-
-d. Referer白名单：由于京东云对象存储是按用量收费，为避免您存储在京东云对象存储的数据被其他人盗链，京东云对象存储支持基于HTTP Header中表头字段的Referer防盗链方法，您可以在对象存储控制台的自定义权限中或者通过API的方式对一个Bucket设置Referer字段的白名单和是否允许Referer为空的请求访问，下文会对Referer白名单的规则作出详解。
-
-（3）除了通过表单来创建Bucket Policy之外，您也可以通过自定义权限编辑器进行Policy设置（注：编辑器中会展示出当前Bucket下全部的Policy，编辑器中无法添加注释，且最多允许输入16KB）
-（4）若您是通过API或SDK创建的Bucket，并且在创建时并未指定Bucket的权限，则系统会为该Bucket赋予默认的私有读写（Private）权限，即只有Bucket Owner可对该Bucket下的资源进行操作和访问，全部其他用户的所有请求都会被拒绝，若要允许某些用户对于该Bucket下的资源进行访问和操作，请在Bucket Policy中进行授权或将Bucket的权限改为公有读或公有读写（Public-Read或Public-Read-Write）。
+  
+   **细节说明**
+     - 编辑器中无法添加注释，且最多允许输入16KB。
+     - 您输入的Bucket policy 必须为合法JSON。
 
 ## 设置Referer白名单
 
