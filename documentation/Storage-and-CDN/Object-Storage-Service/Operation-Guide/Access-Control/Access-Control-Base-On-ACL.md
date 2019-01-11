@@ -3,6 +3,7 @@ OSS 为权限控制提供访问控制列表（ACL）。ACL是授予Bucket访问�
 您可以在创建Bucket时配置ACL，也可以在创建Bucket后的任意时间内修改ACL，若您创建Bucket时为指定则默认权限为私有读写。
 # Bucket ACL
 Bucket ACL是Bucket级别的权限访问控制。目前支持三种访问权限：public-read-write，public-read 和 private，含义如下：
+
 |权限值|中文名称|权限对访问者的限制|
 |:--|:---|:--------|
 |public-read-write|公有读写|任何人（包括匿名访问）都可以对该 Bucket 中的 Object 进行读/写/删除操作；所有这些操作产生的费用由该 Bucket 的 Owner 承担，请慎用该权限。|
