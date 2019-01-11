@@ -31,7 +31,8 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     - 资源（Resource）：描述指代的是 OSS 上面的某个具体的资源或者某些资源。资源是用六段式描述。该元素是必填项，有关如何指定资源的信息，详见下文【元素用法-Resource】。
     - 条件（Condition）：描述策略生效的约束条件。条件包括操作符、操作键和操作值组成。条件值可包括Referer、IP 地址信息。该元素是非必填项。
     
-## 元素用法   
+## 元素用法 
+
 ### 指定委托人
 
 委托人 principal 元素用于指定被允许或拒绝访问资源的用户、账户、服务或其他实体。元素 principal 仅在存储空间中起作用；用户策略中不必指定，因为用户策略直接附加到特定用户。下面是在OSS Bucket Policy 中指定 principal 的示例。
@@ -64,31 +65,32 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     ```
 2.要授予京东云IAM 子用户权限
 
-    - 指定IAM 子用户:"AWS": "arn:aws:iam::account-ID:user/user-name"
-    - user-name 为您想要授权的子用户用户名
+  指定IAM 子用户:"AWS": "arn:aws:iam::account-ID:user/user-name"
+  user-name 为您想要授权的子用户用户名
     
-   ```
-        //单个IAM 子用户
-        "Principal": { "AWS": "arn:aws:iam::123456789012:user/user-name" }  
-        //多个IAM 子用户
-        "Principal": {
-        "AWS": [
-            "arn:aws:iam::123456789012/user-name-1",
-            "arn:aws:iam::111111111111:user/UserName2"
-         ]
-        }
-       
-    ``` 
+       ```
+            //单个IAM 子用户
+            "Principal": { "AWS": "arn:aws:iam::123456789012:user/user-name" }  
+            //多个IAM 子用户
+            "Principal": {
+            "AWS": [
+                "arn:aws:iam::123456789012/user-name-1",
+                "arn:aws:iam::111111111111:user/UserName2"
+             ]
+            }
+
+        ``` 
     
 3.要授予每个人权限，也称为匿名访问
  
   例如，如果您将存储空间配置为网站，您需要该存储空间中的所有对象都可公开访问，请将Principal的值设置为 "*" 
   示例：
-  ```
-  "Principal":"*"
-  //或者
-  "Principal":{"AWS":"*"}
-  ```
+  
+      ```
+      "Principal":"*"
+      //或者
+      "Principal":{"AWS":"*"}
+      ```
 
 
 
