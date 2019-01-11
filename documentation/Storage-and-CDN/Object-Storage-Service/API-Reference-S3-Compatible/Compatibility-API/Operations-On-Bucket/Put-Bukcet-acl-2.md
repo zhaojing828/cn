@@ -22,15 +22,16 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 
 通过Header您可以使用以下方法设置访问权限：
 * 指定固定的ACL
-* 若您想明确指定每个被授权者的权限请使用[put Bukcet policy](https://docs.jdcloud.com/cn/object-storage-service/delete-bucket-policy-2) 
-完成细粒度授权。
-
-OSS支持一组预定义的ACL（固定ACL），每种固定ACL都有一组预定义的被授权者和权限。要使用固定ACL设置访问权限，请使用以下Header，并将固定ACL名称指定（默认私有读写private）
-。如果使用仅支持使用此Header，无法在请求中使用其他用于访问控制的Header。
+OSS支持一组预定义的ACL（固定ACL），每种固定ACL都有一组预定义的被授权者和权限。要使用固定ACL设置访问权限，请使用以下Header，并将固定ACL名称指定（默认私有读写private）。
 
 名称|描述|必须
 ---|---|---
 x-amz-acl|指定固定ACL设置Bucket的ACL。<br>Type: String<br>Valid Values: private、public-read、public-read-write<br>Default: private|否
+
+若您想明确指定每个被授权者的权限请使用[put Bukcet policy](https://docs.jdcloud.com/cn/object-storage-service/delete-bucket-policy-2) 
+完成细粒度授权。
+
+
 ### 请求示例
 ```xml
 PUT /?acl HTTP/1.1
