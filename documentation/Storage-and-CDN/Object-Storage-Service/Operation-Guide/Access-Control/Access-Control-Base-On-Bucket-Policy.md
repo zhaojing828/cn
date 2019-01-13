@@ -33,7 +33,7 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     
 ## 元素用法 
 
-### 指定principal
+### principal
 
 委托人 principal 元素用于指定被允许或拒绝访问资源的用户、账户、服务或其他实体。元素 principal 仅在存储空间中起作用；用户策略中不必指定，因为用户策略直接附加到特定用户。下面是在OSS Bucket Policy 中指定 principal 的示例。
    
@@ -94,7 +94,7 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
   //或者
   "Principal":{"AWS":"*"}
 ```
-### 指定Effect
+### Effect
 Effect 代表本条的Statement的授权的结果，分为 允许（Allow） 和 显示禁止（Deny）。多条 Statement 同时匹配成功时，显示禁止（Deny）的优先级更高。
 如果没有显式授予（允许）对资源的访问权限，则隐式拒绝访问。您也可显式禁止（deny）对资源的访问，这样可确保用户无法访问该资源，即使有其他策略授予了访问权限的情况下也是如此。
 示例
@@ -102,7 +102,57 @@ Effect 代表本条的Statement的授权的结果，分为 允许（Allow） 和
 "Effect" : "allow"
 //或者
 "Effect" : "deny"
+
 ```
+### Action
+
+Bucket policy 中 Action 支持列表如下：
+
+|操作关键字|操作项说明|对应API|操作级别 | 
+|-|-|-|-|
+|s3:PutObject|上传某个Object到该Bucket，支持普通上传和分块上传等|PUT Object, POST Object, PUT Object - COPY, Initiate Multipart Upload, Upload Part, Complete Multipart Upload，Abort Multipart Upload|  Object 级别操作  |
+|s3:GetObject|获取该Bucket内某个Object及其相关信息|GET Object, HEAD Object|	Object 级别操作  |
+|s3:DeleteObject|删除该Bucket内某个Object|DELETE Object|Object 级别操作|
+|s3:ListBucket|列出该Bucket内的Objcet|GET Bucket (List Objects), HEAD Bucket, List Multipart Upload|Bucket 级别操作 |
+|s3:DeleteBucket|删除该Bucket|DELETE Bucket|Bucket 级别操作 |
+
+示例：
+例如，使用 s3:DeleteObject 权限，用户可对 OSS 执行删除存储空间操作。
+
+### Resource
+
+对于您的 OSS 资源，在Bucket policy 中与IAM policy中指定方式略有不同，Bucket policy 中指定OSS Resource表示方式为：
+您不需要指定区域和命名空间，如下所示用空格代替，relative-id指定您的OSS资源，可是是存储空间也可是其中一些或者某个对象，支持通配符（？与*）。
+```
+arn:aws:s3:::relative-id
+//示例：
+arn:aws:s3:::bucket_name 
+arn:aws:s3:::bucket_name/key_name
+
+```
+示例：以存储空间名为 examplebucket 为例
+|资源表示|说明|
+|-|-|
+|arn:aws:s3:::examplebucket/developers/design_info.doc|表示examplebucket存储空间中的/developers/design_info.doc 对象|
+|arn:aws:s3:::examplebucket/* |表示 examplebucket 存储存储空间中的所有对象|
+|arn:aws:s3:::examplebucket/dir/* |表示 examplebucket 存储存储空间中dir目录下的全部对象|
+|arn:aws:s3:::examplebucket/abc*|表示 examplebucket 存储存储空间以adb为前缀的全部对象|
+|arn:aws:s3:::example?bucket/* |表示存储空间 (例如 example1bucket、example2bucket、example3bucket 等) 中的所有对象|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
