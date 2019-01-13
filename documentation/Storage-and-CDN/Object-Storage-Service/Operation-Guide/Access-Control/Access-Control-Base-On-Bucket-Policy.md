@@ -101,9 +101,9 @@ Effect 代表本条的Statement的授权的结果，分为 允许（Allow） 和
 如果没有显式授予（允许）对资源的访问权限，则隐式拒绝访问。您也可显式禁止（deny）对资源的访问，这样可确保用户无法访问该资源，即使有其他策略授予了访问权限的情况下也是如此。
 示例
 ```
-"Effect" : "allow"
+"Effect" : "Allow"
 //或者
-"Effect" : "deny"
+"Effect" : "Deny"
 
 ```
 ### Action
