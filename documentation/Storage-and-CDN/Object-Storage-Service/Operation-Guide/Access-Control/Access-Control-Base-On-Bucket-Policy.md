@@ -30,6 +30,8 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     - 操作（Action）：描述被允许或拒绝的操作。操作可以是 API或者功能集（一组特定的 API）。该元素是必填项，详见下文【元素用法-Action】。
     - 资源（Resource）：描述指代的是 OSS 上面的某个具体的资源或者某些资源。资源是用六段式描述。该元素是必填项，有关如何指定资源的信息，详见下文【元素用法-Resource】。
     - 条件（Condition）：描述策略生效的约束条件。条件包括操作符、操作键和操作值组成。条件值可包括Referer、IP 地址信息。该元素是非必填项。
+    **说明**
+    Bucket Policy 大小限制为16k。 
     
 ## 元素用法 
 
@@ -128,9 +130,10 @@ arn:aws:s3:::relative-id
 //示例：
 arn:aws:s3:::bucket_name 
 arn:aws:s3:::bucket_name/key_name
-
 ```
+
 示例：以存储空间名为 examplebucket 为例
+
 |资源表示|说明|
 |-|-|
 |arn:aws:s3:::examplebucket/developers/design_info.doc|表示examplebucket存储空间中的/developers/design_info.doc 对象|
@@ -138,6 +141,109 @@ arn:aws:s3:::bucket_name/key_name
 |arn:aws:s3:::examplebucket/dir/* |表示 examplebucket 存储存储空间中dir目录下的全部对象|
 |arn:aws:s3:::examplebucket/abc*|表示 examplebucket 存储存储空间以adb为前缀的全部对象|
 |arn:aws:s3:::example?bucket/* |表示存储空间 (例如 example1bucket、example2bucket、example3bucket 等) 中的所有对象|
+### Condition
+Bucket policy 中可使您在授予权限时指定条件，即规则生效的条件，该条件是可选的。
+如果在一个Condition中指定了多个条件操作符，那么多个条件操作符是AND的关系。如果某个条件的值指定的是一个数组，那么数组内元素是OR的关系。
+目前仅支持限制用户访问来源（Referer和IP地址）。下面列出了目前支持的操作符列表及说明。
+1.String操作符
+
+| Condition 操作符|说明|
+|-|-|
+|StringEquals|表示examplebucket存储空间中的/developers/design_info.doc 对象|
+|NotStringEquals |忽略大小写的字符串不相等比较|
+|StringLike | 忽略大小写的字符串比较。该值可以包含多字符通配符 * 或者单字符通配符? |
+|StringNotLike|忽略大小写的不匹配字符串比较。该值可以包含多字符通配符 * 或者单字符通配符? |
+|arn:aws:s3:::example?bucket/* |表示存储空间 (例如 example1bucket、example2bucket、example3bucket 等) 中的所有对象|
+
+2.IP Address Condition操作符
+| Condition 操作符|说明|
+|-|-|
+|IpAddress|指定的IP地址或范围|
+|NotIpAddress |除指定 IP 地址或范围外的所有 IP 地址|
+3.通用操作符
+| Condition 操作符|说明|
+|-|-|
+|Null|如果为空或者没有值|
+
+示例：
+1.限制IP访问
+
+```
+ "Condition": {
+         "IpAddress": {"aws:SourceIp": "54.240.143.0/24"},
+         "NotIpAddress": {"aws:SourceIp": "54.240.143.188/32"} 
+      } 
+
+```
+2.对指定的HTTP Referrer进行控制
+
+```
+  "Condition":{
+        "StringLike":{"aws:Referer":["http://www.example.com/*","http://example.com/*"]}
+      }
+
+```
+
+### Bucket policy 完整示例
+
+1.主账号允许匿名用户（所有用户），在访问来源IP为54.240.143.0/24执行对testbucket 存储空间中的所有对象 GET（下载）和 HEAD 操作，而无需鉴权。
+更多授权相关设置参见[跨账号授权]（）
+
+```
+ {
+  "Version": "2012-10-17",
+  "Id":"BucketId",
+  "Statement": [
+    {
+      "Sid": "IPAllow",
+     "Effect": "Allow",
+      "Principal": "*",
+      "Action": ["s3:GetObject"],
+      "Resource": "arn:aws:s3:::testbucket/*",
+      "Condition": {
+         "IpAddress": {"aws:SourceIp": "54.240.143.0/24"},
+      } 
+    } 
+  ]
+}
+```
+2.授权跨账号对指定存储空间testbucket中文件image.png的读写权限
+```
+ {
+	"Version": "2012-10-17",
+	"Id": "BucketId",
+	"Statement": [{
+		"Sid": "OtherAccountAllow",
+		"Effect": "Allow",
+		"Principal": {
+			"AWS": [
+				"arn:aws:iam::123456789012:root",
+				"1234567890987"
+			]
+		},
+		"Action": ["s3:GetObject", "s3:PutObject"],
+		"Resource": "arn:aws:s3:::testbucket/iimage.png"
+	}]
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
