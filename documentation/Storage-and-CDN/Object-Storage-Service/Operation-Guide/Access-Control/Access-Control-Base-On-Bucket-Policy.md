@@ -153,7 +153,6 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 |NotStringEquals |忽略大小写的字符串不相等比较|
 |StringLike | 忽略大小写的字符串比较。该值可以包含多字符通配符 * 或者单字符通配符? |
 |StringNotLike|忽略大小写的不匹配字符串比较。该值可以包含多字符通配符 * 或者单字符通配符? |
-|arn:aws:s3:::example?bucket/* |表示存储空间 (例如 example1bucket、example2bucket、example3bucket 等) 中的所有对象|
 
 2.IP Address Condition操作符
 | Condition 操作符|说明|
@@ -190,21 +189,21 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 更多授权相关设置参见[跨账号授权]（）
 
 ```
- {
-  "Version": "2012-10-17",
-  "Id":"BucketId",
-  "Statement": [
-    {
-      "Sid": "IPAllow",
-     "Effect": "Allow",
-      "Principal": "*",
-      "Action": ["s3:GetObject"],
-      "Resource": "arn:aws:s3:::testbucket/*",
-      "Condition": {
-         "IpAddress": {"aws:SourceIp": "54.240.143.0/24"},
-      } 
-    } 
-  ]
+{
+	"Version": "2012-10-17",
+	"Id": "BucketId",
+	"Statement": [{
+		"Sid": "IPAllow",
+		"Effect": "Allow",
+		"Principal": "*",
+		"Action": ["s3:GetObject"],
+		"Resource": "arn:aws:s3:::testbucket/*",
+		"Condition": {
+			"IpAddress": {
+				"aws:SourceIp": "54.240.143.0/24"
+			}
+		}
+	}]
 }
 ```
 2.授权跨账号对指定存储空间testbucket中文件image.png的读写权限
