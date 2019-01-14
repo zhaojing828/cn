@@ -186,7 +186,7 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 ### Bucket policy 完整示例
 
 1.主账号允许匿名用户（所有用户），在访问来源IP为54.240.143.0/24执行对testbucket 存储空间中的所有对象 GET（下载）和 HEAD 操作，而无需鉴权。
-更多授权相关设置参见[跨账号授权]（）
+更多授权相关设置参见[跨账号授权](../../Best-Practices/Access-Control-And-Permission-Management/Cross-Account-Access-Overview.md)
 
 ```
 {
@@ -221,44 +221,10 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 			]
 		},
 		"Action": ["s3:GetObject", "s3:PutObject"],
-		"Resource": "arn:aws:s3:::testbucket/iimage.png"
+		"Resource": "arn:aws:s3:::testbucket/image.png"
 	}]
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
