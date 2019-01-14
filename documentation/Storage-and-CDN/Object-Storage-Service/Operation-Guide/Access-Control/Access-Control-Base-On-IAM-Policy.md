@@ -133,7 +133,7 @@ jrn:oss:*:*:bucket_name/key_name
 ```
 
 #### 4.不限制前缀的只写不读Policy
-此Policy表示应用可以对Bucketapp-base-oss下带有前缀myuser1/的Object进行上传。但无法上传其他前缀的Object。采用此种Policy，如果不同的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
+此Policy表示应用可以对Bucket名称为：app-base-oss下带有前缀myuser1/的Object进行上传。但无法上传其他前缀的Object。采用此种Policy，如果不同的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
 {
     "Statement": [
