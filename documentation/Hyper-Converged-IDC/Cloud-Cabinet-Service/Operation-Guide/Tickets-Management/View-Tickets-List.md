@@ -9,3 +9,5 @@
 点击工单列表中的“**查看**”，跳转到工单详情，如下图：
 ![工单详细查看连接](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS008.png)
 
+
+

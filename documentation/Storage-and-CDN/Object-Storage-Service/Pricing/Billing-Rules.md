@@ -2,129 +2,89 @@
 
 ## 计费项
 
-<table border=0 cellpadding=0 cellspacing=0 width=840 style='border-collapse:
- collapse;table-layout:fixed;width:632pt'>
- <col class=xl65 width=110 style='mso-width-source:userset;mso-width-alt:3520;
- width:83pt'>
- <col class=xl65 width=106 style='mso-width-source:userset;mso-width-alt:3392;
- width:80pt'>
- <col class=xl65 width=216 style='mso-width-source:userset;mso-width-alt:6912;
- width:162pt'>
- <col class=xl65 width=339 style='mso-width-source:userset;mso-width-alt:10858;
- width:255pt'>
- <col class=xl65 width=69 style='width:52pt'>
- <tr height=19 style='height:14.0pt'>
-  <td colspan=2 height=19 class=xl66 width=216 style='height:14.0pt;width:163pt'>计费项</td>
-  <td class=xl66 width=216 style='border-left:none;width:162pt'>释义</td>
-  <td class=xl66 width=339 style='border-left:none;width:255pt'><span
-  style='mso-spacerun:yes'>&nbsp;</span>计费公式</td>
-  <td class=xl66 width=69 style='border-left:none;width:52pt'><span
-  style='mso-spacerun:yes'>&nbsp;</span>说明</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td rowspan=2 height=131 class=xl67 width=110 style='height:98.0pt;
-  border-top:none;width:83pt'><span style='font-variant-ligatures: normal;
-  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
-  text-decoration-style: initial;text-decoration-color: initial'>存储容量</span></td>
-  <td class=xl68 width=106 style='border-top:none;border-left:none;width:80pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>实际存储空间占用量</span></td>
-  <td class=xl69 width=216 style='border-top:none;border-left:none;width:162pt'>实际存储空间占用量包括：<br>
-    1.标准存储类型的数据占用量<br>
-    2.低冗余类型的数据占用量</td>
-  <td class=xl68 width=339 style='border-top:none;border-left:none;width:255pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>当前存储容量（GB）* 对应存储类型的每天单价</span></td>
-  <td class=xl70 width=69 style='border-top:none;border-left:none;width:52pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>具体价格请查阅价格总览</span></td>
- </tr>
- <tr height=75 style='height:56.0pt'>
-  <td height=75 class=xl68 width=106 style='height:56.0pt;border-top:none;
-  border-left:none;width:80pt'><span style='font-variant-ligatures: normal;
-  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
-  text-decoration-style: initial;text-decoration-color: initial'>数据取回量</span></td>
-  <td class=xl71 width=216 style='border-top:none;border-left:none;width:162pt'><span
-  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
-  text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
-  text-decoration-color: initial'>对于低冗余存储类型数据的访问，会按照读取文件的大小计算数据取回量，不区分内、外网。</span></td>
-  <td class=xl69 width=339 style='border-top:none;border-left:none;width:255pt'>数据取回量费用
-  = 数据取回量（GB） * 每 GB 单价<br>
-    例：假如您需要从低冗余存储类型的Bucket中下载10个文件，每个文件10GB。那么数据取回的费用 = 10 * 10 * 每GB的数据取回单价</td>
-  <td class=xl72 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td rowspan=6 height=317 class=xl67 width=110 style='height:238.0pt;
-  border-top:none;width:83pt'><span style='font-variant-ligatures: normal;
-  font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
-  text-decoration-style: initial;text-decoration-color: initial'>访问流量</span></td>
-  <td class=xl73 width=106 style='border-top:none;border-left:none;width:80pt'>内网流入流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过京东云内网从云主机等内部服务上传数据到对象存储所产生的上行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>-</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>免费</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>内网流出流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过京东云内网从对象存储下载数据到云主机等内部服务所产生的下行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>-</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>免费</td>
- </tr>
- <tr height=37 style='height:28.0pt'>
-  <td height=37 class=xl73 width=106 style='height:28.0pt;border-top:none;
-  border-left:none;width:80pt'>外网流入流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过公网从本地端上传数据到京东云对象存储所产生的上行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>-</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>免费</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>外网流出流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过公网从京东云对象存储下载数据到本地端所产生的下行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计外网流出流量（GB）
-  * 每 GB 单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>具体价格请查阅价格总览</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>CDN回源流出流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>通过CDN服务层下载
-  OSS 的数据所产生的回源下行流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计
-  CDN 回源流出流量（GB） * 每 GB 单价跨区域复制流量</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>具体价格请查阅价格总览</td>
- </tr>
- <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl73 width=106 style='height:42.0pt;border-top:none;
-  border-left:none;width:80pt'>跨区域复制流量</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>使用跨区域复制功能将源
-  Bucket 的数据同步复制到目标 Bucket 时所产生的流出流量</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计跨区域复制流量（GB）
-  * 每 GB 单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
- <tr height=37 style='height:28.0pt'>
-  <td rowspan=2 height=74 class=xl66 width=110 style='height:56.0pt;border-top:
-  none;width:83pt'>请求次数</td>
-  <td class=xl73 width=106 style='border-top:none;border-left:none;width:80pt'>GET请求</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>对象存储OPEN
-  API当中全部GET请求</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计GET请求总数/10000
-  * 每万次请求单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
- <tr height=37 style='height:28.0pt'>
-  <td height=37 class=xl73 width=106 style='height:28.0pt;border-top:none;
-  border-left:none;width:80pt'>PUT请求</td>
-  <td class=xl73 width=216 style='border-top:none;border-left:none;width:162pt'>对象存储OPEN
-  API当中全部PUT请求</td>
-  <td class=xl73 width=339 style='border-top:none;border-left:none;width:255pt'>每天累计PUT请求总数/10000
-  * 每万次请求单价</td>
-  <td class=xl74 width=69 style='border-top:none;border-left:none;width:52pt'>目前免费</td>
- </tr>
+<table>
+<tr>
+    <td colspan="2">计费项</td>
+    <td>释义</td>
+    <td>计费公式</td>
+    <td>说明</td>
+</tr>
+<tr>
+    <td rowspan="2">存储容量</td>
+    <td>实际存储空间占用</td>
+    <td>实际存储空间占用量包括：<br>1.标准存储类型的数据占用量<br>2.低冗余类型的数据占用量</td>
+    <td>当前存储容量（GB）* 对应存储类型的每天单价</td>
+    <td>具体价格请查阅价格总览</td>
+</tr>
+<tr>
+    <td>数据取回量</td>
+    <td>对于低冗余存储类型数据的访问，会按照读取文件的大小计算数据取回量，不区分内、外网。</td>
+    <td>数据取回量费用 = 数据取回量（GB） * 每 GB 单价<br>例：假如您需要从低冗余存储类型的Bucket中下载10个文件，每个文件10GB。那么数据取回的费用 = 10 * 10 * 每GB的数据取回单价</td>
+    <td>目前免费</td>
+</tr>
+<tr>
+    <td rowspan="6">访问流量</td>
+    <td>内网流入流量</td>
+    <td>通过京东云内网从云主机等内部服务上传数据到对象存储所产生的上行流量</td>
+    <td>-</td>
+    <td>免费</td>
+</tr>
+<tr>
+    <td>内网流出流量</td>
+    <td>通过京东云内网从对象存储下载数据到云主机等内部服务所产生的下行流量</td>
+    <td>-</td>
+    <td>免费</td>
+</tr>
+<tr>
+    <td>外网流入流量</td>
+    <td>通过公网从本地端上传数据到京东云对象存储所产生的上行流量</td>
+    <td>-</td>
+    <td>免费</td>
+</tr>
+<tr>
+    <td>外网流出流量</td>
+    <td>通过公网从京东云对象存储下载数据到本地端所产生的下行流量</td>
+    <td>每天累计外网流出流量（GB） * 每 GB 单价</td>
+    <td>具体价格请查阅价格总览</td>
+</tr>
+<tr>
+    <td>CDN回源流出流量</td>
+    <td>通过CDN服务层下载 OSS 的数据所产生的回源下行流量</td>
+    <td>每天累计 CDN 回源流出流量（GB） * 每 GB 单价跨区域复制流量</td>
+    <td>具体价格请查阅价格总览</td>
+</tr>
+<tr>
+    <td>跨区域复制流量</td>
+    <td>使用跨区域复制功能将源 Bucket 的数据同步复制到目标 Bucket 时所产生的流出流量</td>
+    <td>每天累计跨区域复制流量（GB） * 每 GB 单价</td>
+    <td>目前免费</td>
+</tr>
+<tr>
+    <td rowspan="2">请求次数</td>
+    <td>GET请求</td>
+    <td>对象存储OPEN API当中全部GET请求</td>
+    <td>每天累计GET请求总数/10000 * 每万次请求单价</td>
+    <td>目前免费</td>
+</tr>
+<tr>
+    <td>PUT请求</td>
+    <td>对象存储OPEN API当中全部PUT请求</td>
+    <td>每天累计PUT请求总数/10000 * 每万次请求单价</td>
+    <td>目前免费</td>
+</tr>
+<tr>
+    <td rowspan="2">云端数据处理</td>
+    <td>音视频转码时长</td>
+    <td>使用音视频转码服务的输出文件时长</td>
+    <td>每天累计输出文件时长 * 每分钟转码单价</td>
+    <td>具体价格请查阅价格总览</td>
+</tr>
+<tr>
+    <td>视频截图张数</td>
+    <td>使用视频截图服务的截图张数</td>
+    <td>每天累计截图张数/1000 * 每千张单价</td>
+    <td>具体价格请查阅价格总览</td>
+</tr>
 </table>
 
 ## 计费案例

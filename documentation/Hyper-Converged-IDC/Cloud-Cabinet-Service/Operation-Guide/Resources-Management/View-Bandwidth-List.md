@@ -7,3 +7,4 @@
 # 查看带宽详情
 点击“**关联的公网IP**”，跳转到带宽详情，带宽详情展示两部分，包括基本信息和关联的公网IP信息，如下图：</br>
 ![带宽详情查看连接](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS005.png)
+

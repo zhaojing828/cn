@@ -9,3 +9,4 @@
 点击“**SN号**”，跳转到设备详情，设备详情展示3部分，包括基本信息、所属信息和配置信息，如下图：
 ![设备详情查看连接](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS002.png)
 
+
