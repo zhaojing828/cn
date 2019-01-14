@@ -27,7 +27,7 @@ IAM Policy语言包含以下基本意义的元素：
 ### OSS在IAM Policy中用法
 #### 1.指定Action
 
-Bucket policy 中 Action 支持列表如下：
+IAM policy 中 本期Action 支持列表如下：
 
 |操作关键字|操作项说明|对应API|操作级别 | 
 |-|-|-|-|
@@ -42,6 +42,14 @@ Bucket policy 中 Action 支持列表如下：
 
 示例：
 例如，使用 oss:GetObject 权限，用户可对 OSS 执行下载操作。
+**说明**
+OSS支持的Action 分为三大类：
+* Service 级别操作，对应的是 GetService 操作，用来列出所有属于该用户的 Bucket 列表。
+Bucket 级别操作，对应类似于 oss:PutBucketAcl、oss:GetBucketLocation之类的操作，操作的对象是 Bucket，它们的名称和相应的接口名称一一对应。
+Object 级别操作，分为 oss:GetObject、oss:PutObject、oss:DeleteObject和oss:AbortMultipartUpload，操作对象是 Object。
+如想授权某一类的 Object 的操作，可以选择这几种的一种或几种。另外，所有的 Action 前面都必须加上oss:，如上面例子所示。Action 是一个列表，可以有多个 Action。具体的 Action 和 API 接口的对应关系如下：
+
+
 
 #### 1.指定Resource
 
