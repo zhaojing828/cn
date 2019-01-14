@@ -36,7 +36,21 @@ IAM 详细介绍前往[IAM概述](https://docs.jdcloud.com/cn/iam/product-overvi
 4.创建完成自定义策略后，回到访问子用户列表，点击【授权】按钮，授予【自定义策略】，完成子行号与策略的关联。
 ![IAM子用户](../../../../image/Object-Storage-Service/OSS-114.png)
 
-本文还通过以下策略示例说明几种典型场景，详情参见[策略示例](../../Operation-Guide/Access-Control/Access-Control-Base-On-IAM-Policy.md),可以直接复制在自定义策略到编辑器 ：
+本文还通过以下策略示例说明几种典型场景，详情参见[基于IAM Policy的权限控制-IAM Policy 示例](../../Operation-Guide/Access-Control/Access-Control-Base-On-IAM-Policy.md),可以直接复制在自定义策略到编辑器 。
+
+- 步骤三：子账号访问主账号 OSS 资源
+OSS 访问（API 或 SDK）需要如下资源：SecretId、SecretKey。
+当使用子账号访问 OSS资源时，需要使用子账号的 SecretId 和 SecretKey，您可以在在创建子账号时选择为创建子账号（Access Key）或者登陆访问管理控制台创建子账号的 SecretId 和 SecretKey。
+创建子账号时选择为创建子账号（Access Key）
+![IAM子用户](../../../../image/Object-Storage-Service/OSS-115.png)
+![IAM子用户](../../../../image/Object-Storage-Service/OSS-116.jpg)
+登陆访问管理控制台创建子账号的 SecretId 和 SecretKey。
+
+
+
+
+
+
 
 
 
