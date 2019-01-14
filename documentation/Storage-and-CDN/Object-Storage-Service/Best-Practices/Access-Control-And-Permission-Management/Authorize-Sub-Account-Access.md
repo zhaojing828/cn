@@ -19,22 +19,22 @@ IAM 详细介绍前往[IAM概述](https://docs.jdcloud.com/cn/iam/product-overvi
  在 IAM 控制台可创建子账号，并配置授予子账号的访问权限。具体操作如下所示：
  1.登录 [IAM 控制台](https://iam-console.jdcloud.com/summary)，单击左侧菜单栏【用户管理】，单击【新建子用户】：
  
- ![IAM子用户](../../../../image/Object-Storage-Service/OSS-108.png)
+ ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-108.png)
 2.按照要求填写用户相关信息。
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-109.png)
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-109.png)
 - 步骤二：对子账号授予权限
 
 根据系统提供的策略选择，可配置简单的策略【系统策略】，如 OSS 的管理员权限，只读权限等。如需配置更复杂的策略，请使用【策略管理】-【新建自定义策略】。
 3.方法一： 访问子用户列表，点击【授权】按钮，可快捷的授予子用户相应的【系统策略】。
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-110.png)
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-110.png)
 方法二：负责策略采用自定义策略，单击左侧菜单栏【策略管理】，单击【创建策略】
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-113.png)
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-113.png)
 支持可视化策略生成器与策略编辑器
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-112.png)
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-112.png)
 若采用策略编辑器，输入策略名称，在编辑框中输入json ，指定IAM policy
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-111.png)
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-111.png)
 4.创建完成自定义策略后，回到访问子用户列表，点击【授权】按钮，授予【自定义策略】，完成子行号与策略的关联。
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-114.png)
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-114.png)
 
 本文还通过以下策略示例说明几种典型场景，详情参见[基于IAM Policy的权限控制-IAM Policy 示例](../../Operation-Guide/Access-Control/Access-Control-Base-On-IAM-Policy.md),可以直接复制在自定义策略到编辑器 。
 
@@ -42,10 +42,10 @@ IAM 详细介绍前往[IAM概述](https://docs.jdcloud.com/cn/iam/product-overvi
 OSS 访问（API 或 SDK）需要如下资源：SecretId、SecretKey。
 当使用子账号访问 OSS资源时，需要使用子账号的 SecretId 和 SecretKey，您可以在在创建子账号时选择为创建子账号（Access Key）或者登陆访问管理控制台创建子账号的 SecretId 和 SecretKey。
 创建子账号时选择为创建子账号（Access Key）
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-115.png)
-![IAM子用户](../../../../image/Object-Storage-Service/OSS-116.jpg)
-登陆访问管理控制台创建子账号的 SecretId 和 SecretKey。
-
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-115.png)
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-116.jpg)
+登陆访问管理控制台创建或者查看子账号的 SecretId 和 SecretKey。
+![IAM子用户](../../../../../image/Object-Storage-Service/OSS-117.png)
 
 
 
