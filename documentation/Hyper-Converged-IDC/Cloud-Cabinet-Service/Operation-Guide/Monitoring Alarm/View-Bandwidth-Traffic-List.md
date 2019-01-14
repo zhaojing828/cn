@@ -2,7 +2,7 @@
 
 打开控制台，选择超融合数据中心->云托管服务->监控报警->带宽流量，查看带宽流量监控列表信息，如下图：</br>
 点击顶部 **机房名称** ，可切换机房，查看不同机房的带宽流量。
-![带苦流量监控列表](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS017.png)
+![带宽流量监控列表](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS017.png)
 
 # 查看带宽流量资源信息
 点击 **带宽名称** ，查看带宽的资源信息，如下图：
