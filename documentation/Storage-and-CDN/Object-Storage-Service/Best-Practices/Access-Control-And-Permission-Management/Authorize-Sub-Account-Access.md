@@ -48,6 +48,12 @@ OSS 访问（API 或 SDK）需要如下资源：SecretId、SecretKey。
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-117.png)
 然后使用子账号 SecretId 和 SecretKey，利用OSS API 或SDK 访OSS，操作与主账号相同。
 
+### 使用Bucket policy 授权子账号
+除了IAM policy 也可使用Bucket policy 授权子账号。具体授权步骤请参看[Bucket policy-制权限修改](../../Operation-Guide/Manage-Bucket/Modifiy-Access-Control.md)
+
+
+
+
 
 
 
