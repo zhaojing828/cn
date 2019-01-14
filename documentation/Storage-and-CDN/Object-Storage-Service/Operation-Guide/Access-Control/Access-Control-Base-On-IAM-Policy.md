@@ -41,14 +41,16 @@ IAM policy 中 本期Action 支持列表如下：
 |oss:* |OSS支持的所有操作，包括Service 级别操作，Bucket 级别操作，Object 级别操作|对应全部API 列表参见[API参考](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)|所有级别操作 |
 
 示例：
+
 例如，使用 oss:GetObject 权限，用户可对 OSS 执行下载操作。
+
 **说明**
-    - **上表中为本期支持用户自定义IAM策略指定的Action，后期会持续支持更多操作，敬请期待**
-    - OSS支持的Action 分为三大类：
-        * Service 级别操作，对应的是 GetService 操作，用来列出所有属于该用户的某个地域的所有 Bucket 列表。**本期不支持用户自定义IAM策略指定**
-        * Bucket 级别操作，对应oss:DeleteBucket、oss:ListBucketMultipartUploads、oss:ListBucke操作的对象是 Bucket，
-        * Object 级别操作，分为 oss:GetObject、oss:PutObject、oss:DeleteObject和oss:AbortMultipartUpload，操作对象是 Object。
-    - 如想授权某一类的 Object 的操作，可以选择这几种的一种或几种。另外，所有的 Action 前面都必须加上oss:，如上面例子所示。
+- **上表中为本期支持用户自定义IAM策略指定的Action，后期会持续支持更多操作，敬请期待**
+- OSS支持的Action 分为三大类：
+    * Service 级别操作，对应的是 GetService 操作，用来列出所有属于该用户的某个地域的所有 Bucket 列表。**本期不支持用户自定义IAM策略指定**
+    * Bucket 级别操作，对应oss:DeleteBucket、oss:ListBucketMultipartUploads、oss:ListBucke操作的对象是 Bucket，
+    * Object 级别操作，分为 oss:GetObject、oss:PutObject、oss:DeleteObject和oss:AbortMultipartUpload，操作对象是 Object。
+- 如想授权某一类的 Object 的操作，可以选择这几种的一种或几种。另外，所有的 Action 前面都必须加上oss:，如上面例子所示。
 
 #### 1.指定Resource
 
@@ -73,14 +75,6 @@ jrn:oss:*:*:bucket_name/key_name
 |jrn:oss:*:*:examplebucket/abc*|表示 examplebucket 存储存储空间以adb为前缀的全部对象|
 |jrn:oss:*:*:examplebucket*|表示 以examplebucket为前缀的存储存储空间以及其中全部对象|
 
-**说明**
-    - **上表中为本期支持用户自定义IAM策略指定的Action，后期会持续支持更多操作，敬请期待**
-    - OSS支持的Action 分为三大类：
-        * Service 级别操作，对应的是 GetService 操作，用来列出所有属于该用户的某个地域的所有 Bucket 列表。**本期不支持用户自定义IAM策略指定**
-        * Bucket 级别操作，对应oss:DeleteBucket、oss:ListBucketMultipartUploads、oss:ListBucke操作的对象是 Bucket，
-        * Object 级别操作，分为 oss:GetObject、oss:PutObject、oss:DeleteObject和oss:AbortMultipartUpload，操作对象是 Object。
-    - 如想授权某一类的 Object 的操
- 
 ### IAM Policy 示例
 #### 1.完全授权的IAM Policy
 完全授权的 IAM Policy表示允许子账号可以对OSS进行任何操作。您可以登录[访问控制控制台-用户管理](https://iam-console.jdcloud.com/subUser/list)直接授权系统策略（JDCloudOSSAdmin）。
