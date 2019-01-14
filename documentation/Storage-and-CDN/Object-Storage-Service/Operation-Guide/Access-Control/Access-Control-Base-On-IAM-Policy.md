@@ -94,7 +94,7 @@ jrn:oss:*:*:bucket_name/key_name
 }
 ```
 
-#### 2.不限制前缀的只读不写Policy
+#### 2.不限制前缀的只读不写IAM Policy
 
 此Policy表示子用户可对Bucket 名称为：app-base-oss下所有的Object能够列举与下载。
 
@@ -114,7 +114,7 @@ jrn:oss:*:*:bucket_name/key_name
   }
 ```
 
-#### 3.限制前缀的只读不写Policy
+#### 3.限制前缀的只读不写IAM Policy
 此Policy表示子用户可对Bucket 名称为：app-base-oss下有前缀 myuser1/的Object能够列举与下载。但无法下载其他前缀的Object。采用此种Policy，可以将不同的子账号控制的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
 {
@@ -132,7 +132,7 @@ jrn:oss:*:*:bucket_name/key_name
   }
 ```
 
-#### 4.不限制前缀的只写不读Policy
+#### 4.不限制前缀的只写不读IAM Policy
 此Policy表示应用可以对Bucket名称为：app-base-oss下带有前缀myuser1/的Object进行上传。但无法上传其他前缀的Object。采用此种Policy，如果不同的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
 {
@@ -148,7 +148,7 @@ jrn:oss:*:*:bucket_name/key_name
     "Version": "3"
   }
 ```
-#### 5.限制前缀的只写不读Policy
+#### 5.限制前缀的只写不读IAM Policy
 此Policy表示应用只可以对Bucket名称为：app-base-oss进行上传。
 ```
 {
@@ -165,7 +165,7 @@ jrn:oss:*:*:bucket_name/key_name
   }
 ```
 
-#### 6.不限制前缀的读写Policy
+#### 6.不限制前缀的读写IAM Policy
 此Policy表示应用只可以对Bucket名称为：app-base-oss下所有的Object进行列举、下载、上传和删除。
 ```
 {
@@ -186,7 +186,7 @@ jrn:oss:*:*:bucket_name/key_name
     "Version": "3"
   }
 ```
-#### 7.限制前缀的读写Policy
+#### 7.限制前缀的读写IAM Policy
 此Policy表示应用可以对Bucket名称为：app-base-oss下带有前缀myuser1/的Object进行列举、下载、上传和删除，但无法对其他前缀的Object进行读写。采用此种Policy，如果不同的子用户对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
 {
