@@ -1,22 +1,25 @@
   name: 目录服务
   href:
   items:
+
   - name: 产品介绍
-    items:
+    items: 
       - name: 产品概述
-        href: Introduction/Overview.md
+        href: Introduction/Product-Overview.md
       - name: 基础架构
-        href: Introduction/Infrastructure.md
+        href: Introduction/Basic-Infrastructure.md
       - name: 产品优势
-        href: Introduction/Advantage.md
+        href: Introduction/Benefits.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
   - name: 产品定价
     items:
       - name: 计费规格
-        href: Pricing/Pricing.md
+        href: Pricing/Billing-Rules.md
   - name: 操作指南
     items:
        - name: 创建目录服务
-         href: Operation-Guide/Directory-Service.md
+         href: Operation-Guide/Create-Instance.md
        - name: 开启控制台访问
          href: Operation-Guide/Open-Console-Access.md
        - name: 本地域准备工作
