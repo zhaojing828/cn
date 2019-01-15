@@ -44,12 +44,11 @@
 | APIGATEWAY_BACKENDSERVICE_PREFIX_ISREPEAT |  409 |  分组中后端服务前缀名重复  |      |
 | APIGATEWAY_APINAME_ISREPEAT |  409 |  API名称重复  |      |
 | APIGATEWAY_ACCESSKEY_ISREPEAT |  409 |  签名访问密钥重复  |      |
-
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_ACCESSKEYAUTH_ISREPEAT |  409 |  授权访问密钥重复  |      |
+| APIGATEWAY_POLICYNAME_ISREPEAT |  409 |  策略名称重复  |      |
+| APIGATEWAY_API_BODY_ERROR |  500 |  要验证的接口的对应的body定义异常  |      |
+| APIGATEWAY_BIND_GROUP_TOO_MUCH |  400 |  流控策略绑定分组多于一个  |      |
+| APIGATEWAY_DELETE_ERROR |  400 |  未解除绑定，不能删除  |      |
 
 | APIGATEWAY_SUCCESS |  200 |  成功  |      |
 | APIGATEWAY_SUCCESS |  200 |  成功  |      |
