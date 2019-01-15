@@ -51,6 +51,8 @@
         href: Operation-Guide/Dedicated-master.md 
       - name: 插件支持
         href: Operation-Guide/IK.md 
+      - name: Kibana
+        href: Operation-Guide/Kibana.md   
       - name: 监控集群
         items: 
         - name: 查看监控信息
