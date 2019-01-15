@@ -79,7 +79,7 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     //多个IAM 子用户
     "Principal": {
     "AWS": [
-        "arn:aws:iam::123456789012/user-name-1",
+        "arn:aws:iam::123456789012:user//user-name-1",
         "arn:aws:iam::111111111111:user/UserName2"
      ]
     }
