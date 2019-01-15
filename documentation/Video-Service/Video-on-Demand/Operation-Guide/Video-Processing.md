@@ -24,7 +24,7 @@
 
 转码后的视频可在视频列表后面的“管理”-“视频地址”中查看。注意，添加水印必须配置转码，否则不生效
 
-![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B03.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B033.png)
 
 
 
