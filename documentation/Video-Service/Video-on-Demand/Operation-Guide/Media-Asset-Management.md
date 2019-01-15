@@ -25,7 +25,7 @@
 
 点击“新建分类”可在列表中出现“新建分类”字样，点击修改、删除即可完成相应操作。 
 
-![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E5%88%86%E7%B1%BB2.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E5%88%86%E7%B1%BB2.png)
 
    
 
