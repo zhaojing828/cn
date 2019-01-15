@@ -38,4 +38,5 @@
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-11.png)
 
 11.选择 **否，不确认传入信任**。选择 **下一步**。
+
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-12.png)
