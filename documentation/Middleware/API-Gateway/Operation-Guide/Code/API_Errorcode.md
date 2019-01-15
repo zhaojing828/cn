@@ -35,16 +35,15 @@
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
 | APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_ARGUMENT_NOT_SUPPORT |  400 |  param 参数不支持  |      |
+| APIGATEWAY_ARGUMENT_NOT_FOUND |  400 |  param 不能为空  |      |
+| APIGATEWAY_HTTP_FORBIDDEN |  403 |  没有权限  |      |
+| APIGATEWAY_NOT_FOUND |  404 |  param 资源不存在  |      |
+| APIGATEWAY_OPERATION_FAILED |  500 |  操作失败  |      |
+| APIGATEWAY_APIGROUPNAME_ISREPEAT |  409 |  分组名称重复  |      |
+| APIGATEWAY_BACKENDSERVICE_PREFIX_ISREPEAT |  409 |  分组中后端服务前缀名重复  |      |
+| APIGATEWAY_APINAME_ISREPEAT |  409 |  API名称重复  |      |
+| APIGATEWAY_ACCESSKEY_ISREPEAT |  409 |  签名访问密钥重复  |      |
 
 | APIGATEWAY_SUCCESS |  200 |  成功  |      |
 | APIGATEWAY_SUCCESS |  200 |  成功  |      |
