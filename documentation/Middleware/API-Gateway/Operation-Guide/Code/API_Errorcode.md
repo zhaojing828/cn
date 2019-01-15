@@ -35,6 +35,43 @@
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
 | APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |      |
+
+
+
 
 
 
