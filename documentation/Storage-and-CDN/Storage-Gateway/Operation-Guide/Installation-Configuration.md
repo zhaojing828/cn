@@ -41,7 +41,7 @@
 ```
 accessKeyID：xxxxxxxxxxxxxxxx
 accessKeySecret: xxxxxxxxxxxxxxxx
-endpoint：http://s3.cn-north-1.jcloudcs.com   //endpoint须使用http://或https://开通
+endpoint：http://s3.cn-north-1.jcloudcs.com   //endpoint须使用http://或https://开头
 bucket：bucketname
 ```
 
@@ -65,7 +65,7 @@ auto_fdisk.sh /dev/vdb /cache ext4
 gw start
 ```
 
-注：执行启动命令后，当显示`Starting httpd... monitor1`时，即开启完成，执行`ctrl+c`退出即可，退出后，monitor作为服务运行监控模块会在后台执行。
+注：执行启动命令后，当显示`Starting httpd... monitor`时，即开启完成，执行`ctrl+c`退出即可，退出后，monitor作为服务运行监控模块会在后台执行。
 
 4.执行`df -h`命令查看是否启动成功，如图所示，127.0.0.1:/gw为已成功开启的NFS共享文件系统。
 
