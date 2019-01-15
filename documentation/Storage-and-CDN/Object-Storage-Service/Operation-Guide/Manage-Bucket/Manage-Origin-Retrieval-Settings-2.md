@@ -46,6 +46,8 @@ Expires
 
 
 ## 镜像回源规则设置 
+**说明**
+回源地址不支持配置OSS内网域名。
 
 ### 1.使用OSS Open API ，设置镜像回源。
 参考：[设置镜像回源](https://docs.jdcloud.com/cn/object-storage-service/api/putbacksourceconfiguration?content=API)
