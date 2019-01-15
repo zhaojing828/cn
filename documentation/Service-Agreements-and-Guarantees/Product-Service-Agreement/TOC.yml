@@ -96,3 +96,5 @@ items:
     href: Cloud-Desktop-Service-Protocol.md   
   - name: 云桌面服务等级协议（SLA）
     href: Cloud-Desktop-Service-ProtocolSLA.md
+  - name: 视频点播服务协议 
+    href: Video-on-demand-service-protocol.md
