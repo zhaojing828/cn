@@ -41,8 +41,87 @@
     <td>480</td>	
     <td>270</td>	   	
 </tr>
+<tr>
+    <td>3<br/>
+    <td>预置_mp4_360p</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>400Kbps</td>
+    <td>25/1</td>
+    <td>640</td>	
+    <td>360</td>	   	
+</tr>
+<tr>
+    <td>4<br/>
+    <td>预置_mp4_480p</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>500Kbps</td>
+    <td>25/1</td>
+    <td>640</td>	
+    <td>480</td>	   	
+</tr>
+<tr>
+    <td>5<br/>
+    <td>预置_mp4_540p</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>800Kbps</td>
+    <td>25/1</td>
+    <td>960</td>	
+    <td>540</td>	   	
+</tr>
+<tr>
+    <td>6<br/>
+    <td>预置_mp4_576p</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>700Kbps</td>
+    <td>24/1</td>
+    <td>720</td>	
+    <td>576</td>	   	
+</tr>
+<tr>
+    <td>7<br/>
+    <td>预置_mp4_720p</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>1500Kbps</td>
+    <td>25/1</td>
+    <td>1080</td>	
+    <td>720</td>	   	
+</tr>
+<tr>
+    <td>9<br/>
+    <td>预置_mp4_1080p</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>3000Kbps</td>
+    <td>30/1</td>
+    <td>1920</td>	
+    <td>1080</td>	   	
+</tr>
+<tr>
+    <td>9<br/>
+    <td>预置_mp4_2k</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>6000Kbps</td>
+    <td>60/1</td>
+    <td>2560</td>	
+    <td>1440</td>	   	
+</tr>  
+<tr>
+    <td>10<br/>
+    <td>预置_mp4_4k</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>15000Kbps</td>
+    <td>60/1</td>
+    <td>3840</td>	
+    <td>2160</td>	   	
+</tr>
 </table>
-
 
 转码后的视频可在视频列表后面的“管理”-“视频地址”中查看。
 
