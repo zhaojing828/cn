@@ -17,6 +17,8 @@ items:
         href: Introduction/Support-Services.md
   - name: 操作指南
     items:
+      - name: 概览
+        href: Overview.md
       - name: 身份管理
         items:
           - name: 子用户
@@ -28,7 +30,7 @@ items:
           - name: 策略管理
             href: Policy-Managemenent/Policy-Management.md
           - name: 策略语法（v2）
-            href: Policy-Managemenent/Policy-Grammar.md
+            href: Policy-Management/Policy-Syntax_v2.md
           - name: 策略（v3）
             items:
               - name: 元素参考
@@ -39,6 +41,8 @@ items:
                 href: Policy-Management/Policy_v3/Action.md
               - name: 资源描述方式
                 href: Policy-Management/Policy_v3/Resource.md
+      - name: 设置
+        href: Setting.md        
       - name: 虚拟 MFA 设备
         items:
           - name: 概述

@@ -22,39 +22,13 @@
 登陆函数服务控制台，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
 * 函数模板：API网关模板
-
 * 函数名称：APIGfunction（您可以设置自己的函数名）
-
 * 函数入口：根据提示填写，默认index.handler
-
 * 函数代码：默认选中的API网关模板
-
-```
-#coding=utf-8
-import json
-def handler(event, context):
-    event = json.loads(event)
-    content = {
-        'time': event['time'],
-        'detail': event['detail'],
-        'body': event['detail']['body'],
-        'region': event['region'],
-        'id': event['id'],
-        'detailType': event['detailType'],
-        'version': event['version'],
-        'base64OwnerPin': event['base64OwnerPin'],
-    }
-    print(content)
-```
-
 * 函数执行内存：128MB
-
-* 超时时间：3秒
-
+* 超时时间：100秒
 * 描述、环境变量及高级配置：无需填写
-
-* 触发器：不配置触发器
-
+* 触发器：不配置触发器<br>
 单击”完成“，完成函数创建。
 
 ## 测试函数
@@ -63,17 +37,15 @@ def handler(event, context):
 
 API网关事件源会以 event 的形式作为输入参数传递给函数，您可以将 event 传给函数，测试编码是否正确。
 
-1. 创建测试事件
-
+1. 创建测试事件<br>
 进入”函数列表“页面，单击”APIGfunction“函数，进入函数详情页面，选择”配置测试事件”，
-* 配置测试事件：创建新的测试事件
-* 事件模板：API Gateway-event-template
-* 事件名称：test
+    * 配置测试事件：创建新的测试事件
+    * 事件模板：API Gateway-event-template
+    * 事件名称：test<br>
+    单击“保存”，完成测试事件创建。<br> 
 
-单击“保存”，完成测试事件创建。 
-2. 测试函数
-
-在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。 
+2. 测试函数<br>
+在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。<br> 
 
 3. 执行成功后，可在控制台查看实时函数执行日志。
 
@@ -81,13 +53,14 @@ API网关事件源会以 event 的形式作为输入参数传递给函数，您�
 
 
 1. 在API网关控制台，创建API。
-2. 在“APIGfunction”函数详情页面，选择”触发器”tab,单击“创建触发器”。
-* 触发器类型：API网管触发器
-* API分组：选择已创建准备绑定Function的未发布的API分组
-* 版本号：选择API版本号
-* API：选择API
-3. 测试成功后，在API网关控制台，发布API即可。
 
+2. 在“APIGfunction”函数详情页面，选择”触发器”tab,单击“创建触发器”。
+    * 触发器类型：API网管触发器
+    * API分组：选择已创建准备绑定Function的未发布的API分组
+    * 版本号：选择API版本号
+    * API：选择API
+    
+3. 测试成功后，在API网关控制台，发布API即可。<br>
 以上，完成API网关触发器触发Function的简单示例。
 
 

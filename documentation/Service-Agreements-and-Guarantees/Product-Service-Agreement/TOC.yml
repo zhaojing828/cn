@@ -12,6 +12,8 @@ items:
     href: Kubernetes-Cluster-Service-Provision.md
   - name: 容器镜像仓库服务协议
     href: Container-Registry-Service-Terms.md
+  - name: 容器镜像仓库服务等级协议（SLA）
+    href: Container-Registry-Service-SLA.md
   - name: 云数据库 RDS 服务协议
     href: Cloud-Database-RDS-Service-Clause.md
   - name: 云数据库 RDS 服务等级协议（SLA）
@@ -96,3 +98,5 @@ items:
     href: Cloud-Desktop-Service-Protocol.md   
   - name: 云桌面服务等级协议（SLA）
     href: Cloud-Desktop-Service-ProtocolSLA.md
+  - name: 视频点播服务协议 
+    href: Video-on-demand-service-protocol.md

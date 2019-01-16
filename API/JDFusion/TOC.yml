@@ -1,0 +1,151 @@
+name: JDFusion
+href: 
+items:
+- name: 接口概览
+  href: overview.md
+- name: 更新历史
+  href: ChangeLog.md
+- name: 接口信息
+  items:
+   - name: 云信息相关接口
+     items:
+       - name: getCloudInfoById
+         href: JDFusion/Cloud/getCloudInfoById.md
+       - name: getCloudInfos
+         href: JDFusion/Cloud/getCloudInfos.md
+       - name: registCloudInfo
+         href: JDFusion/Cloud/registCloudInfo.md
+       - name: unregistCloudInfo
+         href: JDFusion/Cloud/unregistCloudInfo.md
+   - name: 云硬盘相关接口
+     items:
+       - name: attachDiskToVmInstanceByDiskId.md
+         href: JDFusion/Disk/attachDiskToVmInstanceByDiskId.md
+       - name: createDisk
+         href: JDFusion/Disk/createDisk.md
+       - name: detachDiskToVmInstanceByDiskId
+         href: JDFusion/Disk/detachDiskToVmInstanceByDiskId.md
+       - name: getDiskById
+         href: JDFusion/Disk/getDiskById
+       - name: getDisks
+         href: JDFusion/Disk/getDisks
+       - name: removeDiskById
+         href: JDFusion/Disk/removeDiskById.md
+   - name: 镜像相关接口
+     items:
+       - name: getVmImages
+         href: JDFusion/Vm-Image/getVmImages.md
+   - name: 虚机实例相关接口
+     items:
+        - name: createVmInstance
+          href: JDFusion/Vm-Instance/createVmInstance.md
+        - name: deleteVmInstanceById
+          href: JDFusion/Vm-Instance/deleteVmInstanceById.md
+        - name: getVmInstances
+          href: JDFusion/Vm-Instance/getVmInstances.md
+        - name: getVmInstancesById
+          href: JDFusion/Vm-Instance/getVmInstancesById.md
+        - name: rebootVmInstanceById
+          href: JDFusion/Vm-Instance/rebootVmInstanceById.md
+        - name: startVmInstanceById
+          href: JDFusion/Vm-Instance/startVmInstanceById.md
+        - name: stopVmInstanceById
+          href: JDFusion/Vm-Instance/stopVmInstanceById.md
+   - name: 虚机实例类型相关接口
+     items:
+       - name: getVmInstanceTypes
+         href: JDFusion/Vm-InstanceType/getVmInstanceTypes.md
+   - name: 密钥对相关接口
+     items:
+       - name: createVmKeypair
+         href: JDFusion/Vm-Keypair/createVmKeypair.md
+       - name: deleteVmKeypairByName
+         href: JDFusion/Vm-Keypair/deleteVmKeypairByName.md
+       - name: getVmKeypairs
+         href: JDFusion/Vm-Keypair/getVmKeypairs.md
+       - name: getVmKeypairsByName
+         href: JDFusion/Vm-Keypair/getVmKeypairsByName.md
+   - name: 弹性公网IP相关接口
+     items:
+       - name: createVpcEip
+         href: JDFusion/Vpc-Eip/createVpcEip.md
+       - name: associateVpcEipById
+         href: JDFusion/Vpc-Eip/associateVpcEipById.md	
+       - name: deleteVpcEipById
+         href: JDFusion/Vpc-Eip/deleteVpcEipById.md
+       - name: disassociateVpcEipById
+         href: JDFusion/Vpc-Eip/disassociateVpcEipById.md
+       - name: getVpcEipById
+         href: JDFusion/Vpc-Eip/getVpcEipById.md
+       - name: getVpcEips
+         href: JDFusion/Vpc-Eip/getVpcEips.md
+   - name: 弹性网卡相关接口
+     items:
+       - name: createVpcNetworkInterface
+         href: JDFusion/Vpc-NetworkInterface/createVpcNetworkInterface.md
+       - name: attachVpcNetworkInterfaceById
+         href: JDFusion/Vpc-NetworkInterface/attachVpcNetworkInterfaceById.md
+       - name: deleteVpcNetworkInterfaceById
+         href: JDFusion/Vpc-NetworkInterface/deleteVpcNetworkInterfaceById.md
+       - name: detachVpcNetworkInterfaceById
+         href: JDFusion/Vpc-NetworkInterface/detachVpcNetworkInterfaceById.md
+       - name: getVpcNetworkInterfaceById
+         href: JDFusion/Vpc-NetworkInterface/getVpcNetworkInterfaceById.md
+       - name: getVpcNetworkInterfaces
+         href: JDFusion/Vpc-NetworkInterface/getVpcNetworkInterfaces.md
+   - name: 负载均衡相关接口
+     items:
+       - name: createVpcSlb
+         href: JDFusion/Vpc-Slb/createVpcSlb.md
+       - name: deleteVpcSlbById
+         href: JDFusion/Vpc-Slb/deleteVpcSlbById.md
+       - name: getVpcSlbById
+         href: JDFusion/Vpc-Slb/getVpcSlbById.md
+       - name: getVpcSlbs
+         href: JDFusion/Vpc-Slb/getVpcSlbs.md
+   - name: 子网相关接口
+     items:
+       - name: createVpcSubnet
+         href: JDFusion/Vpc-Subnet/createVpcSubnet.md
+       - name: ddeleteVpcSubnetById
+         href: JDFusion/Vpc-Subnet/deleteVpcSubnetById.md
+       - name: getVpcSubnetById
+         href: JDFusion/Vpc-Subnet/getVpcSubnetById.md
+       - name: getVpcSubnets
+         href: JDFusion/Vpc-Subnet/getVpcSubnets.md
+   - name: 服务器组相关接口
+     items:
+       - name: createVpcVServerGroup
+         href: JDFusion/Vpc-VserverGroup/createVpcVServerGroup.md
+       - name: getVpcVServerGroups
+         href: JDFusion/Vpc-VserverGroup/getVpcVServerGroups.md
+   - name: 私有网络相关接口
+     items:
+       - name: createVpc
+         href: JDFusion/Vpc/createVpc.md
+       - name: deleteVpcById
+         href: JDFusion/Vpc/deleteVpcById.md
+       - name: getVpcById
+         href: JDFusion/Vpc/getVpcById.md
+       - name: getVpcs
+         href: JDFusion/Vpc/getVpcs.md
+   - name: 安全组相关接口
+     items:
+       - name: createVpcSecurityGroup
+         href: JDFusion/vpc-securityGroups/createVpcSecurityGroup.md
+       - name: deleteVpcSecurityGroupById
+         href: JDFusion/vpc-securityGroups/deleteVpcSecurityGroupById.md
+       - name: getVpcSecurityGroupById
+         href: JDFusion/vpc-securityGroups/getVpcSecurityGroupById.md
+       - name: getVpcSecurityGroups
+         href: JDFusion/vpc-securityGroups/getVpcSecurityGroups.md
+   - name: HTTP监听相关接口
+     items:
+       - name: createVpcLBHttpListener
+         href: JDFusion/Vpc-LbHttpListener/createVpcLBHttpListener.md
+   - name: 运行状态相关接口
+     items:
+       - name: getTaskInfoById
+         href: JDFusion/Task/getTaskInfoById.md
+       - name: getTaskInfoHistoryById
+         href: JDFusion/Task/getTaskInfoHistoryById.md

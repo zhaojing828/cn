@@ -109,9 +109,9 @@ sudo make install
 sudo s3fs bucketname /new -o passwd_file=~/.passwd-s3fs -o url="https://s3.cn-north-1.jcloudcs.com" -o uid=11111 -o gid=11111
 ```
 
-3.使用s3fs-fuse工具挂载京东云对象存储，通过cp命令拷贝文件时，若遇到文件mime-type被修改的问题，可通过如下方式解决：
+3.使用s3fs-fuse工具挂载京东云对象存储，通过cp命令拷贝文件时，若遇到文件无content-type的问题，可通过如下方式解决：
 
-- 使用`cp`命令拷贝文件，`s3fs-fuse`工具底层进行的操作依赖于`/etc/mime.types`文件，这个文件决定了`cp`命令目的文件的mime-type属性。
+- 使用`cp`命令拷贝文件，`s3fs-fuse`工具底层进行的操作依赖于`/etc/mime.types`文件，这个文件决定了`cp`命令目的文件的mime-type属性。请查看您目录下是否有该文件。
 
 - 默认情况下，京东云的centos7版本并不包含`/etc/mime.types`文件，所以需要通过拷贝，或者安装`httpd`获得，安装命令为`yum install httpd`
 

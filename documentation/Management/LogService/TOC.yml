@@ -18,7 +18,9 @@ items:
     - name: 云产品日志说明
       items:
         - name: 应用安全网关日志
-          href: Introduction/ResourceLog/WAFLog.md  
+          href: Introduction/ResourceLog/WAFLog.md
+        - name: 函数服务日志
+          href: Introduction/ResourceLog/FunctionLog.md
 - name: 产品定价
   items:
     - name: 计费概述

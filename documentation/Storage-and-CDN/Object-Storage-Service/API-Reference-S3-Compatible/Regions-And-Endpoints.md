@@ -10,3 +10,5 @@
 |s3.cn-east-1.jcloudcs.com|华东-宿迁(cn-east-1)|http/https|
 |s3.cn-east-2.jcloudcs.com|华东-上海(cn-east-2)|http/https|
 |s3.cn-south-1.jcloudcs.com|华南-广州(cn-south-1)|http/https|
+
+注：为了您的数据更加安全，推荐您使用Https。
