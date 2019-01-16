@@ -1,5 +1,5 @@
 # MySQL 性能测试
-针对不同的云数据库 MySQL 规格，他们的最大连接数和最大 IOPS 是不一样的，参见[这里](../Introduction/Specifications.md)。
+针对不同的云数据库 MySQL 规格，他们的最大连接数和最大 IOPS 是不一样的，参见[这里](../Introduction/Specifications/MySQL-Specifications.md)。
 
 下面是针对云数据库 MySQL 的性能测试教程
 
