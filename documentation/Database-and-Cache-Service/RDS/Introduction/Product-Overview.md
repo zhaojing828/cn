@@ -13,10 +13,13 @@
 - MySQL
   - 5.6
   - 5.7
+  
 - Percona:
   - 5.7
+  
 - MariaDB
   - 10.2
+  
 - SQL Sever
   - 2008 R2：企业版
   - 2012：企业版、标准版
