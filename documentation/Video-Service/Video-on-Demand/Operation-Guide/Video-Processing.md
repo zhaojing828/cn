@@ -10,6 +10,38 @@
 ![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%812.png)
 
 选择转码模板时，您可以选择系统预制的模板，也可以选择自定义好的转码模板。系统预制模板的具体参数如下:
+<table>
+<tr>
+    <td>序号<br/>
+    <td>模板名称</td>
+    <td>文件格式</td>	
+    <td>编码格式</td>
+    <td>code_rate</td>
+    <td>frame_rate</td>	
+    <td>宽</td>	
+    <td>高</td>	
+</tr>
+<tr>
+    <td>1<br/>
+    <td>预置_mp4_180p</td>
+    <td>mp4</td>	
+    <td>h264</td>
+    <td>150Kbps</td>
+    <td>15/1</td>	
+    <td>320</td>	
+    <td>180</td>	
+</tr>
+<tr>
+    <td>2<br/>
+    <td>预置_mp4_270p</td>
+    <td>mp4</td>
+    <td>h264</td>	
+    <td>200Kbps</td>
+    <td>25/1</td>
+    <td>480</td>	
+    <td>270</td>	   	
+</tr>
+</table>
 
 
 转码后的视频可在视频列表后面的“管理”-“视频地址”中查看。
