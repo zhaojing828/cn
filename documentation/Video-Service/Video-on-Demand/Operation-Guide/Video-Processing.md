@@ -9,6 +9,9 @@
 
 ![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%812.png)
 
+选择转码模板时，您可以选择系统预制的模板，也可以选择自定义好的转码模板。系统预制模板的具体参数如下:
+
+
 转码后的视频可在视频列表后面的“管理”-“视频地址”中查看。
 
 ![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%813.png)
