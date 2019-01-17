@@ -1,4 +1,4 @@
-# 数据迁移工具 Osstransfer 
+# 数据迁移工具 Osstransfer --（公测）
 
 ## 功能说明
 
@@ -53,8 +53,8 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 |task.limit.threadCount|任务限制的同时读取的文件数。|20|
 |task.limit.qps|任务限制的qps数，因为put占用带宽较低。总带宽为 partsize*qps。|50|
 |transfer.coverFile|迁移是否覆盖文件,默认覆盖。|true|
-|transfer.put.maxsize|迁移put和multipartupload的分界值，单位为B，默认为33554432，如修改，建议为4M的倍数。|33554432|
-|transfer.multipart.partsize|如果使用分块复制，每块分片的大小，缺省为32M。|33554432|
+|transfer.put.maxsize|迁移put和multipartupload的分界值，单位为Byte，默认为33554432，如修改，建议为4M的倍数。|33554432|
+|transfer.multipart.partsize|如果使用分块复制，每块分片的大小，单位为Byte，缺省为32M。|33554432|
 |transfer.multipart.threads|分片复制时最大并发的数量, 缺省为5。|5|
 |src.access.id|用户的密钥 accessKeyId。|无|
 |src.secret.key|用户的密钥 accessKeySecret。|无|
@@ -127,8 +127,8 @@ task.limit.threadCount: 20
 task.limit.qps: 50
 
 transfer.coverFile: true
-transfer.put.maxsize: 4194304
-transfer.multipart.partsize: 4194304
+transfer.put.maxsize: 33554432
+transfer.multipart.partsize: 33554432
 transfer.multipart.threads: 5
 
 ```
@@ -156,8 +156,8 @@ task.limit.threadCount: 20
 task.limit.qps: 50
 
 transfer.coverFile: true
-transfer.put.maxsize: 4194304
-transfer.multipart.partsize: 4194304
+transfer.put.maxsize: 33554432
+transfer.multipart.partsize: 33554432
 transfer.multipart.threads: 5
 
 ```
@@ -249,9 +249,10 @@ java -jar transfer-tools-java-1.0.0.jar --Dspring.config.location=application.ym
 
 5.AWS S3 endpoint仅支持https。
 
-6.object key包含换行符（）或者回车（）无法迁移。
+6.object key包含char(10) 换行、char(13) 回车无法迁移。
 
-7.京东云 OSS Content-Disposition最长为100字节，使用Osstransfer时建议将ContentDispositionTooLongContinue配置项设置为true。
+7.京东云 OSS Content-Disposition最长为100字节，使用Osstransfer时建议将ContentDispositionTooLongContinue配置项设置为true，
+从而当Content-Disposition超过100字节时保证文件迁移成功。
 
 
 ## 迁移原理及流程
