@@ -29,7 +29,8 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 ## 使用方法
 
 ### 1.获取工具
-下载链接：[OssMigration](http://cn-north-1-songguangsheng.s3.cn-north-1.jcloudcs.com/test0114/transfer-tools-java-1.0.0.jar)
+
+下载链接：[OssMigration](https://downloads.oss.cn-north-1.jcloudcs.com/transfer-tools-java-1.0.0.jar)
 
 ### 2.获取配置文件
 
