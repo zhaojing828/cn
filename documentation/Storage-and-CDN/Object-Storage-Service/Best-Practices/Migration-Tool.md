@@ -37,7 +37,8 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 下载链接：[示例yml文件](http://cn-north-1-songguangsheng.s3.cn-north-1.jcloudcs.com/test0114/application.yml)
 
 ### 3.修改application.yml 配置文件
-在执行迁移启动脚本之前，您先需根据自身需求进行 application.yml 配置文件修改 
+
+在执行迁移启动脚本之前，您先需根据自身需求进行 application.yml 配置文件修改。
 
 #### 3.1 Osstransfer配置文件字段说明，如下表：
 
@@ -244,13 +245,13 @@ java -jar transfer-tools-java-1.0.0.jar --Dspring.config.location=application.ym
 
 3.从云厂商实现数据迁移，仅支持源Bucket权限为公有读，否则将导致迁移失败。
 
-4.阿里云OSS object key最长为是1023字节，京东云OSS object key最长限度为1022字节，因此1023字节的文件名（object key）将无法迁移。
+4.京东云OSS object key最长限度为1022字节，因此超过1022字节的文件将无法迁移。
 
 5.AWS S3 endpoint仅支持https。
 
-6.object key包含换行符或者回车无法迁移。
+6.object key包含换行符（）或者回车（）无法迁移。
 
-7.京东云 OSS Content-Disposition最长为100字节，使用Osstransfer时最好将ContentDispositionTooLongContinue配置项设置为true。
+7.京东云 OSS Content-Disposition最长为100字节，使用Osstransfer时建议将ContentDispositionTooLongContinue配置项设置为true。
 
 
 ## 迁移原理及流程
