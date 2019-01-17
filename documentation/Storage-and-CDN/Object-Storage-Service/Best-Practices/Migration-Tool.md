@@ -5,7 +5,7 @@
 Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它具有以下特点：
 
 
--   支持的丰富的数据源：
+-   支持丰富的数据源：
     * 本地数据：将本地存储的数据迁移到 OSS；
     * 其他对象存储:目前支持 AWS S3，阿里云 OSS，腾讯云COS,百度BOS，华为 OBS存储迁移至京东云OSS，后续会不断扩展。
     * URL 列表：根据指定的 URL 下载列表进行下载迁移到 京东云OSS。
@@ -262,12 +262,13 @@ Osstransfer迁移工具先使用sdk对各个数据源进行list，获取到objec
 1、迁移过程中，迁移日志将默认打印到 ./log 目录下。
 
 迁移的所有文件将打印到audit-0.log中，迁移成功的文件将打印到audit.success日志中，如果需要筛选书迁移失败的文件，请使用命令：
+
 ```
 grep "1$" audit-0.log*
 
 ```
 进行筛选。
 
-2、如果sourceType值为s3file，使用md5check功能日志打印，其他情况日志打印在md5check.log中。
+2、如果sourceType值为s3file，使用md5check时日志打印在=============，其他情况日志打印在md5check.log中，除此之外sourceType值为aliyunfile时不支持md5check。
 
 
