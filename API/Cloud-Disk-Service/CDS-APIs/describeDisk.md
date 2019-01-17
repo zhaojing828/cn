@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询云硬盘信息详情
+查询某一块云硬盘的信息详情
 
 ## 请求方式
 GET
@@ -33,26 +33,22 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks/{diskId}
 |名称|类型|描述|
 |---|---|---|
 |**status**|String|云硬盘状态，取值为 creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend 之一|
-|**name**|String|云硬盘名称|
+|**enable**|Boolean|云盘是否被暂停（IOPS限制为极低）|
+|**attachments**|DiskAttachment[]|挂载信息|
 |**tags**|Tag[]|Tag信息|
-|**description**|String|云硬盘描述|
-|**diskType**|String|磁盘类型，取值为 ssd 或 premium-hdd|
-|**diskSizeGB**|Integer|磁盘大小，单位为 GiB|
-|**charge**|Charge|云硬盘计费配置信息|
+|**encrypted**|Boolean|云盘是否为加密盘|
+|**multiAttachable**|Boolean|云盘是否支持多挂载|
+|**diskSizeGB**|Integer|云硬盘大小，单位为 GiB|
+|**iops**|Integer|该云硬盘实际应用的iops值|
 |**snapshotId**|String|创建该云硬盘的快照ID|
 |**az**|String|云硬盘所属AZ|
 |**createTime**|String|创建云硬盘时间|
 |**diskId**|String|云硬盘ID|
-|**attachments**|DiskAttachment[]|挂载信息|
-### DiskAttachment
-|名称|类型|描述|
-|---|---|---|
-|**status**|String|挂载状态，取值为 "attaching", "attached", "detaching", "detached"|
-|**attachmentId**|String|挂载ID|
-|**attachTime**|String|挂载时间|
-|**instanceId**|String|挂载实例的ID|
-|**instanceType**|String|挂载实例的类型，取值为 vm、nc|
-|**diskId**|String|云硬盘ID|
+|**description**|String|云硬盘描述，允许输入UTF-8编码下的全部字符，不超过256字符。|
+|**name**|String|云硬盘名称，只允许输入中文、数字、大小写字母、英文下划线“_”及中划线“-”，不允许为空且不超过32字符。|
+|**diskType**|String|云硬盘类型，取值为 ssd,premium-hdd,ssd.gp1,ssd.io1,hdd.std1|
+|**charge**|Charge|云硬盘计费配置信息|
+|**throughput**|Integer|该云硬盘实际应用的吞吐量的数值|
 ### Charge
 |名称|类型|描述|
 |---|---|---|
@@ -66,6 +62,15 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks/{diskId}
 |---|---|---|
 |**key**|String|Tag键|
 |**value**|String|Tag值|
+### DiskAttachment
+|名称|类型|描述|
+|---|---|---|
+|**status**|String|挂载状态，取值为 "attaching", "attached", "detaching", "detached"|
+|**attachmentId**|String|挂载ID|
+|**attachTime**|String|挂载时间|
+|**instanceId**|String|挂载实例的ID|
+|**instanceType**|String|挂载实例的类型，取值为 vm、nc|
+|**diskId**|String|云硬盘ID|
 
 ## 返回码
 |返回码|描述|

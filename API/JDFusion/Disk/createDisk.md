@@ -18,15 +18,11 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/disk_disks
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|CreateDataDiskReq|True| |创建云硬盘|
+|**disk**|CreateDataDisk|True| |创建云硬盘|
 |**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
 |**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
 
-### CreateDataDiskReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**disk**|CreateDataDisk|False| | |
 ### CreateDataDisk
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

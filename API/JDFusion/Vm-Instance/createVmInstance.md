@@ -18,15 +18,11 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vm_instances
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|CreateVmReq|True| |创建VM|
+|**vm**|CreateVm|True| |创建VM|
 |**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
 |**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
 
-### CreateVmReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**vms**|CreateVm|False| | |
 ### CreateVm
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

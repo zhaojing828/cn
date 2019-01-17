@@ -18,30 +18,24 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_slbs
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|CreateSlbReq|True| |创建SLB|
+|**slb**|SlbInfo|True| |创建SLB|
 |**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
 |**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
 
-### CreateSlbReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**slb**|CreateSlb|False| | |
-### CreateSlb
+### SlbInfo
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**addressType**|String|False| |负载均衡实例的网络类型。|
+|**azs**|String[]|False| |可用区域。|
 |**cloudID**|String|False| |所属云ID|
 |**createdTime**|String|False| |创建时间|
 |**id**|String|False| |负载均衡实例ID。|
 |**ipAddress**|String|False| |负载均衡实例的服务地址。|
-|**loadBalancerSpec**|String|False| |否  负载均衡实例的规格|
-|**masterAz**|String|False| |实例的主可用区ID。|
 |**name**|String|False| |负载均衡实例的名称。|
 |**networkType**|String|False| |私网负载均衡实例的网络类型|
-|**slaveAz**|String|False| |实例的备可用区ID。|
 |**status**|String|False| |负载均衡实例状态|
-|**subnetId**|String|True| |私网负载均衡实例的交换机ID。|
+|**subnetId**|String|False| |私网负载均衡实例的交换机ID。|
 |**vpc**|String|False| |私网负载均衡实例的专有网络ID。|
 
 ## 返回参数

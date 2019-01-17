@@ -18,6 +18,7 @@ v1
 |**addCustomLiveStreamWatermarkTemplate**|POST|添加直播水印模板|
 |**addLiveApp**|POST|添加直播APP|
 |**addLiveDomain**|POST|添加直播域名|
+|**addLiveRecordTask**|POST|添加录制打点任务|
 |**addLiveStreamAppRecord**|POST|添加APP录制配置|
 |**addLiveStreamAppSnapshot**|POST|添加APP直播截图配置|
 |**addLiveStreamAppTranscode**|POST|添加APP转码配置|
@@ -47,13 +48,16 @@ v1
 |**describeCustomLiveStreamRecordTemplates**|GET|查询录制模板列表|
 |**describeCustomLiveStreamSnapshotConfig**|GET|查询直播截图配置|
 |**describeCustomLiveStreamSnapshotTemplates**|GET|查询直播截图模板列表|
-|**describeCustomLiveStreamTranscode**|GET|查询用户自定义转码模板详情|
-|**describeCustomLiveStreamTranscodes**|GET|查询用户自定义转码模板列表|
+|**describeCustomLiveStreamTranscodeTemplate**|GET|查询用户自定义转码模板详情|
+|**describeCustomLiveStreamTranscodeTemplates**|GET|查询用户自定义转码模板列表|
 |**describeCustomLiveStreamWatermarkConfig**|GET|查询水印配置|
 |**describeCustomLiveStreamWatermarkTemplates**|GET|查询录制模板列表|
 |**describeLiveApp**|GET|查询域名下的APP列表|
 |**describeLiveDomainDetail**|GET|查询指定域名相关信息|
+|**describeLiveDomains**|GET|查询域名列表|
 |**describeLiveStreamNotifyConfig**|GET|查询直播流状态通知|
+|**describeLiveStreamOnlineList**|GET|查看域名下所有的正在推的流的信息|
+|**describeLiveStreamPublishList**|GET|查看域名下推流记录|
 |**describeLiveStreamRecordNotifyConfig**|GET|查询录制回调配置|
 |**describeLiveStreamSnapshotNotifyConfig**|GET|查询截图回调配置|
 |**describeLiveStreamTranscodeConfig**|GET|查询转码模板配置|

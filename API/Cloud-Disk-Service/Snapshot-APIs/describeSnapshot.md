@@ -33,12 +33,21 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots/{snapshotId}
 |名称|类型|描述|
 |---|---|---|
 |**status**|String|快照状态，取值为 creating、available、in-use、deleting、error_create、error_delete 之一|
-|**snapshotSizeGB**|Integer|快照大小，单位为GiB|
 |**name**|String|快照名称|
+|**sharInfo**|ShareInfo[]|共享信息|
+|**encrypted**|Boolean|快照是否为加密盘的快照|
+|**snapshotSizeGB**|Integer|快照大小，单位为GiB|
+|**snapshotSource**|String|快照来源 可以有self，others两种来源|
+|**images**|String[]|快照关联的所有镜像ID(snapshotSource为others时不展示)|
 |**snapshotId**|String|云硬盘快照ID|
 |**createTime**|String|创建时间|
-|**diskId**|String|创建快照的云硬盘ID|
+|**diskId**|String|创建快照的云硬盘ID(snapshotSource为others时不展示)|
 |**description**|String|快照描述|
+### ShareInfo
+|名称|类型|描述|
+|---|---|---|
+|**shareTo**|String|被共享快照的用户的pin|
+|**shareTime**|String|共享时间|
 
 ## 返回码
 |返回码|描述|
