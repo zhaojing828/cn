@@ -3,7 +3,7 @@
 
 ## 描述
 -   创建一块或多块按配置或者按使用时长付费的云硬盘。
--   磁盘类型包括高效云盘和SSD云盘。
+-   磁盘类型包括高效云盘(premium-hdd)、SSD云盘(ssd)、通用型SSD(ssd.gp1)、性能型SSD(ssd.io1)、容量型HDD(hdd.std1)。
 -   计费方式默认为按配置付费。
 -   创建完成后，云硬盘状态为 available。
 -   可选参数快照 ID用于从快照创建新盘。
@@ -34,11 +34,13 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**az**|String|True| |云硬盘所属的可用区|
 |**charge**|ChargeSpec|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
 |**description**|String|False| |云硬盘描述|
-|**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G，premium-hdd 类型取值范围[20,3000]GB，步长为10G|
-|**diskType**|String|True| |云硬盘类型，取值为ssd、premium-hdd之一|
+|**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB，ssd 类型取值范围[20,1000]GB，步长为10G；premium-hdd 类型取值范围[20,3000]GB，步长为10G；ssd.gp1, ssd.io1, hdd.std1 类型取值范围均为[20,16000]GB，步长均为10GB；|
+|**diskType**|String|True| |云硬盘类型，取值为ssd、premium-hdd、ssd.gp1、ssd.io1、hdd.std1之一 |
+|**encrypt**|Boolean|False| |云硬盘是否加密，默认为False（不加密）|
 |**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
 |**name**|String|True| |云硬盘名称|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
+
 ### ChargeSpec
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

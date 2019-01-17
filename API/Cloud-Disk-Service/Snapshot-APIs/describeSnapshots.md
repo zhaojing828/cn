@@ -45,6 +45,7 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots
 |**createTime**|String|创建时间|
 |**description**|String|快照描述|
 |**diskId**|String|创建快照的云硬盘ID|
+|**encrypted**|Boolean|快照是否为加密盘的快照|
 |**name**|String|快照名称|
 |**snapshotId**|String|云硬盘快照ID|
 |**snapshotSizeGB**|Integer|快照大小，单位为GiB|
