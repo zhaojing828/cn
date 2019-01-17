@@ -25,7 +25,7 @@ A：MongoDB使用的是内存映射存储引擎，它会把磁盘IO操作转换�
 
 **Q：本地使用的 MongoDB 4.0版，转到云上使用3.6版有什么注意事项？**
 
-A：MongoDB 4.0 新增了一些功能特性，转为使用3.6版时，需注意一下内容：
+A：MongoDB 4.0 新增了一些功能特性，转为使用3.6版时，需注意以下内容：
 1. 避免使用多文档事务。
 2. 避免使用新增的聚合命令。
 	
@@ -51,7 +51,7 @@ A：MongoDB 4.0 新增了一些功能特性，转为使用3.6版时，需注意�
 		|$rtrim|Removes whitespace or the specified characters from the end of a string.|
 		|$trim|Removes whitespace or the specified characters from the beginning and end of a string.|
 
-3. 避免使用新增的聚合命令。
+3. 避免使用新增的监控命令(FreeMonitoring)。
 4. 注意4.0版改进的一些命令的使用。
 
 	- 命令
