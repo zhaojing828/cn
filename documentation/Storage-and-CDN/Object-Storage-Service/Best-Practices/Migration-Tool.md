@@ -45,22 +45,21 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 
 |名称|说明|默认值|
 |:-|:-|:-|
-|jobType|job的类型，分别为listObject，transfer及md5check。 | listObject  |
+|jobType|job的类型，分别为listObject，transfer及md5check。|listObject|
 |sourceType| 数据来源的类型，分别为urlfile,diskfile，s3file（AWS S3、腾讯云COS、百度BOS、华为 OBS、京东云 OSS）aliyunfile,disklistfile（本地文件列表）。 |s3file|
 |urlType|当sourceType为urlfile时，如果文件列表并非迁移工具生成且只有url信息，则需要配置urlType为onlyUrl。| 无|
 |filePath|被读取文件的地址。当sourceType 为 urlfile ，diskfile时，filePath 为必填项。|无|
 |urlFilePrefix|当文件列表为url时，我们则获取用户的key值为url地址的一部分，则需要用户配置切割url的数量。|无，如配置，建议最少设置为7，即http://的长度|
 |ContentDispositionTooLongContinue|当链接的Content-Disposition超过京东云OSS限制所限制的100，如不获取该header值继续传则配置为true；否则将该url打印在错误日志里，由用户对该url的header值自行修改。|false|
 |task.limit.threadCount|任务限制的同时读取的文件数。|20|
-|task.limit.qps|任务限制的qps数，因为put占用带宽较低。总带宽为 partsize*qps。|50|
+|task.limit.qps|任务限制的qps数，因为put占用带宽较低。总带宽为 partsize * qps。|50|
 |transfer.coverFile|迁移是否覆盖文件,默认覆盖。|true|
 |transfer.put.maxsize|迁移put和multipartupload的分界值，单位为Byte，默认为33554432，如修改，建议为4M的倍数。|33554432|
 |transfer.multipart.partsize|如果使用分块复制，每块分片的大小，单位为Byte，缺省为32M。|33554432|
 |transfer.multipart.threads|分片复制时最大并发的数量, 缺省为5。|5|
 |src.access.id|用户的密钥 accessKeyId。|无|
 |src.secret.key|用户的密钥 accessKeySecret。|无|
-|src.endpoint|源endpoint，<br>阿里云：https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.6.572.6a537f5ewpHZJZ<br>腾讯云：https://cloud.tencent.com/document/product/436/6224<br>百度云：https://cloud.baidu.com/doc/BOS/S3.html#.E6.9C.8D.E5.8A.A1.E5.9F.9F.E5.90.8D<br>华为云：https://support.huaweicloud.com/api-obs/zh-cn_topic_0136050628.html<br>
-|无|
+|src.endpoint|源endpoint，<br>阿里云：https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.6.572.6a537f5ewpHZJZ<br>腾讯云：https://cloud.tencent.com/document/product/436/6224<br>百度云：https://cloud.baidu.com/doc/BOS/S3.html#.E6.9C.8D.E5.8A.A1.E5.9F.9F.E5.90.8D<br>华为云：https://support.huaweicloud.com/api-obs/zh-cn_topic_0136050628.html<br> |无|
 |src.bucket|源bucket名称。|无|
 |src.prefix |如果只迁移其中一部分文件，需要配置prefix。prefix 为0开头的数字时，请使用单引号或双引号|无|
 |des.access.id|京东云的accessKeyId。|无|
