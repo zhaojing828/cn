@@ -2,10 +2,7 @@
 
 
 ## 描述
--   仅可对制作快照的源硬盘进行数据恢复操作。
--   仅源硬盘处于可用状态时才能使用快照进行数据恢复操作。
--   云硬盘恢复后，当前数据将被清除，请您谨慎操作。
-
+从已有快照恢复一块云硬盘
 
 ## 请求方式
 POST
@@ -15,8 +12,8 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks/{diskId}:restore
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**diskId**|String|True| |云硬盘ID|
 |**regionId**|String|True| |地域ID|
+|**diskId**|String|True| |云硬盘ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|

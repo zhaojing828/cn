@@ -24,14 +24,14 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries:check
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**code**|Integer|表示用户指定的注册表是否通过校验， 0 通过 1 名称为空 2 不符合规范 3 重名|
 |**reason**|String|code字段非零时，给出详细原因。|
+|**code**|Integer|表示用户指定的注册表是否通过校验， 0 通过 1 名称为空 2 不符合规范 3 重名|
 
 ## 返回码
 |返回码|描述|

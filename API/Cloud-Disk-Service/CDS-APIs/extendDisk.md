@@ -2,9 +2,7 @@
 
 
 ## 描述
--   扩容云硬盘到指定大小，云硬盘状态必须为 available。
--   当磁盘正在创建快照时，不允许扩容。
-
+扩容云硬盘到指定大小
 
 ## 请求方式
 POST
@@ -14,8 +12,8 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks/{diskId}:extend
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**diskId**|String|True| |云硬盘ID|
 |**regionId**|String|True| |地域ID|
+|**diskId**|String|True| |云硬盘ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|

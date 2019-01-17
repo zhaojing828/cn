@@ -14,8 +14,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**imageId**|String|True| |镜像ID|
 |**regionId**|String|True| |地域ID|
+|**imageId**|String|True| |镜像ID|
 
 ## 请求参数
 无

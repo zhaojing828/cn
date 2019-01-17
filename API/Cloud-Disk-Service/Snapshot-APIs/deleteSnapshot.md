@@ -2,10 +2,7 @@
 
 
 ## 描述
--   删除单个云硬盘快照:快照状态必须为 available 或 error 状态。
--   快照独立于云硬盘生命周期，删除快照不会对创建快照的云硬盘有任何影响。
--   快照删除后不可恢复，请谨慎操作。
-
+删除单个云硬盘快照:快照状态必须为 available 或 error 状态
 
 ## 请求方式
 DELETE
@@ -15,8 +12,8 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots/{snapshotId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域ID|
 |**snapshotId**|String|True| |快照ID|
+|**regionId**|String|True| |地域ID|
 
 ## 请求参数
 无

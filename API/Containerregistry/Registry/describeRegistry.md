@@ -13,8 +13,8 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |Region ID|
 |**registryName**|String|True| |注册表名称|
+|**regionId**|String|True| |Region ID|
 
 ## 请求参数
 无
@@ -23,8 +23,8 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
@@ -33,11 +33,11 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 ### Registry
 |名称|类型|描述|
 |---|---|---|
-|**createTime**|String|registry 的创建时间|
 |**description**|String|注册表描述，<a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">参考公共参数规范</a>。|
-|**name**|String|注册表名称，<a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">参考公共参数规范</a>。|
 |**registryUri**|String|registry endporint url|
+|**createTime**|String|registry 的创建时间|
 |**totalSpaceUsedMB**|Double|regsitry 使用的总存储空间 单位 (MB)|
+|**name**|String|注册表名称，<a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">参考公共参数规范</a>。|
 
 ## 返回码
 |返回码|描述|

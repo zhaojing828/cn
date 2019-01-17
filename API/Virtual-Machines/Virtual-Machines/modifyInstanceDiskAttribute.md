@@ -24,8 +24,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:modifyIn
 ### InstanceDiskAttribute
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**autoDelete**|Boolean|False| |随云主机一起删除，删除主机时自动删除此磁盘，默认为false，本地盘(local)不能更改此值。<br>如果云主机中的数据盘(cloud)是包年包月计费方式，此参数不生效。<br>如果云主机中的数据盘(cloud)是共享型数据盘，此参数不生效。<br>|
 |**diskId**|String|False| |云硬盘ID|
+|**autoDelete**|Boolean|False| |随云主机一起删除，删除主机时自动删除此磁盘，默认为false，本地盘(local)不能更改此值。<br>如果云主机中的数据盘(cloud)是包年包月计费方式，此参数不生效。<br>如果云主机中的数据盘(cloud)是共享型数据盘，此参数不生效。<br>|
 
 ## 返回参数
 无
