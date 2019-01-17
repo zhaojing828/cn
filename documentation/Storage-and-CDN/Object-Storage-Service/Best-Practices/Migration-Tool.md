@@ -34,7 +34,7 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 ### 2.获取配置文件
 
 在相同目录下创建或者下载配置文件application.yml
-下载链接：[示例yml文件](http://cn-north-1-songguangsheng.s3.cn-north-1.jcloudcs.com/test0114/application.yml)
+下载链接：[示例yml文件](https://downloads.oss.cn-north-1.jcloudcs.com/application.yml)
 
 ### 3.修改application.yml 配置文件
 
