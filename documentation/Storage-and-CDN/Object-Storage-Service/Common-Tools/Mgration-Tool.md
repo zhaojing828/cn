@@ -6,10 +6,10 @@ Osstransfer工具可以将本地、其它云存储的数据迁移到OSS，它具
 
 
 -   支持的丰富的数据源：
-  * 本地数据：将本地存储的数据迁移到 COS；
-  * 其他云存储:目前支持 AWS S3，阿里云 OSS，腾讯云COS,百度BOS，华为 OBS存储迁移至京东云OSS，后续会不断扩展。
-  * URL 列表：根据指定的 URL 下载列表进行下载迁移到 京东云OSS。
-  * Bucket 相互复制：京东云OSS的 Bucket 数据相互复制, 支持跨账号跨地域及同区域的数据复制。
+    * 本地数据：将本地存储的数据迁移到 COS；
+    * 其他云存储:目前支持 AWS S3，阿里云 OSS，腾讯云COS,百度BOS，华为 OBS存储迁移至京东云OSS，后续会不断扩展。
+    * URL 列表：根据指定的 URL 下载列表进行下载迁移到 京东云OSS。
+    * Bucket 相互复制：京东云OSS的 Bucket 数据相互复制, 支持跨账号跨地域及同区域的数据复制。
 -   支持断点续传；
 -   支持流量控制；
 -   支持迁移特定前缀的文件；
@@ -45,7 +45,7 @@ Osstransfer工具可以将本地、其它云存储的数据迁移到OSS，它具
 |名称|说明|默认值|
 |:-|:-|:-|
 |jobType|job的类型，分别为listObject，transfer及md5check。 | listObject  |
-|sourceType| 数据来源的类型，分别为urlfile,diskfile，s3file（AWS S3、腾讯云COS、百度BOS、华为 OBS）aliyunfile,disklistfile（本地文件列表）。 |s3file|
+|sourceType| 数据来源的类型，分别为urlfile,diskfile，s3file（AWS S3、腾讯云COS、百度BOS、华为 OBS、京东云 OSS）aliyunfile,disklistfile（本地文件列表）。 |s3file|
 |urlType|当sourceType为urlfile时，如果文件列表并非迁移工具生成且只有url信息，则需要配置urlType为onlyUrl。| 无|
 |filePath|被读取文件的地址。当sourceType 为 urlfile ，diskfile时，filePath 为必填项。|无|
 |urlFilePrefix|当文件列表为url时，我们则获取用户的key值为url地址的一部分，则需要用户配置切割url的数量。|无，如配置，建议最少设置为7，即http://的长度|
@@ -72,8 +72,9 @@ Osstransfer工具可以将本地、其它云存储的数据迁移到OSS，它具
 #### 3.2 application.yml 示例
 
 3.3.1 获取文件列表 （jobType: listObject）
-listObject对应的 sourceType为 s3file,aliyunfile,ossfile
-3.3.1.1 listS3 
+
+3.3.1.1 listS3 ，获取AWS S3、腾讯云COS、百度BOS、华为 OBS、京东云 OSS 
+
 ```
 jobType: listObject
 sourceType: s3fil，获取AWS S3、腾讯云COS、百度BOS、华为 OBS
@@ -102,7 +103,36 @@ filePath: /data2
 ```
 3.3.2 配置迁移任务 (jobType:transfer)
 
-3.3.2.1  从阿里云OSS迁移到京东云OSS
+3.3.2.1 从AWS S3、腾讯云COS、百度BOS、华为 OBS迁移到京东云OSS
+
+```
+jobType: transfer
+sourceType: s3file
+
+src.access.id : 59E6DC72927457BTYYUUU56EE6XXXXX
+src.secret.key: 00C835A41UUUUUUUUUU53BE108XXXXX
+src.endpoint : http://s3.cn-north-1.jcloudcs.com
+src.bucket : cn-north-1-dingguijun
+src.prefix :
+
+des.access.id : 59E6DC72927457BDEBF36A56EE616XXX
+des.secret.key: 00C835A41D17AAA11DFD53BE108BBXXX
+des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.bucket : llllllll
+des.prefix:
+
+#非必填项
+
+task.limit.threadCount: 20
+task.limit.qps: 50
+
+transfer.coverFile: true
+transfer.put.maxsize: 4194304
+transfer.multipart.partsize: 4194304
+transfer.multipart.threads: 5
+
+```
+3.3.2.2  从阿里云OSS迁移到京东云OSS
 
 ```
 jobType: transfer
@@ -130,34 +160,6 @@ transfer.put.maxsize: 4194304
 transfer.multipart.partsize: 4194304
 transfer.multipart.threads: 5
 
-```
-3.3.2.2 从AWS S3、腾讯云COS、百度BOS、华为 OBS迁移到京东云OSS
-
-```
-jobType: transfer
-sourceType: s3file
-
-src.access.id : 59E6DC72927457BTYYUUU56EE6XXXXX
-src.secret.key: 00C835A41UUUUUUUUUU53BE108XXXXX
-src.endpoint : http://s3.cn-north-1.jcloudcs.com
-src.bucket : cn-north-1-dingguijun
-src.prefix :
-
-des.access.id : 59E6DC72927457BDEBF36A56EE616XXX
-des.secret.key: 00C835A41D17AAA11DFD53BE108BBXXX
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
-des.bucket : llllllll
-des.prefix:
-
-#非必填项
-
-task.limit.threadCount: 20
-task.limit.qps: 50
-
-transfer.coverFile: true
-transfer.put.maxsize: 4194304
-transfer.multipart.partsize: 4194304
-transfer.multipart.threads: 5
 ```
 
 3.3.2.3  从本地迁移到京东云OSS
