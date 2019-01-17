@@ -62,6 +62,9 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**encrypted**|Boolean|云盘是否为加密盘|
 |**iops**|Integer|该云硬盘实际应用的iops值|
 |**multiAttachable**|Boolean|云盘是否支持多挂载|
+|**encrypted**|Boolean|云盘是否为加密盘|
+|**iops**|Integer|该云硬盘可应用的iops最大值|
+|**throughput**|Integer|该云硬盘可应用的吞吐量的最大值，单位是MiB|
 |**name**|String|云硬盘名称，只允许输入中文、数字、大小写字母、英文下划线“_”及中划线“-”，不允许为空且不超过32字符。|
 |**snapshotId**|String|创建该云硬盘的快照ID|
 |**status**|String|云硬盘状态，取值为 creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend 之一|
