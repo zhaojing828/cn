@@ -272,6 +272,6 @@ grep "1$" audit-0.log*
 ```
 进行筛选。
 
-2、如果sourceType值为s3file，使用md5check时日志打印在=============，其他情况日志打印在md5check.log中，除此之外sourceType值为aliyunfile时不支持md5check。
+2、如果sourceType值为s3file，使用md5check时日志打印在srcbucketname.txt.diff中，其他情况日志打印在md5check.log中，除此之外sourceType值为aliyunfile时不支持md5check。
 
 
