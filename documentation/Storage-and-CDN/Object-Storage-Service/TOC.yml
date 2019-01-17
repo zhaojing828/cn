@@ -375,6 +375,8 @@ items:
         href: Best-Practices/Setting-Signature-Authentication-For-Callback-Server.md        
       - name: OSS线上服务快速验证工具
         href: Best-Practices/OSS-Verification-Tool.md
+      - name: 移动应用直传OSS
+        href: Best-Practices/Transfer-For-Mobile-Apps.md
  - name: 常见问题
    items:
       - name: 一般性问题
