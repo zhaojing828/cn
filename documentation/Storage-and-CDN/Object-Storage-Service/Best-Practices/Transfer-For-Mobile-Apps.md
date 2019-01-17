@@ -21,7 +21,7 @@
 
 移动应用直传服务的开发流程图如下：
 
-![移动应用直传](../../../image/Object-Storage-Service/OSS-104.png)
+![移动应用直传](../../../../image/Object-Storage-Service/OSS-104.png)
 
 流程说明：
 
