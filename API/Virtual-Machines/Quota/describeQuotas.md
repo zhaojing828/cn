@@ -24,15 +24,15 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/quotas
 ### Filter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
+|**name**|String|True| |过滤条件的名称|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
@@ -41,9 +41,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/quotas
 ### Quota
 |名称|类型|描述|
 |---|---|---|
-|**limit**|Integer|配额上限|
 |**resourceType**|String|资源类型[instance，keypair，image，instanceTemplate]|
 |**used**|Integer|已用配额|
+|**limit**|Integer|配额上限|
 
 ## 返回码
 |返回码|描述|

@@ -15,8 +15,8 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域 ID|
 |**registryName**|String|True| |注册表名称|
+|**regionId**|String|True| |地域 ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
@@ -27,8 +27,8 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|

@@ -12,8 +12,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/vpcPeerings/{vpcPeeringId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |Region ID|
 |**vpcPeeringId**|String|True| |vpcPeeringId ID|
+|**regionId**|String|True| |Region ID|
 
 ## 请求参数
 无

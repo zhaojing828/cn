@@ -2,6 +2,7 @@
 
 
 ## 描述
+-   查询您已经创建的云硬盘。
 -   filters多个过滤条件之间是逻辑与(AND)，每个条件内部的多个取值是逻辑或(OR)
 
 
@@ -18,7 +19,7 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**filters**|Filter[]|False| |diskId - 云硬盘ID，精确匹配，支持多个<br>diskType - 云硬盘类型，精确匹配，支持多个，取值为 ssd、premium-hdd、ssd.gp1、ssd.io1、hdd.std1之一<br>instanceId - 云硬盘所挂载主机的ID，精确匹配，支持多个<br>instanceType - 云硬盘所挂载主机的类型，精确匹配，支持多个<br>status - 可用区，精确匹配，支持多个<br>az - 云硬盘状态，精确匹配，支持多个<br>name - 云硬盘名称，模糊匹配，支持单个<br>multiAttach - 云硬盘是否多点挂载，精确匹配，支持单个<br>encrypted - 云硬盘是否加密，精确匹配，支持单个<br>|
+|**filters**|Filter[]|False| |diskId - 云硬盘ID，精确匹配，支持多个<br>diskType - 云硬盘类型，精确匹配，支持多个，取值为 ssd,premium-hdd,ssd.io1,ssd.gp1,hdd.std1<br>instanceId - 云硬盘所挂载主机的ID，精确匹配，支持多个<br>instanceType - 云硬盘所挂载主机的类型，精确匹配，支持多个<br>status - 可用区，精确匹配，支持多个<br>az - 云硬盘状态，精确匹配，支持多个<br>name - 云硬盘名称，模糊匹配，支持单个<br>multiAttach - 云硬盘是否多点挂载，精确匹配，支持单个<br>encrypted - 云硬盘是否加密，精确匹配，支持单个<br>|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞)|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
 |**tags**|TagFilter[]|False| |Tag筛选条件|
@@ -55,8 +56,11 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**createTime**|String|创建云硬盘时间|
 |**description**|String|云硬盘描述，允许输入UTF-8编码下的全部字符，不超过256字符。|
 |**diskId**|String|云硬盘ID|
-|**diskSizeGB**|Integer|磁盘大小，单位为 GiB|
-|**diskType**|String|磁盘类型，取值为 ssd、premium-hdd、ssd.gp1、ssd.io1、hdd.std1之一。|
+|**diskSizeGB**|Integer|云硬盘大小，单位为 GiB|
+|**diskType**|String|云硬盘类型，取值为 ssd,premium-hdd,ssd.gp1,ssd.io1,hdd.std1|
+|**enable**|Boolean|云盘是否被暂停（IOPS限制为极低）|
+|**encrypted**|Boolean|云盘是否为加密盘|
+|**iops**|Integer|该云硬盘实际应用的iops值|
 |**multiAttachable**|Boolean|云盘是否支持多挂载|
 |**encrypted**|Boolean|云盘是否为加密盘|
 |**iops**|Integer|该云硬盘可应用的iops最大值|
@@ -65,6 +69,7 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**snapshotId**|String|创建该云硬盘的快照ID|
 |**status**|String|云硬盘状态，取值为 creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend 之一|
 |**tags**|Tag[]|Tag信息|
+|**throughput**|Integer|该云硬盘实际应用的吞吐量的数值|
 ### DiskAttachment
 |名称|类型|描述|
 |---|---|---|

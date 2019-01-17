@@ -18,14 +18,16 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/metrics/{metric}/metricDat
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**aggrType**|String|False| |指标聚合方式，每个指标都有默认的聚合方式， 可选值包括：sum,avg.max.min|
+|**aggrType**|String|False| |聚合方式，默认等于downSampleType或avg，可选值参考http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html?highlight=zimsum#available-aggregators|
+|**downSampleType**|String|False| |采样方式，默认等于aggrType或avg，可选值参考http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html?highlight=avg#available-aggregators|
 |**endTime**|String|False| |查询时间范围的结束时间， UTC时间，格式：2016-12- yyyy-MM-dd'T'HH:mm:ssZ（为空时，将由startTime与timeInterval计算得出）|
 |**groupBy**|Boolean|False| |是否对查询的tags分组|
+|**rate**|Boolean|False| |是否求速率|
 |**resourceId**|String|True| |资源的uuid|
 |**serviceCode**|String|True| |资源的类型，取值vm, lb, ip, database 等|
-|**startTime**|String|False| |查询时间范围的开始时间， UTC时间，格式：yyyy-MM-dd'T'HH:mm:ssZ（默认为当前时间，早于30d时，将被重置为30d）|
-|**tags**|TagFilter[]|False| |自定义标签|
-|**timeInterval**|String|False| |时间间隔：1h，6h，12h，1d，3d，7d，14d，固定时间间隔，timeInterval 与 endTime 至少填一项|
+|**startTime**|String|False| |查询时间范围的开始时间， UTC时间，格式：yyyy-MM-dd'T'HH:mm:ssZ|
+|**tags**|TagFilter[]|False| |自定义标签/tag；至少要传一个tag，且tag.Values不为空|
+|**timeInterval**|String|False| |时间间隔：1h，6h，12h，1d，3d，7d，14d，固定时间间隔，timeInterval默认为1h，当前时间往 前1h|
 
 ### TagFilter
 |名称|类型|是否必需|默认值|描述|

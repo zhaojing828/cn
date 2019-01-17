@@ -3,7 +3,11 @@ API版本：0.12.0
 
 |发布时间|版本号|更新|说明|
 |---|---|---|---|
-|2019-01-03|0.12.0|接口新增字段及选项|* 创建云盘的时增加是否创建加密盘选项<br>* 创建云盘时支持创建三种新盘（通用型SSD、性能型 SSD和容量型HDD）<br>* 云盘列表及详情增加是否为加密盘的过滤条件和返回信息<br>* 快照列表及详情增加是否为加密盘的快照的返回信息<br>* 云盘列表和详情可以支持返回三种新盘类型|
+| 2019-01-02 | 0.12.0 | 新增接口 | 添加 resumeVolume 和suspendVolume的接口。|
+|2018-12-05|0.11.0|新增接口|* 修改 DiskSpecification 返回参数，增加云盘规格的详细描述 |
+|2018-11-23|0.10.0|新增接口|* 新增describeDiskSpecification,describeQuota接口 |
+|2018-09-13|0.9.0|新增接口|* 新增copySnapshot，shareSnapshot和unshareSnapshot接口<br>* 重做describeSnapshot和describeSnapshots 接口|
+|2018-08-27|0.8.0|新增接口|* 新增modifySnapshotAttribute接口|
 |2018-08-14|0.7.0|接口新增字段|* 查询云硬盘列表时增加multiAttach作为过滤<br>* 云硬盘信息详情中增加multiAttachable信息<br>* 创建云硬盘时增加multiAttachable作为可选项|
 |2018-06-25|0.6.0|接口新增字段|* 查询云硬盘列表时增加Tag信息作为过滤条件<br>* 云硬盘信息详情中增加Tag信息|
 |2018-05-10|0.5.0|新增接口|* 增加云硬盘批量创建接口<br>* 增加云硬盘删除接口<br>* 增加云硬盘扩容接口|

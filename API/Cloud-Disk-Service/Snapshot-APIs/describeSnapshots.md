@@ -17,9 +17,10 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**filters**|Filter[]|False| |snapshotId - 云硬盘快照ID，支持多个<br>diskId - 生成快照的云硬盘ID，支持多个<br>status - 快照状态，精确匹配，支持多个,取值为 creating、available、in-use、deleting、error_create、error_delete<br>name - 快照名称，模糊匹配，支持单个<br>|
+|**filters**|Filter[]|False| |snapshotId - 云硬盘快照ID，支持多个<br>diskId - 生成快照的云硬盘ID，支持多个<br>status - 快照状态，精确匹配，支持多个,取值为 creating、available、copying、deleting、error_create、error_delete<br>name - 快照名称，模糊匹配，支持单个<br>|
 |**pageNumber**|Integer|False|1|页码, 默认为1, 取值范围：[1,∞)|
 |**pageSize**|Integer|False|20|分页大小，默认为20，取值范围：[10,100]|
+|**snapshotSource**|String|False| |查找快照的类型，可以为private，others，shared，默认为private|
 
 ### Filter
 |名称|类型|是否必需|默认值|描述|
@@ -44,12 +45,20 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots
 |---|---|---|
 |**createTime**|String|创建时间|
 |**description**|String|快照描述|
-|**diskId**|String|创建快照的云硬盘ID|
+|**diskId**|String|创建快照的云硬盘ID(snapshotSource为others时不展示)|
 |**encrypted**|Boolean|快照是否为加密盘的快照|
+|**images**|String[]|快照关联的所有镜像ID(snapshotSource为others时不展示)|
 |**name**|String|快照名称|
+|**sharInfo**|ShareInfo[]|共享信息|
 |**snapshotId**|String|云硬盘快照ID|
 |**snapshotSizeGB**|Integer|快照大小，单位为GiB|
+|**snapshotSource**|String|快照来源 可以有self，others两种来源|
 |**status**|String|快照状态，取值为 creating、available、in-use、deleting、error_create、error_delete 之一|
+### ShareInfo
+|名称|类型|描述|
+|---|---|---|
+|**shareTime**|String|共享时间|
+|**shareTo**|String|被共享快照的用户的pin|
 
 ## 返回码
 |返回码|描述|

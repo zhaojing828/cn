@@ -30,7 +30,7 @@ https://clouddnsservice.jdcloud-api.com/v1/regions/{regionId}/domain/{domainId}/
 |**port**|Integer|False| |端口，只存在于SRV解析记录类型|
 |**ttl**|Integer|True| |解析记录的生存时间|
 |**type**|String|True| |解析的类型|
-|**viewValue**|Integer|True| |解析线路的ID|
+|**viewValue**|Integer|True| |解析线路的ID，请调用getViewTree接口获取解析线路的ID。|
 |**weight**|Integer|False| |解析记录的权重|
 
 ## 返回参数

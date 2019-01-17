@@ -37,14 +37,13 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_slbs
 |名称|类型|描述|
 |---|---|---|
 |**addressType**|String|负载均衡实例的网络类型。|
+|**azs**|String[]|可用区域。|
 |**cloudID**|String|所属云ID|
 |**createdTime**|String|创建时间|
 |**id**|String|负载均衡实例ID。|
 |**ipAddress**|String|负载均衡实例的服务地址。|
-|**masterAz**|String|实例的主可用区ID。|
 |**name**|String|负载均衡实例的名称。|
 |**networkType**|String|私网负载均衡实例的网络类型|
-|**slaveAz**|String|实例的备可用区ID。|
 |**status**|String|负载均衡实例状态|
 |**subnetId**|String|私网负载均衡实例的交换机ID。|
 |**vpc**|String|私网负载均衡实例的专有网络ID。|

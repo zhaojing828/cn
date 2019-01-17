@@ -38,8 +38,11 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks/{diskId}
 |**createTime**|String|创建云硬盘时间|
 |**description**|String|云硬盘描述，允许输入UTF-8编码下的全部字符，不超过256字符。|
 |**diskId**|String|云硬盘ID|
-|**diskSizeGB**|Integer|磁盘大小，单位为 GiB|
-|**diskType**|String|磁盘类型，取值为 ssd、premium-hdd、ssd.gp1、ssd.io1、hdd.std1之一。|
+|**diskSizeGB**|Integer|云硬盘大小，单位为 GiB|
+|**diskType**|String|云硬盘类型，取值为 ssd,premium-hdd,ssd.gp1,ssd.io1,hdd.std1|
+|**enable**|Boolean|云盘是否被暂停（IOPS限制为极低）|
+|**encrypted**|Boolean|云盘是否为加密盘|
+|**iops**|Integer|该云硬盘实际应用的iops值|
 |**multiAttachable**|Boolean|云盘是否支持多挂载|
 |**encrypted**|Boolean|云盘是否为加密盘|
 |**iops**|Integer|该云硬盘可应用的iops最大值|
@@ -48,6 +51,7 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks/{diskId}
 |**snapshotId**|String|创建该云硬盘的快照ID|
 |**status**|String|云硬盘状态，取值为 creating、available、in-use、extending、restoring、deleting、deleted、error_create、error_delete、error_restore、error_extend 之一|
 |**tags**|Tag[]|Tag信息|
+|**throughput**|Integer|该云硬盘实际应用的吞吐量的数值|
 ### DiskAttachment
 |名称|类型|描述|
 |---|---|---|
