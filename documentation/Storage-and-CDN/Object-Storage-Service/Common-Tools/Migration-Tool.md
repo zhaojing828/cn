@@ -77,9 +77,9 @@ Osstransfer工具可以将本地、其它云存储的数据迁移到OSS，它具
 
 ```
 jobType: listObject
-sourceType: s3fil，获取AWS S3、腾讯云COS、百度BOS、华为 OBS
-src.access.id : 59E6DC72927457BDEBF36A56EE616XXX
-src.secret.key: 00C835A41D17AAA11DFD53BE108BBXXX
+sourceType: s3fil
+src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://s3.cn-north-1.jcloudcs.com
 src.bucket : cn-north-1-dingguijun
 src.prefix :
@@ -88,8 +88,8 @@ src.prefix :
 ```
 jobType: listObject
 sourceType: aliyunfile
-src.access.id : LTAIuRwI8DffUdfx
-src.secret.key: Yvlk8zNHdSiot3ALFwYtXXXXXX
+src.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
+src.secret.key: SKBBBBBBBBBBBBBBBBBBBBBBBBB
 src.endpoint : http://oss-cn-beijing.aliyuncs.com
 src.bucket : testclXXX
 src.prefix :
@@ -109,13 +109,13 @@ filePath: /data2
 jobType: transfer
 sourceType: s3file
 
-src.access.id : 59E6DC72927457BTYYUUU56EE6XXXXX
-src.secret.key: 00C835A41UUUUUUUUUU53BE108XXXXX
+src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://s3.cn-north-1.jcloudcs.com
 src.bucket : cn-north-1-dingguijun
 src.prefix :
 
-des.access.id : 59E6DC72927457BDEBF36A56EE616XXX
+des.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: 00C835A41D17AAA11DFD53BE108BBXXX
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
 des.bucket : llllllll
@@ -138,13 +138,13 @@ transfer.multipart.threads: 5
 jobType: transfer
 sourceType: aliyunfile
 
-src.access.id : LTAIuRwI8DffUdfx
-src.secret.key: Yvlk8zNHdSiot3ALFwYtpgNu5TF5rI
+src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://oss-cn-beijing.aliyuncs.com
 src.bucket : testcloudcom
 src.prefix :
 
-des.access.id : 59E6DC72927457BDEBF36A56EEXXXXXX
+des.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: 00C835A41D17AAA11DFD53BE10XXXXXX
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
 des.bucket : llllllll
@@ -173,8 +173,8 @@ filePath: /data2
 
  
 
-des.access.id : 59E6DC72927457BDEBF36A56EE6XXXXX
-des.secret.key: 00C835A41D17AAA11DFD53BE108XXXXX
+des.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+des.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
 des.bucket : llllllll
 des.prefix:
@@ -192,8 +192,8 @@ filePath: /data4/onlyurl.txt
 urlType: onlyUrl
 urlFilePrefix: 35
 
-des.access.id : 59E6DC72927457BDEBF36A56EEXXXXX
-des.secret.key: 00C835A41D17AAA11DFD53BE10XXXXX
+des.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+des.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
 des.bucket : cn-north-1-dingguijun
 
@@ -212,16 +212,16 @@ Linux 下分隔符为单斜杠，如 /a/b/c.txt 。仅支持填写文件不支�
 jobType: transfer
 sourceType: s3file
 
-src.access.id : 59E6DC72927457BDEBF36A56EE6XXXXX
-src.secret.key: 00C835A41D17AAA11DFD53BE108XXXXX
+src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://s3.cn-north-1.jcloudcs.com
 src.bucket : cn-north-1-dingguijun
 src.prefix :
 
  
 
-des.access.id : 59E6DC72927457BDEBF36A56EE6XXXXX
-des.secret.key: 00C835A41D17AAA11DFD53BE108XXXXX
+des.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
+des.secret.key: SKBBBBBBBBBBBBBBBBBBBBBBBBB
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
 des.bucket : llllllll
 des.prefix:
