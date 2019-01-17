@@ -240,7 +240,7 @@ java -jar transfer-tools-java-1.0.0.jar --Dspring.config.location=application.ym
 
 在迁移过程中，put上传及分片上传的每片文件都已经进行了md5的对比，所以md5check功能并非一定需要。
 
-2.文件迁移最大单文件最大为19.5T。
+2.文件迁移单文件最大为19.5T。
 
 3.从云厂商实现数据迁移，仅支持源Bucket权限为公有读，否则将导致迁移失败。
 
@@ -268,6 +268,6 @@ grep "1$" audit-0.log*
 ```
 进行筛选。
 
-2、如果sourceType值为 s3file时使用的是md5check功能，则日志打印在md5check.log中。
+2、如果sourceType值为s3file，使用md5check功能日志打印，其他情况日志打印在md5check.log中。
 
 
