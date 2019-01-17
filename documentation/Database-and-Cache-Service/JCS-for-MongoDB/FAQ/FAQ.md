@@ -31,26 +31,25 @@ A：MongoDB 4.0 新增了一些功能特性，转为使用3.6版时，需注意�
 	
 	- 类型转换
 
-| Operator | Description |
-|---|:---|
-|$convert | Convert value to specified type.|
-|$toBool | Convert value to boolean.|
-|$toDate |Convert value to Date. |
-|$toDecimal|Convert value to Decimal128.|
-|$toDouble|Convert value to Double.|
-|$toInt|Convert value to integer.|
-|$toLong|Convert value to long.|
-|$toObjectId|Convert value to ObjectId.|
-|$toString|Convert value to string.|
+		| Operator | Description |
+		|---|:--	-|
+		|$convert | Convert value to specified type.|
+		|$toBool | Convert value to boolean.|
+		|$toDate |Convert value to Date. |
+		|$toDecimal|Convert value to Decimal128.|
+		|$toDouble|Convert value to Double.|
+		|$toInt|Convert value to integer.|
+		|$toLong|Convert value to long.|
+		|$toObjectId|Convert value to ObjectId.|
+		|$toString|Convert value to string.|
 
 	- 字符处理
 
-| Operator | Description |
-|---|:---|
-|$ltrim|Removes whitespace or the specified characters from the beginning of a string.|
-|$rtrim|Removes whitespace or the specified characters from the end of a string.|
-|$trim|Removes whitespace or the specified characters from the beginning and end of a string.|
-
+		| Operator | Description |
+		|---|:---|
+		|$ltrim|Removes whitespace or the specified characters from the beginning of a string.|
+		|$rtrim|Removes whitespace or the specified characters from the end of a string.|
+		|$trim|Removes whitespace or the specified characters from the beginning and end of a string.|
 
 3. 避免使用新增的聚合命令。
 4. 注意4.0版改进的一些命令的使用。
@@ -63,11 +62,10 @@ A：MongoDB 4.0 新增了一些功能特性，转为使用3.6版时，需注意�
 
 	- 地理位置查询
 
-| Operator | Description |
-|---|:---|
-|$geoNear|support using the minDistance option with 2d indexes.<br /> adds a key option that enables users to specify which geospatial index to use when querying a collection with multiple geospatial indexes. |
-|$near|support using the minDistance option with 2d indexes.|
-|$nearSphere|support using the minDistance option with 2d indexes.|
-
+		| Operator | Description |
+		|---|:---|
+		|$geoNear|support using the minDistance option with 2d indexes.<br /> adds a key option that enables users to specify which geospatial index to use when querying a collection with multiple geospatial indexes. |
+		|$near|support using the minDistance option with 2d indexes.|
+		|$nearSphere|support using the minDistance option with 2d indexes.|
 
 5. 4.0特性详细说明，请查看[官方文档](https://docs.mongodb.com/manual/release-notes/4.0/)。
