@@ -2,19 +2,18 @@
 
 ## 功能说明
 
-Osstransfer工具可以将本地、其它云存储的数据迁移到OSS，它具有以下特点：
+Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它具有以下特点：
 
 
 -   支持的丰富的数据源：
-    * 本地数据：将本地存储的数据迁移到 COS；
-    * 其他云存储:目前支持 AWS S3，阿里云 OSS，腾讯云COS,百度BOS，华为 OBS存储迁移至京东云OSS，后续会不断扩展。
+    * 本地数据：将本地存储的数据迁移到 OSS；
+    * 其他对象存储:目前支持 AWS S3，阿里云 OSS，腾讯云COS,百度BOS，华为 OBS存储迁移至京东云OSS，后续会不断扩展。
     * URL 列表：根据指定的 URL 下载列表进行下载迁移到 京东云OSS。
     * Bucket 相互复制：京东云OSS的 Bucket 数据相互复制, 支持跨账号跨地域及同区域的数据复制。
 -   支持断点续传；
 -   支持流量控制；
 -   支持迁移特定前缀的文件；
 -   支持并行数据下载、上传；
--   支持单机模式；
 -   迁移校验：对象迁移后的校验。
 
 ## 使用环境
@@ -78,27 +77,27 @@ Osstransfer工具可以将本地、其它云存储的数据迁移到OSS，它具
 ```
 jobType: listObject
 sourceType: s3fil
-src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://s3.cn-north-1.jcloudcs.com
-src.bucket : cn-north-1-dingguijun
+src.bucket : yourbucket
 src.prefix :
 ```
 3.3.1.2 listAliyun，获取阿里云OSS
 ```
 jobType: listObject
 sourceType: aliyunfile
-src.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
-src.secret.key: SKBBBBBBBBBBBBBBBBBBBBBBBBB
+src.access.id : AAAAAAAAAAAAAAAAAAAAAAAAA
+src.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBB
 src.endpoint : http://oss-cn-beijing.aliyuncs.com
-src.bucket : testclXXX
+src.bucket : yourbucket
 src.prefix :
 ```
 3.3.1.3 listdiskfile ，获取本地文件系统
 ```
 jobType: listObject
 sourceType: diskfile
-filePath: /data2
+filePath: /yourpath
 
 ```
 3.3.2 配置迁移任务 (jobType:transfer)
@@ -109,16 +108,16 @@ filePath: /data2
 jobType: transfer
 sourceType: s3file
 
-src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://s3.cn-north-1.jcloudcs.com
-src.bucket : cn-north-1-dingguijun
+src.bucket : yourbucket
 src.prefix :
 
-des.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
-des.secret.key: 00C835A41D17AAA11DFD53BE108BBXXX
+des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBB
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
-des.bucket : llllllll
+des.bucket : yourbucket
 des.prefix:
 
 #非必填项
@@ -138,16 +137,16 @@ transfer.multipart.threads: 5
 jobType: transfer
 sourceType: aliyunfile
 
-src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://oss-cn-beijing.aliyuncs.com
-src.bucket : testcloudcom
+src.bucket : yourbucket
 src.prefix :
 
-des.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
-des.secret.key: 00C835A41D17AAA11DFD53BE10XXXXXX
+des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAA
+des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBB
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
-des.bucket : llllllll
+des.bucket : yourbucket
 des.prefix:
 
 #非必填项
@@ -169,14 +168,14 @@ transfer.multipart.threads: 5
 jobType: transfer
 sourceType: diskfile
 
-filePath: /data2
+filePath: /yourpath
 
  
 
-des.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-des.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
-des.bucket : llllllll
+des.bucket : yourbucket
 des.prefix:
 
 urlFilePrefix: 1
@@ -188,14 +187,14 @@ urlFilePrefix: 1
 ```
 jobType: transfer
 sourceType: urlfile
-filePath: /data4/onlyurl.txt
+filePath: /path/onlyurl.txt
 urlType: onlyUrl
 urlFilePrefix: 35
 
-des.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-des.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
-des.bucket : cn-north-1-dingguijun
+des.bucket : yourbucket
 
 ```
 |配置项|说明|
@@ -212,18 +211,18 @@ Linux 下分隔符为单斜杠，如 /a/b/c.txt 。仅支持填写文件不支�
 jobType: transfer
 sourceType: s3file
 
-src.access.id : AKXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-src.secret.key: SKYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://s3.cn-north-1.jcloudcs.com
-src.bucket : cn-north-1-dingguijun
+src.bucket : yourbucket
 src.prefix :
 
  
 
-des.access.id : AKAAAAAAAAAAAAAAAAAAAAAAAAA
-des.secret.key: SKBBBBBBBBBBBBBBBBBBBBBBBBB
+des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 des.endpoint : http://s3.cn-north-1.jcloudcs.com
-des.bucket : llllllll
+des.bucket : yourbucket
 des.prefix:
 
 ```
@@ -269,6 +268,6 @@ grep "1$" audit-0.log*
 ```
 进行筛选。
 
-2、如果使用的是md5check功能，则日志打印在md5check.log中。
+2、如果sourceType值为 s3file时使用的是md5check功能，则日志打印在md5check.log中。
 
 
