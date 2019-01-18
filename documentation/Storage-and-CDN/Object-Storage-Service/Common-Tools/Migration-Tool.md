@@ -59,12 +59,12 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 |transfer.multipart.threads|分片复制时最大并发的数量, 缺省为5。|5|
 |src.access.id|用户的密钥 accessKeyId。|无|
 |src.secret.key|用户的密钥 accessKeySecret。|无|
-|src.endpoint|源endpoint，<br>阿里云：https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.6.572.6a537f5ewpHZJZ<br>腾讯云：https://cloud.tencent.com/document/product/436/6224<br>百度云：https://cloud.baidu.com/doc/BOS/S3.html#.E6.9C.8D.E5.8A.A1.E5.9F.9F.E5.90.8D<br>华为云：https://support.huaweicloud.com/api-obs/zh-cn_topic_0136050628.html<br> |无|
+|src.endpoint|源endpoint <br>阿里云：https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.6.572.6a537f5ewpHZJZ<br>腾讯云：https://cloud.tencent.com/document/product/436/6224<br>百度云：https://cloud.baidu.com/doc/BOS/S3.html#.E6.9C.8D.E5.8A.A1.E5.9F.9F.E5.90.8D<br>华为云：https://support.huaweicloud.com/api-obs/zh-cn_topic_0136050628.html<br> |无|
 |src.bucket|源bucket名称。|无|
 |src.prefix |如果只迁移其中一部分文件，需要配置prefix。prefix 为0开头的数字时，请使用单引号或双引号|无|
 |des.access.id|京东云的accessKeyId。|无|
 |des.secret.key|京东云的密钥 accessKeySecret。|无|
-|des.endpoint|京东云OSS的服务域名。|无|
+|des.endpoint|京东云OSS的服务域名,请参考[服务器域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)。|无|
 |des.bucket |目标的bucket。|无|
 |des.prefix  |如果将迁移的文件只迁移到某一目录下，则配置des.prefix。prefix 为0开头的数字时，请使用单引号或双引号|无|
 |md5.marker |使用md5校验时，如果程序中途退出或服务故障，可将日志中marker值设置为md5.marker，程序将从该marker继续进行校验	。|无|
