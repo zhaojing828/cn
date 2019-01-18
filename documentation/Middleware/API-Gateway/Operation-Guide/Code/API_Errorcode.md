@@ -72,7 +72,29 @@
 
 
 
-####   表3.
+####   表3.调用SDK时的错误码
+|  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
+|-|-|-|-|
+| APIGW_NONCE_CONFLICT |  403 |  重复访问  |      |
+| APIGW_LACK_PARAMS |  401 |  某个参数不存在  |      |
+| APIGW_USER_BLACK_LIST |  403 |  黑名单用户  |      |
+| APIGW_ROLE_NOT_ALLOWED |  403 |  不支持角色用户  |      |
+| APIGW_ROLE_NOT_EXITST |  403 |  角色用户不存在  |      |
+| APIGW_KEY_NOT_EXITST |  401 |  错误的密钥  |      |
+| APIGW_KEY_DISABLED |  401 |  无效的密钥  |      |
+| APIGW_SIGN_RESULT_NOT_SAME |  401 |  签名不一致  |      |
+| APIGW_SERVICE_NOT_FOUND |  404 |  服务未注册  |      |
+| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息x-jdcloud-pin|x-jdcloud-erp  |      |
+| APIGW_FORMAT_ERROR |  403 |  参数x-jdcloud-pin格式错误  |      |
+| APIGW_USER_NOT_EXITST |  403 |  用户不存在  |      |
+| USER_NOT_ACTIVATED |  403 |  用户未激活  |      |
+| APIGW_OPERATION_NOT_ALLOWED |  403 |  不允许的操作  |      |
+| APIGW_MFA_FAIL |  403 |  没有操作权限  |      |
+| APIGW_API_NOT_ALLOWED |  403 |  此接口不允许调用  |      |
+| APIGW_CHILD_ACCOUNT_NOT_ALLOWED |  403 |  您无权在资源（%s）上执行（%s）  |      |
+| APIGW_SERVICE_DISABLED |  403 |  服务被禁用  |      |
+| HTTP_BAD_GATEWAY |  502 |  内部错误  |      |
+| HTTP_INTERNAL_SERVER_ERROR |  500 |  重复访问  |      |
 
 
 
