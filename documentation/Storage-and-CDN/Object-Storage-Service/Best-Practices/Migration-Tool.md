@@ -197,6 +197,7 @@ des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 
 ```
+
 |配置项|说明|
 |:-|:-|
 |urlType|当sourceType为urlfile时，如果文件列表并非迁移工具生成且只有url信息，则需要配置urlType为onlyUrl。|
@@ -264,7 +265,6 @@ Osstransfer迁移工具先使用sdk对各个数据源进行list，获取到objec
 
 ```
 grep "1$" audit-0.log*
-
 ```
 进行筛选。
 
