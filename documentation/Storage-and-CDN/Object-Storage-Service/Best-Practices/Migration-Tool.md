@@ -89,7 +89,7 @@ jobType: listObject
 sourceType: aliyunfile
 src.access.id : AAAAAAAAAAAAAAAAAAAAAAAAA
 src.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBB
-src.endpoint : http://oss-cn-beijing.aliyuncs.com
+src.endpoint : https://oss-cn-beijing.aliyuncs.com
 src.bucket : yourbucket
 src.prefix :
 ```
@@ -110,13 +110,13 @@ sourceType: s3file
 
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-src.endpoint : http://s3.cn-north-1.jcloudcs.com
+src.endpoint : https://s3.cn-north-1.jcloudcs.com
 src.bucket : yourbucket
 src.prefix :
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
@@ -139,13 +139,13 @@ sourceType: aliyunfile
 
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-src.endpoint : http://oss-cn-beijing.aliyuncs.com
+src.endpoint : https://oss-cn-beijing.aliyuncs.com
 src.bucket : yourbucket
 src.prefix :
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
@@ -174,13 +174,13 @@ filePath: /yourpath
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
 urlFilePrefix: 1
 
- #########urlFilePrefix设置为1，因为文件系统key如果以“/”开始，则京东云OSS不支持########
+ #urlFilePrefix设置为1，因为文件系统key如果以“/”开始，则京东云OSS不支持
 ```
 3.3.2.4  配置URL 列表数据源迁移到京东云OSS
 
@@ -193,7 +193,7 @@ urlFilePrefix: 35
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 
 ```
@@ -213,7 +213,7 @@ sourceType: s3file
 
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-src.endpoint : http://s3.cn-north-1.jcloudcs.com
+src.endpoint : https://s3.cn-north-1.jcloudcs.com
 src.bucket : yourbucket
 src.prefix :
 
@@ -221,7 +221,7 @@ src.prefix :
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
