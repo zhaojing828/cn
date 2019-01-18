@@ -64,7 +64,7 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 |src.prefix |如果只迁移其中一部分文件，需要配置prefix。prefix 为0开头的数字时，请使用单引号或双引号|无|
 |des.access.id|京东云的accessKeyId。|无|
 |des.secret.key|京东云的密钥 accessKeySecret。|无|
-|des.endpoint|京东云OSS的服务域名。|无|
+|des.endpoint|京东云OSS的服务域名，请参考[服务器域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)。|无|
 |des.bucket |目标的bucket。|无|
 |des.prefix  |如果将迁移的文件只迁移到某一目录下，则配置des.prefix。prefix 为0开头的数字时，请使用单引号或双引号|无|
 
