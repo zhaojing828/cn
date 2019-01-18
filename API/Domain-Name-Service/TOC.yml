@@ -7,20 +7,20 @@ items:
   href: ChangeLog.md
 - name: 接口信息
   items:
-    - name:  域名相关的接口
+    - name: 域名相关的接口
       items:
         - name: getDomains
-          href:  Domain-Name/getDomains.md
+          href: Domain-Name/getDomains.md
         - name: delDomain
-          href:  Domain-Name/delDomain.md
+          href: Domain-Name/delDomain.md
         - name: updateDomain
-          href:  Domain-Name/updateDomain.md
+          href: Domain-Name/updateDomain.md
         - name: addDomain
-          href:  Domain-Name/addDomain.md
+          href: Domain-Name/addDomain.md
         - name: getDomainQueryCount
-          href:  Domain-Name/getDomainQueryCount.md
+          href: Domain-Name/getDomainQueryCount.md
         - name: getDomainQueryTraffic
-          href:  Domain-Name/getDomainQueryTraffic.md
+          href: Domain-Name/getDomainQueryTraffic.md
     - name: 解析记录相关的接口  
       items:
         - name: addRR
