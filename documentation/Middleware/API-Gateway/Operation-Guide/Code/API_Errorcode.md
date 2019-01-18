@@ -79,7 +79,7 @@
 | APIGW_KEY_NOT_EXITST |  401 |  错误的密钥  |      |
 | APIGW_KEY_DISABLED |  401 |  无效的密钥  |      |
 | APIGW_SIGN_RESULT_NOT_SAME |  401 |  签名不一致  |      |
-| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息“x-jdcloud-pin|x-jdcloud-erp”  |      |
+| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息  |      |
 | APIGW_NONCE_CONFLICT |  403 |  重复访问  |      |
 | APIGW_USER_BLACK_LIST |  403 |  黑名单用户  |      |
 | APIGW_ROLE_NOT_ALLOWED |  403 |  不支持角色用户  |      |
