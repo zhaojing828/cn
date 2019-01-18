@@ -253,7 +253,7 @@ items:
          href: JDFusion/Rds-Migration-MySQL/deleteChannel.md     
        - name: deleteDatasource
          href: JDFusion/Rds-Migration-MySQL/deleteDatasource.md    
-        - name: getChannels
+       - name: getChannels
          href: JDFusion/Rds-Migration-MySQL/getChannels.md
        - name: getDatasources
          href: JDFusion/Rds-Migration-MySQL/getDatasources.md
