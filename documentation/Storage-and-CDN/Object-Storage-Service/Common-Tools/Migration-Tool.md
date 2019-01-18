@@ -49,7 +49,7 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 |sourceType| 数据来源的类型，分别为urlfile,diskfile，s3file（AWS S3、腾讯云COS、百度BOS、华为 OBS、京东云 OSS）aliyunfile,disklistfile（本地文件列表）。 |s3file|
 |urlType|当sourceType为urlfile时，如果文件列表并非迁移工具生成且只有url信息，则需要配置urlType为onlyUrl。| 无|
 |filePath|被读取文件的地址。当sourceType 为 urlfile ，diskfile时，filePath 为必填项。|无|
-|urlFilePrefix|当文件列表为url时，我们则获取用户的key值为url地址的一部分，则需要用户配置切割url的数量。|无，如配置，建议最少设置为7，即http://的长度|
+|urlFilePrefix|当文件列表为url时，我们则获取用户的key值为url地址的一部分，则需要用户配置切割url的数量。|无，如配置，建议最少设置为7，即http(s)://的长度|
 |ContentDispositionTooLongContinue|当链接的Content-Disposition超过京东云OSS限制所限制的100，如不获取该header值继续传则配置为true；否则将该url打印在错误日志里，由用户对该url的header值自行修改。|false|
 |task.limit.threadCount|任务限制的同时读取的文件数。|20|
 |task.limit.qps|任务限制的qps数，因为put占用带宽较低。总带宽为 partsize * qps。|50|
@@ -111,13 +111,13 @@ sourceType: s3file
 
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-src.endpoint : http://s3.cn-north-1.jcloudcs.com
+src.endpoint : https://s3.cn-north-1.jcloudcs.com
 src.bucket : yourbucket
 src.prefix :
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
@@ -140,13 +140,13 @@ sourceType: aliyunfile
 
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-src.endpoint : http://oss-cn-beijing.aliyuncs.com
+src.endpoint : https://oss-cn-beijing.aliyuncs.com
 src.bucket : yourbucket
 src.prefix :
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
@@ -175,7 +175,7 @@ filePath: /yourpath
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
@@ -194,7 +194,7 @@ urlFilePrefix: 35
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 
 ```
@@ -214,7 +214,7 @@ sourceType: s3file
 
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-src.endpoint : http://s3.cn-north-1.jcloudcs.com
+src.endpoint : https://s3.cn-north-1.jcloudcs.com
 src.bucket : yourbucket
 src.prefix :
 
@@ -222,7 +222,7 @@ src.prefix :
 
 des.access.id : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 des.secret.key: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-des.endpoint : http://s3.cn-north-1.jcloudcs.com
+des.endpoint : https://s3.cn-north-1.jcloudcs.com
 des.bucket : yourbucket
 des.prefix:
 
