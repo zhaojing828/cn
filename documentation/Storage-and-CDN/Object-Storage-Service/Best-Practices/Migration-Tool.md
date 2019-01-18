@@ -77,7 +77,7 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 
 ```
 jobType: listObject
-sourceType: s3fil
+sourceType: s3file
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 src.endpoint : http://s3.cn-north-1.jcloudcs.com
@@ -201,8 +201,8 @@ des.bucket : yourbucket
 |配置项|说明|
 |:-|:-|
 |urlType|当sourceType为urlfile时，如果文件列表并非迁移工具生成且只有url信息，则需要配置urlType为onlyUrl。|
-|filePath|被读取文件的地址。若从指定 URL 列表迁移至 京东云OSS，则必须进行该部分配置。URL 列表的地址，内容为 URL 文本，一行一条 URL 原始地址(如 https://abc.abc.com/xxx/yyy.txt, 无需添加任何双引号或其他符号)。URL 列表的地址要求为绝对路径：
-Linux 下分隔符为单斜杠，如 /a/b/c.txt 。仅支持填写文件不支持目录|
+|filePath|被读取文件的地址。若从指定 URL 列表迁移至 京东云OSS，则必须进行该部分配置。URL 列表的地址，内容为 URL 文本，一行一条 URL 原始地址(如 https://abc.abc.com/xxx/yyy.txt, 无需添加任何双引号或其他符号)。URL 列表的地址要求为绝对路径：Linux 下分隔符为单斜杠，如 /a/b/c.txt 。仅支持填写文件不支持目录|
+
 
 3.3.2.5 配置京东云Bucket 相互复制 
 
