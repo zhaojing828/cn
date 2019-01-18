@@ -67,7 +67,6 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 |des.endpoint|京东云OSS的服务域名。|无|
 |des.bucket |目标的bucket。|无|
 |des.prefix  |如果将迁移的文件只迁移到某一目录下，则配置des.prefix。prefix 为0开头的数字时，请使用单引号或双引号|无|
-|md5.marker |使用md5校验时，如果程序中途退出或服务故障，可将日志中marker值设置为md5.marker，程序将从该marker继续进行校验	。|无|
 
 #### 3.2 application.yml 示例
 
@@ -237,9 +236,7 @@ java -jar transfer-tools-java-1.0.0.jar --Dspring.config.location=application.ym
 ```
 ### Osstransfer使用说明
 
-1.Osstransfer迁移工具大体分为三种job，分别为listObject，transfer及md5check。
-
-在迁移过程中，put上传及分片上传的每片文件都已经进行了md5的对比，所以md5check功能并非一定需要。
+1.Osstransfer迁移工具大体分为三种job，分别为listObject，transfer。在迁移过程中，put上传及分片上传的每片文件都已经进行了md5的对比。
 
 2.文件迁移单文件最大为19.5T。
 
