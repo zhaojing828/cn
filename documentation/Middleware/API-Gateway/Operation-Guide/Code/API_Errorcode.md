@@ -6,26 +6,27 @@
 ####   表1.调用SDK时的错误码
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
-| APIGW_LACK_PARAMS |  401 |  某个参数不存在  |      |
-| APIGW_KEY_NOT_EXITST |  401 |  错误的密钥  |      |
-| APIGW_KEY_DISABLED |  401 |  无效的密钥  |      |
-| APIGW_SIGN_RESULT_NOT_SAME |  401 |  签名不一致  |      |
-| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息  |      |
-| APIGW_NONCE_CONFLICT |  403 |  重复访问  |      |
-| APIGW_USER_BLACK_LIST |  403 |  黑名单用户  |      |
-| APIGW_ROLE_NOT_ALLOWED |  403 |  不支持角色用户  |      |
-| APIGW_ROLE_NOT_EXITST |  403 |  角色用户不存在  |      |
-| APIGW_FORMAT_ERROR |  403 |  参数x-jdcloud-pin格式错误  |      |
-| APIGW_USER_NOT_EXITST |  403 |  用户不存在  |      |
-| USER_NOT_ACTIVATED |  403 |  用户未激活  |      |
-| APIGW_OPERATION_NOT_ALLOWED |  403 |  不允许的操作  |      |
-| APIGW_MFA_FAIL |  403 |  没有操作权限  |      |
-| APIGW_API_NOT_ALLOWED |  403 |  此接口不允许调用  |      |
-| APIGW_CHILD_ACCOUNT_NOT_ALLOWED |  403 |  您无权在资源（%s）上执行（%s）  |      |
-| APIGW_SERVICE_DISABLED |  403 |  服务被禁用  |      |
-| APIGW_SERVICE_NOT_FOUND |  404 |  服务未注册  |      |
-| HTTP_BAD_GATEWAY |  502 |  内部错误  |      |
-| HTTP_INTERNAL_SERVER_ERROR |  500 |  重复访问  |      |
+| APIGW_LACK_PARAMS |  401 |  某个参数不存在  |  需要补全参数    |
+| APIGW_KEY_NOT_EXITST |  401 |  错误的密钥  |   需要密钥提供方提供正确的密钥。   |
+| APIGW_KEY_DISABLED |  401 |  无效的密钥  |  需要密钥提供方提供正确的密钥。    |
+| APIGW_SIGN_RESULT_NOT_SAME |  401 |  签名不一致  |  请检查签名    |
+| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息  | 非法请求不被允许     |
+| APIGW_NONCE_CONFLICT |  403 |  重复访问  |  请检查访问信息    |
+| APIGW_USER_BLACK_LIST |  403 |  黑名单用户  |  黑名单用户禁止访问。有疑问可联系客服    |
+| APIGW_ROLE_NOT_ALLOWED |  403 |  不支持角色用户  |  请在相关系统或需联系相关管理员开权限        |
+| APIGW_ROLE_NOT_EXITST |  403 |  角色用户不存在  |  请在相关系统或需联系相关管理员开权限       |
+| APIGW_FORMAT_ERROR |  403 |  参数x-jdcloud-pin格式错误  |   请检查访问信息    |
+| APIGW_USER_NOT_EXITST |  403 |  用户不存在  | 请在相关系统或需联系相关管理员开权限         |
+| USER_NOT_ACTIVATED |  403 |  用户未激活  | 请在相关系统或需联系相关管理员开权限         |
+| APIGW_OPERATION_NOT_ALLOWED |  403 |  不允许的操作  |   请检查访问信息      |
+| APIGW_MFA_FAIL |  403 |  没有操作权限  |  请在相关系统或需联系相关管理员开权限     |
+| APIGW_API_NOT_ALLOWED |  403 |  此接口不允许调用  |    请在相关系统或需联系相关管理员开权限    |
+| APIGW_CHILD_ACCOUNT_NOT_ALLOWED |  403 |  您无权在资源上执行  |  请在相关系统或需联系相关管理员开权限     |
+| APIGW_SERVICE_DISABLED |  403 |  服务被禁用  |   请在相关系统或需联系相关管理员开权限    |
+| APIGW_SERVICE_NOT_FOUND |  404 |  服务未注册  |  请检查访问信息      |
+| HTTP_INTERNAL_SERVER_ERROR |  500 |  重复访问  |   请检查访问信息     |
+| HTTP_BAD_GATEWAY |  502 |  内部错误  |  请稍后重试    |
+
 
 
 ####   表2.通用错误码
@@ -35,7 +36,7 @@
 | ARGUMENT_NOT_SUPPORT |  400 |  参数 argument 不支持  |      |
 |  ARGUMENT_NOT_FOUND  |  400 |  参数 argument 是必填参数 |   |
 |  ARGUMENT_WRONG_FORMAT  | 400 | 参数 argument  类型应该是 某format  |   |
-|  OUT_OF_RANGE  | 400 | 参数 argument  取值不合法;参数 argument 取值应该介于 operand1 和 operand2 之间;参数  argument 取值应该 param的operand1 |   |
+|  OUT_OF_RANGE  | 400 | 参数取值不合法或超出范围 |   |
 | ARGUMENT_MISMATCH  | 400 |  资源 resource 不存在参数 argument |   |
 | INVALID_ARGUMENT   | 400 |  参数 argument 存在错误  |      |
 | FAILED_PRECONDITION   | 400 |  资源 resource 在当前状态下不可进行当前操作  |      |
