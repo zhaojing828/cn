@@ -79,7 +79,7 @@ jobType: listObject
 sourceType: s3file
 src.access.id : XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 src.secret.key: YYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-src.endpoint : http://s3.cn-north-1.jcloudcs.com
+src.endpoint : https://s3.cn-north-1.jcloudcs.com
 src.bucket : yourbucket
 src.prefix :
 ```
