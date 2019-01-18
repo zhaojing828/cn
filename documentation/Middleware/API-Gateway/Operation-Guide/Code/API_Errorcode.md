@@ -33,30 +33,30 @@
 
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
-| ARGUMENT_NOT_SUPPORT |  400 |  参数 argument 不支持  |      |
-|  ARGUMENT_NOT_FOUND  |  400 |  参数 argument 是必填参数 |   |
-|  ARGUMENT_WRONG_FORMAT  | 400 | 参数 argument  类型应该是 某format  |   |
-|  OUT_OF_RANGE  | 400 | 参数取值不合法或超出范围 |   |
-| ARGUMENT_MISMATCH  | 400 |  资源 resource 不存在参数 argument |   |
-| INVALID_ARGUMENT   | 400 |  参数 argument 存在错误  |      |
-| FAILED_PRECONDITION   | 400 |  资源 resource 在当前状态下不可进行当前操作  |      |
-| UNAUTHENTICATED   | 401 |  认证失败  |      |
-| HTTP_FORBIDDEN   | 403 |  没有对资源 resource 的 permission 权限  |      |
-| RESOURCE_NOT_EXIST   | 404 |  资源 resource 不存在  |      |
-| NOT_FOUND   | 404 |  找不到 resource   |      |
-| ABORTED   | 409 |  当前无法对 resource 进行操作  |      |
-| ALREADY_EXISTS   | 409 |  resource 已存在  |      |
-| CONFLICT   | 409 |  两种资源归属的父资源不一致  |      |
-| FAILED_PRECONDITION   | 409 |  多个参数有大小依赖关系  |      |
-|  QUOTA_EXCEEDED  | 429 |  配额不足，剩余配额： limit   |      |
-|  RATE_LIMIT_EXCEEDED  | 429 |  请求过频繁  |      |
+| ARGUMENT_NOT_SUPPORT |  400 |  参数 argument 不支持  |  请检查访问信息      |
+|  ARGUMENT_NOT_FOUND  |  400 |  参数 argument 是必填参数 |  请检查访问信息     |
+|  ARGUMENT_WRONG_FORMAT  | 400 | 参数 argument  类型应该是 某format  |  请检查访问信息    |
+|  OUT_OF_RANGE  | 400 | 参数取值不合法或超出范围 |   请检查访问信息    |
+| ARGUMENT_MISMATCH  | 400 |  资源 resource 不存在参数 argument | 请检查访问信息     |
+| INVALID_ARGUMENT   | 400 |  参数 argument 存在错误  |  请检查访问信息      |
+| FAILED_PRECONDITION   | 400 |  资源 resource 在当前状态下不可进行当前操作  |   请检查访问信息      |
+| UNAUTHENTICATED   | 401 |  认证失败  |  请检查访问信息      |
+| HTTP_FORBIDDEN   | 403 |  没有对资源 resource 的 permission 权限  |    请在相关系统或需联系相关管理员开权限     |
+| RESOURCE_NOT_EXIST   | 404 |  资源 resource 不存在  |     请检查访问信息    |
+| NOT_FOUND   | 404 |  找不到 resource   |     请检查访问信息    |
+| ABORTED   | 409 |  当前无法对 resource 进行操作  |    请检查访问信息     |
+| ALREADY_EXISTS   | 409 |  resource 已存在  |     请检查访问信息    |
+| CONFLICT   | 409 |  两种资源归属的父资源不一致  |    请检查访问信息     |
+| FAILED_PRECONDITION   | 409 |  多个参数有大小依赖关系  |      请检查访问信息   |
+|  QUOTA_EXCEEDED  | 429 |  配额不足 |     请检查访问信息，或增加配合    |
+|  RATE_LIMIT_EXCEEDED  | 429 |  请求过频繁  | 请稍后重试     |
 | CANCELLED   | 499 |  取消操作  |      |
-| UNKNOWN   | 500 |  未知错误  |      |
-| INTERNAL   | 500 |  内部错误 |      |
-| NOT_IMPLEMENTED   | 501 |  目前不支持 method   |      |
-| SOURCE_UNAVAILABLE   | 502 |  源站不可用  |      |
-| UNAVAILABLE   | 503 |  服务不可用  |      |
-| DEADLINE_EXCEEDED   | 504 |  超时  |      |
+| UNKNOWN   | 500 |  未知错误  |    请稍后重试      |
+| INTERNAL   | 500 |  内部错误 |   请稍后重试       |
+| NOT_IMPLEMENTED   | 501 |  目前不支持 method   |    请检查访问信息       |
+| SOURCE_UNAVAILABLE   | 502 |  源站不可用  |   请检查访问信息        |
+| UNAVAILABLE   | 503 |  服务不可用  |    请检查访问信息       |
+| DEADLINE_EXCEEDED   | 504 |  超时  |        请稍后重试      |
 
 
 
