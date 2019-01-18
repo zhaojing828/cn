@@ -142,7 +142,7 @@ items:
       - name:  兼容接口
         items:
            - name: 兼容接口概览
-             href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-overview.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-Overview.md
            - name: 关于Service操作
              items:
                - name: GetService
