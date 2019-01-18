@@ -1,6 +1,6 @@
 ## 部署历史
 
-列出了不同地域的所有部署历史，每次部署任务记为一次部署历史（包括回滚）。
+列出了不同地域的所有部署历史，每次部署任务记为一次部署历史。
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation16.png)
 
