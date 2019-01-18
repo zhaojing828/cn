@@ -2,34 +2,7 @@
 
 在使用API网关产品服务时，您可能遇到诸多错误码。下表内容供您参考：
 
-
-####   表1.调用SDK时的错误码
-|  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
-|-|-|-|-|
-| APIGW_LACK_PARAMS |  401 |  某个参数不存在  |  需要补全参数    |
-| APIGW_KEY_NOT_EXITST |  401 |  错误的密钥  |   需要密钥提供方提供正确的密钥。   |
-| APIGW_KEY_DISABLED |  401 |  无效的密钥  |  需要密钥提供方提供正确的密钥。    |
-| APIGW_SIGN_RESULT_NOT_SAME |  401 |  签名不一致  |  请检查签名    |
-| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息  | 非法请求不被允许     |
-| APIGW_NONCE_CONFLICT |  403 |  重复访问  |  请检查访问信息    |
-| APIGW_USER_BLACK_LIST |  403 |  黑名单用户  |  黑名单用户禁止访问。有疑问可联系客服    |
-| APIGW_ROLE_NOT_ALLOWED |  403 |  不支持角色用户  |  请在相关系统或需联系相关管理员开权限        |
-| APIGW_ROLE_NOT_EXITST |  403 |  角色用户不存在  |  请在相关系统或需联系相关管理员开权限       |
-| APIGW_FORMAT_ERROR |  403 |  参数x-jdcloud-pin格式错误  |   请检查访问信息    |
-| APIGW_USER_NOT_EXITST |  403 |  用户不存在  | 请在相关系统或需联系相关管理员开权限         |
-| USER_NOT_ACTIVATED |  403 |  用户未激活  | 请在相关系统或需联系相关管理员开权限         |
-| APIGW_OPERATION_NOT_ALLOWED |  403 |  不允许的操作  |   请检查访问信息      |
-| APIGW_MFA_FAIL |  403 |  没有操作权限  |  请在相关系统或需联系相关管理员开权限     |
-| APIGW_API_NOT_ALLOWED |  403 |  此接口不允许调用  |    请在相关系统或需联系相关管理员开权限    |
-| APIGW_CHILD_ACCOUNT_NOT_ALLOWED |  403 |  您无权在资源上执行  |  请在相关系统或需联系相关管理员开权限     |
-| APIGW_SERVICE_DISABLED |  403 |  服务被禁用  |   请在相关系统或需联系相关管理员开权限    |
-| APIGW_SERVICE_NOT_FOUND |  404 |  服务未注册  |  请检查访问信息      |
-| HTTP_INTERNAL_SERVER_ERROR |  500 |  重复访问  |   请检查访问信息     |
-| HTTP_BAD_GATEWAY |  502 |  内部错误  |  请稍后重试    |
-
-
-
-####   表2.通用错误码
+####   表1.通用错误码
 
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
@@ -59,7 +32,7 @@
 | DEADLINE_EXCEEDED   | 504 |  超时  |        请稍后重试      |
 
 
-####   表3.控制台错误码
+####   表2.控制台错误码
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
 | APIGATEWAY_SUCCESS |  200 |  成功  |  无    |
