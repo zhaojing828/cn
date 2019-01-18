@@ -49,6 +49,7 @@
 | APIGW_PARAM_VALUE_INVALID | 400 |  某参数不合法  |       请检查访问信息         |
 | APIGW_RECORD_CONFLICT | 403 |  已存在某参数  |      请检查访问信息          |
 | APIGW_RECORD_NOT_FOUND | 404 |  某参数不存在  |       请检查访问信息         |
+| APIGATEWAY_BIND_GROUP_NOT_FOUND |  404 |  访问授权与该分组不匹配  |  请检查授权AK,SK是否已绑定该分组    |
 | APIGATEWAY_HTTP_FORBIDDEN |  403 |  没有权限  |    请在相关系统或需联系相关人员开权限     |
 | APIGATEWAY_DOMAIN_NO_RECORDED |  403 |  没有备案  |  请先备案     |
 | APIGATEWAY_DOMAIN_ALREADY_EXISTS |  403 |  域名已存在  |   换一个   |
