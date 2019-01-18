@@ -59,48 +59,47 @@
 | DEADLINE_EXCEEDED   | 504 |  超时  |        请稍后重试      |
 
 
-
 ####   表3.控制台错误码
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
-| APIGATEWAY_SUCCESS |  200 |  成功  |      |
-| APIGATEWAY_ARGUMENT_NOT_SUPPORT |  400 |  param 参数不支持  |      |
-| APIGATEWAY_ARGUMENT_NOT_FOUND |  400 |  param 不能为空  |      |
-| APIGATEWAY_MODIFY_ERROR |  400 |  该分组已发布，不能修改  |      |
-| APIGATEWAY_DELETE_API_ERROR |  400 |  仍有上线版本，不能删除  |      |
-| APIGATEWAY_NONE_VALID_PIN |  400 |  无效的用户pin  |      |
-| APIGATEWAY_DELETE_ERROR |  400 |  未解除绑定，不能删除  |      |
-| APIGATEWAY_BIND_GROUP_TOO_MUCH |  400 |  流控策略绑定分组多于一个  |      |
-| APIGATEWAY_PATH_PARAMETERS_MUST_BE_DEFINED |  400 |  请在下面的查询参数Parameter Path中定义此路径参数:param  |      |
-| APIGW_NO_HEADER | 400 |  缺少header参数userId  |           |
-| APIGW_PARAMS_NOT_EXIST | 400 |  某参数不存在  |           |
-| APIGW_PARAM_VALUE_INVALID | 400 |  某参数不合法  |           |
-| APIGW_RECORD_CONFLICT | 403 |  已存在某参数  |           |
-| APIGW_RECORD_NOT_FOUND | 404 |  某参数不存在  |           |
-| APIGATEWAY_HTTP_FORBIDDEN |  403 |  没有权限  |      |
-| APIGATEWAY_DOMAIN_NO_RECORDED |  403 |  没有备案  |      |
-| APIGATEWAY_DOMAIN_ALREADY_EXISTS |  403 |  域名已存在  |      |
-| APIGATEWAY_DOMAIN_IS_BINDED |  403 |  域名处于绑定状态，无法修改  |      |
-| APIGATEWAY_DOMAIN_NUM_IS_MAX |  403 |  域名数量超过最大值  |      |
-| APIGATEWAY_NONE_VALID_APPID |  404 |  无效的keyID  |      |
-| APIGATEWAY_NOT_FOUND |  404 |  param 资源不存在  |      |
-| APIGATEWAY_NONE_VALID_API |  404 |  该分组没有有效的API  |      |
-| APIGATEWAY_NOT_EXIST_METHOD_ERROR |  404 |  不存在要验证的接口  |      |
-| APIGATEWAY_SWAGGER_NULL_ERRO |  404 |  yaml文件不能为空  |      |
-| APIGATEWAY_APIGROUPNAME_ISREPEAT |  409 |  分组名称重复  |      |
-| APIGATEWAY_BACKENDSERVICE_PREFIX_ISREPEAT |  409 |  分组中后端服务前缀名重复  |      |
-| APIGATEWAY_APINAME_ISREPEAT |  409 |  API名称重复  |      |
-| APIGATEWAY_ACCESSKEY_ISREPEAT |  409 |  签名访问密钥重复  |      |
-| APIGATEWAY_ACCESSKEYAUTH_ISREPEAT |  409 |  授权访问密钥重复  |      |
-| APIGATEWAY_POLICYNAME_ISREPEAT |  409 |  策略名称重复  |      |
-| APIGATEWAY_API_PATH_ISREPEAT |  409 |  API路径重复  |      |
-| APIGATEWAY_APISNAME_ISREPEAT |  409 |  创建业务线分组名称重复  |      |
-| APIGATEWAY_REVISION_ISREPEAT |  409 |  新增修订版本号重复  |      |
-| APIGATEWAY_SWAGGER_PARSE_ERROR |  500 |  yaml文件解析异常  |      |
-| APIGATEWAY_OPERATION_FAILED |  500 |  操作失败  |      |
-| APIGATEWAY_API_BODY_ERROR |  500 |  要验证的接口的对应的body定义异常  |      |
-| APIGATEWAY_INVALID_SERVICE_STATUS |  500 |  服务未开通或已停止  |      |
-| APIGATEWAY_INVALID_AUTHENTICATION_STATUS |  500 |  该用户未进行实名认证  |      |
+| APIGATEWAY_SUCCESS |  200 |  成功  |  无    |
+| APIGATEWAY_ARGUMENT_NOT_SUPPORT |  400 |  param 参数不支持  |    请检查访问信息     |
+| APIGATEWAY_ARGUMENT_NOT_FOUND |  400 |  param 不能为空  |    请检查访问信息     |
+| APIGATEWAY_MODIFY_ERROR |  400 |  该分组已发布，不能修改  |  下线或者新建版本进行操作     |
+| APIGATEWAY_DELETE_API_ERROR |  400 |  仍有上线版本，不能删除  |   下线后才能删除   |
+| APIGATEWAY_NONE_VALID_PIN |  400 |  无效的用户pin  |    请检查访问信息     |
+| APIGATEWAY_DELETE_ERROR |  400 |  未解除绑定，不能删除  |   需要先解除所有分组的绑定关系，才能删除该项内容   |
+| APIGATEWAY_BIND_GROUP_TOO_MUCH |  400 |  流控策略绑定分组多于一个  |  如需进行下一步操作，需要先解除所有分组的绑定关系    |
+| APIGATEWAY_PATH_PARAMETERS_MUST_BE_DEFINED |  400 |  请在查询参数Parameter Path中定义路径参数 |   在查询参数Parameter Path中定义路径参数   |
+| APIGW_NO_HEADER | 400 |  缺少header参数userId  |     请检查访问信息           |
+| APIGW_PARAMS_NOT_EXIST | 400 |  某参数不存在  |      请检查访问信息          |
+| APIGW_PARAM_VALUE_INVALID | 400 |  某参数不合法  |       请检查访问信息         |
+| APIGW_RECORD_CONFLICT | 403 |  已存在某参数  |      请检查访问信息          |
+| APIGW_RECORD_NOT_FOUND | 404 |  某参数不存在  |       请检查访问信息         |
+| APIGATEWAY_HTTP_FORBIDDEN |  403 |  没有权限  |    请在相关系统或需联系相关人员开权限     |
+| APIGATEWAY_DOMAIN_NO_RECORDED |  403 |  没有备案  |  请先备案     |
+| APIGATEWAY_DOMAIN_ALREADY_EXISTS |  403 |  域名已存在  |   换一个   |
+| APIGATEWAY_DOMAIN_IS_BINDED |  403 |  域名处于绑定状态，无法修改  |  先解绑才能修改    |
+| APIGATEWAY_DOMAIN_NUM_IS_MAX |  403 |  域名数量超过最大值  |   请在最大范围内设置    |
+| APIGATEWAY_NONE_VALID_APPID |  404 |  无效的keyID  |    请检查访问信息          |
+| APIGATEWAY_NOT_FOUND |  404 |  param 资源不存在  |     请检查访问信息         |
+| APIGATEWAY_NONE_VALID_API |  404 |  该分组没有有效的API  |  请先创建API再进行下一步操作    |
+| APIGATEWAY_NOT_EXIST_METHOD_ERROR |  404 |  不存在要验证的接口  |     请检查访问信息         |
+| APIGATEWAY_SWAGGER_NULL_ERRO |  404 |  yaml文件不能为空  |     请检查访问信息          |
+| APIGATEWAY_APIGROUPNAME_ISREPEAT |  409 |  分组名称重复  |   请创建不重复内容   |
+| APIGATEWAY_BACKENDSERVICE_PREFIX_ISREPEAT |  409 |  分组中后端服务前缀名重复  |      请创建不重复内容    |
+| APIGATEWAY_APINAME_ISREPEAT |  409 |  API名称重复  |     请创建不重复内容     |
+| APIGATEWAY_ACCESSKEY_ISREPEAT |  409 |  签名访问密钥重复  |      请创建不重复内容    |
+| APIGATEWAY_ACCESSKEYAUTH_ISREPEAT |  409 |  授权访问密钥重复  |     请创建不重复内容     |
+| APIGATEWAY_POLICYNAME_ISREPEAT |  409 |  策略名称重复  |   请创建不重复内容        |
+| APIGATEWAY_API_PATH_ISREPEAT |  409 |  API路径重复  |     请创建不重复内容     |
+| APIGATEWAY_APISNAME_ISREPEAT |  409 |  创建业务线分组名称重复  |    请创建不重复内容       |
+| APIGATEWAY_REVISION_ISREPEAT |  409 |  新增修订版本号重复  |     请创建不重复内容     |
+| APIGATEWAY_SWAGGER_PARSE_ERROR |  500 |  yaml文件解析异常  |    请检查信息       |
+| APIGATEWAY_OPERATION_FAILED |  500 |  操作失败  |    请检查信息       |
+| APIGATEWAY_API_BODY_ERROR |  500 |  要验证的接口的对应的body定义异常  |    请检查信息     |
+| APIGATEWAY_INVALID_SERVICE_STATUS |  500 |  服务未开通或已停止  |     请检查信息    |
+| APIGATEWAY_INVALID_AUTHENTICATION_STATUS |  500 |  该用户未进行实名认证  |  请先实名认证    |
 
 
 
