@@ -29,7 +29,7 @@
         href: Getting-Started/Create-VM.md
       - name: 新建应用及部署组
         href: Getting-Started/Create-Application1.md
-      - name: 新建部署
+      - name: 发起部署
         href: Getting-Started/Create-Deployment1.md
       - name: 查看部署详情
         href: Getting-Started/Details1.md
@@ -53,7 +53,7 @@
         href: Operation-Guide/Edit-Deployment-Group.md
       - name: 部署组详情
         href: Operation-Guide/Deployment-Group-Detail.md
-      - name: 新建部署
+      - name: 发起部署
         href: Operation-Guide/Create-Deployment2.md
       - name: 部署历史
         href: Operation-Guide/Deployment-History.md

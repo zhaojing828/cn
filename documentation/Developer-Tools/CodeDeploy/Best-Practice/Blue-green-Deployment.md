@@ -69,7 +69,7 @@ wget -c http://devops-hb.oss-internal.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-
 
 ### Clone示例代码至代码托管
 
-代码示例地址为：git@code.jdcloud.com:devops-demo/java-demo.git
+代码示例地址为：https://code.jdcloud.com/devops-demo/java-demo.git
 
 请将此示例代码clone至代码托管中，代码托管的地址为：https://code.jdcloud.com/
 
