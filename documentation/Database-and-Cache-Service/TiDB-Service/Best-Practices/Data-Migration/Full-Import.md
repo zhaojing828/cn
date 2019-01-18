@@ -20,6 +20,7 @@ mydumper 是一个更强大的数据迁移工具，具体可以参考 https://gi
   - TIDB * 4
   - PD * 3
 - mydumper -F 设置为 16, loader -t 参数 64
+
 结果：导入时间 11 小时左右，19.4 G/小时
 
 ## 从 MySQL 导出数据
