@@ -40,6 +40,7 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
 |**name**|String|True| |云硬盘名称|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
+
 ### ChargeSpec
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
