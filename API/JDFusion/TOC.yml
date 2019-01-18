@@ -207,8 +207,8 @@ items:
          href: Oss-TransferTasks/getTransferTasks.md
        - name: startTransferTask
          href: Oss-TransferTasks/startTransferTask.md        
-       - name: stopTransferTask.md
-         href: Oss-TransferTasks/stopTransferTask        
+       - name: stopTransferTask
+         href: Oss-TransferTasks/stopTransferTask.md        
    - name: RDS账户相关接口
      items:
        - name: createRdsAccounts
