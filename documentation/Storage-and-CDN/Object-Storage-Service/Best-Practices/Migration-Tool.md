@@ -45,7 +45,7 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 
 |名称|说明|默认值|
 |:-|:-|:-|
-|jobType|job的类型，分别为listObject，transfer及md5check。|listObject|
+|jobType|job的类型，分别为listObject，transfer。|listObject|
 |sourceType| 数据来源的类型，分别为urlfile,diskfile，s3file（AWS S3、腾讯云COS、百度BOS、华为 OBS、京东云 OSS）aliyunfile,disklistfile（本地文件列表）。 |s3file|
 |urlType|当sourceType为urlfile时，如果文件列表并非迁移工具生成且只有url信息，则需要配置urlType为onlyUrl。| 无|
 |filePath|被读取文件的地址。当sourceType 为 urlfile ，diskfile时，filePath 为必填项。|无|
@@ -261,7 +261,7 @@ java -jar transfer-tools-java-1.0.0.jar --Dspring.config.location=application.ym
 Osstransfer迁移工具先使用sdk对各个数据源进行list，获取到object的列表。这样做的目的是如果迁移过程中有object变化，迁移工具不会受到影响。
 
 ### 迁移流程
-1、迁移过程中，迁移日志将默认打印到 ./log 目录下。
+1.迁移过程中，迁移日志将默认打印到 ./log 目录下。
 
 迁移的所有文件将打印到audit-0.log中，迁移成功的文件将打印到audit.success日志中，如果需要筛选书迁移失败的文件，请使用命令：
 
@@ -271,6 +271,27 @@ grep "1$" audit-0.log*
 ```
 进行筛选。
 
-2、如果sourceType值为s3file，使用md5check时日志打印在srcbucketname.txt.diff中，其他情况日志打印在md5check.log中，除此之外sourceType值为aliyunfile时不支持md5check。
+2.审计日志说明
 
-
+|名称|说明|
+|:-|:-|
+|version|审计日志版本号，目前为1。|
+|message| 如果迁移失败，内容为迁移失败的原因。 |
+|readline|读取object列表的内容。| 
+|time|迁移的时间。|
+|url|迁移的源的url。|
+|key|迁移的object的名称。|
+|messageFormat|0表示格式化成功，1表示失败。|
+|headHttpCode|head url的状态码。|
+|objectSize|object的大小。|
+|jssMethod|使用的上传方式，PUT或MULTIPART。|
+|getAmazonS3Client| 获取s3client的状态，0表示成功，1表示失败。|
+|getHttpCode|get url的状态码。|
+|responseEntity|0表示responseEntity 不为null，1表示为null。|
+|uploadStatus|0表示put上传成功，1表示上传失败。|
+|checkStatus|0表示put上传后check成功，1表示check失败。|
+|retryCount|上传重试的次数。|
+|abortMultipartUpload|0表示分片上传成功，1表示分片失败，abort该分片上传。|
+|checkMultipartUpload|0表示check 分片上传后的文件成功，1表示失败。|
+|responseTime|迁移耗时。|
+|result|0表示上传成功，1表示上传失败。|
