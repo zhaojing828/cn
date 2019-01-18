@@ -17,12 +17,8 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/cloud_info
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**body**|CreateCloudInfoReq|True| | |
-
-### CreateCloudInfoReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
 |**cloud**|CloudInfo|True| | |
+
 ### CloudInfo
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

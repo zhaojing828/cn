@@ -13,8 +13,8 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |Region ID|
 |**registryName**|String|True| |注册表名称|
+|**regionId**|String|True| |Region ID|
 |**repositoryName**|String|True| |镜像仓库名称|
 
 ## 请求参数

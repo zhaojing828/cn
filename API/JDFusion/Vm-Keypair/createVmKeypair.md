@@ -18,15 +18,11 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vm_keypairs
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|CreateKeypairReq|True| |创建keypair|
+|**keypair**|CreateKeypair|True| |创建keypair|
 |**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
 |**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
 
-### CreateKeypairReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**keypair**|CreateKeypair|False| | |
 ### CreateKeypair
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

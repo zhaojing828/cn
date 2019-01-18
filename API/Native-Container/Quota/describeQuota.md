@@ -24,8 +24,8 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/quotas
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
@@ -34,9 +34,9 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/quotas
 ### Quota
 |名称|类型|描述|
 |---|---|---|
-|**limit**|Integer|配额|
 |**resourceType**|String|类型|
 |**used**|Integer|已使用的数目|
+|**limit**|Integer|配额|
 
 ## 返回码
 |返回码|描述|

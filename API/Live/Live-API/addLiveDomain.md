@@ -16,7 +16,6 @@ https://live.jdcloud-api.com/v1/domains
 |---|---|---|---|---|
 |**playDomain**|String|True| |直播的播放域名|
 |**publishDomain**|String|True| |直播的推流域名|
-|**region**|String|True| |区域ID|
 
 
 ## 返回参数

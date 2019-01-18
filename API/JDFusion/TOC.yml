@@ -149,3 +149,115 @@ items:
          href: JDFusion/Task/getTaskInfoById.md
        - name: getTaskInfoHistoryById
          href: JDFusion/Task/getTaskInfoHistoryById.md
+   - name: 编排相关接口
+     items:
+       - name: applyDeployment
+         href: JDFusion/Deployment/applyDeployment.md
+       - name: cloneDeployment
+         href: JDFusion/Deployment/cloneDeployment.md
+       - name: createDeployment
+         href: JDFusion/Deployment/createDeployment.md
+       - name: deleteDeployment
+         href: JDFusion/Deployment/deleteDeployment.md        
+       - name: dryrunDeployment
+         href: JDFusion/Deployment/dryrunDeployment.md
+       - name: editDeployment
+         href: JDFusion/Deployment/editDeployment.md
+       - name: getDeploymentResult
+         href: JDFusion/Deployment/getDeploymentResult.md
+       - name: getDeploymentVersions
+         href: JDFusion/Deployment/getDeploymentVersions.md
+       - name: getDeployments
+         href: JDFusion/Deployment/getDeployments.md        
+       - name: getDeploymentsById
+         href: JDFusion/Deployment/getDeploymentsById.md
+       - name: getDeploymentsVersion
+         href: JDFusion/Deployment/getDeploymentsVersion.md
+       - name: reverseDeployment
+         href: JDFusion/Deployment/reverseDeployment.md
+       - name: rollbackDeploymentsVersion
+         href: JDFusion/Deployment/rollbackDeploymentsVersion.md                
+   - name: OSS存储桶相关接口
+     items:
+       - name: createBucket
+         href: JDFusion/Oss-Bucket/createBucket.md
+       - name: deleteBucket
+         href: JDFusion/Oss-Bucket/deleteBucket.md
+       - name: getBucketByName
+         href: JDFusion/Oss-Bucket/getBucketByName.md
+       - name: getBucketFiles
+         href: JDFusion/Oss-Bucket/getBucketFiles.md
+       - name: getBuckets
+         href: JDFusion/Oss-Bucket/getBuckets.md        
+   - name: OSS任务相关接口
+     items:
+       - name: createTransferTask
+         href: JDFusion/Oss-TransferTasks/createTransferTask.md
+       - name: deleteTransferTask
+         href: JDFusion/Oss-TransferTasks/deleteTransferTask.md
+       - name: editTransferTask
+         href: JDFusion/Oss-TransferTasks/editTransferTask.md
+       - name: getTransferTaskById
+         href: JDFusion/Oss-TransferTasks/getTransferTaskById.md
+       - name: getTransferTaskFailedFiles
+         href: JDFusion/Oss-TransferTasks/getTransferTaskFailedFiles.md
+       - name: getTransferTaskProgress
+         href: JDFusion/Oss-TransferTasks/getTransferTaskProgress.md
+        - name: getTransferTasks
+         href: JDFusion/Oss-TransferTasks/getTransferTasks.md
+       - name: startTransferTask
+         href: JDFusion/Oss-TransferTasks/startTransferTask.md        
+       - name: stopTransferTask.md
+         href: JDFusion/Oss-TransferTasks/stopTransferTask        
+   - name: RDS账户相关接口
+     items:
+       - name: createRdsAccounts
+         href: JDFusion/Rds-Account/createRdsAccounts.md
+       - name: deleteRdsAccount
+         href: JDFusion/Rds-Account/deleteRdsAccount.md
+       - name: getRdsAccountsByInstId
+         href: JDFusion/Rds-Account/getRdsAccountsByInstId.md         
+       - name: getRdsAccountsByInstIdAndAccountName
+         href: JDFusion/Rds-Account/getRdsAccountsByInstIdAndAccountName.md
+       - name: grantRdsAccount
+         href: JDFusion/Rds-Account/grantRdsAccount.md
+       - name: revokeRdsAccount
+         href: JDFusion/Rds-Account/revokeRdsAccount.md    
+   - name: RDS数据库相关接口
+     items:
+       - name: createRdsDatabase
+         href: JDFusion/Rds-Database/createRdsDatabase.md
+       - name: deleteRdsDatabase
+         href: JDFusion/Rds-Database/deleteRdsDatabase.md
+       - name: getRdsDatabaseByInstIdAndDbName
+         href: JDFusion/Rds-Database/getRdsDatabaseByInstIdAndDbName.md       
+       - name: getRdsDatabasesByInstId
+         href: JDFusion/Rds-Database/getRdsDatabasesByInstId.md                   
+   - name: RDS实例相关接口
+     items:
+       - name: createRdsInstance
+         href: JDFusion/Rds-Instance/createRdsInstance.md
+       - name: deleteRdsByInstId
+         href: JDFusion/Rds-Instance/deleteRdsByInstId.md
+       - name: getRdsByInstId
+         href: JDFusion/Rds-Instance/getRdsByInstId.md     
+       - name: getRdsInstances
+         href: JDFusion/Rds-Instance/getRdsInstances.md                 
+   - name: RDS数据迁移相关接口
+     items:
+       - name: createChannel
+         href: JDFusion/Rds-Migration-MySQL/createChannel.md
+       - name: createDatasource
+         href: JDFusion/Rds-Migration-MySQL/createDatasource.md
+       - name: deleteChannel
+         href: JDFusion/Rds-Migration-MySQL/deleteChannel.md     
+       - name: deleteDatasource
+         href: JDFusion/Rds-Migration-MySQL/deleteDatasource.md    
+        - name: getChannels
+         href: JDFusion/Rds-Migration-MySQL/getChannels.md
+       - name: getDatasources
+         href: JDFusion/Rds-Migration-MySQL/getDatasources.md
+       - name: startChannel
+         href: JDFusion/Rds-Migration-MySQL/startChannel.md     
+       - name: stopChannel
+         href: JDFusion/Rds-Migration-MySQL/stopChannel.md

@@ -37,7 +37,7 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_vpcs/{id}
 ### VpcInfoDetail
 |名称|类型|描述|
 |---|---|---|
-|**addressPrefix**|String|地址范围|
+|**cidrBlock**|String|地址范围|
 |**cloudID**|String|所属云提供商ID|
 |**createdTime**|String|创建时间|
 |**description**|String|VPC 描述|
@@ -48,8 +48,8 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_vpcs/{id}
 ### SubnetInfo
 |名称|类型|描述|
 |---|---|---|
-|**addressPrefix**|String|子网网段|
 |**availableIpCount**|Integer|子网可用ip数量|
+|**cidrBlock**|String|子网网段|
 |**cloudID**|String|所属云提供商ID|
 |**description**|String|子网描述信息|
 |**endIp**|String|子网的结束地址|

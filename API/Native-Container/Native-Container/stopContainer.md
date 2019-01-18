@@ -13,8 +13,8 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/containers/{containerId}:stopCo
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**containerId**|String|True| |Container ID|
 |**regionId**|String|True| |Region ID|
+|**containerId**|String|True| |Container ID|
 
 ## 请求参数
 无

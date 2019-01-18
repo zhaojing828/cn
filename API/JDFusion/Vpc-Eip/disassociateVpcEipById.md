@@ -19,15 +19,11 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_eips/{id}:disassociat
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|UnassociateEipAddressReq|True| |解绑公网IP|
+|**unassociate**|UnassociateEipAddress|True| |解绑公网IP|
 |**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
 |**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
 
-### UnassociateEipAddressReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**unassociate**|UnassociateEipAddress|False| | |
 ### UnassociateEipAddress
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

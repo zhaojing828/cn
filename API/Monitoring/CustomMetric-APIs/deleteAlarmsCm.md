@@ -8,7 +8,7 @@
 DELETE
 
 ## 请求地址
-https://monitor.jdcloud-api.com/v1/regions/{regionId}/cm/alarms
+https://monitor.jdcloud-api.com/v1/regions/{regionId}/cmAlarms
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

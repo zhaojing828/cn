@@ -13,8 +13,8 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/secrets/{name}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**name**|String|True| |Secret Name|
 |**regionId**|String|True| |Region ID|
+|**name**|String|True| |Secret Name|
 
 ## 请求参数
 无

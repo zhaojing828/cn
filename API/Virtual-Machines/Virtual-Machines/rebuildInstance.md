@@ -23,9 +23,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:rebuildI
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**password**|String|True| |云主机密码，<a href="http://docs.jdcloud.com/virtual-machines/api/general_parameters">参考公共参数规范</a>。|
 |**imageId**|String|False| |镜像ID。可查询<a href="http://docs.jdcloud.com/virtual-machines/api/describeimages">DescribeImages</a>接口获得指定地域的镜像信息。|
 |**keyNames**|String[]|False| |密钥对名称；当前只支持一个。仅Linux系统支持指定。|
-|**password**|String|True| |云主机密码，<a href="http://docs.jdcloud.com/virtual-machines/api/general_parameters">参考公共参数规范</a>。|
 
 
 ## 返回参数

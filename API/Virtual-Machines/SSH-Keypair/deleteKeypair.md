@@ -13,8 +13,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/keypairs/{keyName}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**keyName**|String|True| |密钥名称|
 |**regionId**|String|True| |地域ID|
+|**keyName**|String|True| |密钥名称|
 
 ## 请求参数
 无

@@ -15,7 +15,7 @@ https://live.jdcloud-api.com/v1/records:config
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**filters**|Filter[]|False| |转码模板查询过滤条件, 不传递分页参数时默认返回10条|
-|**pageNum**|Integer|False|1|页码；默认为1|
+|**pageNum**|Integer|False|1|页码；默认为1；取值范围[1, 100000]|
 |**pageSize**|Integer|False|10|分页大小；默认为10；取值范围[10, 100]|
 
 ### Filter
@@ -41,14 +41,10 @@ https://live.jdcloud-api.com/v1/records:config
 ### LiveRecordConfig
 |名称|类型|描述|
 |---|---|---|
-|**app**|RecordApp[]|推流域名|
+|**appName**|String|推流域名|
 |**publishDomain**|String|推流域名|
-|**recordConfig**|String|录制模板配置|
-### RecordApp
-|名称|类型|描述|
-|---|---|---|
-|**appName**|String|appName|
-|**recordConfig**|String|自动录制周期|
+|**recordConfig**|String| |
+|**streamName**|String|直播流名称|
 
 ## 返回码
 |返回码|描述|

@@ -15,21 +15,21 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |Region ID|
 |**registryName**|String|True| |注册表名称|
+|**regionId**|String|True| |Region ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**description**|String|False| |注册表描述，<a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">参考公共参数规范</a>。<br>|
 |**repositoryName**|String|True| |镜像仓库名称。<br>可以专有模式如默认命名空间nginx-web-app；或者和命名空间一起将多个仓库聚集在一起如 project-a/nginx-web-app。<br>|
+|**description**|String|False| |注册表描述，<a href="https://www.jdcloud.com/help/detail/3870/isCatalog/1">参考公共参数规范</a>。<br>|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
@@ -38,8 +38,8 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 ### RepositoryShort
 |名称|类型|描述|
 |---|---|---|
-|**createdAt**|String|记录用户repository创建的时间。|
 |**repositoryName**|String|镜像仓库repository名称。|
+|**createdAt**|String|记录用户repository创建的时间。|
 |**repositoryUri**|String|repository的URI，用户通过docker CLI,制定该URI直接进行docker pull/push等操作。|
 
 ## 返回码

@@ -2,7 +2,7 @@
 
 
 ## 简介
-目前RDS OpenAPI支持云数据库SQL Server、MySQL、PostgreSQL
+目前RDS OpenAPI支持云数据库 MySQL、Percona、MariaDB、SQL Server
 
 
 ### 版本

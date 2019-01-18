@@ -46,7 +46,7 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/alarms
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**custom**|Boolean|True| |是否为用户自己定义的级别，自定义(true) or 固定(false)|
-|**levels**|Object|True| |报警级别以及对应的指标，common：一般 critial： 严重 fatal：紧急|
+|**levels**|Object|True| |报警级别以及对应的阈值，是一个map[string]float64对象。key:common(一般)、critial(严重)、 fatal(紧急),value:各报警级别对应的阀值，要符合operation参数对应的递进关系。 eg: "levels":{"common":1000,"critial":10000,"fatal":15000}|
 
 ## 返回参数
 |名称|类型|描述|

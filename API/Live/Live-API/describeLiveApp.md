@@ -15,7 +15,7 @@ https://live.jdcloud-api.com/v1/apps
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**filters**|Filter[]|False| |域名下的app列表过滤条件, 不传递分页参数时默认返回10条|
-|**pageNum**|Integer|False|1|页码；默认为1|
+|**pageNum**|Integer|False|1|页码；默认为1；取值范围[1, 100000]|
 |**pageSize**|Integer|False|10|分页大小；默认为10；取值范围[10, 100]|
 
 ### Filter
@@ -34,11 +34,11 @@ https://live.jdcloud-api.com/v1/apps
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**appList**|AppList[]|app列表|
+|**apps**|App[]|app列表|
 |**pageNumber**|Integer|当前页码|
 |**pageSize**|Integer|每页数量|
 |**totalCount**|Number|查询总数|
-### AppList
+### App
 |名称|类型|描述|
 |---|---|---|
 |**appName**|String|应用名|

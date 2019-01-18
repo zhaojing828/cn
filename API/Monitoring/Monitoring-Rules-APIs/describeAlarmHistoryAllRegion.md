@@ -4,17 +4,18 @@
 ## 描述
 查询报警历史
 检索条件组合优先级从高到低为
-1. serviceCode
-1.1 serviceCode + resourceId
-1.2 serviceCode + resourceIds
-2. serviceCodes
-3. 用户所有规则
+1. alarmId
+2. serviceCode
+2.1 serviceCode + resourceId
+2.2 serviceCode + resourceIds
+3. serviceCodes
+4. 用户所有规则
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://monitor.jdcloud-api.com/v1/rule/queryNotice
+https://monitor.jdcloud-api.com/v1/ruleNoticeHistory
 
 
 ## 请求参数
@@ -27,7 +28,10 @@ https://monitor.jdcloud-api.com/v1/rule/queryNotice
 |**pageNumber**|Long|False| |当前所在页，默认为1|
 |**pageSize**|Long|False| |页面大小，默认为20；取值范围[1, 100]|
 |**resourceId**|String|False| |资源Id|
+|**resourceIdList**|String[]|False| |resourceId列表|
+|**ruleType**|Long|False| |规则类型,默认查询1， 1表示资源监控，6表示站点监控,7表示可用性监控|
 |**serviceCode**|String|False| |产品线|
+|**serviceCodeList**|String[]|False| |产品线列表|
 |**startTime**|String|False| |开始时间|
 
 ### Filter
@@ -102,7 +106,7 @@ https://monitor.jdcloud-api.com/v1/rule/queryNotice
 |名称|类型|描述|
 |---|---|---|
 |**custom**|Boolean|是否为用户自己定义的级别，自定义(true) or 固定(false)|
-|**levels**|Object|报警级别以及对应的指标，common：一般 critial： 严重 fatal：紧急|
+|**levels**|Object|报警级别以及对应的阈值，是一个map[string]float64对象。key:common(一般)、critial(严重)、 fatal(紧急),value:各报警级别对应的阀值，要符合operation参数对应的递进关系。 eg: "levels":{"common":1000,"critial":10000,"fatal":15000}|
 
 ## 返回码
 |返回码|描述|

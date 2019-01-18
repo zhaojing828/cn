@@ -14,8 +14,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**imageId**|String|True| |镜像ID|
 |**regionId**|String|True| |地域ID|
+|**imageId**|String|True| |镜像ID|
 
 ## 请求参数
 无
@@ -24,8 +24,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
@@ -34,8 +34,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ### ImageConstraint
 |名称|类型|描述|
 |---|---|---|
-|**imageId**|String|镜像ID|
 |**imageInstanceTypeConstraint**|ImageInstanceTypeConstraint|使用镜像创建实例的规格限制|
+|**imageId**|String|镜像ID|
 ### ImageInstanceTypeConstraint
 |名称|类型|描述|
 |---|---|---|

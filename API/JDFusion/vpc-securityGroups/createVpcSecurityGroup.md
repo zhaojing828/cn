@@ -18,15 +18,11 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_securityGroups
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|CreateSecurityGroupReq|True| |创建securityGroup|
+|**securityGroup**|CreateSecurityGroup|True| |创建securityGroup|
 |**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
 |**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
 
-### CreateSecurityGroupReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**securityGroup**|CreateSecurityGroup|False| | |
 ### CreateSecurityGroup
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
