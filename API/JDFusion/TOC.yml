@@ -203,7 +203,7 @@ items:
          href: JDFusion/Oss-TransferTasks/getTransferTaskFailedFiles.md
        - name: getTransferTaskProgress
          href: JDFusion/Oss-TransferTasks/getTransferTaskProgress.md
-        - name: getTransferTasks
+       - name: getTransferTasks
          href: JDFusion/Oss-TransferTasks/getTransferTasks.md
        - name: startTransferTask
          href: JDFusion/Oss-TransferTasks/startTransferTask.md        
