@@ -2,7 +2,33 @@
 
 在使用API网关产品服务时，您可能遇到诸多错误码。下表内容供您参考：
 
-####   表1.通用错误码
+
+####   表1.调用SDK时的错误码
+|  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
+|-|-|-|-|
+| APIGW_LACK_PARAMS |  401 |  某个参数不存在  |      |
+| APIGW_KEY_NOT_EXITST |  401 |  错误的密钥  |      |
+| APIGW_KEY_DISABLED |  401 |  无效的密钥  |      |
+| APIGW_SIGN_RESULT_NOT_SAME |  401 |  签名不一致  |      |
+| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息  |      |
+| APIGW_NONCE_CONFLICT |  403 |  重复访问  |      |
+| APIGW_USER_BLACK_LIST |  403 |  黑名单用户  |      |
+| APIGW_ROLE_NOT_ALLOWED |  403 |  不支持角色用户  |      |
+| APIGW_ROLE_NOT_EXITST |  403 |  角色用户不存在  |      |
+| APIGW_FORMAT_ERROR |  403 |  参数x-jdcloud-pin格式错误  |      |
+| APIGW_USER_NOT_EXITST |  403 |  用户不存在  |      |
+| USER_NOT_ACTIVATED |  403 |  用户未激活  |      |
+| APIGW_OPERATION_NOT_ALLOWED |  403 |  不允许的操作  |      |
+| APIGW_MFA_FAIL |  403 |  没有操作权限  |      |
+| APIGW_API_NOT_ALLOWED |  403 |  此接口不允许调用  |      |
+| APIGW_CHILD_ACCOUNT_NOT_ALLOWED |  403 |  您无权在资源（%s）上执行（%s）  |      |
+| APIGW_SERVICE_DISABLED |  403 |  服务被禁用  |      |
+| APIGW_SERVICE_NOT_FOUND |  404 |  服务未注册  |      |
+| HTTP_BAD_GATEWAY |  502 |  内部错误  |      |
+| HTTP_INTERNAL_SERVER_ERROR |  500 |  重复访问  |      |
+
+
+####   表2.通用错误码
 
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
@@ -33,7 +59,7 @@
 
 
 
-####   表2.控制台错误码
+####   表3.控制台错误码
 |  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
 |-|-|-|-|
 | APIGATEWAY_SUCCESS |  200 |  成功  |      |
@@ -45,6 +71,11 @@
 | APIGATEWAY_DELETE_ERROR |  400 |  未解除绑定，不能删除  |      |
 | APIGATEWAY_BIND_GROUP_TOO_MUCH |  400 |  流控策略绑定分组多于一个  |      |
 | APIGATEWAY_PATH_PARAMETERS_MUST_BE_DEFINED |  400 |  请在下面的查询参数Parameter Path中定义此路径参数:param  |      |
+| APIGW_NO_HEADER | 400 |  缺少header参数userId  |           |
+| APIGW_PARAMS_NOT_EXIST | 400 |  某参数不存在  |           |
+| APIGW_PARAM_VALUE_INVALID | 400 |  某参数不合法  |           |
+| APIGW_RECORD_CONFLICT | 403 |  已存在某参数  |           |
+| APIGW_RECORD_NOT_FOUND | 404 |  某参数不存在  |           |
 | APIGATEWAY_HTTP_FORBIDDEN |  403 |  没有权限  |      |
 | APIGATEWAY_DOMAIN_NO_RECORDED |  403 |  没有备案  |      |
 | APIGATEWAY_DOMAIN_ALREADY_EXISTS |  403 |  域名已存在  |      |
@@ -69,32 +100,6 @@
 | APIGATEWAY_API_BODY_ERROR |  500 |  要验证的接口的对应的body定义异常  |      |
 | APIGATEWAY_INVALID_SERVICE_STATUS |  500 |  服务未开通或已停止  |      |
 | APIGATEWAY_INVALID_AUTHENTICATION_STATUS |  500 |  该用户未进行实名认证  |      |
-
-
-
-####   表3.调用SDK时的错误码
-|  错误码  |   HTTP状态码  |  错误信息  |  解决方案   |
-|-|-|-|-|
-| APIGW_LACK_PARAMS |  401 |  某个参数不存在  |      |
-| APIGW_KEY_NOT_EXITST |  401 |  错误的密钥  |      |
-| APIGW_KEY_DISABLED |  401 |  无效的密钥  |      |
-| APIGW_SIGN_RESULT_NOT_SAME |  401 |  签名不一致  |      |
-| APIGW_ILLEGAL_HEADER |  401 |  请求含有非法头信息  |      |
-| APIGW_NONCE_CONFLICT |  403 |  重复访问  |      |
-| APIGW_USER_BLACK_LIST |  403 |  黑名单用户  |      |
-| APIGW_ROLE_NOT_ALLOWED |  403 |  不支持角色用户  |      |
-| APIGW_ROLE_NOT_EXITST |  403 |  角色用户不存在  |      |
-| APIGW_FORMAT_ERROR |  403 |  参数x-jdcloud-pin格式错误  |      |
-| APIGW_USER_NOT_EXITST |  403 |  用户不存在  |      |
-| USER_NOT_ACTIVATED |  403 |  用户未激活  |      |
-| APIGW_OPERATION_NOT_ALLOWED |  403 |  不允许的操作  |      |
-| APIGW_MFA_FAIL |  403 |  没有操作权限  |      |
-| APIGW_API_NOT_ALLOWED |  403 |  此接口不允许调用  |      |
-| APIGW_CHILD_ACCOUNT_NOT_ALLOWED |  403 |  您无权在资源（%s）上执行（%s）  |      |
-| APIGW_SERVICE_DISABLED |  403 |  服务被禁用  |      |
-| APIGW_SERVICE_NOT_FOUND |  404 |  服务未注册  |      |
-| HTTP_BAD_GATEWAY |  502 |  内部错误  |      |
-| HTTP_INTERNAL_SERVER_ERROR |  500 |  重复访问  |      |
 
 
 
