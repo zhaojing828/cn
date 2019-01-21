@@ -47,7 +47,7 @@ http://opencdn.jcloud.com/api/setHttpHeader
 ## **6.返回说明**
 
 ```
-•	json格式
+•json格式
 {
   "status": 0,
   "msg": "成功",
