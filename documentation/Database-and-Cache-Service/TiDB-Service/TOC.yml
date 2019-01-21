@@ -64,6 +64,14 @@
 
   - name: 最佳实践
     items:
+    - name: 数据迁移
+      items:
+      - name: 数据迁移概述
+        herf: Best-Practices/Data-Migration/Data-Migration-Overview.md
+      - name: 全量迁移
+        herf: Best-Practices/Data-Migration/Full-Import.md
+      - name: 增量迁移
+        herf: Best-Practices/Data-Migration/Incremental-Import.md
     - name: 大数据量处理
       herf: Best-Practices/Data-Operation.md
     - name: 参数优化
