@@ -48,19 +48,14 @@ http://opencdn.jcloud.com/api/queryHttpHeaderConfig
     "data": {
         "headerContext": [
             {
-                "headerName": "ETag",//header头名称
+                "headerName": "cache-control",//header头名称
                 "headerType": "resp",
-                "headerValue": "ewew"
+                "headerValue": "no-cache"
             },
             {
-                "headerName": "Date",
+                "headerName": "Content-Type",
                 "headerType": "resp",
-                "headerValue": "sasass"
-            },
-            {
-                "headerName": "Set-Cookie",
-                "headerType": "resp",
-                "headerValue": "sasas"
+                "headerValue": "web"
             }
         ]
     }
