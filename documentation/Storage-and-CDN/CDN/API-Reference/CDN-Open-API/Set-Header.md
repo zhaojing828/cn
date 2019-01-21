@@ -25,7 +25,9 @@
 
 ## **4.请求地址**
 post方式
+
 设置header接口地址：http://opencdn.jcloud.com/api/setHttpHeader
+
 删除header接口地址：http://opencdn.jcloud.com/api/deleteHttpHeader
 
 ## **5.请求示例**
