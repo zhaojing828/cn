@@ -1,5 +1,5 @@
 # sysbench 标准性能测试
-本文档中的测试方法和数据来自PingCap的官方文档，用户可以参考该文档测试方案中规划部署时候自身的性能测试。
+本文档中的测试方法和测试数据来自PingCap的官方文档，用户可以参考该文档测试方案在规划部署时候进行自身的性能测试。
 
 ## 测试目的
 
@@ -143,3 +143,61 @@ max_connections = 2000
 ![](http://7xnp02.com1.z0.glb.clouddn.com/threads_insert.png?imageView2/2/w/700/q/75|imageslim)
 
 ![](http://7xnp02.com1.z0.glb.clouddn.com/table_size_insert.png?imageView2/2/w/700/q/75|imageslim)   
+
+### 场景二：TiDB 水平扩展能力测试
+
+部署方案以及配置参数
+
+```
+// TiDB 部署方案
+172.16.20.3    4*tikv
+172.16.10.2    1*tidb    1*pd     1*sysbench
+
+每个物理节点有三块盘：
+data3: 2 tikv  (Optane SSD)
+data2: 1 tikv
+data1: 1 tikv
+
+// TiKV 参数配置
+sync-log = false
+grpc-concurrency = 8
+grpc-raft-conn-num = 24
+[defaultcf]
+block-cache-size = "12GB"
+[writecf]
+block-cache-size = "5GB"
+[raftdb.defaultcf]
+block-cache-size = "2GB"
+```
+
+* 标准 oltp 测试
+
+| - | table count | table size | sysbench threads | tps | qps | latency(avg / .95) | 
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
+| 1 物理节点 TiDB | 32 | 100 万 | 256 * 1 | 2495 | 49902 | 102.42 ms / 125.52 ms |
+| 2 物理节点 TiDB | 32 | 100 万 | 256 * 2 | 5007 | 100153 | 102.23 ms / 125.52 ms  |
+| 4 物理节点 TiDB | 32 | 100 万 | 256 * 4 | 8984 | 179692 | 114.96 ms / 176.73 ms |
+| 6 物理节点 TiDB | 32 | 500 万 | 256 * 6 | 12953 | 259072 | 117.80 ms / 200.47 ms  |
+
+![](http://7xnp02.com1.z0.glb.clouddn.com/scale_tidb_oltp.png?imageView2/2/w/700/q/75|imageslim)
+
+* 标准 select 测试
+
+| - | table count | table size | sysbench threads | qps | latency(avg / .95) | 
+| :---: | :---: | :---: | :---: | :---: | :---: | 
+| 1 物理节点 TiDB | 32 | 100 万 | 256 * 1 | 71841 | 3.56 ms / 8.74 ms |
+| 2 物理节点 TiDB | 32 | 100 万 | 256 * 2 | 146615 | 3.49 ms / 8.74 ms |
+| 4 物理节点 TiDB | 32 | 100 万 | 256 * 4 | 289933 | 3.53 ms / 8.74 ms  |
+| 6 物理节点 TiDB | 32 | 500 万 | 256 * 6 | 435313 | 3.55 ms / 9.17 ms  |
+
+![](http://7xnp02.com1.z0.glb.clouddn.com/scale_tidb_select.png?imageView2/2/w/700/q/75|imageslim)
+
+* 标准 insert 测试
+
+| - | table count | table size | sysbench threads | qps | latency(avg / .95) | 
+| :---: | :---: | :---: | :---: | :---: | :---: | 
+| 3 物理节点 TiKV | 32 | 100 万 |256 * 3 | 40547 | 18.93 ms / 38.25 ms |
+| 5 物理节点 TiKV | 32 | 100 万 | 256 * 3 | 60689 | 37.96 ms / 29.9 ms |
+| 7 物理节点 TiKV | 32 | 100 万 | 256 * 3 | 80087 | 9.62 ms / 21.37 ms |
+
+![](http://7xnp02.com1.z0.glb.clouddn.com/scale_tikv_insert.png?imageView2/2/w/700/q/75|imageslim)
