@@ -29,11 +29,11 @@
  
 **4.调用示例**
 
-- **请求地址**
+ **请求地址**
 
 http://opencdn.jcloud.com/api/live/createDomain
 
-- **请求示例**
+ **请求示例**
 
 ```
 {
@@ -83,7 +83,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- ### **创建混合模式下的推流域名**
+- **创建混合模式下的推流域名**
 ```
 {
     "username":"jcloud_username",
@@ -95,7 +95,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- ### **创建混合模式下的拉流域名**
+-  **创建混合模式下的拉流域名**
 ```
 {
     "username":"jcloud_username",
@@ -115,7 +115,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- ### **创建拉流模式下的拉流域名**
+- **创建拉流模式下的拉流域名**
 ```
 {
     "username":"jcloud_username",
@@ -134,7 +134,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- ### **创建推流模式下的推流域名**
+- **创建推流模式下的推流域名**
 ```
 {
     "username":"jcloud_username",
@@ -146,7 +146,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- ### **创建推流模式下的拉流域名**
+- **创建推流模式下的拉流域名**
 ```
 {
     "username":"jcloud_username",
