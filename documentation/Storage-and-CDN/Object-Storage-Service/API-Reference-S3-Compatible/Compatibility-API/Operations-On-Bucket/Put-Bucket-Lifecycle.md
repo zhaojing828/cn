@@ -29,8 +29,8 @@ Lifecycle configuration in the request body
 
 名称|描述|必须
 ---|---|---
-LifeCycleConfiguration|全部LifeCycle Rule的Container，最多允许配置1000条Rule。<br>类型：Container<br>父标签：无<br>子标签：Rule|是
-Rule|LifeCycleConfiguration下的子标签，某一个lifecycle Rule的具体规则；最多1000条Rule。<br>类型：Container<br>父标签：LifeCycleConfiguration|是
+LifecycleConfiguration|全部Lifecycle Rule的Container，最多允许配置1000条Rule。<br>类型：Container<br>父标签：无<br>子标签：Rule|是
+Rule|LifecycleConfiguration下的子标签，某一个lifecycle Rule的具体规则；最多1000条Rule。<br>类型：Container<br>父标签：LifecycleConfiguration|是
 ID|每条Rule的唯一标识符，最大长度不允许超过64个字符。<br>类型：String<br>父标签：Rule|否
 Status|控制Rule的可用状态，若为Disable，则忽略该条Rule；若为Enable，就会按照定义好的Rule去执行。<br>类型：String<br>父标签：Rule<br>有效值：Enabled，Disabled|是
 Filter|定义生命周期管理策略所影响的Object的过滤条件，支持通过Prefix过滤，若定义了<Filter></Filter>，则视为对该Bucket下的全部Object生效。<br>类型：Container<br>父标签：Rule<br>子标签：Prefix|是
