@@ -89,7 +89,4 @@
   - name: 常见问题
     herf: FAQ/FAQ.md
 
-  - name: API参考
-    herf:
-  - name: SDK参考
-    herf:
+
