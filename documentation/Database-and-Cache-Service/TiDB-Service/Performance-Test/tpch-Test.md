@@ -92,9 +92,10 @@ TiDB 2.0：
 | 21        | 31.466s            | OOM              |
 | 22        | 31.539s            | 125.471s         |
 
-![TPC-H Query Result](../media/tpch-query-result.png)
+![tpch1](../../../../image/TiDB/tpch-1.png)
 
 说明：
+
 - 图中橙色为 Release 1.0，蓝色为 Release 2.0，纵坐标是 Query 的处理时间，越低越好
 - Query 15 因为 1.0 和 2.0 都还未支持视图，所以结果标记为 "View Required"
 - Query 2, 17, 19 因为 TiDB 1.0 长时间未跑出结果，所以结果标记为 "Nan"
