@@ -142,7 +142,7 @@ max_connections = 2000
  
 ![sysbench5](../../../../image/TiDB/sysbench-5.png)
 
-![sysbench6](../../../../image/TiDB/sysbench-6.png)  
+![sysbench6](../../../../image/TiDB/sysbench-6.png) 
 
 ### 场景二：TiDB 水平扩展能力测试
 
