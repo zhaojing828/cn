@@ -47,7 +47,7 @@ curl -H "Content-type: application/json" -X POST -d '{"username":" testuser ","s
     "dailyBandWidth" :200
  }
 ```
--  **返回示例**
+- **返回示例**
 
   •        json格式
 
