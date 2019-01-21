@@ -79,6 +79,13 @@
     - name: 高效使用 Secondary Index
       herf: Best-Practices/Secondary-Index.md
 
+  - name: 性能测试
+    items:
+    - name: sysbench 性能测试
+      herf: Performance-Test/sysbench-Test.md
+    - name: TPC-H 50G 性能测试
+      herf: Performance-Test/tpch-Test.md
+
   - name: 常见问题
     herf: FAQ/FAQ.md
 
