@@ -94,7 +94,7 @@
 
 ## 配置生命周期
 
-对象存储支持通过控制台配置设置管理生命周期规则，设置步骤请参考如下内容。如需使用API设置生命周期，请参考[Put Bucket Lifecycle]()。
+对象存储支持通过控制台配置设置管理生命周期规则，设置步骤请参考如下内容。如需使用API设置生命周期，请参考[Put Bucket Lifecycle](../../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md)。
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->生命周期管理，在该页面下您可以查看当前Bucket生命周期规则列表，也可以创建和删除生命周期规则。
 
