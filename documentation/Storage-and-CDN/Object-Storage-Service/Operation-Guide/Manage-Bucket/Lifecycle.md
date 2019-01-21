@@ -98,11 +98,11 @@
 
 1.登入控制台->对象存储->空间管理->进入某个Bucket->空间设置->生命周期管理，在该页面下您可以查看当前Bucket生命周期规则列表，也可以创建和删除生命周期规则。
 
-![生命周期规则列表](../../../../image/Object-Storage-Service/OSS-105.png)
+![生命周期规则列表](../../../../../image/Object-Storage-Service/OSS-105.png)
 
 2.点击“创建规则”，可进入创建生命周期规则页面，在该页面可设置生命周期规则。
 
-![创建生命周期规则](../../../../image/Object-Storage-Service/OSS-106.png)
+![创建生命周期规则](../../../../../image/Object-Storage-Service/OSS-106.png)
 
 细节说明：
 
