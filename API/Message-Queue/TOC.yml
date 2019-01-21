@@ -15,7 +15,7 @@
             href: Topic/deleteTopic.md
           - name: describeTopic
             href: Topic/describeTopic.md
-          - name: describeTopics.md
+          - name: describeTopics
             href: Topic/describeTopics.md
       - name: 订阅
         items:
