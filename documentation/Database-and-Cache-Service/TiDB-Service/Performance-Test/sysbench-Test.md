@@ -89,7 +89,7 @@ max_connections = 2000
 
 * 标准 oltp 测试
 
-| - | table count | table size | sysbench threads | tps | qps | latency(avg / .95) | 
+| － | table count | table size | sysbench threads | tps | qps | latency(avg / .95) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | TiDB | 32 | 100 万 | 64 * 4 | 3834 | 76692 | 67.04 ms / 110.88 ms |
 | TiDB | 32 | 100 万 | 128 * 4 | 4172 | 83459 | 124.00 ms / 194.21 ms  |
@@ -108,7 +108,7 @@ max_connections = 2000
 
 * 标准 select 测试
 
-| - | table count | table size | sysbench threads |qps | latency(avg / .95) | 
+| － | table count | table size | sysbench threads |qps | latency(avg / .95) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | TiDB | 32 | 100 万 | 64 * 4 |  160299 | 1.61ms / 50.06 ms |
 | TiDB | 32 | 100 万 | 128 * 4 | 183347 | 2.85 ms / 8.66 ms  |
@@ -127,7 +127,7 @@ max_connections = 2000
 
 * 标准 insert 测试
 
-| - | table count | table size | sysbench threads | qps | latency(avg / .95) | 
+| － | table count | table size | sysbench threads | qps | latency(avg / .95) | 
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | TiDB | 32 | 100 万 | 64 * 4 | 25308 | 10.12 ms / 25.40 ms |
 | TiDB | 32 | 100 万 | 128 * 4 | 28773 | 17.80 ms / 44.58 ms   |
@@ -172,7 +172,7 @@ block-cache-size = "2GB"
 
 * 标准 oltp 测试
 
-| - | table count | table size | sysbench threads | tps | qps | latency(avg / .95) | 
+| － | table count | table size | sysbench threads | tps | qps | latency(avg / .95) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | 1 物理节点 TiDB | 32 | 100 万 | 256 * 1 | 2495 | 49902 | 102.42 ms / 125.52 ms |
 | 2 物理节点 TiDB | 32 | 100 万 | 256 * 2 | 5007 | 100153 | 102.23 ms / 125.52 ms  |
@@ -183,7 +183,7 @@ block-cache-size = "2GB"
 
 * 标准 select 测试
 
-| - | table count | table size | sysbench threads | qps | latency(avg / .95) | 
+| － | table count | table size | sysbench threads | qps | latency(avg / .95) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | 1 物理节点 TiDB | 32 | 100 万 | 256 * 1 | 71841 | 3.56 ms / 8.74 ms |
 | 2 物理节点 TiDB | 32 | 100 万 | 256 * 2 | 146615 | 3.49 ms / 8.74 ms |
@@ -194,7 +194,7 @@ block-cache-size = "2GB"
 
 * 标准 insert 测试
 
-| - | table count | table size | sysbench threads | qps | latency(avg / .95) | 
+| － | table count | table size | sysbench threads | qps | latency(avg / .95) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | 3 物理节点 TiKV | 32 | 100 万 |256 * 3 | 40547 | 18.93 ms / 38.25 ms |
 | 5 物理节点 TiKV | 32 | 100 万 | 256 * 3 | 60689 | 37.96 ms / 29.9 ms |
