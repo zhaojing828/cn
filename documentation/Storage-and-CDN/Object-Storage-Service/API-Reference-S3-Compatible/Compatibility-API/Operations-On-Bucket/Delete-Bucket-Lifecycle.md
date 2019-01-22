@@ -7,9 +7,9 @@
 ### 语法
 ```
 DELETE /?lifecycle HTTP/1.1
-Host: bucketname.s3.region.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
 Date: date
-Authorization: authorization string 
+Authorization: authorization string
 ```
 ### 请求参数
 无请求参数
@@ -26,7 +26,7 @@ Authorization: authorization string
 ### 请求示例
 ```
 DELETE /?lifecycle HTTP/1.1·
-Host: bucketname.s3.region.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
 Date: date
 Authorization: authorization string 
 ```
