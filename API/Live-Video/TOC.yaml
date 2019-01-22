@@ -64,7 +64,7 @@ items:
 #      - name: 查询时移配置
 #        href: Loading.md
   - name: 直播转码
-      items:
+    items:
       - name: 添加域名转码配置
         href: Live-API/addLiveStreamDomainTranscode.md
       - name: 删除域名转码配置
@@ -84,7 +84,7 @@ items:
       - name: 查询转码模板配置
         href: Live-API/describeLiveStreamTranscodeConfig.md
   - name: 直播录制
-      items:
+    items:
       - name: 添加录制模板
         href: Live-API/addCustomLiveStreamRecordTemplate.md
       - name: 删除录制模板
@@ -108,7 +108,7 @@ items:
       - name: 删除录制回调配置
         href: Live-API/deleteLiveStreamRecordNotifyConfig.md
   - name: 直播截图
-      items:
+    items:
       - name: 添加直播截图模板
         href: Live-API/addCustomLiveStreamSnapshotTemplate.md
       - name: 删除直播截图模板
@@ -132,7 +132,7 @@ items:
       - name: 删除截图回调配置
         href: Live-API/deleteLiveStreamSnapshotNotifyConfig.md
   - name: 直播水印
-      items:
+    items:
       - name: 添加直播水印模板
         href: Live-API/addCustomLiveStreamWatermarkTemplate.md
       - name: 删除用户自定义水印模板
