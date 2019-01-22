@@ -1,4 +1,4 @@
-name: 京东云桌面 JDWorkSpaces
+name: 云桌面
 href: 
   items:
   - name: 产品简介
@@ -15,7 +15,6 @@ href:
         href: Introduction/Features.md
       - name: 产品规格
         href: Introduction/Specifications.md
-        status: 0
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景 
@@ -30,7 +29,6 @@ href:
         href: Pricing/Price-Overview.md
       - name: 购买流程
         href: Pricing/Purchase-Process.md 
-        status: 0
       - name: 续费流程
         href: Pricing/Renewal-Process.md
   - name: 入门指南
@@ -58,7 +56,11 @@ href:
       - name: 开通JD WorkSpaces的流程
         href: Operation-Guide/Application process.md
       - name: 创建（购买）云桌面的流程
-        href: Operation-Guide/Purchase WorkSpace.md        
+        href: Operation-Guide/Purchase WorkSpace.md
+      - name: 新增用户的流程
+        href: Operation-Guide/Purchase User.md  
+      - name: 创建策略的流程
+        href: Operation-Guide/Purchase Policy.md          
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考
