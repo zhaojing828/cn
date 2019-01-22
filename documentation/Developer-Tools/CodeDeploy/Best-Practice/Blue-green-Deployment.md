@@ -171,9 +171,11 @@ out_dir: 'output'
 部署路径: 源文件/目录：/       目标目录：/home
 脚本执行账户：  root       
 脚本超时时间（s）：100
-停止脚本路径：/home/bin/stop.sh
+停止脚本路径：/home/bin/stop.sh     
 启动脚本路径：/home/bin/start.sh
 ```
+
+注意：初次部署无需填写停止脚本
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice15.png)
 
