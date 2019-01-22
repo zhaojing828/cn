@@ -34,9 +34,9 @@
 |GET Bucket encryption|返回用户对于OSS存储空间的默认加密配置|兼容[GET Bucket encryption](./Operations-On-Bucket/Get-Bucket-Encryption-2.md)|[GET Bucket encryption](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETencryption.html)|
 |PUT Bucket encryption|用于设定bucket默认加密方式置|兼容[PUT Bucket encryption](./Operations-On-Bucket/Put-Bucket-Encryption-2.md)|[PUT Bucket encryption](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTencryption.html)|
 |DELETE Bucket encryption|删除OSS存储空间的默认加密配置|兼容[DELETE Bucket encryption](./Operations-On-Bucket/Delete-Bucket-Encryption-2.md)|[DELETE Bucket encryption](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETEencryption.html)|
-|PUT Bucket lifecycle|设置Bucket的生命周期规则|未支持：Transition、AbortIncompleteMultipartUpload<br>兼容：[PUT Bucket lifecycle](./Operations-On-Bucket/PUT-Bucket-lifecycle.md)|[PUT Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTlifecycle.html)|
-|GET Bucket lifecycle|设置Bucket的生命周期规则|兼容：[GET Bucket lifecycle](./Operations-On-Bucket/GET-Bucket-lifecycle.md)|[GET Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETlifecycle.html)|
-|DELETE Bucket lifecycle|删除Bucket的生命周期规则|兼容：[DELETE Bucket lifecycle](./Operations-On-Bucket/GET-Bucket-lifecycle.md)|[GET Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETlifecycle.html)|
+|PUT Bucket lifecycle|设置Bucket的生命周期规则|未支持：Transition、AbortIncompleteMultipartUpload<br>兼容：[PUT Bucket lifecycle](./Operations-On-Bucket/PUT-Bucket-Lifecycle.md)|[PUT Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTlifecycle.html)|
+|GET Bucket lifecycle|设置Bucket的生命周期规则|兼容：[GET Bucket lifecycle](./Operations-On-Bucket/GET-Bucket-Lifecycle.md)|[GET Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETlifecycle.html)|
+|DELETE Bucket lifecycle|删除Bucket的生命周期规则|兼容：[DELETE Bucket lifecycle](./Operations-On-Bucket/DELETE-Bucket-Lifecycle.md)|[GET Bucket lifecycle](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETElifecycle.html)|
 
 # 关于 Object 操作 
 
