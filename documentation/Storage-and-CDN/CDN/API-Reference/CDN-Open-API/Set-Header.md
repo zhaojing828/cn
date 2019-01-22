@@ -102,7 +102,6 @@ json格式
 {
   "status": 0,
   "msg": "成功",
-  "data": "www.a.com"
+  "data": "www.a.com" 
 }
 ```
--
