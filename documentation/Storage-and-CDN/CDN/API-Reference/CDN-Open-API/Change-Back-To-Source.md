@@ -1,10 +1,10 @@
 # **回源策略变更**
 
-## **1、 描述**
+## **1.描述**
 
 回源策略变更 (changeSource)
 
-## **2、 请求参数**
+## **2.请求参数**
 
 | **名称**       | **类型** | **是否必填** | **描述**                                                     |
 | -------------- | -------- | ------------ | ------------------------------------------------------------ |
@@ -19,7 +19,7 @@
 
  
 
-## **3、 返回参数**
+## **3.返回参数**
 
 | **名称** | **描述**                                                  |
 | -------- | --------------------------------------------------------- |
@@ -29,7 +29,7 @@
 
  
 
-## **4、调用示例**
+## **4.调用示例**
 
 - ### **请求地址**
 
@@ -43,7 +43,7 @@ curl请求示例：
 curl -H “Content-type: application/json” -X POST -d ‘{“username”:“test_user”,“signature”:“914a3f412fd9bc1eec14bb5eb104d253”,“domain” :“www.b.com”, “type” :“web”,“sourceType” :“domain”,“source” :“[{’domain’:’source1.www.a.com’,’priority’:’1’},{’domain’:’source2.www.a.com’,’priority’:’2’}]”}’ http://opencdn.jcloud.com/api/changeSource
 ```
 
-•        json格式
+* json格式
 
 ```
 html http://opencdn.jcloud.com/api/changeSource
@@ -71,7 +71,7 @@ IP回源示例
 ``` 
 - ### **返回示例**
 
-•        json格式
+* json格式
 
 ```
 {
