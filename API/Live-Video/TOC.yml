@@ -19,18 +19,19 @@ items:
         href: Live-API/stopLiveDomain.md
       - name: 删除域名
         href: Live-API/deleteLiveDomain.md
-#  - name: APP管理
-#    items:
-#      - name: 添加直播APP
-#        href: Live-API/addLiveApp.md
-#      - name: 删除直播APP
-#        href: Live-API/deleteLiveApp.md
-#      - name: 启用APP
-#        href: Live-API/startLiveApp.md
-#      - name: 停用APP
-#        href: Live-API/stopLiveApp.md
-#      - name: 查询域名下的APP列表
-#        href: Live-API/describeLiveApp.md
+  - name: APP管理
+    items:
+    status: 0
+      - name: 添加直播APP
+        href: Live-API/addLiveApp.md
+      - name: 删除直播APP
+        href: Live-API/deleteLiveApp.md
+      - name: 启用APP
+        href: Live-API/startLiveApp.md
+      - name: 停用APP
+        href: Live-API/stopLiveApp.md
+      - name: 查询域名下的APP列表
+        href: Live-API/describeLiveApp.md
   - name: 直播流管理
     items:
       - name: 禁止直播流推送
@@ -49,20 +50,21 @@ items:
         href: Live-API/describeLiveStreamNotifyConfig.md
       - name: 删除直播流状态通知
         href: Live-API/deleteLiveStreamNotifyConfig.md
-#  - name: 直播时移
-#      items:
-#      - name: 添加域名时移配置
-#        href: Loading.md
-#      - name: 删除域名时移配置
-#        href: Loading.md
-#      - name: 添加App时移配置
-#        href: Loading.md
-#      - name: 删除App时移配置
-#        href: Loading.md
-#      - name: 查询时移文件空间占用
-#        href: Loading.md
-#      - name: 查询时移配置
-#        href: Loading.md
+  - name: 直播时移
+    items:
+    status: 0
+      - name: 添加域名时移配置
+        href: Loading.md
+      - name: 删除域名时移配置
+        href: Loading.md
+      - name: 添加App时移配置
+        href: Loading.md
+      - name: 删除App时移配置
+        href: Loading.md
+      - name: 查询时移文件空间占用
+        href: Loading.md
+      - name: 查询时移配置
+        href: Loading.md
   - name: 直播转码
     items:
       - name: 添加域名转码配置
