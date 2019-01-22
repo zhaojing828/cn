@@ -58,9 +58,9 @@ href:
       - name: 创建（购买）云桌面的流程
         href: Operation-Guide/Purchase WorkSpace.md
       - name: 新增用户的流程
-        href: Operation-Guide/Purchase User.md  
+        href: Operation-Guide/Purchase-User.md  
       - name: 创建策略的流程
-        href: Operation-Guide/Purchase Policy.md          
+        href: Operation-Guide/Purchase-Policy.md          
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考
