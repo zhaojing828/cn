@@ -9,7 +9,7 @@
 | **名称**       | **类型** | **是否必填** | **描述**                                                     |
 | -------------- | -------- | ------------ | ------------------------------------------------------------ |
 | username       | String   | 是           | 京东用户名pin                                                |
-| signature      | String   | 是           | 用户签名，通过md5的方式校验用户的身份信息，保障信息安全。  md5=日期+username+秘钥SecretKey日期：格式为 yyyymmddusername：京东用户名pin秘钥：双方约定示例：比如当前日期2016-10-23，用户pin: jcloud_00 ,用户秘钥SecretKey   ：e7a31b1c5ea0efa9aa2f29c6559f7d61那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
+| signature      | String   | 是           | 用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey日期：格式为 yyyymmddusername：京东用户名pin;秘钥：双方约定;</br>示例：比如当前日期2016-10-23，用户pin:jcloud_00 ,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61;那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
 | domain         | String   | 是           | 加速域名                                                     |
 | sourceType     | String   | 是           |1. 根据sourceType确定源站IP列表或者域名。</br>2. IP和domain回源必须是json格式。</br> 3. ip回源示例："[{'ip':'1.1.1.1','master':1,'ratio':0.4},{'ip':'1.1.1.2','master':1,'ratio':0.6}]"；ip回源时，1表示主IP，2表示备IP；ratio表示权重，权重值之和为1；</br>4. domain回源示例："[{'domain':'www.a.com','priority':'1',"sourceHost":"source.a.com"},{'domain':'www.b.com','priority':'2',"sourceHost":"source.b.com"}]"，domain回源时，priority代表的是域名优先级，1-5代表优先级从高到低；</br>5. sourceHost表示该回源域名或者回源IP对应的回源host，可针对IP回源或者域名回源设置；</br> 6.可自定义设置IP/域名回源端口，如"[{'ip':'1.1.1.1:8080','master':1}]". </br>7. OSS回源"oss.jcloud.com" |
 | source         | String   | 是           | ips和domain必须是json格式   |
