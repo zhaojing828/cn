@@ -93,6 +93,7 @@ http://opencdn.jcloud.com/api/batchSetHttpHeader
     "headerContext" :[{'headerType':'resp','headerName':'Server','headerValue':'user CDN Server'},{'headerType':'req','headerName':'Cache-Control','headerValue':'no-cache'}]
  }
 ```
+
 ## **6.返回说明**
 
 ```
