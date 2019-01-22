@@ -2,13 +2,15 @@
 
 ## 描述
 
-该操作可以为指定Bucket设置生命周期规则以及替换现有规则。对于Bucket下不常访问的文件，您可以配置生命周期管理的策略（指定资源、时间条件），当满足策略条件时会自动执行删除操作，从而使Bucket下的Object在其整个生命周期中变得经济和高效。
+京东云对象存储通过Bucket规则设置，支持对象的生命周期（Lifecycle）管理功能。可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。用户如果手工维护数据的生命周期，则费时费力；但如果不去维护，则会产生不菲的费用。生命周期管理可以帮助用户自动化完成数据生命周期管理，实现数据删除的自动流程，节约人力和金钱成本。
+
+该操作可以为指定Bucket设置生命周期规则以及替换现有规则。**资源过期删除是不可逆的，请根据您的需求合理配置文件生命周期时间计划。**
 
 ## 请求
 ### 语法
 ```
 PUT /?lifecycle HTTP/1.1
-Host: bucketname.s3.region.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
 Content-Length: length
 Date: date
 Authorization: authorization string
@@ -49,7 +51,7 @@ Expiration|指定何时对Object执行过期删除操作。<br>类型：Containe
 ### 请求示例
 ```
 PUT /?lifecycle HTTP/1.1
-Host: bucketname.s3.region.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
 Content-Length: length
 Date: date
 Authorization: authorization string
