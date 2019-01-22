@@ -10,7 +10,7 @@
 
 ```
 GET /?lifecycle HTTP/1.1
-Host: bucketname.s3.region.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
 Date: date
 Authorization: authorization string
 ```
@@ -32,7 +32,7 @@ Authorization: authorization string
 ### 请求示例
 ```
 GET /?lifecycle HTTP/1.1
-Host: bucketname.s3.region.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
 Date: date
 Authorization: authorization string
 ```
