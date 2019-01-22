@@ -19,18 +19,18 @@ items:
         href: /Live-API/stopLiveDomain.md
       - name: 删除域名
         href: /Live-API/deleteLiveDomain.md
-  - name: APP管理
-    items:
-      - name: 添加直播APP
-        href: /Live-API/addLiveApp.md
-      - name: 删除直播APP
-        href: /Live-API/deleteLiveApp.md
-      - name: 启用APP
-        href: /Live-API/startLiveApp.md
-      - name: 停用APP
-        href: /Live-API/stopLiveApp.md
-      - name: 查询域名下的APP列表
-        href: /Live-API/describeLiveApp.md
+#  - name: APP管理
+#    items:
+#      - name: 添加直播APP
+#        href: /Live-API/addLiveApp.md
+#      - name: 删除直播APP
+#        href: /Live-API/deleteLiveApp.md
+#      - name: 启用APP
+#        href: /Live-API/startLiveApp.md
+#      - name: 停用APP
+#        href: /Live-API/stopLiveApp.md
+#      - name: 查询域名下的APP列表
+#        href: /Live-API/describeLiveApp.md
   - name: 直播流管理
     items:
       - name: 禁止直播流推送
@@ -43,11 +43,11 @@ items:
         href: /Live-API/describeLiveStreamPublishList.md
   - name: 状态通知
     items:
-      - name: 设置通知URL
+      - name: 设置直播流状态通知
         href: /Live-API/setLiveStreamNotifyConfig.md
-      - name: 查询通知URL
+      - name: 查询直播流状态通知
         href: /Live-API/describeLiveStreamNotifyConfig.md
-      - name: 删除通知URL
+      - name: 删除直播流状态通知
         href: /Live-API/deleteLiveStreamNotifyConfig.md
 #  - name: 直播时移
 #      items:

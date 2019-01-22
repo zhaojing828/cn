@@ -14,7 +14,7 @@
     <dependency>
         <groupId>com.jdcloud.sdk</groupId>
         <artifactId>live</artifactId>
-        <version>1.0.1</version>
+        <version>${version}</version>
     </dependency>
     
 ### 2、调用步骤
@@ -28,7 +28,7 @@
 #### Step 4.执行请求得到响应
 
 
-### 3、以下是查询单个直播域名详情的调用示例
+#### 以下是查询单个直播域名详情的调用示例
 
     import com.jdcloud.sdk.JdcloudSdkException;
     import com.jdcloud.sdk.auth.CredentialsProvider;
