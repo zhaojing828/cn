@@ -147,6 +147,7 @@
             href: API-Reference/CDN-Open-API/Query-uv.md
           - name: 设置/删除 Header
             href: API-Reference/CDN-Open-API/Set-Header.md
+            status: 0
           - name: 查询Header
             href: API-Reference/CDN-Open-API/Query-Header.md
           - name: 附：提示信息状态码参照表
