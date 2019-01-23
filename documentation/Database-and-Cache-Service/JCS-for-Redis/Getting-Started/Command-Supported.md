@@ -46,6 +46,42 @@ SELECT|
 
 - CONFIG GET命令，在集群版中返回参数暂时未进行叠加
 
+## 集群实例不支持的命令
+
+Key(键)|String(字符串)|List（列表）|Set（集合）|SortedSet（有序集合）|Server（服务器）|Transaction(事务)
+:--:|:--:|:--:|:--:|:--:|:--:|:--:
+RENAME|BITOP|RPOPLPUSH|SDIFF|ZUNIONSTORE|SLOWLOG|DISCARD
+RENAMENX|MSETNX	||SDIFFSTORE|ZINTERSTORE|CONFIG REWRITE|EXEC
+OBJECT|||SINTER||CONFIG RESETSTAT|MULTI
+|			|||SINTERSTORE||COMMAND COUNT|UNWATCH
+|			|||SMOVE||COMMAND GETKEYS|WATCH
+|			|||SUNION||COMMAND INFO	|
+|			|||SUNIONSTORE||		|	
+	
+Redis2.8版本主从支持事务，集群不支持；Redis4.0主从集群都支持。事务中不支持的命令: SCRIPT *、INFO、SLOWLOG、LATENCY、EVAL、FLUSHALL、SCAN、AUTH、EVALSHA、DBSIZE、CONFIG、FLUSHDB、RANDOMKEY、PING
+
+ZUNIONSTORE/ZINTERSTORE命令，参数为destination numkeys key [key ...] [WEIGHTS weight] [SUM|MIN|MAX]
+1.	指定的所有key和destination 必须要要同属于一个槽，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
+
+## 4.0新增支持的命令
+
+Key(键)|Hash(哈希表)|SortedSet（有序集合）|Server（服务器）|Scripting(脚本)|HyperLogLog（HLL）|Geo(地理位置)
+:--:|:--:|:--:|:--:|:--:|:--:|:--:
+OBJECT|	HSTRLEN	|ZREVRANGEBYLEX	|DBSIZE|	EVAL|	PFADD|	GEOADD
+TOUCH|		|	|RANDOMKEY|	EVALSHA|	PFCOUNT	|GEORADIUS
+UNLINK|		|	|MEMORY|	SCRIPT EXISTS|	PFMERGE	|GEORADIUSBYMEMBER
+BITOP|		|	|LATENCY|	SCRIPT FLUSH|	|	GEOHASH
+MOVE|		|	|	|SCRIPT KILL	|	|GEOPOS
+|	|	|	|	|SCRIPT LOAD|		|GEODIST
+
+latency:  集群版的模式下，可以指定shardId。用来获取指定分片的数据，默认返回分片0的数据。
+1.	latency支持的子命令有：[LATEST] [DOCTOR] [ HISTORY event-name] [RESET [event-name … event-name]] [GRAPH event-name] 
+2.	在集群版模式下，例如：latency latest 1，来查看1号分片的最近一次的延迟时间信息。不指定shardId则默认为0号分片
+MEMORY命令，支持help，doctor，stats，purge，malloc-stats这几个子命令，支持指定shardId
+1.	memory stats 1，表示查看1号分片的内存统计信息，不指定则默认0号分片
+
+
+   
 ## 暂未开放的命令
 
 Key(键)|List（列表）|Server（服务器）|Pub/Sub（发布/订阅）|Geo(地理位置)|Cluster(集群)|Connection(连接)
@@ -69,20 +105,4 @@ WAIT|BRPOPLPUSH|BGREWRITEAOF|PUBSUB|GEOPOS|CLUSTER *|
 |	||ROLE	|			
 
 
-## 集群实例不支持的命令
 
-Key(键)|String(字符串)|List（列表）|Set（集合）|SortedSet（有序集合）|Server（服务器）|Transaction(事务)
-:--:|:--:|:--:|:--:|:--:|:--:|:--:
-RENAME|BITOP|RPOPLPUSH|SDIFF|ZUNIONSTORE|SLOWLOG|DISCARD
-RENAMENX|MSETNX	||SDIFFSTORE|ZINTERSTORE|CONFIG REWRITE|EXEC
-OBJECT|||SINTER||CONFIG RESETSTAT|MULTI
-|			|||SINTERSTORE||COMMAND COUNT|UNWATCH
-|			|||SMOVE||COMMAND GETKEYS|WATCH
-|			|||SUNION||COMMAND INFO	|
-|			|||SUNIONSTORE||		|	
-	
-Redis2.8版本主从支持事务，集群不支持；Redis4.0主从集群都支持。事务中不支持的命令: SCRIPT *、INFO、SLOWLOG、LATENCY、EVAL、FLUSHALL、SCAN、AUTH、EVALSHA、DBSIZE、CONFIG、FLUSHDB、RANDOMKEY、PING
-
-ZUNIONSTORE/ZINTERSTORE命令，参数为destination numkeys key [key ...] [WEIGHTS weight] [SUM|MIN|MAX]
-1.	指定的所有key和destination 必须要要同属于一个槽，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
-   
