@@ -24,9 +24,9 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/
 ### Filter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
-|**name**|String|True| |过滤条件的名称|
 
 ## 返回参数
 |名称|类型|描述|
@@ -37,29 +37,29 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkSecurityGroups/
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**totalCount**|Number|总数量|
 |**networkSecurityGroups**|NetworkSecurityGroup[]|安全组资源信息列表|
+|**totalCount**|Number|总数量|
 ### NetworkSecurityGroup
 |名称|类型|描述|
 |---|---|---|
-|**networkSecurityGroupName**|String|安全组名称|
-|**vpcId**|String|安全组所在vpc的Id|
 |**networkSecurityGroupId**|String|安全组ID|
+|**networkSecurityGroupName**|String|安全组名称|
 |**description**|String|安全组描述信息|
-|**createdTime**|String|安全组创建时间|
+|**vpcId**|String|安全组所在vpc的Id|
 |**securityGroupRules**|SecurityGroupRule[]|安全组规则信息|
+|**createdTime**|String|安全组创建时间|
 ### SecurityGroupRule
 |名称|类型|描述|
 |---|---|---|
+|**ruleId**|String|安全组规则ID|
 |**direction**|Number|安全组规则方向。0：入规则; 1：出规则|
 |**protocol**|Number|规则限定协议。300:All; 6:TCP; 17:UDP; 1:ICMP|
-|**description**|String|描述,​ 允许输入UTF-8编码下的全部字符，不超过256字符|
-|**ruleId**|String|安全组规则ID|
 |**addressPrefix**|String|匹配地址前缀|
 |**ipVersion**|Number|匹配地址协议版本。4：IPv4|
 |**fromPort**|Number|规则限定起始传输层端口, 默认1 ，若protocal不是传输层协议，恒为0|
-|**createdTime**|String|安全组规则创建时间|
 |**toPort**|Number|规则限定终止传输层端口, 默认1 ，若protocal不是传输层协议，恒为0|
+|**createdTime**|String|安全组规则创建时间|
+|**description**|String|描述,​ 允许输入UTF-8编码下的全部字符，不超过256字符|
 
 ## 返回码
 |返回码|描述|
