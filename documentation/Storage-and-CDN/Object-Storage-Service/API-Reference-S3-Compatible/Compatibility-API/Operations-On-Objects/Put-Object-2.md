@@ -34,11 +34,7 @@ x-amz-storage-class| Object存储类型，如果未指定，默认为标准存�
 
 ## 响应
 ### 响应Header
-除了通用响应Header外，还包括以下响应Header。
-
-名称|描述
----|---
-x-amz-expiration|如果该Object设置了过期时间(Put Bucket lifecycle上线后支持)，响应中将包含包含该Header。<br>Type: String
+无特殊Header
 
 ### 响应元素
 无特殊响应元素
@@ -67,8 +63,3 @@ Content-Length: 0
 Connection: close
 Server: JDCloudOSS
 ```
-
-
-
-
-

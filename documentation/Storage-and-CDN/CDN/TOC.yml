@@ -25,7 +25,6 @@
         href: Pricing/Billing-Overview.md
       - name: 计费变更
         href: Pricing/Billing-change.md
-        status: 0
       - name: 欠费说明
         href: Pricing/Arrears.md
   - name: 入门指南
@@ -146,6 +145,11 @@
             href: API-Reference/CDN-Open-API/Query-total-data.md
           - name: 查询UV
             href: API-Reference/CDN-Open-API/Query-uv.md
+          - name: 设置/删除 Header
+            href: API-Reference/CDN-Open-API/Set-Header.md
+            status: 0
+          - name: 查询Header
+            href: API-Reference/CDN-Open-API/Query-Header.md
           - name: 附：提示信息状态码参照表
             href: API-Reference/CDN-Open-API/Status-code-reference-table.md
       - name: 直播 OPEN API

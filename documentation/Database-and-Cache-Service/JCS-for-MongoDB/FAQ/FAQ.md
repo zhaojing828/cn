@@ -26,6 +26,7 @@ A：MongoDB使用的是内存映射存储引擎，它会把磁盘IO操作转换�
 **Q：目前使用的是本地 MongoDB 4.0版，如果转到云上使用3.6版，需要注意什么？**
 
 A：MongoDB 4.0 新增了一些功能特性，转为使用3.6版时，需注意以下内容：
+
 1. 避免使用多文档事务。
 2. 避免使用新增的聚合命令。
 
@@ -33,15 +34,15 @@ A：MongoDB 4.0 新增了一些功能特性，转为使用3.6版时，需注意�
 
 		| Operator | Description |
 		|---|:---|
-		|$convert | Convert value to specified type.|
-		|$toBool | Convert value to boolean.|
-		|$toDate |Convert value to Date. |
-		|$toDecimal|Convert value to Decimal128.|
-		|$toDouble|Convert value to Double.|
-		|$toInt|Convert value to integer.|
-		|$toLong|Convert value to long.|
-		|$toObjectId|Convert value to ObjectId.|
-		|$toString|Convert value to string.|
+		| $convert | Convert value to specified type. |
+		| $toBool | Convert value to boolean. |
+		| $toDate | Convert value to Date. |
+		| $toDecimal | Convert value to Decimal128. |
+		| $toDouble | Convert value to Double. |
+		| $toInt | Convert value to integer. |
+		| $toLong | Convert value to long. |
+		| $toObjectId | Convert value to ObjectId. |
+		| $toString | Convert value to string. |
 
 	- 字符处理
 

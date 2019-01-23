@@ -85,7 +85,10 @@ items:
       items:
         - name: 流控策略
           herf: Create-Stream/Create-Stream.md  
-    
+    - name: 错误码
+      items:
+        - name:  错误码
+          herf: Code/API_Errorcode.md
 - name: 最佳实践
   items:
   - name: 最佳实践

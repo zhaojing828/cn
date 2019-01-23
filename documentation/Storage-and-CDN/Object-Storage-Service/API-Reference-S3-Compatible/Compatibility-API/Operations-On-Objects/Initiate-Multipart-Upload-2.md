@@ -32,12 +32,7 @@ x-amz-storage-class| Object存储类型，如果未指定，默认为标准存�
 
 ## 响应
 ### 响应Header
-
-名称|描述
----|---
-x-amz-abort-date|若该Bucket配置了中止未完成的分段上传的生命周期策略（Put Bucket Lifecycle上线后支持），并且前缀与该Object名称匹配，则响应包括此Header，另还包括x-amz-abort-rule-id标头，该标头提供定义此操作的生命周期配置规则的ID。<br>Type: String
-x-amz-abort-rule-id|该Header与x-amz-abort-date一起返回，用于标识生命周期规则。<br>String
-x-amz-expiration|如果该Object设置了过期时间(Put Bucket lifecycle上线后支持)，响应中将包含包含该Header。<br>Type: String
+无特殊Header
 
 ### 响应元素
 
