@@ -48,8 +48,8 @@ SELECT|
 
 - CONFIG 命令，只支持CONFIG GET [parameter]子命令，并且如果是集群版Redis，返回的是某一个分片的信息。
 - SORT命令使用方法：SORT key [BY pattern] [LIMIT offset count] [GET pattern [GET pattern ...]] [ASC|DESC] [ALPHA] [STORE destination]
-1.	由于sort命令支持 [BY pattern]根据外部key进行排序，因此要确保key和pattern匹配上的key在同一个槽中，否则会出现与预期不符的结果。
-2.	sort命令支持将结果写入destination中，因此，要确保destination和key 在同一个槽中，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
+1.	由于SORT命令支持 [BY pattern]根据外部key进行排序，因此要确保key和pattern匹配上的key在同一个槽中，否则会出现与预期不符的结果。
+2.	SORT命令支持将结果写入destination中，因此，要确保destination和key 在同一个槽中，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
 
 
 
