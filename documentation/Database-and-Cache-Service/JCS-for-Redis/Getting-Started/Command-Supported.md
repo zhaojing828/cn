@@ -42,9 +42,18 @@ SELECT|
 
 - KEYS命令，只能在VPC网络下使用，属于危险的命令，可能造成性能问题，请确保在key很少的情况下使用。如果需要从一个大数据集中查找特定的 key ，推荐使用 Redis 的集合结构(set)
 
-- INFO命令，在集群版中使用受限：不支持 info cpu/replication/persistence
+- INFO 命令，支持server，clients，memory，persistence，stats，replication，cpu，commandstats，cluster，keyspace
+•	如果是集群版，replication，server展示的是某一分片的信息，其余子命令则是统计之后的信息。
+•	 特别说明，cluster子命令，显示db_count表示数据库的数量，shard_count表示当前redis版本的分片个数。
 
-- CONFIG GET命令，在集群版中返回参数暂时未进行叠加
+- CONFIG 命令，只支持CONFIG GET [parameter]子命令，并且如果是集群版Redis，返回的是某一个分片的信息。
+- SORT命令使用方法：SORT key [BY pattern] [LIMIT offset count] [GET pattern [GET pattern ...]] [ASC|DESC] [ALPHA] [STORE destination]
+1.	由于sort命令支持 [BY pattern]根据外部key进行排序，因此要确保key和pattern匹配上的key在同一个槽中，否则会出现与预期不符的结果。
+2.	sort命令支持将结果写入destination中，因此，要确保destination和key 在同一个槽中，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
+
+
+
+
 
 ## 集群实例不支持的命令
 
@@ -58,10 +67,11 @@ OBJECT|||SINTER||CONFIG RESETSTAT|MULTI
 |			|||SUNION||COMMAND INFO	|
 |			|||SUNIONSTORE||		|	
 	
-Redis2.8版本主从支持事务，集群不支持；Redis4.0主从集群都支持。事务中不支持的命令: SCRIPT *、INFO、SLOWLOG、LATENCY、EVAL、FLUSHALL、SCAN、AUTH、EVALSHA、DBSIZE、CONFIG、FLUSHDB、RANDOMKEY、PING
+- Redis2.8版本主从支持事务，集群不支持；Redis4.0主从集群都支持。事务中不支持的命令: SCRIPT *、INFO、SLOWLOG、LATENCY、EVAL、FLUSHALL、SCAN、AUTH、EVALSHA、DBSIZE、CONFIG、FLUSHDB、RANDOMKEY、PING
 
-ZUNIONSTORE/ZINTERSTORE命令，参数为destination numkeys key [key ...] [WEIGHTS weight] [SUM|MIN|MAX]
-1.	指定的所有key和destination 必须要要同属于一个槽，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
+- ZUNIONSTORE/ZINTERSTORE命令，参数为destination numkeys key [key ...] [WEIGHTS weight] [SUM|MIN|MAX]
+
+指定的所有key和destination 必须要要同属于一个槽，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
 
 ## 4.0新增支持的命令
 
@@ -74,11 +84,13 @@ BITOP|		|	|LATENCY|	SCRIPT FLUSH|	|	GEOHASH
 MOVE|		|	|	|SCRIPT KILL	|	|GEOPOS
 |	|	|	|	|SCRIPT LOAD|		|GEODIST
 
-latency:  集群版的模式下，可以指定shardId。用来获取指定分片的数据，默认返回分片0的数据。
-1.	latency支持的子命令有：[LATEST] [DOCTOR] [ HISTORY event-name] [RESET [event-name … event-name]] [GRAPH event-name] 
-2.	在集群版模式下，例如：latency latest 1，来查看1号分片的最近一次的延迟时间信息。不指定shardId则默认为0号分片
-MEMORY命令，支持help，doctor，stats，purge，malloc-stats这几个子命令，支持指定shardId
-1.	memory stats 1，表示查看1号分片的内存统计信息，不指定则默认0号分片
+- LATENCY:  集群版的模式下，可以指定shardId。用来获取指定分片的数据，默认返回分片0的数据。
+1.	LATENCY支持的子命令有：[LATEST] [DOCTOR] [ HISTORY event-name] [RESET [event-name … event-name]] [GRAPH event-name] 
+2.	在集群版模式下，例如：LATENCY latest 1，来查看1号分片的最近一次的延迟时间信息。不指定shardId则默认为0号分片
+
+- MEMORY命令，支持help，doctor，stats，purge，malloc-stats这几个子命令，支持指定shardId
+
+MEMORY stats 1，表示查看1号分片的内存统计信息，不指定则默认0号分片
 
 
    
