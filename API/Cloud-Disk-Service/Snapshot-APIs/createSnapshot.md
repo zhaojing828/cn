@@ -23,21 +23,21 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**clientToken**|String|True| |幂等性校验参数|
 |**snapshotSpec**|SnapshotSpec|True| |创建快照规格|
+|**clientToken**|String|True| |幂等性校验参数|
 
 ### SnapshotSpec
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |快照名称|
 |**description**|String|False| |快照描述|
 |**diskId**|String|True| |用于创建快照的云盘ID|
-|**name**|String|True| |快照名称|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|请求ID|
 |**result**|Result|结果集|
+|**requestId**|String|请求ID|
 
 ### Result
 |名称|类型|描述|
@@ -47,10 +47,10 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/snapshots
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
-|**500**|Internal server error|
-|**503**|Service unavailable|
-|**200**|OK|
 |**404**|Not found|
 |**429**|Quota exceeded|
+|**500**|Internal server error|
+|**503**|Service unavailable|

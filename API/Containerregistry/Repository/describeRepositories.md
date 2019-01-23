@@ -25,9 +25,9 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/listRepositories
 ### Filter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
-|**name**|String|True| |过滤条件的名称|
 
 ## 返回参数
 |名称|类型|描述|
@@ -38,25 +38,25 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/listRepositories
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**totalCount**|Number| |
 |**repositories**|Repository[]| |
+|**totalCount**|Number| |
 ### Repository
 |名称|类型|描述|
 |---|---|---|
+|**createdAt**|String|记录用户repository创建的时间。|
+|**updatedAt**|String|记录用户repository更新的时间。|
 |**registryName**|String|注册表名称。|
 |**repositoryName**|String|镜像仓库名称。|
-|**description**|String|镜像仓库描述。|
-|**totalSpaceUsedMB**|Double|镜像仓库大小。|
 |**repositoryUri**|String|镜像仓库中的镜像总个数。|
-|**updatedAt**|String|记录用户repository更新的时间。|
-|**createdAt**|String|记录用户repository创建的时间。|
+|**totalSpaceUsedMB**|Double|镜像仓库大小。|
+|**description**|String|镜像仓库描述。|
 
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|

@@ -24,9 +24,9 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 ### Filter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
-|**name**|String|True| |过滤条件的名称|
 
 ## 返回参数
 |名称|类型|描述|
@@ -37,28 +37,28 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/networkInterfaces/
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**totalCount**|Number|总数量|
 |**networkInterfaces**|NetworkInterface[]|networkInterface资源信息列表|
+|**totalCount**|Number|总数量|
 ### NetworkInterface
 |名称|类型|描述|
 |---|---|---|
+|**networkInterfaceName**|String|弹性网卡名称|
+|**networkInterfaceId**|String|弹性网卡ID|
+|**az**|String|可用区名称|
+|**role**|String|网卡角色，取值范围：Primary（主网卡）、Secondary（辅助网卡）|
 |**macAddress**|String|以太网地址|
 |**vpcId**|String|虚拟网络ID|
-|**description**|String|网卡描述信息|
-|**instanceId**|String|关联实例ID|
-|**secondaryIps**|NetworkInterfacePrivateIp[]|网卡附属IP列表|
 |**subnetId**|String|子网ID|
-|**az**|String|可用区名称|
+|**networkSecurityGroupIds**|String[]|安全组ID列表|
+|**sanityCheck**|Integer|源和目标IP地址校验，取值为0或者1|
+|**primaryIp**|NetworkInterfacePrivateIp|网卡主IP|
+|**secondaryIps**|NetworkInterfacePrivateIp[]|网卡附属IP列表|
 |**instanceType**|String|关联实例类型，取值范围：vm|
+|**instanceId**|String|关联实例ID|
 |**instanceOwnerId**|String|实例所属的账号|
 |**deviceIndex**|Integer|网卡在实例上的设备索引号，取值范围：[0,8]，0：辅助网卡未绑定设备，1：主网卡，2-8：辅助网卡已绑定设备|
-|**networkInterfaceId**|String|弹性网卡ID|
-|**sanityCheck**|Integer|源和目标IP地址校验，取值为0或者1|
-|**networkSecurityGroupIds**|String[]|安全组ID列表|
-|**role**|String|网卡角色，取值范围：Primary（主网卡）、Secondary（辅助网卡）|
+|**description**|String|网卡描述信息|
 |**createdTime**|String|弹性网卡创建时间|
-|**primaryIp**|NetworkInterfacePrivateIp|网卡主IP|
-|**networkInterfaceName**|String|弹性网卡名称|
 ### NetworkInterfacePrivateIp
 |名称|类型|描述|
 |---|---|---|
