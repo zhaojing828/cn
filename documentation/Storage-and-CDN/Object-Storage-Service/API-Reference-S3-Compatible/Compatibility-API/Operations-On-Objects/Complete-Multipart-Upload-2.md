@@ -39,11 +39,7 @@ ETag|分片上传后返回的实体标签。<br>Ancestor: Part<br>Type: String|�
 
 ## 响应
 ### 响应Header
-除公共响应Header外，还有以下Header:
-
-Header|描述
----|---
-x-amz-expiration|如果该Object设置了过期时间(Put Bucket lifecycle上线后支持)，响应中将包含包含该Header。<br>Type: String
+无特殊Header
 
 ### 响应元素
 
