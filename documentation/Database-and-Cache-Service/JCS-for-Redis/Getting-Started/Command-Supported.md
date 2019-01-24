@@ -61,15 +61,15 @@
 
 ## 集群实例不支持的命令
 
-|Key(键)|String(字符串)|List（列表）|Set（集合）|SortedSet（有序集合）|Server（服务器）|Transaction(事务)|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|RENAME|BITOP|RPOPLPUSH|SDIFF|ZUNIONSTORE|SLOWLOG|DISCARD|
-|RENAMENX|MSETNX||SDIFFSTORE|ZINTERSTORE|CONFIG REWRITE|EXEC|
-|OBJECT|||SINTER||CONFIG RESETSTAT|MULTI|
-||||SINTERSTORE||COMMAND COUNT|UNWATCH|
-||||SMOVE||COMMAND GETKEYS|WATCH|
-||||SUNION||COMMAND INFO||
-||||SUNIONSTORE||||	
+| Key( 键 ) | String( 字符串 ) | List（列表） | Set （集合） | SortedSet （有序集合） | Server （服务器） | Transaction( 事务 ) |
+|:---------:|:----------------:|-------------:|--------------|------------------------|-------------------|---------------------|
+| RENAME    |       BITOP      |    RPOPLPUSH | SDIFF        | ZUNIONSTORE            | SLOWLOG           | DISCARD             |
+| RENAMENX  |      MSETNX      |              | SDIFFSTORE   | ZINTERSTORE            | CONFIG REWRITE    | EXEC                |
+| OBJECT    |                  |              | SINTER       |                        | CONFIG RESETSTAT  | MULTI               |
+|           |                  |              | SINTERSTORE  |                        | COMMAND COUNT     | UNWATCH             |
+|           |                  |              | SMOVE        |                        | COMMAND GETKEYS   | WATCH               |
+|           |                  |              | SUNION       |                        | COMMAND INFO      |                     |
+|           |                  |              | SUNIONSTORE  |                        |                   |                     |
 	
 - Redis2.8版本主从支持事务，集群不支持；Redis4.0主从集群都支持。事务中不支持的命令: SCRIPT *、INFO、SLOWLOG、LATENCY、EVAL、FLUSHALL、SCAN、AUTH、EVALSHA、DBSIZE、CONFIG、FLUSHDB、RANDOMKEY、PING
 
