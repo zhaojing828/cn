@@ -33,7 +33,7 @@ https://opencdn.jcloud.com/api/setIgnoreArgs
 
 https://opencdn.jcloud.com/api/setIgnoreArgs
 
-\* json格式
+* json格式
 
 ```
 {
