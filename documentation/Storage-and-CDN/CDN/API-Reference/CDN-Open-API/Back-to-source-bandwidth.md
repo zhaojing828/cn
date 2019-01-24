@@ -33,7 +33,7 @@ https://opencdn.jcloud.com/api/origin_ratio
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/origin_ratio
+https://opencdn.jcloud.com/api/origin_ratio
 {
     "username" :"test_user",
     "signature" :"d847267fc702273abf394dd0c3128d64",
@@ -45,7 +45,7 @@ http://opencdn.jcloud.com/api/origin_ratio
 
 - ### **返回说明**
 
-json格式
+* json格式
 
 ```
 {
