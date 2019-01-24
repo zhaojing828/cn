@@ -25,8 +25,8 @@
 | |SETBIT      | | |   |   	ZLEXCOUNT|            
 | |SETEX       | | |    | 	ZREMRANGEBYLEX   |         
 | |SETNX| | | | |             	
-| |SETRANGE   | | | |         	
-| |STRLEN    | | | |        	
+| |SETRANGE   | | | | |        	
+| |STRLEN    | | | |  |      	
 
 以及
 
