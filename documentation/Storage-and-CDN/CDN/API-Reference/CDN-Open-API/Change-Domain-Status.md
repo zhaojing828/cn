@@ -34,13 +34,13 @@ https://opencdn.jcloud.com/api/changeDomainStatus/start
 curl请求示例：
 
 ```
- curl -H “Content-type: application/json” -X POST -d ‘{“username”:“test_user”,“signature”:“914a3f412fd9bc1eec14bb5eb104d253”,“domain” :“www.b.com”}’ http://opencdn.jcloud.com/api/changeDomainStatus/start
+ curl -H “Content-type: application/json” -X POST -d ‘{“username”:“test_user”,“signature”:“914a3f412fd9bc1eec14bb5eb104d253”,“domain” :“www.b.com”}’ https://opencdn.jcloud.com/api/changeDomainStatus/start
 ```
 
 * json格式
 
 ```
-http://opencdn.jcloud.com/api/changeDomainStatus/start
+https://opencdn.jcloud.com/api/changeDomainStatus/start
 {
     "username" :"test_user",
     "signature" :"d847267fc702273abf394dd0c3128d64",
