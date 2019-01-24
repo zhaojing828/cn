@@ -1,10 +1,10 @@
-## **创建加速域名**
+# **创建加速域名**
 
-**1. 描述**
+## **1. 描述**
 
 开通加速域名(createDomain)
 
-**2. 请求参数**
+## **2. 请求参数**
 
 | 名称           | 类型   | 是否必填 | 描述                                                         |
 | -------------- | ------ | -------- | ------------------------------------------------------------ |
@@ -17,7 +17,7 @@
 | backSourceType | String | 是       | 回源类型，只能为http（80端口回源）或者https（443端口回源），默认为http |
 | dailyBandWidth | String | 是       | 业务日常峰值带宽                                             |
 
-**3. 返回参数**
+## **3. 返回参数**
 
 | **名称** | **描述**                                                  |
 | -------- | --------------------------------------------------------- |
@@ -25,11 +25,14 @@
 | msg      | 提示信息                                                  |
 | data     | 域名                                                      |
 
-**4. 调用示例**
+## **4. 调用示例**
 
-- **请求地址**
+- ### **请求地址**
+
 https://opencdn.jcloud.com/api/createDomain
-- **请求示例**
+
+- ### **请求示例**
+
 curl请求示例：
 ```
 curl -H "Content-type: application/json" -X POST -d '{"username":" testuser ","signature":"914a3f412fd9bc1eec14bb5eb104d253","domain" :"www.a.com","type" :"web","sourceType" :"ips","source" :"[{'ip':'1.1.1.1','priority':'master'},{'ip':'2.2.2.2','priority':'master'},{'ip':'3.3.3.3','priority':'slave'}]","backSourceType" :"http","dailyBandWidth" :200}' http://opencdn.jcloud.com/api/createDomain
@@ -47,7 +50,7 @@ curl -H "Content-type: application/json" -X POST -d '{"username":" testuser ","s
     "dailyBandWidth" :200
  }
 ```
-- **返回示例**
+- ### **返回示例**
 
 * json格式
 
