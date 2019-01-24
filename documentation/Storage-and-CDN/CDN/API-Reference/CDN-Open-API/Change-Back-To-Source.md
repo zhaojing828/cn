@@ -41,8 +41,8 @@ curl -H “Content-type: application/json” -X POST -d ‘{“username”:“te
 * json格式
 
 ```
-html http://opencdn.jcloud.com/api/changeSource
-域名回源示例
+https://opencdn.jcloud.com/api/changeSource
+* 域名回源示例
 {
     "username" :"test_user",
     "signature" :"d00f58f89e8cd55dc080aec0d8051845",
@@ -53,7 +53,7 @@ html http://opencdn.jcloud.com/api/changeSource
  }
 ```
 ```
-IP回源示例
+* IP回源示例
 
 {
     "username" :"test_user",
