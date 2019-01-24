@@ -31,7 +31,7 @@
 
  **请求地址**
 
-http://opencdn.jcloud.com/api/downloadUrlInterval
+https://opencdn.jcloud.com/api/downloadUrlInterval
 
  **请求示例**
 
