@@ -32,7 +32,7 @@ https://opencdn.jcloud.com/api/queryHttpHeaderConfig
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/queryHttpHeaderConfig
+https://opencdn.jcloud.com/api/queryHttpHeaderConfig
 {
     "username" :"use_test",
     "signature" :"1e28b8b4a1feddcacce74fa8b7131499",
