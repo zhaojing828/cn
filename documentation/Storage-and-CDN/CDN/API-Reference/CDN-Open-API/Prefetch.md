@@ -31,7 +31,7 @@ https://opencdn.jcloud.com/api/prefetch
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/prefetch
+https://opencdn.jcloud.com/api/prefetch
 {
     "username":"jcloud_00",
     "signature":"d847267fc702273abf699dd0c3128d64",
