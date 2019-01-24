@@ -34,7 +34,7 @@ https://opencdn.jcloud.com/api/fee
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/fee
+https://opencdn.jcloud.com/api/fee
 {
     "username" :"test_user",
     "signature" :"8480204f27968a53d6dbfee99157339f",
