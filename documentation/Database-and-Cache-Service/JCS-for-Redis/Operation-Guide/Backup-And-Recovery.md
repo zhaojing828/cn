@@ -15,7 +15,7 @@
 ④.选择备份设置页签；
 
 ⑤.单击编辑，自定义自动备份的周期和时间。
- ![备份1](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup1.PNG)
+ ![备份1](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup1.png)
  
 注意：默认备份数据的保留时间是7天，不可修改。
 
@@ -24,14 +24,14 @@
 2.	手动备份（立即备份）
 
 用户可在备份恢复标签页右上角点击手动备份按钮，弹框提示用户输入手动备份名称，输入后点击确定即可立即备份。
-![备份2](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup2.PNG)
+![备份2](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup2.png)
  
 3.	备份下载
 
 用户在备份恢复标签页默认看到备份数据列表，右边操作列中点击下载，即有弹框提示下载链接，用户可根据自身情况下载到本地。
-![备份3](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup3.PNG)
+![备份3](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup3.png)
 
 4.	备份恢复
 
 用户在备份恢复标签页默认看到备份数据列表，右边操作列中点击下载，即有弹框提示恢复确认，点击确认后数据开始恢复。
- ![备份4](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup4.PNG)
+ ![备份4](https://github.com/jdcloudcom/cn/blob/master/image/Redis/backup4.png)
