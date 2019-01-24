@@ -71,7 +71,7 @@
             href: Operation-Guide/Monitoring/Alarm-Rules.md   
       - name: 数据迁移
         href: Operation-Guide/Parameter-Modification.md   
-- name: 最佳实践
+  - name: 最佳实践
     items:
     - name: C/C++连接Redis实例
       href: Best-Practices/CorCplusplus-Connect-to-Redis-Instance.md
