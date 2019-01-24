@@ -30,7 +30,7 @@ https://opencdn.jcloud.com/api/region_name
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/region_name
+https://opencdn.jcloud.com/api/region_name
 {
     "username" :"test_user",
     "signature" :"dbc1c1302d0a1baa48a256cbfc840317"
