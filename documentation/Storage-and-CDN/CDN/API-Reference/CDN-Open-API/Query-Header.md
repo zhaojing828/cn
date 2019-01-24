@@ -27,7 +27,7 @@
 - ### **请求地址**
 post方式
 
-http://opencdn.jcloud.com/api/queryHttpHeaderConfig
+https://opencdn.jcloud.com/api/queryHttpHeaderConfig
 
 - ### **请求示例**
 
