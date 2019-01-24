@@ -14,7 +14,7 @@
 | start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00；查询的时间跨度不能超过1小时  |
 | end_time   | String   | 否           | 不是必填参数，不传默认到当前时间，时间跨度最大为1个小时，且粒度为5分钟           |
 
-## **3. 返回参数data中说明**
+## **3. 返回参数**
 
 | **名称** | **描述**                       |
 | -------- | ------------------------------ |
@@ -31,7 +31,7 @@ https://opencdn.jcloud.com/api/area_isp_stat_v2
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/area_isp_stat_v2
+https://opencdn.jcloud.com/api/area_isp_stat_v2
 {
     "username" :"test_user",
     "signature" :"d847267fc702273abf394dd0c3128d64",
@@ -43,7 +43,7 @@ http://opencdn.jcloud.com/api/area_isp_stat_v2
 
 - ### **返回说明**
 
-• json格式
+* json格式
 
 ```
 {
@@ -72,7 +72,7 @@ SVG_SPEED, // 平均下载速度,单位:KB/s
 
 - ### **返回示例**
 
-• json格式
+* json格式
 
 ```
 {
