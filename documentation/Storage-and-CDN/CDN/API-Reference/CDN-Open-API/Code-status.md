@@ -14,7 +14,7 @@
 | start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00；查询的时间跨度不能超过7天 |
 | end_time   | String   | 否           | 不是必填参数，不传默认到当前时间                             |
 
-## **3. 返回参数data中说明**
+## **3. 返回参数**
 
 | **名称** | **描述**                       |
 | -------- | ------------------------------ |
@@ -32,7 +32,7 @@ https://opencdn.jcloud.com/api/hcode
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/hcode
+https://opencdn.jcloud.com/api/hcode
 {
     "username" :"test_user",
     "signature" :"d847267fc702273abf394dd0c3128d64",
