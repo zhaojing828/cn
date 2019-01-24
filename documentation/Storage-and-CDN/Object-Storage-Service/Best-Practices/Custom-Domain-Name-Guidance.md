@@ -9,11 +9,6 @@
 
 您上传文件到京东云 OSS 的 Bucket 后，可以使用OSS 访问域名或 Bucket 域名访问存储空间文件。如果您想要通过自定义域名访问这些文件，需要将自定义域名绑定到文件所在的存储空间，并添加 CNAME 记录指向存储空间对应的外网域名。参见[自定义域名服务](../Operation-Guide/Manage-Bucket/Set-Custom-Domain-Name-2.md)。
 
-## 自定义域名优势
-
-* 当用户需要将网站中的文件迁移到OSS，并且不想修改网页的代码，即保持网站的链接不变。
-* 避免业务中可能涉及的跨域或者安全问题。
-
 ## 自定义域名支持HTTPS访问 OSS 服务
 
 当您参照参见[控制台-自定义域名设置](../Operation-Guide/Manage-Bucket/Set-Custom-Domain-Name-2.md)完成域名添加后，
