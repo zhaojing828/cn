@@ -44,7 +44,7 @@ curl -H "Content-type:application/json" -X POST -d '{"username":"test_user","sig
 * json格式
 
 ```
-http://opencdn.jcloud.com/api/downloadUrlInterval
+https://opencdn.jcloud.com/api/downloadUrlInterval
 {
     "username" :"test_user",
     "signature" :"d847267fc702273abf394dd0c3128d64",
