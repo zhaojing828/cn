@@ -323,6 +323,8 @@ items:
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Multipart-Upload-S3.md              
        - name:  兼容S3  SDK-Python（推荐）
          href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Python.md   
+       - name: 兼容S3  SDK-Go
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Go.md            
        - name: 兼容S3  SDK-PHP
          href:  API-Reference-S3-Compatible/Compatibility-Tools/SDK-PHP.md
        - name:  兼容S3  SDK-Android
