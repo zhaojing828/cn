@@ -13,8 +13,12 @@
         href: Introduction/Benefits.md
       - name: 产品功能
         href: Introduction/Features.md
-      - name: 应用场景 
-        href: Introduction/Application-Scenarios.md    
+      - name: 应用场景
+        items:
+          - name: 场景概述
+            href: Introduction/Application-Scenarios/Overview.md
+          - name: 视频直播
+            href: Introduction/Application-Scenarios/living.md  
   - name: 产品定价
     items:
       - name: 计费概述
@@ -141,6 +145,10 @@
             href: API-Reference/CDN-Open-API/Query-total-data.md
           - name: 查询UV
             href: API-Reference/CDN-Open-API/Query-uv.md
+          - name: 设置/删除 Header
+            href: API-Reference/CDN-Open-API/Set-Header.md
+          - name: 查询Header
+            href: API-Reference/CDN-Open-API/Query-Header.md
           - name: 附：提示信息状态码参照表
             href: API-Reference/CDN-Open-API/Status-code-reference-table.md
       - name: 直播 OPEN API

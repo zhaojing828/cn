@@ -4,11 +4,11 @@
 
 |发布日期|特性|描述|
 |-|-|-|
-|2018年7月|改版|第一次正式发布。|
-
+|2018年11月| 国际化 |  API网关英文版控制台上线 |
+|2018年9月| 公测 |  API网关服务正式进入公测 |
 
 
 ## 相关参考
 
-- [产品概述](../Introduction/What-Is-APIGateway.md)
+- [产品概述](../Introduction/Product-Overview.md)
 

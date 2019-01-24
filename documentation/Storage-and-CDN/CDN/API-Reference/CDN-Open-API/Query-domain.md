@@ -13,8 +13,8 @@
 | domain     | String   | 否           | 模糊匹配加速域名                                             |
 | pageNumber | int      | 否           | 查询分页页码，不传默认为1                                    |
 | pageSize   | int      | 否           | 查询分页条数，不传默认10条                                   |
-| type       | String   | 否           | 域名服务资源类型，目前只支持：web表示 静态小文件download表示大文件加速vod表示视频加速（暂不支持类型：dynamic表示动态加速，live表示直播加速） |
-| status     | String   | 否           | 状态，不传查询全部域名，0(查询停用域名)，1（查询启动状态域名），4（查询部署中域名），5（查询审核中域名），6（查询审核驳回域名） |
+| type       | String   | 否           | 域名服务资源类型，目前只支持：web表示图片小文件，download表示大文件下载，vod表示视频文件；（暂不支持类型：dynamic表示动态加速，live表示视频云直播） |
+| status     | String   | 否           | 状态，不传查询全部域名，0(查询停用域名)，1（查询运行状态域名），4（查询配置中域名），5（查询审核中域名），6（查询审核驳回域名），7（查询封禁的域名） |
 
 ## **3、返回参数**
 
@@ -25,8 +25,8 @@
 | data     | 域名信息数组                                                 |
 | domain   | 加速域名                                                     |
 | cname    | cname                                                        |
-| type     | 域名服务资源类型，目前只支持web表示 静态小文件，download表示大文件加速，vod表示视频加速 （暂不支持类型：dynamic表示动态加速，live表示直播加速） |
-| status   | 域名申请开通状态，审核中，审核通过，运行中，停止             |
+| type     | 域名服务资源类型，目前只支持：web表示图片小文件，download表示大文件下载，vod表示视频文件；（暂不支持类型：dynamic表示动态加速，live表示视频云直播） |
+| status   | 域名申请开通状态，运行、审核中、驳回、配置中、停止、封禁   |
 
  
 
@@ -71,13 +71,13 @@ http://opencdn.jcloud.com/api/queryDomains
             {
                 "cname": "www.a.com.s.galileo.jcloud-cdn.com",
                 "domain": "www.a.com",
-                "status": "部署中",
+                "status": "配置中",
                 "type": "图片小文件"
             },
             {
                 "cname": "www.b.com.s.galileo.jcloud-cdn.com",
                 "domain": " www.b.com ",
-                "status": "部署中",
+                "status": "配置中",
                 "type": "图片小文件"
             }
             ]

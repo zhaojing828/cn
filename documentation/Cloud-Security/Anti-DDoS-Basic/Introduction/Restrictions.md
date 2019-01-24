@@ -5,4 +5,8 @@
 ## 防护带宽
 
 基础防护最大支持2G的攻击防护能力。 如果公网IP受到的攻击超过了2G，则会触发黑洞，屏蔽其所有的访问。
-如果您需要大流量的攻击防护，请您购买高防IP。
+如果您需要大流量的攻击防护，请您购买DDoS防护包。
+
+
+## 相关参考
+- [DDoS防护包介绍](https://www.jdcloud.com/cn/products/anti-ddos-protection-package)

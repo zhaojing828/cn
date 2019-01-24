@@ -75,11 +75,9 @@ sh auto_fdisk.sh /dev/vdb jddata1 ext4
 	```
 
 6. 写入/etc/fstab文件实现云硬盘挂载
-
 	![](../../../../image/vm/Getting-Start-Linux-mount6.png)
 
-**请注意，若系统为Centos 7以上，写入fstab时必须使用nofail参数，否则若对当前云主机制作私有镜像，基于该私有镜像创建的新云主机将无法正常启动。
-**
+ **请注意，若系统为Centos 7以上，写入fstab时必须使用nofail参数，否则若对当前云主机制作私有镜像，基于该私有镜像创建的新云主机将无法正常启动。** 
 
   [1]: http://img1.jcloudcs.com/cms/6bbc4a45-02ce-460d-9696-c31f3fa18c6f20170728174252.zip
  

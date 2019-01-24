@@ -11,4 +11,4 @@
 
 **创建集群步骤**
 
-   具体还请参考创建Kubernetes集群。
+   具体还请参考[创建Kubernetes集群](https://docs.jdcloud.com/cn/jcs-for-kubernetes/create-to-cluster)。

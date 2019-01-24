@@ -39,13 +39,13 @@ http://opencdn.jcloud.com/api/setReferConfig
 
 ```
 {
-“username” :“test_user”, 
-“signature” :“d00f58f89e8cd55dc080aec0d8051845”, 
-“domain” :“www.a.com”, 
-“referType” :“block”, 
-“referList” :“www.baidu.com,www.alibaba.com”, 
-“allowEmpty” :“on”
-}
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "referType" :"block",
+    "referList" :"www.blanck1.com,www.blanck2.com",
+    "allowEmpty" :"on"
+ }
 ```
 
 - ### **返回示例**

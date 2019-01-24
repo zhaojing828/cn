@@ -45,14 +45,14 @@ curl -H “Content-type: application/json” -X POST -d ‘{“username”:“te
 ```
 html http://opencdn.jcloud.com/api/setHttpType
 {
-  “username” :“test_user”, 
-  “signature” :“d00f58f89e8cd55dc080aec0d8051845”, 
-  “domain” :“www.a.com”, 
-  “httpType” :“https”, 
-  “certificate” :“start—-stop”, 
-  “rsaKey” :“start—stop”, 
-  “jumpType” :“https”
-}
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "httpType" :"https",
+    "certificate" :"start----stop",
+    "rsaKey" :"start---stop",
+    "jumpType" :"https"
+ }
 ```
 
 - ### **返回示例**

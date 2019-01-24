@@ -61,7 +61,7 @@ x-jdcloud-version:2015-06-06
 
 ### Java示例代码
 ```
-ublic class SignDemo {
+public class SignDemo {
       private Boolean authenticate(String method, String uri, Map<String, String> headers) {
           try {
               //获取证书的URL

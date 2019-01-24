@@ -15,7 +15,7 @@ API 分组是 API 的基础管理单元。SDK是基于该API分组生成的。�
  
  
  ### STEP2:创建API分组
- 在“API分组管理”页面，点击 **新建API分组** ，进入“创建”页面。
+ 在“API分组管理”页面，点击 **创建分组** ，进入“新建API分组”页面。
 
 ![创建分组](../../../../../image/Internet-Middleware/API-Gateway/apigroup-addgroup.png)
     

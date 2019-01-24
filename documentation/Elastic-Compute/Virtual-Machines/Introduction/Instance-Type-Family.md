@@ -4,15 +4,17 @@
 
 以下为当前京东云在售的实例规格类型信息，不同地域可售卖实例类型及规格不完全相同，请以实例创建页面所显示为准。具体在售实例规格类型根据不同应用场景可以分为：
 
-* 通用型：通用共享型、通用标准型
-* 计算优化型：计算优化标准型
-* 内存优化型：内存优化标准型
-* 高频计算型：高频计算优化型
+* 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
+* 计算优化型：[计算优化标准型](instance-type-family#user-content-3)
+* 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
+* 高频计算型：[高频计算优化型](instance-type-family#user-content-5)
+* GPU型：[GPU标准型](instance-type-family#user-content-6)
 
 ## 通用型
 通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个Intel Xeon处理器的超线程核，其vCPU与内存比为1:4。
 
-### 通用共享型<div id="g.s"></div>
+### 通用共享型
+<div id="user-content-1"></div>
 **规格类型特点：**
 
 * vCPU与内存比为1:1或1:2
@@ -32,7 +34,8 @@
 |g.s1.micro|1|1
 |g.s1.small|1|2
 
-### 通用标准型<div id="g.n"></div>
+### 通用标准型
+<div id="user-content-2"></div>
 **规格类型特点:**
 
 * vCPU与内存比为1:4（g.n1.xlarge_m规格除外）
@@ -53,7 +56,6 @@
 第二代
 
 实例规格|vCPU（核）|内存（GB）|网卡多队列
-
 :---|:---|:---|:---
 |g.n2.medium|1|4|1
 |g.n2.large|2|8|2
@@ -68,20 +70,21 @@
 
 实例规格|vCPU（核）|内存（GB）|网卡多队列|备注
 :---|:---|:---|:---|:---
-g.n1.medium|1|4|1
-g.n1.large|2|8|2
+g.n1.medium|1|4|1 | |
+g.n1.large|2|8|2 | |
 g.n1.xlarge_m	|4|12|4|*
-g.n1.xlarge|4|16|4	
-g.n1.2xlarge|8|32|4	
-g.n1.4xlarge|16|64|4	
-g.n1.8xlarge|32|128|4	
+g.n1.xlarge|4|16|4 | |	
+g.n1.2xlarge|8|32|4 | |	
+g.n1.4xlarge|16|64|4 |	|
+g.n1.8xlarge|32|128|4 |	 |
 
 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用。
 
 ## 计算优化型
 计算优化型当前提供计算优化标准型，为您提供高性能的计算资源，可满足。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
 
-### 计算优化标准型<div id="c.n"></div>
+<div id="user-content-3"></div>
+### 计算优化标准型
 **规格类型特点：**
 
 * vCPU与内存比为1:2（c.n1.xlarge_m	、c.n1.2xlarge_s、c.n1.2xlarge_m及c.n1.4xlarge_m规格除外）
@@ -116,22 +119,24 @@ g.n1.8xlarge|32|128|4
 
 实例规格|vCPU（核）|内存（GB）|网卡多队列|备注
 :---|:---|:---|:---|:---
-|c.n1.large|2|4|2	
+|c.n1.large|2|4|2 | |	
 |c.n1.xlarge_m	|4|4|4|	*
-|c.n1.xlarge|4|8|	4
+|c.n1.xlarge|4|8|	4| |
 |c.n1.2xlarge_s|8|8|4|*
 |c.n1.2xlarge_m|8|12|4|*
-|c.n1.2xlarge|8|16|4	
+|c.n1.2xlarge|8|16|4 |	|
 |c.n1.4xlarge_m|16|16|4|*
-|c.n1.4xlarge|16|32|4	
-|c.n1.8xlarge|32|64|4	
+|c.n1.4xlarge|16|32|4 |	|
+|c.n1.8xlarge|32|64|4 | |
 
 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用。
 
 ## 内存优化型
 内存优化型当前提供内存优化标准型，适用于存在大量内存操作、查找和计算的应用。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
 
-### 内存优化标准型<div id="m.n"></div>
+<div id="user-content-4"></div>
+### 内存优化标准型
+
 **规格类型特点：**
 
 * vCPU与内存比为1:8（m.n1.medium规格除外）
@@ -164,12 +169,12 @@ g.n1.8xlarge|32|128|4
 
 实例规格|vCPU（核）|内存（GB）|网卡多队列|备注
 :---|:---|:---|:---	|:---
-|m.n1.small|1|8|1|*
+|m.n1.small| 1 | 8 | 1 | *
 |m.n1.medium|2	|12|2|*
-|m.n1.large|2|16|2
-|m.n1.xlarge|4|32	|4
-|m.n1.2xlarge|8|64|4	
-|m.n1.4xlarge|16|128|4	
+|m.n1.large|2|16|2 | |
+|m.n1.xlarge|4|32	|4 | |
+|m.n1.2xlarge|8|64|4  | |
+|m.n1.4xlarge|16|128|4 | |
 
 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用。
 
@@ -177,7 +182,9 @@ g.n1.8xlarge|32|128|4
 
 高频计算型当前提供高频计算通用型，为您提供高性能的计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
 
-### 高频计算通用型<div id="h.g"></div>
+<div id="user-content-5"></div>
+### 高频计算通用型
+
 **规格类型特点：**
 
 * vCPU与内存比为1:4
@@ -215,9 +222,52 @@ g.n1.8xlarge|32|128|4
 |h.g1.4xlarge|16|64|4
 |h.g1.6xlarge|24|96|4
 
+## GPU型
+
+GPU型当前提供GPU标准型，为您提供高性能的一够计算资源。每一个vCPU都对应一个Intel Xeon处理器的超线程核。
+
+<div id="user-content-6"></div>
+### GPU标准型
+
+**规格类型特点：**
+
+* vCPU与内存比接近1:4
+* 异构计算
+* GPU：
+	* Nvidia Tesla P40 
+	* Nvidia Tesla V100
+* 处理器：
+	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）
+	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
+* 支持本地数据盘（临时存储），请注意 **关机时本地数据盘数据将被清空** ，并支持以下两种云硬盘：
+	* 高效云盘
+	* SSD云盘
+* 适用场景：
+	* 科学计算
+	* 机器学习
+	* 图形渲染 
+
+**实例规格**
+
+第一代：
+
+实例规格|vCPU（核）|内存（GB）|GPU|本地数据盘（临时存储）|网卡多队列
+:---|:---|:---|:---|:---|:---|
+|p.n1p40.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 960GB SSD|4
+|p.n1p40.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 960GB SSD|4
+|p.n1p40.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 960GB SSD|4
+|p.n1p40h.3xlarge|12|48|1 x Nvidia Tesla P40|1 x 1200GB HDD|4
+|p.n1p40h.7xlarge|28|110|2 x Nvidia Tesla P40|2 x 1200GB HDD|4
+|p.n1p40h.14xlarge|56|220|4 x Nvidia Tesla P40|4 x 1200GB HDD|4
+|p.n1v100.2xlarge|8|44|1 x Nvidia Tesla V100|1 x 6000GB HDD|4
+|p.n1v100.5xlarge|20|110|2 x Nvidia Tesla V100|2 x 6000GB HDD|4
+|p.n1v100.10xlarge|40|220|4 x Nvidia Tesla V100|4 x 6000GB HDD|4
+
+
 请注意：
 
 * 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供；
+* GPU型当前仅在华北-北京单可用区公测提供；
 * 华北-北京及华东-上海地域的第一代通用型、计算优化型及内存优化型云主机还可能在2.3 GHz主频的Intel Xeon E5-2698 v3（Haswell）处理器上运行；
 * 在购买实例后，您可根据业务规模变更情况对实例进行配置修改，详细请参见[调整配置](../Operation-Guide/Instance/Resize-Instance.md)。
 

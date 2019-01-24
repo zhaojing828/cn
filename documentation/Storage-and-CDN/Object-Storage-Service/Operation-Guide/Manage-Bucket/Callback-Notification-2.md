@@ -1,15 +1,21 @@
 # 回调通知
 
 OSS支持回调通知功能，您可以指定某些资源发生相关操作时及时进行回调通知。OSS事件通知是异步进行的，不影响OSS操作。回调通知常见以下应用场景，例如：
-* 有新数据从图片内容分享平台、音视频平台上传到OSS。
-* OSS上的相关内容发生了更新。
-* OSS上的重要文件被删除。
 
-OSS回调通知包括**配置回调通知**和**消息通知**两部分:
-* 配置回调通知：在某个Bucket中配置回调规则，需要指定启用通知的相关资源、相关事件及回调URL，配置后仅对该Bucket生效。
-* 消息通知：当Bucket中事件通知触发时，会向回调URL发送指定格式的通知内容。通知方式为HTTP(S)。
+- 有新数据从图片内容分享平台、音视频平台上传到OSS。
 
-回调通知流程：<br>
+- OSS上的相关内容发生了更新。
+
+- OSS上的重要文件被删除。
+
+OSS回调通知包括 **配置回调通知** 和 **消息通知** 两部分:
+
+- 配置回调通知：在某个Bucket中配置回调规则，需要指定启用通知的相关资源、相关事件及回调URL，配置后仅对该Bucket生效。
+
+- 消息通知：当Bucket中事件通知触发时，会向回调URL发送指定格式的通知内容。通知方式为HTTP(S)。
+
+回调通知流程：
+
 1.指定Bucket设置消息通知规则。
 
 2.当事件发生触发消息通知规则时，则会向回调URL发起消息通知。
@@ -17,6 +23,8 @@ OSS回调通知包括**配置回调通知**和**消息通知**两部分:
 3.回调服务器接受消息通知，并返回200。
 
 4.若回调服务器无响应，OSS会重试三次；若仍无响应，则视为回调失败。
+
+**回调通知支持API**：[PUT Bucket notification](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/PUT-Bucket-notification.md)、[GET Bucket notification](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/GET-Bucket-notification.md)
 
 ## 配置回调通知
 
@@ -51,15 +59,23 @@ OSS回调通知包括**配置回调通知**和**消息通知**两部分:
 ```
 
 注：
-* TopicConfiguration：消息通知相关配置规则，支持多个规则。事件触发时，将通过Object和事件类型对TopicConfiguration按序依次匹配，匹配成功则发出消息通知，且匹配终止。
-* Id：TopicConfiguration唯一标识符，如果没有设置，OSS将会随机分配ID
-* Topic：当指定事件发生时，OSS会向此topic发布消息，格式为NS:endpoint1,endpoint2,endpoint3（必须以"NS:"开头，多个地址用","分隔，最多配置5个）
-* Event：触发通知的事件类型
-* Filter：资源筛选规则。若无，则该Bucket下所有资源生效
-* S3Key：定义资源筛选规则
-* FilterRule：定义筛选规则，标准的键值对
-* Name：prefix或suffix，即用于根据object key name筛选一个或多个object
-* Value：指定要筛选的object key name的前缀或后缀
+- TopicConfiguration：消息通知相关配置规则，支持多个规则。事件触发时，将通过Object和事件类型对TopicConfiguration按序依次匹配，匹配成功则发出消息通知，且匹配终止。
+
+- Id：TopicConfiguration唯一标识符，如果没有设置，OSS将会随机分配ID
+
+- Topic：当指定事件发生时，OSS会向此topic发布消息，格式为NS:endpoint1,endpoint2,endpoint3（必须以"NS:"开头，多个地址用","分隔，最多配置5个）
+
+- Event：触发通知的事件类型
+
+- Filter：资源筛选规则。若无，则该Bucket下所有资源生效
+
+- S3Key：定义资源筛选规则
+
+- FilterRule：定义筛选规则，标准的键值对
+
+- Name：prefix或suffix，即用于根据object key name筛选一个或多个object
+
+- Value：指定要筛选的object key name的前缀或后缀
 
 ### 支持事件类型
 事件类型|描述
@@ -146,6 +162,14 @@ OSS支持在请求URL中携带自定义参数，您可把`x-oss-callback-var=[Ca
 您可按照以下示例配置回调服务器：
 
 ```
+import org.springframework.http.HttpHeaders;
+import org.springframework.util.Base64Utils;
+import org.springframework.web.bind.annotation.*;
+import java.nio.charset.StandardCharsets;
+
+@RestController
+public class SubscriptionTest {
+
     //简单格式的消息通知
     @RequestMapping("/notifications1")
     public String notifications1(@RequestBody String message
@@ -159,6 +183,7 @@ OSS支持在请求URL中携带自定义参数，您可把`x-oss-callback-var=[Ca
             return "";
         }
     }
+}
 ```
 
 ### 回调签名

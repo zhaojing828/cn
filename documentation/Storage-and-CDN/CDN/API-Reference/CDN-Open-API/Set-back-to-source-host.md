@@ -33,11 +33,12 @@ http://opencdn.jcloud.com/api/setReferHost
 
 ```
 {
-“username” :“test_user”, 
-“signature” :“d00f58f89e8cd55dc080aec0d8051845”, 
-“domain” :“www.a.com”, 
-“sourceHost” :“sourcehost1.www.a.com”
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "sourceHost" :"sourcehost1.a.com"
  }
+
 ```
 
 - ### **返回示例**

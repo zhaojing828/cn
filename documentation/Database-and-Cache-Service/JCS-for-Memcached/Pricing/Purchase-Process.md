@@ -2,9 +2,9 @@
 
 1.用户使用用户名密码登录 [京东云控制台](https://uc.jdcloud.com/login)；
 
-2.选择数据库与缓存大类下的缓存Memcached产品，进入[Memcached控制台界面](https://Memcached-console.jdcloud.com/Memcached)；
+2.选择数据库与缓存大类下的缓存Memcached产品，进入Memcached控制台界面；
 
-3.点击“新建”按钮，跳转到[Memcached产品订购页](https://Memcached-console.jdcloud.com/create)；
+3.点击“新建”按钮，跳转到Memcached产品订购页；
 
 4.选择付费方式、地域、规格、网络、部署方案、基本信息、购买量等，核实无误后点击“确定购买”；
 

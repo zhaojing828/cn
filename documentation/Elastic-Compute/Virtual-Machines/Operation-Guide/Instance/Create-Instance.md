@@ -2,9 +2,9 @@
 
 创建实例时，需指定实例规格、镜像、私有网络、安全组及登录密码等信息。京东云为用户提供了多种创建实例的方法，包括：
 
-* [自定义创建](Create-Instance#user-content-自定义创建)
-* [使用实例模板创建（公测中）](Create-Instance#user-content-使用实例模板创建（公测中）)
-* [在高可用组内创建（公测中）](Create-Instance#user-content-在高可用组内创建（公测中）)
+* [自定义创建](Create-Instance#user-content-1)
+* [使用实例模板创建（公测中）](Create-Instance#user-content-2)
+* [在高可用组内创建（公测中）](Create-Instance#user-content-3)
 
 
 其中自定义创建还包括相同配置创建。
@@ -12,6 +12,7 @@
 ## 自定义创建
 自定义创建是指您需要根据业务场景自行选配地域、可用区、实例规格、镜像、私有网络、安全组及登录密码等信息。根据操作系统平台类型不同，详细创建步骤可参见[创建Linux实例](http://docs.jdcloud.com/cn/virtual-machines/create-linux-instance)及[创建Windows实例](http://docs.jdcloud.com/cn/virtual-machines/create-windows-instance)。
 
+<div id="user-content-1"></div>
 ### 相同配置创建
 您可根据当前一台实例创建一台与其配置相同的实例，包括地域、实例规格、镜像、私有网络、安全组等信息，但不包括可用区、登录密码、实例名称及描述等信息。相同配置创建是一种快捷的自定义创建方法，
 
@@ -28,6 +29,7 @@
 		* 若当前云主机使用的私有镜像被删除，则您需要重新指定镜像；
 		* 相同配置创建仅表示新建配置信息相同，实例中数据不进行复制。
 
+<div id=user-content-2></div>
 ## 使用实例模板创建（公测中）
 实例模板是京东云提供的创建云主机的配置信息模板，包括镜像、云主机规格、系统盘及数据盘类型和容量、私有网络、安全组及登录信息等，但不包括可用区、实例名称及描述等信息。实例模板详细介绍请参见[实例模板概述](http://docs.jdcloud.com/cn/virtual-machines/instance-template-overview)
 
@@ -50,6 +52,7 @@
 		
 			请注意：若当前实例模板中包含的配置资源已被删除，则您需要重新指定对应资源信息。
 
+<div id=user-content-3></div>
 ## 在高可用组内创建（公测中）
 高可用组（Availability Group，AG）是京东云提供的云主机实例逻辑集合，高可用组内的实例分散部署在互相隔离的物理资源上，当出现硬件故障时只会影响到部分实例，您整体业务仍未可用状态。高可用组详细内容请参见[高可用组概述](http://docs.jdcloud.com/cn/availability-group/product-overview)。
 

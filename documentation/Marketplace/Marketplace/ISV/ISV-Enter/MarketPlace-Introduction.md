@@ -13,7 +13,5 @@
 
 联系我们：
 
-       云市场服务商合作咨询：https://uc.jdcloud.com/myorder/form?cateId=313%26questionId=326
-
 云市场咨询邮箱：yunshichang@jd.com
 

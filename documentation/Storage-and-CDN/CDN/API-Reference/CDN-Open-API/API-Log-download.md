@@ -11,9 +11,9 @@
 | username   | String   | 是           | 京东用户名pin                                                |
 | signature  | String   | 是           | 用户签名，通过md5的方式校验用户的身份信息，保障信息安全。  md5=日期+username+秘钥SecretKey日期：格式为 yyyymmddusername：京东用户名pin秘钥：双方约定示例：比如当前日期2016-10-23，用户pin: jcloud_00 ,用户秘钥SecretKey   ：e7a31b1c5ea0efa9aa2f29c6559f7d61那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
 | domain     | String   | 是           | 需要下载日志的域名，支持多域名下载，参数示例“www.a.com,www.b.com” |
-| start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00        |
+| start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00;按天和按小时查询的时间跨度不能超过7天 |
 | end_time   | String   | 否           | 不是必填参数，不传默认到当前时间                             |
-| interval   | String   | 否           | HOUR(按小时下载)，DAY（按天下载）不传或者传错都是按照小时下载。注：HOUR(按小时下载)是.log文件，DAY（按天下载）是.zip文件。 |
+| interval   | String   | 否           | HOUR(按小时下载)，DAY（按天下载）不传或者传错都是按照小时下载。按小时查询的时间跨度不能超过3天；按天查询的时间跨度不能超过7天；注：HOUR(按小时下载)是.log文件，DAY（按天下载）是.zip文件。 |
 
 
 ## **3、** **返回参数data中说明**
@@ -51,7 +51,7 @@ http://opencdn.jcloud.com/api/downloadUrlInterval
     "domain" :" www.a.com,www.b.com ",
     "start_time" :"2017-10-19 00:00",
     "end_time" :"2017-10-19 23:59",
-    "interval" :"DAY",//按天下载
+    "interval" :"DAY"
  }
 ```
 

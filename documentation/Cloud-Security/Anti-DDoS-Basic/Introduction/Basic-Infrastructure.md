@@ -6,7 +6,7 @@
 
 基础防护业务架构如下图所示：
 
-![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/Basic%20Anti-DDos/Infrastructure01.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Basic%20Anti-DDos/Infrastructure01.png)
 
 备注：</br>
       1、镜像流量到检测设备 </br>

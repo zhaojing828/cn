@@ -11,7 +11,7 @@
 | username   | String   | 是           | 京东用户名pin                                               |
 | signature  | String   | 是           | 用户签名                                                    |
 | domain     | String   | 是           | 待查询的域名，支持多域名查询，参数示例“www.a.com,www.b.com” |
-| start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00       |
+| start_time | String   | 是           | 时间格式：yyyy-mm-dd hh:mi 参考示例：2016-12-14 07:00；查询的时间跨度不能超过30天|
 | end_time   | String   | 否           | 不是必填参数，不传默认到当前时间                            |
 | topfield   | String   | 是           | top查询的字段，只能传pv或者flow。 pv(请求数),flow(流量)     |
 | pageNumber | int      | 否           | 查询分页页码，不传默认为1                                   |

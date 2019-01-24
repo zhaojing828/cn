@@ -93,6 +93,8 @@ items:
             href: Operation-Guide/Instance/Switch-from-Postpaid-to-Prepaid.md
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
+          - name: GPU云主机
+            href: Operation-Guide/Instance/GPU-VM.md
       - name: 实例模板
         items:
           - name: 实例模板概述
@@ -125,6 +127,8 @@ items:
             href: Operation-Guide/Storage/Strorage-Overview.md
           - name: 存储类型
             href: Operation-Guide/Storage/Storage-Type.md
+          - name: 查看本地数据盘
+            href: Operation-Guide/Storage/Identify-Local-Data-Disk.md
           - name: 创建云硬盘
             href: Operation-Guide/Storage/Create-Cloud-Disk.md
           - name: 挂载云硬盘
@@ -141,6 +145,8 @@ items:
             href: Operation-Guide/Storage/Assign-Device-Name.md
           - name: 配置删除属性
             href: Operation-Guide/Storage/Configurate-Delete-Attributes.md
+          - name: 云硬盘加密
+            href: peration-Guide/Storage/Encryption-of-Cloud-Disk.md
       - name: 网络
         items:
           - name: 网络概述
@@ -169,6 +175,8 @@ items:
             href: Operation-Guide/Key-Pair/Create-Keypair.md
           - name: 绑定密钥
             href: Operation-Guide/Key-Pair/Bind-Keypair.md
+          - name: 删除密钥
+            href: Operation-Guide/Key-Pair/Delete-Keypair.md
       - name: 安全组
         items:
           - name: 安全组概述
@@ -266,7 +274,7 @@ items:
          - name: Linux故障类
            items:
               - name: 使用centos私有镜像创建云主机后无法获取内网IP解决办法
-                href: Linux-Troubleshooting/Fault-Class/Cannot-obtain-intranet-IP-solution-after-creating-a-cloud-host-using-centos-private-image.md
+                href: Linux-Troubleshooting/Fault-Class/Cannot-creating-a-cloud-host-using-centos-private-image.md
               - name: Linux系统message日志报错：kernel： TCP： time wait bucket table overflowt
                 href: Linux-Troubleshooting/Fault-Class/Linux-system-message-log-error-kernel-TCP-time-wait-bucket-table-overflowt.md
               - name: Linux系统查询时间同步服务器超时
@@ -337,10 +345,10 @@ items:
                 href: Linux-Troubleshooting/Fault-Class/SSH-service-start-error-bind-any-address.md
               - name: Ubuntu系统修改DNS重启后自动还原的处理方法
                 href: Linux-Troubleshooting/Fault-Class/Ubuntu-system-recovery-method.md
-         - name: Windows运维指南
-           items:
-              - name: Windows环境配置
-                items:
+      - name: Windows运维指南
+        items:
+           - name: Windows环境配置
+             items:
               - name: Windows2008 iis服务配置https
                 href: Windows-Troubleshooting/Configuration-Class/Windows-2008-iis-service-configuration-https.md
               - name: Windows 2012修改桌面背景
@@ -419,8 +427,8 @@ items:
                 href: Windows-Troubleshooting/Configuration-Class/Windows2012-set-remote-desktop-does-not-disconnect.md
               - name: Windows2012系统安装NETFramework3.5安装方法
                 href: Windows-Troubleshooting/Configuration-Class/Windows2012-system-installation-NETFramework3.5-installation-method.md
-         - name: Windows开机自启动
-           items:
+      - name: Windows开机自启动
+        items:
               - name: Windows系统
                 href: Windows-Troubleshooting/Configure-boot-automatically/Windows-system.md
               - name: Windows故障类
@@ -432,7 +440,7 @@ items:
                   - name: 云主机凌晨自动重启怎么办
                     href: Windows-Troubleshooting/Fault-Class/What-should-I-do-if-the-cloud-host-automatically-restarts-in-the-early-morning.md
                   - name: Windows2008 更新补丁报“8000FFFFwindows update 遇到未知错误”
-                    href: Windows-Troubleshooting/Fault-Class/Windows-2008-update-patch-reported-8000FFFF-windows-update-encountered-an-unknown-error.md
+                    href: Windows-Troubleshooting/Fault-Class/windows-update-encountered-an-unknown-error.md
                   - name: Windows2012安装.NET Framework 3.5.1报错找不到源文件
                     href: Windows-Troubleshooting/Fault-Class/Windows-2012-installation-NET-Framework-3-5-1-error-can-not-find-the-source-file.md
                   - name: Windows刷新服务器管理器失败

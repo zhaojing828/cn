@@ -47,6 +47,8 @@ items:
         href: Operation-Guide/Operation-Instruction/Operation-Instruction.md
       - name: 资源管理
         items:
+          - name: 查看概览
+            href: Operation-Guide/Resources-Management/View-Overview.md
           - name: 查看机柜列表
             href: Operation-Guide/Resources-Management/View-Cabinet-List.md
           - name: 查看设备列表

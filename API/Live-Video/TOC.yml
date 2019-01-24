@@ -1,0 +1,159 @@
+name: 视频直播
+href:
+items:
+  - name: 直播API概述
+    href: Summary/Summary.md
+  - name: API鉴权规则
+    href: Authentication/Rule.md
+  - name: 域名管理
+    items:
+      - name: 添加直播域名
+        href: Live-API/addLiveDomain.md
+      - name: 查询指定域名相关信息
+        href: Live-API/describeLiveDomainDetail.md
+      - name: 查询域名列表
+        href: Live-API/describeLiveDomains.md
+      - name: 启动域名
+        href: Live-API/startLiveDomain.md
+      - name: 停用域名
+        href: Live-API/stopLiveDomain.md
+      - name: 删除域名
+        href: Live-API/deleteLiveDomain.md
+  - name: APP管理
+    items:
+    status: 0
+      - name: 添加直播APP
+        href: Live-API/addLiveApp.md
+      - name: 删除直播APP
+        href: Live-API/deleteLiveApp.md
+      - name: 启用APP
+        href: Live-API/startLiveApp.md
+      - name: 停用APP
+        href: Live-API/stopLiveApp.md
+      - name: 查询域名下的APP列表
+        href: Live-API/describeLiveApp.md
+  - name: 直播流管理
+    items:
+      - name: 禁止直播流推送
+        href: Live-API/forbidLiveStream.md
+      - name: 恢复直播流推送
+        href: Live-API/resumeLiveStream.md
+      - name: 查看域名下实时推流信息
+        href: Live-API/describeLiveStreamOnlineList.md
+      - name: 查看域名下历史推流记录
+        href: Live-API/describeLiveStreamPublishList.md
+  - name: 状态通知
+    items:
+      - name: 设置直播流状态通知
+        href: Live-API/setLiveStreamNotifyConfig.md
+      - name: 查询直播流状态通知
+        href: Live-API/describeLiveStreamNotifyConfig.md
+      - name: 删除直播流状态通知
+        href: Live-API/deleteLiveStreamNotifyConfig.md
+  - name: 直播时移
+    items:
+    status: 0
+      - name: 添加域名时移配置
+        href: Loading.md
+      - name: 删除域名时移配置
+        href: Loading.md
+      - name: 添加App时移配置
+        href: Loading.md
+      - name: 删除App时移配置
+        href: Loading.md
+      - name: 查询时移文件空间占用
+        href: Loading.md
+      - name: 查询时移配置
+        href: Loading.md
+  - name: 直播转码
+    items:
+      - name: 添加域名转码配置
+        href: Live-API/addLiveStreamDomainTranscode.md
+      - name: 删除域名转码配置
+        href: Live-API/deleteLiveStreamDomainTranscode.md
+      - name: 添加app转码配置
+        href: Live-API/addLiveStreamAppTranscode.md
+      - name: 删除APP转码配置
+        href: Live-API/deleteLiveStreamAppTranscode.md
+      - name: 添加自定义转码模板
+        href: Live-API/addCustomLiveStreamTranscodeTemplate.md
+      - name: 删除用户自定义转码模板
+        href: Live-API/deleteCustomLiveStreamTranscodeTemplate.md
+      - name: 查询用户自定义转码模板详情
+        href: Live-API/describeCustomLiveStreamTranscodeTemplate.md
+      - name: 查询用户自定义转码模板列表
+        href: Live-API/describeCustomLiveStreamTranscodeTemplates.md
+      - name: 查询转码模板配置
+        href: Live-API/describeLiveStreamTranscodeConfig.md
+  - name: 直播录制
+    items:
+      - name: 添加录制模板
+        href: Live-API/addCustomLiveStreamRecordTemplate.md
+      - name: 删除录制模板
+        href: Live-API/deleteCustomLiveStreamRecordTemplate.md
+      - name: 查询录制模板列表
+        href: Live-API/describeCustomLiveStreamRecordTemplates.md
+      - name: 添加APP录制配置
+        href: Live-API/addLiveStreamAppRecord.md
+      - name: 删除APP录制配置
+        href: Live-API/deleteLiveStreamAppRecord.md
+      - name: 添加域名录制配置
+        href: Live-API/addLiveStreamDomainRecord.md
+      - name: 删除域名录制配置
+        href: Live-API/deleteLiveStreamDomainRecord.md
+      - name: 查询录制配置
+        href: Live-API/describeCustomLiveStreamRecordConfig.md
+      - name: 设置录制回调通知
+        href: Live-API/setLiveStreamRecordNotifyConfig.md
+      - name: 查询录制回调配置
+        href: Live-API/describeLiveStreamRecordNotifyConfig.md
+      - name: 删除录制回调配置
+        href: Live-API/deleteLiveStreamRecordNotifyConfig.md
+  - name: 直播截图
+    items:
+      - name: 添加直播截图模板
+        href: Live-API/addCustomLiveStreamSnapshotTemplate.md
+      - name: 删除直播截图模板
+        href: Live-API/deleteCustomLiveStreamSnapshotTemplate.md
+      - name: 查询直播截图模板列表
+        href: Live-API/describeCustomLiveStreamSnapshotTemplates.md
+      - name: 添加APP直播截图配置
+        href: Live-API/addLiveStreamAppSnapshot.md
+      - name: 删除APP直播截图配置
+        href: Live-API/deleteLiveStreamAppSnapshot.md
+      - name: 添加域名直播截图配置
+        href: Live-API/addLiveStreamDomainSnapshot.md
+      - name: 查询直播截图配置
+        href: Live-API/describeCustomLiveStreamSnapshotConfig.md
+      - name: 删除域名截图配置
+        href: Live-API/deleteLiveStreamDomainSnapshot.md
+      - name: 设置截图回调通知
+        href: Live-API/setLiveStreamSnapshotNotifyConfig.md
+      - name: 查询截图回调配置
+        href: Live-API/describeLiveStreamSnapshotNotifyConfig.md
+      - name: 删除截图回调配置
+        href: Live-API/deleteLiveStreamSnapshotNotifyConfig.md
+  - name: 直播水印
+    items:
+      - name: 添加直播水印模板
+        href: Live-API/addCustomLiveStreamWatermarkTemplate.md
+      - name: 删除用户自定义水印模板
+        href: Live-API/deleteCustomLiveStreamWatermarkTemplate.md
+      - name: 查询水印模板列表
+        href: Live-API/describeCustomLiveStreamWatermarkTemplates.md
+      - name: 添加APP水印配置
+        href: Live-API/addLiveStreamAppWatermark.md
+      - name: 删除app水印配置
+        href: Live-API/deleteLiveStreamAppWatermark.md
+      - name: 添加域名水印配置
+        href: Live-API/addLiveStreamDomainWatermark.md
+      - name: 删除域名水印配置
+        href: Live-API/deleteLiveStreamDomainWatermark.md
+      - name: 查询水印配置
+        href: Live-API/describeCustomLiveStreamWatermarkConfig.md
+#  - name: 直播审核
+#    href: Loading.md
+  - name: SDK调用方式
+    href: Example/SDK-Java.md
+
+
