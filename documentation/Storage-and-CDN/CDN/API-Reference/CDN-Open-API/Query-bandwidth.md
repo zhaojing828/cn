@@ -31,7 +31,7 @@ https://opencdn.jcloud.com/api/bandwidth
 - ### **请求示例**
 
 ```
-http://opencdn.jcloud.com/api/bandwidth
+https://opencdn.jcloud.com/api/bandwidth
 {
     "username" :"test_user",
     "signature" :"d847267fc702273abf394dd0c3128d64",
