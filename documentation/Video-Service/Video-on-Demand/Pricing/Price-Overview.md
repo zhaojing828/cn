@@ -13,7 +13,6 @@
     <td> 存储容量<br/>
     <td>0.03</td>
 </tr>
-<tr>
 </table>
 
 ### 计费说明
@@ -87,12 +86,9 @@
 </tr>
 <tr>
     <td> 转封装<br/>
-    <td>mp4/flv/ts
-提供错误检测
-</td>
+    <td>mp4/flv/ts  提供错误检测</td>
     <td>free</td>
 </tr>
-<tr>
 </table>
 
 ### 计费说明
@@ -122,7 +118,6 @@
     <td> 视频播放加速费用<br/>
     <td>0.15</td>
 </tr>
-<tr>
 </table>
 
 ### 计费说明
