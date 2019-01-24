@@ -26,7 +26,9 @@
 
 ![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE2.png)
 
-## 4.回调设置
+在添加了自定义域名后，客户需要到购买域名的服务商处做cname绑定操作，才能正常解析使用域名，具体操作步骤请参考各个域名服务商操作指南。
+
+## 5.回调设置
 视频点播支持任务完成的消息订阅。客户如需获取视频上传完成、转码完成的消息通知，可在回调设置中设置回调URL及回调事件，相关事件会通过客户填写的URL及时通知到客户。
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E5%9B%9E%E8%B0%83%E8%AE%BE%E7%BD%AE1.png)
 
