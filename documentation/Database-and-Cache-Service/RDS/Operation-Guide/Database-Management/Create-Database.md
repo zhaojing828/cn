@@ -24,7 +24,7 @@
     * 字符集：默认是 `Chinese_PRC_CI_AS`，同时还提供了 `Chinese_PRC_CS_AS`, `SQL_Latin1_General_CP1_CI_AS`, `SQL_Latin1_General_CP1_CS_AS`, `Chinese_PRC_BIN` 几个选项，可以按需选择。
     * 授权账号：从可授权账号中选中需要授权库访问权限的账号，点击 ***>*** 按钮，账号会添加至已授权账号列表，默认账号对库的访问权限是 ***只读***，支持修改为 ***读写***。
     
-![创建数据库](../../../image/RDS/Create-Database-SQLServer.png)
+![创建数据库](../../../../../image/RDS/Create-Database-SQLServer.png)
 
 4. 单击 ***确定*** 按钮，完成库的创建，返回库管理的列表页。
 

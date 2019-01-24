@@ -3,5 +3,5 @@
 
 | 术语名称     |   解释 | 
 | :--------: | :--------:| 
-| Group  | 指定namespace，支持用户管理group | 
+| Group  | 指定Namespace，支持用户管理Group | 
 | Project  | Project可属于某个Group，也可属于User | 

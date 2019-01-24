@@ -1,5 +1,9 @@
-进入Groups页面，点击New Group，填写Group名称、描述
+进入群组页面，点击“新建群组”
 
-![1.png](https://img1.jcloudcs.com/cms/1f2ec4c5-b80d-4b0f-8c86-39cd3e1e8a9220180906113201.png)
+![1.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Group1.png)
+
+填写群组名称、描述，并进行权限设置
+
+![2.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Group2.png)
 
 点击Create group

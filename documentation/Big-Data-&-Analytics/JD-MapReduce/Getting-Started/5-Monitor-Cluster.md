@@ -3,9 +3,9 @@
 本文介绍如何配置集群监控。
 
 ## 操作步骤
-1. 登录 [JMR 控制台](https://xdata.jdcloud.com/rmgr/resources/res-manage/custom-resources.html#/)，选择查看哪个地域下的集群。
+1. 登录 [JMR 控制台](https://xdata.jdcloud.com/rmgr/resources/res-manage/custom-resources.html#/)，选择地域。
 
-2. 选择您想要查看的集群，对应操作中的“监控”。
+2. 选择集群，点击“监控”。
 
 3. “监控”页面有以下三部分监控内容：
  - 集群监控指标（共10项监控指标，包含hadoop和yarn）

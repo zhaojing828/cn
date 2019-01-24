@@ -48,7 +48,7 @@
    * SSD云盘做数据盘：20G~1000G。
 
 * 网络：
-    *  私有网络及子网：可先行规划并创建私有网络和子网，如不创建支持使用系统自动创建的默认私有网络和默认子网，详见[私有网络](http://docs.jdcloud.com/cn/virtual-private-cloud/product-overview)和[子网](http://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)。
+    *  私有网络及子网：您需先行规划并创建私有网络和子网，详见[私有网络](http://docs.jdcloud.com/cn/virtual-private-cloud/product-overview)和[子网](http://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)。
     *  内网IP：为云主机指定主网卡内网IP地址，可在所选子网可用IP地址内任意指定，如无特殊要求可选择由系统自动分配。内网IP一旦分配至云主机将不可更改。
     *  安全组：可先行在每个私有网络下创建符合访问控制要求的安全组，如不创建支持从系统自动为每个私有网络创建的3个安全组模板中选择一个绑定，详见[安全组概述](http://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)。
 

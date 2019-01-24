@@ -55,6 +55,7 @@ v1
 |**disassociateElasticIp**|POST|给网卡解绑弹性Ip接口|
 |**disassociateNetworkAcl**|POST|给子网解绑NetworkAcl接口|
 |**disassociateRouteTable**|POST|给路由表解绑子网接口|
+|**modifyElasticIp**|PATCH|修改弹性IP|
 |**modifyNetworkAcl**|PATCH|修改networkAcl接口|
 |**modifyNetworkAclRules**|POST|修改networkAcl接口|
 |**modifyNetworkInterface**|PATCH|修改弹性网卡接口|

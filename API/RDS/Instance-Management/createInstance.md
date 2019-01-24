@@ -29,6 +29,7 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/instances
 |**instanceClass**|String|True| |实例规格代码，可以通过[describeInstanceClasses](../instance/describeInstanceClasses.md)接口获取|
 |**instanceName**|String|False| |实例名，具体规则可参见帮助中心文档:[名称及密码限制](../../../documentation/Cloud-Database-and-Cache/RDS/Introduction/Restrictions/SQLServer-Restrictions.md)|
 |**instanceStorageGB**|Integer|True| |磁盘大小，单位GB|
+|**parameterGroup**|String|False| |参数组ID, 缺省系统会创建一个默认参数组<br>- 仅支持MySQL|
 |**subnetId**|String|True| |子网ID|
 |**vpcId**|String|True| |VPC的ID|
 ### ChargeSpec

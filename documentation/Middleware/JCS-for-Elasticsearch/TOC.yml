@@ -35,24 +35,50 @@
     items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-      - name: 创建ES
+      - name: 创建集群
         href: Getting-Started/Create-ES.md
-      - name: 配置ES
-        href: Getting-Started/Configure-ES.md
-      - name: 查看ES
-        href: Getting-Started/View-ES.md
-      - name: 变更ES
-        href: Getting-Started/Change-ES.md
-      - name: 删除ES
-        href: Getting-Started/Delete-ES.md
+      - name: 管理集群
+        items:
+        - name: 查看集群
+          href: Getting-Started/View-ES.md
+        - name: 变更配置
+          href: Getting-Started/Change-ES.md
+        - name: 删除集群
+          href: Getting-Started/Delete-ES.md
   - name: 操作指南
     items:
-      - name: 访问集群
-        href: Operation-Guide/connect-ES.md
+      - name: 专用主节点
+        href: Operation-Guide/Dedicated-master.md 
+      - name: 插件支持
+        href: Operation-Guide/IK.md 
+      - name: Kibana
+        href: Operation-Guide/Kibana.md   
       - name: 监控集群
-        href: Operation-Guide/Monitoring.md
-      - name: 管理集群
-        href: Operation-Guide/manage-cluster.md        
+        items: 
+        - name: 查看监控信息
+          href: Operation-Guide/Monitoring.md 
+        - name: 查看状态信息
+          href: Operation-Guide/status.md
+        - name: 创建告警规则
+          href: Operation-Guide/Monitor_Rules.md
+      - name: 标签
+        items:
+        - name: 标签概述
+          href: Operation-Guide/Tag/Tag-Overview.md
+        - name: 编辑标签
+          href: Operation-Guide/Tag/Edit-Tag.md
+        - name: 根据标签筛选
+          href: Operation-Guide/Tag/Filter-by-Tag.md
+  - name: 最佳实践
+    items:
+     - name: 规格容量评估
+       href: Best-Practices/Capacity-Assessment.md
+     - name: 访问集群示例
+       href: Best-Practices/connect-ES.md
+     - name: 使用kibana
+       href: Best-Practices/using_kibana.md
+     - name: 性能指标
+       href: Best-Practices/performance.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考

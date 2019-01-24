@@ -19,6 +19,6 @@
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“控制台”，具体见下图。
 
-![控制台](https://github.com/jdcloudcom/cn/blob/jmr-mengfei/image/jmr/console-buy.png)
+![控制台](../../../../image/jmr/console-buy.png)
 
 3.登录控制台，具体操作请参考[创建集群](https://github.com/jdcloudcom/cn/blob/master/documentation)。

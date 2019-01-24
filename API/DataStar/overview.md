@@ -12,5 +12,4 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
-|**getPackageId**|GET|根据设备ID查询人群包ID|
-|**getProfile**|GET|根据deviceId查询对应用户的画像信息|
+|**getLargeScreenData**|GET|根据区域、行业、一级指标、二级指标、起始时间等条件查询数据|

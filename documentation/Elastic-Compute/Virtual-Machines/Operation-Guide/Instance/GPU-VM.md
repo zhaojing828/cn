@@ -36,7 +36,7 @@
 		* 对应的kernel-header下载地址:http://vault.centos.org/7.4.1708/updates/x86_64/Packages/kernel-headers-3.10.0-693.17.1.el7.x86_64.rpm
 		* 通过wget命令下载上面两个包，然后通过yum install安装。
 		* 需要特别注意下载的kernel-devel，kernel-header版本要与当前运行的kernel版本完全一致，否则gpu驱动无法正常安装使用。
-安装完成后，如下所示 -：
+安装完成后，如下所示 ：
 ```
 	# uname –r
 	3.10.0-693.17.1.el7.x86_6

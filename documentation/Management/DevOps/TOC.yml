@@ -45,39 +45,64 @@
         href: Getting-Started/Create-Compilejob.md
       - name: 配置线上发布
         href: Getting-Started/Config-Deployment.md
-      - name: 查看基础监控
-        href: Getting-Started/Base-Monitor.md
+      - name: 接入智能监控
+        href: Getting-Started/Quick-start-monitoring.md
   - name: 操作指南
     items:
       - name: 使用须知
         href: Operation-Guide/Operation-Instruction.md
       - name: 了解DevOps主界面
         href: Operation-Guide/Introduction-index.md
-      - name: 配置管理
-        href: Operation-Guide/Configuration-Management.md
-      - name: 持续交付
-        href: Operation-Guide/CICD.md
-      - name: 智能监控
-        href: Operation-Guide/Monitoring.md
-      - name: 运维工具
-        href: Operation-Guide/Operation-Task.md
+      - name: 服务树
+        href: Operation-Guide/Service-Tree.md
+      - name: 资源池
+        href: Operation-Guide/Resource-Pool.md
+      - name: 规格模板
+        href: Operation-Guide/Specification-Templates.md
+      - name: 编译构建
+        href: Operation-Guide/CI.md
+      - name: 线上发布
+        href: Operation-Guide/CD.md
+      - name: 编排上线
+        href: Operation-Guide/Arrange-Online.md
+      - name: 采集配置
+        items:
+          - name: 机器监控
+            href: Operation-Guide/Collection-Conf/Machine-Monitoring.md
+          - name: 端口监控
+            href: Operation-Guide/Collection-Conf/Port-Monitoring.md
+          - name: 进程监控
+            href: Operation-Guide/Collection-Conf/Process-Monitoring.md
+          - name: 日志监控
+            href: Operation-Guide/Collection-Conf/Log-Monitoring.md
+          - name: 域名监控
+            href: Operation-Guide/Collection-Conf/Domain-Monitoring.md
+          - name: 自定义监控
+            href: Operation-Guide/Collection-Conf/Custom-Monitoring.md
+      - name: 聚合配置
+        href: Operation-Guide/Converge.md
+      - name: 数据可视化
+        href: Operation-Guide/Data-Visualization.md
+      - name: 报警组&值班组
+        href: Operation-Guide/Alarm-Contacts.md
+      - name: 报警配置
+        href: Operation-Guide/Alarm-Conf.md
+      - name: 报警管理
+        href: Operation-Guide/Alarm-Management.md
+      - name: Tags使用说明
+        href: Operation-Guide/Tags.md
+      - name: 镜像广场
+        href: Operation-Guide/Image-Packaging.md
+      - name: 脚本管理
+        href: Operation-Guide/Script.md
+      - name: 文件分发
+        href: Operation-Guide/File-Distribution.md
       - name: 账户管理
         href: Operation-Guide/Account-management.md
-  - name: 最佳实践
-    items:
-    - name: 持续交付
-      href: Best-Practices/CICD.md
-    - name: 智能监控
-      href: Best-Practices/Monitoring.md
-  - name: 教程
-    status: 0
-    items:
   - name: 问题排查
     items:
-    - name: 故障类问题
-      href: Troubleshooting/Troubleshooting.md
-    - name: 配置类问题
-      href: Troubleshooting/Configuration.md
+      - name: 配置类问题
+        href: Troubleshooting/Configuration.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考
@@ -86,15 +111,13 @@
     href: SDK/SDK-Reference.md
   - name: 用户协议
     items:
-    - name: 服务条款
-      href: User-Agreements/Product-Terms-of-Service.md                 
-    - name: SLA
-      href: User-Agreements/SLA.md               
+      - name: 服务条款
+        href: User-Agreements/Product-Terms-of-Service.md                 
+      - name: SLA
+        href: User-Agreements/SLA.md               
   - name: 相关资源
     items:
-    - name: 文档历史记录
-      href: Related-Resources/Document-History.md   
-    - name: 备案
-      href: Related-Resources/Filing.md                 
-    - name: 词汇表
-      href: Related-Resources/Glossary.md           
+      - name: 文档历史记录
+        href: Related-Resources/Document-History.md                
+      - name: 词汇表
+        href: Related-Resources/Glossary.md           

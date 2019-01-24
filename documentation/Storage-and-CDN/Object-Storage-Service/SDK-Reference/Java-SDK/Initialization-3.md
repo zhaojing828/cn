@@ -48,6 +48,7 @@ jss.destroy();
 如果您需要修改JingdongStorageService的一些默认配置，请在构造JingdongStorageService的时候传入ClientConfig实例。ClientConfig是配置类，可配置代理、连接超时、最大连接数等参数。通过ClientConfig可以设置的参数见下表：
 
 |参数|描述|方法|
+|-|-|-|
 |MaxConnections|允许打开的最大HTTP连接数。默认为1024|ClientConfiguration.setMaxConnections|
 |SocketTimeout|Socket层传输数据的超时时间（单位：毫秒）。默认为50000毫秒|ClientConfiguration.setSocketTimeout|
 |ConnectionTimeout|建立连接的超时时间（单位：毫秒）。默认为50000毫秒|ClientConfiguration.setConnectionTimeout|

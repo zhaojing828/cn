@@ -2,7 +2,7 @@
 
 
 ## 描述
-修改已创建的报警规则，支持修改报警规则及通知的联系人信息。当报警规则处于“已启用”状态时，允许修改报警规则。
+修改已创建的报警规则
 
 ## 请求方式
 PATCH
@@ -13,38 +13,53 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/alarms/{alarmId}
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**alarmId**|String|True| |规则id|
-|**regionId**|String|True| |地域ID|
+|**regionId**|String|True| |地域 Id|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**calculation**|String|True| |统计方法：平均值=avg、最大值=max、最小值=min、总和=sum|
-|**contactGroups**|String[]|False| |通知的联系组，如 [“联系组1”,”联系组2”]|
-|**contactPersons**|String[]|False| |通知的联系人，如 [“联系人1”,”联系人2”]|
-|**downSample**|String|False| |取样频次|
-|**metric**|String|True| |根据产品线查询可用监控项列表 接口 返回的Metric字段|
-|**noticePeriod**|Integer|False| |通知周期 单位：小时|
-|**operation**|String|True| |>=、>、<、<=、==、!=|
-|**period**|Integer|True| |统计周期（单位：分钟），可选值：2,5,15,30,60|
-|**serviceCode**|String|True| |产品名称|
-|**threshold**|Number|True| |阈值|
-|**times**|Integer|True| |连续多少次后报警，可选值:1,2,3,5|
+|**contacts**|BaseContact[]|False| |通知联系人|
+|**rule**|BaseRule|True| | |
+|**webHookContent**|String|False| |回调content 注：仅webHookUrl和webHookContent均不为空时，才会创建webHook|
+|**webHookProtocol**|String|False| |webHook协议|
+|**webHookSecret**|String|False| |回调secret，用户请求签名，防伪造|
+|**webHookUrl**|String|False| |回调url|
 
+### BaseContact
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**referenceId**|Long|True| |联系人id|
+|**referenceType**|Long|True| |联系人id类型：0,联系人分组id;1,联系人id|
+### BaseRule
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**autoScalingPolicyId**|String|False| |弹性伸缩组ID|
+|**calculateUnit**|String|True| |单位|
+|**calculation**|String|True| |统计方法，必须与定义的metric一致，可选值列表：avg,sum,max,min|
+|**downSample**|String|True| |降采样函数|
+|**metric**|String|True| |监控项|
+|**noticeLevel**|NoticeLevel|False| | |
+|**noticePeriod**|Long|True| |通知周期，单位：小时|
+|**operation**|String|True| |报警比较符，只能为以下几种lte(<=),lt(<),gt(>),gte(>=),eq(==),ne(!=)|
+|**period**|Long|True| |查询指标的周期，单位为分钟,目前支持的取值：1,2，5，15，30，60|
+|**ruleType**|Long|False| |规则类型, 1云监控的规则， 6站点监控。默认为1|
+|**tags**|Object|False| |多值标签|
+|**threshold**|Double|True| |报警阈值，目前只开放数值类型功能|
+|**times**|Long|True| |连续探测几次都满足阈值条件时报警，可选值:1,2,3,5,10,15,30,60|
+### NoticeLevel
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**custom**|Boolean|True| |是否为用户自己定义的级别，自定义(true) or 固定(false)|
+|**levels**|Object|True| |报警级别以及对应的阈值，是一个map[string]float64对象。key:common(一般)、critial(严重)、 fatal(紧急),value:各报警级别对应的阀值，要符合operation参数对应的递进关系。 eg: "levels":{"common":1000,"critial":10000,"fatal":15000}|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
 |**requestId**|String|请求的标识id|
-|**result**|Result| |
+|**result**|Object| |
 
-### Result
-|名称|类型|描述|
-|---|---|---|
-|**alarmId**|String|规则id|
 
 ## 返回码
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**400**|invalid parameter|
-|**500**|internal server error|

@@ -48,7 +48,9 @@
           - name: 网站监控设置详解
             href: Operation-Guide/Parsing-Record-Operation/Domain-Record-Monitor.md  
           - name: 解析记录批量导入
-            href: Operation-Guide/Parsing-Record-Operation/Domain-Record-Import.md  
+            href: Operation-Guide/Parsing-Record-Operation/Domain-Record-Import.md
+          - name: 自定义线路操作
+            href: Operation-Guide/Custom-Route-Operation/Custom-Route.md
   - name: 常见问题
     items:
     - name: 网站监控

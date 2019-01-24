@@ -54,6 +54,7 @@ json格式
   "data": "www.a.com"
 }
 ```
+
 # **批量设置header**
 
 ## **1.描述**
@@ -93,6 +94,7 @@ http://opencdn.jcloud.com/api/batchSetHttpHeader
     "headerContext" :[{'headerType':'resp','headerName':'Server','headerValue':'user CDN Server'},{'headerType':'req','headerName':'Cache-Control','headerValue':'no-cache'}]
  }
 ```
+
 ## **6.返回说明**
 
 ```
@@ -100,6 +102,6 @@ json格式
 {
   "status": 0,
   "msg": "成功",
-  "data": "www.a.com"
+  "data": "www.a.com" 
 }
 ```
