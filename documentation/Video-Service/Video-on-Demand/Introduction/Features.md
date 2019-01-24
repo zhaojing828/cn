@@ -7,14 +7,11 @@
     <td>详细内容</td>
 </tr>
 <tr>
-    <td rowspan="4"> 格式支持<br/>
+    <td rowspan="3"> 格式支持<br/>
     <td>源文件视频格式</td>
-    <td>支持市面几乎所有常见文件格式上传作为源文件（支持3GP、ASF、AVI、DAT、DV、FLV、F4V、GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、SWF、TS、VOB、WMV、WEBM 等视频格式上传 , 音频支持aac, ac3, acm, amr, ape, caf, flac, m4a, mp3, ra, wav, wma）</td>
+    <td>支持市面几乎所有常见文件格式上传作为源文件（支持3GP、ASF、AVI、DAT、DV、FLV、F4V、GIF、M2T、M4V、MJ2、MJPEG、MKV、MOV、MP4、MPE、MPG、MPEG、MTS、OGG、QT、RM、RMVB、SWF、TS、VOB、WMV、WEBM 等视频格式 , 音频支持aac, ac3, acm, amr, ape, caf, mp3, ra, wav, wma）</td>
 </tr>
-<tr>
-    <td>源文件音频格式</td>
-    <td>支持上传MP3，OGG，WAV，WMA，APE，FLAC，AAC，AC3，MMF，AMR，M4A，M4R，WV，MP2音频格式</td>
-</tr>
+
 <tr>
     <td>目标文件</td>
     <td>支持MP4、FLV、HLS文件格式</td>
@@ -69,7 +66,7 @@
     <td>可对视频不同成品格式进行预览</td>
 </tr>
 <tr>	
-    <td rowspan="4"> 视频处理<br/>
+    <td rowspan="2"> 视频处理<br/>
     <td>转码</td>
     <td>支持自定义转码模板，可挂载单个或多个模板实现对源片多路转码输出</td>
 </tr>
@@ -77,14 +74,7 @@
     <td>水印</td>
     <td>支持对上传视频叠加水印，水印模板可自定义，随意调整水印大小和位置，保护视频版权</td>
 </tr>
-<tr>
-    <td>质量检测</td>
-    <td>在文件上传时自动对文件进行检测，常见质量问题预发现，提高业务流程效率</td>
-</tr>
-<tr>
-    <td>音频控制</td>
-    <td>可对视频进行自动分析后，对音量进行响度调整，保证音量的平滑，提供更好的观看体验</td>
-</tr>
+
 <tr>
     <td rowspan="1">视频播放<br/>
     <td>播放加速</td>
