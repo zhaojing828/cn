@@ -153,11 +153,14 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 |StringNotLike|忽略大小写的不匹配字符串比较。该值可以包含多字符通配符 * 或者单字符通配符? |
 
 2.IP Address Condition操作符
+
 | Condition 操作符|说明|
 |-|-|
 |IpAddress|指定的IP地址或范围|
 |NotIpAddress |除指定 IP 地址或范围外的所有 IP 地址|
+
 3.通用操作符
+
 | Condition 操作符|说明|
 |-|-|
 |Null|如果为空或者没有值|
