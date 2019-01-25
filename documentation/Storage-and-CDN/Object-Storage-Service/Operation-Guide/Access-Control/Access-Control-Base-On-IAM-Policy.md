@@ -15,7 +15,7 @@ Bucket 的读权限。子账号是从属于主账号的，并且这些账号下�
 - IAM Policy 基本元素
 - IAM Policy 示例
 
-**说明：** 目前Bucket Policy与 IAM Policy 元素与元素用略有不同，请根据您的使用情况做好区分，不要混淆二者。
+**说明：** 目前Bucket Policy与 IAM Policy 元素语法略有不同，请根据您的使用情况做好区分，不要混淆二者。
 ### IAM Policy 基本元素
 
 IAM Policy语言包含以下基本意义的元素：
@@ -48,17 +48,18 @@ IAM policy 中 本期Action 支持列表如下：
 例如，使用 oss:GetObject 权限，用户可对 OSS 执行下载操作。
 
 **说明**
-- **上表中为本期支持用户自定义IAM策略指定的Action，后期会持续支持更多操作，敬请期待**
+- 上表中为本期支持用户自定义IAM策略指定的Action，后期会持续支持更多操作，敬请期待。
 - OSS支持的Action 分为三大类：
+
     * Service 级别操作，对应的是 GetService 操作，用来列出所有属于该用户的某个地域的所有 Bucket 列表。**本期不支持用户自定义IAM策略指定**
     * Bucket 级别操作，对应oss:DeleteBucket、oss:ListBucketMultipartUploads、oss:ListBucke操作的对象是 Bucket，
     * Object 级别操作，分为 oss:GetObject、oss:PutObject、oss:DeleteObject和oss:AbortMultipartUpload，操作对象是 Object。
-- 如想授权某一类的 Object 的操作，可以选择这几种的一种或几种。另外，所有的 Action 前面都必须加上oss:，如上面例子所示。
+- 如想授权某一类的 Object 的操作，可以选择这几种的一种或几种。另外，所有的 Action 前面都必须加上前缀“oss:”，如上面例子所示。
 
 #### 1.指定Resource
 
 对于您的 OSS 资源，在IAM policy中指定方式如下为：
-您不需要指定区域和命名空间，如下所示用空格代替，relative-id指定您的OSS资源，可是是存储空间也可是其中一些或者某个对象，支持通配符（*）。
+您不需要指定区域和命名空间，如下所示用"\*"代替，relative-id指定您的OSS资源，可是是存储空间也可是其中一些或者某个对象，支持通配符（\*）。
 
  各个资源描述方式详见[资源描述方式](https://docs.jdcloud.com/cn/iam/resource)
  
