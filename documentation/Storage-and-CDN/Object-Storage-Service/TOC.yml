@@ -389,6 +389,8 @@ items:
         href: Best-Practices/OSS-Verification-Tool.md
       - name: 移动应用直传OSS
         href: Best-Practices/Transfer-For-Mobile-Apps.md
+      - name: 自定义域名支持HTTPS访问 OSS 服务
+        href: Best-Practices/Custom-Domain-Name-Guidance.md        
  - name: 常见问题
    items:
       - name: 一般性问题
