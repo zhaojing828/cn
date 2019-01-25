@@ -102,25 +102,25 @@ MEMORY stats 1，表示查看1号分片的内存统计信息，不指定则默�
    
 ## 暂未开放的命令
 
-|  Key(键)  | List（列表） | Server（服务器） | Pub/Sub（发布/订阅） |   Geo(地理位置)   | Cluster(集群) | Connection(连接) |
-|:---------:|:------------:|:----------------:|:--------------------:|:-----------------:|:-------------:|:----------------:|
-| RANDOMKEY |     BLPOP    |       TIME       |      PSUBSCRIBE      |       GEOADD      |   READWRITE   |      SWAPDB      |
-|  MIGRATE  |     BRPOP    |      MONITOR     |        PUBLISH       |      GEOHASH      |    READONLY   |                  |
-|    WAIT   |  BRPOPLPUSH  |   BGREWRITEAOF   |        PUBSUB        |       GEOPOS      |   CLUSTER *   |                  |
-|           |              |      BGSAVE      |     PUNSUBSCRIBE     |      GEODIST      |               |                  |
-|           |              |    CONFIG SET    |       SUBSCRIBE      |     GEORADIUS     |               |                  |
-|           |              |      COMMAND     |      UNSUBSCRIBE     | GEORADIUSBYMEMBER |               |                  |
-|           |              |   DEBUG OBJECT   |                      |                   |               |                  |
-|           |              |      DBSIZE      |                      |                   |               |                  |
-|           |              |       DEBUG      |                      |                   |               |                  |
-|           |              |  DEBUG SEGFAULT  |                      |                   |               |                  |
-|           |              |       SAVE       |                      |                   |               |                  |
-|           |              |     LASTSAVE     |                      |                   |               |                  |
-|           |              |     SHUTDOWN     |                      |                   |               |                  |
-|           |              |      SLAVEOF     |                      |                   |               |                  |
-|           |              |       SYNC       |                      |                   |               |                  |
-|           |              |       PSYNC      |                      |                   |               |                  |
-|           |              |       ROLE       |                      |                   |               |                  |		
+|  Key(键)  | List（列表） | Server（服务器） | Pub/Sub（发布/订阅） |  Cluster(集群) | Connection(连接) |
+|:---------:|:------------:|:----------------:|:--------------------:|:-------------:|:----------------:|
+| RANDOMKEY |     BLPOP    |       TIME       |      PSUBSCRIBE      |  READWRITE   |      SWAPDB      |
+|  MIGRATE  |     BRPOP    |      MONITOR     |        PUBLISH       |   READONLY   |                  |
+|    WAIT   |  BRPOPLPUSH  |   BGREWRITEAOF   |        PUBSUB        |  CLUSTER *   |                  |
+|           |              |      BGSAVE      |     PUNSUBSCRIBE     |              |                  |
+|           |              |    CONFIG SET    |       SUBSCRIBE      |              |                  |
+|           |              |      COMMAND     |      UNSUBSCRIBE     |              |                  |
+|           |              |   DEBUG OBJECT   |                      |              |                  |
+|           |              |      DBSIZE      |                      |              |                  |
+|           |              |       DEBUG      |                      |              |                  |
+|           |              |  DEBUG SEGFAULT  |                      |              |                  |
+|           |              |       SAVE       |                      |              |                  |
+|           |              |     LASTSAVE     |                      |              |                  |
+|           |              |     SHUTDOWN     |                      |              |                  |
+|           |              |      SLAVEOF     |                      |              |                  |
+|           |              |       SYNC       |                      |              |                  |
+|           |              |       PSYNC      |                      |              |                  |
+|           |              |       ROLE       |                      |              |                  |		
 
 
 
