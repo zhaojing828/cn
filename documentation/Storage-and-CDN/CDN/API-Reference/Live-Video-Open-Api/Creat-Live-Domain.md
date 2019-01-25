@@ -1,15 +1,15 @@
-## **创建直播加速域名**
+# **创建直播加速域名**
 
-**1.描述**
+## **1. 描述**
 
 创建直播加速域名，包含推流模式和拉流模式以及混合模式的域名创建
 
-**2.请求参数**
+## **2. 请求参数**
 
 | 名称           | 类型   | 是否必填 | 描述                                                         |
 | -------------- | ------ | -------- | ------------------------------------------------------------ |
 | username       | String | 是       | 京东用户名pin                                                |
-| signature      | String | 是       | 用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey；</br>日期：格式为yyyymmdd；username：京东用户名pin；秘钥：双方约定；</br>示例：比如当前日期2016-10-23，用户pin:jcloud_00,用户秘钥SecretKey ：e7a31b1c5ea0efa9aa2f29c6559f7d61；那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
+| signature      | String | 是       |用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey; 日期：格式为 yyyymmdd; username：京东用户名pin; 秘钥：双方约定; </br>示例：比如当前日期2016-10-23,用户pin:jcloud_00,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61,那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
 | siteType | String | 是 | 直播业务模式类型，推流模式（主播推流到CDN）用“push”，拉流模式（CDN回客户源站拉流播放）用“pull”,混合模式（一推流域名对应多个播放域名或者多个拉流域名以及转推域名等状态）用“mix” |
 |Domain | String | 是 | 加速域名|
 |protocol | String |否| 协议，参数可为all、rtmp、hdl（即为http-flv）、hls；all表示不区分协议，当protocol为all时，对应的域名可以直接转rtmp、hls、flv|
@@ -18,7 +18,7 @@
 |source | String |否 |回源信息配置，ip回源时master 表示主，slave 表示备，ratio表示权重，所有ratio的配置项相加应该为1；域名回源时，priority表示优先级 |
 |forwardDomain| String |否|转推域名 |
  
-**3.返回参数**
+## **3. 返回参数**
 
 | **名称** | **描述**                                                  |
 | -------- | --------------------------------------------------------- |
@@ -27,13 +27,13 @@
 | data     | 域名  |
 | requestId| 创建任务|
  
-**4.调用示例**
+## **4. 调用示例**
 
- **请求地址**
+- ### **请求地址**
 
-http://opencdn.jcloud.com/api/live/createDomain
+https://opencdn.jcloud.com/api/live/createDomain
 
- **请求示例**
+ - ### **请求示例**
 
 ```
 {
@@ -83,7 +83,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- **创建混合模式下的推流域名**
+- #### **创建混合模式下的推流域名**
 ```
 {
     "username":"jcloud_username",
@@ -95,7 +95,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
--  **创建混合模式下的拉流域名**
+- #### **创建混合模式下的拉流域名**
 ```
 {
     "username":"jcloud_username",
@@ -115,7 +115,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- **创建拉流模式下的拉流域名**
+- #### **创建拉流模式下的拉流域名**
 ```
 {
     "username":"jcloud_username",
@@ -134,7 +134,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- **创建推流模式下的推流域名**
+- #### **创建推流模式下的推流域名**
 ```
 {
     "username":"jcloud_username",
@@ -146,7 +146,7 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-- **创建推流模式下的拉流域名**
+- #### **创建推流模式下的拉流域名**
 ```
 {
     "username":"jcloud_username",
@@ -159,9 +159,9 @@ http://opencdn.jcloud.com/api/live/createDomain
 }
 ```
 
-**返回示例**
+- ### **返回示例**
 
-正常响应
+*正常响应
 ```
 {
     "status": 0,
@@ -171,7 +171,7 @@ http://opencdn.jcloud.com/api/live/createDomain
     }
 }
 ```
-异常响应
+*异常响应
 ```
 {
     "status": 1 ,//或其他错误码
