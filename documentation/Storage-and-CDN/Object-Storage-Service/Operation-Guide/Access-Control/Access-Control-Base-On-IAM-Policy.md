@@ -59,9 +59,9 @@ IAM policy 中 本期Action 支持列表如下：
 #### 1.指定Resource
 
 对于您的 OSS 资源，在IAM policy中指定方式如下为：
-您不需要指定区域和命名空间，如下所示用"\*"代替，relative-id指定您的OSS资源，可是是存储空间也可是其中一些或者某个对象，支持通配符（\*）。
+您不需要指定区域和命名空间，如下所示用"\*"代替，relative-id指定您的OSS资源，可以是存储空间也可是其中一些或某个对象，目前仅支持通配符（\*）。
 
- 各个资源描述方式详见[资源描述方式](https://docs.jdcloud.com/cn/iam/resource)
+ 各个资源描述方式详见[访问控制-资源描述方式](https://docs.jdcloud.com/cn/iam/resource)
  
 ```
 //示例：
@@ -73,10 +73,10 @@ jrn:oss:*:*:bucket_name/key_name
 
 |资源表示|说明|
 |-|-|
-|jrn:oss:*:*:examplebucket/developers/design_info.doc|表示examplebucket存储空间中的/developers/design_info.doc 对象|
+|jrn:oss:*:*:examplebucket/developers/design_info.doc|表示examplebucket存储空间中developers/design_info.doc某个对象|
 |jrn:oss:*:*:examplebucket/* |表示 examplebucket 存储存储空间中的所有对象|
 |jrn:oss:*:*:examplebucket/dir/* |表示 examplebucket 存储存储空间中dir目录下的全部对象|
-|jrn:oss:*:*:examplebucket/abc*|表示 examplebucket 存储存储空间以adb为前缀的全部对象|
+|jrn:oss:*:*:examplebucket/abc*|表示 examplebucket 存储存储空间以adc为前缀的对象|
 |jrn:oss:*:*:examplebucket*|表示 以examplebucket为前缀的存储存储空间以及其中全部对象|
 
 ### IAM Policy 示例
@@ -87,7 +87,7 @@ jrn:oss:*:*:bucket_name/key_name
   "Statement": [
     {
       "Action": [
-        "oss:*"，
+        "oss:*"
        
       ],
       "Effect": "Allow",
