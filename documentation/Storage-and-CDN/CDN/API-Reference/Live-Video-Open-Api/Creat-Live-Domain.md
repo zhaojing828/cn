@@ -11,12 +11,15 @@
 | username       | String | 是       | 京东用户名pin                                                |
 | signature      | String | 是       |用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey; 日期：格式为 yyyymmdd; username：京东用户名pin; 秘钥：双方约定; </br>示例：比如当前日期2016-10-23,用户pin:jcloud_00,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61,那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
 | siteType | String | 是 | 直播业务模式类型，推流模式（主播推流到CDN）用“push”，拉流模式（CDN回客户源站拉流播放）用“pull”,混合模式（一推流域名对应多个播放域名或者多个拉流域名以及转推域名等状态）用“mix” |
-|Domain | String | 是 | 加速域名|
+|domainType | String | 是 | 域名类型，参数值为push/pull，push表示推流域名，pull表示拉流域名，即播放域名；业务模式为pull类型时，domainType只能为pull；|
+|domain | String | 是 | 加速域名|
 |protocol | String |否| 协议，参数可为all、rtmp、hdl（即为http-flv）、hls；all表示不区分协议，当protocol为all时，对应的域名可以直接转rtmp、hls、flv|
 |referDomain | String |否 |关联的推流域名，推流模式，混合模式下创建播放域名时，为必须的字段，其他情况非必须|
 |sourceType | String |否|混合模式和拉流模式下为必填 |
 |source | String |否 |回源信息配置，ip回源时master 表示主，slave 表示备，ratio表示权重，所有ratio的配置项相加应该为1；域名回源时，priority表示优先级 |
 |forwardDomain| String |否|转推域名 |
+|audioType| String |否|当前只支持AAC,非必填项 |
+|videoType| String |否|当前只支持H.264,非必填项 |
  
 ## **3. 返回参数**
 
@@ -78,8 +81,8 @@ https://opencdn.jcloud.com/api/live/createDomain
          }
         }, 
       "forwardDomain":"forward.jcloud.com",
-      "audioType":"audioType", //当前只支持AAC,非必填项
-      "videoType":"videoType"   //当前只支持H.264,非必填项
+      "audioType":"AAC", //当前只支持AAC,非必填项
+      "videoType":"H.264"   //当前只支持H.264,非必填项
 }
 ```
 
