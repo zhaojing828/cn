@@ -214,7 +214,7 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 		"Effect": "Allow",
 		"Principal": {
 			"AWS": [
-				"arn:aws:iam::123456789012:root",
+				"arn:aws:iam::123456789012:root"
 			]
 		},
 		"Action": ["s3:GetObject", "s3:PutObject"],
