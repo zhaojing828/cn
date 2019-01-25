@@ -25,7 +25,7 @@ IAM Policy语言包含以下基本意义的元素：
     - 效力（Effect）：描述声明产生的结果是“允许”（allow），**暂不支持显示拒绝（deny)，功能更新中，敬请期待**。该元素是必填项。
     - 操作（Action）：描述被允许或拒绝的操作。操作可以是 API或者功能集（一组特定的 API）。该元素是必填项，
          详见下文【OSS在IAM Policy中用法 -指定Action】。
-    - 资源（Resource）：描述指代的是 OSS 上面的某个具体的资源或者某些资源。资源是用六段式描述。该元素是必填项，有关如何指定资源的信息，详见下文             【OSS在IAM Policy中用法-Resource】。
+    - 资源（Resource）：描述指代的是 OSS 上面的某个具体的资源或者某些资源。该元素是必填项，有关如何指定资源的信息，详见下文             【OSS在IAM Policy中用法-Resource】。
     Policy 需遵循 JSON 语法规范,详细说明请参阅[IAM Policy-策略语法](https://docs.jdcloud.com/cn/iam/elements)
 ### OSS在IAM Policy中用法
 #### 1.指定Action
@@ -84,132 +84,145 @@ jrn:oss:*:*:bucket_name/key_name
 完全授权的 IAM Policy表示允许子账号可以对OSS进行任何操作。您可以登录[访问控制控制台-用户管理](https://iam-console.jdcloud.com/subUser/list)直接授权系统策略（JDCloudOSSAdmin）。
 ```
 {
-  "Statement": [
-    {
-      "Action": [
-        "oss:*"
-       
-      ],
-      "Effect": "Allow",
-      "Resource": "*"
-    }
-  ],
-  "Version": "3"
+    "Statement": [
+        {
+            "Action": [
+                "oss:*"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ],
+    "Version": "3"
 }
 ```
 
 #### 2.不限制前缀的只读不写IAM Policy
 
-此Policy表示子用户可对Bucket 名称为：app-base-oss下所有的Object能够列举与下载。
+此Policy表示子用户可对名为app-base-oss的Bucket下所有的Object能够列举与下载。
 
 ```
 {
     "Statement": [
-      {
-        "Action": [
-          "oss:GetObject",
-          "oss:ListBucket"
-        ],
-        "Effect": "Allow",
-        "Resource": ["jrn:oss:*:*:app-base-oss/*", "jrn:oss:*:*:app-base-oss"]
-      }
+        {
+            "Action": [
+                "oss:GetObject",
+                "oss:ListBucket"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "jrn:oss:*:*:app-base-oss/*",
+                "jrn:oss:*:*:app-base-oss"
+            ]
+        }
     ],
     "Version": "3"
-  }
+}
 ```
 
 #### 3.限制前缀的只读不写IAM Policy
-此Policy表示子用户可对Bucket 名称为：app-base-oss下有前缀 myuser1/的Object能够列举与下载。但无法下载其他前缀的Object。采用此种Policy，可以将不同的子账号控制的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
+此Policy表示子用户可对名为app-base-oss的Bucket中有前缀 myuser1/的Object能够列举与下载。但无法下载其他前缀的Object。采用此种Policy，可以将不同的子账号控制的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
 {
     "Statement": [
-      {
-        "Action": [
-          "oss:GetObject",
-          "oss:ListBucket"
-        ],
-        "Effect": "Allow",
-        "Resource": ["jrn:oss:*:*:app-base-oss/myuser1/*", "jrn:oss:*:*:app-base-oss"]
-      }
+        {
+            "Action": [
+                "oss:GetObject",
+                "oss:ListBucket"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "jrn:oss:*:*:app-base-oss/myuser1/*",
+                "jrn:oss:*:*:app-base-oss"
+            ]
+        }
     ],
     "Version": "3"
-  }
+}
 ```
 
 #### 4.不限制前缀的只写不读IAM Policy
-此Policy表示应用可以对Bucket名称为：app-base-oss下带有前缀myuser1/的Object进行上传。但无法上传其他前缀的Object。采用此种Policy，如果不同的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
+此Policy表示应用可以对名为app-base-oss的Bucket中完成带有前缀myuser1/的Object进行上传。但无法上传其他前缀的Object。采用此种Policy，如果不同的应用对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
 {
     "Statement": [
-      {
-        "Action": [
-          "oss:PutObject",
-        ],
-        "Effect": "Allow",
-        "Resource": ["jrn:oss:*:*:app-base-oss/myuser1/*"]
-      }
+        {
+            "Action": [
+                "oss:PutObject"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "jrn:oss:*:*:app-base-oss/myuser1/*"
+            ]
+        }
     ],
     "Version": "3"
-  }
+}
 ```
 #### 5.限制前缀的只写不读IAM Policy
-此Policy表示应用只可以对Bucket名称为：app-base-oss进行上传。
+此Policy表示应用只可以对名为app-base-oss的Bucket进行上传。
 ```
 {
     "Statement": [
-      {
-        "Action": [
-          "oss:PutObject",
-        ],
-        "Effect": "Allow",
-        "Resource": ["jrn:oss:*:*:app-base-oss/*"]
-      }
+        {
+            "Action": [
+                "oss:PutObject"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "jrn:oss:*:*:app-base-oss/*"
+            ]
+        }
     ],
     "Version": "3"
-  }
+}
 ```
 
 #### 6.不限制前缀的读写IAM Policy
-此Policy表示应用只可以对Bucket名称为：app-base-oss下所有的Object进行列举、下载、上传和删除。
+此Policy表示应用只可以对名为app-base-oss的Bucket下所有的Object进行列举、下载、上传和删除。
 ```
 {
     "Statement": [
-      {
-        "Action": [
-          "oss:GetObject",
-          "oss:PutObject",
-          "oss:DeleteObject",
-          "oss:ListBucket",
-          "oss:AbortMultipartUpload",
-      
-        ],
-        "Effect": "Allow",
-        "Resource": ["jrn:oss:*:*:app-base-oss/*", "jrn:oss:*:*:app-base-oss"]
-      }
+        {
+            "Action": [
+                "oss:GetObject",
+                "oss:PutObject",
+                "oss:DeleteObject",
+                "oss:ListBucket",
+                "oss:AbortMultipartUpload"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "jrn:oss:*:*:app-base-oss/*",
+                "jrn:oss:*:*:app-base-oss"
+            ]
+        }
     ],
     "Version": "3"
-  }
+}
 ```
 #### 7.限制前缀的读写IAM Policy
-此Policy表示应用可以对Bucket名称为：app-base-oss下带有前缀myuser1/的Object进行列举、下载、上传和删除，但无法对其他前缀的Object进行读写。采用此种Policy，如果不同的子用户对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
+此Policy表示应用可以对名为app-base-oss的Bucket下带有前缀myuser1/的Object进行列举、下载、上传和删除，但无法对其他前缀的Object进行读写。采用此种Policy，如果不同的子用户对应不同的前缀，就可以达到在同一个Bucket中空间隔离的效果。
 ```
 {
     "Statement": [
-      {
-        "Action": [
-          "oss:GetObject",
-          "oss:PutObject",
-          "oss:DeleteObject",
-          "oss:ListBucket",
-          "oss:AbortMultipartUpload",
-      
-        ],
-        "Effect": "Allow",
-        "Resource": ["jrn:oss:*:*:app-base-oss/myuser1/*", "jrn:oss:*:*:app-base-oss"]
-      }
+        {
+            "Action": [
+                "oss:GetObject",
+                "oss:PutObject",
+                "oss:DeleteObject",
+                "oss:ListBucket",
+                "oss:AbortMultipartUpload"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "jrn:oss:*:*:app-base-oss/myuser1/*",
+                "jrn:oss:*:*:app-base-oss"
+            ]
+        }
     ],
     "Version": "3"
-  }
+}
 ```
 
 
