@@ -1,15 +1,15 @@
 # **查询在线人数**
 
-## **1.描述**
+## **1. 描述**
 
 推流端主播开始推流或者推流中断以及结束推流时，CDN向客户发送推断流通知。
 
-## **2.请求参数**
+## **2. 请求参数**
 
 | **名称**   | **类型** | **是否必填** | **描述**                                                     |
 | ---------- | -------- | ------------ | ------------------------------------------------------------ |
 | username   | String   | 是           | 京东用户名pin                                                |
-| signature  | String   | 是           | 用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey; 日期：格式为 yyyymmdd; username：京东用户名pin; 秘钥：双方约定; </br>示例：比如当前日期2016-10-23,用户pin:jcloud_00,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61,那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61) |
+| signature  | String   | 是           |用户签名，通过md5的方式校验用户的身份信息，保障信息安全。</br>md5=日期+username+秘钥SecretKey; 日期：格式为 yyyymmdd; username：京东用户名pin; 秘钥：双方约定; </br>示例：比如当前日期2016-10-23,用户pin:jcloud_00,用户秘钥SecretKey：e7a31b1c5ea0efa9aa2f29c6559f7d61,那签名为MD5(20161023jcloud_00e7a31b1c5ea0efa9aa2f29c6559f7d61)|
 | domain     | String   | 是           | 加速域名|
 |app| String   | 否  |发布点，目前支持单个查询 |
 |stream | String   | 否 | 流名称，目前支持单个查询|
@@ -20,7 +20,7 @@
 |groupByDomain | String   | 否 | 默认是false，false表示多个域名查询，查询的数据是域名之和，如果是true，表示多个域名查询，查询的数据是各个域名独自的数据信息|
 |period  | String   | 否 |颗粒度：默认为一分钟，可以查询一分钟和五分钟粒度；当颗粒度为一分钟时，不按区域和运营商查询，查询的时间跨度是30天，按区域和运营商查询，查询的时间跨度是7天；当颗粒度是五分钟时，不按区域和运营商查询，查询的时间跨度是7天；按区域和运营商查询，查询的时间跨度是1天|
 
-## **3.返回参数**
+## **3. 返回参数**
 
 | **名称**   | **描述** | 
 | ---------- | -------- |
@@ -33,11 +33,11 @@
 | pv| 请求量| 
 | onlineNumber| 在线人数| 
 
-## **4.调用示例**
+## **4. 调用示例**
 
 - ### **请求地址**
 
-http://opencdn.jcloud.com/api/live/streamOnlineNumber
+https://opencdn.jcloud.com/api/live/streamOnlineNumber
 
 - ### **请求示例**
 
