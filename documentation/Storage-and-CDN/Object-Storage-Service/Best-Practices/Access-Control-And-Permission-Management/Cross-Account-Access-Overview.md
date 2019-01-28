@@ -2,8 +2,8 @@
 
 OSS 资源默认都是私有的，若拥有者希望将资源共享给他人，可以通过跨账号授权的方式，将 OSS 资源授权给他人访问，下面提供下面跨账号授权访问 OSS 资源的方式。
 
-- 基于 Bucket Policy 实现跨账号访问OSS：Bucket Policy 是基于资源的授权策略。相比于 IAM Policy，Bucket Policy 操作简单，支持在控制台直接进行图
-形化配置。Bucket Policy 支持向其他账号的 IAM 用户、匿名用户等授予带特定 IP 条件限制与Referer的访问权限。
+- 基于 Bucket Policy 实现跨账号访问OSS。Bucket Policy 是基于资源的授权策略，相比于 IAM Policy，Bucket Policy 操作简单，支持在控制台直接进行图
+形化配置。Bucket Policy 支持向其他账号的 IAM子用户、匿名用户等授予带特定 IP 条件限制与Referer的访问权限。
 ，详细介绍描述请参见[基于Bucket Policy的权限控制](../Operation-Guide/Access-Control/Access-Control-Base-On-Bucket-Policy.md)
 
 设置方式：
@@ -64,7 +64,7 @@ Bucket policy (合法json)，大小限制16KB。
 			]
 		},
 		"Action": ["s3:GetObject", "s3:PutObject"],
-		"Resource": "arn:aws:s3::: Bucket1/*"
+		"Resource": "arn:aws:s3:::Bucket1/*"
 	}]
 }
 ```
@@ -72,7 +72,7 @@ Bucket policy (合法json)，大小限制16KB。
 
 企业帐号A（accoutID: 123456789012）,该账号拥有名为 Bucket1 的存储空间。另外一个企业帐号B(accoutID:123334444455)名为子账号user2，需要拥有企业帐号A，Bucket1中dir1 目录下对象的读写权限。
 
-这里涉及权限传递，首先企业帐号A需要利用Bucket Policy授予企业帐号B读取该目录下对象的权利。其次，子账号user2必须通过IAM policy 显式的被授予访问Bucket1中dir1 目录的权限。之后可直接授权给user2
+这里涉及权限传递，首先企业帐号A需要利用Bucket Policy授予企业帐号B读取该目录下对象的权利。其次，子账号user2必须通过IAM policy 显式的被授予访问Bucket1中dir1 目录的权限。
 
 步骤 1：企业帐号A（accoutID: 123456789012）通过Bucket policy 为企业帐号B(accoutID:123334444455)授予读取Bucket1中dir1 目录下对象的读写权限。
 
@@ -89,15 +89,15 @@ Bucket policy (合法json)，大小限制16KB。
 			]
 		},
 		"Action": [
-    "s3:GetObject",
-    "s3:PutObject"，
-    ],
+			"s3:GetObject",
+			"s3:PutObject"
+		],
 		"Resource": "arn:aws:s3:::Bucket1/dir1/*"
 	}]
 }
 ```
 
-步骤 2：企业帐号(accoutID:123334444455)必须通过IAM policy 显示的被授予子账号user2访问Bucket1中dir1 目录的权限
+步骤 2：企业帐号(accoutID:123334444455)必须通过IAM policy 显示的授予子账号user2访问Bucket1中dir1 目录的权限。
 
 ```
 {
