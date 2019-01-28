@@ -18,7 +18,7 @@
 |GET Bucket policy|获取指定的Bucket上的policy|兼容[GET Bucket policy](./Operations-On-Bucket/Get-Bucket-Policy-2.md)| [GET Bucket policy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETpolicy.html)|
 |PUT Bucket policy|为指定的Bucket上添加或编辑policy|兼容[PUT Bucket policy](./Operations-On-Bucket/Put-Bucket-Policy-2.md)| [PUT Bucket policy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTpolicy.html)|
 |DELETE Bucket policy|删除指定的Bucket上的policy|兼容[DELETE Bucket policy](./Operations-On-Bucket/Delete-Bucket-Policy-2.md)| [DELETE Bucket policy](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketDELETEpolicy.html)|
-|PUT Bucket acl|在指定的Bucket上设置acl|兼容[PUT Bucket acl](https://github.com/jdcloud-cmw/oss/blob/master/S3-API-Document/Operations-on-Bucket/Put-Bukcet-acl.md)| [PUT Bucket acl](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTacl.html)|
+|PUT Bucket acl|在指定的Bucket上设置acl|兼容[PUT Bucket acl](./Operations-On-Bucket/Put-Bucket-Acl-2.md)| [PUT Bucket acl](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTacl.html)|
 |GET Bucket acl|获取指定的Bucket的acl|兼容[GET Bucket acl](./Operations-On-Bucket/GET-Bucket-Acl-2.md)| [GET Bucket acl](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETacl.html)|
 |PUT Bucket cors|为指定的Bucket添加CORS规则|兼容[PUT Bucket cors](./Operations-On-Bucket/Put-Bucket-Cors-2.md)| [PUT Bucket cors](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketPUTcors.html)|
 |GET Bucket cors|获取指定的Bucket的CORS规则|兼容[GET Bucket cors](./Operations-On-Bucket/Get-Bucket-Cors-2.md)| [GET Bucket cors](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/RESTBucketGETcors.html)|
