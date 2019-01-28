@@ -80,9 +80,9 @@ https://opencdn.jcloud.com/api/live/createDomain
             "c.jd.com": {"priority": 1}
          }
         }, 
-      "forwardDomain":"forward.jcloud.com",
-      "audioType":"AAC", //当前只支持AAC,非必填项
-      "videoType":"H.264"   //当前只支持H.264,非必填项
+    "forwardDomain":"forward.jcloud.com",
+    "audioType":"AAC", //当前只支持AAC,非必填项
+    "videoType":"H.264"   //当前只支持H.264,非必填项
 }
 ```
 
