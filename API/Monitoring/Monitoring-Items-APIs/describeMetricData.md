@@ -2,7 +2,7 @@
 
 
 ## 描述
-查看某资源监控数据，需指定监控指标和时间范围。
+查看某资源多个监控项数据，metric介绍1：<a href="https://docs.jdcloud.com/cn/monitoring/metrics">Metrics</a>
 
 ## 请求方式
 GET
@@ -12,56 +12,65 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/metrics/{metric}/metricDat
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**metric**|String|True||监控项英文标识(id)|
-|**regionId**|String|True||地域 Id|
+|**metric**|String|True| |监控项英文标识(id)|
+|**regionId**|String|True| |地域 Id|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**endTime**|String|False||查询时间范围的结束时间， UTC时间，格式：2016-12- yyyy-MM-dd'T'HH:mm:ssZ（为空时，将由startTime与timeInterval计算得出）|
-|**resourceId**|String|True||资源的uuid|
-|**serviceCode**|String|True||资源的类型，取值vm, lb, ip, database 等|
-|**startTime**|String|False||查询时间范围的开始时间， UTC时间，格式：yyyy-MM-dd'T'HH:mm:ssZ（默认为当前时间，早于30d时，将被重置为30d）|
-|**tags**|[TagFilter[]](##TagFilter)|False||自定义标签|
-|**timeInterval**|String|False||时间间隔：1h，6h，12h，1d，3d，7d，14d，固定时间间隔，timeInterval 与 endTime 至少填一项|
+|**aggrType**|String|False| |聚合方式，默认等于downSampleType或avg，可选值参考http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html?highlight=zimsum#available-aggregators|
+|**downSampleType**|String|False| |采样方式，默认等于aggrType或avg，可选值参考http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html?highlight=avg#available-aggregators|
+|**endTime**|String|False| |查询时间范围的结束时间， UTC时间，格式：2016-12- yyyy-MM-dd'T'HH:mm:ssZ（为空时，将由startTime与timeInterval计算得出）|
+|**groupBy**|Boolean|False| |是否对查询的tags分组|
+|**rate**|Boolean|False| |是否求速率|
+|**resourceId**|String|True| |资源的uuid|
+|**serviceCode**|String|True| |资源的类型，取值vm, lb, ip, database 等|
+|**startTime**|String|False| |查询时间范围的开始时间， UTC时间，格式：yyyy-MM-dd'T'HH:mm:ssZ|
+|**tags**|TagFilter[]|False| |自定义标签/tag；至少要传一个tag，且tag.Values不为空|
+|**timeInterval**|String|False| |时间间隔：1h，6h，12h，1d，3d，7d，14d，固定时间间隔，timeInterval默认为1h，当前时间往 前1h|
 
-### <a name="TagFilter">TagFilter</a>
+### TagFilter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**key**|String|True||Tag键|
-|**values**|String[]|True||Tag值|
+|**key**|String|False| |Tag键|
+|**values**|String[]|False| |Tag值|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|请求的标识id|
-|**result**|[Result](##Result)||
+|**requestId**|String| |
+|**result**|Result| |
 
-
-### <a name="Result">Result</a>
+### Result
 |名称|类型|描述|
 |---|---|---|
-|**metricDatas**|[MetricData[]](##MetricData)||
-### <a name="MetricData">MetricData</a>
+|**metricDatas**|MetricData[]| |
+### MetricData
 |名称|类型|描述|
 |---|---|---|
-|**data**|[DataPoint[]](##DataPoint)||
-|**metric**|[Metric](##Metric)||
-### <a name="DataPoint">DataPoint</a>
+|**data**|DataPoint[]| |
+|**metric**|Metric| |
+|**tags**|Tag[]| |
+### DataPoint
 |名称|类型|描述|
 |---|---|---|
-|**timestamp**|Integer|时间戳|
-|**value**|String|值|
-### <a name="Metric">Metric</a>
+|**timestamp**|Long| |
+|**value**|Object| |
+### Metric
 |名称|类型|描述|
 |---|---|---|
-|**calculateUnit**|String|指标的计算单位，比如bit/s、%、k等|
-|**metric**|String|监控项英文标识|
-|**metricName**|String|监控项名称|
+|**aggregator**|String| |
+|**calculateUnit**|String| |
+|**metric**|String| |
+|**metricName**|String| |
+|**period**|String| |
+### Tag
+|名称|类型|描述|
+|---|---|---|
+|**tagKey**|String| |
+|**tagValue**|String| |
 
 ## 返回码
 |返回码|描述|
 |---|---|
-|**200**|OK|
-|**400**|invalid parameter|
-|**500**|internal server error|
+|**200**|api DescribeMetricData Response|

@@ -5,7 +5,7 @@
 请注意：价格总览中价格为统一官方标价，不包用户括折扣优惠，为了保证价格准确性，建议您登录后使用云主机价格计算器或登录控制台云主机创建页面查看配置价格。
 
 
-京东云主机实例价格主要包括：实例价格（vCPU及内存）/云硬盘价格/弹性公网IP价格。其中云硬盘价格请参见[云硬盘价格总览]()，弹性公网IP价格请参见[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Billing-Overview.md)。
+京东云主机实例价格主要包括：实例价格（vCPU及内存）/云硬盘价格/弹性公网IP价格。其中云硬盘价格请参见[云硬盘价格总览](https://docs.jdcloud.com/cn/cloud-disk-service/price-overview)，弹性公网IP价格请参见[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。
 
 ## 实例价格：
 
@@ -495,17 +495,92 @@
       <td>21</td>
       <td></td>
    </tr>
+   <tr>
+      <td rowspan="9">GPU</td>
+      <td rowspan="9">标准</td>
+      <td>p.n1p40.3xlarge</td>
+      <td>12</td>
+      <td>48</td>
+      <td>4241.5</td>
+      <td>14.73</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>p.n1p40.7xlarge</td>
+      <td>28</td>
+      <td>110</td>
+      <td>8967.5</td>
+      <td>31.14</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>p.n1p40.14xlarge</td>
+      <td>56</td>
+      <td>220</td>
+      <td> 17935</td>
+      <td>62.27</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>p.n1p40h.3xlarge</td>
+      <td>12</td>
+      <td>48</td>
+      <td>4073.5</td>
+      <td>14.14</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>p.n1p40h.7xlarge</td>
+      <td>28</td>
+      <td>110</td>
+      <td>8631.5</td>
+      <td>29.97</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>p.n1p40h.14xlarge</td>
+      <td>56</td>
+      <td>220</td>
+      <td>17263</td>
+      <td>59.94</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>p.n1v100.2xlarge</td>
+      <td>8</td>
+      <td>44</td>
+      <td>5969</td>
+      <td>20.73</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>p.n1v100.5xlarge</td>
+      <td>20</td>
+      <td>110</td>
+      <td>12422.5</td>
+      <td>43.13</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>p.n1v100.10xlarge</td>
+      <td>40</td>
+      <td>220</td>
+      <td>24845</td>
+      <td>86.27</td>
+      <td></td>
+   </tr>
+
 </table>
 
 请注意：
 
 * 标*表示不支持以该规格新建云主机，且不支持您将当前云主机调整至该规格，但不影响您现有该规格云主机的使用；
-* 高频计算型当前仅在华北-北京及华南-广州提供。
+* 高频计算型当前仅在华北-北京、华南-广州及华东-上海提供。
 
 ## 相关参考
 [云主机价格计算器](https://www.jdcloud.com/calculator/calHost)
 
-[云硬盘价格总览]()
+[云硬盘价格总览](http://docs.jdcloud.com/cn/cloud-disk-service/price-overview)
 
-[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Billing-Overview.md)
+[弹性公网IP价格总览](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)
 

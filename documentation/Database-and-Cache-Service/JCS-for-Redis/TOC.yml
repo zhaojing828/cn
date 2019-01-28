@@ -1,4 +1,4 @@
-﻿  name: 云缓存 Redis
+  name: 云缓存 Redis
   href: 
   items:
   - name: 产品简介
@@ -19,6 +19,8 @@
         href: Introduction/Restrictions.md
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
+      - name: 新版本特性介绍 
+        href: Introduction/New-version.md 
   - name: 产品定价
     items:
       - name: 计费概述
@@ -43,6 +45,8 @@
         href: Getting-Started/Getting-Started-Overview.md
   - name: 操作指南
     items:
+      - name: 登录账号
+        href: Operation-Guide/Login.md
       - name: 实例管理
         items:
           - name: 变更配置
@@ -53,20 +57,22 @@
             href: Operation-Guide/Instance-Management/Modify-Instancename.md      
           - name: 释放实例
             href: Operation-Guide/Instance-Management/Release-Instance.md
-      - name: 账号登录
-        items:
-          - name: 登录账号
-            href: Operation-Guide/Login/Login.md
+      - name: 备份恢复
+        href: Operation-Guide/Backup-And-Recovery.md
+      - name: 参数修改
+        href: Operation-Guide/Parameter-Modification.md
       - name: 监控报警
         items:
           - name: 查看监控信息
             href: Operation-Guide/Monitoring/Monitoring.md
           - name: 设置报警规则
-            href: Operation-Guide/Monitoring/Alarm-Rules.md              
+            href: Operation-Guide/Monitoring/Alarm-Rules.md   
+      - name: 数据迁移
+        href: Operation-Guide/Data-Migration.md   
   - name: 最佳实践
     items:
     - name: C/C++连接Redis实例
-      href: Best-Practices/CorC++-Connect-to-Redis-Instance.md
+      href: Best-Practices/CorCplusplus-Connect-to-Redis-Instance.md
     - name: Golang连接Redis实例
       href: Best-Practices/Golang-Connect-to-Redis-Instance.md
     - name: Java连接Redis实例
@@ -87,10 +93,6 @@
     status: 0      
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: API参考
-    href:
-  - name: SDK参考
-    href:
   - name: 用户协议
     status: 0
     items:
@@ -101,6 +103,7 @@
       href: User-Agreements/SLA.md           
       status: 0       
   - name: 相关资源
+    status: 0       
     items:
     - name: 文档历史记录
       href: Related-Resources/Document-History.md   

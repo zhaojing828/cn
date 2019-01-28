@@ -95,6 +95,8 @@
       href: Best-Practices/MongoDB-Profile.md
     - name: 公网连接MongoDB实例
       href: Best-Practices/Public-Network-Connect-to-MongoDB-Instance.md
+    - name: 搭建 MongoDB 分片集群
+      href: Best-Practices/Create-Sharded-Cluster.md
   - name: 教程
     items:
     status: 0
@@ -108,10 +110,6 @@
       href: Troubleshooting/Authentication.md        
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: API参考
-    href:
-  - name: SDK参考
-    href:
   - name: 用户协议
     status: 0
     items:

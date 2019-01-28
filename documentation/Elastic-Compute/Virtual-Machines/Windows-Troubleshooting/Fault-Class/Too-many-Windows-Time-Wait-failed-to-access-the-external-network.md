@@ -9,8 +9,6 @@
 
 ***netstat -ano | findstr 445***
 
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/Virtual-Machine/Windows/Windows%20Time_Wait%E8%BF%87%E5%A4%9A%E5%AF%BC%E8%87%B4%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E5%A4%B1%E8%B4%A501.png)
-
 注：TCP 445端口是Windows文件共享服务使用端口，默认是监听状态。
 
 执行

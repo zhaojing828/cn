@@ -1,5 +1,5 @@
 ## 基础架构<br>
-![基础架构](https://github.com/jdcloudcom/cn/blob/edit/image/DataBus/db-001.png?raw=true "基础架构")<br>
+![基础架构](../../../../image/DataBus/db-001.png)<br>
 <br>
 京东云流数据总线是流式数据的处理平台，提供对流式数据的发布、订阅和分发功能，让您可以轻松构建基于流式数据的分析和应用。<br>\
 <br>

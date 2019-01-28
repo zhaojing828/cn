@@ -50,10 +50,13 @@ func main() {
 	fmt.Println(len(resp.Result.Instances))
 }
 ```
-如果需要设置额外的header，例如要调用开启了MFA操作保护的接口，需要传递x-jdcloud-security-token，则按照如下方式：
-```
+如果需要设置额外的header，例如要调用开启了[MFA操作保护]("https://docs.jdcloud.com/cn/IAM/Operation-Protection")的接口，需要传递x-jdcloud-security-token，则按照如下方式：
+
+```go
+const securityTokenHeader = "x-jdcloud-security-token"
 req := NewDeleteInstanceRequest("cn-north-1", "i-xxxxx")
-req.AddHeader("x-jdcloud-security-token", "xxx")
+req.AddHeader(securityTokenHeader, "xxx")
 resp, err := client.DeleteInstance(req)
 ```
+
 请参考demo中的测试用例，访问京东云各业务线接口。

@@ -3,7 +3,8 @@
 
 - step2：编写测试用例
 
-<pre><code>package com.jd.jmiss;
+```
+package com.jd.jmiss;
 import redis.clients.jedis.Jedis;
 public class JedisTester {
 
@@ -12,10 +13,10 @@ public static void main(String[] args) {
     try {
         String host = "${your redis domain}";//控制台显示访问地址
         int port = 6379;
-        String token = "${redis-id}:{your password}";//控制台显示的token
+        String password = "${your password}";//控制台显示的token
         jedis = new Jedis(host, port);
         //鉴权信息
-        jedis.auth(token);
+        jedis.auth("password");
         String key = "redis";
         String value = "jmiss-redis";
         //set一个key
@@ -34,13 +35,14 @@ public static void main(String[] args) {
         }
     }
 }
-}</code></pre>
+}
+```
 
 ## java maven + spring + jedis
 
 - step1: 引入maven依赖
 
-```xml
+```
 <dependencies>
 <dependency>
    <groupId>redis.clients</groupId>
@@ -57,9 +59,11 @@ public static void main(String[] args) {
 
 ```
 
+
 - step2：配置Spring元素
 
-```xml
+
+```
 <beans>
 <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
     <!-- <property name="maxActive" value="${redis.pool.maxTotal}" />-->
@@ -91,13 +95,16 @@ public static void main(String[] args) {
 </beans>
 ```
 
+
 - step3: 通过Properties文件配置redisPool相关参数
 
-<pre><code>#IP地址
-redis.pool.host=jcache-online20***59f-aeba-46*0-9fec-2de*****cd4c.jdicts.jcloud.com
+
+```
+#IP地址
+redis.pool.host=jredis-cn-north-1-prod-redis-xxxxxxxxxx.jdcloud.com
 #端口号
 redis.pool.port=6379
-redis.pool.pass=89376FC86*******403911BF5C538
+redis.pool.pass=********
 #最大idle
 redis.pool.maxIdle=300
 #最大分配对象
@@ -110,11 +117,15 @@ redis.pool.minEvictableIdleTimeMillis=8000
 #borrow object
 redis.pool.testOnBorrow=true
 redis.pool.timeout=3000
-redis.pool.testWhileIdle=true</code></pre>
+redis.pool.testWhileIdle=true
+```
+
 
 - step4:定义 redis value对象 这里需实现序列化
 
-<pre><code>class JMiss implements Serializable {
+
+```
+class JMiss implements Serializable {
 private String time;
 
 public String getTime() {
@@ -143,11 +154,15 @@ public String toString() {
             "time='" + time + '\'' +
             '}';
 }
-}</code></pre>
+}
+```
+
 
 - step5:定义JMiss控制器类
 
-<pre><code>public class JMissProcessor {
+
+```
+public class JMissProcessor {
 
 private RedisTemplate<String, JMiss> redisTemplate;
 
@@ -164,11 +179,15 @@ public JMiss getJMiss(String key){
     ValueOperations<String, JMiss> valueOps = redisTemplate.opsForValue();
     return valueOps.get(key);
 }
-}</code></pre>
+}
+```
+
 
 - step6:调用示例代码
 
-<pre><code>public class JedisTester {
+
+```
+public class JedisTester {
 
 public static void main(String [] args){
     ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
@@ -196,4 +215,5 @@ public static void main(String [] args){
         }
     }
 }
-}</code></pre>
+}
+```

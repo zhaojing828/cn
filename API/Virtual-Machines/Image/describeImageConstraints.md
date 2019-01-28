@@ -14,8 +14,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**imageId**|String|True||镜像ID|
-|**regionId**|String|True||地域ID|
+|**regionId**|String|True| |地域ID|
+|**imageId**|String|True| |镜像ID|
 
 ## 请求参数
 无
@@ -24,20 +24,19 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String||
-|**result**|[Result](##Result)||
+|**result**|Result| |
+|**requestId**|String| |
 
-
-### <a name="Result">Result</a>
+### Result
 |名称|类型|描述|
 |---|---|---|
-|**imageConstraints**|[ImageConstraint](##ImageConstraint)|镜像限制|
-### <a name="ImageConstraint">ImageConstraint</a>
+|**imageConstraints**|ImageConstraint|镜像限制|
+### ImageConstraint
 |名称|类型|描述|
 |---|---|---|
 |**imageId**|String|镜像ID|
-|**imageInstanceTypeConstraint**|[ImageInstanceTypeConstraint](##ImageInstanceTypeConstraint)|使用镜像创建实例的规格限制|
-### <a name="ImageInstanceTypeConstraint">ImageInstanceTypeConstraint</a>
+|**imageInstanceTypeConstraint**|ImageInstanceTypeConstraint|使用镜像创建实例的规格限制|
+### ImageInstanceTypeConstraint
 |名称|类型|描述|
 |---|---|---|
 |**constraintsType**|String|限制类型。取值：excludes：不支持的实例类型；includes：支持的实例类型。|
@@ -46,9 +45,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|

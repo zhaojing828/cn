@@ -5,9 +5,10 @@
 * 为保证数据完整性，仅支持对“已停止”状态的实例制作私有镜像。
 * 若实例系统盘为云硬盘或实例挂载了数据盘，则除私有镜像配额外，还需要占用云硬盘快照配额，因此请在操作前确保镜像和云硬盘快照配额充足。
 
-## 注意事项
-* 对于Linux系统，若该实例在/etc/fstab内配置了自动挂载命令，制作私有镜像前还请删除相关自动挂载命令，否则基于其私有镜像创建的实例可能无法正常启动。
-* 若当前实例系统盘为本地盘，则创建完成后的私有镜像为本地盘系统盘镜像；若当前实例系统盘为云硬盘，则创建完成后的私有镜像为云硬盘系统盘镜像。您可以通过[镜像类型转换](Convert-Image.md)将本地盘系统盘镜像转换为云硬盘系统盘镜像。
+		请注意：
+		* 对于Linux系统，若该实例在/etc/fstab内配置了自动挂载命令，制作私有镜像前还请删除相关自动挂载命令，否则基于其私有镜像创建的实例可能无法正常启动。
+		* 若当前实例系统盘为本地盘，则创建完成后的私有镜像为本地盘系统盘镜像；若当前实例系统盘为云硬盘，则创建完成后的私有镜像为云硬盘系统盘镜像。您可以通过[镜像类型转换](Convert-Image.md)将本地盘系统盘镜像转换为云硬盘系统盘镜像。
+
 
 ## 操作步骤
 1. 访问[云主机控制台][1]，即进入实例列表页面。或访问[京东云控制台][2]点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。
@@ -24,16 +25,18 @@
 7. 制作镜像过程中，任一资源创建失败均会导致镜像为“错误”状态，如选择了主机挂载的数据盘制作整机镜像，则操作失败会自动删除此次操作创建的所有快照，私有镜像需要您自行确认后删除。
 ![](../../../../../image/vm/Operation-Guide-Image-create4.png)
  
- ## 相关参考
+ 
+## 相关参考
  
 [镜像类型转换](Convert-Image.md)
  
 [设备名分配规则](../Operation-Guide/Cloud-Disk/Assign-Device-Name.md)
 
 
-  [1]: https://cns-console
+  [1]: https://cns-console.jdcloud.com/
   [2]: https://console.jdcloud.com/
   [3]: ./images/Operation-Guide-Image-create1.png "Operation-Guide-Image-create1.png"
   [4]: ./images/Operation-Guide-Image-create2.png "Operation-Guide-Image-create2.png"
   [5]: ./images/Operation-Guide-Image-create3.png "Operation-Guide-Image-create3.png"
+
   [6]: ./images/Operation-Guide-Image-create4.png "Operation-Guide-Image-create4.png"

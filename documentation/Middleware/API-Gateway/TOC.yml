@@ -1,5 +1,5 @@
 name: API 网关
-href: 
+href:
 items:
 - name: 产品简介
   items:
@@ -37,8 +37,12 @@ items:
   items:
     - name: 概述
       herf: Getting-Started/Getting-Started.md
+    - name: 在控制台中使用示例构建API
+      herf: Getting-Started/example_console.md
+    - name: 使用Function函数构建API
+      herf: Getting-Started/example_function.md
     - name: 创建API分组
-      herf: Getting-Started/STEP1-Create -APIGroup.md
+      herf: Getting-Started/STEP1-Create-APIGroup.md
     - name: 创建API
       herf: Getting-Started/STEP2-Create-API.md
     - name: 自定义域名
@@ -53,14 +57,14 @@ items:
       herf: Getting-Started/STEP5-Create-Auth.md
 - name: 操作指南
   items:
-    - name: 创建API
-      items:
-        - name: 创建API
-          herf: Create-API/Create-API.md
     - name: 创建API分组
       items:
         - name: 创建API分组
           herf: Create-APIGroup/Create-APIGroup.md
+    - name: 创建API
+      items:
+        - name: 创建API
+          herf: Create-API/Create-API.md
     - name: API的访问授权
       items:
         - name: API的访问授权
@@ -81,49 +85,20 @@ items:
       items:
         - name: 流控策略
           herf: Create-Stream/Create-Stream.md  
-    
+    - name: 错误码
+      items:
+        - name:  错误码
+          herf: Code/API_Errorcode.md
 - name: 最佳实践
   items:
   - name: 最佳实践
     herf: Best-Practices/BestPractices.md
- 
-- name: 教程
-  items:
-  status: 0
-- name: 问题排查
-  items:
-  - name: 云主机无法连接MongoDB实例？
-    herf: Troubleshooting/Connect-Failed.md
-    status: 0 
-  - name: 云数据库 MongoDB 不支持哪些命令？
-    herf: Troubleshooting/Command.md
-    status: 0 
-  - name: 账号密码正确，连接提示无权限？
-    herf: Troubleshooting/Authentication.md    
-    status: 0 
+  - name: 使用示例构建API
+    herf: Best-Practices/example_for_create_api.md
 - name: 常见问题
   herf: FAQ/faq.md
-- name: API参考
-  herf:
-  status: 0 
-- name: SDK参考
-  herf:
-  status: 0 
 - name: 相关资源
   items:
   - name: 文档历史记录
-    herf: Related-Resources/Document-History.md     
-  - name: 服务条款
-    herf: Related-Resources/Service-Terms.md           
-    status: 0      
-  - name: SLA
-    herf: Related-Resources/SLA.md           
-    status: 0       
-  - name: 备案
-    herf: Related-Resources/Filing.md           
-    status: 0        
-  - name: 词汇表
-    herf: Related-Resources/Glossary.md           
-    status: 0          
-          
-          
+    herf: Related-Resources/Document-History.md 
+    
