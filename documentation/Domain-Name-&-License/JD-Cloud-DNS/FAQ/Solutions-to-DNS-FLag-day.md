@@ -15,6 +15,6 @@
 
 以下为示例：
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/image/dns-img/dnsflagday.png)
+![img](../../../../image/dns-img/dns flag day.png)
 
 从示例可以看出，域名已经通过所有EDNS标准项检测。
