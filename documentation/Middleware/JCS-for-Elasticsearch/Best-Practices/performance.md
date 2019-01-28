@@ -4,7 +4,7 @@
 
 * [3个节点的规格为2核8G的性能测试数据](performance#user-content-1)
 * [3个节点的规格为4核16G的性能测试数据](performance#user-content-2)
-* [两次性能测试的结果比较](performance#user-content-2)
+* [两次性能测试的结果比较](performance#user-content-3)
 
 ### 3个节点的规格为2核8G的性能测试数据
 <div id="user-content-1"></div>
