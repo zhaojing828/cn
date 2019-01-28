@@ -38,20 +38,20 @@
 ####   第2种：自定义独立后端。
 当选择此配置时，即取消选择“在发布分组时统一配置”，则该API在实际调用时，将使用此处单独配置的后端地址为真实请求地址。
 
-##### 1：HTTP/HTTPS
+##### 1、HTTP/HTTPS
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-http.png)
  
  使用该类型做后端时，需要填入API调用的真实后端服务地址。
  
 
-##### 2：Mock
+##### 2、Mock
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mock.png)
  
 使用Mock做为后端时，实际请求则不会调用到真实后端服务。
 
-##### 3：Function
+##### 3、Function
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-fun.png)
  
