@@ -28,7 +28,7 @@ OSS支持一组预定义的ACL（固定ACL），每种固定ACL都有一组预�
 ---|---|---
 x-amz-acl|指定固定ACL设置Bucket的ACL。<br>Type: String<br>Valid Values: private、public-read、public-read-write<br>Default: private|否
 
-若您想明确指定每个被授权者的权限请使用[put Bukcet policy](https://docs.jdcloud.com/cn/object-storage-service/delete-bucket-policy-2) 
+若您想明确指定每个被授权者的权限请使用[put Bukcet policy](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-policy-2) 
 完成细粒度授权。
 
 
