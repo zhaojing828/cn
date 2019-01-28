@@ -65,6 +65,8 @@ items:
           herf: Create-APIGroup/Create-Publish.md  
         - name: 自定义域名
           herf: Create-APIGroup/Create-Domain.md  
+        - name: 访问监控
+          herf: Create-APIGroup/Monitoring.md  
     - name: API管理
       items:
         - name: 创建API
