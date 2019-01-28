@@ -17,16 +17,25 @@
 
 ##  操作步骤：
 ###  第1步：进入API管理页
-
 首先选择API分组，点击管理API菜单，进入API列表页。
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist.png)
 说明：
-如果当前API分组是部署中的版本，不能直接操作。如需操作请先下线，或在版本修订列表中新增版本进行修订。
+如果当前API分组是部署中的版本，不能直接操作。如需操作请先下线，或新增版本进行修订。
 
 ###  第2步：进入高级配置页进行操作
-#####   默认情况：API分组上配置的后端
+####   默认情况：使用API分组上配置的后端
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mr.png)
+当选择此配置时，该API在实际调用时所使用的后端地址，将是发布API分组时，配置的统一地址。即下图中配置的后端服务地址。
+![发布](../../../../../image/Internet-Middleware/API-Gateway/apigroup-fb.png)
 
+####   自定义独立后端。
+##### HTTP/HTTPS
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-http.png)
 
+##### Mock
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mock.png)
+
+##### Function
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-fun.png)
 
 
