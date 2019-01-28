@@ -36,7 +36,7 @@
 	
 		注：当后端协议为tcp时，如开启获取真实IP，需在后端服务端完成proxy protocol的相关配置。
 		
-	- 获取http头字段：可选择X-Forwarded-Proto、 X-Forwarded-Port、X-Forwarded-LBIP 、X-Forwarded-Host 多项，用于透传客户端http请求的相关信息；
+	- 获取http头字段：用于透传客户端http请求的相关信息。支持通过X-Forwarded-Proto字段获取负载均衡监听协议、通过X-Forwarded-Port字段获取负载均衡监听端口、 通过X-Forwarded-LBIP字段获取负载均衡VIP地址 、通过X-Forwarded-Host字段获取负载均衡监听目的IP（域名）和端口；
 
 		![ALB后端转发配置](../../../../image/Networking/ALB/ALB-023.png)	
 
