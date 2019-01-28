@@ -101,19 +101,17 @@ Bucket policy (合法json)，大小限制16KB。
 
 ```
 {
-    "Statement": [
-      {
-        "Action": [
-          "oss:GetObject",
-          "oss:PutObject",
-          "oss:AbortMultipartUpload"
-        ],
-        "Effect": "Allow",
-        "Resource": ["jrn:oss:*:*:Bucket1/dir/*"]
-      }
-    ],
-    "Version": "3"
-  }
+	"Statement": [{
+		"Action": [
+			"oss:GetObject",
+			"oss:PutObject",
+			"oss:AbortMultipartUpload"
+		],
+		"Effect": "Allow",
+		"Resource": ["jrn:oss:*:*:Bucket1/dir/*"]
+	}],
+	"Version": "3"
+}
 
 ```
 
