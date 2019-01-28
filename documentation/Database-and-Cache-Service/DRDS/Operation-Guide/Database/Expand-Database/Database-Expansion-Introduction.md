@@ -10,3 +10,4 @@ DRDS的数据库为逻辑数据库，数据实际存放在该逻辑数据库对�
 例如在上例中再新添加4个RDS MySQL实例，并将原先每个RDS 上8个分库迁移4个到新RDS MySQL实例中，最终形成该DRDS数据库后端对于8个RDS MySQL实例，
 每个实例上4个分库的架构。
 
+![水平扩容概述](../../../../../../image/DRDS/database-expansion.png)
