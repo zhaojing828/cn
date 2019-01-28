@@ -24,18 +24,36 @@
 
 ###  第2步：进入高级配置页进行操作
 ####   默认情况：使用API分组上配置的后端
+当选择此类型配置时，该API在实际调用时，将使用发布分组时配置的地址内容。
+
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mr.png)
+ 
+ 
 当选择此配置时，该API在实际调用时所使用的后端地址，将是发布API分组时，配置的统一地址。即下图中配置的后端服务地址。
+
 ![发布](../../../../../image/Internet-Middleware/API-Gateway/apigroup-fb.png)
 
+
+
 ####   自定义独立后端。
-##### HTTP/HTTPS
+当取消选择“在发布分组时统一配置”选择此类型配置时，在该API在实际调用时将使用在此处配置的后端地址为真实请求地址。
+
+##### 第1种：HTTP/HTTPS
+
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-http.png)
+ 
+ 使用该类型做后端时，需要填入API调用的真实后端服务地址。
+ 
 
 ##### Mock
+
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mock.png)
+ 
+使用Mock做为后端时，实际请求则不会调用到真实后端服务。
 
 ##### Function
+
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-fun.png)
-
-
+ 
+使用该类型做后端时，需先在函数中创建函数，然后在下拉框中找到并选择函数。
+######  特殊说明：目前仅支持对单个API配置函数类型后端，不支持对API分组配置函数类型后端
