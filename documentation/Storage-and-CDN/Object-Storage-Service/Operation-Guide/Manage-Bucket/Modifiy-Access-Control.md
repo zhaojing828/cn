@@ -1,13 +1,13 @@
-# 访问控制权限设置
+# 访问权限设置
 
-京东云对象存储提供灵活权限控制机制，您可以在创建存储空间的时候设置存储空间的访问权限，也可以在创建之后修改空间权限，除了提供存储空间级别的访问权限控制，您也可以对文件和目录级别进行灵活的权限访问配置。目前针对Bucket级有四种访问权限：
+京东云对象存储提供灵活权限控制机制，您可以在控制台中创建存储空间的时候设置存储空间的访问权限，也可以在创建之后修改空间权限，除了提供存储空间级别的访问权限控制，您也可以对文件和目录级别进行灵活的权限访问配置。目前针对Bucket级有四种访问权限：
 
 |权限名称|权限英文值|权限说明|
 |-|-|-|
 |私有读写|Private|Bucket Owner获得全部可执行的操作权限，只有该Bucket的Owner可以对存放在其中的Object进行读/写/删除操作；其他人没有任何权限，在未经授权的情况下无法访问该Bucket内的Object|
 |公有读私有写|Public-Read|Bucket Owner获得全部可执行的操作权限，只有该Bucket的Owner可以对存放在其中的Object进行写/删除操作；其他人（包括匿名访问）可以对Object进行读操作。|
 |公有读写|Public-Read-Write|Bucket Owner获得全部可执行的操作权限，其他人获得READ和WRITE权限；所有这些操作产生的费用由该Bucket的Owner承担，请慎用该权限。|
-自定义权限|User-Defined|可对指定用户设置GetObject、PutObject、DeleteObject、ListObjects、DeleteBucket的权限，并可指定该权限可访问的资源，以及指定具有该权限的IP地址和Referer白名单等.|
+自定义权限|User-Defined|可对指定用户设置GetObject、PutObject、DeleteObject、listBucket(getObjects)、DeleteBucket的权限，并可指定该权限可访问的资源，以及指定具有该权限的IP地址和Referer白名单等。|
 
 细节说明：
 若您是通过API或SDK创建的Bucket，并且在创建时并未指定Bucket的权限，则系统会为该Bucket赋予默认的私有读写（Private）权限，您可根据自身业务情况修改存储空间权限。
@@ -18,6 +18,7 @@
 ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-103.png)
 2.修改空间权限 ，如图：
  ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-104.png)
+ 
  **说明：**
  
  * 若修改ACL，则点击读写权限设置下拉框，选择私有读写、公有读私有写、公有读写3中权限，点击确定。
@@ -51,7 +52,7 @@
         c. 影响资源：定义了对该Bucket下的哪些资源可操作或不可操作（即Allow或Deny），默认选中“可操作资源”，文本框中默认值为bucketname/*，语义为对当前Bucket下的全部资源是可操作的，输入格式示例：myBucket/myfolder/object* ，myBucket/*，内容必须以Bucket名称开始，资源如果只有1个斜杠，不能以斜杠结尾，资源可以设置多个，每行1个且每行最多1个通配符，最多可以增加10条记录。
 
         d. Referer白名单：由于京东云对象存储是按用量收费，为避免您存储在京东云对象存储的数据被其他人盗链，京东云对象存储支持基于HTTP Header中表头字段的Referer防盗链方法，您可以在对象存储控制台的自定义权限中或者通过API的方式对一个Bucket设置Referer字段的白名单和是否允许Referer为空的请求访问，下文会对Referer白名单的规则作出详解。
- - 【添加自定义编辑器】--您可以可视化编辑器，直接填写JSON指定合法的Bucket policy。
+ - 【添加自定义编辑器】--您可以使用可视化编辑器，直接填写JSON指定合法的Bucket policy。
   ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-107.png)
   
    **细节说明**
