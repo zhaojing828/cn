@@ -18,9 +18,11 @@ IAM 详细介绍前往[IAM概述](https://docs.jdcloud.com/cn/iam/product-overvi
 - 步骤一：创建子账号
 
  在 IAM 控制台可创建子账号，并配置授予子账号的访问权限。具体操作如下所示：
+ 
  1.登录 [IAM 控制台](https://iam-console.jdcloud.com/summary)，单击左侧菜单栏【用户管理】，单击【新建子用户】：
  
  ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-108.png)
+ 
 2.按照要求填写用户相关信息。
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-109.png)
 
