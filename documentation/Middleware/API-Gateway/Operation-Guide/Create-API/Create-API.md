@@ -16,12 +16,9 @@ API分组是网关的基础服务单元并实现对外开放，而每个API分�
 点击该分组行的操作 **管理API**，进入“API列表”页
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist.png)
 
-
 2. 在“API列表”页面，点击 **新建API** ，进入创建API页面。
-
 ![新建API](../../../../../image/Internet-Middleware/API-Gateway/apigroup-addapi.png)
  
-  
 3.填写API信息后，点击保存，即新建完成。
 
 4.目前系统支持API导入功能，点击API列表页的 **导入API**  ,导入即可。注意，导入文件需要符合swagger 2.0规范。具体规范请参照：
