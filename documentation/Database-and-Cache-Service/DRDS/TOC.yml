@@ -48,7 +48,13 @@
           - name: 查看数据库
             href: Operation-Guide/Database/View-Database.md        
           - name: 删除数据库
-            href: Operation-Guide/Database/Delete-Database.md        
+            href: Operation-Guide/Database/Delete-Database.md
+          - name: 数据库水平扩容
+            items:            
+            - name: 概述
+              href: Operation-Guide/Database/Expand-Database/Database-Expansion-Introduction.md
+            - name: 水平扩容
+              href: Operation-Guide/Database/Expand-Database/Database-Expansion.md              
       - name: 表管理
         items:
           - name: 创建表
