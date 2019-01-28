@@ -13,7 +13,7 @@
 目前后端服务类型支持以下方式：
 - HTTP/HTTPS。
 - Mock后端。
-- 函数（Function Service）。
+- 函数（Function Service）。目前仅支持对单个API配置函数类型后端，不支持对API分组配置函数类型后端。
 
 ##  操作步骤：
 ###  第1步：进入API管理页
@@ -23,7 +23,7 @@
 如果当前API分组是部署中的版本，不能直接操作。如需操作请先下线，或新增版本进行修订。
 
 ###  第2步：进入高级配置页进行操作
-####   默认情况：使用API分组上配置的后端
+####  第1种： 默认情况：使用API分组上配置的后端
 当选择此类型配置时，该API在实际调用时，将使用发布分组时配置的地址内容。
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mr.png)
@@ -35,25 +35,25 @@
 
 
 
-####   自定义独立后端。
+####   第2种：自定义独立后端。
 当选择此配置时，即取消选择“在发布分组时统一配置”，则该API在实际调用时，将使用此处单独配置的后端地址为真实请求地址。
 
-##### 第1种：HTTP/HTTPS
+##### 1：HTTP/HTTPS
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-http.png)
  
  使用该类型做后端时，需要填入API调用的真实后端服务地址。
  
 
-##### 第2种：Mock
+##### 2：Mock
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-mock.png)
  
 使用Mock做为后端时，实际请求则不会调用到真实后端服务。
 
-##### 第3种：Function
+##### 3：Function
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-gjpz-fun.png)
  
 使用该类型做后端时，需先在函数中创建函数，然后在下拉框中找到并选择函数。
-######  特殊说明：目前仅支持对单个API配置函数类型后端，不支持对API分组配置函数类型后端
+######  特殊说明：目前仅支持对单个API配置函数类型后端，不支持对API分组配置函数类型后端。
