@@ -4,7 +4,9 @@
 
 #### 入口
 
+
 管理 > 云监控 > 资源监控 > 网关监控
+
 
 
 
@@ -19,15 +21,20 @@
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/mo-jkxx.png)
 
 
+
 ###  第3步：设置报警规则报警规则
 
+
 在第1步中，选择要设置报警规则的API分组，然后点击新增报警规则
+
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/mo-bjgz-list.png)
  
  
  
+ 
 更多详细设置请参考：
+
 
 - [设置报警规则](../../../../Management/Monitoring/Operation-Guide/site-monitoring/site-monitoring-alarm.md)
 
