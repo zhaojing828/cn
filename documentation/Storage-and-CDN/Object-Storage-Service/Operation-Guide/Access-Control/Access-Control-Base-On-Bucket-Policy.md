@@ -30,7 +30,7 @@ Bucket Policy是基于资源的授权策略。访问策略使用基于 JSON 的�
     - 条件（Condition）：描述策略生效的约束条件。条件包括操作符、操作键和操作值组成。条件值可包括Referer、IP 地址信息。该元素是非必填项。
    
 **说明：** 
-目前Bucket Policy与 IAM Policy 元素语法略有不同，请根据您的使用情况做好区分，不要混淆二者。
+目前Bucket Policy与 IAM Policy 元素语法略有不同，请做好区分，不要混淆二者。
 Bucket Policy 大小限制为16k。
      
     
@@ -42,7 +42,6 @@ Bucket Policy 大小限制为16k。
    
 **说明**
 - account-ID：为主账号的账户ID，获取方式：主账号登录京东云控制台后，点击账号管理，查看基本资料页即可获取。
-- 用户类型关键字：子用户（user）与主用户（root）
 - principal不支持通配符
 
 1.要授予京东云其他主账号权限
@@ -122,7 +121,7 @@ Bucket policy 中 Action 支持列表如下：
 ### Resource
 
 对于您的 OSS 资源，在Bucket policy 中与IAM policy中指定方式略有不同，Bucket policy 中指定OSS Resource表示方式为：
-您不需要指定区域和命名空间，如下所示用空格代替，relative-id指定您的OSS资源，可以是存储空间也可是其中一些或者某个对象，支持通配符（？与/*）。
+您不需要指定区域和命名空间，relative-id指定您的OSS资源，可以是存储空间也可是其中一些或者某个对象，支持通配符（？与/*）。
 ```
 arn:aws:s3:::relative-id
 //示例：
@@ -196,7 +195,7 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 		"Sid": "allowReferer",
 		"Effect": "Allow",
 		"Principal": {
-			"AWS": "arn:aws:iam::*"
+			"AWS": "*"
 		},
 		"Action": [
 			"s3:PutObject",
