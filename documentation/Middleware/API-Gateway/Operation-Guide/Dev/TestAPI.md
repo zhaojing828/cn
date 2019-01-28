@@ -21,6 +21,10 @@
 ###  第2步：进入API调试页
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/apigroup-apilist-testapi.png)
 
-
+输入以下信息进行调试：
+- 当API请求路径中包含参数时，在“路径 > 参数名称”处，输入参数值。
+- 当“匹配模式”为“前端匹配”时，在“路径 > Suffix”处，输入自定义路径。
+- 当Query中包含参数时，在“参数 > 参数名称”处，输入参数值。
+- 当Headers中包含参数时，在“请求头 > 参数名称”处，输入参数值。
 
 
