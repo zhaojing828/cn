@@ -39,7 +39,7 @@ items:
       href: Getting-Started/Video-Play.md
 - name: 操作指南
   items:
-    - name: 媒资管理
+    - name: 视频管理
       href: Operation-Guide/Media-Asset-Management.md
     - name: 视频处理
       href: Operation-Guide/Video-Processing.md
