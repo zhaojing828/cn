@@ -57,30 +57,28 @@ items:
       herf: Getting-Started/STEP5-Create-Auth.md
 - name: 操作指南
   items:
-    - name: 创建API分组
+    - name: API分组管理
       items:
         - name: 创建API分组
           herf: Create-APIGroup/Create-APIGroup.md
-    - name: 创建API
+        - name: 发布API分组
+          herf: Create-APIGroup/Create-Publish.md  
+        - name: 自定义域名
+          herf: Create-APIGroup/Create-Domain.md  
+    - name: API管理
       items:
         - name: 创建API
           herf: Create-API/Create-API.md
-    - name: API的访问授权
+        - name: API高级配置
+          herf: Create-API/Adv-API.md
+    - name: 访问授权
       items:
         - name: API的访问授权
           herf: Create-Auth/Create-Auth.md  
     - name: 后端签名
       items:
         - name: 后端签名
-          herf: Create-BackSign/Create-BackSign.md  
-    - name: 自定义域名
-      items:
-        - name: 自定义域名
-          herf: Create-Domain/Create-Domain.md  
-    - name: 发布API分组
-      items:
-        - name: 发布API分组
-          herf: Create-Publish/Create-Publish.md  
+          herf: Create-BackSign/Create-BackSign.md        
     - name: 流控策略
       items:
         - name: 流控策略
