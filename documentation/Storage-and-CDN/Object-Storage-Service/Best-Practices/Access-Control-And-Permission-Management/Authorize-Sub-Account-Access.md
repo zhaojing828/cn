@@ -42,15 +42,15 @@ IAM 详细介绍前往[IAM概述](https://docs.jdcloud.com/cn/iam/product-overvi
 
 - 步骤三：子账号访问主账号 OSS 资源（本期OSS控制台不支持子账号）
 OSS 访问（API 或 SDK）需要如下资源：AccessKeyId 、AccessKeySecret 。
-当使用子账号访问 OSS资源时，需要使用子账号的 AccessKeyId 和 AccessKeySecret，您可以在创建子账号时选择为子账号创建（Access Key）或者登陆访问管理控制台创建子账号的 AccessKeyId 和 AccessKeySecret。
+当使用子账号访问 OSS资源时，需要使用子账号的 AccessKeyId 和 AccessKeySecret，您可以在创建子账号时选择为子账号创建（Access Key）或者登陆访问管理控制台创建子账号的 AccessKeyId(Access Key) 和 AccessKeySecret(Secret Key)。
 
 方法一：创建子账号时选择为创建子账号（Access Key）
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-115.png)
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-116.jpg)
 
-方法二：登陆访问管理控制台创建或者查看子账号的 AccessKeyId 和 AccessKeySecret。
+方法二：登陆访问管理控制台创建或者查看子账号的 Access Key 和 Secret Key。
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-117.png)
-然后使用子账号 AccessKeyId 和 AccessKeySecret，利用OSS API 或SDK访问OSS，该操作与主账号相同。
+然后使用子账号 AccessKeyID 和 AccessKeySecret，利用OSS API 或SDK访问OSS，该操作与主账号相同。
 
 ### 使用Bucket policy 授权子账号
 
