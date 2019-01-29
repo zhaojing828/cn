@@ -5,7 +5,7 @@
 
 ![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%BD%AC%E7%A0%81%E8%AE%BE%E7%BD%AE1.png)
 
-![](https://github.com/jdcloudcom/cn/blob/6095a336fd4c1d5c1e448a37e933d569414fe918/image/Video-on-Demand/%E8%BD%AC%E7%A0%81%E8%AE%BE%E7%BD%AE2.png)
+![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E6%A8%A1%E6%9D%BF%E7%BC%96%E7%A0%81%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.png)
 
 ## 2.水印设置
 登录视频点播控制台，点击左侧菜单栏“视频点播”-“全局配置”-“水印设置”，进入“水印设置”，可以点击“添加水印模板”，添加新的水印模板。对于已有的水印模板，可在模板列表中点击“编辑”，进入模板编辑页面，修改模板中的水印参数。
