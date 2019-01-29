@@ -452,6 +452,5 @@ ipfs cat <cid> file 下载 IPFS 网络中的文件到本地
 API列表：https://docs.ipfs.io/reference/api/cli/
 
 ### 2.非公网IPFS文件能否同步至OSS？
-
 <div id="user-content-15”></div>
 不能，同步任务会失败。
