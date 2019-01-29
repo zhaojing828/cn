@@ -54,7 +54,12 @@
             - name: 概述
               href: Operation-Guide/Database/Expand-Database/Database-Expansion-Introduction.md
             - name: 水平扩容
-              href: Operation-Guide/Database/Expand-Database/Database-Expansion.md              
+              href: Operation-Guide/Database/Expand-Database/Database-Expansion.md  
+            - name: 查看扩容任务
+              href: Operation-Guide/Database/Expand-Database/View-Expansion-Task.md
+            - name: 检查并清理
+              href: Operation-Guide/Database/Expand-Database/Drop-Migrated-Databases.md               
+              
       - name: 表管理
         items:
           - name: 创建表
