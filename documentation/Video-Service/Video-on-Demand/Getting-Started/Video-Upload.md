@@ -1,6 +1,6 @@
 # 视频上传
 
-登陆视频点播控制台，点击左侧菜单栏“视频上传”或“视频管理”-“视频上传”，进入“文件上传”页面。
+登录视频点播控制台，点击左侧菜单栏“视频上传”或“视频管理”-“视频上传”，进入“文件上传”页面。
 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E8%A7%86%E9%A2%91%E4%B8%8A%E4%BC%A01.png)
 
