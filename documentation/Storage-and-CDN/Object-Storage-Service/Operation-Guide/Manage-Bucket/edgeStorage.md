@@ -53,7 +53,7 @@
 备注：确认“边缘存储”服务是已经开启的状态，才能在进行以下操作。
 
 2.OSS同步至边缘存储
-<div id="user-content-7”></div>
+<div id="user-content-7"></div>
 
 1）登入控制台->对象存储->空间管理->进入某个Bucket->Object管理
 
@@ -70,7 +70,7 @@
 4）单击“确定”按钮，页面右上出现任务数量及查看详情。
 
 3.边缘存储同步至OSS。
-<div id="user-content-8”></div>
+<div id="user-content-8"></div>
 
 1）登入控制台->对象存储->边缘存储->文件管理
 
@@ -90,7 +90,7 @@
 
 
 ## API统一信息
-<div id="user-content-9”></div>
+<div id="user-content-9"></div>
 
 - 服务域名：apigw-internal.cn-north-1.jcloudcs.com
 - 认证: [JD API 网关](https://www.jdcloud.com/cn/products/api-gateway) 统一认证
