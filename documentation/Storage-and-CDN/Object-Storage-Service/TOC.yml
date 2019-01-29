@@ -51,10 +51,8 @@ items:
              href: Operation-Guide/Manage-Bucket/Create-Bucket-2.md
            - name: 删除存储空间
              href: Operation-Guide/Manage-Bucket/Delete-Bucket-2.md  
-           - name: 权限设置
-             href: Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md  
            - name: 访问权限设置
-             href: Operation-Guide/Manage-Bucket/Modifiy-Access-Control.md 
+             href: Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md  
            - name: 跨域访问设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-CORS-2.md                 
            - name: 静态网站托管设置
