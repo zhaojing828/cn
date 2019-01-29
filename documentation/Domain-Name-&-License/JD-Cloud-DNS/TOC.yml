@@ -66,7 +66,9 @@
     - name: 反向解析
       href: FAQ/Reverse.md    
     - name: TTL介绍
-      href: FAQ/TTL.md         
+      href: FAQ/TTL.md
+    - name: DNS FLag day说明
+      href: Solutions-to-DNS-FLag-day.md
   - name: 相关资源
     items:
     - name: 文档历史记录
