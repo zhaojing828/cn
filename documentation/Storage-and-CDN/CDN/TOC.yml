@@ -165,8 +165,6 @@
             href: API-Reference/Live-Video-Open-Api/Query-stream-data.md
           - name: 分区域运营商详细数据统计
             href: API-Reference/Live-Video-Open-Api/Area-isp-statistics.md
-          - name: 直播CDN OPEN API
-            href: API-Reference/Live-Video-Open-Api/Live-Video-Open-Api.md
           - name: 回源策略变更
             href: API-Reference/Live-Video-Open-Api/Change-Live-Back-To-Source.md
           - name: 服务状态变更
