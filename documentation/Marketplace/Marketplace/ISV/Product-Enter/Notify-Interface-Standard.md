@@ -25,7 +25,7 @@ http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx
 2   进行排序操作：不用url encode
 sort（P1，P2，P3）；                
 
-3   token值：   URLEncoder.encode(拼接后字符串, "utf-8");
+3  	token值：拼接后字符串;
 “p1=1&p2=2&p3=3&key=isvkey”.toMD5()
 
 文档最后有实例代码
@@ -38,15 +38,16 @@ qweqeqeqe123123123131
 
 测试参数：
 
-accountNum=1&action=createInstance&email=bujiaban%40jd.com&expiredOn=2018-06-30+23%3A59%3A59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
+accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30 23:59:59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
 # 4接口描述
 l   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
 
 2   服务商需要返回此订单对应的交付实例唯一 ID（instanceId）。建议此 ID 直接使用云市场传入 的 orderBizId。
 
-3   请不要阻塞此接口，若耗时较长，可使用队列做缓冲，设置 instanceId=0，然后立即返回。若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到有效 instanceId。如果一直没有获取到有效 instanceId，云市场会持续调用到 200 次后停止调用，如服务商接口问题已解决，需要重新请求调用，请服务商登录服务商管理后台（http://i-market.jcloud.com/）--交易管理—订购记录查询页面中点击“重置实例”。 当instanceId=0或异常该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性。
+3   请不要阻塞此接口，若耗时较长(京东云市场端设置的超时时间为10s)，可使用队列做缓冲，设置 instanceId=0，然后立即返回。若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到有效 instanceId。如果一直没有获取到有效 instanceId，云市场会持续调用到 200 次后停止调用，如服务商接口问题已解决，需要重新请求调用，请服务商登录服务商管理后台（http://i-market.jcloud.com/）--交易管理—订购记录查询页面中点击“重置实例”。 当instanceId=0或异常该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性。
 
 注意： 按数量售卖的服务产生的订单，会根据购买数量多次调用接口，传参orderBizId会不同，每次调用处理请返回一个交付实例。
+服务商对外只提供一个接口，通过请求参数action的值区分，处理不同的业务逻辑。如action=createInstance，则代表新购。
 4.1 新购商品
 4.1.1描述
 l  用户下单并支付成功后，云市场调用新购服务接口，传入用户信息和订单信息。服务商按照传入的参数，在其系统中进行交付动作，并通过Json格式将实例信息返回给云市场。云市场接收到返回值后会保存信息并反馈给用户。接口调用流程如下图：
@@ -58,7 +59,180 @@ l  服务商返回值中需要包含此订单所创建实例的唯一 ID（insta
 3  该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性
 
 4.1.2请求参数
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A34.png)
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">参数名</th>
+    <th class="tg-0pky">类型</th>
+    <th class="tg-0pky">必选</th>
+    <th class="tg-0pky">说明</th>
+    <th class="tg-0pky"></th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">token</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">是</td>
+    <td class="tg-0pky">安全校验令牌</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">action</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">是</td>
+    <td class="tg-0pky">“createInstance”</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">jdPin</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">是</td>
+    <td class="tg-0pky">用户在京东云的账号标识，具有唯一性</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">orderBizId</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">是</td>
+    <td class="tg-0pky">云市场业务 ID，订购关系ID</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">orderId</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">是</td>
+    <td class="tg-0pky">对应订单的ID</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">serviceCode</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">是</td>
+    <td class="tg-0pky">服务对应的编码，可在服务商后台的服务列表中查看到</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">skuId</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">是</td>
+    <td class="tg-0pky">服务的收费项目ID；</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">mobile</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky">用户的手机号</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">email</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky">用户的邮箱</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">template</td>
+    <td class="tg-0pky">String</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky">模板ID，适用于模板类建站商品</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">expiredOn</td>
+    <td class="tg-0pky">DateTime</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky">对应订单的到期时间，格式：yyyy-MM-dd HH:mm:ss；</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">accountNum</td>
+    <td class="tg-0pky">Integer</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky">交付类型为软件类，计费方式为按周期的服务，交付时支持的账户数量。此参数默认值为1</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">extraInfo</td>
+    <td class="tg-0pky">Json</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Key</td>
+    <td class="tg-0pky">说明</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky">specification</td>
+    <td class="tg-0pky">产品规格,如10</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky">Key1</td>
+    <td class="tg-0pky">Key1，如test</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">additionInfo</td>
+    <td class="tg-0pky">Json</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Key</td>
+    <td class="tg-0pky">说明</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">额外计费项参数</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">yangbenshu</td>
+    <td class="tg-0pky">例如：样本数:100</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">diyu</td>
+    <td class="tg-0pky">例如：地域：北京</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">appCode</td>
+    <td class="tg-0pky">应用编码</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">ME+参数</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">tenantCode</td>
+    <td class="tg-0pky">企业编码</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">ME+参数</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">userCode</td>
+    <td class="tg-0pky">用户编码</td>
+    <td class="tg-0pky">否</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">ME+参数</td>
+  </tr>
+</table>
+
+说明：extraInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品的规格10G、100M；用户购买账号数：5；
+additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数1个10元；北京地区5元。
+
 4.1.3返回参数
 ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A35.png)
 说明：appInfo 字段包含客户购买商品后，登录服务地址（网站地址）进行后续操作，或者实现客户免登陆访问（需要返回免登地址）所需的相关信息。
@@ -67,7 +241,7 @@ Info 字段是当 appinfo 无法满足服务商特殊登录要求时，可以自
 
 4.1.4示例
 请求：
-http://www.isvwebsite.com?action=createInstance&email=&expiredOn=2017-01-08+00%3A00%3A00&jdPin=test_jdb22&mobile=&orderBizId=423499&orderId=519801&serviceCode=FW_GOODS-409717&skuId=FW_GOODS-409717-1&template=&token=7e8970385f7f263074a48852aeda12a5&extraInfo={"key1":"1","key1","2"}
+http://www.isvwebsite.com?action=createInstance&email=&expiredOn=2017-01-08+00%3A00%3A00&jdPin=test_jdb22&mobile=&orderBizId=423499&orderId=519801&serviceCode=FW_GOODS-409717&skuId=FW_GOODS-409717-1&template=&token=7e8970385f7f263074a48852aeda12a5&extraInfo={"key1":"1","key1","2"}&additionInfo ={"key1":"1","key1","2"}
 返回：
 ```
 {
@@ -150,13 +324,109 @@ http://www.isvwebsite.com?token=9560d4d52cab35689fd5d472f28119ab&action=verify&i
 
 
 4.5.2请求参数
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A313.png)
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-0lax">参数名</th>
+    <th class="tg-0lax">类型</th>
+    <th class="tg-0lax">必选</th>
+    <th class="tg-0lax">说明</th>
+    <th class="tg-0lax"></th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">token</td>
+    <td class="tg-0lax">String</td>
+    <td class="tg-0lax">是</td>
+    <td class="tg-0lax">安全校验令牌</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">action</td>
+    <td class="tg-0lax">String</td>
+    <td class="tg-0lax">是</td>
+    <td class="tg-0lax">“upgradeInstance”</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">orderId</td>
+    <td class="tg-0lax">String</td>
+    <td class="tg-0lax">是</td>
+    <td class="tg-0lax">对应订单的ID</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">instanceId</td>
+    <td class="tg-0lax">String</td>
+    <td class="tg-0lax">是</td>
+    <td class="tg-0lax">升级服务对应的实例ID</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">skuId</td>
+    <td class="tg-0lax">String</td>
+    <td class="tg-0lax">是</td>
+    <td class="tg-0lax">服务的收费项目ID；</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">extraInfo</td>
+    <td class="tg-0lax">Json</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Key</td>
+    <td class="tg-0lax">说明</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">否</td>
+    <td class="tg-0lax">specification</td>
+    <td class="tg-0lax">产品规格,如20</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">additionInfo</td>
+    <td class="tg-0lax">Json</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">额外计费项参数</td>
+    <td class="tg-0lax">否</td>
+    <td class="tg-0lax">Key</td>
+    <td class="tg-0lax">说明</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">yangbenshu</td>
+    <td class="tg-0lax">例如：样本数:100</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">diyu</td>
+    <td class="tg-0lax">例如：地域：北京</td>
+  </tr>
+</table>
+
+
 说明：extraInfo：Json格式 key-value动态字段，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品的规格升级到20G；
+additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数升级到1个15元；北京地区10元。
+
 4.5.3返回参数
 ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A314.png)
 4.5.4示例
 l  请求
-http://www.isvwebsite.com?action=upgradeInstance&skuId=FW-123-1instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f&extraInfo={"key1":"1","key1","2"} 
+http://www.isvwebsite.com?action=upgradeInstance&skuId=FW-123-1instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f&extraInfo={"key1":"1","key1","2"}&additionInfo ={"key1":"1","key1","2"} 
 
 2  返回
 `{‘success’:true’, ‘authCode:’123456789’, ‘message’:’renew suecess’}`
