@@ -27,11 +27,11 @@
 
 - ### **请求地址**
 
-https://opencdn.jcloud.com/api/live/ area_isp_data
+https://opencdn.jcloud.com/api/live/area_isp_data
 
 - ### **请求示例**
 
-https://opencdn.jcloud.com/api/live/ area_isp_data
+https://opencdn.jcloud.com/api/live/area_isp_data
 ```
 {
     "username" :"test_user",
