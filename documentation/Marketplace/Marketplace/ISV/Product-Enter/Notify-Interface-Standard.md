@@ -22,7 +22,7 @@
         取每次http get 请求参数中除token以外的其它所有参数，对参数名进行字典排序，在排序后的字符串最后加上 &key=[isv的key值]，然后对整个字符串进行 md5 加密，加密后的字符串作为token值。
 
    3.3.3示例</br>
-         l 服务商收到的请求示例：</br>
+         1 服务商收到的请求示例：</br>
                   http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx    </br>            
          2 进行排序操作：不用url encode</br>
                   sort（P1，P2，P3）； </br>               
@@ -35,27 +35,27 @@
                   accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30 23:59:59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
 
 # 4接口描述
-l   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
+   1   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
 
-2   服务商需要返回此订单对应的交付实例唯一 ID（instanceId）。建议此 ID 直接使用云市场传入 的 orderBizId。
+   2   服务商需要返回此订单对应的交付实例唯一 ID（instanceId）。建议此 ID 直接使用云市场传入 的 orderBizId。
 
-3   请不要阻塞此接口，若耗时较长(京东云市场端设置的超时时间为10s)，可使用队列做缓冲，设置 instanceId=0，然后立即返回。若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到有效 instanceId。如果一直没有获取到有效 instanceId，云市场会持续调用到 200 次后停止调用，如服务商接口问题已解决，需要重新请求调用，请服务商登录服务商管理后台（http://i-market.jcloud.com/）--交易管理—订购记录查询页面中点击“重置实例”。 当instanceId=0或异常该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性。
+   3   请不要阻塞此接口，若耗时较长(京东云市场端设置的超时时间为10s)，可使用队列做缓冲，设置 instanceId=0，然后立即返回。若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到有效 instanceId。如果一直没有获取到有效 instanceId，云市场会持续调用到 200 次后停止调用，如服务商接口问题已解决，需要重新请求调用，请服务商登录服务商管理后台（http://i-market.jcloud.com/）--交易管理—订购记录查询页面中点击“重置实例”。 当instanceId=0或异常该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性。
 
-    注意： 按数量售卖的服务产生的订单，会根据购买数量多次调用接口，传参orderBizId会不同，每次调用处理请返回一个交付实例。
-    服务商对外只提供一个接口，通过请求参数action的值区分，处理不同的业务逻辑。如action=createInstance，则代表新购。
-    
+          注意： 按数量售卖的服务产生的订单，会根据购买数量多次调用接口，传参orderBizId会不同，每次调用处理请返回一个交付实例。
+          服务商对外只提供一个接口，通过请求参数action的值区分，处理不同的业务逻辑。如action=createInstance，则代表新购。
+
 4.1 新购商品
 
 4.1.1描述
 
-      l  用户下单并支付成功后，云市场调用新购服务接口，传入用户信息和订单信息。服务商按照传入的参数，在其系统中进行交付动作，并通过Json格式将实例信息返回给云市场。云市场接收到返回值后会保存信息并反馈给用户。接口调用流程如下图：
+   1 用户下单并支付成功后，云市场调用新购服务接口，传入用户信息和订单信息。服务商按照传入的参数，在其系统中进行交付动作，并通过Json格式将实例信息返回给云市场。云市场接收到返回值后会保存信息并反馈给用户。接口调用流程如下图：
             ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A33.jpg)
         
-      2  服务商返回值中需要包含此订单所创建实例的唯一 ID（instanceId）。 建议此 ID 直接使用云市场传入的 orderBizId。
+   2 服务商返回值中需要包含此订单所创建实例的唯一 ID（instanceId）。 建议此 ID 直接使用云市场传入的 orderBizId。
          
-      3  请不要阻塞此接口，若耗时较长，可使用队列做缓冲，设置 instanceId=0，然后立即返回。 若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到 instanceId。
+   3 请不要阻塞此接口，若耗时较长，可使用队列做缓冲，设置 instanceId=0，然后立即返回。 若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到 instanceId。
 
-      4  该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性
+   4 该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性
 
 4.1.2请求参数
    <table class="tg">
@@ -298,7 +298,7 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E4%B8%BB%E5%8A%A8%E9%80%9A%E7%9F%A511.png)
 
 4.3.3示例</br>
-    l  请求
+    1  请求
         http://www.isvwebsite.com?token=9560d4d52cab35689fd5d472f28119ab&action=verify&instanceId=1001&timeStamp=2016-12-01+10%3A30%3A01              
     2  返回
             登陆成功页面
@@ -407,7 +407,7 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A314.png)
 
 4.4.4示例</br>
-     l  请求</br>
+     1  请求</br>
             http://www.isvwebsite.com?action=upgradeInstance&skuId=FW-123-1instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f&extraInfo={"key1":"1","key1","2"}&additionInfo ={"key1":"1","key1","2"} 
 
      2  返回</br>
@@ -427,7 +427,7 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A317.png)
 
 4.5.4示例</br>
-    l  请求
+    1  请求
 ```
             http://www.isvwebsite.com?action=dilateInstance&accountNum=1&instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f&extraInfo={"key1":"1","key1","2"}
 ```
@@ -446,10 +446,9 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
 4.6.3返回参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A320.png)
 
-4.6.4示例
-    l  请求
-            http://www.isvwebsite.com? action=   expiredInstance &instanceId=424499_520001_FW_GOODS-409717-1&token=cb0a8e6348de9d12e74a085a28bf00fe
-
+4.6.4示例</br>
+    1 请求
+            http://www.isvwebsite.com? action=   expiredInstance &instanceId=424499_520001_FW_GOODS-409717-1&token=cb0a8e6348de9d12e74a085a28bf00fe</br></br>
     2  返回
             `{‘success’: true,’message’:’ expiredInstance success’}`
 
