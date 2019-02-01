@@ -282,7 +282,7 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/通知接口7.png)
 
 4.2.3返回参数</br>
-        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/通知接口8.jpg)
+        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/通知接口8.png)
         
 4.2.4示例
 
