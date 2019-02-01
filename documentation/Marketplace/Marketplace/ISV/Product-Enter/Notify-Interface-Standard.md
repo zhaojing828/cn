@@ -237,11 +237,12 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
 
          Info 字段是当 appinfo 无法满足服务商特殊登录要求时，可以自定义 key-value 字段，以提供给客户新购商品后的操作方法。
 
-4.1.4示例
-         请求：
+4.1.4示例</br>
+ 请求：
          http://www.isvwebsite.com?action=createInstance&email=&expiredOn=2017-01-08+00%3A00%3A00&jdPin=test_jdb22&mobile=&orderBizId=423499&orderId=519801&serviceCode=FW_GOODS-409717&skuId=FW_GOODS-409717-1&template=&token=7e8970385f7f263074a48852aeda12a5&extraInfo={"key1":"1","key1","2"}&additionInfo ={"key1":"1","key1","2"}
-         返回：
-         ```
+返回：
+         
+```
          {
 
                 "instanceId":   "1001",
@@ -268,6 +269,7 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
 
          }
 ```
+
 
 4.2 续费：
     
