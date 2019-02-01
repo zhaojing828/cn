@@ -280,7 +280,7 @@
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/通知接口8.png)</br>
         
 4.2.4示例</br>
-    l  请求</br>
+    1  请求</br>
         http://www.isvwebsite.com? action=renewInstance&expiredOn=2017-12-06+00%3A00%3A00&instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f</br></br>
     2  返回</br>
         `{‘success’:true’, ‘authCode:’123456789’, ‘message’:’renew suecess’}` 
