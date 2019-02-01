@@ -59,13 +59,8 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
         4  该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性
 
 4.1.2请求参数
-   <style type="text/css">
-   .tg  {border-collapse:collapse;border-spacing:0;}
-   .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-   .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-   .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-   </style>
    <table class="tg">
+   <thead>
    <tr>
    <th class="tg-0pky">参数名</th>
    <th class="tg-0pky">类型</th>
@@ -73,6 +68,8 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
    <th class="tg-0pky">说明</th>
    <th class="tg-0pky"></th>
    </tr>
+      </thead>
+   <tbody>
    <tr>
    <td class="tg-0pky">token</td>
    <td class="tg-0pky">String</td>
@@ -227,6 +224,7 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
    <td class="tg-0pky"></td>
    <td class="tg-0pky">ME+参数</td>
    </tr>
+   </tbody>
    </table>
          说明：extraInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品的规格10G、100M；用户购买账号数：5；
          additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数1个10元；北京地区5元。
@@ -291,52 +289,30 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
     2  返回
         `{‘success’:true’, ‘authCode:’123456789’, ‘message’:’renew suecess’}` 
     
-4.3 释放
+
+4.3 免登
 
 4.3.1描述
-云市场将在取消订购商品并退款成功后调用该接口，服务商在该接口的实现中可以删除指定的实例。接口调用流程如下图：
-        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A39.jpg)
-        
- 4.3.2请求参数
-        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A39.png)
-        
- 4.3.3返回参数
-        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A310.png)
- 
- 4.3.4示例
-        l  请求
-            http://www.isvwebsite.com?action=releaseInstance&instanceId=424499_520001_FW_GOODS-409717-1&token=cb0a8e6348de9d12e74a085a28bf00fe
-        2  返回
-            `{‘success’: true,’message’:’release success’} `               
-
-4.4 免登
-
-4.4.1描述
      客户购买商品后，可通过免登接口登录到服务商系统。云市场会根据“新购商品”接口返回的 appInfo 中的 authUrl，结合下面参数组织一个用于免登的 url 地址，ISV 接到此url 的请求后，验证 token 是否合法，确认 timeStamp 是否符合 ISV 约束的时间，来进行 ISV 管理后的自动登录。
 
-4.4.2请求参数
+4.3.2请求参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E4%B8%BB%E5%8A%A8%E9%80%9A%E7%9F%A511.png)
 
-4.4.3示例
+4.3.3示例
     l  请求
         http://www.isvwebsite.com?token=9560d4d52cab35689fd5d472f28119ab&action=verify&instanceId=1001&timeStamp=2016-12-01+10%3A30%3A01              
     2  返回
             登陆成功页面
 
-4.5 升级
+4.4 升级
 
-4.5.1描述
+4.4.1描述
         用户升级并支付成功后，云市场调用升级接口，传入实例ID、新版本。服务商将其系统中维护的版本进行更新，并返回是否成功标识。云市场接收到返回值后，对服务实例做相应处理。接口调用流程如下图：
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A312.jpg)
 
-4.5.2请求参数
-        <style type="text/css">
-        .tg  {border-collapse:collapse;border-spacing:0;}
-        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-        .tg .tg-0lax{text-align:left;vertical-align:top}
-        </style>
+4.4.2请求参数
         <table class="tg">
+          <thead>
           <tr>
             <th class="tg-0lax">参数名</th>
             <th class="tg-0lax">类型</th>
@@ -344,6 +320,8 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
             <th class="tg-0lax">说明</th>
             <th class="tg-0lax"></th>
           </tr>
+   </thead>
+   <tbody>
           <tr>
             <td class="tg-0lax">token</td>
             <td class="tg-0lax">String</td>
@@ -421,34 +399,35 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
             <td class="tg-0lax">diyu</td>
             <td class="tg-0lax">例如：地域：北京</td>
           </tr>
+   </tbody>
         </table>
         说明：extraInfo：Json格式 key-value动态字段，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品的规格升级到20G；
         additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数升级到1个15元；北京地区10元。
 
-4.5.3返回参数
+4.4.3返回参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A314.png)
 
-4.5.4示例
-     l  请求
+4.4.4示例
+     l  请求</br>
             http://www.isvwebsite.com?action=upgradeInstance&skuId=FW-123-1instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f&extraInfo={"key1":"1","key1","2"}&additionInfo ={"key1":"1","key1","2"} 
 
-     2  返回
-            `{‘success’:true’, ‘authCode:’123456789’, ‘message’:’renew suecess’}`
+     2  返回</br>
+     `{‘success’:true’, ‘authCode:’123456789’, ‘message’:’renew suecess’}`
 
-4.6 扩容
+4.5 扩容
 
-4.6.1描述
+4.5.1描述
         用户扩容并支付成功后，云市场调用扩容接口，传入实例ID、新版本。服务商将其系统中维护的版本进行更新，并返回是否成功标识。云市场接收到返回值后，对服务实例做相应处理。接口调用流程如下图：
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A315.jpg)
 
-4.6.2请求参数
+4.5.2请求参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A316.png)
         说明：extraInfo：Json格式 key-value动态字段，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品扩容的规格20G；用户扩容账号数：5；
 
-4.6.3返回参数
+4.5.3返回参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A317.png)
 
-4.6.4示例
+4.5.4示例
     l  请求
 ```
             http://www.isvwebsite.com?action=dilateInstance&accountNum=1&instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f&extraInfo={"key1":"1","key1","2"}
@@ -457,18 +436,18 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
      2  返回
             `{‘success’:true’, ‘authCode:’123456789’, ‘message’:’dilatesuccess’}`
 
-4.7过期
-4.7.1描述
+4.6过期
+4.6.1描述
         云市场将在订购商品过期后调用该接口，服务商在该接口的实现中可以将指定的实例置为过期。接口调用流程如下图：
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A318.png)
  
-4.7.2请求参数
+4.6.2请求参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A319.png)
 
-4.7.3返回参数
+4.6.3返回参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A320.png)
 
-4.7.4示例
+4.6.4示例
     l  请求
             http://www.isvwebsite.com? action=   expiredInstance &instanceId=424499_520001_FW_GOODS-409717-1&token=cb0a8e6348de9d12e74a085a28bf00fe
 
