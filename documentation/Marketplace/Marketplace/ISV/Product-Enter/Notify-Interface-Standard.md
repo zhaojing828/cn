@@ -22,7 +22,6 @@
         取每次http get 请求参数中除token以外的其它所有参数，对参数名进行字典排序，在排序后的字符串最后加上 &key=[isv的key值]，然后对整个字符串进行 md5 加密，加密后的字符串作为token值。
 
    3.3.3示例
-   
    l 服务商收到的请求示例：</br>
             http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx                
 
@@ -38,7 +37,6 @@
             accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30 23:59:59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
 
 # 4接口描述
-
 l   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
 
 2   服务商需要返回此订单对应的交付实例唯一 ID（instanceId）。建议此 ID 直接使用云市场传入 的 orderBizId。
