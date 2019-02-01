@@ -6,6 +6,7 @@
 # 3安全
 3.1 描述
 为保证京东云市场和第三方应用之间的通信安全，云市场每次调用应用接口时参数中会添加一个token作为安全令牌。应用接口收到请求后根据生成规则生成 token 值，并与接口参数中获取的 token 值进行比较，完全相同即为校验通过。token值由每次传递的参数和云市场为服务商分配的key共同构成。
+
 3.2 Key值获取
 在服务商管理后台（http://i-market.jdcloud.com/）信息管理>基本信息页面获取。
 
@@ -520,8 +521,8 @@ public class Md5Util {
     private static final String hexDigits[] = {"0", "1", "2", "3", "4", "5",
             "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
 
-    public static void main(String[] args) {
-        String md2 = Md5Util.md5Encode("accountNum=1&action=createInstance&email=bujiaban@jd.com&expi
+  public static void main(String[] args) {
+        String md2 = Md5Util.md5Encode("accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30  
 
 ```
 
