@@ -23,9 +23,9 @@
 
    3.3.3示例</br>
          l 服务商收到的请求示例：</br>
-                  http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx                
+                  http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx    </br>            
          2 进行排序操作：不用url encode</br>
-                  sort（P1，P2，P3）；                
+                  sort（P1，P2，P3）； </br>               
          3 token值：拼接后字符串;</br>
                   “p1=1&p2=2&p3=3&key=isvkey”.toMD5()</br>
                   文档最后有实例代码</br>
