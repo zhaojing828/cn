@@ -15,20 +15,20 @@
 
    3.3 token值生成
 
-        3.3.1 说明
+   3.3.1 说明
         token值作为云市场与服务商之间进行安全校验必有参数，云市场每次调用服务 商接口的参数中都会带有 token 值。服务商根据生成规则生成 token值，并与接口中获取的 token 值进行比较。完全相同即为校验通过。
 
-         3.3.2生成规则
+   3.3.2生成规则
         取每次http get 请求参数中除token以外的其它所有参数，对参数名进行字典排序，在排序后的字符串最后加上 &key=[isv的key值]，然后对整个字符串进行 md5 加密，加密后的字符串作为token值。
 
-        3.3.3示例
-            l   服务商收到的请求示例：
+   3.3.3示例
+       l   服务商收到的请求示例：
             http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx                
 
-            2   进行排序操作：不用url encode
+       2   进行排序操作：不用url encode
             sort（P1，P2，P3）；                
 
-            3  	token值：拼接后字符串;
+       3  	token值：拼接后字符串;
             “p1=1&p2=2&p3=3&key=isvkey”.toMD5()
             文档最后有实例代码
             测试key:
@@ -37,25 +37,27 @@
             accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30 23:59:59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
 
 # 4接口描述
-    l   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
+l   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
 
-    2   服务商需要返回此订单对应的交付实例唯一 ID（instanceId）。建议此 ID 直接使用云市场传入 的 orderBizId。
+2   服务商需要返回此订单对应的交付实例唯一 ID（instanceId）。建议此 ID 直接使用云市场传入 的 orderBizId。
 
-    3   请不要阻塞此接口，若耗时较长(京东云市场端设置的超时时间为10s)，可使用队列做缓冲，设置 instanceId=0，然后立即返回。若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到有效 instanceId。如果一直没有获取到有效 instanceId，云市场会持续调用到 200 次后停止调用，如服务商接口问题已解决，需要重新请求调用，请服务商登录服务商管理后台（http://i-market.jcloud.com/）--交易管理—订购记录查询页面中点击“重置实例”。 当instanceId=0或异常该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性。
+3   请不要阻塞此接口，若耗时较长(京东云市场端设置的超时时间为10s)，可使用队列做缓冲，设置 instanceId=0，然后立即返回。若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到有效 instanceId。如果一直没有获取到有效 instanceId，云市场会持续调用到 200 次后停止调用，如服务商接口问题已解决，需要重新请求调用，请服务商登录服务商管理后台（http://i-market.jcloud.com/）--交易管理—订购记录查询页面中点击“重置实例”。 当instanceId=0或异常该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性。
 
     注意： 按数量售卖的服务产生的订单，会根据购买数量多次调用接口，传参orderBizId会不同，每次调用处理请返回一个交付实例。
     服务商对外只提供一个接口，通过请求参数action的值区分，处理不同的业务逻辑。如action=createInstance，则代表新购。
-    4.1 新购商品
-        4.1.1描述
-            l  用户下单并支付成功后，云市场调用新购服务接口，传入用户信息和订单信息。服务商按照传入的参数，在其系统中进行交付动作，并通过Json格式将实例信息返回给云市场。云市场接收到返回值后会保存信息并反馈给用户。接口调用流程如下图：
+    
+4.1 新购商品
+    4.1.1描述
+        l  用户下单并支付成功后，云市场调用新购服务接口，传入用户信息和订单信息。服务商按照传入的参数，在其系统中进行交付动作，并通过Json格式将实例信息返回给云市场。云市场接收到返回值后会保存信息并反馈给用户。接口调用流程如下图：
             ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A33.jpg)
-            2  服务商返回值中需要包含此订单所创建实例的唯一 ID（instanceId）。 建议此 ID 直接使用云市场传入的 orderBizId。
+            
+        2  服务商返回值中需要包含此订单所创建实例的唯一 ID（instanceId）。 建议此 ID 直接使用云市场传入的 orderBizId。
 
-            3  请不要阻塞此接口，若耗时较长，可使用队列做缓冲，设置 instanceId=0，然后立即返回。 若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到 instanceId。
+        3  请不要阻塞此接口，若耗时较长，可使用队列做缓冲，设置 instanceId=0，然后立即返回。 若操作失败也请设置 instanceId=0，云市场都会再次调用，直到获取到 instanceId。
 
-            4  该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性
+        4  该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性
 
-         4.1.2请求参数
+    4.1.2请求参数
    <style type="text/css">
    .tg  {border-collapse:collapse;border-spacing:0;}
    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -225,17 +227,16 @@
    <td class="tg-0pky">ME+参数</td>
    </tr>
    </table>
-
          说明：extraInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品的规格10G、100M；用户购买账号数：5；
          additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数1个10元；北京地区5元。
 
-         4.1.3返回参数
+    4.1.3返回参数
          ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A35.png)
          说明：appInfo 字段包含客户购买商品后，登录服务地址（网站地址）进行后续操作，或者实现客户免登陆访问（需要返回免登地址）所需的相关信息。
 
          Info 字段是当 appinfo 无法满足服务商特殊登录要求时，可以自定义 key-value 字段，以提供给客户新购商品后的操作方法。
 
-         4.1.4示例
+    4.1.4示例
          请求：
          http://www.isvwebsite.com?action=createInstance&email=&expiredOn=2017-01-08+00%3A00%3A00&jdPin=test_jdb22&mobile=&orderBizId=423499&orderId=519801&serviceCode=FW_GOODS-409717&skuId=FW_GOODS-409717-1&template=&token=7e8970385f7f263074a48852aeda12a5&extraInfo={"key1":"1","key1","2"}&additionInfo ={"key1":"1","key1","2"}
          返回：
@@ -266,25 +267,25 @@
 
          }
          ```
-    4.2 续费：
-        4.2.1描述
+4.2 续费：
+    4.2.1描述
 
         用户续费并支付成功后，云市场调用续费接口，传入实例ID、新到期日。服务商将其系统中维护的到期日进行更新，并返回是否成功标识。云市场接收到返回值后，对服务实例做相应处理。接口调用流程如下图：
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A36.jpg)
 
-        4.2.2请求参数
+    4.2.2请求参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A37.jpg)
         
-        4.2.3返回参数
+    4.2.3返回参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A38.jpg)
         
-        4.2.4示例
+    4.2.4示例
         l  请求
         http://www.isvwebsite.com? action=renewInstance&expiredOn=2017-12-06+00%3A00%3A00&instanceId=1002&orderId=520801&token=475f28682b5d0d1af820ffd477c1188f
         
         2  返回
         `{‘success’:true’, ‘authCode:’123456789’, ‘message’:’renew suecess’}` 
-
+    
     4.3 释放
         4.3.1描述
         云市场将在取消订购商品并退款成功后调用该接口，服务商在该接口的实现中可以删除指定的实例。接口调用流程如下图：
@@ -299,26 +300,25 @@
             2  返回
             `{‘success’: true,’message’:’release success’} `               
 
-    4.4 免登
-        4.4.1描述
+4.4 免登
+     4.4.1描述
+     客户购买商品后，可通过免登接口登录到服务商系统。云市场会根据“新购商品”接口返回的 appInfo 中的 authUrl，结合下面参数组织一个用于免登的 url 地址，ISV 接到此url 的请求后，验证 token 是否合法，确认 timeStamp 是否符合 ISV 约束的时间，来进行 ISV 管理后的自动登录。
 
-        客户购买商品后，可通过免登接口登录到服务商系统。云市场会根据“新购商品”接口返回的 appInfo 中的 authUrl，结合下面参数组织一个用于免登的 url 地址，ISV 接到此url 的请求后，验证 token 是否合法，确认 timeStamp 是否符合 ISV 约束的时间，来进行 ISV 管理后的自动登录。
-
-        4.4.2请求参数
+    4.4.2请求参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E4%B8%BB%E5%8A%A8%E9%80%9A%E7%9F%A511.png)
 
-        4.4.3示例
+    4.4.3示例
             l  请求
         http://www.isvwebsite.com?token=9560d4d52cab35689fd5d472f28119ab&action=verify&instanceId=1001&timeStamp=2016-12-01+10%3A30%3A01              
             2  返回
             登陆成功页面
 
-    4.5 升级
-        4.5.1描述
+   4.5 升级
+       4.5.1描述
         用户升级并支付成功后，云市场调用升级接口，传入实例ID、新版本。服务商将其系统中维护的版本进行更新，并返回是否成功标识。云市场接收到返回值后，对服务实例做相应处理。接口调用流程如下图：
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A312.jpg)
 
-        4.5.2请求参数
+       4.5.2请求参数
         <style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;}
         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
