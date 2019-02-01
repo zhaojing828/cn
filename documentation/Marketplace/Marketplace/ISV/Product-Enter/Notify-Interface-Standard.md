@@ -226,7 +226,7 @@
    </tbody>
    </table>
          说明：extraInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品的规格10G、100M；用户购买账号数：5；
-         additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数1个10元；北京地区5元。
+         additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数1个10元；北京地区5元。</br></br>
 
 4.1.3返回参数
          ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A35.png)
