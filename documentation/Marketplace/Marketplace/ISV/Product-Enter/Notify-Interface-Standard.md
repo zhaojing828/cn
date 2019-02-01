@@ -420,7 +420,7 @@
         说明：extraInfo：Json格式 key-value动态字段，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品扩容的规格20G；用户扩容账号数：5；
 
 4.5.3返回参数</br>
-        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A317.png)
+        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A317.png)</br>
 
 4.5.4示例</br>
     1  请求
@@ -434,7 +434,7 @@
 4.6过期</br>
 4.6.1描述
         云市场将在订购商品过期后调用该接口，服务商在该接口的实现中可以将指定的实例置为过期。接口调用流程如下图：
-        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A318.png)
+        ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A318.png)</br>
  
 4.6.2请求参数
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A319.png)
