@@ -30,14 +30,15 @@
             sort（P1，P2，P3）；                
 
    3 token值：拼接后字符串;</br>
-            “p1=1&p2=2&p3=3&key=isvkey”.toMD5()
-            文档最后有实例代码
-            测试key:
-            qweqeqeqe123123123131
-            测试参数：
+            “p1=1&p2=2&p3=3&key=isvkey”.toMD5()</br>
+            文档最后有实例代码</br>
+            测试key:</br>
+            qweqeqeqe123123123131</br>
+            测试参数：</br>
             accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30 23:59:59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
 
 # 4接口描述
+
 l   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
 
 2   服务商需要返回此订单对应的交付实例唯一 ID（instanceId）。建议此 ID 直接使用云市场传入 的 orderBizId。
