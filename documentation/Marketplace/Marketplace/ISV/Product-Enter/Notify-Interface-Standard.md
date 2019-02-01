@@ -47,8 +47,8 @@ l   客户购买商品并付款成功，云市场将调用本接口通知服务�
     注意： 按数量售卖的服务产生的订单，会根据购买数量多次调用接口，传参orderBizId会不同，每次调用处理请返回一个交付实例。
     服务商对外只提供一个接口，通过请求参数action的值区分，处理不同的业务逻辑。如action=createInstance，则代表新购。
     
-4.1 新购商品
-    4.1.1描述
+4.1 新购商品</br>
+    4.1.1描述</br>
         l  用户下单并支付成功后，云市场调用新购服务接口，传入用户信息和订单信息。服务商按照传入的参数，在其系统中进行交付动作，并通过Json格式将实例信息返回给云市场。云市场接收到返回值后会保存信息并反馈给用户。接口调用流程如下图：
             ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A33.jpg)
         
