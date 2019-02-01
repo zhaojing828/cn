@@ -6,15 +6,14 @@
 ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A31.png)
 
 # 3安全
-
-    3.1 描述
+   3.1 描述
     为保证京东云市场和第三方应用之间的通信安全，云市场每次调用应用接口时参数中会添加一个token作为安全令牌。应用接口收到请求后根据生成规则生成 token 值，并与接口参数中获取的 token 值进行比较，完全相同即为校验通过。token值由每次传递的参数和云市场为服务商分配的key共同构成。
 
-    3.2 Key值获取
+   3.2 Key值获取
     在服务商管理后台（http://i-market.jdcloud.com/）信息管理>基本信息页面获取。
     ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A32.png)
 
-    3.3 token值生成
+   3.3 token值生成
 
         3.3.1 说明
         token值作为云市场与服务商之间进行安全校验必有参数，云市场每次调用服务 商接口的参数中都会带有 token 值。服务商根据生成规则生成 token值，并与接口中获取的 token 值进行比较。完全相同即为校验通过。
@@ -57,175 +56,175 @@
             4  该接口可能会被多次调用，如果被重复调用，请保证接口的幂等性
 
          4.1.2请求参数
-         <style type="text/css">
-         .tg  {border-collapse:collapse;border-spacing:0;}
-         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-         .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-         .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-         </style>
-         <table class="tg">
-           <tr>
-             <th class="tg-0pky">参数名</th>
-             <th class="tg-0pky">类型</th>
-             <th class="tg-0pky">必选</th>
-             <th class="tg-0pky">说明</th>
-             <th class="tg-0pky"></th>
-           </tr>
-           <tr>
-             <td class="tg-0pky">token</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">是</td>
-             <td class="tg-0pky">安全校验令牌</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">action</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">是</td>
-             <td class="tg-0pky">“createInstance”</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">jdPin</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">是</td>
-             <td class="tg-0pky">用户在京东云的账号标识，具有唯一性</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">orderBizId</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">是</td>
-             <td class="tg-0pky">云市场业务 ID，订购关系ID</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">orderId</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">是</td>
-             <td class="tg-0pky">对应订单的ID</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">serviceCode</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">是</td>
-             <td class="tg-0pky">服务对应的编码，可在服务商后台的服务列表中查看到</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">skuId</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">是</td>
-             <td class="tg-0pky">服务的收费项目ID；</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">mobile</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky">用户的手机号</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">email</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky">用户的邮箱</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">template</td>
-             <td class="tg-0pky">String</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky">模板ID，适用于模板类建站商品</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">expiredOn</td>
-             <td class="tg-0pky">DateTime</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky">对应订单的到期时间，格式：yyyy-MM-dd HH:mm:ss；</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">accountNum</td>
-             <td class="tg-0pky">Integer</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky">交付类型为软件类，计费方式为按周期的服务，交付时支持的账户数量。此参数默认值为1</td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">extraInfo</td>
-             <td class="tg-0pky">Json</td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">Key</td>
-             <td class="tg-0pky">说明</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky">specification</td>
-             <td class="tg-0pky">产品规格,如10</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky">Key1</td>
-             <td class="tg-0pky">Key1，如test</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">additionInfo</td>
-             <td class="tg-0pky">Json</td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">Key</td>
-             <td class="tg-0pky">说明</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">额外计费项参数</td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-           </tr>
-           <tr>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">yangbenshu</td>
-             <td class="tg-0pky">例如：样本数:100</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">diyu</td>
-             <td class="tg-0pky">例如：地域：北京</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">appCode</td>
-             <td class="tg-0pky">应用编码</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">ME+参数</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">tenantCode</td>
-             <td class="tg-0pky">企业编码</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">ME+参数</td>
-           </tr>
-           <tr>
-             <td class="tg-0pky">userCode</td>
-             <td class="tg-0pky">用户编码</td>
-             <td class="tg-0pky">否</td>
-             <td class="tg-0pky"></td>
-             <td class="tg-0pky">ME+参数</td>
-           </tr>
-         </table>
+   <style type="text/css">
+   .tg  {border-collapse:collapse;border-spacing:0;}
+   .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+   .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+   .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+   </style>
+   <table class="tg">
+   <tr>
+   <th class="tg-0pky">参数名</th>
+   <th class="tg-0pky">类型</th>
+   <th class="tg-0pky">必选</th>
+   <th class="tg-0pky">说明</th>
+   <th class="tg-0pky"></th>
+   </tr>
+   <tr>
+   <td class="tg-0pky">token</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">是</td>
+   <td class="tg-0pky">安全校验令牌</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">action</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">是</td>
+   <td class="tg-0pky">“createInstance”</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">jdPin</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">是</td>
+   <td class="tg-0pky">用户在京东云的账号标识，具有唯一性</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">orderBizId</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">是</td>
+   <td class="tg-0pky">云市场业务 ID，订购关系ID</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">orderId</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">是</td>
+   <td class="tg-0pky">对应订单的ID</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">serviceCode</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">是</td>
+   <td class="tg-0pky">服务对应的编码，可在服务商后台的服务列表中查看到</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">skuId</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">是</td>
+   <td class="tg-0pky">服务的收费项目ID；</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">mobile</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky">用户的手机号</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">email</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky">用户的邮箱</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">template</td>
+   <td class="tg-0pky">String</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky">模板ID，适用于模板类建站商品</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">expiredOn</td>
+   <td class="tg-0pky">DateTime</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky">对应订单的到期时间，格式：yyyy-MM-dd HH:mm:ss；</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">accountNum</td>
+   <td class="tg-0pky">Integer</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky">交付类型为软件类，计费方式为按周期的服务，交付时支持的账户数量。此参数默认值为1</td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">extraInfo</td>
+   <td class="tg-0pky">Json</td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">Key</td>
+   <td class="tg-0pky">说明</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky">specification</td>
+   <td class="tg-0pky">产品规格,如10</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky">Key1</td>
+   <td class="tg-0pky">Key1，如test</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">additionInfo</td>
+   <td class="tg-0pky">Json</td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">Key</td>
+   <td class="tg-0pky">说明</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">额外计费项参数</td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   </tr>
+   <tr>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">yangbenshu</td>
+   <td class="tg-0pky">例如：样本数:100</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">diyu</td>
+   <td class="tg-0pky">例如：地域：北京</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">appCode</td>
+   <td class="tg-0pky">应用编码</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">ME+参数</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">tenantCode</td>
+   <td class="tg-0pky">企业编码</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">ME+参数</td>
+   </tr>
+   <tr>
+   <td class="tg-0pky">userCode</td>
+   <td class="tg-0pky">用户编码</td>
+   <td class="tg-0pky">否</td>
+   <td class="tg-0pky"></td>
+   <td class="tg-0pky">ME+参数</td>
+   </tr>
+   </table>
 
          说明：extraInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的字段给服务提供商，比如某些产品的规格10G、100M；用户购买账号数：5；
          additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数1个10元；北京地区5元。
