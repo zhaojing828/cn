@@ -452,7 +452,7 @@
 为了保证软件类服务自动开通功能接入的正确性，在服务商管理平台搭建了应用接入调试界面。服务商可以在此页面调试以上接口的正确性。</br>
  
  注：调试数据非正式数据，京东云市场不做业务处理。
-    ```
+ ```
     import java.io.UnsupportedEncodingException;
     import java.security.MessageDigest;
     import java.security.NoSuchAlgorithmException;
@@ -501,23 +501,5 @@
             String md2 = Md5Util.md5Encode("accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30  
 
     ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
