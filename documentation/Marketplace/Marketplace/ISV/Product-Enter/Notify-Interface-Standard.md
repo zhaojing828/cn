@@ -499,7 +499,6 @@
 
       public static void main(String[] args) {
             String md2 = Md5Util.md5Encode("accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30  
-
-    ```
+```
 
 
