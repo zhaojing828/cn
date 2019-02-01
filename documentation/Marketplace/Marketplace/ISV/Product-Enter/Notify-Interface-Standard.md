@@ -229,8 +229,8 @@
          additionInfo：Json格式 key-value动态字段，可扩展，用于用户下单后传递一些非通用的计费字段给服务提供商，比如某些产品的样本数1个10元；北京地区5元。</br></br>
 
 4.1.3返回参数
-         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A35.png)
-         说明：appInfo 字段包含客户购买商品后，登录服务地址（网站地址）进行后续操作，或者实现客户免登陆访问（需要返回免登地址）所需的相关信息。
+         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A35.png)</br>
+说明：appInfo 字段包含客户购买商品后，登录服务地址（网站地址）进行后续操作，或者实现客户免登陆访问（需要返回免登地址）所需的相关信息。
          Info 字段是当 appinfo 无法满足服务商特殊登录要求时，可以自定义 key-value 字段，以提供给客户新购商品后的操作方法。
 
 4.1.4示例</br>
@@ -412,7 +412,7 @@
 4.5 扩容
 
 4.5.1描述</br>
-        用户扩容并支付成功后，云市场调用扩容接口，传入实例ID、新版本。服务商将其系统中维护的版本进行更新，并返回是否成功标识。云市场接收到返回值后，对服务实例做相应处理。接口调用流程如下图：
+        用户扩容并支付成功后，（按周期账号数量售卖服务）云市场调用扩容接口，传入实例ID、新版本。服务商将其系统中维护的版本进行更新，并返回是否成功标识。云市场接收到返回值后，对服务实例做相应处理。接口调用流程如下图：
         ![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/%E9%80%9A%E7%9F%A5%E6%8E%A5%E5%8F%A315.jpg)
 
 4.5.2请求参数</br>
