@@ -22,19 +22,17 @@
         取每次http get 请求参数中除token以外的其它所有参数，对参数名进行字典排序，在排序后的字符串最后加上 &key=[isv的key值]，然后对整个字符串进行 md5 加密，加密后的字符串作为token值。
 
    3.3.3示例
-   l 服务商收到的请求示例：</br>
-            http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx                
-
-   2 进行排序操作：不用url encode</br>
-            sort（P1，P2，P3）；                
-
-   3 token值：拼接后字符串;</br>
-            “p1=1&p2=2&p3=3&key=isvkey”.toMD5()</br>
-            文档最后有实例代码</br>
-            测试key:</br>
-            qweqeqeqe123123123131</br>
-            测试参数：</br>
-            accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30 23:59:59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
+         l 服务商收到的请求示例：</br>
+                  http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx                
+         2 进行排序操作：不用url encode</br>
+                  sort（P1，P2，P3）；                
+         3 token值：拼接后字符串;</br>
+                  “p1=1&p2=2&p3=3&key=isvkey”.toMD5()</br>
+                  文档最后有实例代码</br>
+                  测试key:</br>
+                  qweqeqeqe123123123131</br>
+                  测试参数：</br>
+                  accountNum=1&action=createInstance&email=bujiaban@jd.com&expiredOn=2018-06-30 23:59:59&jdPin=bujiaban&mobile=&orderBizId=444181&orderId=556596&serviceCode=FW_GOODS-500232&skuId=FW_GOODS-500232-1&template=&token=9512df22a941f172a9f28068b758ee3e
 
 # 4接口描述
 l   客户购买商品并付款成功，云市场将调用本接口通知服务商客户购买商品的信息和客户信息。
