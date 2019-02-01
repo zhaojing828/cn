@@ -22,13 +22,13 @@
         取每次http get 请求参数中除token以外的其它所有参数，对参数名进行字典排序，在排序后的字符串最后加上 &key=[isv的key值]，然后对整个字符串进行 md5 加密，加密后的字符串作为token值。
 
    3.3.3示例
-       l   服务商收到的请求示例：
+   l 服务商收到的请求示例：
             http://www.isvwebsite.com?p1=1&p2=2&p3=3&token=xxxx                
 
-       2   进行排序操作：不用url encode
+   2 进行排序操作：不用url encode
             sort（P1，P2，P3）；                
 
-       3  	token值：拼接后字符串;
+   3 token值：拼接后字符串;
             “p1=1&p2=2&p3=3&key=isvkey”.toMD5()
             文档最后有实例代码
             测试key:
