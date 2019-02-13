@@ -190,6 +190,10 @@
     items:
       - name: MySQL 实例规格
         href: Instance-Specifications/Instance-Specifications-MySQL.md
+      - name: Percona 实例规格
+        href: Instance-Specifications/Instance-Specifications-Percona.md
+      - name: MariaDB 实例规格
+        href: Instance-Specifications/Instance-Specifications-MariaDB.md
       - name: SQL Server 实例规格
         href: Instance-Specifications/Instance-Specifications-SQLServer.md
 
