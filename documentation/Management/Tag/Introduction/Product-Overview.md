@@ -12,7 +12,16 @@
  - 云主机
  - 云硬盘
  - SQL Server数据库
+ - MySQL
+ - Percona
+ - MariaDB
+ - PostgreSQL
+ - MongoDB
+ - 分布式关系型数据库DRDS
+ - 公网IP
+ - 云搜索ElasticSearch
+ - 消息队列JCQ
  - 云缓存 Memcached
- - 云搜索 Elasticsearch
- - DRDS
+ - 云缓存Redis
+ 
 后续会继续增加支持绑定标签的资源类型。

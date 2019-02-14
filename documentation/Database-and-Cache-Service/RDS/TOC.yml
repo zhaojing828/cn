@@ -312,6 +312,8 @@
       href: FAQ/Storage-Engine.md
     - name: 存储空间
       href: FAQ/Storage-Space.md
+    - name: MFA支持
+      href: FAQ/MFA-Support.md      
   - name: 问题排查
     items:
     - name: 内存使用率

@@ -1,10 +1,10 @@
 # **回源策略变更**
 
-## **1.描述**
+## **1. 描述**
 
 回源策略变更 (changeSource)
 
-## **2.请求参数**
+## **2. 请求参数**
 
 | **名称**       | **类型** | **是否必填** | **描述**                                                     |
 | -------------- | -------- | ------------ | ------------------------------------------------------------ |
@@ -16,7 +16,7 @@
 | httpType       | String   | 否           | http类型，只能为http或者https，默认为http。当设为https时，需要调用“设置通信协议”接口上传证书和私钥 |
 | backSourceType | String   | 否           | 回源类型，只能为http（80端口回源）或者https（443端口回源），默认为http |
 
-## **3.返回参数**
+## **3. 返回参数**
 
 | **名称** | **描述**                                                  |
 | -------- | --------------------------------------------------------- |
@@ -24,11 +24,11 @@
 | msg      | 提示信息                                                  |
 | data     | 返回数据                                                  |
 
-## **4.调用示例**
+## **4. 调用示例**
 
 - ### **请求地址**
 
-http://opencdn.jcloud.com/api/changeSource
+https://opencdn.jcloud.com/api/changeSource
 
 - ### **请求示例**
 
@@ -41,8 +41,8 @@ curl -H “Content-type: application/json” -X POST -d ‘{“username”:“te
 * json格式
 
 ```
-html http://opencdn.jcloud.com/api/changeSource
-域名回源示例
+https://opencdn.jcloud.com/api/changeSource
+* 域名回源示例
 {
     "username" :"test_user",
     "signature" :"d00f58f89e8cd55dc080aec0d8051845",
@@ -53,7 +53,7 @@ html http://opencdn.jcloud.com/api/changeSource
  }
 ```
 ```
-IP回源示例
+* IP回源示例
 
 {
     "username" :"test_user",
