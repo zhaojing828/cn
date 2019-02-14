@@ -8,7 +8,7 @@
     
 ##   公共参数
     
-   &emsp;&emsp;详见[调用方法](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)
+&emsp;&emsp;详见[调用方法](https://docs.jdcloud.com/cn/common-declaration/api/call-methods)
         
 ##   签名机制
-   &emsp;&emsp;详见[签名算法](https://docs.jdcloud.com/cn/common-declaration/api/authorization-rules)      
+&emsp;&emsp;详见[签名算法](https://docs.jdcloud.com/cn/common-declaration/api/authorization-rules)      
