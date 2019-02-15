@@ -19,8 +19,8 @@ pip install boto3
 
 import boto3  
         
-ACCESS_KEY =‘your accesskey’  
-SECRET_KEY = ‘your secretkey’  
+ACCESS_KEY = 'your accesskey'  
+SECRET_KEY = 'your secretkey'  
 s3 = boto3.client(  
     's3',  
     aws_access_key_id=ACCESS_KEY,  
