@@ -52,7 +52,8 @@ items:
            - name: 删除存储空间
              href: Operation-Guide/Manage-Bucket/Delete-Bucket-2.md  
            - name: 访问权限设置
-             href: Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md  
+             href: Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md
+             
            - name: 跨域访问设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-CORS-2.md                 
            - name: 静态网站托管设置
@@ -85,6 +86,16 @@ items:
             href: Operation-Guide/Manage-Object/Post-Object-1.md                  
           - name: 用量监控
             href: Operation-Guide/Manage-Object/Usage-Monitoring.md
+      - name: 权限控制
+        items:
+           - name: 权限控制概述
+             href: Operation-Guide/Access-Control/Access-Control-Overview.md
+           - name: 基于读写权限ACL的权限控制
+             href: Operation-Guide/Access-Control/Access-Control-Base-On-ACL.md
+           - name: 基于IAM Policy的权限控制
+             href: Operation-Guide/Access-Control/Access-Control-Base-On-IAM-Policy.md
+           - name: 基于Bucket Policy的权限控制
+             href: Operation-Guide/Access-Control/Access-Control-Base-On-Bucket-Policy.md
       - name: 图片处理指南
         items:            
           - name: 介绍
@@ -191,6 +202,8 @@ items:
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-Notification-2.md           
                - name: Put Bucket
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-2.md
+               - name: Put Bucket ACL
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bukcet-acl-2.md        
                - name: Put Bucket cors
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Cors-2.md 
                - name: Put Bucket encryption
@@ -390,7 +403,15 @@ items:
       - name: 移动应用直传OSS
         href: Best-Practices/Transfer-For-Mobile-Apps.md
       - name: 自定义域名支持HTTPS访问 OSS 服务
-        href: Best-Practices/Custom-Domain-Name-Guidance.md        
+        href: Best-Practices/Custom-Domain-Name-Guidance.md
+      - name: 访问控制
+        items:
+            - name: 访问管理实践
+              href: Best-Practices/Access-Control-And-Permission-Management/Access-Management-Practices.md
+            - name: 跨账号授权概述
+              href: Best-Practices/Access-Control-And-Permission-Management/Account-Access-Overview.md
+            - name: 授权子账号访问 OSS
+              href: Best-Practices/Access-Control-And-Permission-Management/Authorize-Sub-Account-Access.md    
  - name: 常见问题
    items:
       - name: 一般性问题
