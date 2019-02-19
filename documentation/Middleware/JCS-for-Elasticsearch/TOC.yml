@@ -51,6 +51,14 @@
         href: Operation-Guide/Dedicated-master.md 
       - name: 插件支持
         href: Operation-Guide/IK.md 
+      - name: 备份恢复
+        items: 
+        - name: 创建快照
+          href: Operation-Guide/creatsnapshot.md
+        - name: 快照指定索引
+          href: Operation-Guide/indexsnapshot.md
+        - name: 删除快照
+          href: Operation-Guide/deletesnapshot.md 
       - name: Kibana
         href: Operation-Guide/Kibana.md   
       - name: 监控集群
