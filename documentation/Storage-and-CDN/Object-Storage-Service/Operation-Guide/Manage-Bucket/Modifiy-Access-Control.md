@@ -89,7 +89,7 @@ Referer白名单语义解释：
 
 参考效果如下：
 
-![Referer白名单](../../../../../image/Object-Storage-Service/OSS-036.png)
+![Referer白名单](../../../../../image/Object-Storage-Service/OSS-123.png)
 
  
  
