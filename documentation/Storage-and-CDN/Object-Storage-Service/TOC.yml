@@ -380,8 +380,16 @@ items:
    items:
       - name: 使用S3fs在Linux实例上挂载Bucket
         href: Best-Practices/S3fs.md
-      - name: Bucket Policy
-        href: Best-Practices/Bucket-Policy.md
+      - name: 访问控制
+        items:
+            - name: Bucket Policy最佳实践 
+              href: Best-Practices/Bucket-Policy.md
+            - name: 访问管理实践
+              href: Best-Practices/Access-Control-And-Permission-Management/Access-Management-Practices.md
+            - name: 跨账号授权概述
+              href: Best-Practices/Access-Control-And-Permission-Management/Cross-Account-Access-Overview.md
+            - name: 授权子账号访问 OSS
+              href: Best-Practices/Access-Control-And-Permission-Management/Authorize-Sub-Account-Access.md            
       - name: 防盗链
         href: Best-Practices/Anti-leech.md         
       - name: 使用CloudBerry管理OSS
@@ -404,14 +412,7 @@ items:
         href: Best-Practices/Transfer-For-Mobile-Apps.md
       - name: 自定义域名支持HTTPS访问 OSS 服务
         href: Best-Practices/Custom-Domain-Name-Guidance.md
-      - name: 访问控制
-        items:
-            - name: 访问管理实践
-              href: Best-Practices/Access-Control-And-Permission-Management/Access-Management-Practices.md
-            - name: 跨账号授权概述
-              href: Best-Practices/Access-Control-And-Permission-Management/Cross-Account-Access-Overview.md
-            - name: 授权子账号访问 OSS
-              href: Best-Practices/Access-Control-And-Permission-Management/Authorize-Sub-Account-Access.md    
+
  - name: 常见问题
    items:
       - name: 一般性问题
