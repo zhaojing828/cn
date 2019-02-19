@@ -29,6 +29,7 @@ IAM 详细介绍前往[IAM概述](https://docs.jdcloud.com/cn/iam/product-overvi
 - 步骤二：对子账号授予权限
 
 根据系统提供的策略选择，可配置简单的策略【系统策略】，如 OSS 的管理员权限，只读权限等。如需配置更复杂的策略，请使用【策略管理】-【新建自定义策略】。
+
 3.方法一： 访问子用户列表，点击【授权】按钮，可快捷的授予子用户相应的【系统策略】。
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-110.png)
 方法二：负责策略采用自定义策略，单击左侧菜单栏【策略管理】，单击【创建策略】
@@ -37,6 +38,7 @@ IAM 详细介绍前往[IAM概述](https://docs.jdcloud.com/cn/iam/product-overvi
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-112.png)
 若采用策略编辑器，输入策略名称，在编辑框中输入json ，指定IAM policy。
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-111.png)
+
 4.创建完成自定义策略后，回到访问子用户列表，点击【授权】按钮，授予【自定义策略】，完成子账号与策略的关联。
 ![IAM子用户](../../../../../image/Object-Storage-Service/OSS-114.png)
 
