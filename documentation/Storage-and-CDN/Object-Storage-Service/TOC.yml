@@ -409,7 +409,7 @@ items:
             - name: 访问管理实践
               href: Best-Practices/Access-Control-And-Permission-Management/Access-Management-Practices.md
             - name: 跨账号授权概述
-              href: Best-Practices/Access-Control-And-Permission-Management/Account-Access-Overview.md
+              href: Best-Practices/Access-Control-And-Permission-Management/Cross-Account-Access-Overview.md
             - name: 授权子账号访问 OSS
               href: Best-Practices/Access-Control-And-Permission-Management/Authorize-Sub-Account-Access.md    
  - name: 常见问题
