@@ -51,7 +51,7 @@
         href: Operation-Guide/Dedicated-master.md 
       - name: 插件支持
         href: Operation-Guide/IK.md 
-      - name: 备份恢复
+      - name: 快照
         items: 
         - name: 创建快照
           href: Operation-Guide/creatsnapshot.md
