@@ -60,7 +60,7 @@ IAM policy 中 本期Action 支持列表如下：
 - OSS支持的Action 分为三大类：
 
     * Service 级别操作，对应的是 GetService 操作，用来列出所有属于该用户的某个地域的所有 Bucket 列表。 **本期不支持用户自定义IAM策略指定** 
-    * Bucket 级别操作，对应oss:DeleteBucket、oss:ListBucketMultipartUploads、oss:ListBucke操作的对象是 Bucket，
+    * Bucket 级别操作，对应oss:DeleteBucket、oss:ListBucketMultipartUploads、oss:ListBucke操作的对象是 Bucket。
     * Object 级别操作，分为 oss:GetObject、oss:PutObject、oss:DeleteObject和oss:AbortMultipartUpload，操作对象是 Object。
     
 - 如想授权某一类的 Object 的操作，可以选择这几种的一种或几种。另外，所有的 Action 前面都必须加上前缀“oss:”，如上面例子所示。
