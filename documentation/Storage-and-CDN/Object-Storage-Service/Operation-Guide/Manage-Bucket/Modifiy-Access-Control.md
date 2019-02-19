@@ -17,17 +17,17 @@
 1.登录京东云控制台，选择对象存储->空间管理->空间设置，选择**权限设置**，展示您当前的权限设置内容，如图：
 ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-103.png)
 2.修改空间权限 ，如图：
- ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-104.png)
+ ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-120.png)
  
  **说明：**
  
  * 若修改ACL，则点击读写权限设置下拉框，选择私有读写、公有读私有写、公有读写3中权限，点击确定。
 
  * 若想实现对Bucket细粒度的权限管理，请使用Bucket policy,在读写权限设置处，点击自定义权限，即可完成Bucket policy设置。设置页面如下图：
- ![修改空间权限-Bucket policy](../../../../../image/Object-Storage-Service/OSS-105.png)
+ ![修改空间权限-Bucket policy](../../../../../image/Object-Storage-Service/OSS-121.png)
  支持权限表单设置和编辑器两种方式：
  - 【添加自定义权限】--您可以使用方便简单的表单，填写设置项完成设置。
-   ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-106.png)
+   ![修改空间权限](../../../../../image/Object-Storage-Service/OSS-122.png)
       - （1）每个Bucket最多允许创建10个Bucket Policy；
       - （2）Bucket Policy中各个字段的定义如下：
          a. 用户授权：定义了该Bucket Policy所影响到的用户，默认值为 “*”， 语义是对全部用户生效，若需要只针对部分用户生效，请点击“自定义用户”，并在文本框中 输入对应用户的用户ID指定用户时，您无需输入前缀“arn:aws:iam::”，按照如下方式输入：
