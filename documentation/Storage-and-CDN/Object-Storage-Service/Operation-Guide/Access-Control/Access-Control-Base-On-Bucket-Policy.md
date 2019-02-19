@@ -189,7 +189,7 @@ Bucket policy 中可使您在授予权限时指定条件，即规则生效的条
 ### Bucket policy 完整示例
 
 1.主账号允许匿名用户（所有用户），在访问referer来源为www.abcxxx.com时执行对yourbucket 存储空间中所有对象的下载和上传操作，而无需鉴权。
-更多授权相关设置参见[跨账号授权](../../Best-Practices/Access-Control-And-Permission-Management/Cross-Account-Access-Overview.md)
+更多授权相关设置参见[跨账号授权](../../Best-Practices/Access-Control-And-Permission-Management/Cross-Account-Access-Overview.md)。
 
 ```
 
