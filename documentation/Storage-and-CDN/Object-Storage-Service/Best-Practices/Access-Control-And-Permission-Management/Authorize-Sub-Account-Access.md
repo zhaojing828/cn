@@ -56,7 +56,7 @@ OSS 访问（API 或 SDK）需要如下资源：AccessKeyId 、AccessKeySecret �
 
 ### 使用Bucket policy 授权子账号
 
-除了IAM policy您也可使用Bucket policy 授权子账号。具体授权步骤请参看[Bucket policy-访问权限设置](../../Operation-Guide/Manage-Bucket/Modifiy-Access-Control.md)
+除了IAM policy您也可使用Bucket policy 授权子账号。具体授权步骤请参看[Bucket policy-访问权限设置](../../Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md)
 
 
 
