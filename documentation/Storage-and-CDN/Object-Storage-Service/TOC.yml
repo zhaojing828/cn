@@ -54,7 +54,7 @@ items:
            - name: 访问权限设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md  
            - name: 跨域访问设置
-             href: Operation-Guide/Manage-Bucket/Set-Bucket-CORS-2.md    
+             href: Operation-Guide/Manage-Bucket/Set-Bucket-CORS-2.md                 
            - name: 静态网站托管设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-Website-2.md
            - name: 跨区域复制设置
@@ -69,6 +69,8 @@ items:
              href: Operation-Guide/Manage-Bucket/Manage-Origin-Retrieval-Settings-2.md
            - name: 边缘存储
              href: Operation-Guide/Manage-Bucket/edgeStorage.md
+           - name: 生命周期管理
+             href: Operation-Guide/Manage-Bucket/Lifecycle.md
       - name: 文件管理
         items:
           - name: 新建文件夹
@@ -142,7 +144,7 @@ items:
       - name:  兼容接口
         items:
            - name: 兼容接口概览
-             href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-overview.md
+             href: API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-Overview.md
            - name: 关于Service操作
              items:
                - name: GetService
@@ -161,6 +163,8 @@ items:
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Replication-2.md 
                - name: Delete Bucket website
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Website-2.md
+               - name: Delete Bucket lifecycle
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Lifecycle.md                 
                - name: GET Bucket acl
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Acl-2.md           
                - name: GET Bucket notification
@@ -176,11 +180,13 @@ items:
                - name: Get Bucket replication
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Replication-2.md
                - name: Get Bucket website
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Website-2.md 
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Website-2.md
+               - name: Get Bucket lifecycle
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Lifecycle.md
                - name: Head Bucket
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Head-Bucket-2.md
                - name: List Multipart Uploads
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Delete-Bucket-Website-2.md
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Multipart-Uploads-2.md
                - name: PUT Bucket notification
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-Notification-2.md           
                - name: Put Bucket
@@ -192,9 +198,11 @@ items:
                - name: Put Bucket policy
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Policy-2.md
                - name: Put Bucket replication
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Replication-2.md           
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Replication-2.md
                - name: Put Bucket website
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Website-2.md      
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Website-2.md 
+               - name: Put Bucket lifecycle
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md          
            - name: 关于Object操作
              items:
               - name: Abort Multipart Upload
@@ -254,7 +262,7 @@ items:
                - name: 公共响应头
                  href: API-Reference/Introduction/Response-Headers.md
                - name: 访问控制
-                 href: API-Reference/Introduction/Access-Control-Signature-In-Header-Or-URL.md
+                 href: API-Reference/Access-Control-Signature-In-Header-Or-URL.md
            - name:  关于Service的操作
              items:
                - name: GetService
@@ -315,6 +323,8 @@ items:
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Multipart-Upload-S3.md              
        - name:  兼容S3  SDK-Python（推荐）
          href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Python.md   
+       - name: 兼容S3  SDK-Go
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Go.md            
        - name: 兼容S3  SDK-PHP
          href:  API-Reference-S3-Compatible/Compatibility-Tools/SDK-PHP.md
        - name:  兼容S3  SDK-Android
@@ -366,8 +376,10 @@ items:
       - name: 生成预签名URL
         href: Best-Practices/Signature-In-URL-1.md
       - name: 跨域访问
-        href: Best-Practices/CORS.md
-      - name: 数据迁移工具 
+        href:  Best-Practices/CORS.md
+      - name: 数据迁移工具 Osstransfer (推荐)
+        href: Best-Practices/Migration-Tool.md 
+      - name: 数据迁移工具
         href: Best-Practices/Data-Migration-Tool.md 
       - name: 使用S3cmd管理OSS
         href: Best-Practices/S3cmd.md
@@ -375,6 +387,10 @@ items:
         href: Best-Practices/Setting-Signature-Authentication-For-Callback-Server.md        
       - name: OSS线上服务快速验证工具
         href: Best-Practices/OSS-Verification-Tool.md
+      - name: 移动应用直传OSS
+        href: Best-Practices/Transfer-For-Mobile-Apps.md
+      - name: 自定义域名支持HTTPS访问 OSS 服务
+        href: Best-Practices/Custom-Domain-Name-Guidance.md        
  - name: 常见问题
    items:
       - name: 一般性问题
