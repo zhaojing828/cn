@@ -10,4 +10,4 @@
 ## 2. 导出统计结果
 可将统计结果导出为excel格式的文件，便于保存和发送给相关人员进行分析、优化
 
-![慢SQL](../../../../../../image/RDS/Active-Slow-SQL-1.png)
+![慢SQL](../../../../../image/RDS/Active-Slow-SQL-1.png)
