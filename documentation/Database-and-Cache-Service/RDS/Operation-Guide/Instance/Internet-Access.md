@@ -27,4 +27,4 @@
 ![外网访问3](../../../../../image/RDS/Internet-Access-3.png)
 
 4. 在确认弹窗中，点击 确定 按钮，系统会关闭外网访问。
-![外网访问4](../../../../../image/RDS/Internet-Access-4.png)
+
