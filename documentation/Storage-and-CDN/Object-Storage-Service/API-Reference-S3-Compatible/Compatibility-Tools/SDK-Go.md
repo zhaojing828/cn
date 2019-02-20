@@ -40,8 +40,8 @@ func main() {
     _,err := creds.Get()
 
     config := &aws.Config{
-        Region          :aws.String("cn-south-1"),
-        Endpoint        :aws.String("s3.cn-south-1.jcloudcs.com"),
+        Region          :aws.String("cn-north-1"),
+        Endpoint        :aws.String("s3.cn-north-1.jcloudcs.com"),
         DisableSSL      :aws.Bool(false),
         Credentials     :creds,
     }
