@@ -23,6 +23,15 @@ go get github.com/aws/aws-sdk-go
 下面为创建client的例子，更多Go SDK示例请访问[S3 Go Example Code](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/go/example_code/s3)。
 
 ```
+package main
+
+import (
+    "github.com/aws/aws-sdk-go/aws"
+    "github.com/aws/aws-sdk-go/aws/credentials"
+    "github.com/aws/aws-sdk-go/aws/session"
+    "github.com/aws/aws-sdk-go/service/s3"
+)
+
 func main() {
 
     ak := "your accesskey"
