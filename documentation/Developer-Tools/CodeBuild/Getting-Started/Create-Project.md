@@ -5,9 +5,11 @@
 1、访问京东云控制台点击左侧导航栏【开发者工具】-【云编译】进入应用列表页
 
 2、选择新建应用所属地域，点击【新建应用】按钮，进入新建编译任务页面。
+
  ![](/image/codebuild/appList.PNG) 
 
 3、应用配置
+
  ![](/image/codebuild/createApp1.PNG) 
  
    * 应用名称
@@ -18,6 +20,7 @@
    选择编译环境，支持Java、golang、nodejs等主流编译语言环境；如使用用户自定义镜像，此处填写镜像名及版本即可。
  
 4、构建源代码配置
+
  ![](/image/codebuild/createApp2.PNG) 
  
    * 源提供商
@@ -28,6 +31,7 @@
      填写您要选择的代码分支
 
 5、构建配置
+
  ![](/image/codebuild/createApp3.PNG) 
  
    * 构建规范
@@ -41,7 +45,9 @@
  构建类型包括应用包和镜像。
    * 构建类型-应用包
      如选择应用包，构建产出.tar.gz格式的产出物并上传至用户oss仓库。
+     
      ![](/image/codebuild/createApp4.PNG) 
+     
    * 存储空间
      选择用户对象存储中的存储空间，存储构建产出包。
    * 存储目录
@@ -50,12 +56,15 @@
      
    * 构建类型-镜像
      如选择镜像，产出物推送至容器镜像仓库。如果编译dockerfile，需要在代码根目录提供dockerfile文件。
+     
      ![](/image/codebuild/createApp5.PNG) 
+     
    * 镜像仓库
      选择用户容器镜像仓库，推送构建的镜像。
 
 	
 7、高级设置
+
    ![](/image/codebuild/createApp6.PNG) 
  
    * 超时
