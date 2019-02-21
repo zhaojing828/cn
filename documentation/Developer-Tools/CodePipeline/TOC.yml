@@ -15,6 +15,10 @@ items:
         href: Introduction/Restrictions.md
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
       - name: 快速创建
