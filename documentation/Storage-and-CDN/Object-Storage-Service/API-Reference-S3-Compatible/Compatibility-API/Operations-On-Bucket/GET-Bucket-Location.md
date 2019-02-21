@@ -33,7 +33,7 @@ Authorization: authorization string (see Authenticating Requests (AWS Signature 
 
 名称|描述
 -|-
-LocationConstraint|Bucket所在的区域。<br>Type: String<br>Valid Values: huabei\|suqian\|guangzhou\|shanghai
+LocationConstraint|Bucket所在的区域。<br>Type: String<br>Valid Values: huabei \| suqian \| guangzhou \| shanghai
 
 注：
 
