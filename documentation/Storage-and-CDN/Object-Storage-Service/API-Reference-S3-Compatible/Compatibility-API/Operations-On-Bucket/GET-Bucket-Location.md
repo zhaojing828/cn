@@ -41,7 +41,7 @@ LocationConstraint|Bucket所在的区域。<br>Type: String<br>Valid Values: hua
 
 - 未来该接口将进行升级，LocationConstraint对应的有效值将修改为：cn-north-1（华北-北京），cn-east-1（华东-宿迁），cn-east-2（华东-上海），cn-south-1（华南-广州）
 
-- 如您在调用该API时需要解析LocationConstraint的话，请在应用层进行兼容，例如将`huabei`于`cn-north-1`进行等效兼容，接口升级后，无须修改代码即可平滑过渡。
+- 如您在调用该API时需要解析LocationConstraint的话，请在应用层进行兼容，例如将`huabei`与`cn-north-1`进行等效兼容，接口升级后，无须修改代码即可平滑过渡。
 
 ### 特殊错误
 无特殊错误
