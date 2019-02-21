@@ -3,7 +3,7 @@
 根据构建产出包类型，构建类型分为应用包和镜像。
 
 ### 构建类型-应用包
-如选择应用包，构建产出.tar.gz格式的产出物并上传至用户oss仓库。需要用户提供oss存储空间。
+当构建类型选择应用包，构建产出.tar.gz格式的应用包并上传至用户oss仓库。
  
 ![](/image/codebuild/createApp4.PNG) 
 
@@ -17,7 +17,7 @@
 
 ### 构建类型-镜像
  
-如选择镜像，产出物推送至容器镜像仓库。如果编译dockerfile，需要在代码根目录提供dockerfile文件。
+当构建类型选择镜像，产出物推送至容器镜像仓库。如果编译dockerfile，需要在代码根目录提供dockerfile文件。
  
 ![](/image/codebuild/createApp5.PNG) 
 
