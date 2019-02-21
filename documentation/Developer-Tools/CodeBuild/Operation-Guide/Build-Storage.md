@@ -17,7 +17,7 @@
 
 ### 构建类型-镜像
  
-当构建类型选择镜像，产出物推送至容器镜像仓库。如果编译dockerfile，需要在代码根目录提供dockerfile文件。
+当构建类型选择镜像，产出物推送至容器镜像仓库。编译时请在代码根目录提供dockerfile文件。
  
 ![](/image/codebuild/createApp5.PNG) 
 
