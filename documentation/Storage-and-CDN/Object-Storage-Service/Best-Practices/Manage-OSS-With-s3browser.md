@@ -4,8 +4,6 @@
 
 s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。
 
-s3browsers主要功能包括：支持AK/SK登录，管理Bucket、管理Object（包括上传，下载，复制，重命名，移动对象）、获取外链等。
-
 ## 安装
 
 1.下载安装包
@@ -15,7 +13,6 @@ s3browsers主要功能包括：支持AK/SK登录，管理Bucket、管理Object�
 2.安装
 
 点开安装即可
-
 
 ## 使用s3browser接入OSS
 ###  增加用户
