@@ -1,24 +1,44 @@
-# 使用CloudBerry管理OSS
+# 使用s3browser管理OSS
 
 ## 简介
 
-CloudBerry Explorer 是业界开发的一Windows 下直接通过 CloudBerry Explorer 来接入并管理对象存储的文件浏览器。您也可以通过CloudBerry Explorer来接入并管理京东云OSS。
+s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。
 
-CloudBerry主要功能包括：支持AK/SK登录，管理Bucket、管理Object、上传与下载、外链、同步等。
+s3browsers主要功能包括：支持AK/SK登录，管理Bucket、管理Object（包括上传，下载，复制，重命名，移动对象）、获取外链等。
 
-更多详细操作请下载[《京东云对象存储CloudBerry使用手册》](http://downloads.oss.cn-north-1.jcloudcs.com/%25E4%25BA%25AC%25E4%25B8%259C%25E4%25BA%2591%25E5%25AF%25B9%25E8%25B1%25A1%25E5%25AD%2598%25E5%2582%25A8CloudBerry%25E4%25BD%25BF%25E7%2594%25A8%25E6%2589%258B%25E5%2586%258C.pdf)
+## 安装
 
-## 使用CloudBerry接入OSS
+1.下载安装包
 
-CloudBerry下载地址：http://www.cloudberrylab.com/download-thanks.aspx?prod=cbes3free
+下载地址：https://s3browser.com/download.aspx
 
-使用 CloudBerry 之前，您需要事先在京东云中注册账号，并开通京东云对象存储服务（OSS）。
+2.安装
 
-通过 CloudBerry 来接入 OSS 中的具体步骤如下。
+点开安装即可
 
-步骤 1 在右侧的 Source 下拉菜单中点击“New Storage Account”，在弹框中选择S3 Compatible
 
-![](../../../../image/Object-Storage-Service/OSS-079.jpg)
+## 使用s3browser接入OSS
+###  增加用户
+
+#### 步骤 1 在左侧的 account 下拉菜单中点击“add new account”
+![](../../../../image/Object-Storage-Service/OSS-124.png)
+
+#### 步骤 2 在弹出的对话框中，填写相应参数：
+
+![](../../../../image/Object-Storage-Service/OSS-125.png)
+*  Account Name：显示名称，一般填自己的用户名即可。
+*  Account Type: S3 Compatible Storage
+REST Endpoint ,填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)。
+* Signature Version(v2,v4都可以)
+* Access Key ID(京东云的AK)
+* Secret Access Key(京东云的SK)
+是否给Access Key加密-->是否使用HTTPS(NOS支持http和https)
+Signature version：选择4
+选择S3 Compatible storage
+
+
+
+
 
 步骤 2 在弹出的对话框中，填写相应参数：
 
