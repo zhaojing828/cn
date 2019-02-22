@@ -196,8 +196,6 @@ items:
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Lifecycle.md
                - name: Head Bucket
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Head-Bucket-2.md
-               - name: Get Bucket Location
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Location.md
                - name: List Multipart Uploads
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/List-Multipart-Uploads-2.md
                - name: PUT Bucket notification
