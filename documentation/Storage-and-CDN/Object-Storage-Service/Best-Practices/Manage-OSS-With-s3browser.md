@@ -1,11 +1,26 @@
 # 使用s3browser管理OSS
 
+* 安装：[安装s3browser](Manage-OSS-With-s3browser#user-content-1)
+* 使用s3browser接入OSS：[使用s3browser接入OSS-增加用户](Manage-OSS-With-s3browser#user-content-2)
+* 存储空间操作：[使用s3browsers管理OSS- 存储空间操作](Manage-OSS-With-s3browser#user-content-3)
+* 存储空间操作-创建存储空间（bucket）：[使用s3browsers管理OSS- 存储空间操作-创建存储空间（bucket）](Manage-OSS-With-s3browser#user-content-3)
+* 存储空间操作-设置存储空间的Acl：[使用s3browsers管理OSS- 存储空间操作-设置存储空间的Acl](Manage-OSS-With-s3browser#user-content-4)
+* 存储空间操作-设置Bucket policy：[使用s3browsers管理OSS- 存储空间操作-设置Bucket policy](Manage-OSS-With-s3browser#user-content-5)
+* 存储空间操作-删除存储空间：[使用s3browsers管理OSS- 存储空间操作-删除存储空间](Manage-OSS-With-s3browser#user-content-6)
+* 存储空间操作-添加具有权限的存储空间或文件路径：[使用s3browsers管理OSS- 存储空间操作-添加具有权限的存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
+* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
+* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
+* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
+* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
+* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
+* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
+* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
 ## 简介
 
 s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。
 
 ## 安装
-
+<div id="user-content-1"></div>
 1.下载安装包
 
 下载地址：https://s3browser.com/download.aspx
@@ -16,7 +31,7 @@ s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一�
 
 ## 使用s3browser接入OSS
 ###  增加用户
-
+<div id="user-content-2"></div>
 #### 步骤 1 在左侧的 account 下拉菜单中点击【add new account】
 ![](../../../../image/Object-Storage-Service/OSS-124.png)
 
@@ -32,9 +47,11 @@ s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一�
 * 是否使用HTTPS: OSS支持http和https,为了您的数据更加安全建议默认勾选，使用https。
 
 ## 使用s3browsers管理OSS
-### 存储空间操作
-#### 创建存储空间（bucket）
 
+### 存储空间操作
+
+#### 创建存储空间（bucket）
+<div id="user-content-3"></div>
 ![](../../../../image/Object-Storage-Service/OSS-126.png)
 
 1.点击【New bucket】创建存储空间
@@ -48,6 +65,7 @@ s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一�
 * 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见【设置存储空间的Acl】与【设置Bucket policy】
 
 #### 设置存储空间的Acl
+<div id="user-content-4"></div>
 ##### 操作步骤
 1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【edit Permissions(ACL)】。如图：
 
@@ -76,7 +94,7 @@ s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一�
 同时您需要注意，目前对于OSS而言Bucket ACL 与Bucket policy 仅可通过其一管理存储空间权限，二者不可共存。如同时设置，s3browsers将出现报错并显示异常。
 
 #### 设置Bucket policy
-
+<div id="user-content-5"></div>
 1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【edit Bucket policy】。如图：
 
 ![](../../../../image/Object-Storage-Service/OSS-132.png)
@@ -87,7 +105,7 @@ s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一�
 ![](../../../../image/Object-Storage-Service/OSS-133.png)
 
 #### 删除存储空间
-
+<div id="user-content-6"></div>
 **说明：**
 OSS 存储空间的删除目前必须满足以下条件：
 
@@ -101,18 +119,19 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【delete policy】。
 
-1.点击下图中确定删除复选框，即可完成删除，如图：
+2.点击下图中确定删除复选框，即可完成删除，如图：
 
 ![](../../../../image/Object-Storage-Service/OSS-134.png)
 
 #### 添加具有权限的存储空间或文件路径
-
+<div id="user-content-7"></div>
 **说明**
 ##### 应用场景：
 当您被授予某个存储空间或某前缀文件的读取权限时，您可以通过添加 external bucekt 的方式实现在s3browser中管理文件与存储空间。
 ##### 操作步骤
 
-1.使用您的账号登录s3browser后，在菜单栏中点击【Buckets】,下拉框中选择【Add External Buckets】
+1.使用您的账号登录s3browser后，在菜单栏中点击【Buckets】,下拉框中选择【Add External Buckets】。
+
 ![](../../../../image/Object-Storage-Service/OSS-135.png)
 
 2.【Add External Buckets】弹框中添加文件路径，支持添加bucket 或 bucket中某文件夹，保存选项，如图：
@@ -123,25 +142,29 @@ OSS 存储空间的删除目前必须满足以下条件：
 ### 对象操作
 
 #### 列出所有对象
-
+<div id="user-content-8"></div>
 单击对应的存储空间名即可。
-如图：您可以创建文件夹，上传，下载，删除文件
+
+如图：您可以创建文件夹，上传，下载，删除文件等。
 
 ![](../../../../image/Object-Storage-Service/OSS-138.png)
 
 #### 上传对象
-
+<div id="user-content-9"></div>
 点击上图中，【Upload】选项,支持文件与文件夹上传。上传完成后自动刷新文件列表。
 
 #### 下载对象
+<div id="user-content-10"></div>
+* 方法一：选中需要下载的文件或者文件夹，点击上图中的【Download】选项，选择存储路径完成下载。
+* 方法二：选中需要下载的文件或者文件夹，在弹出菜单中选择【Download】
 
-选中需要下载的文件或者文件夹，点击上图中的【Download】选项，选择存储路径完成下载。或者点击右键，在弹出菜单中选择【Download】
 如下图：
 
 ![](../../../../image/Object-Storage-Service/OSS-137.png)
 
 
 #### 复制对象到OSS存储空间
+<div id="user-content-11"></div>
 #####  操作步骤
 1.右击需要复制的对象，支持文件与文件夹复制
 2.点击【Copy to】
@@ -152,20 +175,27 @@ OSS 存储空间的删除目前必须满足以下条件：
 ![](../../../../image/Object-Storage-Service/OSS-140.png)
 
 #### 重命名对象
+<div id="user-content-12"></div>
 1.右击对象
+
 2.选择【Rename】 ，重命名弹框中输入名字，点击【Rename】即可。
 
 #### 移动对象
+<div id="user-content-13"></div>
 **说明**
 此操作会将原来的对象删除。
 #####  操作步骤
 1.右击对象
+
 2.选择【Move to 】
+
 ![](../../../../image/Object-Storage-Service/OSS-141.png)
+
 3.选择目的存储空间，点击OK即可。
 
 
 #### 删除对象
+<div id="user-content-14"></div>
 支持文件与文件夹删除。
 #####  操作步骤
 
