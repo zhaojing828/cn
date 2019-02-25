@@ -43,8 +43,14 @@
         href: Operation-Guide/Access-control.md  
       - name: 高级配置
         href: Operation-Guide/Advanced-configuration.md
-      - name: 回源策略
-        href: Operation-Guide/back-to-origin-Strategy.md
+      - name: 回源配置
+        items:
+          - name: 回源策略
+            href: Operation-Guide/Back-To-Origin-Configuration/back-to-origin-Strategy.md
+          - name: 协议跟随回源
+            href: Operation-Guide/Back-To-Origin-Configuration/Protocol-Follow-Back-To-Origin.md        
+          - name: 回源跟随302
+            href: Operation-Guide/Back-To-Origin-Configuration/Follow-302-Configuration.md
       - name: 业务监控
         href: Operation-Guide/Business-Monitoring.md        
       - name: 缓存配置
