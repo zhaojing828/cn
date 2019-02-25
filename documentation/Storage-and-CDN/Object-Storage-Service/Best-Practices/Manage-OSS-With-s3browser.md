@@ -9,7 +9,7 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 * 删除存储空间：[存储空间操作-删除存储空间](Manage-OSS-With-s3browser#user-content-6)
 * 添加具有权限的存储空间或文件路径：[存储空间操作-添加具有权限的存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
 * 列出所有对象：[对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-* 上传对象：[对象操作-上传对象](Manage-OSS-With-s3browser#user-content-9
+* 上传对象：[对象操作-上传对象](Manage-OSS-With-s3browser#user-content-9)
 * 下载对象：[对象操作-下载对象](Manage-OSS-With-s3browser#user-content-10)
 * 复制对象到OSS存储空间：[对象操作-复制对象到OSS存储空间](Manage-OSS-With-s3browser#user-content-11)
 * 重命名对象：[对象操作-重命名对象](Manage-OSS-With-s3browser#user-content-12)
