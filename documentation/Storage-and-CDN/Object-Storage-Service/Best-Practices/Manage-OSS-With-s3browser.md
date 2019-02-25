@@ -1,4 +1,5 @@
 # 使用s3browser管理OSS
+s3browsers是一种易于使用的管理S3的客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。京东云OSS兼容 Amazon S3 API，在持续完善中，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
 
 * 安装：[安装s3browser](Manage-OSS-With-s3browser#user-content-1)
 * 使用s3browser接入OSS：[使用s3browser接入OSS-增加用户](Manage-OSS-With-s3browser#user-content-2)
@@ -16,10 +17,11 @@
 * 删除对象：[对象操作-删除对象](Manage-OSS-With-s3browser#user-content-14)
 
 
-s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。
+
 
 ## 安装
 <div id="user-content-1"></div>
+
 1.下载安装包
 
 下载地址：https://s3browser.com/download.aspx
@@ -138,6 +140,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 **说明**
 
 ##### 应用场景：
+
 当您被授予某个存储空间或某前缀文件的读取权限时，您可以通过添加 external bucekt 的方式实现在s3browser中管理文件与存储空间。
 
 ##### 操作步骤
@@ -162,6 +165,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 ![](../../../../image/Object-Storage-Service/OSS-138.png)
 
 #### 上传对象
+
 <div id="user-content-9"></div>
 点击上图中，【Upload】选项,支持文件与文件夹上传。上传完成后自动刷新文件列表。
 
@@ -180,6 +184,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 #### 复制对象到OSS存储空间
 
 <div id="user-content-11"></div>
+
 #####  操作步骤
 
 1.右击需要复制的对象，支持文件与文件夹复制
@@ -222,9 +227,9 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 #####  操作步骤
 
-* 方式1：点击对象，右击，点击【Delete】
+* 方式一：点击对象，右击，点击【Delete】
 
-* 方式2：点击对象，点击对象框下面的【Delete】
+* 方式二：点击对象，点击对象框下面的【Delete】
 
 
 
