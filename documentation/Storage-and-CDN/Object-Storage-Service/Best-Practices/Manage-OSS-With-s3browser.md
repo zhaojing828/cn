@@ -25,23 +25,29 @@ s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一�
 ![](../../../../image/Object-Storage-Service/OSS-125.png)
 *  Account Name：显示名称，一般填自己的用户名即可。
 *  Account Type: S3 Compatible Storage
-REST Endpoint ,填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)。
-* Signature Version(v2,v4都可以)
+* REST Endpoint ,填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)。
+* Signature Version: 选择Version 4
 * Access Key ID(京东云的AK)
 * Secret Access Key(京东云的SK)
-是否给Access Key加密-->是否使用HTTPS(NOS支持http和https)
-Signature version：选择4
-选择S3 Compatible storage
+* 是否使用HTTPS:OSS支持http和https,为了您的数据更加安全建议默认勾选，使用https
 
+## 使用s3browsers管理OSS
+### 存储空间操作
+#### 创建存储空间（bucket）
 
+![](../../../../image/Object-Storage-Service/OSS-126.jpg)
 
+1.点击【New bucket】创建存储空间
 
+![](../../../../image/Object-Storage-Service/OSS-126.jpg)
 
-步骤 2 在弹出的对话框中，填写相应参数：
+2.创建弹框中输入bucket name
 
-![](../../../../image/Object-Storage-Service/OSS-080.jpg)
+**说明**
+* 存储空间名称全局唯一，如果该名称已经被其他用户占用，将不能创建成功，请您根据[OSS命名规范](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-2)，输入恰当的能够标识自身业务的名称。
+* 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见【设置存储空间的Acl】与【设置Bucket policy】
 
-Display name：显示名称，一般填自己的用户名即可。
+#### 设置存储空间的Acl
 
 Service point：填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)。
 
