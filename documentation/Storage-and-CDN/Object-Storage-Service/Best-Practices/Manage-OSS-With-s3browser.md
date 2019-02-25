@@ -3,19 +3,19 @@
 * 安装：[安装s3browser](Manage-OSS-With-s3browser#user-content-1)
 * 使用s3browser接入OSS：[使用s3browser接入OSS-增加用户](Manage-OSS-With-s3browser#user-content-2)
 * 存储空间操作：[使用s3browsers管理OSS- 存储空间操作](Manage-OSS-With-s3browser#user-content-3)
-* 存储空间操作-创建存储空间（bucket）：[使用s3browsers管理OSS- 存储空间操作-创建存储空间（bucket）](Manage-OSS-With-s3browser#user-content-3)
-* 存储空间操作-设置存储空间的Acl：[使用s3browsers管理OSS- 存储空间操作-设置存储空间的Acl](Manage-OSS-With-s3browser#user-content-4)
-* 存储空间操作-设置Bucket policy：[使用s3browsers管理OSS- 存储空间操作-设置Bucket policy](Manage-OSS-With-s3browser#user-content-5)
-* 存储空间操作-删除存储空间：[使用s3browsers管理OSS- 存储空间操作-删除存储空间](Manage-OSS-With-s3browser#user-content-6)
-* 存储空间操作-添加具有权限的存储空间或文件路径：[使用s3browsers管理OSS- 存储空间操作-添加具有权限的存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
-* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)* 对象操作-列出所有对象：[使用s3browsers管理OSS- 对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
-## 简介
+* 创建存储空间（bucket）：[存储空间操作-创建存储空间（bucket）](Manage-OSS-With-s3browser#user-content-3)
+* 设置存储空间的Acl：[ 存储空间操作-设置存储空间的Acl](Manage-OSS-With-s3browser#user-content-4)
+* 设置Bucket policy：[ 存储空间操作-设置Bucket policy](Manage-OSS-With-s3browser#user-content-5)
+* 删除存储空间：[存储空间操作-删除存储空间](Manage-OSS-With-s3browser#user-content-6)
+* 添加具有权限的存储空间或文件路径：[存储空间操作-添加具有权限的存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
+* 列出所有对象：[对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
+* 上传对象：[对象操作-上传对象](Manage-OSS-With-s3browser#user-content-9
+* 下载对象：[对象操作-下载对象](Manage-OSS-With-s3browser#user-content-10)
+* 复制对象到OSS存储空间：[对象操作-复制对象到OSS存储空间](Manage-OSS-With-s3browser#user-content-11)
+* 重命名对象：[对象操作-重命名对象](Manage-OSS-With-s3browser#user-content-12)
+* 移动对象：[对象操作-移动对象](Manage-OSS-With-s3browser#user-content-12)
+* 删除对象：[对象操作-删除对象](Manage-OSS-With-s3browser#user-content-13)
+
 
 s3browsers是一种易于使用的Amazon S3免费客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。
 
