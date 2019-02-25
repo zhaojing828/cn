@@ -1,5 +1,5 @@
 # 使用s3browser管理OSS
-s3browsers是一种易于使用的管理S3的客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。京东云OSS兼容 Amazon S3 API，在持续完善中，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
+s3browsers是一种易于使用的管理S3的客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。京东云OSS兼容 Amazon S3 API将持续完善，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
 
 * 安装：[安装s3browser](Manage-OSS-With-s3browser#user-content-1)
 * 使用s3browser接入OSS：[使用s3browser接入OSS-增加用户](Manage-OSS-With-s3browser#user-content-2)
