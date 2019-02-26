@@ -1,5 +1,5 @@
 # 使用s3browser管理OSS
-s3browsers是一种易于使用的管理S3的客户端。它提供了一个简单的服务Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。京东云OSS兼容 Amazon S3 API将持续完善，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
+s3browsers是一种易于使用的管理S3的客户端。它提供了一个简单的Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。京东云OSS兼容 Amazon S3 API,您可使用s3browser管理京东云OSS，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
 
 * 安装：[安装s3browser](Manage-OSS-With-s3browser#user-content-1)
 * 使用s3browser接入OSS：[使用s3browser接入OSS-增加用户](Manage-OSS-With-s3browser#user-content-2)
@@ -8,8 +8,8 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 * 设置Bucket policy：[ 存储空间操作-设置Bucket policy](Manage-OSS-With-s3browser#user-content-5)
 * 设置静态网站托管（Website）：[ 存储空间操作-静态网站托管（Website）设置](Manage-OSS-With-s3browser#user-content-17)
 * 删除存储空间：[存储空间操作-删除存储空间](Manage-OSS-With-s3browser#user-content-6)
-* CORS设置：[存储空间操作-CORS设置](Manage-OSS-With-s3browser#user-content-15)
-* 生命周期管理（lifecycle）设置：[存储空间操作-生命周期管理（lifecycle）设置](Manage-OSS-With-s3browser#user-content-16)
+* 设置CORS：[存储空间操作-CORS设置](Manage-OSS-With-s3browser#user-content-15)
+* 设置生命周期管理（lifecycle）：[存储空间操作-生命周期管理（lifecycle）设置](Manage-OSS-With-s3browser#user-content-16)
 * 添加具有权限的存储空间或文件路径：[存储空间操作-添加具有权限的存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
 * 列出所有对象：[对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
 * 上传对象：[对象操作-上传对象](Manage-OSS-With-s3browser#user-content-9)
@@ -19,10 +19,8 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 * 移动对象：[对象操作-移动对象](Manage-OSS-With-s3browser#user-content-13)
 * 删除对象：[对象操作-删除对象](Manage-OSS-With-s3browser#user-content-14)
 
-
-
-
 ## 安装
+
 <div id="user-content-1"></div>
 
 1.下载安装包
@@ -44,9 +42,9 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 #### 步骤 2 在弹出的对话框中，填写相应参数：
 
 ![图片](../../../../image/Object-Storage-Service/OSS-125.png)
-*  Account Name：显示名称，一般填自己的用户名即可；
-*  Account Type: S3 Compatible Storage；
-* REST Endpoint ,填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)；
+* Account Name：显示名称，一般填自己的用户名即可；
+* Account Type: S3 Compatible Storage；
+* REST Endpoint:填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)；
 * Signature Version: 选择Version 4；
 * Access Key ID: 京东云的AK；
 * Secret Access Key: 京东云的SK；
@@ -56,8 +54,7 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 
 ### 存储空间操作
 
-**存储空间操作中OSS暂不支持日志管理与版本控制，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的【自定义域名】与【镜像回源】请前往控制台设置，另外有些高级配置该工具需要付费才可使用**
-
+**存储空间操作中OSS暂不支持【服务器访问日志管理】与【版本控制】，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的【自定义域名】与【镜像回源】请前往控制台设置，另外有些高级配置该工具需要付费才可使用**
 
 #### 创建存储空间（bucket）
 <div id="user-content-3"></div>
@@ -100,12 +97,12 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 
 ![](../../../../image/Object-Storage-Service/OSS-129.png)
 
-* 如果您想实现精细化授权给其他用户，可利京东云IAM ，通过京东云控制台可完成设置，如果想仅需为其他京东云账号(包括主账号与子账号)授权OSS 资源的权限，并实现细粒度的灵活授权请参考【设置Bucket policy】
+* 如果您想实现精细化授权给其他用户，可利京东云IAM ，通过京东云控制台可完成设置，如果仅需为其他京东云账号(包括主账号与子账号)授权OSS资源的权限，并实现细粒度的灵活授权请参考【设置Bucket policy】
 
 **说明**
 
 设置Bucket ACL时，建议您通过OSS控制台或者SDK设置，相比使用s3browsers更加便捷高效。
-同时您需要注意，目前对于OSS而言Bucket ACL 与Bucket policy 仅可通过其一管理存储空间权限，二者不可共存。如同时设置，s3browsers将出现报错并显示异常。
+同时您需要注意，目前对于OSS，Bucket ACL 与Bucket policy 仅可通过其一管理存储空间权限，二者不可共存。如同时设置，s3browsers将出现报错并显示异常。
 
 #### 设置Bucket policy
 
@@ -125,15 +122,16 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 <div id="user-content-17"></div>
 
 **说明：**
-详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket website](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)
+
 * 暂不支持**所有请求重定向**。
+* 详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket website](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)。
 
 
 ##### 操作步骤
 
 1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【Website Configuration】。
 
-2.在【Website Configuration】弹框中，按下图选中第二个单选框，并配置【index document】,错误页配置可选。如下图：
+2.在【Website Configuration】弹框中，按下图选中第二个单选框，并必须配置【index document】,【Error document 】配置为可选。如下图：
 
 ![](../../../../image/Object-Storage-Service/OSS-147.png)
 
@@ -144,17 +142,16 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 <div id="user-content-6"></div>
 
 **说明：**
+
 OSS 存储空间的删除目前必须满足以下条件：
 
 * 存储空间内为空，即无任何文件，包括没有未完成的complete 的分片。
 * 存储空间未开启跨区域复制，即不是跨区域复制中的目标存储空间或源存储空间
 * 存储空间内没有图片样式。
 
-满足以上条件您可以执行删除存储空间，否则将失败。
-
 ##### 操作步骤
 
-1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【delete policy】。
+1.在存储空间列表中，选中将要删除的bucket名称，单击右键，选择【delete policy】。
 
 2.点击下图中确定删除复选框，即可完成删除，如图：
 
@@ -165,7 +162,8 @@ OSS 存储空间的删除目前必须满足以下条件：
 <div id="user-content-15"></div>
 
 **说明：**
-您可以使用CORS搭建web 应用，使用javaScript 和HTML5直接访问OSS中资源。详见[跨域访问设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-cors-2),API请参考[跨域访问设置](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-cors-2.md)
+
+您可以使用CORS搭建web 应用，使用javaScript 和HTML5直接访问OSS中资源。详见[跨域访问设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-cors-2),API请参考[跨域访问设置](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-cors-2.md)。
 
 ##### 操作步骤
 
@@ -173,7 +171,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ![](../../../../image/Object-Storage-Service/OSS-143.png)
 
-2.在下图中输入CORS配置，您可以点击图中红框【Sample CORS Configuration】文字链接，在网页中挑选模板，按照自己需求修改，点击【Apply】,完成设置。
+2.在下图中输入CORS配置，您可以点击下图中【Sample CORS Configuration】文字链接，在网页中挑选模板，按照自己需求修改，点击【Apply】,完成设置。
 
 ![](../../../../image/Object-Storage-Service/OSS-142.png)
 
@@ -182,7 +180,8 @@ OSS 存储空间的删除目前必须满足以下条件：
 <div id="user-content-16"></div>
 
 **说明：**
-* 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-lifecycle.md)
+
+* 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-lifecycle.md)。
 * 目前仅支持删除对象，暂不支持**转化存储类型与未合成分片过期自动删除**。
 
 
@@ -193,7 +192,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 2.在【Filter】页签中，可以输入或者点击右侧文件夹图标选择文件前缀，若需要应用全部文件，该项不填即可。如下图：
 ![](../../../../image/Object-Storage-Service/OSS-144.png)
 
-3.之后在【Tansition/Expiration actions】页签中，完成过期删除的时间配置项。Tansition选项目前不支持，【other actions】不需要配置，之后点击【Add new rule】,添加规则，如下图：
+3.之后在【Transition/Expiration actions】页签中，完成过期删除的时间配置项。【Transitions】转换对象存储类型目前不支持，【other actions】完成全部请求重定向的配置，目前也不支持，之后点击【Add new rule】添加规则，如下图：
 
 ![](../../../../image/Object-Storage-Service/OSS-145.png)
 
@@ -201,7 +200,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 您也可点击已有的规则完成修改。
 ![](../../../../image/Object-Storage-Service/OSS-146.png)
 
-#### 添加具有权限的存储空间或文件路径
+#### 添加存储空间或文件路径
 
 <div id="user-content-7"></div>
 
