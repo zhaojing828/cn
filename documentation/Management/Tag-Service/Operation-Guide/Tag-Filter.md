@@ -10,25 +10,25 @@
 
 可供筛选的标签以树状形式在筛选框中列出，默认显示标签键，点击标签键前的三角图标，可以展开看到该标签键所对应的标签值。
 
-![tagfilter](../../../../image/Tag/TagFilter/TagFilter/tagfilter.png)
+![tagfilter](../../../../image/Tag/TagFilter/tagfilter.png)
 
-![tagfilter-open](../../../../image/Tag/TagFilter/TagFilter/tagfilter-open.png)
+![tagfilter-open](../../../../image/Tag/TagFilter/tagfilter-open.png)
 
 点击标签值前的多选框，即为选中该标签作为筛选条件；
 
-![filter-singlepicked](../../../../image/Tag/TagFilter/TagFilter/filter-singlepicked.PNG)
+![filter-singlepicked](../../../../image/Tag/TagFilter/filter-singlepicked.PNG)
 
 点击标签键前的多选框，即为选中该标签键下的所有标签作为筛选条件；
 
- ![filter-mutipicked](../../../../image/Tag/TagFilter/TagFilter/filter-mutipicked.PNG)
+ ![filter-mutipicked](../../../../image/Tag/TagFilter/filter-mutipicked.PNG)
 
 支持同时选中多个不同标签键的标签。
 
-![filter-difmutipicked](../../../../image/Tag/TagFilter/TagFilter/filter-difmutipicked.PNG)
+![filter-difmutipicked](../../../../image/Tag/TagFilter/filter-difmutipicked.PNG)
 
 选择标签后点击“筛选”按钮，即按照所选标签对资源实例进行筛选。筛选结果将出现在列表中。同时，在列表上方会出现包含所选标签筛选条件的提示条。
 
-![tagfilter-conditions](../../../../image/Tag/TagFilter/TagFilter/tagfilter-conditions.png)
+![tagfilter-conditions](../../../../image/Tag/TagFilter/tagfilter-conditions.png)
 
 点击筛选条件标签后的“X”，可以去掉该标签重新对资源实例进行筛选；点击“清空”，将清除所有筛选条件。
 
