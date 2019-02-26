@@ -14,7 +14,7 @@
 - 文件类型：请选择.tar.gz
 - 部署操作命令：请选择“输入部署操作命令”，使用“表单”填写功能，填写具体操作命令，如下：      
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/starting17.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting19.png)
 
 启动脚本：/home/apache-tomcat-7.0.92/bin/startup.sh
 
