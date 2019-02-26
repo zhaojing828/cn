@@ -79,7 +79,7 @@ wget -c http://devops-hb.oss-internal.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-
 在云编译中新建项目，具体信息如下：
 
 -  项目名称：codedeploy-ci-demo03
--  编译镜像：maven/Maven:3.5.0,Jdk:8u20
+-  编译镜像：maven/maven3.6.0-jdk8
 -  源提供商：代码托管
 -  仓库地址：请根据实际情况进行填写，例如devops-demo/java-demo
 -  代码分支：devops-demo
