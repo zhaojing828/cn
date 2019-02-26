@@ -1,4 +1,4 @@
-## AppSpec文件
+## Jdcloud-codedeploy文件
 
 在“新建部署”时，若“部署操作命令”选择“使用代码根目录的jdcloud-codedeploy.yml”，那么，云部署将执行jdcloud-codedeploy.yml的全部内容。这里需要注意的是，jdcloud-codedeploy.yml文件所在目录必须为代码根目录，文件名称为jdcloud-codedeploy.yml。（大小写敏感）
 
