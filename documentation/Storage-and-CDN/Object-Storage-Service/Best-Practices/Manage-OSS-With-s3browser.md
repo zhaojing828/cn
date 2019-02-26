@@ -125,7 +125,7 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 <div id="user-content-17"></div>
 
 **说明：**
-详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket lifecycle](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)
+详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket website](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)
 * 暂不支持**所有请求重定向**。
 
 
