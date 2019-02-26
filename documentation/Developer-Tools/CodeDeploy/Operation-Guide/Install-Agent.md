@@ -26,7 +26,7 @@ wget -c http://devops-hd.oss-internal.cn-east-2.jcloudcs.com/ifrit/ifrit-agent-e
 
 **获取Agent状态**
 
-Agent状态为“正常”、“异常”两种。对于手动安装的Agent，状态将于安装后5min左右进行更新。
+Agent状态为“正常”、“异常”两种。
 
 
 **版本升级**
