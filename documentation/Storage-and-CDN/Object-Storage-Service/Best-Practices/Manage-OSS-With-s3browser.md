@@ -6,7 +6,10 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 * 创建存储空间（bucket）：[存储空间操作-创建存储空间（bucket）](Manage-OSS-With-s3browser#user-content-3)
 * 设置存储空间的Acl：[ 存储空间操作-设置存储空间的Acl](Manage-OSS-With-s3browser#user-content-4)
 * 设置Bucket policy：[ 存储空间操作-设置Bucket policy](Manage-OSS-With-s3browser#user-content-5)
+* 设置静态网站托管（Website）：[ 存储空间操作-静态网站托管（Website）设置](Manage-OSS-With-s3browser#user-content-17)
 * 删除存储空间：[存储空间操作-删除存储空间](Manage-OSS-With-s3browser#user-content-6)
+* CORS设置：[存储空间操作-CORS设置](Manage-OSS-With-s3browser#user-content-15)
+* 生命周期管理（lifecycle）设置：[存储空间操作-生命周期管理（lifecycle）设置](Manage-OSS-With-s3browser#user-content-16)
 * 添加具有权限的存储空间或文件路径：[存储空间操作-添加具有权限的存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
 * 列出所有对象：[对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
 * 上传对象：[对象操作-上传对象](Manage-OSS-With-s3browser#user-content-9)
@@ -52,6 +55,9 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 ## 使用s3browsers管理OSS
 
 ### 存储空间操作
+
+**存储空间操作中OSS暂不支持日志管理与版本控制，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的【自定义域名】与【镜像回源】请前往控制台设置，另外有些高级配置该工具需要付费才可使用**
+
 
 #### 创建存储空间（bucket）
 <div id="user-content-3"></div>
@@ -102,7 +108,9 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 同时您需要注意，目前对于OSS而言Bucket ACL 与Bucket policy 仅可通过其一管理存储空间权限，二者不可共存。如同时设置，s3browsers将出现报错并显示异常。
 
 #### 设置Bucket policy
+
 <div id="user-content-5"></div>
+
 1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【edit Bucket policy】。如图：
 
 ![](../../../../image/Object-Storage-Service/OSS-132.png)
@@ -111,6 +119,25 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 2.参考[Bucket policy 规范](https://docs.jdcloud.com/cn/object-storage-service/access-control-base-on-bucket-policy),在如下表格中完成设置。
 
 ![](../../../../image/Object-Storage-Service/OSS-133.png)
+
+#### 静态网站托管（Website）设置
+
+<div id="user-content-17"></div>
+
+**说明：**
+详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket lifecycle](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)
+* 暂不支持**所有请求重定向**。
+
+
+##### 操作步骤
+
+1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【Website Configuration】。
+
+2.在【Website Configuration】弹框中，按下图选中第二个单选框，并配置【index document】,错误页配置可选。如下图：
+
+![](../../../../image/Object-Storage-Service/OSS-147.png)
+
+3.点击【OK】保存。
 
 #### 删除存储空间
 
@@ -150,6 +177,30 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ![](../../../../image/Object-Storage-Service/OSS-142.png)
 
+#### 生命周期管理（lifecycle）设置
+
+<div id="user-content-16"></div>
+
+**说明：**
+* 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-lifecycle.md)
+* 目前仅支持删除对象，暂不支持**转化存储类型与未合成分片过期自动删除**。
+
+
+##### 操作步骤
+
+1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【lifecycle Configuration】。
+
+2.在【Filter】页签中，可以输入或者点击右侧文件夹图标选择文件前缀，若需要应用全部文件，该项不填即可。如下图：
+![](../../../../image/Object-Storage-Service/OSS-144.png)
+
+3.之后在【Tansition/Expiration actions】页签中，完成过期删除的时间配置项。Tansition选项目前不支持，【other actions】不需要配置，之后点击【Add new rule】,添加规则，如下图：
+
+![](../../../../image/Object-Storage-Service/OSS-145.png)
+
+4.在【Bucket lifecycle rules】管理页面中，点击【Save】完成规则添加。
+您也可点击已有的规则完成修改。
+![](../../../../image/Object-Storage-Service/OSS-146.png)
+
 #### 添加具有权限的存储空间或文件路径
 
 <div id="user-content-7"></div>
@@ -173,6 +224,8 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 
 ### 对象操作
+
+**暂不支持设置对象acl与自定义header，tag**
 
 #### 列出所有对象
 <div id="user-content-8"></div>
