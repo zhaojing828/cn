@@ -61,8 +61,8 @@
         href: Operation-Guide/Details2.md
       - name: 部署工作流
         href: Operation-Guide/Workflow.md
-      - name: AppSpec文件
-        href: Operation-Guide/AppSpec.md
+      - name: Jdcloud-codedeploy文件
+        href: Operation-Guide/Jdcloud-codedeploy.md
       - name: Agent安装
         href: Operation-Guide/Install-Agent.md
       - name: 约定
