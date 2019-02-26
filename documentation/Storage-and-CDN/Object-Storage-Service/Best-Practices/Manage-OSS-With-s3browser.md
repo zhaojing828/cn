@@ -133,6 +133,23 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ![](../../../../image/Object-Storage-Service/OSS-134.png)
 
+#### CORS设置
+
+<div id="user-content-15"></div>
+
+**说明：**
+您可以使用CORS搭建web 应用，使用javaScript 和HTML5直接访问OSS中资源。详见[跨域访问设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-cors-2),API请参考[跨域访问设置](..//put-bucket-cors-2
+)
+满足以上条件您可以执行删除存储空间，否则将失败。
+
+##### 操作步骤
+
+1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【delete policy】。
+
+2.点击下图中确定删除复选框，即可完成删除，如图：
+
+![](../../../../image/Object-Storage-Service/OSS-134.png)
+
 #### 添加具有权限的存储空间或文件路径
 
 <div id="user-content-7"></div>
@@ -152,6 +169,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 2.【Add External Buckets】弹框中添加文件路径，支持添加bucket 或 bucket中某文件夹，保存选项，如图：
 
 ![](../../../../image/Object-Storage-Service/OSS-136.png)
+
 
 
 ### 对象操作
