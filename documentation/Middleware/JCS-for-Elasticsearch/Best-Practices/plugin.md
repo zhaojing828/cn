@@ -3,7 +3,7 @@
 * 当数据量特别小时，您可以直接使用filebeat将数据导入集群。</br>
 * 当有一定的数据量时，您可以使用filebeat来收集日志，发送到logstash server，那么logstash server就自动将日志解析放到ES集群中进行检索。</br>
 * 当数据量特别大时，您可以使用filebeat来收集日志，经过kafka将日志信息发送到logstash server，再由logstash server将数据放到ES集群中。</br>
-
+![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/logstash.png)
 ### 数据接入前提
 由于ES创建在用户VPC内，因此需要用户创建一台和ES集群同一VPC的云主机。
 
