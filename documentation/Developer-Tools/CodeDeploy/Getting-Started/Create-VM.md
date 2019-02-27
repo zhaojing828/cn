@@ -14,7 +14,7 @@
 
 点击“立即购买”，即可按照已选规格，创建云主机。
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting3.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Start-1%EF%BC%88Ch%EF%BC%89.png)
 
 
 接下来，在此云主机中安装部署用Agent，以root用户执行：
