@@ -404,6 +404,8 @@ items:
         href: Best-Practices/Data-Migration-Tool.md 
       - name: 使用S3cmd管理OSS
         href: Best-Practices/S3cmd.md
+      - name: 使用S3 Browser管理OSS
+        href: Best-Practices/Manage-OSS-With-s3browser.md        
       - name: 回调服务器设置签名认证
         href: Best-Practices/Setting-Signature-Authentication-For-Callback-Server.md        
       - name: OSS线上服务快速验证工具
