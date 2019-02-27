@@ -91,6 +91,10 @@
             href: API-Reference/CDN-Open-API/Creat-domain.md
           - name: 设置回源host
             href: API-Reference/CDN-Open-API/Set-back-to-source-host.md
+          - name: 协议跟随回源
+            href: API-Reference/CDN-Open-API/Set-Protocol-Follow-Back-To-Origin.md
+          - name: 回源跟随302
+            href: API-Reference/CDN-Open-API/Set-Follow-302-Configuration.md
           - name: 回源策略变更
             href: API-Reference/CDN-Open-API/Change-back-to-source.md
           - name: 缓存策略变更
