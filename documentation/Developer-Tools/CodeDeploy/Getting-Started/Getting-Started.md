@@ -2,7 +2,7 @@
 
 下面以将URL上传的程序包，滚动部署到云主机中为例，列举出基本服务，以帮助用户快速入门。
 
-示例操作将实现在指定云主机中部署Tomcat。Tomcat安装包获取方式请查看Tomcat官网，如http://tomcat.apache.org/。
+示例操作将实现在指定云主机中部署Tomcat。Tomcat安装包获取方式请查看Tomcat官网，如http://tomcat.apache.org/
 
 基本操作流程如下：
 
