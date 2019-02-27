@@ -1,6 +1,7 @@
 ## 数据接入集群
 ### 数据接入前提
-由于ES创建在用户VPC内，因此需要用户创建一台和ES集群同一VPC的云主机。
+由于ES创建在用户VPC内，因此需要用户创建一台和ES集群同一VPC的云主机。用户可以通过 Elasticsearch REST client 编写代码的方式访问集群并导入数据，也可以通过官方提供的组件如 logstash 和 Beats接入数据。</br>
+
 ### 使用Beats接入集群
 Beats 包含用于收集文件类型数据的 FileBeat、 收集监控指标数据的 MetricBeat、收集网络包数据的 PacketBeat、收集Windows 系统日志的Winlogbeat、收集审计数据的Auditbeat等多种单一用途的的采集器，这些采集器比较轻量，相对于logstash，占用的系统资源较少，可以用于收集日志、监控等数据，用户也可以基于官方的 libbeat 库根据自己的需求开发自己的 Beat 组件。</br>
 
