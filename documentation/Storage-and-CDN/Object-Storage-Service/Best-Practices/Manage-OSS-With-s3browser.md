@@ -1,8 +1,9 @@
 # 使用s3browser管理OSS
-s3browsers是一种易于使用的管理S3的客户端。它提供了一个简单的Web服务接口，可以使用绝大部分的对存储空间（bucket）、对象(object)进行操作管理的功能。京东云OSS兼容 Amazon S3 API,您可使用s3browser管理京东云OSS，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
+s3browsers是一种易于使用的管理S3的客户端，它提供了一个简单的Web服务接口。京东云OSS兼容 Amazon S3 API,您可使用s3browser管理京东云OSS，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
 
 * 安装：[安装s3browser](Manage-OSS-With-s3browser#user-content-1)
 * 使用s3browser接入OSS：[使用s3browser接入OSS-增加用户](Manage-OSS-With-s3browser#user-content-2)
+## 支持功能列表
 * 创建存储空间（bucket）：[存储空间操作-创建存储空间（bucket）](Manage-OSS-With-s3browser#user-content-3)
 * 设置存储空间的Acl：[ 存储空间操作-设置存储空间的Acl](Manage-OSS-With-s3browser#user-content-4)
 * 设置Bucket policy：[ 存储空间操作-设置Bucket policy](Manage-OSS-With-s3browser#user-content-5)
@@ -54,7 +55,7 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 
 ### 存储空间操作
 
-**存储空间操作中OSS暂不支持【服务器访问日志管理】与【版本控制】，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的【自定义域名】与【镜像回源】请前往控制台设置，另外有些高级配置该工具需要付费才可使用**
+**存储空间操作中OSS暂不支持【服务器访问日志管理】与【版本控制】，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的[【镜像回源】](https://docs.jdcloud.com/cn/object-storage-service/manage-origin-retrieval-settings-2)与[【自定义域名】](https://docs.jdcloud.com/cn/object-storage-service/set-custom-domain-name-2)，请[前往控制台](https://oss-console.jdcloud.com/space)设置，另外有些高级配置该工具需要付费才可使用**
 
 #### 创建存储空间（bucket）
 <div id="user-content-3"></div>
@@ -70,7 +71,8 @@ s3browsers是一种易于使用的管理S3的客户端。它提供了一个简�
 **说明**
 
 * 存储空间名称全局唯一，如果该名称已经被其他用户占用，将不能创建成功，请您根据[OSS命名规范](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-2)，输入恰当的能够标识自身业务的名称。
-* 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见【设置存储空间的Acl】与【设置Bucket policy】
+* 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见[【设置存储空间的Acl】](Manage-OSS-With-s3browser#user-content-5)
+【设置存储空间的Acl】与[【设置Bucket policy】](Manage-OSS-With-s3browser#user-content-5)
 
 #### 设置存储空间的Acl
 <div id="user-content-4"></div>
@@ -157,7 +159,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ![](../../../../image/Object-Storage-Service/OSS-134.png)
 
-#### CORS设置
+#### 跨域访问（CORS）设置
 
 <div id="user-content-15"></div>
 
@@ -208,7 +210,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ##### 应用场景：
 
-当您被授予某个存储空间或某前缀文件的读取权限时，您可以通过添加 external bucekt 的方式实现在s3browser中管理文件与存储空间。
+当主账号或子账号被授予某个存储空间或某前缀文件的读取权限时，您可以通过添加 external bucekt 的方式实现在s3browser中管理文件与存储空间。
 
 ##### 操作步骤
 
@@ -263,8 +265,6 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ![](../../../../image/Object-Storage-Service/OSS-139.png)
 3.选择目的存储空间，然后点击OK即可。
-
-![](../../../../image/Object-Storage-Service/OSS-140.png)
 
 #### 重命名对象
 
