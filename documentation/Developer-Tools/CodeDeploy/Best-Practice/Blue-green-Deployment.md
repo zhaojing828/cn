@@ -18,6 +18,7 @@
 - 已有云主机
 - 已有负载均衡实例及监听器
 - 示例代码已clone到代码托管中
+- 已有对象存储空间
 
 
 ### 新建云主机
@@ -76,11 +77,11 @@ wget -c http://devops-hb.oss-internal.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-
 
 ### 在云编译中进行编译构建
 
-在云编译中新建项目，具体信息如下：
+在云编译中新建应用，具体信息如下：
 
--  项目名称：codedeploy-ci-demo03
+-  应用名称：codedeploy-ci-demo03
 -  编译镜像：maven/maven3.6.0-jdk8
--  源提供商：代码托管
+-  源提供商：京东云-代码托管
 -  仓库地址：请根据实际情况进行填写，例如devops-demo/java-demo
 -  代码分支：devops-demo
 -  构建规范：插入构建命令
@@ -111,8 +112,9 @@ cmds:
 out_dir: 'output'
 ```
 -  构建类型：应用包
+-  存储空间：请选择已有的对象存储空间
 
-至此，已将示例代码编译成功，并上传到对象存储，华北-北京空间中。
+至此，已将示例代码编译成功，并上传到对象存储空间中。
 
 接下来，将开始使用云部署将程序包部署到云主机上。
 
@@ -121,13 +123,13 @@ out_dir: 'output'
 
 在“部署应用”页，指定与云主机、对象存储相同的地域后，点击“新建应用”，
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting5.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-1%EF%BC%88Ch%EF%BC%89.png)
 
 跳转到“新建应用”页。
 
 在“新建应用”页，首先填写应用信息。应用名称：codedeploy-app-demo03
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice12.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-2%EF%BC%88Ch%EF%BC%89.png)
 
 点击"新建"按钮
 
@@ -135,7 +137,7 @@ out_dir: 'output'
 
 有以下选项：
 
-- 部署组名称：请填写部署组名称，codedeploy-group-demo03
+- 部署组名称：请填写部署组名称，group1
 - 部署类型：请选择“蓝绿部署”
 - 部署目标：点击“选择”按钮，在弹窗中选择云主机。支持三种选择过滤条件：高可用组、标签、IP。这里请选择在上一步中创建的云主机，即主机名为：codedeploy-demo031加入蓝组，主机名为：codedeploy-demo032加绿组
 - 使用负载均衡：是
@@ -143,49 +145,56 @@ out_dir: 'output'
 - 负载均衡后端服务：请选择上一项中指定的负载均衡实例下的后端服务，codedeploy-backend-demo03
 - 高级选项：保持默认选项，详见操作指南
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice13.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-3%EF%BC%88Ch%EF%BC%89.png)
 
 填写部署组的基本信息后，请点击“新建”，将进行应用中部署组的新建。
 
-创建成功后，将跳转到“应用”页。
+创建成功后，将跳转到“应用详情”页。
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice14.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-4%EF%BC%88Ch%EF%BC%89.png)
 
 ### 新建部署
 
 在“应用”页，进入到“部署组”分页，可见上一步中创建完成的部署组。
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice14.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-4%EF%BC%88Ch%EF%BC%89.png)
 
 对于单个部署组，可支持的操作有：发起部署、部署历史、编辑、删除。
 
-点击“部署”按钮，进入到“新建部署”页，有以下选项：
+点击“发起部署”按钮，进入到“新建部署任务”页，
+
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-5%EF%BC%88Ch%EF%BC%89.png)
+
+有以下选项：
 
 - 部署描述：非必须，为本次部署的描述信息
-- 部署来源：支持多种部署来源，请选择我的云编译
-- 云编译项目名称：请填写codedeploy-ci-demo03
+- 部署来源：支持多种部署来源，请选择云编译
+- 云编译应用名称：请填写codedeploy-ci-demo03
 - 云编译构建序号：请填写上一步中编译成功的构建序号
 - 文件类型：请选择.tar.gz
 - 部署操作命令：请选择“输入部署操作命令”，使用“表单填写”功能，填写具体操作命令，如下：
 ```
 部署路径: 源文件/目录：/       目标目录：/home
-脚本执行账户：  root       
-脚本超时时间（s）：100
 停止脚本路径：/home/bin/stop.sh     
 启动脚本路径：/home/bin/start.sh
+检查脚本路径：
+脚本执行账户：  root       
+脚本超时时间（s）：100
 ```
 
-注意：初次部署无需填写停止脚本
+注意：初次部署无需填写停止脚本路径。
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/practice15.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-6%EF%BC%88Ch%EF%BC%89.png)
 
-填写部署任务信息后，请点击“部署”，将触发部署操作。
+填写部署任务信息后，请点击“发起部署”，将触发部署操作。
 
 将跳转到“部署详情”页。
 
 ### 查看部署详情
 
 在“部署详情”页，可见本次部署的进展情况。在部署过程中，支持“取消”。
+
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-7%EF%BC%88Ch%EF%BC%89.png)
 
 点击“查看配置”，查看本次部署任务的详细配置信息。
 
