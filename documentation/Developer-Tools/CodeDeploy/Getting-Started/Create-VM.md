@@ -10,8 +10,6 @@
 - 带宽：需购买公网IP
 - 基本信息：填写主机名、密码。这里填写主机名为：codedeploy-demo01
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting1.png)
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting2.png)
 
 
 点击“立即购买”，即可按照已选规格，创建云主机。

@@ -10,12 +10,12 @@
 
 - 部署描述：非必须，为本次部署的描述信息
 - 部署来源：支持多种部署来源，请选择URL上传
-- URL地址：请填写http://ftp.cuhk.edu.hk/pub/packages/apache.org/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz
+- URL地址：请填写http://ftp.cuhk.edu.hk/pub/packages/apache.org/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz
 - 文件类型：请选择.tar.gz
-- 部署操作命令：请选择“输入部署操作命令”，使用“表单”填写功能，填写具体操作命令，如下：      
+- 部署操作命令：请选择“输入部署操作命令”，使用“表单”填写功能，填写具体操作命令，如下：
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting19.png)
 
-启动脚本：/home/apache-tomcat-7.0.92/bin/startup.sh
+启动脚本：/home/apache-tomcat-7.0.93/bin/startup.sh
 
 填写部署任务信息后，请点击“发起部署”，将触发部署操作，跳转到“部署详情”页。
