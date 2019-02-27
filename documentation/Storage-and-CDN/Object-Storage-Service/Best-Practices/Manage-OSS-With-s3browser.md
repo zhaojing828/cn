@@ -11,7 +11,7 @@ s3browsers是一种易于使用的管理S3的客户端，它提供了一个简�
 * 删除存储空间：[存储空间操作-删除存储空间](Manage-OSS-With-s3browser#user-content-6)
 * 设置CORS：[存储空间操作-CORS设置](Manage-OSS-With-s3browser#user-content-15)
 * 设置生命周期管理（lifecycle）：[存储空间操作-生命周期管理（lifecycle）设置](Manage-OSS-With-s3browser#user-content-16)
-* 添加具有权限的存储空间或文件路径：[存储空间操作-添加具有权限的存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
+* 添加具有权限的存储空间或文件路径：[存储空间操作-添加存储空间或文件路径](Manage-OSS-With-s3browser#user-content-7)
 * 列出所有对象：[对象操作-列出所有对象](Manage-OSS-With-s3browser#user-content-8)
 * 上传对象：[对象操作-上传对象](Manage-OSS-With-s3browser#user-content-9)
 * 下载对象：[对象操作-下载对象](Manage-OSS-With-s3browser#user-content-10)
@@ -20,9 +20,9 @@ s3browsers是一种易于使用的管理S3的客户端，它提供了一个简�
 * 移动对象：[对象操作-移动对象](Manage-OSS-With-s3browser#user-content-13)
 * 删除对象：[对象操作-删除对象](Manage-OSS-With-s3browser#user-content-14)
 
-## 安装
-
 <div id="user-content-1"></div>
+
+## 安装
 
 1.下载安装包
 
@@ -32,10 +32,11 @@ s3browsers是一种易于使用的管理S3的客户端，它提供了一个简�
 
 点开安装即可
 
+<div id="user-content-2"></div>
+
 ## 使用s3browser接入OSS
 
 ###  增加用户
-<div id="user-content-2"></div>
 
 #### 步骤 1 在左侧的 account 下拉菜单中点击【add new account】
 ![](../../../../image/Object-Storage-Service/OSS-124.png)
@@ -57,8 +58,9 @@ s3browsers是一种易于使用的管理S3的客户端，它提供了一个简�
 
 **存储空间操作中OSS暂不支持【服务器访问日志管理】与【版本控制】，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的[【镜像回源】](https://docs.jdcloud.com/cn/object-storage-service/manage-origin-retrieval-settings-2)与[【自定义域名】](https://docs.jdcloud.com/cn/object-storage-service/set-custom-domain-name-2)，请[前往控制台](https://oss-console.jdcloud.com/space)设置，另外有些高级配置该工具需要付费才可使用**
 
-#### 创建存储空间（bucket）
 <div id="user-content-3"></div>
+
+#### 创建存储空间（bucket）
 
 ![](../../../../image/Object-Storage-Service/OSS-126.png)
 
@@ -74,8 +76,9 @@ s3browsers是一种易于使用的管理S3的客户端，它提供了一个简�
 * 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见[【设置存储空间的Acl】](Manage-OSS-With-s3browser#user-content-5)
 【设置存储空间的Acl】与[【设置Bucket policy】](Manage-OSS-With-s3browser#user-content-5)
 
-#### 设置存储空间的Acl
 <div id="user-content-4"></div>
+
+#### 设置存储空间的Acl
 
 ##### 操作步骤
 
@@ -106,9 +109,9 @@ s3browsers是一种易于使用的管理S3的客户端，它提供了一个简�
 设置Bucket ACL时，建议您通过OSS控制台或者SDK设置，相比使用s3browsers更加便捷高效。
 同时您需要注意，目前对于OSS，Bucket ACL 与Bucket policy 仅可通过其一管理存储空间权限，二者不可共存。如同时设置，s3browsers将出现报错并显示异常。
 
-#### 设置Bucket policy
-
 <div id="user-content-5"></div>
+
+#### 设置Bucket policy
 
 1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【edit Bucket policy】。如图：
 
@@ -119,29 +122,29 @@ s3browsers是一种易于使用的管理S3的客户端，它提供了一个简�
 
 ![](../../../../image/Object-Storage-Service/OSS-133.png)
 
-#### 静态网站托管（Website）设置
-
 <div id="user-content-17"></div>
+
+#### 静态网站托管（Website）设置
 
 **说明：**
 
-* 暂不支持**所有请求重定向**。
-* 详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket website](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)。
+-  暂不支持 **所有请求重定向** 。
+-  详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket website](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)。
 
 
 ##### 操作步骤
 
 1.在存储空间列表中，选中需要设置的bucket名称，单击右键，选择【Website Configuration】。
 
-2.在【Website Configuration】弹框中，按下图选中第二个单选框，并必须配置【index document】,【Error document 】配置为可选。如下图：
+2.在【Website Configuration】弹框中，按下图选中第二个单选框，并必须配置【Index document】,【Error document 】配置为可选。如下图：
 
 ![](../../../../image/Object-Storage-Service/OSS-147.png)
 
 3.点击【OK】保存。
 
-#### 删除存储空间
-
 <div id="user-content-6"></div>
+
+#### 删除存储空间
 
 **说明：**
 
@@ -159,13 +162,13 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ![](../../../../image/Object-Storage-Service/OSS-134.png)
 
-#### 跨域访问（CORS）设置
-
 <div id="user-content-15"></div>
+
+#### 跨域访问（CORS）设置
 
 **说明：**
 
-您可以使用CORS搭建web 应用，使用javaScript 和HTML5直接访问OSS中资源。详见[跨域访问设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-cors-2),API请参考[跨域访问设置](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-cors-2.md)。
+您可以使用CORS搭建web 应用，使用javaScript 和HTML5直接访问OSS中资源。详见[跨域访问设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-cors-2),API请参考[put bucket cors](http://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)。
 
 ##### 操作步骤
 
@@ -177,9 +180,9 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 ![](../../../../image/Object-Storage-Service/OSS-142.png)
 
-#### 生命周期管理（lifecycle）设置
-
 <div id="user-content-16"></div>
+
+#### 生命周期管理（lifecycle）设置
 
 **说明：**
 
@@ -202,9 +205,9 @@ OSS 存储空间的删除目前必须满足以下条件：
 您也可点击已有的规则完成修改。
 ![](../../../../image/Object-Storage-Service/OSS-146.png)
 
-#### 添加存储空间或文件路径
-
 <div id="user-content-7"></div>
+
+#### 添加存储空间或文件路径
 
 **说明**
 
@@ -223,39 +226,40 @@ OSS 存储空间的删除目前必须满足以下条件：
 ![](../../../../image/Object-Storage-Service/OSS-136.png)
 
 
-
 ### 对象操作
 
-**暂不支持设置对象acl与自定义header，tag**
+**暂不支持设置对象acl与自定义header，tag 。**
+
+<div id="user-content-8"></div>
 
 #### 列出所有对象
-<div id="user-content-8"></div>
+
 单击对应的存储空间名即可。
 
 如图：您可以创建文件夹，上传，下载，删除文件等。
 
 ![](../../../../image/Object-Storage-Service/OSS-138.png)
 
+<div id="user-content-9"></div>
+
 #### 上传对象
 
-<div id="user-content-9"></div>
 点击上图中，【Upload】选项,支持文件与文件夹上传。上传完成后自动刷新文件列表。
-
-#### 下载对象
 
 <div id="user-content-10"></div>
 
+#### 下载对象
+
 * 方法一：选中需要下载的文件或者文件夹，点击上图中的【Download】选项，选择存储路径完成下载。
-* 方法二：选中需要下载的文件或者文件夹，在弹出菜单中选择【Download】
+* 方法二：选中需要下载的文件或者文件夹，在弹出菜单中选择【Download】。
 
 如下图：
 
 ![](../../../../image/Object-Storage-Service/OSS-137.png)
 
+<div id="user-content-11"></div>
 
 #### 复制对象到OSS存储空间
-
-<div id="user-content-11"></div>
 
 #####  操作步骤
 
@@ -266,16 +270,17 @@ OSS 存储空间的删除目前必须满足以下条件：
 ![](../../../../image/Object-Storage-Service/OSS-139.png)
 3.选择目的存储空间，然后点击OK即可。
 
+<div id="user-content-12"></div>
+
 #### 重命名对象
 
-<div id="user-content-12"></div>
 1.右击对象
 
 2.选择【Rename】 ，重命名弹框中输入名字，点击【Rename】即可。
 
-#### 移动对象
-
 <div id="user-content-13"></div>
+
+#### 移动对象
 
 **说明**
 
@@ -290,14 +295,15 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 3.选择目的存储空间，点击OK即可。
 
+<div id="user-content-14"></div>
 
 #### 删除对象
-<div id="user-content-14"></div>
+
 支持文件与文件夹删除。
 
 #####  操作步骤
 
-* 方式一：点击对象，右击，点击【Delete】
+* 方式一：点击对象，右击【Delete】
 
 * 方式二：点击对象，点击对象框下面的【Delete】
 
