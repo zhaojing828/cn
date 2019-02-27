@@ -1,5 +1,5 @@
 ## 数据接入集群
-用户可以通过 Elasticsearch REST client 编写代码的方式访问集群并接入数据，也可以通过官方提供的组件如 logstash 和 Beats接入数据。
+ES 构建在 VPC 内，用户可以便捷地使用各种数据同步插件，将数据接入到 ES 集群中。用户可以通过 Elasticsearch REST client 编写代码的方式访问集群并接入数据，也可以通过官方提供的组件如 logstash 和 Beats接入数据。
 
  * 当数据量特别小时，您可以直接使用filebeat将数据接入集群。
 
