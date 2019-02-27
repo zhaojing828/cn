@@ -153,7 +153,7 @@ out_dir: 'output'
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-4%EF%BC%88Ch%EF%BC%89.png)
 
-### 新建部署
+### 发起部署
 
 在“应用”页，进入到“部署组”分页，可见上一步中创建完成的部署组。
 
