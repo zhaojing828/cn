@@ -12,7 +12,7 @@
 - 部署来源：支持多种部署来源，请选择URL上传
 - URL地址：请填写http://ftp.cuhk.edu.hk/pub/packages/apache.org/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93.tar.gz
 - 文件类型：请选择.tar.gz
-- 部署操作命令：请选择“输入部署操作命令”，使用“表单”填写功能，填写具体操作命令，如下：      
+- 部署操作命令：请选择“输入部署操作命令”，使用“表单”填写功能，填写具体操作命令，如下：
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting19.png)
 
