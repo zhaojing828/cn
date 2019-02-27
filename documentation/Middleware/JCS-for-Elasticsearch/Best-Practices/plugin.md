@@ -1,8 +1,9 @@
 ## 数据接入集群
-用户可以通过 Elasticsearch REST client 编写代码的方式访问集群并接入数据，也可以通过官方提供的组件如 logstash 和 Beats接入数据。</br>
-* 当数据量特别小时，您可以直接使用filebeat将数据接入集群。</br>
-* 当有一定的数据量时，您可以使用filebeat来收集日志，发送到logstash server，或直接使用logstash，将数据接入到ES集群。</br>
-* 当数据量特别大时，您可以使用filebeat来收集日志，经过kafka将日志信息发送到logstash server，再接入到ES集群中。</br>
+用户可以通过 Elasticsearch REST client 编写代码的方式访问集群并接入数据，也可以通过官方提供的组件如 logstash 和 Beats接入数据。
+
+* 当数据量特别小时，您可以直接使用filebeat将数据接入集群。
+* 当有一定的数据量时，您可以使用filebeat来收集日志，发送到logstash server，或直接使用logstash，将数据接入到ES集群。
+* 当数据量特别大时，您可以使用filebeat来收集日志，经过kafka将日志信息发送到logstash server，再接入到ES集群中。
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/logstash.png)
 
 ### 数据接入前提
