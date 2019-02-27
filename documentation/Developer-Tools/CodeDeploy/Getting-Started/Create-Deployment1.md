@@ -6,7 +6,7 @@
 
 对于单个部署组，可支持的操作有：发起部署、部署历史、编辑、删除。
 
-点击“发起部署”按钮，进入到“新建部署”页，
+点击“发起部署”按钮，进入到“发起部署”页，
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Start-7%EF%BC%88Ch%EF%BC%89.png)
 
