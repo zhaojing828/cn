@@ -9,9 +9,9 @@
 由于ES创建在用户VPC内，因此需要用户创建一台和ES集群同一VPC的云主机。
 
 ### 使用Beats接入集群
-Beats 包含用于收集文件类型数据的 FileBeat、 收集监控指标数据的 MetricBeat、收集网络包数据的 PacketBeat、收集Windows 系统日志的Winlogbeat、收集审计数据的Auditbeat等多种单一用途的的采集器，这些采集器比较轻量，相对于logstash，占用的系统资源较少，可以用于收集日志、监控等数据，用户也可以基于官方的 libbeat 库根据自己的需求开发自己的 Beat 组件。</br>
+Beats 包含用于收集文件类型数据的 fileBeat、 收集监控指标数据的 metricBeat、收集网络包数据的 packetBeat、收集Windows 系统日志的winlogbeat、收集审计数据的auditbeat等多种单一用途的的采集器，这些采集器比较轻量，相对于logstash，占用的系统资源较少，可以用于收集日志、监控等数据，用户也可以基于官方的 libbeat 库根据自己的需求开发自己的 Beats 组件。</br>
 
-Filebeat相当于一个轻量级的logstash，当你需要收集信息的机器配置或资源并不是特别多时，可以使用Filebeat来收集日志。操作步骤如下：</br>
+Filebeat相当于一个轻量级的logstash，当你需要收集信息的机器配置或资源并不是特别多时，可以使用filebeat来收集日志。操作步骤如下：</br>
 
 1.安装部署filebeat
 
