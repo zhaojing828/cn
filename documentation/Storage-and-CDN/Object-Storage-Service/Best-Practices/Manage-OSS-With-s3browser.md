@@ -1,5 +1,5 @@
 # 使用s3browser管理OSS
-s3browsers是一种易于使用的管理S3的客户端，它提供了一个简单的Web服务接口。京东云OSS兼容 Amazon S3 API,您可使用s3browser管理京东云OSS，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
+s3browser是一种易于使用管理S3的客户端。京东云OSS兼容 Amazon S3 API,您可使用s3browser管理京东云OSS，详见[兼容接口](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。 
 
 * 安装：[安装s3browser](Manage-OSS-With-s3browser#user-content-1)
 * 使用s3browser接入OSS：[使用s3browser接入OSS-增加用户](Manage-OSS-With-s3browser#user-content-2)
@@ -187,7 +187,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 **说明：**
 
 * 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-lifecycle.md)。
-* 目前仅支持删除对象，暂不支持**转化存储类型与未合成分片过期自动删除**。
+* 目前仅支持删除对象，暂不支持 **转化存储类型与未合成分片过期自动删除** 。
 
 
 ##### 操作步骤
