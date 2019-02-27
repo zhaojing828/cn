@@ -44,6 +44,7 @@ s3browser是一种易于使用管理S3的客户端。京东云OSS兼容 Amazon�
 #### 步骤 2 在弹出的对话框中，填写相应参数：
 
 ![图片](../../../../image/Object-Storage-Service/OSS-125.png)
+
 * Account Name：显示名称，一般填自己的用户名即可；
 * Account Type: S3 Compatible Storage；
 * REST Endpoint:填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)；
@@ -56,7 +57,7 @@ s3browser是一种易于使用管理S3的客户端。京东云OSS兼容 Amazon�
 
 ### 存储空间操作
 
-**存储空间操作中OSS暂不支持【服务器访问日志管理】与【版本控制】，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的[【镜像回源】](https://docs.jdcloud.com/cn/object-storage-service/manage-origin-retrieval-settings-2)与[【自定义域名】](https://docs.jdcloud.com/cn/object-storage-service/set-custom-domain-name-2)，请[前往控制台](https://oss-console.jdcloud.com/space)设置，另外有些高级配置该工具需要付费才可使用**
+**存储空间操作中OSS暂不支持【服务器访问日志管理】与【版本控制】，跨区域复制功能由于该工具只能选择同一区域bucket，所以不能设置。与S3尚未兼容的[【镜像回源】](https://docs.jdcloud.com/cn/object-storage-service/manage-origin-retrieval-settings-2)与[【自定义域名】](https://docs.jdcloud.com/cn/object-storage-service/set-custom-domain-name-2)，请[前往控制台](https://oss-console.jdcloud.com/space)设置，另外有些高级配置该工具需要付费才可使用。**
 
 <div id="user-content-3"></div>
 
@@ -73,8 +74,8 @@ s3browser是一种易于使用管理S3的客户端。京东云OSS兼容 Amazon�
 **说明**
 
 * 存储空间名称全局唯一，如果该名称已经被其他用户占用，将不能创建成功，请您根据[OSS命名规范](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-2)，输入恰当的能够标识自身业务的名称。
-* 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见[【设置存储空间的Acl】](Manage-OSS-With-s3browser#user-content-5)
-【设置存储空间的Acl】与[【设置Bucket policy】](Manage-OSS-With-s3browser#user-content-5)
+* 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见[【设置存储空间的Acl】](Manage-OSS-With-s3browser#user-content-4)
+与[【设置Bucket policy】](Manage-OSS-With-s3browser#user-content-5)。
 
 <div id="user-content-4"></div>
 
