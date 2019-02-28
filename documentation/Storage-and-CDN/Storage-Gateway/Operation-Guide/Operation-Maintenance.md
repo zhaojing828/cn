@@ -14,7 +14,7 @@
 
 4.存储网关停止NFS服务后，会导致使用Hard模式的相关NFS Client的操作hang住，且无法强制umount，此场景该如何操作？
 
-当使用Hard模式Mount时，当Client调用NFS服务不成功时，会一直重试，且无法中断调用。当遇到此情况时，建议启动原有NFS服务，然后指定umount后重新mount。若不再使用NFS Server，仍需强制umount，请执行`fuser -m -v -k -i /mountpoint`kill掉相关NFS进程。如无法Kill占用NFS进程，请重启NFS Client。
+当使用Hard模式Mount时，当Client调用NFS服务不成功时，会一直重试，且无法中断调用。当遇到此情况时，建议启动原有NFS服务，然后执行umount。若不再使用NFS Server，仍需强制umount，请执行`fuser -m -v -k -i /mountpoint`kill掉相关NFS进程。如无法Kill占用NFS进程，请重启NFS Client。
 
 5.NFS Server关闭后导致的Client调用hang住，且无法中断，该如何避免此问题？
 
