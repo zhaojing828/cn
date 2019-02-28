@@ -10,7 +10,7 @@
 
 ## 安装方式
 
-安装AWS SDK for .NET，请参考安装[AWS-SDK程序集](https://docs.aws.amazon.com/zh_cn/sdk-for-net/v3/developer-guide/net-dg-install-assemblies.html?shortFooter=true)
+安装AWS SDK for .NET，请参考安装[AWS-SDK程序集](https://docs.aws.amazon.com/zh_cn/sdk-for-net/v3/developer-guide/net-dg-install-assemblies.html?shortFooter=true)。
 
 ## 初始化Client
 
