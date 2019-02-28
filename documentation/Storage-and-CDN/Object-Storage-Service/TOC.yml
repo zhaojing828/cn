@@ -343,7 +343,9 @@ items:
        - name:  兼容S3  SDK-Android
          href:  API-Reference-S3-Compatible/Compatibility-Tools/SDK-Android.md
        - name: 兼容S3  SDK-iOS
-         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md         
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md      
+       - name: 兼容S3 SDK-.NET
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-NET.md   
        - name: 旧版 Java SDK（不推荐）
          items:
            - name: 安装
