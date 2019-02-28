@@ -1,8 +1,5 @@
 # SDK-.NET
 
-
-# SDK-.NET
-
 ## 概述
 
 本文档基于[AWS .NET SDK](https://aws.amazon.com/cn/sdk-for-net/)编写。京东云对象存储支持AWS S3接口，具体兼容的接口可在[兼容接口](../Compatibility-API/Compatibility-API-Overview.md)查看。
@@ -24,7 +21,7 @@
 ```
 using Amazon.S3;
 
-namespace Amazon.DocSamples.S3
+namespace Amazon.Samples.S3
 {
     public class Test
     {
