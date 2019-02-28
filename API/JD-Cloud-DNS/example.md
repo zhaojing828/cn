@@ -28,9 +28,6 @@ func initDNSClient() *ClouddnsserviceClient{
 	client.SetConfig(config)
 	return client
 }
-
-
-
 ```
 
 先获取主域名：
@@ -58,26 +55,26 @@ func GetDomains() {
 }
 ```
 
-例如， jdclou.com 的domainId = 199，添加www.jdcloud.com 这个子域名的A记录：
+例如：jdclou.com 的domainId = 199，添加www.jdcloud.com 这个子域名的A记录：
 
 ```
 func AddRR() {
 	//初始化
 	client := initDNSClient()
 	// 请求赋值
-	rr := models.AddRR{
-        /* 主机记录  */
-        HostRecord: "www",
-        /* 解析记录的值  */
-        HostValue: "1.2.3.4",
-        /* 解析记录的生存时间  */
-        Ttl: 600,
-        /* 解析的类型  */
-        Type: "A",
-        /* 解析线路的ID，请调用getViewTree接口获取解析线路的ID。  */
-        ViewValue: -1,
-    }
-	req := apis.NewAddRRRequest("cn-north-1", "199", &rr)
+	rr := &models.AddRR {
+        	/* 主机记录  */
+        	HostRecord: "www",
+        	/* 解析记录的值  */
+        	HostValue: "1.2.3.4",
+        	/* 解析记录的生存时间  */
+        	Ttl: 600,
+        	/* 解析的类型  */
+        	Type: "A",
+        	/* 解析线路的ID，请调用getViewTree接口获取解析线路的ID。  */
+        	ViewValue: -1,
+    	}
+	req := apis.NewAddRRRequest("cn-north-1", "199", rr)
 	req.AddHeader("x-jdcloud-pin", "UserName")
 	
 	// 做请求
@@ -121,7 +118,5 @@ func AddFreeDomain() {
 	}
 }
 ```
-
-
 
 更多接口，请查阅[概览页](https://docs.jdcloud.com/cn/jd-cloud-dns/api/overview)。
