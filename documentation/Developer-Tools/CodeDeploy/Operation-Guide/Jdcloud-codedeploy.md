@@ -32,7 +32,7 @@ env:
 
 **关键字说明**
 
-1）files（必须）
+**1）files（必须）**
 
 source：
 
@@ -106,7 +106,7 @@ folder1/file3.txt
 ```
 
 
-2）hooks（非必须）
+**2）hooks（非必须）**
 
 location：
 
@@ -183,7 +183,7 @@ hooks:
 
 建议在hooks脚本中，设置 set -e
 
-3）permisssions（非必须）
+**3）permisssions（非必须）**
 
 object: 
 
@@ -238,7 +238,7 @@ permisssions:
 
 在复制目录或文件到指定路径后，将执行permissions中对应操作：对于/opt/soft目录下，名字可匹配bin，且非sbin/start的目录，执行修改权限操作，权限修改为owner=admin，mode=777
 
-4）env（非必须）
+**4）env（非必须）**
 
 在工作流中执行hooks里的相关脚本时的环境变量
 
