@@ -95,6 +95,8 @@ items:
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: GPU云主机
             href: Operation-Guide/Instance/GPU-VM.md
+          - name: 自定义数据
+            href: Operation-Guide/Instance/userdata.md
       - name: 实例模板
         items:
           - name: 实例模板概述
@@ -145,8 +147,6 @@ items:
             href: Operation-Guide/Storage/Assign-Device-Name.md
           - name: 配置删除属性
             href: Operation-Guide/Storage/Configurate-Delete-Attributes.md
-          - name: 云硬盘加密
-            href: peration-Guide/Storage/Encryption-of-Cloud-Disk.md
       - name: 网络
         items:
           - name: 网络概述
@@ -175,8 +175,6 @@ items:
             href: Operation-Guide/Key-Pair/Create-Keypair.md
           - name: 绑定密钥
             href: Operation-Guide/Key-Pair/Bind-Keypair.md
-          - name: 删除密钥
-            href: Operation-Guide/Key-Pair/Delete-Keypair.md
       - name: 安全组
         items:
           - name: 安全组概述
