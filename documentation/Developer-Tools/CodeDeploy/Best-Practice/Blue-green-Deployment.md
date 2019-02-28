@@ -131,7 +131,7 @@ out_dir: 'output'
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-2%EF%BC%88Ch%EF%BC%89.png)
 
-点击"新建"按钮
+点击"新建"按钮。
 
 接下来，在应用中新建部署组，
 
