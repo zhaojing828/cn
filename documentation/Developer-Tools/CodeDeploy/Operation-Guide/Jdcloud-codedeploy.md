@@ -18,7 +18,7 @@ hooks:
      - location: /opt/Control/Test2.sh
        timeout: 100
 permisssions: 
-  - object: /opt/soft
+  - object: /home/config/soft
     pattern: "**"
     except: [function.php]
     owner: admin
@@ -27,7 +27,7 @@ permisssions:
     type:
       - file
 env:  
-  php_path: /opt/soft/php/bin
+  php_path: /home/config/soft/php/bin
 ```
 
 **关键字说明**
@@ -238,7 +238,9 @@ permisssions:
 
 在复制目录或文件到指定路径后，将执行permissions中对应操作：对于/opt/soft目录下，名字可匹配bin，且非sbin/start的目录，执行修改权限操作，权限修改为owner=admin，mode=777
 
+4）env（非必须）
 
+在工作流中执行hooks里的相关脚本时的环境变量
 
 
 
