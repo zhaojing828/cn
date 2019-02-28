@@ -221,10 +221,25 @@ type:
 - 非必须
 
 
-
-
-
 **示例**
+
+```
+permisssions:
+  - object: /opt/soft
+    pattern: "*bin*"
+    except: [sbin/start]
+    owner: admin
+    mode: 777
+    type:
+      - directory
+```
+
+将在部署过程中，将在工作流中的对应如下操作：
+
+在复制目录或文件到指定路径后，将执行permissions中对应操作：对于/opt/soft目录下，名字可匹配bin，且非sbin/start的目录，执行修改权限操作，权限修改为owner=admin，mode=777
+
+
+
 
 
 
