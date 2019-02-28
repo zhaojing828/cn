@@ -14,7 +14,7 @@
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Start-9%EF%BC%88Ch%EF%BC%89.png)
 
-在浏览器中输入，云主机公网ip:8080，可见Tomcat欢迎页
+在浏览器中输入，云主机公网ip:8080，可见Tomcat欢迎页，
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Start-10%EF%BC%88Ch%EF%BC%89.png)
 
