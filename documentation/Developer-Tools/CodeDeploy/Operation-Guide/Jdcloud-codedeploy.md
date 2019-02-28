@@ -25,7 +25,7 @@ permisssions:
     group: admin
     mode: 777
     type:
-      - object-type
+      - file
 env:  
   php_path: /opt/soft/php/bin
 ```
