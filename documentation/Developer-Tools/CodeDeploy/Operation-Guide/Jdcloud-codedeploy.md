@@ -17,6 +17,17 @@ hooks:
        runas: root
      - location: /opt/Control/Test2.sh
        timeout: 100
+permisssions: 
+  - object: /opt/soft/
+    pattern: "**"
+    except: [function.php]
+    owner: admin
+    group: admin
+    mode: 777
+    type:
+      - object-type
+env:  
+  php_path: /opt/soft/php/bin
 ```
 
 **关键字说明**
