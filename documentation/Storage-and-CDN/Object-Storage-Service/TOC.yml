@@ -252,10 +252,6 @@ items:
              href: API-Reference-S3-Compatible/Extension-API/Compress-Object.md
            - name: ImgProtected
              href: API-Reference-S3-Compatible/Extension-API/ImgProtected.md
-      - name: 兼容工具
-        items:
-           - name: CloudBerry
-             href: API-Reference-S3-Compatible/Compatibility-Tools/CloudBerry-1.md 
       - name: 旧版OSS API 简介
         items:
            - name: 基本概念
