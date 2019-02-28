@@ -18,7 +18,7 @@ hooks:
      - location: /opt/Control/Test2.sh
        timeout: 100
 permisssions: 
-  - object: /opt/soft/
+  - object: /opt/soft
     pattern: "**"
     except: [function.php]
     owner: admin
