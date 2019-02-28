@@ -55,10 +55,10 @@
         href: Operation-Guide/Deployment-Group-Detail.md
       - name: 发起部署
         href: Operation-Guide/Create-Deployment2.md
+      - name: 部署详情
+        href: Operation-Guide/Details2.md        
       - name: 部署历史
         href: Operation-Guide/Deployment-History.md
-      - name: 部署详情
-        href: Operation-Guide/Details2.md
       - name: 部署工作流
         href: Operation-Guide/Workflow.md
       - name: Jdcloud-codedeploy文件
