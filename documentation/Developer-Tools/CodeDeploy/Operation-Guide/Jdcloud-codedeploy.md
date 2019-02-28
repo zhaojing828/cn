@@ -1,6 +1,6 @@
 ## Jdcloud-codedeploy文件
 
-在“新建部署”时，若“部署操作命令”选择“使用代码根目录的jdcloud-codedeploy.yml”，那么，云部署将执行jdcloud-codedeploy.yml的全部内容。这里需要注意的是，jdcloud-codedeploy.yml文件所在目录必须为代码根目录，文件名称为jdcloud-codedeploy.yml。（大小写敏感）
+在“新建部署”时，若“部署操作命令”选择“使用代码根目录的jdcloud-codedeploy.yml”，那么，云部署将执行jdcloud-codedeploy.yml的全部内容。这里需要注意的是，jdcloud-codedeploy.yml文件所在目录必须为代码根目录，文件名称为jdcloud-codedeploy.yml（大小写敏感）。
 
 **模板**
 
@@ -17,11 +17,22 @@ hooks:
        runas: root
      - location: /opt/Control/Test2.sh
        timeout: 100
+permisssions: 
+  - object: /home/config/soft
+    pattern: "**"
+    except: [function.php]
+    owner: admin
+    group: admin
+    mode: 777
+    type:
+      - file
+env:  
+  php_path: /home/config/soft/php/bin
 ```
 
 **关键字说明**
 
-1）files（必须）
+**1）files（必须）**
 
 source：
 
@@ -95,7 +106,7 @@ folder1/file3.txt
 ```
 
 
-2）hooks（非必须）
+**2）hooks（非必须）**
 
 location：
 
@@ -171,3 +182,66 @@ hooks:
 
 
 建议在hooks脚本中，设置 set -e
+
+**3）permisssions（非必须）**
+
+object: 
+
+- 待修改权限的目录或文件
+- 必须
+
+pattern: 
+
+- 若使用"**"，则权限将应用于所有匹配的目录或文件
+- 非必须
+
+except: 
+
+- 例外的目录或文件
+- 非必须
+
+owner: 
+
+- 指定目录或文件的属主
+- 非必须
+
+group: 
+
+- 指定目录或文件的属组
+- 非必须
+
+mode: 
+
+- 指定目录或文件的mode
+- 非必须
+
+type:
+
+- 直接目录或文件。若为目录，那么权限将应用于object中除except外的所有目录（不包含object本身）；若为文件，那么权限将应用于object中除except外的所有文件（不包含object本身）。目录为directory，文件为file
+- 非必须
+
+
+**示例**
+
+```
+permisssions:
+  - object: /opt/soft
+    pattern: "*bin*"
+    except: [sbin/start]
+    owner: admin
+    mode: 777
+    type:
+      - directory
+```
+
+将在部署过程中，将在工作流中的对应如下操作：
+
+在复制目录或文件到指定路径后，将执行permissions中对应操作：对于/opt/soft目录下，名字可匹配bin，且非sbin/start的目录，执行修改权限操作，权限修改为owner=admin，mode=777
+
+**4）env（非必须）**
+
+在工作流中执行hooks里的相关脚本时的环境变量
+
+
+
+

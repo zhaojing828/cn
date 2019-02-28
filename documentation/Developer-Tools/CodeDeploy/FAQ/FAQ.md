@@ -1,6 +1,6 @@
 ## FAQ
 
-**Q：appSpec.yml中的hooks是否支持执行命令？**
+**Q：jdcloud-codedeploy.yml中的hooks是否支持执行命令？**
 
 A：hooks需要填写的location项为脚本所在的位置，而非执行脚本的命令本身，因此，请避免出现 /home/app/control start这样的操作命令。
 

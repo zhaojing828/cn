@@ -39,26 +39,26 @@
         href: Operation-Guide/Deployment-Application-List.md
       - name: 新建应用
         href: Operation-Guide/Create-Application2.md
+      - name: 应用部署组列表
+        href: Operation-Guide/Deployment-Group-List.md
+      - name: 应用里程牌列表
+        href: Operation-Guide/Milestone-List.md  
       - name: 在应用中新建部署组
         href: Operation-Guide/Create-Deployment-Group.md
       - name: 部署类型
         href: Operation-Guide/Deployment-Type.md
       - name: 部署组高级选项
         href: Operation-Guide/Advanced-Option.md
-      - name: 应用部署组列表
-        href: Operation-Guide/Deployment-Group-List.md
-      - name: 应用里程牌列表
-        href: Operation-Guide/Milestone-List.md
       - name: 编辑部署组
         href: Operation-Guide/Edit-Deployment-Group.md
       - name: 部署组详情
         href: Operation-Guide/Deployment-Group-Detail.md
       - name: 发起部署
         href: Operation-Guide/Create-Deployment2.md
+      - name: 部署详情
+        href: Operation-Guide/Details2.md        
       - name: 部署历史
         href: Operation-Guide/Deployment-History.md
-      - name: 部署详情
-        href: Operation-Guide/Details2.md
       - name: 部署工作流
         href: Operation-Guide/Workflow.md
       - name: Jdcloud-codedeploy文件

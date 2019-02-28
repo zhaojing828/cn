@@ -2,7 +2,7 @@
 
 在应用详情页，有两个分页，分别展示了应用中的部署组、里程牌。
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation13.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-4%EF%BC%88Ch%EF%BC%89.png)
 
 在里程牌分页中，列出了此应用下，历次部署成功的部署来源。
 
