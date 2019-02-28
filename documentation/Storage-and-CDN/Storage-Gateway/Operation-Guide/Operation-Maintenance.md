@@ -6,11 +6,11 @@
 
 2.存储网关重启后，使用NFS Client访问文件时，报错`Stale file handle`时该如何处理？
 
-当Client端Mount上了存储网关的共享文件系统后，如果存储网关重启了NFS服务，那么Client端就会出现`Stale file handle`这个错误。如果遇到这个情况，需要先执行umount后，再次执行mount操作，即可以正常访问共享文件。由于NFS V4是有状态的，当NFS Server重启后，之前Client PUT的ROOTFD失效，导致报错`Stale file handle`。
+当Client端mount上了存储网关的共享文件系统后，如果存储网关重启了NFS服务，那么Client端就会出现`Stale file handle`这个错误。如果遇到这个情况，需要先执行umount后，再次执行mount操作，即可以正常访问共享文件。由于NFS V4是有状态的，当NFS Server重启后，之前Client PUT的ROOTFD失效，导致报错`Stale file handle`。
 
 3.NFS Client在执行umount时，当提示`device is busy`时，该如何操作？
 
-当提示`device is busy`时，说明该挂载点被进程占用。可以执行`umount -l /mountpoint`，系统将会在目录空闲后umount。如需立刻Umount，可以执行`fuser -m -v -k -i /mountpoint`kill掉占用进程，每次kill进程都需要确认，防止误kill进程。
+当提示`device is busy`时，说明该挂载点被进程占用。可以执行`umount -l /mountpoint`，系统将会在目录空闲后umount。如需立刻umount，可以执行`fuser -m -v -k -i /mountpoint`kill掉占用进程，每次kill进程都需要确认，防止误kill进程。
 
 4.存储网关停止NFS服务后，会导致使用Hard模式的相关NFS Client的操作hang住，且无法强制umount，此场景该如何操作？
 
