@@ -65,6 +65,8 @@
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: 开启外网访问
             href: Operation-Guide/Instance/Internet-Access.md
+          - name: 调整实例配置
+            href: Operation-Guide/Instance/Modify-Instance-Spec.md            
           - name: 主备切换
             href: Operation-Guide/Instance/Failover-Instance.md
           - name: 重启实例
@@ -220,6 +222,8 @@
           href: Operation-Guide/Performance/Performance-Statistics-Introduction.md
         - name: SQL 性能统计
           href: Operation-Guide/Performance/SQL-Performance.md
+        - name: 执行中的慢SQL
+          href: Operation-Guide/Performance/Active-Slow-SQL.md          
         - name: 索引性能优化
           href: Operation-Guide/Performance/Index-Performance.md
 
