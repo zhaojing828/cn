@@ -11,4 +11,4 @@
 - 高级选项：详见“操作指南-部署组高级选项”
 
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation10.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-7%EF%BC%88Ch%EF%BC%89.png)
