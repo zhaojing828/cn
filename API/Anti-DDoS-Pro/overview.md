@@ -14,8 +14,9 @@ v1
 |---|---|---|
 |**checkName**|GET|检测实例名称是否合法|
 |**createForwardRule**|POST|添加非网站类规则|
-|**createInstance**|POST|创建实例|
+|**createInstance**|POST|新购或升级高防实例, 新购或升级成功时, 需根据订单 id 完成支付流程, 新购或升级实例才会生效|
 |**createWebRule**|POST|添加网站类规则|
+|**deleteCCProtectionRuleOfWebRule**|DELETE|删除网站规则的 CC 防护规则|
 |**deleteForwardRule**|DELETE|删除非网站规则|
 |**deleteWebRule**|DELETE|删除网站规则|
 |**describeAlarmConfig**|GET|查询告警配置|
@@ -31,9 +32,11 @@ v1
 |**describeForwardRule**|GET|查询非网站类规则|
 |**describeForwardRules**|GET|查询某个实例下的非网站转发配置|
 |**describeFwdGraph**|GET|转发流量报表|
+|**describeGeoAreas**|GET|查询非网站类转发规则的防护规则 Geo 拦截可设置区域编码|
 |**describeInstance**|GET|查询实例|
 |**describeInstances**|GET|查询实例列表|
 |**describeNameList**|GET|查询高防实例名称列表|
+|**describeProtectionRuleOfForwardRule**|GET|查询非网站类转发规则的防护规则|
 |**describeProtectionStatistics**|GET|查询高防实例防护统计信息|
 |**describeVpcIpList**|GET|查询用户的京东云 IP 资源|
 |**describeWebRule**|GET|查询网站类规则|
@@ -41,22 +44,22 @@ v1
 |**disableCCIpLimit**|POST|关闭 CC 防护每 IP 的限速|
 |**disableCCObserverMode**|POST|关闭实例 CC 防护的观察者模式|
 |**disableInstanceCC**|POST|关闭实例 CC 防护|
-|**disableInstanceIpBlackList**|POST|禁用实例 IP 黑名单|
-|**disableInstanceIpWhiteList**|POST|禁用实例 IP 白名单|
-|**disableInstanceUrlWhiteList**|POST|禁用实例 Url 白名单|
-|**disableWebRuleCC**|POST|网站类规则禁用CC|
+|**disableInstanceIpBlackList**|POST|关闭实例 IP 黑名单|
+|**disableInstanceIpWhiteList**|POST|关闭实例 IP 白名单|
+|**disableInstanceUrlWhiteList**|POST|关闭实例 Url 白名单|
+|**disableWebRuleCC**|POST|网站类规则禁用 CC|
 |**downloadCCAttackLogDetails**|GET|下载 CC 攻击日志详情|
 |**downloadCCAttackLogs**|GET|下载 CC 攻击日志|
 |**downloadDDoSAttackLogs**|GET|下载 DDos 攻击日志|
 |**enableCCIpLimit**|POST|开启 CC 防护每 IP 的限速|
 |**enableCCObserverMode**|POST|开启实例 CC 防护的观察者模式|
 |**enableInstanceCC**|POST|开启实例 CC 防护|
-|**enableInstanceIpBlackList**|POST|启用实例 IP 黑名单|
-|**enableInstanceIpWhiteList**|POST|启用实例 IP 白名单|
-|**enableInstanceUrlWhiteList**|POST|启用实例 Url 白名单|
-|**enableWebRuleCC**|POST|网站类规则开启CC|
+|**enableInstanceIpBlackList**|POST|开启实例 IP 黑名单|
+|**enableInstanceIpWhiteList**|POST|开启实例 IP 白名单|
+|**enableInstanceUrlWhiteList**|POST|开启实例 Url 白名单|
+|**enableWebRuleCC**|POST|网站类规则开启 CC|
 |**modifyAlarmConfig**|POST|更新告警配置|
-|**modifyCertInfo**|POST|编辑证书|
+|**modifyCertInfo**|POST|编辑网站规则证书信息|
 |**modifyEPB**|POST|更新实例弹性防护带宽|
 |**modifyForwardRule**|PATCH|更新非网站类规则|
 |**modifyInstanceCC**|POST|设置实例 CC 防护|
@@ -64,7 +67,8 @@ v1
 |**modifyInstanceIpWhiteList**|POST|设置实例 IP 白名单|
 |**modifyInstanceName**|POST|修改实例名称|
 |**modifyInstanceUrlWhiteList**|POST|设置实例 Url 白名单|
-|**modifyWebRule**|PATCH|更新网站类规则|
+|**modifyProtectionRuleOfForwardRule**|POST|修改非网站类转发规则的防护规则|
+|**modifyWebRule**|PATCH|修改网站类规则|
 |**setCCIpLimit**|POST|设置实例 CC 防护每 IP 限速|
 |**switchForwardRuleOrigin**|POST|非网站类规则切换成回源状态|
 |**switchForwardRuleProtect**|POST|非网站类规则切换成防御状态|
