@@ -147,6 +147,8 @@ items:
             href: Operation-Guide/Storage/Assign-Device-Name.md
           - name: 配置删除属性
             href: Operation-Guide/Storage/Configurate-Delete-Attributes.md
+          - name: 云硬盘加密
+            href: Operation-Guide/Storage/Encryption-of-Cloud-Disk.md            
       - name: 网络
         items:
           - name: 网络概述
