@@ -16,7 +16,7 @@
 - 私有网络：请选择与后端服务器相同的私有网络，分布式网络负载均衡不支持跨私有网络部署。
 - 弹性公网IP：选择公网IP的带宽计费模式、线路和带宽上限。弹性公网IP的价格详见[弹性公网IP-产品定价](http://docs.jdcloud.com/elastic-ip/billing-overview)。购买弹性公网IP后，如未超过弹性公网IP可创建配额，系统会自动为负载均衡创建并绑定一个弹性公网IP。
     
-  ![创建DNLB实例](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-014.png)
+    ![创建DNLB实例](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-014.png)
 
  5. 点击 **立即购买** ，完成支付。
 
