@@ -21,5 +21,5 @@
 - [产品概述](../Introduction/Product-Overview.md)
 - [产品规格](../Introduction/Specifications.md)
 - [产品定价](../Pricing/Billing-Overview.md)
-- [创建DNLB实例](../Getting-Started/Create-DNLB-Instance.md)
+- [创建DNLB实例](../Getting-Started/Create-Instance.md)
 
