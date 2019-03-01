@@ -13,6 +13,7 @@ v1
 |接口名称|请求方式|功能描述|
 |---|---|---|
 |**createAlarm**|POST|创建报警规则，可以为某一个实例创建报警规则，也可以为多个实例同时创建报警规则。|
+|**deleteAlarms**|DELETE|批量删除规则|
 |**deleteAlarmsCm**|DELETE|删除自定义监控规则|
 |**describeAlarmContacts**|GET|查询规则的报警联系人|
 |**describeAlarmHistory**|GET|查询报警历史</br>检索条件组合优先级从高到低为</br>1. alarmId</br>2. serviceCode</br>2.1 serviceCode + resourceId</br>2.2 serviceCode + resourceIds</br>3. serviceCodes</br>4. 用户所有规则|
