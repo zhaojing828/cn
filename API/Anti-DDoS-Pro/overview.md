@@ -14,9 +14,8 @@ v1
 |---|---|---|
 |**checkName**|GET|检测实例名称是否合法|
 |**createForwardRule**|POST|添加非网站类规则|
-|**createInstance**|POST|新购或升级高防实例, 新购或升级成功时, 需根据订单 id 完成支付流程, 新购或升级实例才会生效|
+|**createInstance**|POST|新购或升级高防实例|
 |**createWebRule**|POST|添加网站类规则|
-|**deleteCCProtectionRuleOfWebRule**|DELETE|删除网站规则的 CC 防护规则|
 |**deleteForwardRule**|DELETE|删除非网站规则|
 |**deleteWebRule**|DELETE|删除网站规则|
 |**describeAlarmConfig**|GET|查询告警配置|
