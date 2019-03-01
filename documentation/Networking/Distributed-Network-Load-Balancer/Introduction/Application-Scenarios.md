@@ -15,7 +15,7 @@
 ## 高安全性场景
 分布式网络负载均衡提供多重安全防护。分布式网络负载均衡支持通过ACL进行安全访问控制。您可以为分布式网络负载均衡单独创建一个子网，基于此子网增加安全策略（黑名单或白名单）来实现防攻击。例如：按照白名单配置时，入方向需要把客户端的源IP和后端服务器IP都加入白名单，出方向可配置为全部放通；按照黑名单配置时，入方向需要把疑似攻击的源IP加入黑名单。同时分布式网络负载均衡绑定的公网IP自带抗DDoS攻击能力，提供多重安全保障。
 
-![高安全场景](../../../../image/Networking/DNLB/Distributed-Network-Load-Balancer-006.png)
+![高安全场景](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-006.png)
 
 ## 相关参考
 - [产品优势](../Introduction/Benefits.md)
