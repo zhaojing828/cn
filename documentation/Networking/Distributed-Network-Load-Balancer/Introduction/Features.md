@@ -34,7 +34,7 @@
 - [产品概述](../Introduction/Product-Overview.md)
 - [产品规格](../Introduction/Specifications.md)
 - [产品定价](../Pricing/Billing-Overview.md)
-- [创建DNLB实例](../Getting-Started/Create-DNLB-Instance.md)
+- [创建DNLB实例](../Getting-Started/Create-Instance.md)
 - [创建虚拟服务器组](../Operation-Guide/TargetGroup-Management.md)
 - [配置监听策略](../Operation-Guide/Listener-Management.md)
 - [管理后端服务与查看服务实例健康状态](../Operation-Guide/Backend-Management.md)
