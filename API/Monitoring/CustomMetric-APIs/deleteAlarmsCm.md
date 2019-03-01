@@ -23,8 +23,8 @@ https://monitor.jdcloud-api.com/v1/regions/{regionId}/cmAlarms
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|请求的标识id|
 |**result**|Object| |
+|**requestId**|String|请求的标识id|
 
 
 ## 返回码
