@@ -27,7 +27,7 @@ items:
       href: Operation-Guide/jdfusion-cloud-uc.md
  
       
-      - name: 历史发布
+- name: 历史发布
   items:
     - name: 文档历史发布
       href: Related-Resources/Document-History.md
