@@ -32,6 +32,8 @@
    3）设置构建阶段
   
    构建阶段中，添加一个（或多个）构建类型的操作。
+   
+   ![](/image/codepipeline/cre-build-stage.png)
       
    ![](/image/codepipeline/cre-build-action.png)
  
@@ -45,6 +47,8 @@
    4）设置部署阶段
   
    部署阶段中，添加一个（或多个）部署类型的操作。
+   
+  ![](/image/codepipeline/cre-deploy-stage.png) 
      
   ![](/image/codepipeline/cre-deploy-action.png)
   
