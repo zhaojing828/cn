@@ -16,9 +16,3 @@
 ![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/yaoqingma-3.png)
 ## 4、获取邀请码
 京东云JDFusion产品团队会根据提交的公测申请，后台生成公测邀请码，并通过线下提交给申请用户。
-
-# 登录JDFusion控制台
-## 1、登录京东云官网
-访问[京东云官网](https://jdcloud.com)，在产品列表中进入JDFusion产品页。
-## 2、登录JDFusion控制台
-
