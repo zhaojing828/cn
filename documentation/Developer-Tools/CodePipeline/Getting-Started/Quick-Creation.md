@@ -17,6 +17,7 @@
    2）设置源代码
   
    源代码阶段中，添加一个（或多个）源代码类型的操作。一个阶段下至少包含一个操作任务。
+   
    ![](/image/codepipeline/cre-source-stage.png)
    
    ![](/image/codepipeline/cre-source-stage2.png) 
