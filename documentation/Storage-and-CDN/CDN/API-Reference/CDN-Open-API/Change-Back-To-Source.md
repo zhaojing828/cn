@@ -15,6 +15,8 @@
 | source         | String   | 是           | ips和domain必须是json格式   |
 | httpType       | String   | 否           | http类型，只能为http或者https，默认为http。当设为https时，需要调用“设置通信协议”接口上传证书和私钥 |
 | backSourceType | String   | 否           | 回源类型，只能为http（80端口回源）或者https（443端口回源），默认为http |
+| sourceHost | String   | 否 |1. 自定义回源host,只有当域名回源时，可支持自定义回源host </br>2. 自定义回源host可针对单个回源域名设置，如回源域名分别为test1.com和test2.com，则可分别设置test1.com对应的回源host为：origin1.com，test2.com对应的回源host为origin2.com </br>3. 当sourceHost和defaultSourceHost均设置了参数值时，则以sourceHost为准 </br>4. 当该参数为空时则表示删除自定义回源host |
+| defaultSourceHost | String   | 否| 1. 默认的回源host，默认回源host指IP回源或者域名回源时，回源地址均对应同一个回源host，如回源域名为test1.com和test2.com，默认回源host为origin.com，即test1.com和test2.com的回源host均为origin.com；</br>2. 当该参数为空时则表示删除默认回源host |
 
 ## **3. 返回参数**
 
@@ -64,6 +66,44 @@ https://opencdn.jcloud.com/api/changeSource
     "source" :"[{'ip':'1.1.1.1','master':'1','ratio':0.6},{'ip':'2.2.2.2','master':'1','ratio':0.4},{'ip':'3.3.3.3','master':'2','ratio':'0.3'},{'ip':'4.4.4.4','master':'2','ratio':'0.7'}]"
  }
 ``` 
+
+* 域名回源时设置自定义host示例
+{
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "type" :"web",
+    "sourceType" :"domain",
+    "source" :"[{'domain':'source1.dev.opencdn.jcloud.com','priority':'1',"sourceHost":"source.a.com"},{'domain':'source2.dev.opencdn.jcloud.com','priority':'2',"sourceHost":"source.a.com"}]"
+ }
+```
+
+* IP回源时设置默认host示例
+
+{
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "type" :"web",
+    "sourceType" :"ips",
+    "source" :"[{'ip':'1.1.1.1','master':'1','ratio':0.6},{'ip':'2.2.2.2','master':'1','ratio':0.4},{'ip':'3.3.3.3','master':'2','ratio':'0.3'},{'ip':'4.4.4.4','master':'2','ratio':'0.7'}]",
+    "defaultSourceHost" :"www.cdntest.com"
+ }
+ 
+``` 
+
+* 域名回源时设置默认回源host示例
+{
+    "username" :"test_user",
+    "signature" :"d00f58f89e8cd55dc080aec0d8051845",
+    "domain" :"www.a.com",
+    "type" :"web",
+    "sourceType" :"domain",
+    "source" :"[{'domain':'source1.a.com','priority':'1'},{'domain':'source2.a.com','priority':'2'}]",
+    "defaultSourceHost" :"www.cdntest.com"
+ }
+```
+
 - ### **返回示例**
 
 * json格式
