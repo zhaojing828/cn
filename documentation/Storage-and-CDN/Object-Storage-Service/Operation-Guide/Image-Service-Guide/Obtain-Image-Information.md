@@ -14,7 +14,7 @@
 
 获取图片基本信息：
 
-http://oss.cn-north-1.jcloudcs.com/downloads/example.jpg?x-oss-process=imginfo/ns
+http://s3.cn-north-1.jcloudcs.com/downloads/example.jpg?x-oss-process=imginfo/ns
 
 返回结果：
 
@@ -22,7 +22,7 @@ http://oss.cn-north-1.jcloudcs.com/downloads/example.jpg?x-oss-process=imginfo/n
 
 获取图片EXIF信息：
 
-http://oss.cn-north-1.jcloudcs.com/downloads/example.jpg?x-oss-process=imgexif
+http://s3.cn-north-1.jcloudcs.com/downloads/example.jpg?x-oss-process=imgexif
 
 返回结果：
 ```

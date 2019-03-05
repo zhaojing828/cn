@@ -1,3 +1,7 @@
-进入到Settings->SSH Keys页面，点击Add SSH Key，添加公钥文件
+通过右上角头像，点击“设置”，进入到“SSH密钥”页面
 
-![10.png](https://img1.jcloudcs.com/cms/54babf14-1cec-4677-8b6f-d946e3dd678920180906114743.png)
+![1.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/SSHKey.png)
+
+点击添加密钥，添加公钥文件
+
+

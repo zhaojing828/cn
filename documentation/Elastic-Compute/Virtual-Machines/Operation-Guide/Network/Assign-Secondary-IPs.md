@@ -37,7 +37,7 @@ Linux系统以CentOS 7.2为例，详细操作如下：
 
 		vim /etc/sysconfig/network-scripts/ifcfg-eth0
 
-	示例：若当前实例在控制台查询到的内网IP分别为192.168.0.4及192.168.0.5，其中192.168.0.4为主IP，文件内容显示：
+	示例：若当前实例在控制台查询到的内网IP分别为192.168.0.4及192.168.0.5，其中192.168.0.4为主IP，子网掩码为255.255.255.0，文件内容显示：
 
 	```
 	TYPE="ETHERNET"  
@@ -76,10 +76,10 @@ Linux系统以CentOS 7.2为例，详细操作如下：
 	UUID="dd73a4ea-8f6b-409b-a271-5f7882a3ae53"
 	DEVICE="eth0"
 	ONBOOT="yes"
-	IPADDR0="192.168.0.4"
+	IPADDR="192.168.0.4"
 	IPADDR1="192.168.0.5"
+	NETMASK="255.255.255.0"
 	NETMASK1="255.255.255.0"
-	NETMASK2="255.255.255.0"
 	GATEWAY="192.168.0.1"
 	```
 	请注意，要将BOOTPROTO="dhcp"注释。

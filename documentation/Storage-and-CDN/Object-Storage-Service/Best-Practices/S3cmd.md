@@ -24,16 +24,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 ## 安装使用
 
 **下载S3cmd**
+
 ```
-git clone https://github.com/s3tools/s3cmd.git
+git clone https://github.com/jdcloud-cmw/s3cmd.git
 ```
-**源码修改**
-
-使用V4签名，不使用V2签名，从https://github.com/s3tools/s3cmd.git 下载后进入以下目录。
-
-文件目录：s3cmd/S3/S3.py，其中第254行修改为：self.endpoint_requires_signature_v4 = True
-
-![](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-091.png)
 
 **S3cmd安装**
 
@@ -49,6 +43,7 @@ sudo ln -s /usr/local/s3cmd/s3cmd /usr/bin/s3cmd
 ```
 [default]
 access_key = [you access key]
+secret_key = [you secret key]
 access_token = 
 add_encoding_exts = 
 add_headers = 
@@ -104,7 +99,6 @@ reduced_redundancy = False
 requester_pays = False
 restore_days = 1
 restore_priority = Standard
-secret_key = [you secret key]
 send_chunk = 65536
 server_side_encryption = False
 signature_v2 = False
@@ -116,10 +110,10 @@ stop_on_error = False
 storage_class = 
 urlencoding_mode = normal
 use_http_expect = False
-use_https = False
+use_https = True
 use_mime_magic = True
 verbosity = WARNING
-website_endpoint = http://%(bucket)s.s3-website-%(location)s.amazonaws.com/
+website_endpoint = http://%(bucket)s.s3.%(location)s.amazonaws.com/
 website_error = 
 website_index = index.html
 ```

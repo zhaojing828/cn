@@ -5,6 +5,7 @@
 # 部署架构
 ![部署架构](https://github.com/jdcloudcom/cn/blob/edit/image/Advanced%20Anti-DDoS/Best-Practice01.png)<Br/>
 同时满足用户本地业务防护和一键上云联动防护的最佳实践：
+
 - 京东云的安全调度中心，通过DNS解析，对全局的流量进行统一调度。
 - 当攻击流量在本地防护阈值内，流量在用户源站入口处清洗。
 - 当攻击流量超过本地防护阈值，流量牵引至IP高防，清洗后返回用户源站。

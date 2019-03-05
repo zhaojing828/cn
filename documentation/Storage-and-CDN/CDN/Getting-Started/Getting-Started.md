@@ -8,7 +8,7 @@
 
   1、拨打电话：4006151212，由客服为您开通CDN服务。
 
-  2、进入[CDN工单系统](https://ticket.jdcloud.com/myorder/form?cateId=3%26questionId=20)，填报【使用权限申请】工单，客服会联系您处理CDN服务开通事宜。
+  2、进入[CDN工单系统](https://ticket.jdcloud.com/myorder/form?cateId=3&questionId=20)，填报【使用权限申请】工单，客服会联系您处理CDN服务开通事宜。
 
    **第二步：添加CDN加速域名**
 

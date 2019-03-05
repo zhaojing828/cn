@@ -1,16 +1,20 @@
-进入Projects页面，点击New Project，填写namespace、Project名称、描述、权限
+进入项目页面，点击“New Project”
 
-![2.png](https://img1.jcloudcs.com/cms/80582ae9-a09c-43a6-85ab-b6b78312bb2e20180906113313.png)
+![1.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Project1.png)
 
- - namespace：可选择User或者Group
+填写Namespace、项目名称、描述，并设置权限
+
+![2.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Project2.png)
+
+ - Namespace：可选择Users或者Groups
 
 - 权限：
 
- - Private：只有被赋权用户可见
+   - 私有：只有被赋权用户可见
 
- - Internal：登录用户可下载
+   - 内部：登录用户可下载
 
- - Public：所有人可下载
+
  
 
 点击Create Project

@@ -15,3 +15,7 @@ DRDS 支持单个数据库事务，但不支持跨数据库的事务。
 **4. 不支持mysqldump**
 
 DRDS自身不支持mysqldump，用户如果需要导出数据，可以直接登录到RDS MySQL上，对每个数据库逐一执行mysqldump操作
+
+**5. Unique Index 的支持**
+- 如果Unique Index和拆分字段一致，则Unique约束不受影响。
+- 如果Unique Index和拆分字段不一致时，由于数据会被拆分到多个数据库的表中，因此Unique约束可能不会生效。 

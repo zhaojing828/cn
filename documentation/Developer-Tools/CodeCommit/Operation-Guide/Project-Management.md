@@ -1,32 +1,50 @@
-**新建Project**
+**新建项目**
 
-进入Projects页面，点击New Project，填写namespace、Project名称、描述、权限
+进入项目页面，点击“New Project”
 
-![7.png](https://img1.jcloudcs.com/cms/8daf7df7-36bf-470c-9034-e9a1e6c001ad20180906113630.png)
+![1.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Project1.png)
 
-- namespace：可选择User或者Group
+填写Namespace、项目名称、描述，并设置权限
+
+![2.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Project2.png)
+
+ - Namespace：可选择Users或者Groups
 
 - 权限：
 
-- Private：只有被赋权用户可见
+   - 私有：只有被赋权用户可见
 
-- Internal：登录用户可下载
+   - 内部：登录用户可下载
 
-- Public：所有人可下载
+
 
 
 点击Create Project
 
-**编辑或删除Project**
 
-进入Projects页面，点击Settings，即可对Group进行编辑或删除
+**编辑或删除项目**
 
-![8.png](https://img1.jcloudcs.com/cms/93ce42bf-5641-4eeb-a88f-4d627519efee20180906113710.png)
+进入项目页面，点击“设置”中的“通用”，即可对项目进行编辑或删除
+
+**编辑**
+
+![3.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Project3.png)
+
+**删除**
+
+![4.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Project4.png)
 
 **组成员管理**
 
-进入Group页面，点击Settings->Members，加添加用户并赋予相应的权限
+进入项目页面，点击“设置”中的“成员”，加添加用户并赋予相应的权限
 
-![9.png](https://img1.jcloudcs.com/cms/ba068ba5-a4b0-434a-8423-683b72570cb920180906113734.png)
+![5.png](https://github.com/jdcloudcom/cn/blob/edit/image/codecommit/Project5.png)
 
-同时，可修改Project内成员权限
+同时，可修改项目内成员权限
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/Product-Overview.md
+        href: Introduction/Direct-Connect-Service-Overview.md
       - name: 基础架构
         href: Introduction/Basic-Infrastructure.md
       - name: 核心概念
@@ -60,13 +60,11 @@
     href:
     status: 0
   - name: 用户协议
-    status: 0
     items:
     - name: 服务条款
       href:
       status: 0
   - name: 相关资源
-    status: 0
     items:
     - name: 文档历史记录
       href:

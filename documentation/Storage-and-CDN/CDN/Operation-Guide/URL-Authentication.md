@@ -1,12 +1,12 @@
 # URL鉴权说明
 
-京东云CDN 支持参数鉴权，用户可以根据自己的业务情况，选择合适的鉴权方式，来实现对源站资源的有效保护。（目前直播只有参数鉴权）
+京东云CDN 支持参数鉴权，用户可以根据自己的业务情况，选择合适的鉴权方式，来实现对源站资源的有效保护。（目前直播支持参数鉴权和直播远程鉴权，点播页面下载支持参数鉴权和路径鉴权）
 
 **1.参数鉴权方法**
 
 **1.1**   **加密 URL 构成**
 
-https://DomainName/Path/Filename?参数&auth_token=expire-uniqid-rand-signature
+http://DomainName/Path/Filename?参数&auth_token=expire-uniqid-rand-signature
 
 signature =md5sum("uri-expire-uniqid-rand-private_key")
 
@@ -35,7 +35,7 @@ signature =md5sum("uri-expire-uniqid-rand-private_key")
 
 * 通过请求对象:
 
-https://cdn.example.com/video/standard/1K.html?fa=121&jd=121
+http://cdn.example.com/video/standard/1K.html?fa=121&jd=121
 
 * 密钥设为：jdcloud1234 **(由用户自行设置)**
 
@@ -51,7 +51,7 @@ https://cdn.example.com/video/standard/1K.html?fa=121&jd=121
 
 * 则请求时url为：
 
-https://cdn.example.com/video/standard/1K.html ?fa=121&jd=121&auth_token=1592409600-0-0-06d97bc9e43ded48d991994006cfa127
+http://cdn.example.com/video/standard/1K.html ?fa=121&jd=121&auth_token=1592409600-0-0-06d97bc9e43ded48d991994006cfa127
 
 计算出来的 **signature** 与用户请求中带的 **signature** =06d97bc9e43ded48d991994006cfa127值一致，于是鉴权通过。
 
@@ -59,7 +59,7 @@ https://cdn.example.com/video/standard/1K.html ?fa=121&jd=121&auth_token=1592409
 
 **2.1**   **加密 URL 构成**
 
-https://DomainName/deadline/ md5sum("uri-deadline-password")/Path/Filename?参数
+http://DomainName/deadline/ md5sum("uri-deadline-password")/Path/Filename?参数
 
 **2.2**   **鉴权字段描述**
 
@@ -84,7 +84,7 @@ HashValue = md5sum(sstring)
 
 * 通过请求对象:
 
-https://cdn.example.com/video/standard/1K.html ?fa=121&cc=121
+http://cdn.example.com/video/standard/1K.html ?fa=121&cc=121
 
 * 密钥设为：jcloud1234 **(由用户自行设置)**
 
@@ -100,8 +100,48 @@ HashValue = md5sum("/video/standard/1K.html-1592409600-jcloud1234") = 8afb090078
 
 * 则请求时url为：
 
-https://cdn.example.com/1592409600/8afb0900782e14c35214ccda534a3679/video/standard/1K.html? fa=121&cc=121
+http://cdn.example.com/1592409600/8afb0900782e14c35214ccda534a3679/video/standard/1K.html? fa=121&cc=121
 
 计算出来的HashValue与用户请求中带的 md5hash = 8afb0900782e14c35214ccda534a3679 值一致，于是鉴权通过。
 
- 
+**3.直播远程鉴权**
+
+**3.1**   **请求参数说明**
+
+domian***?vhost=vhostname&app=appname&stream=streamname&traceId=376ab86d8c647896&params=params
+
+请求方式：GET
+
+请求样例说明：
+
+domain*** 表示推流远程鉴权接口地址，或者播放远程鉴权地址；推流远程鉴权地址和播放远程鉴权地址可以相同也可以不同，由客户方提供。
+
+请求参数说明
+
+| **参数名** | **类型**  | **描述** | **备注**  |
+| -------- | -----------| -------- | -----------|
+| vhost |string   | 推流域名，或者播放域名 | 推流远程鉴权时，表示推流域名；播放远程鉴权时，表示播放域名 | 
+| app   | string  | 推流app，或者播放app  |  同上 | 
+| stream | string  | 推流stream，或者播放stream | 同上  | 
+| traceId | string |我方请求标识，唯一标识一次鉴权请求，客户方可忽略 | 同上   | 
+| params  | string | url中获取 | params为推流或者播放url中携带的所有参数  | 
+
+**3.2**   **返回参数说明**
+
+| **参数名** | **描述**     |
+| -------- | --------------|
+| 1 | 鉴权成功     |
+| 0 | 鉴权失败     |
+
+返回样例：
+
+成功
+
+1
+
+备注：只需要返回的value，以字符串形式返回即可。
+
+**3.3**   **重试机制**
+
+由于网络等原因造成的首次请求失败，会重试1次；重试后仍然失败，认为鉴权失败。
+
