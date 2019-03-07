@@ -35,9 +35,10 @@
             href: Operation-Guide/Build-Environment.md
           - name: 源代码配置
             href: Operation-Guide/Source-Configuration.md
-          - name: 构建规范
-            href: Operation-Guide/Build-Spec.md   
+          - name: 构建规范 
             items:
+                  - name: 规范概述
+                    href: Operation-Guide/Build-Spec.md
                   - name: 使用Apache Maven构建Java项目
                     href: Operation-Guide/Maven.md
                   - name: 使用Go语言环境构建
