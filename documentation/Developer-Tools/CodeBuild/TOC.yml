@@ -36,7 +36,14 @@
           - name: 源代码配置
             href: Operation-Guide/Source-Configuration.md
           - name: 构建规范
-            href: Operation-Guide/Build-Spec.md      
+            href: Operation-Guide/Build-Spec.md   
+            items:
+                  - name: 使用Apache Maven构建Java项目
+                    href: Operation-Guide/Maven.md
+                  - name: 使用Go语言环境构建
+                    href: Operation-Guide/Go.md
+                  - name: 使用Npm软件包管理系统管理软件包
+                    href: Operation-Guide/Npm.md
           - name: 构建存放
             href: Operation-Guide/Build-Storage.md
           - name: 高级设置
