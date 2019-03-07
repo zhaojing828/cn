@@ -67,7 +67,7 @@ items:
         items:
           - name: 带宽流量
             href: Operation-Guide/Monitoring Alarm/View-Bandwidth-Traffic-List.md
-       - name: 报警管理
+      - name: 报警管理
         items:
           - name: 报警规则
             href: Operation-Guide/Alarm-Management/View-Alarm-Rules.md
