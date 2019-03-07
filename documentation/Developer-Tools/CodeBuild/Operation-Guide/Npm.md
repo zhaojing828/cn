@@ -1,5 +1,6 @@
 使用Npm软件包管理系统管理软件包，示例build.yml如下：
 
+```
 cmds:
   - name: '加载依赖'
     cmd: 'npm install'
@@ -8,3 +9,5 @@ cmds:
     
 # 编译产物存储目录, 必填项
 out_dir: 'output'
+
+```
