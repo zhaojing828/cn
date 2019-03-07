@@ -15,3 +15,4 @@
 # 查看带宽流量报警信息
 点击列表中 **报警规则** 按钮，跳转到带宽流量报警规则详情，查看带宽的报警规则信息，如下图：
 ![带宽流量报警规则信息](https://github.com/jdcloudcom/cn/blob/cn-Cloud-Cabinet-Service/image/Hyper-Converged-IDC/Cloud-Cabinet-Service/CCS020.png)
+
