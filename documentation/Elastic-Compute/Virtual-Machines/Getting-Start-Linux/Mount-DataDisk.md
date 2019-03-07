@@ -77,5 +77,4 @@ sh auto_fdisk.sh /dev/vdb /jddata1 ext4
 
  **请注意，若系统为Centos 7以上，写入fstab时必须使用nofail参数，否则若对当前云主机制作私有镜像，基于该私有镜像创建的新云主机将无法正常启动。** 
 
-  [1]: http://img1.jcloudcs.com/cms/6bbc4a45-02ce-460d-9696-c31f3fa18c6f20170728174252.zip
- 
+  [1]: https://iaas-cns-download.oss.cn-north-1.jcloudcs.com/DOCS/auto_fdisk.sh
