@@ -21,6 +21,8 @@ items:
           href: Introduction/ResourceLog/WAFLog.md
         - name: 函数服务日志
           href: Introduction/ResourceLog/FunctionLog.md
+        - name: 云搜索Elasticsearch日志
+          href: Introduction/ResourceLog/eslog.md
 - name: 产品定价
   items:
     - name: 计费概述
