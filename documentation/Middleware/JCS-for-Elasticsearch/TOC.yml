@@ -63,10 +63,6 @@
           href: Operation-Guide/deletesnapshot.md 
       - name: Kibana
         href: Operation-Guide/Kibana.md 
-      - name: Elasticsearch日志
-        href: Operation-Guide/eslog.md
-      - name: 自定义词库
-        href: Operation-Guide/dic.md  
       - name: 监控集群
         items: 
         - name: 查看监控信息
