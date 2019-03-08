@@ -52,7 +52,7 @@ items:
            - name: 删除存储空间
              href: Operation-Guide/Manage-Bucket/Delete-Bucket-2.md  
            - name: 访问权限设置
-             href: Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md  
+             href: Operation-Guide/Manage-Bucket/Set-Bucket-Policy-2.md
            - name: 跨域访问设置
              href: Operation-Guide/Manage-Bucket/Set-Bucket-CORS-2.md                 
            - name: 静态网站托管设置
@@ -85,6 +85,16 @@ items:
             href: Operation-Guide/Manage-Object/Post-Object-1.md                  
           - name: 用量监控
             href: Operation-Guide/Manage-Object/Usage-Monitoring.md
+      - name: 权限控制
+        items:
+           - name: 权限控制概述
+             href: Operation-Guide/Access-Control/Access-Control-Overview.md
+           - name: 基于读写权限ACL的权限控制
+             href: Operation-Guide/Access-Control/Access-Control-Base-On-ACL.md
+           - name: 基于IAM Policy的权限控制
+             href: Operation-Guide/Access-Control/Access-Control-Base-On-IAM-Policy.md
+           - name: 基于Bucket Policy的权限控制
+             href: Operation-Guide/Access-Control/Access-Control-Base-On-Bucket-Policy.md
       - name: 图片处理指南
         items:            
           - name: 介绍
@@ -191,6 +201,8 @@ items:
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-Notification-2.md           
                - name: Put Bucket
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-2.md
+               - name: Put Bucket ACL
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bukcet-acl-2.md        
                - name: Put Bucket cors
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Cors-2.md 
                - name: Put Bucket encryption
@@ -202,7 +214,7 @@ items:
                - name: Put Bucket website
                  href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Website-2.md 
                - name: Put Bucket lifecycle
-                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md          
+                 href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md    
            - name: 关于Object操作
              items:
               - name: Abort Multipart Upload
@@ -239,10 +251,6 @@ items:
              href: API-Reference-S3-Compatible/Extension-API/Compress-Object.md
            - name: ImgProtected
              href: API-Reference-S3-Compatible/Extension-API/ImgProtected.md
-      - name: 兼容工具
-        items:
-           - name: CloudBerry
-             href: API-Reference-S3-Compatible/Compatibility-Tools/CloudBerry-1.md 
       - name: 旧版OSS API 简介
         items:
            - name: 基本概念
@@ -330,7 +338,9 @@ items:
        - name:  兼容S3  SDK-Android
          href:  API-Reference-S3-Compatible/Compatibility-Tools/SDK-Android.md
        - name: 兼容S3  SDK-iOS
-         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md         
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md      
+       - name: 兼容S3 SDK-.NET
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-NET.md   
        - name: 旧版 Java SDK（不推荐）
          items:
            - name: 安装
@@ -367,8 +377,16 @@ items:
    items:
       - name: 使用S3fs在Linux实例上挂载Bucket
         href: Best-Practices/S3fs.md
-      - name: Bucket Policy
-        href: Best-Practices/Bucket-Policy.md
+      - name: 访问控制
+        items:
+            - name: Bucket Policy最佳实践 
+              href: Best-Practices/Bucket-Policy.md
+            - name: 访问管理实践
+              href: Best-Practices/Access-Control-And-Permission-Management/Access-Management-Practices.md
+            - name: 跨账号授权概述
+              href: Best-Practices/Access-Control-And-Permission-Management/Cross-Account-Access-Overview.md
+            - name: 授权子账号访问 OSS
+              href: Best-Practices/Access-Control-And-Permission-Management/Authorize-Sub-Account-Access.md            
       - name: 防盗链
         href: Best-Practices/Anti-leech.md         
       - name: 使用CloudBerry管理OSS
@@ -383,6 +401,8 @@ items:
         href: Best-Practices/Data-Migration-Tool.md 
       - name: 使用S3cmd管理OSS
         href: Best-Practices/S3cmd.md
+      - name: 使用S3 Browser管理OSS
+        href: Best-Practices/Manage-OSS-With-s3browser.md        
       - name: 回调服务器设置签名认证
         href: Best-Practices/Setting-Signature-Authentication-For-Callback-Server.md        
       - name: OSS线上服务快速验证工具
@@ -390,7 +410,7 @@ items:
       - name: 移动应用直传OSS
         href: Best-Practices/Transfer-For-Mobile-Apps.md
       - name: 自定义域名支持HTTPS访问 OSS 服务
-        href: Best-Practices/Custom-Domain-Name-Guidance.md        
+        href: Best-Practices/Custom-Domain-Name-Guidance.md
  - name: 常见问题
    items:
       - name: 一般性问题

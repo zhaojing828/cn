@@ -2,7 +2,7 @@
 
 在“部署应用”页，指定地域后，点击“新建应用”，
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation1.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-1%EF%BC%88Ch%EF%BC%89.png)
 
 跳转到“新建应用”页。
 
@@ -12,6 +12,6 @@
 - 计算平台：目前仅支持“云主机”
 - 应用描述：非必填，请填写应用的描述信息
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation18.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-2%EF%BC%88Ch%EF%BC%89.png)
 
 接下来，在应用中新建部署组，详见“操作指南-在应用中新建部署组”。
