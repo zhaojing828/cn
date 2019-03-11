@@ -7,20 +7,19 @@
       <td rowspan="2">实例规格</td>
       <td rowspan="2">按配置价格（元/小时）</td>
       <td rowspan="2">包年包月价格（元/月）</td>
-      <td colspan="3">包年包月折扣</td>   
+      <td colspan="3">存储计费</td>   
    </tr>
    <tr>
-      <td>1年</td>
-      <td>2年</td> 
-      <td>3年</td> 
+      <td>按量付费存储计费（单位：元/GB/小时）</td>
+      <td>包年包月存储计费（单位：元/GB/月）</td> 
+
    </tr>
    <tr>
       <td>1C2G</td>
       <td>0.32</td>
       <td>94</td>
-      <td rowspan="8">85折</td>
-      <td rowspan="8">7折</td>
-      <td rowspan="8">5折</td>
+      <td rowspan="8">0.0013</td>
+      <td rowspan="8">0.9 </td>
    </tr>
    <tr>
       <td>2C4G</td>
@@ -50,10 +49,6 @@
 </table>
 
 
-#### 存储计费
-| 存储计费方式	| 规格| 价格| 
-|:--:|:--:|:--:|
-| 按量付费</br>（单位：元/GB/小时） |SSD云盘 | 0.0013 |
-| 包年包月</br>（单位：元/GB/月） |SSD云盘 | 0.9 |
+
 
 
