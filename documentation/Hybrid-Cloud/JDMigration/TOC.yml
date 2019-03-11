@@ -17,14 +17,14 @@ items:
 - name: 入门指南
   items:
     - name: 概述与环境部署
-      href: Getting-Started/Anti-JDFusion-Basic-Started.md
+      href: Getting-Started/Anti-JDMigration-Basic-Started.md
       
 - name: 操作指南
   items:
     - name: 如何获取邀请码
-      href: Operation-Guide/jdfusion-cloud-InvitationCode.md
+      href: Operation-Guide/jdmigration-cloud-InvitationCode.md
     - name: 如何登录JDFuison控制台
-      href: Operation-Guide/jdfusion-cloud-uc.md
+      href: Operation-Guide/jdmigration-cloud-uc.md
  
       
 - name: 历史发布
