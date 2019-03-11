@@ -42,14 +42,10 @@ DNLB具备以下功能和特点：
 
 ## 常用操作
 
-- 创建DNLB实例
-  - [创建DNLB实例](../Operation-Guide/Create-DNLB-Instance.md)
+- [创建DNLB实例](../Operation-Guide/Create-DNLB-Instance.md)
   
-- 创建虚拟服务器组
-  - [创建虚拟服务器组](../Operation-Guide/TargetGroup-Management.md)
+- [创建虚拟服务器组](../Operation-Guide/TargetGroup-Management.md)
 	
-- 配置监听策略（包括监听器和后端服务）
-  - [配置监听策略](../Operation-Guide/Listener-Management.md)
+- [配置监听策略（包括监听器和后端服务）](../Operation-Guide/Listener-Management.md)
 	
-- 后端服务管理（包括管理后端服务及查看服务实例健康状态）
-  - [后端服务管理](../Operation-Guide/Backend-Management.md)
+- [后端服务管理（包括管理后端服务及查看服务实例健康状态）](../Operation-Guide/Backend-Management.md)
