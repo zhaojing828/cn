@@ -19,10 +19,10 @@
 
 - 京东云支持私网和公网负载均衡类型互转，私网负载均衡可通过绑定公网IP转换为公网负载均衡，公网负载均衡可通过解绑公网IP转换为私网负载均衡。
 
-公网负载均衡转换为私网负载均衡
+公网负载均衡转换为私网负载均衡：
   ![DNLB私网转换为公网](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-012.png)
 
-私网负载均衡转换为公网负载均衡
+私网负载均衡转换为公网负载均衡：
   ![DNLB公网转换为私网](../../../../image/Networking/Distributed-Network-Load-Balancer/DNLB-013.png)
 
 	
