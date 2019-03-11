@@ -15,14 +15,14 @@
 1.不带任何参数：该脚本会自动将您所有未分区的设备进行分区、格式化、挂载（默认挂载点为jddata1、jddata2……jddatan）操作，并在/etc/fstab文件中通过UUID的方式实现云硬盘自动挂载
 
 </p>
-<pre class="brush:as3;toolbar:false;">sh
+<pre class="brush:as3;toolbar:false;">
 sh auto_fdisk.sh</pre>
 <p>
 
 2.带设备名（如/dev/vdc等）、挂载点、文件系统参数：该脚本会根据您输入参数自动完成分区、格式化、挂载操作。
 
 </p>
-<pre class="brush:as3;toolbar:false;">sh
+<pre class="brush:as3;toolbar:false;">
 sh auto_fdisk.sh /dev/vdb jddata1 ext4</pre>
 <p>
 
@@ -35,7 +35,7 @@ sh auto_fdisk.sh /dev/vdb jddata1 ext4</pre>
 3.本脚本默认为硬盘创建一个分区，且不可修改；
 
 4.本脚本会将磁盘的UUID和挂载信息写入/etc/fstab文件实现云硬盘自动挂载，如您需要卸载云硬盘，请将/etc/fstab对应的信息删除，否则可能造成云主机无法正常启动。
-手动完成数据盘的分区、格式化及挂载
+
 
 ## 手动完成数据盘的分区、格式化及挂载
 
