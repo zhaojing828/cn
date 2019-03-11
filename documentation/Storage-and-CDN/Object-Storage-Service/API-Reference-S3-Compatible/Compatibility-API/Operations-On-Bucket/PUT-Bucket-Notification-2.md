@@ -11,7 +11,7 @@ OSS支持[回调通知](https://docs.jdcloud.com/cn/object-storage-service/callb
 
 ## 请求
 ### 语法
-```xml
+```
 PUT /?notification HTTP/1.1
 Host: <bucket>.s3.<region>.jcloudcs.com
 Date: <date>
@@ -68,7 +68,7 @@ FilterRule|包含定义筛选规则标准的键值对。<br>Type: Container<br>C
 Name|prefix 或 suffix，即用于根据object key name筛选一个或多个object。前缀和后缀最大长度为1022个字节。<br>Type: String<br>Ancestor: FilterRule<br>Valid values: prefix or suffix|否
 Value|指定要筛选的object key name的前缀或后缀。Type: String<br>Ancestor: FilterRule|否
 CloudFunction|需要触发的Function ID。当指定的事件发生时调用函数服务。<br>Type: String<br>Ancestor: CloudFunctionConfiguration|否
-CloudFunctionConfiguratio|CloudFunction触发规则。<br>Type: Container<br>Children: An Id,Filter, CloudFunction, and one, or more Event.<br>Ancestor: NotificationConfiguration|否
+CloudFunctionConfiguration|CloudFunction触发规则。<br>Type: Container<br>Children: An Id,Filter, CloudFunction, and one, or more Event.<br>Ancestor: NotificationConfiguration|否
 
 ## 响应
 ### 响应Header
@@ -83,7 +83,7 @@ HTTP 403 Forbidden|AccessDenied|您不是该Bucket的拥有者
 
 ## 示例
 ### 请求示例
-```xml
+```
 PUT /?notification HTTP/1.1
 Host: oss-example.s3.<region>.jcloudcs.com
 Date: <date>
