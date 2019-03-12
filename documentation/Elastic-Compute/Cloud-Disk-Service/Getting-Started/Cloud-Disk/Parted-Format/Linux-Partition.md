@@ -7,7 +7,7 @@
 
 在Linux系统下您可以使用京东云提供的脚本检测是否有尚未分区的数据盘，自动完成数据盘的格式化并挂载，省去了您输入复杂的命令和步骤。
 
-<p><a title="挂载脚本.zip" href="https://docs-downloads.oss.cn-north-1.jcloudcs.com/cms_6bbc4a45-02ce-460d-9696-c31f3fa18c6f20170728174252%2520%25283%2529.zip" target="_self"><span style="color: rgb(0, 0, 0); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">挂载脚本.zip</span></a>
+<p><a title="挂载脚本.zip" href="https://docs-downloads.oss.cn-north-1.jcloudcs.com/auto_fdisk%25281%2529.sh" target="_self"><span style="color: rgb(0, 0, 0); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">挂载脚本.zip</span></a>
 </p>
 <br>
 您可以通过如下两种方式使用该脚本：
