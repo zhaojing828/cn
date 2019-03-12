@@ -27,6 +27,8 @@
         href: Pricing/Purchase-Process.md
   - name: 入门指南
     items:
+      - name: 版本说明
+        href: Getting-Started/Create-to-Cluster.md
       - name: 创建集群
         href: Getting-Started/Create-to-Cluster.md
       - name: 连接集群
