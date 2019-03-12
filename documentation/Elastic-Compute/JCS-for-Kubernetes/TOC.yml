@@ -28,7 +28,7 @@
   - name: 入门指南
     items:
       - name: 版本说明
-        href: Getting-Started/Create-to-Cluster.md
+        href: Getting-Started/Version-Notes.md
       - name: 创建集群
         href: Getting-Started/Create-to-Cluster.md
       - name: 连接集群
