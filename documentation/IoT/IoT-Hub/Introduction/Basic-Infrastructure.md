@@ -4,7 +4,7 @@
 
 ## 业务架构
 业务架构如下图：
-![](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-000.jpg)
+![](../../../../image/iot-hub/iothub001.png)
 
 
 |名称|描述|
