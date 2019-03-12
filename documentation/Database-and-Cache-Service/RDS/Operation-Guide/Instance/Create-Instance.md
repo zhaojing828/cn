@@ -28,7 +28,7 @@
    - 由于管理的需要，选择的子网保留若干剩余IP才允许创建实例。
       - MySQL, Percona, MariaDB：需要4个以上的剩余IP
       - SQL Server：需要10个以上的剩余IP
-      - PostgreSQL：需要4个以上的剩余IP
+      - PostgreSQL：需要10个以上的剩余IP
       
 ![创建实例2](../../../../../image/RDS/Create-Instance-2.png)
  
