@@ -4,7 +4,7 @@
 
 ## 业务架构
 业务架构如下图：
-![](../../../../../image/iot/iot-hub/iothub-001.png)
+![](../../../../image/iot/iot-hub/iothub-001.png)
 
 
 |名称|描述|
