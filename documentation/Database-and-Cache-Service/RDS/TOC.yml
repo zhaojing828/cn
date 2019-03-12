@@ -135,7 +135,6 @@
               href: Operation-Guide/Backup/Backup-Download/Percona-Backup-Download.md
             - name: MariaDB 备份下载
               href: Operation-Guide/Backup/Backup-Download/MariaDB-Backup-Download.md
-              status: 0
             - name: SQL Server 备份下载
               href: Operation-Guide/Backup/Backup-Download/SQLServer-Backup-Download.md
           - name: 备份覆盖恢复
