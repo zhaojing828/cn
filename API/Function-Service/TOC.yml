@@ -25,6 +25,8 @@
             href: Function-OpenAPI/getVersion.md 
           - name: listVersion
             href: Function-OpenAPI/listVersion.md 
+          - name: deleteVersion
+            href: Function-OpenAPI/deleteVersion.md 
           - name: createAlias
             href: Function-OpenAPI/createAlias.md 
           - name: getAlias
@@ -35,8 +37,6 @@
             href: Function-OpenAPI/listAlias.md 
           - name: deleteAlias
             href: Function-OpenAPI/deleteAlias.md 
-          - name: deleteVersion
-            href: Function-OpenAPI/deleteVersion.md 
           - name: getTrigger
             href: Function-OpenAPI/getTrigger.md  
           - name: listTrigger
