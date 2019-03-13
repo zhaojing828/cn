@@ -87,7 +87,7 @@
 
   阶段名默认为 构建阶段，添加构建操作。   
   
-     ![](/image/codepipeline/best-build2.png)
+     ![](/image/codepipeline/best-build2.PNG)
 
 -  操作名称：构建操作
 -  操作类型：构建
@@ -102,7 +102,7 @@
  
  阶段名默认为 部署阶段，添加部署操作。 
  
-      ![](/image/codepipeline/best-deploy2.png)
+      ![](/image/codepipeline/best-deploy2.PNG)
       
 -  操作名称：部署操作
 -  操作类型：部署
