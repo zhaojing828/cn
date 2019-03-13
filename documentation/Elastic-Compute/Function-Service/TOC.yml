@@ -103,6 +103,8 @@ items:
     items:
        - name: 文档发布历史
          href: related-resources/Document-History.md   
+       - name: 服务条款
+         href: related-resources/Product-Service-Agreement.md
   - name: API参考
     status: 0
     href:
