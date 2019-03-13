@@ -4,7 +4,7 @@
 
 上下游系统处理能力存在差距的时候，利用队列作为数据的缓冲器，增加系统架构的可用性和可靠性，平滑处理峰值流量，解耦系统架构，避免对业务主流程的影响。
 
-![异步解耦削峰填谷](../../../../../image/Internet-Middleware/Queue-Service/队列服务-01.png)
+![异步解耦削峰填谷](../../../../image/Internet-Middleware/Queue-Service/队列服务-01.png)
 
 
 
@@ -12,5 +12,5 @@
 
 由于队列服务会解耦分离用户应用的处理进程，因此对于有扩展需求的应用，可以轻松提高从队列服务发送或接收速率来增加用户应用的处理能力，对于部分故障的模块可以从整个系统中摘除。
 
-![性能扩展容错处理](../../../../../image/Internet-Middleware/Queue-Service/队列服务-02.png)
+![性能扩展容错处理](../../../../image/Internet-Middleware/Queue-Service/队列服务-02.png)
 
