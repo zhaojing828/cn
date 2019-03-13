@@ -12,7 +12,7 @@
 
 ![ALB-buy](../../../../image/Networking/ALB/ALB-012.png)
 
-4.购买的具体操作，请参考[创建实例](../../../../documentation/Networking/Load-Balancer/Operation-Guide/Create-ALB-Instance.md)。
+4.购买的具体操作，请参考[创建实例](../Operation-Guide/Create-ALB-Instance.md)。
 
 ## 入口2：[LB 控制台](https://console.jdcloud.com/host/loadBalance/list)
 
@@ -21,4 +21,4 @@
 
 ![控制台](../../../../image/Networking/ALB/console-buy.png)
 
-3.登录控制台，具体操作请参考[创建实例](../../../../documentation/Networking/Load-Balancer/Operation-Guide/Create-ALB-Instance.md)。
+3.登录控制台，具体操作请参考[创建实例](../Operation-Guide/Create-ALB-Instance.md)。
