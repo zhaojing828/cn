@@ -15,7 +15,7 @@
 | TotalInvocations    | 次   | Invoke该Function的总请求次数，包括所有调用InvokeFunction接口进行访问的请求和系统执行异步Invoke的请求。   同上表，异步的Invoke请求，不会在用户发起请求时计入总请求，而是在该异步请求实际被系统执行时才开始计数。 |
 | BillableInvocations | 次   | 成功Invoke该Function的请求次数，这类请求等同于计量项中的Invocations，是可计费请求数。   函数自身的语法错误或自身执行错误也会计入该指标。 |
 | Throttles           | 次   | Invoke该Function但被流控的请求次数                           |
-| FunctionErrors      | 次   | Invoke该Function但发生函数执行错误，包括Hanled/Unhandled/   timeout等。 |
+| FunctionErrors      | 次   | Invoke该Function但发生函数执行错误。 |
 
  
 
