@@ -4,7 +4,7 @@
 
 |发布日期|版本|描述|
 |-|-|-|
-|2019年3月|JDMigration V0.1.0|产品第一次对外发布|                                       |
+|2019年3月|云迁移 V0.1.0|产品第一次对外发布|                                       |
 ## 相关参考
 
 - [产品概述](/documentation/Hybrid-Cloud/JDMigration/Introduction/Product-Overview.md)
