@@ -102,7 +102,7 @@
       - name: 相关资源
   - name: 产品服务协议
     items:
-      - name: 云搜索Elasticsearch服务条款
-        href: Service-Agreements-and-Guarantees/Product-Service-Agreement/JCS-for-Elasticsearch-Service-Terms.md
-      - name: 云搜索Elasticsearch服务等级协议（SLA）
-        href: Service-Agreements-and-Guarantees/Product-Service-Agreement/JCS-for-Elasticsearch-Service-Terms-SLA.md
+    - name: 云搜索Elasticsearch服务条款
+      href: Service-Agreements-and-Guarantees/Product-Service-Agreement/JCS-for-Elasticsearch-Service-Terms.md
+    - name: 云搜索Elasticsearch服务等级协议（SLA）
+      href: Service-Agreements-and-Guarantees/Product-Service-Agreement/JCS-for-Elasticsearch-Service-Terms-SLA.md
