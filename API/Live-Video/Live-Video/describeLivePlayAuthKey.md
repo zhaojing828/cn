@@ -1,27 +1,34 @@
-# openLiveRestart
+# describeLivePlayAuthKey
 
 
 ## 描述
-开启回看
+查询播放鉴权KEY
 
 ## 请求方式
-PUT
+GET
 
 ## 请求地址
-https://live.jdcloud-api.com/v1/liveRestart:open
+https://live.jdcloud-api.com/v1/livePlayAuthKey
 
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**restartDomain**|String|True| |回看的推流域名|
+|**playDomain**|String|True| |您的播放加速域名|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|Result| |
 |**requestId**|String|ruquestId|
 
+### Result
+|名称|类型|描述|
+|---|---|---|
+|**playDomain**|String|播放域名|
+|**authStatus**|String|播放鉴权状态|
+|**authKey**|String|播放鉴权key|
 
 ## 返回码
 |返回码|描述|

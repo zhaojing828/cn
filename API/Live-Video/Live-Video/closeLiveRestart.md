@@ -2,7 +2,7 @@
 
 
 ## 描述
-关闭时移
+关闭回看
 
 ## 请求方式
 PUT
@@ -12,15 +12,10 @@ https://live.jdcloud-api.com/v1/liveRestart:close
 
 
 ## 请求参数
-|名称|类型|是否必需|描述|
-|---|---|---|---|
-|**restartDomain**|String|True|回看的推流域名|
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**restartDomain**|String|True| |回看的推流域名|
 
-
-## 示例
-    {
-        "restartDomain": "restart.yourdomain.com"
-    }
 
 ## 返回参数
 |名称|类型|描述|
