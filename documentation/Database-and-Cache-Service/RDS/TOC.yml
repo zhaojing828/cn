@@ -289,6 +289,8 @@
         href: Operation-Guide/Log-Management.md   
       - name: 设置访问模式
         href: Operation-Guide/Set-Access-Mode.md     
+      - name: PostgreSQL 插件 
+        href: Operation-Guide/PostgreSQL-Extension.md   
             
   - name: 最佳实践
     items:
