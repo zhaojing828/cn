@@ -94,15 +94,15 @@ SDK推荐您使用AWS SQS SDK, 京东云队列服务支持了SQS SDK的接口。
    ```
            
            
-           final String accessKey = "your accesskey";
-           final String secretKey = "your secretkey";
-           final String endpoint = "your region endpoint";
-           final String region = "your region";
+  final String accessKey = "your accesskey";
+  final String secretKey = "your secretkey";
+  final String endpoint = "your region endpoint";
+  final String region = "your region";
    
-   		AmazonSQS sqs = AmazonSQSClientBuilder.standard()
-                   .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey,secretKey)))
-                   .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(endpoint,region))
-                   .build();
+  AmazonSQS sqs = AmazonSQSClientBuilder.standard()
+                  .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey,secretKey)))
+                  .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(endpoint,region))
+                  .build();
    ```
 
 3.SDK的demo可以参考：[队列服务 Demo Code](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/sqs)。
