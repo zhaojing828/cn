@@ -65,6 +65,8 @@
             href: Operation-Guide/Instance/Delete-Instance.md
           - name: 开启外网访问
             href: Operation-Guide/Instance/Internet-Access.md
+          - name: 调整实例配置
+            href: Operation-Guide/Instance/Modify-Instance-Spec.md            
           - name: 主备切换
             href: Operation-Guide/Instance/Failover-Instance.md
           - name: 重启实例
@@ -133,7 +135,6 @@
               href: Operation-Guide/Backup/Backup-Download/Percona-Backup-Download.md
             - name: MariaDB 备份下载
               href: Operation-Guide/Backup/Backup-Download/MariaDB-Backup-Download.md
-              status: 0
             - name: SQL Server 备份下载
               href: Operation-Guide/Backup/Backup-Download/SQLServer-Backup-Download.md
           - name: 备份覆盖恢复
@@ -167,15 +168,26 @@
         items:
         - name: 单库上云简介
           href: Operation-Guide/Data-To-Cloud/Data-To-Cloud-Introduction.md
-        - name: 步骤一 本地备份
-          href: Operation-Guide/Data-To-Cloud/Backup-Local-Database.md
-        - name: 步骤二 上传备份
-          href: Operation-Guide/Data-To-Cloud/Upload-Backup.md
-        - name: 步骤三 备份导入
-          href: Operation-Guide/Data-To-Cloud/Import-Backup.md
-        - name: 删除上传文件
-          href: Operation-Guide/Data-To-Cloud/Delete-Import.md
-
+        - name: 从上传文件导入  
+          items:
+          - name: 步骤一 本地备份
+            href: Operation-Guide/Data-To-Cloud/Backup-Local-Database.md
+          - name: 步骤二 上传备份
+            href: Operation-Guide/Data-To-Cloud/Upload-Backup.md
+          - name: 步骤三 备份导入
+            href: Operation-Guide/Data-To-Cloud/Import-Backup.md
+          - name: 删除上传文件
+            href: Operation-Guide/Data-To-Cloud/Delete-Import.md
+        - name: 从OSS导入 
+          items:
+          - name: 步骤一 本地备份
+            href: Operation-Guide/Data-To-Cloud/V2/Backup-Local-Database-v2.md
+          - name: 步骤二 上传备份
+            href: Operation-Guide/Data-To-Cloud/V2/Upload-Backup-v2.md
+          - name: 步骤三 备份导入
+            href: Operation-Guide/Data-To-Cloud/V2/Import-Backup-v2.md
+          - name: 备份文件权限设置
+            href: Operation-Guide/Data-To-Cloud/V2/Grant-File-Privilege-v2.md        
       - name: 参数组 
         items:
          - name: 创建参数组
@@ -220,6 +232,8 @@
           href: Operation-Guide/Performance/Performance-Statistics-Introduction.md
         - name: SQL 性能统计
           href: Operation-Guide/Performance/SQL-Performance.md
+        - name: 执行中的慢SQL
+          href: Operation-Guide/Performance/Active-Slow-SQL.md          
         - name: 索引性能优化
           href: Operation-Guide/Performance/Index-Performance.md
 

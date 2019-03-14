@@ -51,8 +51,18 @@
         href: Operation-Guide/Dedicated-master.md 
       - name: 插件支持
         href: Operation-Guide/IK.md 
+      - name: 快照
+        items: 
+        - name: 创建快照
+          href: Operation-Guide/creatsnapshot.md
+        - name: 查看快照信息
+          href: Operation-Guide/viewsnapshot.md 
+        - name: 快照指定索引
+          href: Operation-Guide/indexsnapshot.md
+        - name: 删除快照
+          href: Operation-Guide/deletesnapshot.md 
       - name: Kibana
-        href: Operation-Guide/Kibana.md   
+        href: Operation-Guide/Kibana.md 
       - name: 监控集群
         items: 
         - name: 查看监控信息
@@ -75,6 +85,8 @@
        href: Best-Practices/Capacity-Assessment.md
      - name: 访问集群示例
        href: Best-Practices/connect-ES.md
+     - name: 数据接入集群
+       href: Best-Practices/plugin.md
      - name: 使用kibana
        href: Best-Practices/using_kibana.md
      - name: 性能指标
@@ -87,3 +99,4 @@
     items:
     - name: 文档历史记录
       href: Related-Resources/Document-History.md 
+  
