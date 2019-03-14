@@ -5,7 +5,7 @@
 
 访问转码流的地址规则为：
 
-    转码地址规则：直播域名 + AppName + StreamName_转码模板 ID
+    转码地址规则：直播域名 + AppName + StreamName_转码模板后缀
     转码地址示例：
         rtmp://域名/{AppName}/{StreamName}_hd
         http://域名/{AppName}/{StreamName}_hd.flv

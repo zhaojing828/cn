@@ -17,7 +17,7 @@ https://live.jdcloud-api.com/v1/streamNotifys
 |**publishDomain**|String|True|您的加速域名|
 |**notifyUrl**|String|True|设置直播流信息推送到的 URL 地址:<br>  - 必须以 http:// 开头<br>  - 正则校验格式<br>|
 
-##示例
+## 示例
     {
         "publishDomain":"push.yourdomain.com",
         "notifyUrl": "http://amf.jdcloud.com"

@@ -16,7 +16,7 @@ https://live.jdcloud-api.com/v1/domains:stop
 |---|---|---|---|
 |**publishDomain**|String|True|要停用的域名|
 
-##示例
+## 示例
     {
         "publishDomain":"push.yourdomain.com"
     }

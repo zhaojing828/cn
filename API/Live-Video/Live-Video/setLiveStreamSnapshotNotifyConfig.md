@@ -18,7 +18,7 @@ https://live.jdcloud-api.com/v1/snapshotNotifys:config
 |**notifyUrl**|String|True|设置直播流信息推送到的 URL 地址:<br>  - 以 http:// 开头<br>  - 正则校验<br>|
 
 
-##示例
+## 示例
     {
         "publishDomain":"push.yourdomain.com",
         "notifyUrl": "http://amf.jdcloud.com"

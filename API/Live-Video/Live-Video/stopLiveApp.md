@@ -18,7 +18,7 @@ https://live.jdcloud-api.com/v1/apps:stop
 |**appName**|String|True|应用名称|
 
 
-##示例
+## 示例
     {
         "publishDomain":"push.yourdomain.com",
         "appName":"live"

@@ -61,6 +61,7 @@ items:
         href: Live-API/describeLiveRestartConfigs.md
   - name: 直播回看
     href: Example/Restart.md
+    status: 0
     items:
       - name: 开启回看
         href: Live-API/openLiveRestart.md

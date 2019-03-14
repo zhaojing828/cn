@@ -17,7 +17,7 @@ https://live.jdcloud-api.com/v1/domains:start
 |**publishDomain**|String|True|要启动的域名|
 
 
-##示例
+## 示例
     {
         "publishDomain":"push.yourdomain.com"
     }

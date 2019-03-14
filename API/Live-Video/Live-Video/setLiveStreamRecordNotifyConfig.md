@@ -18,7 +18,7 @@ https://live.jdcloud-api.com/v1/recordNotifys:config
 |**notifyUrl**|String|True|设置直播流信息推送到的 URL 地址|
 
 
-##示例
+## 示例
     {
         "publishDomain":"push.yourdomain.com",
         "notifyUrl": "http://amf.jdcloud.com"

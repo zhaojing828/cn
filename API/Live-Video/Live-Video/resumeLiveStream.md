@@ -18,7 +18,7 @@ https://live.jdcloud-api.com/v1/streams:resume
 |**publishDomain**|String|True|您的加速域名|
 |**streamName**|String|True|流名称|
 
-##示例
+## 示例
     {
         "playDomain":"play.yourdomain.com",
         "streamName": "test-stream.jdcloud.com",
