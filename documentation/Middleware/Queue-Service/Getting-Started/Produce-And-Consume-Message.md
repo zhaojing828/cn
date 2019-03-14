@@ -74,7 +74,7 @@ SDK推荐您使用AWS SQS SDK, 京东云队列服务支持了SQS SDK的接口。
 
 以Java SDK为例进行说明，其他方式及开发语言请参考其他章节。
 
-1. 以Maven方式引入依赖
+1.以Maven方式引入依赖
 
 ```
 <dependency>  
@@ -89,7 +89,7 @@ SDK推荐您使用AWS SQS SDK, 京东云队列服务支持了SQS SDK的接口。
 
 或者下载[AWS SDK](<https://aws.amazon.com/cn/sdk-for-java/>)自行添加。
 
-1. 初始化，将AK&SK、接入点地址和Region信息填入。
+2.初始化，将AK&SK、接入点地址和Region信息填入。
 
    ```
            
@@ -105,4 +105,4 @@ SDK推荐您使用AWS SQS SDK, 京东云队列服务支持了SQS SDK的接口。
                    .build();
    ```
 
-2. SDK的demo可以参考：[队列服务 Demo Code](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/sqs)。
+3.SDK的demo可以参考：[队列服务 Demo Code](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/java/example_code/sqs)。
