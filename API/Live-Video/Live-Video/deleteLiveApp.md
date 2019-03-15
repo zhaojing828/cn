@@ -10,10 +10,10 @@ DELETE
 ## 请求地址
 https://live.jdcloud-api.com/v1/apps/{publishDomain}/appNames/{appName}
 
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**publishDomain**|String|True| |直播推流域名|
-|**appName**|String|True| |应用名称|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**publishDomain**|String|True|直播推流域名|
+|**appName**|String|True|应用名称|
 
 ## 请求参数
 无

@@ -51,21 +51,26 @@ items:
       - name: 删除直播流状态通知
         href: Live-API/deleteLiveStreamNotifyConfig.md
   - name: 直播时移
+    href: Example/Timeshift.md
     items:
-    status: 0
-      - name: 添加域名时移配置
-        href: Loading.md
-      - name: 删除域名时移配置
-        href: Loading.md
-      - name: 添加App时移配置
-        href: Loading.md
-      - name: 删除App时移配置
-        href: Loading.md
-      - name: 查询时移文件空间占用
-        href: Loading.md
+      - name: 开启时移
+        href: Live-API/openLiveRestart.md
+      - name: 关闭时移
+        href: Live-API/closeLiveRestart.md
       - name: 查询时移配置
-        href: Loading.md
+        href: Live-API/describeLiveRestartConfigs.md
+  - name: 直播回看
+    href: Example/Restart.md
+    status: 0
+    items:
+      - name: 开启回看
+        href: Live-API/openLiveRestart.md
+      - name: 关闭回看
+        href: Live-API/closeLiveRestart.md
+      - name: 查询回看配置
+        href: Live-API/describeLiveRestartConfigs.md
   - name: 直播转码
+    href: Example/Transcode.md
     items:
       - name: 添加域名转码配置
         href: Live-API/addLiveStreamDomainTranscode.md
@@ -151,6 +156,20 @@ items:
         href: Live-API/deleteLiveStreamDomainWatermark.md
       - name: 查询水印配置
         href: Live-API/describeCustomLiveStreamWatermarkConfig.md
+  - name: 资源监控
+    items:
+      - name: 查询直播录制时长数据
+        href: Live-API/describeLiveRecordData.md
+      - name: 查询直播截图张数数据
+        href: Live-API/describeLiveSnapshotData.md
+      - name: 查询直播鉴黄张数数据
+        href: Live-API/describeLivePornData.md
+  - name: 鉴权相关
+    href: Authentication/Url.md
+      - name: 查询播放鉴权KEY
+        href: Live-API/describeLivePlayAuthKey.md
+      - name: 设置播放鉴权KEY
+        href: Live-API/setLivePlayAuthKey.md
 #  - name: 直播审核
 #    href: Loading.md
   - name: SDK调用方式

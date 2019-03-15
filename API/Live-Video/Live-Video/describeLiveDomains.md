@@ -12,17 +12,24 @@ https://live.jdcloud-api.com/v1/domains
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**pageNum**|Integer|False| |页码；默认为1；取值范围[1, 100000]|
-|**pageSize**|Integer|False| |分页大小；默认为10；取值范围[10, 100]|
-|**publishDomain**|String|False| |域名|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**pageNum**|Integer|False|页码；默认为1；取值范围[1, 100000]|
+|**pageSize**|Integer|False|分页大小；默认为10；取值范围[10, 100]|
+|**publishDomain**|String|False|域名|
 
+
+## 示例
+    {
+        "pageNum": 1,
+        "pageSize": 10,
+        "publishDomain": "push.yourdomain.com"
+    }
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|Result|
 |**requestId**|String|ruquestId|
 
 ### Result

@@ -11,11 +11,14 @@ PUT
 https://live.jdcloud-api.com/v1/domains:stop
 
 
-## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**publishDomain**|String|True| |要停用的域名|
+## 请求参数|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**publishDomain**|String|True|要停用的域名|
 
+## 示例
+    {
+        "publishDomain":"push.yourdomain.com"
+    }
 
 ## 返回参数
 |名称|类型|描述|

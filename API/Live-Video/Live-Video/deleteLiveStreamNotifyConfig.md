@@ -10,9 +10,9 @@ DELETE
 ## 请求地址
 https://live.jdcloud-api.com/v1/streamNotifys/{publishDomain}
 
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**publishDomain**|String|True| |推流域名|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**publishDomain**|String|True|推流域名|
 
 ## 请求参数
 无

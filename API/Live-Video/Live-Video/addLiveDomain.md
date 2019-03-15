@@ -12,12 +12,18 @@ https://live.jdcloud-api.com/v1/domains
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**publishDomain**|String|True| |直播的推流域名（不支持泛域名）|
-|**playDomain**|String|True| |直播的播放域名（不支持泛域名）|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**publishDomain**|String|True|直播的推流域名（不支持泛域名）|
+|**playDomain**|String|True|直播的播放域名（不支持泛域名）|
 
 
+## 示例
+    {
+        "publishDomain": "push.yourdomain.com",
+        "playDomain": "play.yourdomain.com"
+    }
+    
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|

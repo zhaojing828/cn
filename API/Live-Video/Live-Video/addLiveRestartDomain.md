@@ -1,26 +1,27 @@
-# addLiveStreamDomainRecord
+# addLiveRestartDomain
 
 
 ## 描述
-添加域名录制配置
+添加回看域名
 
 ## 请求方式
-POST
+PUT
 
 ## 请求地址
-https://live.jdcloud-api.com/v1/recordDomains:config
+https://live.jdcloud-api.com/v1/domains:restart
 
 
 ## 请求参数
-|名称|类型|是否必需|描述|
-|---|---|---|---|
-|**publishDomain**|String|True|您的推流加速域名|
-|**template**|String|True|录制模版|
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**playDomain**|String|True| |已接入直播的播放域名(不支持泛域名)|
+|**restartDomain**|String|True| |需要添加的直播的回看域名(不支持泛域名)|
+
 
 ## 示例
     {
         "publishDomain": "push.yourdomain.com",
-        "template": "test-live-video"
+        "restartDomain": "restart.yourdomain.com"
     }
 
 ## 返回参数

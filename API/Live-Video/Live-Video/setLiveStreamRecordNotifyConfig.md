@@ -12,11 +12,17 @@ https://live.jdcloud-api.com/v1/recordNotifys:config
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**publishDomain**|String|True| |您的推流加速域名|
-|**notifyUrl**|String|True| |设置直播流信息推送到的 URL 地址|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**publishDomain**|String|True|您的推流加速域名|
+|**notifyUrl**|String|True|设置直播流信息推送到的 URL 地址|
 
+
+## 示例
+    {
+        "publishDomain":"push.yourdomain.com",
+        "notifyUrl": "http://amf.jdcloud.com"
+    }
 
 ## 返回参数
 |名称|类型|描述|

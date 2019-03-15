@@ -12,11 +12,18 @@ https://live.jdcloud-api.com/v1/streams:resume
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**appName**|String|True| |应用名称|
-|**publishDomain**|String|True| |您的加速域名|
-|**streamName**|String|True| |流名称|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**appName**|String|True|应用名称|
+|**publishDomain**|String|True|您的加速域名|
+|**streamName**|String|True|流名称|
+
+## 示例
+    {
+        "playDomain":"play.yourdomain.com",
+        "streamName": "test-stream.jdcloud.com",
+        "appName": "live"
+    }
 
 
 ## 返回参数

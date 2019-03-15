@@ -12,18 +12,32 @@ https://live.jdcloud-api.com/v1/transcodes:config
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**pageNum**|Integer|False| |页码；默认为1；取值范围[1, 100000]|
-|**pageSize**|Integer|False| |分页大小；默认为10；取值范围[10, 100]|
-|**filters**|Filter[]|False| |模板配置查询过滤条件:<br>  - name:   publishDomain，必填(直播推流域名)<br>  - value:  参数<br>  - name:   appName，必填(应用名称)<br>  - value:  参数<br>  - name:   streamName，非必填(推流名称)<br>  - value:  参数<br>|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**pageNum**|Integer|False|页码；默认为1；取值范围[1, 100000]|
+|**pageSize**|Integer|False|分页大小；默认为10；取值范围[10, 100]|
+|**filters**|Filter[]|False|模板配置查询过滤条件:<br>  - name:   publishDomain，必填(直播推流域名)<br>  - value:  参数<br>  - name:   appName，必填(应用名称)<br>  - value:  参数<br>  - name:   streamName，非必填(推流名称)<br>  - value:  参数<br>|
 
 ### Filter
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**name**|String|True| |过滤条件的名称|
-|**operator**|String|False| |过滤条件的操作符，默认eq|
-|**values**|String[]|True| |过滤条件的值|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**name**|String|True|过滤条件的名称|
+|**operator**|String|False|过滤条件的操作符，默认eq|
+|**values**|String[]|True|过滤条件的值|
+
+
+## 示例
+    {
+        "pageNum": 1,
+        "pageSize": 10,
+        "filters": [{
+           "name":"publishDomain",
+           "value":"push.yourdomain.com"},
+          {
+           "name":"appName",
+           "value":"live"
+           }]
+    }
 
 ## 返回参数
 |名称|类型|描述|

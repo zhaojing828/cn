@@ -12,23 +12,13 @@ https://live.jdcloud-api.com/v1/snapshotCustoms:config
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**pageNum**|Integer|False|1|页码；默认为1；取值范围[1, 100000]|
-|**pageSize**|Integer|False|10|分页大小；默认为10；取值范围[10, 100]|
-|**filters**|Filter[]|False| |直播截图查询过滤条件:<br>  - name:   publishDomain，必填(直播推流域名)<br>  - value:  参数<br>  - name:   appName，必填(应用名称)<br>  - value:  参数<br>  - name:   streamName，非必填(推流名称)<br>  - value:  参数<br>|
 
-### Filter
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**name**|String|True| |过滤条件的名称|
-|**operator**|String|False| |过滤条件的操作符，默认eq|
-|**values**|String[]|True| |过滤条件的值|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+
+|**result**|Result|
 |**requestId**|String|ruquestId|
 
 ### Result
@@ -44,7 +34,9 @@ https://live.jdcloud-api.com/v1/snapshotCustoms:config
 |**publishDomain**|String|推流域名|
 |**appName**|String|应用名称|
 |**streamName**|String|流名称|
-|**snapshotConfig**|String[]| |
+
+|**snapshotConfig**|String[]|
+
 
 ## 返回码
 |返回码|描述|
