@@ -20,8 +20,8 @@ items:
       - name: 删除域名
         href: Live-Video/deleteLiveDomain.md
   - name: APP管理
-    status: 0
     items:
+    status: 0
       - name: 添加直播APP
         href: Live-Video/addLiveApp.md
       - name: 删除直播APP

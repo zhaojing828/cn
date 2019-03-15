@@ -30,7 +30,8 @@ https://live.jdcloud-api.com/v1/watermarkCustoms:template
         "height": 720,
         "template":"test-live-video",
         "url":"http://amf.jdcloud.com"
-    }  
+    }
+    
 
 ## 返回参数
 |名称|类型|描述|

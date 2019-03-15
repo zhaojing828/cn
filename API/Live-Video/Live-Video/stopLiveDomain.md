@@ -11,7 +11,8 @@ PUT
 https://live.jdcloud-api.com/v1/domains:stop
 
 
-## 请求参数|名称|类型|是否必需|描述|
+## 请求参数
+|名称|类型|是否必需|描述|
 |---|---|---|---|
 |**publishDomain**|String|True|要停用的域名|
 
