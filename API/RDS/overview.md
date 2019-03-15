@@ -69,6 +69,7 @@ v1
 |**enableAudit**|POST|仅支持MySQL实例开启数据库审计|
 |**enableIntercept**|POST|开启数据库的高安全模式<br>- 仅支持MySQL|
 |**enableInternetAccess**|POST|开启RDS实例的外网访问功能。开启后，用户可以通过internet访问RDS实例|
+|**exchangeInstanceDns**|POST|交换两个实例的域名，包括内网域名和外网域名。如果一个实例有外网域名，一个没有，则不允许交换。<br>- 仅支持SQL Server|
 |**failoverInstance**|POST|对RDS实例进行主备切换。<br>注意：如果实例正在进行备份，那么主备切换将会终止备份操作。可以查看备份策略中的备份开始时间确认是否有备份正在运行。如果确实需要在实例备份时进行主备切换，建议切换完成 后，手工进行一次实例的全备<br>对于SQL Server，主备切换后30分钟内，不支持按时间点恢复/创建，例如在10:05分用户进行了主备切换，那么10:05 ~ 10:35这个时间段不能进行按时间点恢复/创建。<br>- 仅支持SQL Server|
 |**getUploadKey**|POST|获取单库上云工具上传文件的需要的Key。单库上云工具需要正确的key值方能连接到京东云<br>- 仅支持SQL Server|
 |**grantPrivilege**|POST|授予账号的数据库访问权限，即该账号对数据库拥有什么权限。一个账号可以对多个数据库具有访问权限。<br>为便于管理，RDS对权限进行了归类，目前提供以下两种权限<br>- ro：只读权限，用户只能读取数据库中的数据，不能进行创建、插入、删除、更改等操作。<br>- rw：读写权限，用户可以对数据库进行增删改查等操作|
@@ -80,7 +81,7 @@ v1
 |**modifyParameterGroup**|PUT|修改RDS实例的参数组<br>- 仅支持MySQL|
 |**modifyParameterGroupAttribute**|PUT|修改参数组名称，描述<br>- 仅支持MySQL|
 |**modifyParameterGroupParameters**|PUT|修改参数组的参数<br>- 仅支持MySQL|
-|**modifyParameters**|PUT|修改SQL Server数实例的配置参数。 部分参数修改后，需要重启才能生效，具体可以参考微软的相关文档<br>- 仅支持SQL Server|
+|**modifyParameters**|PUT|修改SQL Server实例的配置参数，目前支持以下参数:max_worker_threads,max_degree_of_parallelism,max_server_memory_(MB)。 部分参数修改后，需要重启才能生效，具体可以参考微软的相关文档。<br>- 仅支持SQL Server|
 |**modifyWhiteList**|PUT|修改允许访问实例的IP白名单。白名单是允许访问当前实例的IP/IP段列表，缺省情况下，白名单对本VPC开放。如果用户开启了外网访问的功能，还需要对外网的IP配置白名单。|
 |**rebootInstance**|POST|重启RDS实例，例如修改了一些配置参数后，需要重启实例才能生效。可以结合主备切换的功能，轮流重启备机，降低对业务的影响<br>**注意：如果实例正在进行备份，那么重启主实例将会终止备份操作。** 可以查看备份策略中的备份开始时间确认是否有备份正在运行。如果确实需要在实例备份时重启主实例，建议重启后，手工进行一次实例的全备。|
 |**resetPassword**|POST|重置数据库账号密码。如果用户忘记账号的密码，可以使用该接口重置指定账号密码。密码重置后，以前的密码将无法使用，必须使用重置后的新密码登录或连接数据库实例。|
