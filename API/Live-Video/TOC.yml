@@ -167,7 +167,7 @@ items:
   - name: 鉴权相关
     items:
       - name: 鉴权规则
-        href: Authentication/uthentication/Url.md
+        href: Authentication/Url.md
       - name: 查询播放鉴权KEY
         href: Live-Video/describeLivePlayAuthKey.md
       - name: 设置播放鉴权KEY
