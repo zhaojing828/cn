@@ -89,8 +89,6 @@
             href: API-Reference/CDN-Open-API/Open-api-business.md
           - name: 创建域名
             href: API-Reference/CDN-Open-API/Creat-domain.md
-          - name: 设置回源host
-            href: API-Reference/CDN-Open-API/Set-back-to-source-host.md
           - name: 协议跟随回源
             href: API-Reference/CDN-Open-API/Set-Protocol-Follow-Back-To-Origin.md
           - name: 回源跟随302
