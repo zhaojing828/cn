@@ -73,6 +73,8 @@ errMetricData |string |错误数据
 
 ### 示例代码
 
+注：直接使用该示例时，请替换timestamp参数为最新的10位秒级时间戳，否则会写入失败（禁止写入时间戳超过过去30天的数据）。  
+
 请求示例
 ```
 {
@@ -82,9 +84,9 @@ errMetricData |string |错误数据
 			"metric": "vm.mem.usage1",
 			"dimensions": {
 				"host": "1.2.3.23",
-				"datacenter": "cn-north-1 "
+				"datacenter": "cn-north-1"
 			},
-			"timestamp": 15305424971,
+			"timestamp": 1552446075,
 			"type": 1,
 			"values": {
 				"value": "12342213"
@@ -98,7 +100,7 @@ errMetricData |string |错误数据
 				"host": "1.2.3.19",
 				"tag": "bj"
 			},
-			"timestamp": 1530542497,
+			"timestamp": 1552446075,
 			"type": 2,
 			"values": {
 				"avg": "80",
