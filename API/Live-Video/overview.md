@@ -28,7 +28,7 @@ v1
 |**addLiveStreamDomainSnapshot**|POST|添加域名直播截图配置|
 |**addLiveStreamDomainTranscode**|POST|添加域名转码配置|
 |**addLiveStreamDomainWatermark**|POST|添加域名水印配置|
-|**closeLiveRestart**|PUT|关闭时移|
+|**closeLiveRestart**|PUT|关闭回看|
 |**closeLiveTimeshift**|PUT|关闭时移|
 |**deleteCustomLiveStreamRecordTemplate**|DELETE|删除用户自定义录制模板|
 |**deleteCustomLiveStreamSnapshotTemplate**|DELETE|删除用户自定义直播截图模板|
@@ -61,7 +61,7 @@ v1
 |**describeLivePlayAuthKey**|GET|查询播放鉴权KEY|
 |**describeLivePornData**|GET|查询直播鉴黄张数数据|
 |**describeLiveRecordData**|GET|查询直播录制时长数据|
-|**describeLiveRestartConfigs**|GET|查询时移配置|
+|**describeLiveRestartConfigs**|GET|查询回看配置|
 |**describeLiveSnapshotData**|GET|查询直播截图张数数据|
 |**describeLiveStreamNotifyConfig**|GET|查询直播流状态通知|
 |**describeLiveStreamOnlineList**|GET|查看域名下所有的正在推的流的信息|
@@ -71,7 +71,7 @@ v1
 |**describeLiveStreamTranscodeConfig**|GET|查询转码模板配置|
 |**describeLiveTimeshiftConfigs**|GET|查询时移配置|
 |**forbidLiveStream**|PUT|禁止直播流推送|
-|**openLiveRestart**|PUT|开启时移|
+|**openLiveRestart**|PUT|开启回看|
 |**openLiveTimeshift**|PUT|开启时移|
 |**resumeLiveStream**|PUT|恢复直播流推送|
 |**setLivePlayAuthKey**|POST|设置播放鉴权KEY|
