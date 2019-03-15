@@ -4,7 +4,7 @@
 
 进入京东云官网，选择产品-云安全-应用安全网关，点击立即使用进行购买。
 
-![image](https://github.com/jdcloudcom/cn/tree/edit/image/AppliAcation-Security-Gateway/bug01.png)
+![image](https://github.com/jdcloudcom/cn/blob/edit/image/AppliAcation-Security-Gateway/bug01.png)
 
 **2、控制台购买**
 
