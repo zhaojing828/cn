@@ -99,4 +99,6 @@
     items:
     - name: 文档历史记录
       href: Related-Resources/Document-History.md 
-  
+    - name: 云搜索Elasticsearch产品服务协议
+      href: Related-Resources/Product-Service-Agreement.md
+
