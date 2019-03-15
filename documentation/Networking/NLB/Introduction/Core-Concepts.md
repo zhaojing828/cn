@@ -24,6 +24,6 @@
 ## 相关参考
 
 - [产品概述](../Introduction/Overview.md)
-- [产品规格](../Introduction/Specification.md)
+- [产品规格](../Introduction/Specifications.md)
 - [价格总览](../Pricing/Price-Overview.md)
 - [创建实例](../Getting-Started/Create-Instance.md)
