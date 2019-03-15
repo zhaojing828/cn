@@ -25,10 +25,10 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/secrets
 ### DockerRegistryData
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**server**|String|True| |registry服务器地址|
 |**username**|String|True| |用户名|
 |**password**|String|True| |密码|
 |**email**|String|False| |邮件地址|
-|**server**|String|True| |registry服务器地址|
 
 ## 返回参数
 |名称|类型|描述|
@@ -44,10 +44,10 @@ https://nc.jdcloud-api.com/v1/regions/{regionId}/secrets
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
-|**500**|Internal server error|
-|**503**|Service unavailable|
-|**200**|OK|
 |**404**|Not found|
 |**429**|Quota exceeded|
+|**500**|Internal server error|
+|**503**|Service unavailable|

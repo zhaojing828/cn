@@ -21,16 +21,16 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/monitor
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**cycle**|Integer| |
 |**domain**|String| |
-|**httpRequestHeader**|Object|查询结果,类型为HashMap<String, Object>|
+|**cycle**|Integer| |
 |**monitorPath**|String| |
+|**httpRequestHeader**|Object|查询结果,类型为HashMap<String, Object>|
 
 ## 返回码
 |返回码|描述|

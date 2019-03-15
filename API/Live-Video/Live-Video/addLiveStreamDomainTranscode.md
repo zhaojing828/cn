@@ -23,7 +23,6 @@ https://live.jdcloud-api.com/v1/transcodeDomains:config
         "publishDomain": "push.yourdomain.com",
         "template": "test-live-video
     }
-
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|

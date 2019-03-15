@@ -12,8 +12,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/routeTables/{routeTableId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**routeTableId**|String|True| |RouteTable ID|
 |**regionId**|String|True| |Region ID|
+|**routeTableId**|String|True| |RouteTable ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|

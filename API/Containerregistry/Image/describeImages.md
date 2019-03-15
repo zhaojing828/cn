@@ -25,9 +25,9 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/images
 ### Filter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
-|**name**|String|True| |过滤条件的名称|
 
 ## 返回参数
 |名称|类型|描述|
@@ -38,27 +38,27 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/images
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**totalCount**|Number| |
 |**imageDetails**|ImageDetail[]|镜像列表|
+|**totalCount**|Number| |
 ### ImageDetail
 |名称|类型|描述|
 |---|---|---|
-|**totalPullTimes**|Integer|镜像被拉取次数|
-|**imageManifest**|String|镜像的Manifest|
-|**imageDigest**|String|image manifest的sha256摘要|
 |**registryName**|String|image registry 表示镜像的注册表归属|
-|**imageTags**|String[]|镜像关联的所有Tag|
-|**imageSizeMB**|Double|image在repository中的大小。从Docker 1.9之后的版本, Docker client会压缩镜像层数据再push到V2版本的Docker registry。<br>docker image命令显示的是解压后的镜像大小，因此会比DescribeImages接口返回的镜像大小会大很多。      <br>|
-|**lastPullAt**|String|最近pull的时间|
 |**repositoryName**|String|image repository表示镜像的仓库归属|
+|**imageDigest**|String|image manifest的sha256摘要|
+|**imageManifest**|String|镜像的Manifest|
 |**imagePushedAt**|String|当前image被push到repository的时间|
+|**imageSizeMB**|Double|image在repository中的大小。从Docker 1.9之后的版本, Docker client会压缩镜像层数据再push到V2版本的Docker registry。<br>docker image命令显示的是解压后的镜像大小，因此会比DescribeImages接口返回的镜像大小会大很多。      <br>|
+|**imageTags**|String[]|镜像关联的所有Tag|
+|**lastPullAt**|String|最近pull的时间|
+|**totalPullTimes**|Integer|镜像被拉取次数|
 
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|

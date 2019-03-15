@@ -16,6 +16,7 @@ https://live.jdcloud-api.com/v1/transcodeApps/{publishDomain}/appNames/{appName}
 |**appName**|String|True|直播流所属应用名称|
 |**template**|String|True|转码模板自定义名称:<br>  -取值要求：数字、大小写字母或短横线("-"),首尾不能有特殊字符("-") -<b>注意: 不能与已定义命名重复</b>|
 
+
 ## 请求参数
 无
 

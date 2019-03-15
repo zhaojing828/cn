@@ -36,7 +36,6 @@ https://live.jdcloud-api.com/v1/snapshotCustoms:template
         "saveEndpoint":"s3.cn-north-1.jcloudcs.com",
         "template":"test-live-video"
     }
-    
 
 ## 返回参数
 |名称|类型|描述|

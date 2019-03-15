@@ -10,7 +10,6 @@ POST
 
 ## 请求地址
 https://live.jdcloud-api.com/v1/records/{publishDomain}/appNames/{appName}/streamNames/{streamName}/task
-
 |名称|类型|是否必需|描述|
 |---|---|---|---|
 |**publishDomain**|String|True|推流加速域名|
@@ -25,8 +24,8 @@ https://live.jdcloud-api.com/v1/records/{publishDomain}/appNames/{appName}/strea
 |**saveEndpoint**|String|True|存储地址|
 |**recordFileType**|String|True|录制文件类型:<br>  - 取值: ts,flv,mp4 (多种类型之前用;隔开)<br>  - 不区分大小写<br>|
 |**saveObject**|String|False|录制文件存储路径:<br>  - 默认地址: record/{Date}/{ServerId}/{AppName}/{StreamName}/{StartTime}_{EndTime}.{format}<br>|
-    
-    
+
+
 ### RecordTime
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

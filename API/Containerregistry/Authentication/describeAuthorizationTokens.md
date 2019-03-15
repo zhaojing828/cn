@@ -14,8 +14,8 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**registryName**|String|True| |注册表名称|
 |**regionId**|String|True| |地域 ID|
+|**registryName**|String|True| |注册表名称|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
@@ -27,9 +27,9 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 ### Filter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
-|**name**|String|True| |过滤条件的名称|
 
 ## 返回参数
 |名称|类型|描述|
@@ -40,21 +40,21 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/registries/{regi
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**totalCount**|Number| |
 |**authorizationTokens**|AuthorizationData[]| |
+|**totalCount**|Number| |
 ### AuthorizationData
 |名称|类型|描述|
 |---|---|---|
 |**authorizationToken**|String|基于base64编码的字符串，包含指定JCR registry的授权信息。解码后可用于docker login。|
-|**expiresAt**|String|Unix 时钟，记录authorization token的过期时间。默认Authorization tokens有效期为12小时。|
 |**loginCmdLine**|String|用户直接使用的docker login 命令行|
+|**expiresAt**|String|Unix 时钟，记录authorization token的过期时间。默认Authorization tokens有效期为12小时。|
 
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|
