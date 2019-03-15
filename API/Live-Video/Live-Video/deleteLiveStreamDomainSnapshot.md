@@ -13,7 +13,7 @@ https://live.jdcloud-api.com/v1/snapshotDomains/{publishDomain}/templates/{templ
 |名称|类型|是否必需|描述|
 |---|---|---|---|
 |**publishDomain**|String|True|推流加速域名|
-|**template**|String|True|截图模板自定义名称:<br>  - 标准质量模板：sd、hd、hsd<br>  - 自定义模板: 枚举类型校验，忽略大小写，自动删除空格,<br>              取值要求：数字、大小写字母或短横线("-"),<br>              首尾不能有特殊字符("-")<br>  - <b>注意: 不能与标准的转码模板和已定义命名重复</b><br>|
+|**template**|String|True|截图模板自定义名称:<br>  -取值要求：数字、大小写字母或短横线("-"),首尾不能有特殊字符("-") -<b>注意: 不能与已定义命名重复</b>|
 
 ## 请求参数
 无

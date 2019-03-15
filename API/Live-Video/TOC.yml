@@ -51,14 +51,13 @@ items:
       - name: 删除直播流状态通知
         href: Live-Video/deleteLiveStreamNotifyConfig.md
   - name: 直播时移
-    href: Example/Timeshift.md
     items:
       - name: 开启时移
-        href: Live-Video/openLiveRestart.md
+        href: Live-Video/openLiveTimeshift.md
       - name: 关闭时移
-        href: Live-Video/closeLiveRestart.md
+        href: Live-Video/closeLiveTimeshift.md
       - name: 查询时移配置
-        href: Live-Video/describeLiveRestartConfigs.md
+        href: Live-Video/describeLiveTimeshiftConfigs.md
   - name: 直播回看
     href: Example/Restart.md
     status: 0
@@ -70,8 +69,9 @@ items:
       - name: 查询回看配置
         href: Live-Video/describeLiveRestartConfigs.md
   - name: 直播转码
-    href: Example/Transcode.md
     items:
+      - name: 转码配置规则
+        href: Example/Transcode.md
       - name: 添加域名转码配置
         href: Live-Video/addLiveStreamDomainTranscode.md
       - name: 删除域名转码配置
@@ -165,7 +165,8 @@ items:
       - name: 查询直播鉴黄张数数据
         href: Live-Video/describeLivePornData.md
   - name: 鉴权相关
-    href: Authentication/Url.md
+      - name: 鉴权规则
+        href: Authentication/uthentication/Url.md
       - name: 查询播放鉴权KEY
         href: Live-Video/describeLivePlayAuthKey.md
       - name: 设置播放鉴权KEY
