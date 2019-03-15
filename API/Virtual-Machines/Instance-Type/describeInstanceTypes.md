@@ -23,9 +23,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTypes
 ### Filter
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**name**|String|True| |过滤条件的名称|
 |**operator**|String|False| |过滤条件的操作符，默认eq|
 |**values**|String[]|True| |过滤条件的值|
-|**name**|String|True| |过滤条件的名称|
 
 ## 返回参数
 |名称|类型|描述|
@@ -36,26 +36,26 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTypes
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**totalCount**|Integer|总数量|
 |**instanceTypes**|InstanceType[]|通用的实例规格|
 |**specificInstanceTypes**|InstanceType[]|用户特有的实例规格；需要工单申请|
+|**totalCount**|Integer|总数量|
 ### InstanceType
 |名称|类型|描述|
 |---|---|---|
 |**family**|String|实例规格类型|
 |**instanceType**|String|实例规格，比如g.b1.2xlarge|
+|**cpu**|Integer|cpu个数|
 |**memoryMB**|Integer|内存大小|
-|**state**|InstanceTypeState[]|规格状态|
 |**nicLimit**|Integer|支持弹性网卡的数量|
+|**desc**|String|描述|
+|**state**|InstanceTypeState[]|规格状态|
 |**gpu**|Gpu|Gpu配置|
 |**localDisks**|LocalDisk[]|本地缓存盘配置，目前只有Gpu规格上才有|
-|**cpu**|Integer|cpu个数|
-|**desc**|String|描述|
 ### LocalDisk
 |名称|类型|描述|
 |---|---|---|
-|**diskSizeGB**|Integer|磁盘大小|
 |**diskType**|String|磁盘类型，取值范围{premium-hdd, ssd}|
+|**diskSizeGB**|Integer|磁盘大小|
 ### Gpu
 |名称|类型|描述|
 |---|---|---|
@@ -70,9 +70,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/instanceTypes
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|

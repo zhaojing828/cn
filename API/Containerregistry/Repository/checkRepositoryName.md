@@ -31,15 +31,15 @@ https://containerregistry.jdcloud-api.com/v1/regions/{regionId}/repositories:che
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**reason**|String|code字段非零时，给出详细原因。|
 |**code**|Integer|表示用户指定的镜像仓库名是否通过校验， 0 通过 1 名称为空 2 不符合规范 3 重名|
+|**reason**|String|code字段非零时，给出详细原因。|
 
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|

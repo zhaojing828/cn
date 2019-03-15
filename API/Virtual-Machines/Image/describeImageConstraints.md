@@ -34,8 +34,8 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ### ImageConstraint
 |名称|类型|描述|
 |---|---|---|
-|**imageInstanceTypeConstraint**|ImageInstanceTypeConstraint|使用镜像创建实例的规格限制|
 |**imageId**|String|镜像ID|
+|**imageInstanceTypeConstraint**|ImageInstanceTypeConstraint|使用镜像创建实例的规格限制|
 ### ImageInstanceTypeConstraint
 |名称|类型|描述|
 |---|---|---|
@@ -45,9 +45,9 @@ https://vm.jdcloud-api.com/v1/regions/{regionId}/images/{imageId}/constraints
 ## 返回码
 |返回码|描述|
 |---|---|
+|**200**|OK|
 |**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
-|**503**|Service unavailable|
-|**200**|OK|
 |**500**|Internal server error|
+|**503**|Service unavailable|

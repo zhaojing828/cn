@@ -2,7 +2,7 @@
 
 在“部署应用”页，可查看指定地域内的应用列表，
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation1.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-1%EF%BC%88Ch%EF%BC%89.png)
 
 对于指定应用，支持操作如下：
 

@@ -12,6 +12,7 @@ https://live.jdcloud-api.com/v1/records:config
 
 
 ## 请求参数
+
 |名称|类型|是否必需|描述|
 |---|---|---|---|
 |**pageNum**|Integer|False|页码；默认为1；取值范围[1, 100000]|
@@ -39,6 +40,7 @@ https://live.jdcloud-api.com/v1/records:config
            "value":"live"
            }]
     }
+
 
 
 ## 返回参数

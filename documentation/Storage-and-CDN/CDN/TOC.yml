@@ -43,8 +43,14 @@
         href: Operation-Guide/Access-control.md  
       - name: 高级配置
         href: Operation-Guide/Advanced-configuration.md
-      - name: 回源策略
-        href: Operation-Guide/back-to-origin-Strategy.md
+      - name: 回源配置
+        items:
+          - name: 回源策略
+            href: Operation-Guide/Back-To-Origin-Configuration/back-to-origin-Strategy.md
+          - name: 协议跟随回源
+            href: Operation-Guide/Back-To-Origin-Configuration/Protocol-Follow-Back-To-Origin.md        
+          - name: 回源跟随302
+            href: Operation-Guide/Back-To-Origin-Configuration/Follow-302-Configuration.md
       - name: 业务监控
         href: Operation-Guide/Business-Monitoring.md        
       - name: 缓存配置
@@ -83,8 +89,10 @@
             href: API-Reference/CDN-Open-API/Open-api-business.md
           - name: 创建域名
             href: API-Reference/CDN-Open-API/Creat-domain.md
-          - name: 设置回源host
-            href: API-Reference/CDN-Open-API/Set-back-to-source-host.md
+          - name: 协议跟随回源
+            href: API-Reference/CDN-Open-API/Set-Protocol-Follow-Back-To-Origin.md
+          - name: 回源跟随302
+            href: API-Reference/CDN-Open-API/Set-Follow-302-Configuration.md
           - name: 回源策略变更
             href: API-Reference/CDN-Open-API/Change-back-to-source.md
           - name: 缓存策略变更
@@ -147,7 +155,6 @@
             href: API-Reference/CDN-Open-API/Query-uv.md
           - name: 设置/删除 Header
             href: API-Reference/CDN-Open-API/Set-Header.md
-            status: 0
           - name: 查询Header
             href: API-Reference/CDN-Open-API/Query-Header.md
           - name: 附：提示信息状态码参照表
@@ -166,7 +173,17 @@
             href: API-Reference/Live-Video-Open-Api/Query-stream-data.md
           - name: 分区域运营商详细数据统计
             href: API-Reference/Live-Video-Open-Api/Area-isp-statistics.md
-          - name: 直播CDN OPEN API
-            href: API-Reference/Live-Video-Open-Api/Live-Video-Open-Api.md
+          - name: 回源策略变更
+            href: API-Reference/Live-Video-Open-Api/Change-Live-Back-To-Source.md
+          - name: 服务状态变更
+            href: API-Reference/Live-Video-Open-Api/Change-Live-Domain-Status.md
+          - name: 创建直播加速域名
+            href: API-Reference/Live-Video-Open-Api/Creat-Live-Domain.md
+          - name: 查询域名配置信息
+            href: API-Reference/Live-Video-Open-Api/Query-Live-Domain-Config.md
+          - name: 查询在线人数
+            href: API-Reference/Live-Video-Open-Api/Query-online-Number.md
+          - name: 设置推流IP白名单
+            href: API-Reference/Live-Video-Open-Api/Set-Push-IP-Whitelist.md
   - name: FAQ
     href: FAQ/FAQ.md
