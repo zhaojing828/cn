@@ -20,8 +20,8 @@ items:
       - name: 删除域名
         href: Live-API/deleteLiveDomain.md
   - name: APP管理
-    items:
     status: 0
+    items:
       - name: 添加直播APP
         href: Live-API/addLiveApp.md
       - name: 删除直播APP
@@ -166,6 +166,7 @@ items:
         href: Live-API/describeLivePornData.md
   - name: 鉴权相关
     href: Authentication/Url.md
+    items:
       - name: 查询播放鉴权KEY
         href: Live-API/describeLivePlayAuthKey.md
       - name: 设置播放鉴权KEY
