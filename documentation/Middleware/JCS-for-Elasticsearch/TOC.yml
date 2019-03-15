@@ -50,7 +50,11 @@
       - name: 专用主节点
         href: Operation-Guide/Dedicated-master.md 
       - name: 插件支持
-        href: Operation-Guide/IK.md 
+        href: Operation-Guide/IK.md
+      - name: Elasticsearch日志
+        href: Operation-Guide/eslog.md
+      - name: 自定义词库
+        href: Operation-Guide/dic.md  
       - name: 快照
         items: 
         - name: 创建快照
