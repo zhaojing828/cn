@@ -10,4 +10,4 @@
 
 进入控制台-云安全-应用安全网关-实例管理页面，点击创建进行购买
 
-![image](https://github.com/jdcloudcom/cn/tree/edit/image/AppliAcation-Security-Gateway/bug03.png)
+![image](https://github.com/jdcloudcom/cn/blob/edit/image/AppliAcation-Security-Gateway/bug03.png)
