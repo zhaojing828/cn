@@ -20,8 +20,8 @@ items:
       - name: 删除域名
         href: Live-Video/deleteLiveDomain.md
   - name: APP管理
-    items:
     status: 0
+    items:
       - name: 添加直播APP
         href: Live-Video/addLiveApp.md
       - name: 删除直播APP
@@ -59,7 +59,6 @@ items:
       - name: 查询时移配置
         href: Live-Video/describeLiveTimeshiftConfigs.md
   - name: 直播回看
-    href: Example/Restart.md
     status: 0
     items:
       - name: 开启回看
@@ -167,7 +166,7 @@ items:
   - name: 鉴权相关
     items:
       - name: 鉴权规则
-        href: Authentication/uthentication/Url.md
+        href: Authentication/Url.md
       - name: 查询播放鉴权KEY
         href: Live-Video/describeLivePlayAuthKey.md
       - name: 设置播放鉴权KEY
