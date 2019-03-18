@@ -19,11 +19,10 @@ https://live.jdcloud-api.com/v1/recordCustoms:template
 |**filters**|Filter[]|False|录制模板列表查询过滤条件:<br>  - name:   template 录制模板自定义名称<br>  - value:  如果参数为空，则查询全部<br>|
 
 ### Filter
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**name**|String|True| |过滤条件的名称|
-|**operator**|String|False| |过滤条件的操作符，默认eq|
-|**values**|String[]|True| |过滤条件的值|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**name**|String|True|过滤条件的名称|
+|**values**|String[]|True|过滤条件的值|
 
 ## 示例
     {
@@ -38,7 +37,7 @@ https://live.jdcloud-api.com/v1/recordCustoms:template
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|

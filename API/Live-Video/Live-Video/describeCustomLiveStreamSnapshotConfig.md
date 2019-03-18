@@ -22,7 +22,6 @@ https://live.jdcloud-api.com/v1/snapshotCustoms:config
 |名称|类型|是否必需|描述|
 |---|---|---|---|
 |**name**|String|True|过滤条件的名称|
-|**operator**|String|False|过滤条件的操作符，默认eq|
 |**values**|String[]|True|过滤条件的值|
 
 
@@ -42,8 +41,8 @@ https://live.jdcloud-api.com/v1/snapshotCustoms:config
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|
-|**requestId**|String|ruquestId|
+|**result**|Result| |
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|
@@ -58,7 +57,7 @@ https://live.jdcloud-api.com/v1/snapshotCustoms:config
 |**publishDomain**|String|推流域名|
 |**appName**|String|应用名称|
 |**streamName**|String|流名称|
-|**snapshotConfig**|String[]|
+|**snapshotConfig**|String[]| |
 
 ## 返回码
 |返回码|描述|

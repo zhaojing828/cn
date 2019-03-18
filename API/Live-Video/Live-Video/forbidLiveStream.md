@@ -22,14 +22,14 @@ https://live.jdcloud-api.com/v1/streams:forbid
     {
        
         "playDomain":"play.yourdomain.com",
-        "streamName": "test-stream.jdcloud.com",
+        "streamName": "test-stream",
         "appName": "live"
     }
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码

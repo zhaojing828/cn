@@ -22,7 +22,6 @@ https://live.jdcloud-api.com/v1/transcodeCustoms
 |名称|类型|是否必需|描述|
 |---|---|---|---|
 |**name**|String|True|过滤条件的名称|
-|**operator**|String|False|过滤条件的操作符，默认eq|
 |**values**|String[]|True|过滤条件的值|
 
 ## 示例
@@ -38,7 +37,7 @@ https://live.jdcloud-api.com/v1/transcodeCustoms
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|

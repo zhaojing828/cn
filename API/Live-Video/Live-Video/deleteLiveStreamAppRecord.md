@@ -23,7 +23,7 @@ https://live.jdcloud-api.com/v1/recordApps/{publishDomain}/appNames/{appName}/te
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码

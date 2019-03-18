@@ -3,7 +3,6 @@
 
 ## 描述
 设置播放鉴权KEY
-[播放鉴权规则]()
 
 ## 请求方式
 POST
@@ -13,17 +12,17 @@ https://live.jdcloud-api.com/v1/livePlayAuthKey
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**playDomain**|String|True| |您的播放加速域名|
-|**authStatus**|String|False| |播放鉴权状态|
-|**authKey**|String|False| |播放鉴权key|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**playDomain**|String|True|您的播放加速域名|
+|**authStatus**|String|False|播放鉴权状态|
+|**authKey**|String|False|播放鉴权key|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码
