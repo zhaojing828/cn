@@ -46,4 +46,4 @@ umount <local-directory>
 
 存储网关当前不支持文件锁、软链接、硬链接等操作，NFS客户端需使用root用户执行访问操作，暂不支持其他用户访问。
 
-注：NFS Client若使用CentOS 7.1/CentOS 7.2系统，需手动升级系统内核，相关说明请参考[运维指南](../Operation-Guide/Operation-Maintenance.md)。
+注：NFS Client若为CentOS 7.1/CentOS 7.2系统，需手动升级系统内核，相关说明请参考[运维指南](../Operation-Guide/Operation-Maintenance.md)。
