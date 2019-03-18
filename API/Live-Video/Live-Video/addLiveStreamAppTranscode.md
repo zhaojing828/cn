@@ -15,7 +15,7 @@ https://live.jdcloud-api.com/v1/transcodeApps:config
 |名称|类型|是否必需|描述|
 |---|---|---|---|
 |**publishDomain**|String|True|直播的推流域名|
-|**template**|String|True|转码模版:<br>  - 标准质量模板：<br>- ld(h.264/640*360/15f)<br>- sd(h.264/854*480/24f)<br>- hd(h.264/1280*720/25f)<br>- shd(h.264/1920*1080/30f)<br>  - 取值要求：数字、大小写字母或短横线("-"),<br>              首尾不能有特殊字符("-")<br>  - <b>注意: 不能与标准的转码模板和已定义命名重复</b><br>|
+|**template**|String|True|转码模版后缀|
 |**appName**|String|True|直播流所属应用名称|
 
 
