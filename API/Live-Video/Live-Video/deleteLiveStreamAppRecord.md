@@ -14,7 +14,7 @@ https://live.jdcloud-api.com/v1/recordApps/{publishDomain}/appNames/{appName}/te
 |---|---|---|---|
 |**publishDomain**|String|True|推流加速域名|
 |**appName**|String|True|直播流所属应用名称|
-|**template**|String|True|录制模板自定义名称:<br> - 自定义模板:  数字、大小写字母或短横线("-"),首尾不能有特殊字符("-")<br>  - <b>注意: 不能与已定义命名重复</b><br>|
+|**template**|String|True|录制模板自定义名称|
 
 ## 请求参数
 无
