@@ -18,7 +18,7 @@ https://live.jdcloud-api.com/v1/recordCustoms:template
 |**saveBucket**|String|True|存储桶<br>|
 |**saveEndpoint**|String|True|存储地址<br>|
 |**recordFileType**|String|True|录制文件格式:<br>  - 取值: ts,flv,mp4 (多种类型之前用;隔开)<br>  - 不区分大小写<br>|
-|**template**|String|True|录制模板自定义名称:<br> - 取值要求：数字、大小写字母或短横线("-"),首尾不能有特殊字符("-")<br> - <b>注意: 不能与已定义模板命名重复</b><br>
+|**template**|String|True|录制模板自定义名称:<br> - 取值要求：数字、大小写字母或短横线("-"),首尾不能有特殊字符("-")<br> - <b>注意: 不能与已定义模板命名重复</b><br>|
 
 ## 示例
     {
