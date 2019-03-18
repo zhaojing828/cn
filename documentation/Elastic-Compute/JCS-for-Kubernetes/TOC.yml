@@ -45,6 +45,8 @@
             href: Operation-Guide/Cluster/Connect-Cluster.md
           - name: 删除集群
             href: Operation-Guide/Cluster/Delete-Cluster.md
+          - name: 集群监控
+            href: Operation-Guide/Cluster/Cluster-Monitor.md
       - name: 工作节点组
         items:
           - name: 工作节点组概述
@@ -55,6 +57,8 @@
             href: Operation-Guide/NodeGroup/Telescopic-NodeGroup.md
           - name: 删除工作节点组
             href: Operation-Guide/NodeGroup/Delete-NodeGroup.md
+          - name: 设置自动修复
+            href: Operation-Guide/NodeGroup/Auto-Repair.md
       - name: 集群Dashboard
         items:
           - name: Dashboard
