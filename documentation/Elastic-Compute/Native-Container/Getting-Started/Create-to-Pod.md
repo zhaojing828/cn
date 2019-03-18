@@ -12,7 +12,7 @@
 &#160; &#160; **备注**：目前支持华北-北京、华东-上海、华南-广州地域，其中华北-北京街、华东-上海提供可用区A和可用区B两个可用区。    
  3. 选择计费模式：包年包月和按配置计费，包年包月按月付费购买资源，按配置计费按实际使用的时长（精确至秒）进行计费。关于两种计费方式的区别，请查阅[计费规则][2]；   
  4. 地域与可用区选择：在此步骤仍可以选择Pod对应的地域及可用区，请注意“不同地域资源内网不互通，创建之后不可更改”，如果所选地域限额已满，可以通过提交工单提升限额；  
- ![](https://github.com/jdcloudcom/cn/blob/edit/image/Native-Container/Podregion.png)  
+ ![](https://github.com/jdcloudcom/cn/blob/edit/image/Native-Container/podregion.png)  
  5. 选择规格  
 	* 京东云原生容器Pod的配置支持用户自定义选择：提供1核1G到72核576G，提供通用型、计算优化型、内存优化型、高频计算型四种类型，用户可以根据不同业务场景选择实例规格及相应配置，详细请查阅[实例配置推荐][3]；  
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Native-Container/Podtype.png) 
