@@ -113,6 +113,8 @@ items:
         href: Live-Video/describeLiveStreamRecordNotifyConfig.md
       - name: 删除录制回调配置
         href: Live-Video/deleteLiveStreamRecordNotifyConfig.md
+      - name: 添加打点录制任务
+        href: Live-Video/addLiveRecordTask.md
   - name: 直播截图
     items:
       - name: 添加直播截图模板
@@ -158,6 +160,7 @@ items:
   - name: 资源监控
     items:
       - name: 查询直播录制时长数据
+        status: 0
         href: Live-Video/describeLiveRecordData.md
       - name: 查询直播截图张数数据
         href: Live-Video/describeLiveSnapshotData.md

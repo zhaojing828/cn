@@ -12,10 +12,10 @@ https://live.jdcloud-api.com/v1/domains:restart
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**playDomain**|String|True| |已接入直播的播放域名(不支持泛域名)|
-|**restartDomain**|String|True| |需要添加的直播的回看域名(不支持泛域名)|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**playDomain**|String|True|已接入直播的播放域名(不支持泛域名)|
+|**restartDomain**|String|True|需要添加的直播的回看域名(不支持泛域名)|
 
 
 ## 示例
@@ -27,7 +27,7 @@ https://live.jdcloud-api.com/v1/domains:restart
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码

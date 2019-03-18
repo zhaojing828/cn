@@ -12,15 +12,15 @@ https://live.jdcloud-api.com/v1/liveRestart:open
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**restartDomain**|String|True| |回看的推流域名|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**restartDomain**|String|True|回看的推流域名|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码
