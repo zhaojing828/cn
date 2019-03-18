@@ -22,9 +22,9 @@ Windows系统可以点击修复操作，Linux给出修复建议，用户自行�
   ![](../../../../image/Situational-Awareness/weakness_1.png)
   ![](../../../../image/Situational-Awareness/weakness_2.png)
   ![](../../../../image/Situational-Awareness/weakness_5.png)
-  ![](../../../../image/Situational-Awareness/weakness_m_0.png)
-  ![](../../../../image/Situational-Awareness/weakness_m_1.png)
-  ![](../../../../image/Situational-Awareness/weakness_m_2.png) 
+  ![](../../../../image/Situational-Awareness/weakness_m_0_1.png)
+  ![](../../../../image/Situational-Awareness/weakness_m_1_1.png)
+  ![](../../../../image/Situational-Awareness/weakness_m_2_1.png) 
   
 #### 功能说明
 网站漏洞模块结合白帽渗透测试实战经验，通过先进的爬虫，分布式技术对京东云提供全面网站威胁检测服务。帮助用户缩短云资产漏洞发现时间，及时修复漏洞，一定程度上缓解了黑客入侵行动的进一步发生，同时避免遭受品牌形象和经济损失。
