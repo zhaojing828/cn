@@ -32,7 +32,7 @@ https://live.jdcloud-api.com/v1/liveTimeShift:close
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**400**|Invalid parameter |
+|**400**|Invalid parameter|
 |**401**|Authentication failed|
 |**404**|Not found|
 |**500**|Internal server error|
