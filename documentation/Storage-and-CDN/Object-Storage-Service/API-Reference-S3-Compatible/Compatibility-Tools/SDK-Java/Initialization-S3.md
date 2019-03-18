@@ -32,8 +32,8 @@ import com.amazonaws.SDKGlobalConfiguration;
  
 public class S3SdkTest{
     public static void main(String[] args)  {
-        final String accessKey = "your accesskey";
-        final String secretKey = "your secretkey";
+        final String accessKey = "<your accesskey>";
+        final String secretKey = "<your secretkey>";
         final String endpoint = "https://s3.cn-north-1.jcloudcs.com";
         System.setProperty(SDKGlobalConfiguration.ENABLE_S3_SIGV4_SYSTEM_PROPERTY, "true");
         ClientConfiguration config = new ClientConfiguration();
@@ -62,8 +62,8 @@ public class S3SdkTest{
 ```
 public class S3SdkDomainTest{
     public static void main(String[] args)  {
-        final String accessKey = "your accesskey";
-        final String secretKey = "your secretkey";
+        final String accessKey = "<your accesskey>";
+        final String secretKey = "<your secretkey>";
         final String endpoint = "<your domain name>";  //您的自定义域名
         System.setProperty(SDKGlobalConfiguration.ENABLE_S3_SIGV4_SYSTEM_PROPERTY, "true");
         ClientConfiguration config = new ClientConfiguration();
@@ -81,6 +81,8 @@ public class S3SdkDomainTest{
                 .disableChunkedEncoding()
                 .withPathStyleAccessEnabled(true) 
                 .build();
+                
+        s3Client.putObject("","<object key>",new File("<your filepath>"));  //示例：使用s3Client上传文件到自定义域名所绑定的Bucket
     }
 }
 ```
