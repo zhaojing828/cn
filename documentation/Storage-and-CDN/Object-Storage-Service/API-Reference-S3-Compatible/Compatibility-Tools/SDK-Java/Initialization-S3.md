@@ -55,4 +55,36 @@ public class S3SdkTest{
 }
 ```
 
+## 使用自定义域名新建S3Client
 
+当您将自定义的域名绑定某一Bucket后，如需使用自定义域名调用SDK，请参考以下初始化示例：
+
+```
+public class S3SdkDomainTest{
+    public static void main(String[] args)  {
+        final String accessKey = "your accesskey";
+        final String secretKey = "your secretkey";
+        final String endpoint = "<your domain name>";  //您的自定义域名
+        System.setProperty(SDKGlobalConfiguration.ENABLE_S3_SIGV4_SYSTEM_PROPERTY, "true");
+        ClientConfiguration config = new ClientConfiguration();
+ 
+        AwsClientBuilder.EndpointConfiguration endpointConfig =
+                new AwsClientBuilder.EndpointConfiguration(endpoint, "cn-north-1");  //您的Bucket所在的Region
+ 
+        AWSCredentials awsCredentials = new BasicAWSCredentials(accessKey,secretKey);
+        AWSCredentialsProvider awsCredentialsProvider = new AWSStaticCredentialsProvider(awsCredentials);
+ 
+        AmazonS3 s3 = AmazonS3Client.builder()
+                .withEndpointConfiguration(endpointConfig)
+                .withClientConfiguration(config)
+                .withCredentials(awsCredentialsProvider)
+                .disableChunkedEncoding()
+                .withPathStyleAccessEnabled(true) 
+                .build();
+    }
+}
+```
+注：
+ - 当使用s3Client调用相关方法时，请指定一个空的Bucket字符串；
+ - 使用自定义域名创建的s3Client仅支持访问自定义域名所绑定的Bucket； 
+ - 使用自定义域名无法使用listBuckets方法。
