@@ -19,6 +19,6 @@
 (1) 未开通过任何（普通版/校园版）京东白条的用户： 
 ![](../../../image/User/Real%20name%20verification/Student%20account%20verification/%E6%8F%90%E4%BA%A4%E7%94%B3%E8%AF%B71.jpg)
 (2) 开通过普通京东白条但未开通校园白条的用户：
-![](../../../edit/image/User/Real%20name%20verification/Student%20account%20verification/%E6%8F%90%E4%BA%A4%E7%94%B3%E8%AF%B72.jpg)
+![](https://github.com/jdcloudcom/cn/blob/20190319-limeijuan/image/User/Real%20name%20verification/Student%20account%20verification/%E6%8F%90%E4%BA%A4%E7%94%B3%E8%AF%B72.jpg)
         
 4. 提示已经通过学生认证；
