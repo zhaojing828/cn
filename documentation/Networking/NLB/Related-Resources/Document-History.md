@@ -12,7 +12,7 @@
 - [产品概述](../Introduction/Overview.md)
 - [核心概念](../Introduction/Core-Concepts.md)
 - [产品优势](../Introduction/Benefits.md)
-- [产品功能](../Introduction/Functions.md)
+- [产品功能](../Introduction/Features.md)
 - [价格总览](../Pricing/Price-Overview.md)
 - [计费规则](../Pricing/Billing-Rules.md)
 - [创建网络负载均衡实例](../Getting-Started/Create-Instance.md)
