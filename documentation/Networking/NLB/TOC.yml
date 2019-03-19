@@ -79,10 +79,6 @@
       href: Best-Practices/Distribute-service-to-vm-and-container-with-NLB.md
     - name: 利用网络负载均衡部署服务端可弹性伸缩的业务
       href: Best-Practices/AG-as-backend-server.md
-  - name: 问题排查
-    items:
-    - name: 网络负载均衡业务接入失败？
-      href: Troubleshooting/Access-NLB-Service-Failed.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考

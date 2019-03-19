@@ -106,7 +106,7 @@ items:
           - name: 快速使用图片服务
             href: Operation-Guide/Image-Service-Guide/Getting-Started-1.md  
           - name: 图片缩放
-            href: peration-Guide/Image-Service-Guide/Resize-Images.md
+            href: Operation-Guide/Image-Service-Guide/Resize-Images.md
           - name: 图片旋转
             href: Operation-Guide/Image-Service-Guide/Rotate-Image.md 
           - name: 图片裁剪
@@ -270,7 +270,7 @@ items:
                - name: 通用请求头
                  href: API-Reference/HTTP-Header/Request-Headers.md
                - name: 公共响应头
-                 href: API-Reference/Introduction/Response-Headers.md
+                 href: API-Reference/HTTP-Header/Response-Headers.md
                - name: 访问控制
                  href: API-Reference/Access-Control-Signature-In-Header-Or-URL.md
            - name:  关于Service的操作
