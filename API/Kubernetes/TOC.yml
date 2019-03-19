@@ -34,7 +34,7 @@ items:
     - name: 修改节点组属性
       href: NodeGroup/modifyNodeGroup.md
     - name: 设置自动升级
-			href: NodeGroup/setAutoRepair.md
+      href: NodeGroup/setAutoRepair.md
     - name: 设置节点组大小
       href: NodeGroup/setNodeGroupSize.md
   - name: 配额
