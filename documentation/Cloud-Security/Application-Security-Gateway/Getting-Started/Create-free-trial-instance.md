@@ -1,8 +1,9 @@
-# 创建免费体验版实例 
+# 创建应用安全网关实例 
+应用安全网关（JD Cloud Application Security Gateway）是基于京东云高性能负载均衡集群的Web应用安全防护产品，也简称：VPC-WAF。
 
-- 京东云云安全-应用安全网关（JD Cloud Application Security Gateway）是基于京东云高性能负载均衡集群的Web应用安全防护产品，也简称：VPC-WAF。
+应用安全网关提供四种套餐模式：体验版、基础版、高级版和旗舰版。当前支持体验版、基础版和高级版实例创建。(../Introduction/Specifications.md)
 
-  应用安全网关提供四种套餐模式：体验版、基础版、高级版和旗舰版，目前提供体验版和基础版。**体验版免费提供，**主要功能包括：Web安全检测功能、特征库更新、安全分析报表和用户审计等功能。
+**体验版免费提供**主要功能包括：Web安全检测功能、特征库更新、安全分析报表和用户审计等功能。
 
   1、进入京东云**控制台-云安全-应用安全网关-实例管理**页面，点击创建：![image.png](https://img1.jcloudcs.com/cms/b5e03c75-9d4c-4e05-8403-6d00b6c4851a20180815151830.png)
 
@@ -25,3 +26,8 @@
   7、此时应用安全体验版创建完成，可以在应用安全网关首页查看访问趋势进行流量检查，确认配置是否生效。
 
   ![image.png](https://img1.jcloudcs.com/cms/b4232217-90d7-4193-8fd5-abd0bd14f6df20180815153051.png)
+
+
+## 相关参考
+- 应用安全网关[套餐说明](../Introduction/Specifications.md)
+- 应用安全网关[计费说明](../Pricing/Billing-Rules.md)
