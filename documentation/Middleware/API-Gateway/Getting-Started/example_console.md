@@ -102,6 +102,7 @@
 
   - 打开[Access Key管理](https://uc.jdcloud.com/account/accesskey)，点击创建Access Key，手机验证通过后可获取Access Key ID和Access Key Secret。
 
+
     ![Access Key管理](../../../../image/Internet-Middleware/API-Gateway/exap_Access_Key_admin.png)
 
   - 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
