@@ -106,7 +106,7 @@ items:
           - name: 快速使用图片服务
             href: Operation-Guide/Image-Service-Guide/Getting-Started-1.md  
           - name: 图片缩放
-            href: peration-Guide/Image-Service-Guide/Resize-Images.md
+            href: Operation-Guide/Image-Service-Guide/Resize-Images.md
           - name: 图片旋转
             href: Operation-Guide/Image-Service-Guide/Rotate-Image.md 
           - name: 图片裁剪
