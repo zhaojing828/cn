@@ -7,6 +7,7 @@
 关于透明数据加密TDE的详细介绍可参考微软的文档 [透明数据加密](https://docs.microsoft.com/zh-cn/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
 
 京东云数据库 RDS 支持在以下 SQL Server 版本中使用 TDE：
+
 - SQL Server 2008R2 企业版
 - SQL Server 2012 企业版
 - SQL Server 2014 企业版
@@ -25,7 +26,7 @@
 
 ## 操作步骤
 1. 登录RDS控制台，点击实例，进入到 **“安全管理”** 页面
-2. 选择“TDE透明数据加密”，点击开关，开启实例级别的TDE
+2. 选择 **“TDE透明数据加密”** ，点击开关，开启实例级别的TDE
 3. 对要开启TDE的数据库，执行以下SQL。 以数据库db1为例
 ```
 USE master
