@@ -16,7 +16,7 @@ API 网关（API Gateway），是API托管服务。 提供API的全生命周期�
 	
 	- [创建API](../Operation-Guide/Create-API/Create-API.md)
 	
- 	- [发布API分组](../Operation-Guide/Create-Publish/Create-Publish.md)
+ 	- [发布API分组](../Operation-Guide/Create-APIGroup/Create-Publish.md)
 	
 
 - 权限管理
@@ -26,7 +26,7 @@ API 网关（API Gateway），是API托管服务。 提供API的全生命周期�
 	
  
 - 运维管理
-	- [自定义域名](../Operation-Guide/Create-Domain/Create-Domain.md)
+	- [自定义域名](../Operation-Guide/Create-APIGroup/Create-Domain.md)
 	
 	- [给API分组配置流控策略](../Operation-Guide/Create-Stream/Create-Stream.md)
 	
