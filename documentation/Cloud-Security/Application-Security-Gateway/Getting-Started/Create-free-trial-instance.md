@@ -1,29 +1,30 @@
-# 创建应用安全网关实例 
-应用安全网关（JD Cloud Application Security Gateway）是基于京东云高性能负载均衡集群的Web应用安全防护产品，也简称：VPC-WAF。
+## 创建说明
 
-应用安全网关提供四种套餐模式：体验版、基础版、高级版和旗舰版。当前支持体验版、基础版和高级版实例创建。(../Introduction/Specifications.md)
+应用安全网关（VPC-WAF）是基于京东云高性能负载均衡集群的Web应用安全防护产品，可创建四种套餐：体验版、基础版、高级版和旗舰版实例套餐，一个用户可创建多个套餐实例，对经过应用型负载均衡HTTP/HTTPs流量进行防护。
 
-**体验版免费提供**主要功能包括：Web安全检测功能、特征库更新、安全分析报表和用户审计等功能。
+目前支持体验版、基础版和高级版实例创建，各个套餐版本说明，可参考[套餐说明](../Introduction/Specifications.md)。
 
-  1、进入京东云**控制台-云安全-应用安全网关-实例管理**页面，点击创建：![image.png](https://img1.jcloudcs.com/cms/b5e03c75-9d4c-4e05-8403-6d00b6c4851a20180815151830.png)
+## 创建步骤
 
-  2、进入订单创建页面，填写名称应用安全网关名称，此时如果已经有负载均衡，可以选择绑定负载均衡，也可以选择不绑定稍后创建。
+  1、进入京东云**控制台-云安全-应用安全网关-实例管理**页面，点击创建,接入应用安全网关实例创建页面：![image.png](../../../../image/AppliAcation-Security-Gateway/list01.png)
 
-  ![image.png](https://img1.jcloudcs.com/cms/b56ee557-458e-427d-90e4-a82c19d8d94e20180815152101.png)
+  2、进入**实例创建**页面，填写名称应用安全网关名称，此时如果已经有应用负载均衡，选择绑定应用负载均衡，也可以选择不绑定待创建实例成功之后进行绑定，此处选择绑定。
+  ![image.png](../../../../image/AppliAcation-Security-Gateway/list02.png)
 
-  3、点击【立即购买】直到结束。
 
-  4、返回实例管理页面，点击刷新，可以看到之前创建的应用安全网关实例
+  3、确认购买时间，确认无误后，点击**立即购买**进行购买知道流程结束。
 
-  ![image.png](https://img1.jcloudcs.com/cms/7ade0ed0-f86e-4627-8399-2de40c8e50bc20180815152427.png)      5、点击【绑定负载均衡】绑定已经创建好的负载均衡，如果无可用的负载均衡，需要到控制台-网络-负载均衡页面创建负载均衡，然后在进行绑定操作。
+  4、返回**实例管理**页面，点击刷新，此时可以看到之前创建的应用安全网关实例。
+  
+   ![image.png](../../../../image/AppliAcation-Security-Gateway/list03.png)
 
-  ![image.png](https://img1.jcloudcs.com/cms/c58c4c65-ca5a-492a-89a0-474f3d2772d520180815152658.png)
+     
+  5、如果在**步骤2**中未绑定应用负载均衡，点击实例列表**操作-绑定负载均衡**选择ALB进行绑定，如果无可用的负载均衡，需要到控制台-网络-应用负载均衡页面创建负载均衡，然后在进行绑定操作。应用负载均衡详细[创建流程](https://docs.jdcloud.com/cn/application-load-balancer/create-instance)
 
-  6、新建负载均衡之后，进入应用安全网关实例管理页面再次进行绑定。
+    ![image.png](../../../../image/AppliAcation-Security-Gateway/list04-绑定.png)
 
-  ![image.png](https://img1.jcloudcs.com/cms/2b62793e-20e9-4563-8117-43dd8a3a32ca20180815152931.png)
 
-  7、此时应用安全体验版创建完成，可以在应用安全网关首页查看访问趋势进行流量检查，确认配置是否生效。
+  6、
 
   ![image.png](https://img1.jcloudcs.com/cms/b4232217-90d7-4193-8fd5-abd0bd14f6df20180815153051.png)
 
@@ -31,3 +32,4 @@
 ## 相关参考
 - 应用安全网关[套餐说明](../Introduction/Specifications.md)
 - 应用安全网关[计费说明](../Pricing/Billing-Rules.md)
+- 应用负载均衡[创建流程](https://docs.jdcloud.com/cn/application-load-balancer/create-instance)
