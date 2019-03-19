@@ -9,7 +9,7 @@
 - 实例删除后，该实例的备份数据会一并删除，不可恢复。如如需保存备份数据，请提前下载备份数据到本地保存。下载方式请参见：[下载备份]() 。
 
 ## 操作步骤
-1. 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb?dataCenter=bj_02)。
+1. 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb)。
 2. 在实例列表页面，选择目标实例，在操作项中，点击 **删除**，打开确认弹窗。
  
     ![删除实例](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-014.png)
