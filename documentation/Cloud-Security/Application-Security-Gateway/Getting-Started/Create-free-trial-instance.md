@@ -41,19 +41,25 @@
 
   ![image.png](../../../../image/AppliAcation-Security-Gateway/list05-1.png)
   
-  
- #### 7、防护确认
+ ## 结果确认
  
- 配置完成后，在浏览器输入对应防护的域名或者IP，在最后添加**/etc/passwd**,弹出以下页面，说明防护已经生效。
+ #### 1、攻击触发
+ 
+ 实例创建完成后，在浏览器输入对应防护的域名或者IP，在最后添加**/etc/passwd**,弹出以下页面，说明防护已经生效。
  ![image.png](../../../../image/AppliAcation-Security-Gateway/list06-2.png)
  
- 同时也可以查看首页统计，如果有数据出现说明防护已经生效；或者查看分析报表-Web安全报表和全量日志页面，如果有数据，说明防护已经生效。
+ #### 2、防护结果查看
+ 通过查看首页统计和分析报表页面数据，如果有数据出现说明防护已经生效。
+ 
+ 首页统计
  
  ![image.png](../../../../image/AppliAcation-Security-Gateway/list07-1.png)
+ 
+ 分析报表统计
  
  ![image.png](../../../../image/AppliAcation-Security-Gateway/list08-1.png)
 
 ## 相关参考
 - [套餐说明](../Introduction/Specifications.md)
 - [计费说明](../Pricing/Billing-Rules.md)
-- 应用负载均衡[创建流程](https://docs.jdcloud.com/cn/application-load-balancer/create-instance)
+- [应用负载均衡创建流程](https://docs.jdcloud.com/cn/application-load-balancer/create-instance)
