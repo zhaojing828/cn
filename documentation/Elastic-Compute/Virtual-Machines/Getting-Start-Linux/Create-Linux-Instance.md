@@ -79,9 +79,9 @@
 
 [实例规格](../Introduction/Instance-Type-Family.md)
 
-[设备名分配规则](../Operation-Guide/Cloud-Disk/Assign-Device-Name.md)
+[设备名分配规则](../Operation-Guide/Storage/Assign-Device-Name.md)
 
-[云硬盘加密](../Operation-Guide/Cloud-Disk/Encryption-of-Cloud-Disk.md)
+[云硬盘加密](../Operation-Guide/Storage/Encryption-of-Cloud-Disk.md)
 
 [云硬盘价格](http://docs.jdcloud.com/cn/cloud-disk-service/billing-rules)
 

@@ -30,7 +30,7 @@
  
 [镜像类型转换](Convert-Image.md)
  
-[设备名分配规则](../Operation-Guide/Cloud-Disk/Assign-Device-Name.md)
+[设备名分配规则](../Storage/Assign-Device-Name.md)
 
 
   [1]: https://cns-console.jdcloud.com/
