@@ -2,7 +2,6 @@
 ## 步骤1：创建标准请求串并加密 ##
 首先要将请求按照下面的固定形式进行拼接，生成标准请求串。 
 示例伪代码
-
  
 
 	CanonicalRequest =
@@ -20,9 +19,9 @@ HTTPRequestMethod即HTTP协议请求方式，如POST、GET等，使用全大写�
 
 CanonicalURI即URI编码后的请求路径。
 
-CanonicalQueryString为请求查询字符串。要构建规范查询字符串，首先按字符代码**升序**对参数名进行排序，然后对每个参数名称和值分别进行URI编码。接着通过从排序列表中的第一个参数名称开始构建规范查询字符串。**对于每个参数，附加URI编码的参数名称，后跟等号字符（=），后跟URI编码的参数值**。对没有值的参数使用空字符串。在每个参数值之后附加&符号，除了列表中的最后一个值。
+CanonicalQueryString为请求查询字符串。要构建规范查询字符串，首先按字符代码对**参数名按升序**进行排序，如果重复名称的参数再**按值升序**进行排序。然后对每个**参数名称和值分别进行URI编码**（请不要重复编码）。接着通过从排序列表中的第一个参数名称开始构建规范查询字符串。**对于每个参数，附加URI编码的参数名称，后跟等号字符（=），后跟URI编码的参数值**。对没有值的参数使用空字符串。在每个参数值之后附加&符号，除了列表中的最后一个值。
 
-要创建规范HTTP请求头列表，请将所有HTTP头名称转换为**小写**，并删除前导空格和尾随空格。通过用字符代码**升序**对请求头进行排序，然后遍历请求头名称来构建规范HTTP请求头列表。注意**：x-jdcloud-date**（遵循ISO8601标准，使用UTC时间，格式为YYYYMMDDTHHmmssZ）, **x-jdcloud-nonce**必须在请求中包含并且参与签名；如果有**x-jdcloud-security-token**头，此项也必须参与签名。
+要创建规范HTTP请求头列表，请将所有HTTP头名称转换为**小写**（请保证请求头名称不能包含空格），并**删除请求头value中前导空格和尾随空格**。通过用字符代码**升序**对请求头进行排序，然后遍历请求头名称来构建规范HTTP请求头列表。注意**：x-jdcloud-date**（遵循ISO8601标准，使用UTC时间，格式为YYYYMMDDTHHmmssZ）, **x-jdcloud-nonce**必须在请求中包含并且参与签名；如果有**x-jdcloud-security-token**头，此项也必须参与签名。
 
 CanonicalHeaders表示需要参与签名的请求头及值，使用:分隔名称和值，并添加换行符。
 SignedHeaders用于告知京东云，请求头中的哪些是签名过程的一部分。
@@ -68,7 +67,7 @@ GET示例请求
     Algorithm + \n +
     RequestDateTime + \n +
     CredentialScope + \n +
-    HexEncode(Hash(CanonicalRequest))
+    Lowercase(HexEncode(Hash(CanonicalRequest)))
 
 其中，
  
@@ -79,7 +78,7 @@ RequestDateTime与HTTP请求头x-jdcloud-date中的**格式和值必须完全一
 
 CredentialScope格式为”{时间}/{地域编码}/{产品线}/jdcloud2_request”，例如20180130/cn-north-1/vpc/jdcloud2_request
 
-HexEncode(CanonicalRequest)是步骤1生成的标准请求进行**SHA256哈希**后，在表示为**小写十六进制字符串**。
+Lowercase(HexEncode(CanonicalRequest))是步骤1生成的标准请求进行**SHA256哈希**后，在表示为**小写十六进制字符串**。
 
 例如：
 
@@ -103,7 +102,7 @@ HexEncode(CanonicalRequest)是步骤1生成的标准请求进行**SHA256哈希**
 
 使用生成的kSigning再对步骤2得到的待签名字符串进行HMAC运算,并将计算结果转为小写十六进制字符串：
 
-    signResult = HexEncode(HMAC(kSigning, StringToSign))
+    signResult = Lowercase(HexEncode(HMAC(kSigning, StringToSign)))
 
 最终生成一个签名串，如：
 
