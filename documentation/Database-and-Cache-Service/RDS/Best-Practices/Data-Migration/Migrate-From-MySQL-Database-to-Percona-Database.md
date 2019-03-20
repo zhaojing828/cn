@@ -7,7 +7,7 @@
 * 新建的云数据库 Percona 实例的容量空间要确保不能小于云数据库 MySQL。
 
 ## 操作步骤
-1. 创建云主机，具体的创建步骤请参考 [创建云主机](https://www.jdcloud.com/help/detail/303/isCatalog/1)，创建云主机时候需要注意以下几点
+1. 创建云主机，具体的创建步骤请参考 [创建云主机](https://docs.jdcloud.com/cn/virtual-machines/create-instance)，创建云主机时候需要注意以下几点
     * 请确保云主机和云数据库 MySQL 在同一个 ***私有网络*** 内。
     * 请确保云主机所在子网的 ***网络 ACL*** 是允许访问云数据库 MySQL 。
 2. 完成云主机创建工作之后，开始将云数据库 MySQL 数据导出到云主机中，执行命令
