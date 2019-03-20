@@ -61,5 +61,5 @@
 
 ## 相关参考
 - [套餐说明](../Introduction/Specifications.md)
-- [计费说明](../Pricing/Billing-Rules.md)
+- [价格说明](../Pricing/Price-Overview.md)
 - [应用负载均衡创建流程](https://docs.jdcloud.com/cn/application-load-balancer/create-instance)
