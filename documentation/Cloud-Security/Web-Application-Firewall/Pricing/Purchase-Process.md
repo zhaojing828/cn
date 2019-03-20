@@ -4,13 +4,13 @@
 
 进入京东云官网，选择**产品-云安全-Web应用防火墙**，点击立即购买进行购买。
 
-![image.png](../../../../image/WAF/bug01.png)
+![image.png](../../../../image/WAF/buy01.png)
 
 
 ### 2、控制台购买
 
 进入京东云-**控制台-云安全-Web应用防火墙-实例管理**页面，点击购买实例进行购买。
 
-![image.png](../../../..//image/WAF/bug2.png)
+![image.png](../../../..//image/WAF/buy2.png)
 
  
