@@ -1,6 +1,6 @@
 # 计费概述
 
-说明：队列服务公测期间不收取费用, 产品正式上线后会通知用户才开始收费，产品收费标准请查看[价格总览](https://docs.jdcloud.com/cn/queue-service/price-overview)。
+说明：队列服务公测期间不收取费用, 产品正式上线前会通知用户计费，产品收费标准请查看[价格总览](https://docs.jdcloud.com/cn/queue-service/price-overview)。
 
 ## 计费方式
 
