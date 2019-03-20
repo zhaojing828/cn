@@ -11,6 +11,6 @@
 
 进入京东云-**控制台-云安全-Web应用防火墙-实例管理**页面，点击购买实例进行购买。
 
-![image.png](../../../..//image/WAF/buy2.png)
+![image.png](../../../../image/WAF/buy2.png)
 
  
