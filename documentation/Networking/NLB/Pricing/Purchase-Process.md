@@ -8,7 +8,7 @@
 
  ![NLB产品入口](../../../../image/Networking/NLB/NLB-Menu.png)
 
-3.弹出网络负载均衡的产品介绍页，点击**立即购买**。
+3.弹出负载均衡的产品介绍页，点击**立即购买**。
 
 ![NLB产品页](../../../../image/Networking/NLB/NLB-ProductEntrance.png)
 
