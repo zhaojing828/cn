@@ -65,7 +65,7 @@ VNC登陆的场景至少包括以下几种：
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc3.png)
 6. 成功连接到您在京东云创建的Windows实例。<br>
 ![](../../../../image/vm/Getting-Start-Linux-Connect-Windows-mstsc4.png)
-7. 如果登录失败，请确认公网IP地址是否输入正确，并查看实例关联[安全组](../Operation-Guide/Security-Group/Overview.md)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)配置，确认实例是否允许3389端口的入流量。
+7. 如果登录失败，请确认公网IP地址是否输入正确，并查看实例关联[安全组](https://docs.jdcloud.com/cn/virtual-private-cloud/security-group-features)及所在子网的[网络ACL](http://docs.jdcloud.com/cn/virtual-private-cloud/network-acl-features)配置，确认实例是否允许3389端口的入流量。
 
 
 ## 本地为Linux，使用rdesktop登录Windows实例

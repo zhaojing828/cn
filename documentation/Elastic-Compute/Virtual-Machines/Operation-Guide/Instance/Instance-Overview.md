@@ -9,7 +9,7 @@
 * [重置密码](Reset-Password.md)
 * [启动实例](Start-Instance.md)
 * [查看实例](Query-Instance-Info.md)
-* [修改实例名称](Modify-Instance-Name)
+* [修改实例名称](Modify-Instance-Name.md)
 * [停止实例](Stop-Instance.md)
 * [重启实例](Reboot-Instance.md)
 * [重运行到期/欠费实例](http://docs.jdcloud.com/cn/virtual-machines/restart-overdue-or-arrear-instance)

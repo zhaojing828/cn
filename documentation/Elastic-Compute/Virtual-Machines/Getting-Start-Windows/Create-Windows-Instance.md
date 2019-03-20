@@ -73,7 +73,7 @@
 
 [计费规则](../Pricing/Billing-Rules.md)
 
-[镜像概述](../Operation-Guide/Image/Overview.md)
+[镜像概述](../Operation-Guide/Image/Image-Overview.md)
 
 [实例规格](../Introduction/Instance-Type-Family.md)
 
