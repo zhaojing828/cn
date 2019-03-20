@@ -94,4 +94,4 @@
 
 [实例规格类型](http://docs.jdcloud.com/cn/virtual-machines/instance-type-family)
 
-[SSH密钥](../Key-Pair/KeyPair-Overview)
+[SSH密钥](../Key-Pair/KeyPair-Overview.md)

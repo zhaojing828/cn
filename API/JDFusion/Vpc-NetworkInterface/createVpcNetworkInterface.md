@@ -18,15 +18,11 @@ https://jdfusion.jdcloud-api.com/v1/regions/{regionId}/vpc_networkInterfaces
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**authorization**|String|True| |获取方式请参考签名算法指导文档|
-|**body**|CreateNetInterfaceReq|True| |创建网卡|
+|**netInterface**|CreateNetInterface|True| |创建网卡|
 |**x-jdcloud-date**|String|True| |获取方式请参考签名算法指导文档|
 |**x-jdcloud-fusion-cloudid**|String|True| |云注册信息ID|
 |**x-jdcloud-nonce**|String|True| |获取方式请参考签名算法指导文档|
 
-### CreateNetInterfaceReq
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**netInterface**|CreateNetInterface|False| | |
 ### CreateNetInterface
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|

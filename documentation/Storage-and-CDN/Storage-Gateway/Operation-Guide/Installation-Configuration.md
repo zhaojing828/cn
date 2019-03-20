@@ -36,6 +36,15 @@
 
 注： accessKeyID及accessKeySecret获取请查看[AccessKey管理](https://uc.jdcloud.com/account/accesskey)；endpoint请查看[OSS服务器域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)；单个存储网关仅支持连接一个Bucket。
 
+配置示例：
+
+```
+accessKeyID：xxxxxxxxxxxxxxxx
+accessKeySecret: xxxxxxxxxxxxxxxx
+endpoint：http://s3.cn-north-1.jcloudcs.com   //endpoint须使用http://或https://开头
+bucket：bucketname
+```
+
 2.初始化云硬盘，初始化脚本路径为`/root/bin/auto_fdisk.sh`，该操作将会初始化云硬盘并设置为存储网关的本地缓存。执行命令示例如下：
 
 ```
@@ -56,13 +65,15 @@ auto_fdisk.sh /dev/vdb /cache ext4
 gw start
 ```
 
+注：执行启动命令后，当显示`Starting httpd... monitor`时，即开启完成，执行`ctrl+c`退出即可，退出后，monitor作为服务运行监控模块会在后台执行。
+
 4.执行`df -h`命令查看是否启动成功，如图所示，127.0.0.1:/gw为已成功开启的NFS共享文件系统。
 
 ![启动服务](../../../../image/Storage-Gateway/storagegateway-3.png)
 
 注：127.0.0.1为本地回送地址，即Localhost。
 
-5.存储网关配置文件路径为`/etc/gateway/gw.conf`，相关配置项为accessKeyID、accessKeySecret、endpoint、bucket。若配置项修改后，重启NFS服务后，新配置项才会生效。重启NFS服务命令示例如下：
+5.存储网关配置文件路径为`/etc/gateway/gw.conf`，相关配置项为accessKeyID、accessKeySecret、endpoint、bucket。也可以通过执行`gw install`来重新配置。重启NFS服务后，新配置项才会生效。重启NFS服务命令示例如下：
 
 ```
 gw restart

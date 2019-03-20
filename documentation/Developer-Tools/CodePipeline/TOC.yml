@@ -15,6 +15,10 @@ items:
         href: Introduction/Restrictions.md
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
       - name: 快速创建
@@ -41,8 +45,8 @@ items:
         items:
           - name: 停止操作
             href: Operation-Guide/Working-With-Action/Check-Action.md     
-    - name: 最佳实践
-      items:
+  - name: 最佳实践
+    items:
         - name: 构建并部署到Kubernetes集群
           href: Best-Practices/Deployment-On-K8S.md
   

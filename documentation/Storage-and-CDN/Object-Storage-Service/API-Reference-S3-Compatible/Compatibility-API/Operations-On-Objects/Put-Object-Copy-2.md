@@ -33,7 +33,6 @@ x-amz-storage-class|如果没有指定该header，存储类型默认为Standard�
 
 名称|描述
 ---|---
-x-amz-expiration|如果Bucket配置了生命周期管理(PUT Bucket lifecycle)，oss将会返回该Header。<br>Type: String
 x-amz-storage-class|object存储类型信息。<br>Type: String<br>Default: None
 
 ### 响应元素

@@ -2,7 +2,7 @@
 
 在应用详情页，有两个分页，分别展示了应用中的部署组、里程牌。
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/operation13.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-4%EF%BC%88Ch%EF%BC%89.png)
 
 在里程牌分页中，列出了此应用下，历次部署成功的部署来源。
 
@@ -12,7 +12,7 @@
 
 指定里程牌，可支持以下操作：
 
-- 部署：指定里程牌，进行发起部署。详见“操作指南-新建部署”
+- 发起部署：指定里程牌，进行发起部署。详见“操作指南-发起部署”
 - 删除：删除此里程牌
 
 在部署组分页中，详见“操作指南-应用部署组列表”。
