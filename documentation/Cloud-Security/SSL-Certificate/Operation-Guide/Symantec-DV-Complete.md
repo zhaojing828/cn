@@ -65,3 +65,6 @@
 - 内容已经过期。
 
 4、验证完成后，请查看[证书下载](Download-SSL-Certification.md)页面,下载证书。由于网络以及证书厂商等原因，证书可能无法下载，请稍后重试即可。
+
+# 相关参考
+[云解析](https://dns-console.jdcloud.com/list)
