@@ -33,7 +33,9 @@ s3:ObjectRemoved:Delete |删除文件
 * 函数服务（Function）:函数服务是一项事件驱动的Serverless计算服务。通过函数服务平台，用户无需配置和管理服务器等基础设施，即可弹性、可靠地运行业务代码，快速构建应用与服务，且只需为代码实际消耗的资源付费。**目前Function仅支持华北地域配置**
 
 # 控制台设置设置事件通知
+键入对象名称 Prefix 和/或 Suffix 以按前缀和/或后缀筛选事件通知。例如，您可以设置一个筛选器，以便仅在将文件添加到某个图像文件夹 (例如，带有名称前缀 images/ 的对象) 时收到通知。有关更多信息，https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-filtering
 
+选择 保存。会向事件通知目标发送一条测试消息。
 
 
 
