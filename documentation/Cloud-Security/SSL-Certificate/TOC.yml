@@ -51,9 +51,9 @@ items:
       herf: Operation-Guide/Download-SSL-Certification.md 
     - name: 删除SSL证书
       herf: Operation-Guide/Delete-SSL-Certification.md
-    - name: Symantec免费DV证书补全信息
+    - name: 提交资料-Symantec免费DV证书
       herf: Operation-Guide/Symantec-DV-Complete.md  
-    - name: GeoTrust付费OV/EV证书补全信息
+    - name: 提交资料-GeoTrust付费OV/EV证书
       herf: Operation-Guide/GeoTrust-OEV-Complete.md
 - name: 常见问题
   herf: FAQ/FAQ.md   
