@@ -33,8 +33,7 @@ items:
       href: 
       status: 0
     - name: 购买流程
-      href: 
-      status: 0
+      href: Operation-Guide/Apply-SSL-Certification.md
     - name: 续费流程
       href: 
       status: 0
@@ -47,6 +46,14 @@ items:
     - name: 上传SSL证书
       herf: Operation-Guide/Upload-SSL-Certification.md
     - name: 管理SSL证书
-      herf: Operation-Guide/manage-SSL-Certification.md
+      herf: Operation-Guide/Manage-SSL-Certification.md
+    - name: 下载SSL证书
+      herf: Operation-Guide/Download-SSL-Certification.md 
+    - name: 删除SSL证书
+      herf: Operation-Guide/Delete-SSL-Certification.md
+    - name: Symantec免费DV证书补全信息
+      herf: Operation-Guide/Symantec-DV-Complete.md  
+    - name: GeoTrust付费OV/EV证书补全信息
+      herf: Operation-Guide/GeoTrust-OEV-Complete.md
 - name: 常见问题
   herf: FAQ/FAQ.md   
