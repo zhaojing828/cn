@@ -23,4 +23,8 @@
 
 ![支付完成](/image/SSL-Certification/支付完成.png)
 
+6、支付完成后，需要进入[申购管理](https://certificate-console.jdcloud.com/jsecssl/orderlist)页面补全证书信息。
+
+# 相关参考
+- [申购管理](https://certificate-console.jdcloud.com/jsecssl/orderlist)
 
