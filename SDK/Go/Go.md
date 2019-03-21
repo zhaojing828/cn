@@ -50,7 +50,7 @@ func main() {
 	fmt.Println(len(resp.Result.Instances))
 }
 ```
-如果需要设置额外的header，例如要调用开启了[MFA操作保护]("https://docs.jdcloud.com/cn/IAM/Operation-Protection")的接口，需要传递x-jdcloud-security-token，则按照如下方式：
+如果需要设置额外的header，例如要调用开启了MFA操作保护的接口，需要传递x-jdcloud-security-token，则按照如下方式：
 
 ```go
 const securityTokenHeader = "x-jdcloud-security-token"
