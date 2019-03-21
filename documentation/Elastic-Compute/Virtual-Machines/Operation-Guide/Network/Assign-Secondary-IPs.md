@@ -115,6 +115,6 @@ Windows系统以Windows Server 2012 R2 标准版 64位 中文版为例，详细�
 
 [弹性网卡侧分配辅助IP](../../../../Networking/Elastic-Network-Interface/Operation-Guide/Private-IP-Management/Assign-Secondary-IP.md)
 
-[登录Linux实例](../../Getting-Start-Linux/Connect-To-Linux-Instance.md)
+[登录Linux实例](../../Getting-Start-Linux/Connect-to-Linux-Instance.md)
 
-[登录Windows实例](../../Getting-Start-Windows/Connect-To-Windows-Instance.md)
+[登录Windows实例](../../Getting-Start-Windows/Connect-to-Windows-Instance.md)
