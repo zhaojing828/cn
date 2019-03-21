@@ -2,13 +2,24 @@
 
 目前，我们已经提供如下语言的入门示例：
 
--   Java：[示例项目下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/JDSF-Demo.zip)
 
--   Dotnet：[示例项目下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/jdsf-dotnet-core-demo.zip)
+-   Python ：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-python)
 
--   Go ：[示例项目下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/jdsf-go-demo.zip)
 
--   Python ：[示例项目下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/jdsf-python-flask-demo.zip)
+-   Dotnet：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-dotnet)
+
+
+-   Spring Cloud：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud)
+
+
+-   Spring Cloud + k8s：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud-kubernetes)
+
+
+-   Dubbo：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-dubbo)
+
+
+-   Go ：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-go)
+
 
 
 下面以Java为例说明调用方式。
