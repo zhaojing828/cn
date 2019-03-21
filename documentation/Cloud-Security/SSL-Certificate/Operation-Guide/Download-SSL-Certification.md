@@ -4,7 +4,7 @@
 
 ![证书列表](/image/SSL-Certification/证书列表.png)
 
-2、选择需要下载的证书，点击右侧 **下载**，弹出如下短信验证确认页
+2、选择需要下载的证书，点击右侧 **下载**，下载证书。如果开启了[操作保护](https://uc.jdcloud.com/account/safety-settings)功能，则会弹出如下短信或者邮箱验证确认页面，以短信验证为例
 
 ![短信确认](/image/SSL-Certification/短信确认.png)
 
@@ -12,3 +12,6 @@
 
 4、下载成功后，解压文件，会得到证书文件以及私钥文件。
 **注意**：请务必妥善保管证书的私钥文件，防止泄露。
+
+# 相关参考
+- [操作保护](https://uc.jdcloud.com/account/safety-settings)

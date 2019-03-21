@@ -8,10 +8,13 @@
 
 ![证书删除](/image/SSL-Certification/证书删除.png)
 
-3、确认信息无误后，点击 **确认** 按钮，弹出如下短信验证确认页面
+3、确认信息无误后，点击 **确认** 按钮，删除证书。如果开启了[操作保护](https://uc.jdcloud.com/account/safety-settings)功能，则会弹出如下短信或者邮箱验证确认页面，以短信验证为例
 
 ![短信确认](/image/SSL-Certification/短信确认.png)
 
 4、点击信息发送按钮，等待接收手机验证码，填写验证码点击 **验证** 按钮，完成证书的删除。只有输入正确的验证码才能完成证书的删除操作。
 
 5、删除成功后，刷新页面，被删除的证书将不会显示在证书列表中。
+
+# 相关参考
+- [操作保护](https://uc.jdcloud.com/account/safety-settings)
