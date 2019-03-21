@@ -2,4 +2,4 @@
 
 1、进入控制台，从左侧导航栏依次选择**云安全**->**SSL数字证书**-> **申购管理**进入SSL数字证书申购管理页面，如下图所示
 
-![申购管理](/image/SSL-Certificate/申购管理.png)
+![申购管理](/image/SSL-Certification/申购管理.png)

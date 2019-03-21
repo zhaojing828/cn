@@ -2,15 +2,15 @@
 
 1、进入控制台，从左侧导航栏依次选择**云安全**->**SSL数字证书** -> **证书管理**，进入SSL数字证书管理页面如图所示
 
-![证书列表](/image/SSL-Certificate/证书列表.png)
+![证书列表](/image/SSL-Certification/证书列表.png)
 
 2、选择需要删除的证书，点击右侧 **删除**，弹出如下界面
 
-![证书删除](/image/SSL-Certificate/证书删除.png)
+![证书删除](/image/SSL-Certification/证书删除.png)
 
 3、确认信息无误后，点击 **确认** 按钮，弹出如下短信验证确认页
 
-![短信确认](/image/SSL-Certificate/短信确认.png)
+![短信确认](/image/SSL-Certification/短信确认.png)
 
 4、点击信息发送按钮，等待接受手机验证码，填写验证码点击 **验证** 按钮，完成证书的删除。只有输入正确的验证码才能完成证书的删除操作。
 
