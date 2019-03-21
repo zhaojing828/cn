@@ -1,4 +1,4 @@
-# 配置事件通知
+# 设置事件通知
 
 OSS支持事件通知功能，您可以指定某些资源发生相关操作时及时进行回调通知。事件通知是异步进行的，不影响OSS操作。事件通知常见以下应用场景，例如：
 
@@ -9,7 +9,7 @@ OSS上的相关内容发生了更新。
 OSS上的重要文件被删除。
 
 您可以为存储空间启用事件通知功能，以便每次发生这些事件时都向目标发送通知消息。本部分介绍如何使用 OSS 控制台启用事件通知。
-有关将事件通知 REST API 的信息，请参阅 [事件的通知-API](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
+有关将事件通知 REST API 的信息，请参阅[事件的通知-API](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
 
 # 事件通知支持的类型和目标
 
@@ -30,7 +30,10 @@ s3:ObjectRemoved:Delete |删除文件
 ## 事件通知消息可以发送到的目标：
 
 * HTTP(S):按照您配置的回调URL，当Bucket中事件通知触发时，OSS会向回调URL发送指定格式的通知内容，通知方式支持HTTP(S)。
-* 函数计算（Function）:Function 是一项可用来将代码上传到其上的计算服务，该服务可使用基础设施代表您运行代码。您在创建 Function 函数时将自定义代码进行打包并上传到 Function。
+* 函数服务（Function）:函数服务是一项事件驱动的Serverless计算服务。通过函数服务平台，用户无需配置和管理服务器等基础设施，即可弹性、可靠地运行业务代码，快速构建应用与服务，且只需为代码实际消耗的资源付费。**目前Function仅支持华北地域配置**
+
+# 控制台设置设置事件通知
+
 
 
 
