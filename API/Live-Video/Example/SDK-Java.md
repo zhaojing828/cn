@@ -83,4 +83,4 @@
 ```
 
 ## 其他调用方式
-&emsp;&emsp;GitHub [访问地址](https://github.com/jdcloud-api)
+- GitHub [访问地址](https://github.com/jdcloud-api)

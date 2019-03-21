@@ -12,16 +12,16 @@ https://live.jdcloud-api.com/v1/livePlayAuthKey
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**playDomain**|String|True| |您的播放加速域名|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**playDomain**|String|True|您的播放加速域名|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|

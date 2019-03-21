@@ -10,8 +10,8 @@ GET
 ## 请求地址
 https://live.jdcloud-api.com/v1/streams/{publishDomain}/publishList
 
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
 |**publishDomain**|String|True|推流域名|
 
 ## 请求参数
@@ -31,16 +31,16 @@ https://live.jdcloud-api.com/v1/streams/{publishDomain}/publishList
         "pageNum": 1,
         "pageSize": 10,
         "appName": "live",
-        "streamName":"test-stream.jdcloud.com",
-        "startTime":"2019-02-21 08:00:00:00",
-        "endTime":"	2019-02-22 08:00:00:00",
+        "streamName":"test-stream",
+        "startTime":"2019-02-21T08:00:00Z",
+        "endTime":"	2019-02-22T08:00:00Z",
     }
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|
-|**requestId**|String|ruquestId|
+|**result**|Result| |
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|

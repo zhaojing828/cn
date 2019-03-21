@@ -22,7 +22,7 @@ https://live.jdcloud-api.com/v1/snapshotNotifys/{publishDomain}:config
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|

@@ -29,8 +29,8 @@ https://live.jdcloud-api.com/v1/domains
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result|
-|**requestId**|String|ruquestId|
+|**result**|Result| |
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|

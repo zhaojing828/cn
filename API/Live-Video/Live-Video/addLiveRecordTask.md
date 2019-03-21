@@ -28,14 +28,14 @@ https://live.jdcloud-api.com/v1/records/{publishDomain}/appNames/{appName}/strea
     
     
 ### RecordTime
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
 |**startTime**|String|True|开始时间|
 |**endTime**|String|True|结束时间|
 
 ## 示例
     {
-        "recordTimes": ["2015-12-07 17:50:21","2015-12-07 18:54:21"],
+        "recordTimes": ["2015-12-07T17:50:21Z","2015-12-07T18:54:21Z"],
         "saveBucket": "vod-storage-398392",
         "saveEndpoint": "s3.cn-north-1.jcloudcs.com",
         "recordFileType": "mp4",
@@ -45,7 +45,7 @@ https://live.jdcloud-api.com/v1/records/{publishDomain}/appNames/{appName}/strea
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 
 ## 返回码

@@ -12,20 +12,20 @@ https://live.jdcloud-api.com/v1/livePornData
 
 
 ## 请求参数
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**publishDomain**|String|True| |您的推流加速域名|
-|**appName**|String|False| |直播流所属应用名称|
-|**streamName**|String|False| |直播流名称|
-|**startTime**|String|True| |起始时间:<br>  - UTC 时间格式 e.g: 2019-03-12T00:00:00Z<br>|
-|**endTime**|String|False| |结束时间:<br>  - UTC 时间格式 e.g: 2019-03-12T00:00:00Z<br>|
+|名称|类型|是否必需|描述|
+|---|---|---|---|
+|**publishDomain**|String|True|您的推流加速域名|
+|**appName**|String|False|直播流所属应用名称|
+|**streamName**|String|False|直播流名称|
+|**startTime**|String|True|起始时间:<br>  - UTC 时间格式 e.g: 2019-03-12T00:00:00Z<br>|
+|**endTime**|String|False|结束时间:<br>  - UTC 时间格式 e.g: 2019-03-12T00:00:00Z<br>|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String|ruquestId|
+|**requestId**|String|requestId|
 
 ### Result
 |名称|类型|描述|

@@ -25,7 +25,7 @@
 ![1防护包详情-防护规则](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Anti-DDoS-Protection-Package/防护包详情-防护规则.png)
 
 3、弹出的防护规则中，选择 **自定义防护阈值** ，则可对该IP，进行精细化的防护规则设置。此处的设置，只对单IP生效，对默认策略无影响。</br>
-![防护包-自定义规则页](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Anti-DDoS-Protection-Package/防护包-自定义规则页.jpg)
+![防护包-自定义规则页](https://github.com/jdcloudcom/cn/blob/Anti-DDoS/image/Anti-DDoS-Protection-Package/防护包-自定义规则页.png)
 
 
 
