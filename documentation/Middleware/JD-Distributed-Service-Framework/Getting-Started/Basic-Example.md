@@ -12,7 +12,7 @@
 -   Spring Cloud：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud)
 
 
--   Spring Cloud + k8s：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud-kubernetes)
+-   Spring Cloud + K8S：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud-kubernetes)
 
 
 -   Dubbo：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-dubbo)
