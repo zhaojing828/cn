@@ -141,22 +141,20 @@ JDCLOUD2-HMAC-SHA256 Credential={Access Key}/{Date}/{Region}/{Service}/jdcloud2_
     POST
     /v1/resource%3Aaction
     o=%25&p0=p0&p1=p1&u=u
-    host:test.jdcloud-api.com
-    x-jdcloud-algorithm:JDCLOUD2-HMAC-SHA256
     x-jdcloud-date:20190214T104514Z
     x-jdcloud-nonce:testnonce
     x-my-header:test
     x-my-header_blank:blank
     
-    host;x-jdcloud-algorithm;x-jdcloud-date;x-jdcloud-nonce;x-my-header;x-my-header_blank
+    x-jdcloud-date;x-jdcloud-nonce;x-my-header;x-my-header_blank
     e51832a118eeff7ad976d635b7d04538e362e4c21bd0f6253580b0a83a209074
     
 步骤2的结果应该为：
 
     JDCLOUD2-HMAC-SHA256
-    20190320T113343Z
+    20190214T104514Z
     20190214/cn-north-1/test/jdcloud2_request
-    1d76a1b7e61133ada0837621b6ff145cb739c1453a7b9169833beebe63a84c2a
+    fb2e317056269590681d091f8eb22272967c0b922b2deda887312215ea4eed4c
     
 步骤3的结果应该为：
 
@@ -166,7 +164,7 @@ JDCLOUD2-HMAC-SHA256 Credential={Access Key}/{Date}/{Region}/{Service}/jdcloud2_
 	kService = 44050ec21c8e839f36ff5b2d44ec4a5876f4ffd6ef9a7a692a3eba40396bdb68
 	kSigning = a4e50bcb6001be0008696b173c30172b5ce22a77db00d21c6a9d69de2ba33b7d
 
-    signResult = 592379c026a3bc94d07f42934dd3726f21afac3bf36d188cae60c8e17a516a8f
+    signResult = 2a98f83c074e7bee260bfc8ef64f009c07595bd93f7f0c3f4e156bf6479ed9bf
 步骤4的结果应该为：
 
-    JDCLOUD2-HMAC-SHA256 Credential=TESTAK/20190214/cn-north-1/test/jdcloud2_request, SignedHeaders=host;x-jdcloud-algorithm;x-jdcloud-date;x-jdcloud-nonce;x-my-header;x-my-header_blank, Signature=592379c026a3bc94d07f42934dd3726f21afac3bf36d188cae60c8e17a516a8f
+    JDCLOUD2-HMAC-SHA256 Credential=TESTAK/20190214/cn-north-1/test/jdcloud2_request, SignedHeaders=x-jdcloud-date;x-jdcloud-nonce;x-my-header;x-my-header_blank,Signature=2a98f83c074e7bee260bfc8ef64f009c07595bd93f7f0c3f4e156bf6479ed9bf
