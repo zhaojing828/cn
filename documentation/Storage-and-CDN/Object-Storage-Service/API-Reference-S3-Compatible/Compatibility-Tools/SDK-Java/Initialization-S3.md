@@ -18,7 +18,7 @@
 
 ## 新建S3Client
 下面为创建client的例子，更多Java SDK示例请访问[京东云兼容S3 Java SDK示例](https://github.com/jdcloud-cmw/oss/tree/master/s3-java-sdk)
-```
+```java
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.client.builder.AwsClientBuilder;
@@ -32,10 +32,9 @@ import com.amazonaws.SDKGlobalConfiguration;
  
 public class S3SdkTest{
     public static void main(String[] args)  {
-        final String accessKey = "your accesskey";
-        final String secretKey = "your secretkey";
+        final String accessKey = "<your accesskey>";
+        final String secretKey = "<your secretkey>";
         final String endpoint = "https://s3.cn-north-1.jcloudcs.com";
-        System.setProperty(SDKGlobalConfiguration.ENABLE_S3_SIGV4_SYSTEM_PROPERTY, "true");
         ClientConfiguration config = new ClientConfiguration();
  
         AwsClientBuilder.EndpointConfiguration endpointConfig =
@@ -54,5 +53,3 @@ public class S3SdkTest{
     }
 }
 ```
-
-
