@@ -12,19 +12,19 @@
 ## 安装方式
 
 ### 在Maven项目中加入依赖项（推荐方式）
-在Maven工程中使用S3 Java SDK，只需在pom.xml中加入相应依赖项即可。以`1.11.136`版本为例，在`<dependencies>`内加入如下内容：
+在Maven工程中使用S3 Java SDK，只需在pom.xml中加入相应依赖项即可。以`1.11.490`版本为例，在`<dependencies>`内加入如下内容：
 
 ```
 <dependency>  
     <groupId>com.amazonaws</groupId>  
     <artifactId>aws-java-sdk</artifactId>  
-    <version>1.11.136</version>  
+    <version>1.11.490</version>  
 </dependency>
 ```
 
 ### 在Eclipse项目中导入JAR包
 
-以`1.11.136`版本为例，步骤如下：
+步骤如下：
 
 下载[AWS Java SDK](https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip)开发包。
 
