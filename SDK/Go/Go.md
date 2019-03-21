@@ -24,7 +24,7 @@
 4.	执行请求得到响应
 
 ### 大致代码如下：
-``` go
+```Go
 package main
 
 import (
