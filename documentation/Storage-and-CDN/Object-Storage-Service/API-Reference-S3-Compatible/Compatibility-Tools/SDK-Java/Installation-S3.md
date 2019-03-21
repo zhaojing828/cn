@@ -24,7 +24,7 @@
 
 ### 在Eclipse项目中导入JAR包
 
-以`1.11.136`版本为例，步骤如下：
+步骤如下：
 
 下载[AWS Java SDK](https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip)开发包。
 
