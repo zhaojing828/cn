@@ -5,7 +5,7 @@
 
 ## 常用操作
 * [创建实例](Create-Instance.md)
-* [连接实例](Connect-to-Instance.md)
+* [连接实例](Connect-To-Instance.md)
 * [重置密码](Reset-Password.md)
 * [启动实例](Start-Instance.md)
 * [查看实例](Query-Instance-Info.md)
