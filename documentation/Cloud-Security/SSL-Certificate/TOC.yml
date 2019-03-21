@@ -37,10 +37,6 @@ items:
     - name: 续费流程
       href: 
       status: 0
-- name: 入门指南
-  items:
-    - name: 快速入门指导
-      href: Getting-Started/Getting-Started.md
 - name: 操作指南
   items:
     - name: 上传SSL证书
