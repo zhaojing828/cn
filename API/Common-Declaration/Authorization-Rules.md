@@ -135,6 +135,8 @@ JDCLOUD2-HMAC-SHA256 Credential={Access Key}/{Date}/{Region}/{Service}/jdcloud2_
          'x-jdcloud-nonce' => 'testnonce',
          'x-my-header' => 'test',
          'x-my-header_blank' => ' blank'
+    请求地址和路径：'http://test.jdcloud-api.com/v1/resource:action?p1=p1&p0=p0&o=%&u=u'
+    请求体为： 'body data'
    
 步骤1的结果应该为：
 
