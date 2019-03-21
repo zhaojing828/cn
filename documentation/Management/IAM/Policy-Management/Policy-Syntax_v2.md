@@ -81,7 +81,7 @@ Policy 的语法应符合 JSON 格式。如果您创建的授权策略不符合 
 ]
 ```
 
-`types`为指定产品线的service name：
+`type`为指定产品线的service name：
 ```
 "type":"service name"
 ```
