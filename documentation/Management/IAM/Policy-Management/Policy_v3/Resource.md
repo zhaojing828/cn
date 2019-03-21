@@ -10,7 +10,7 @@
 
 - jrn是 JDCloud Resource Name 的简称，表示这是京东云的云资源。该字段是必填项。
 - service_name 描述产品简称，该字段是必填项，可用 * 表示全部产品线。service name具体事例，详见支持IAM的云服务。
-- region 描述地域信息。该字段是必填项，可用*表示全部region，现有的地域命名方式定义如下：
+- region 描述地域信息。若云产品不区分地域，该字段直接留空；若云产品区分地域，该字段是必填项，可用*表示全部region，现有的地域命名方式定义如下：
 
 |  **Region**  | **JRN中Region标识** |
 | :----------: | :-----------------: |
@@ -22,7 +22,7 @@
 
 - AccountID描述资源拥有者的主账号信息，每个主账号有一个12位数字组成的号码，从用户中心 > 基本资料中可以查看AccountID。
 
-- ```<resourceType>/<resourceId>/<subresouceType>/<subresouceId>```， Resource Type为产品线Open API中的一级资源，Resource ID为产品线Open API中的一级资源ID，Subresource Type为产品线Open API中的二级资源，Subresouce ID为产品线Open API中二级资源ID，如果后续产品线需要支持三级，四级资源时，则用 / 来进行分隔即可。可用 * 来表示全部资源。
+- ` <resourceType>/<resourceId>/<subresouceType>/<subresouceId>` ， Resource Type为产品线Open API中的一级资源，Resource ID为产品线Open API中的一级资源ID，Subresource Type为产品线Open API中的二级资源，Subresouce ID为产品线Open API中二级资源ID，如果后续产品线需要支持三级，四级资源时，则用 / 来进行分隔即可。可用 * 来表示全部资源。
 
   JRN示例：
 

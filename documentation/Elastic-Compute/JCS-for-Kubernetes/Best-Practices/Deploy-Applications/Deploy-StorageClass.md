@@ -18,9 +18,11 @@ reclaimPolicy: Retain
 ```
 **参数说明：**  
 1、provisioner：设置参数值为kubernetes.io/jdcloud-ebs，且不可修改，标识使用京东云云硬盘Provisioner插件创建。例如:  
-2、type：设置参数值为ssd或premium-hdd，分别对应京东云的SSD云盘和高效云盘；  
-3、fstype：设置文件系统类型，可选参数值为fstype和ext4，如未指定fstype，将使用ext4作为默认的文件系统类型；例如：fstype=ext4；  
-4、zone：设置云硬盘所在的可用区；    
+2、parameters  
+- type：type在parameter里，可用区的参数名称是zones，文件系统fstype的选项是xfs和ext4；设置参数值为ssd或premium-hdd，分别对应京东云的SSD云盘和高效云盘；  
+- fstype：设置文件系统类型，可选参数值为xfs和ext4，如未指定fstype，将使用ext4作为默认的文件系统类型；例如：fstype=ext4；  
+
+3、zones：设置云硬盘所在的可用区；    
 在支持单可用区的地域，您可以不设置该参数；  
 在支持多可用区的地域，您可以选择某一可用区或选择全部可用区（参数值之间使用","分隔），例如：zones=cn-north-1a, cn-north-1b，选择全部可用区时，新建的云硬盘将根据名称hash算法，被随机分配到某一可用区；  
 地域与可用区的对应关系参考下表：  
