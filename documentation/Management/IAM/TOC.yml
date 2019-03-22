@@ -28,7 +28,7 @@ items:
       - name: 策略管理
         items:
           - name: 策略管理
-            href: Policy-Managemenent/Policy-Management.md
+            href: Policy-Management/Policy-Management.md 
           - name: 策略语法（v2）
             href: Policy-Management/Policy-Syntax_v2.md
           - name: 策略（v3）
