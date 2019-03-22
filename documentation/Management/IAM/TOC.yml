@@ -56,4 +56,4 @@ items:
   - name: 常见问题
     items:
       - name: MFA 登录验证常见问题
-        href: Virtual-MFA-Device/MFA-FAQs.mdLenovo201903!
+        href: Virtual-MFA-Device/MFA-FAQs.md
