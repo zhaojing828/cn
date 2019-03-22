@@ -4,4 +4,5 @@
 
 
 目前操作保护支持主账号和子账号级别的操作保护设置，一旦开启同时保护控制台操作和SDK访问, 各验证方式支持细节如下：
-![Token详细信息](../../../../image/IAM/Virtual MFA device/Token详细信息.png)
+
+![Token详细信息](../../../image/IAM/Virtual-MFA-Device/Token详细信息.png)
