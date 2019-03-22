@@ -10,7 +10,7 @@ WAF提供灵活的HTTPS配置功能，帮助您在不改造源站的情况下，
 
 3. 选择要操作的域名，单击其操作列下的**编辑**。
 
-4. 在**协议类型**下勾选**HTTPS**。![img](https://github.com/jdcloudcom/cn/blob/edit/image/waf-img/https%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.png)
+4. 在**协议类型**下勾选**HTTPS**。![image.png](../../../../../image/waf-img/https%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE.png)
 
 5. **开启HTTPS的强制跳转**
 

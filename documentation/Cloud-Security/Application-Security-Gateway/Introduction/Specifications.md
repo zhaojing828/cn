@@ -49,6 +49,5 @@
 
 
 - [价格总览](../Pricing/Price-Overview.md)
-- [计费规则](../Pricing/Billing-Rules.md)
-- [创建实例](../Getting-Started/Create-Instance.md)
+- [创建实例](../Getting-Started/Create-free-trial-instance.md)
 

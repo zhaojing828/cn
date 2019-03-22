@@ -74,6 +74,6 @@
 
 ## 相关参考
 
-[登录实例](../../Getting-Start-Linux/Connect-To-Instance.md)
+[登录实例](../../Getting-Start-Linux/Connect-to-Linux-Instance.md)
 
 

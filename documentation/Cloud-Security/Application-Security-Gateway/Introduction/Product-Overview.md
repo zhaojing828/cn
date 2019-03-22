@@ -15,10 +15,10 @@
 #### 常用操作
 
 - 快速上手
-  - [创建VPC-WAF实例](../Operation-Guide/Instance-Management/Create-Application-Security-Gateway.md)
+  - [创建实例](../Operation-Guide/Instance-Management/Create-Application-Security-Gateway.md)
 - 套餐介绍
   - [套餐介绍](../Introduction/Specifications.md)
 
 ## 计费
 
-应用安全网关按照包年包月计费进行计费。详细说明请参见“[计费规则](../Pricing/Billing-Rules.md)”。
+应用安全网关按照包年包月计费进行计费。详细说明请参见“[计费规则](../Pricing/Price-Overview.md)”。
