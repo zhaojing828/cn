@@ -10,5 +10,5 @@ items:
   - name: 操作指南
     items:
       - name: 操作保护设置
-        href: Operation-Protection.md.md
+        href: Operation-Protection.md
   - name: 常见问题
