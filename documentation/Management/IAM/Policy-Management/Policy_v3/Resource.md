@@ -4,7 +4,9 @@
 
 所有资源均可采用下述的五段式描述方式：
 
-``` jrn:<service_name>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId> ```
+``` JSON
+jrn:<service_name>:<region>:<accountId>:<resourceType>/<resourceId><subresouceType>/<subresouceId>
+```
 
 ## 格式说明
 
