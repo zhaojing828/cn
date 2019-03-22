@@ -46,14 +46,14 @@ items:
       - name: 虚拟 MFA 设备
         items:
           - name: 概述
-            href: Virtual-MFA-Management/MFA-Overview.md
+            href: Virtual-MFA-Device/MFA-Overview.md    
           - name: MFA 设置
-            href: Virtual-MFA-Management/MFA-Settings.md
+            href: Virtual-MFA-Device/MFA-Settings.md
           - name: 登录验证
-            href: Virtual-MFA-Management/Sign-up-Verification.md
+            href: Virtual-MFA-Device/Sign-up-Verification.md
           - name: 第三方应用程序安装及使用指导
-            href: Virtual-MFA-Management/Third-Party-Apps.md
+            href: Virtual-MFA-Device/Third-Party-Apps.md
   - name: 常见问题
     items:
       - name: MFA 登录验证常见问题
-        href: Virtual-MFA-Management/MFA-FAQs.mdLenovo201903!
+        href: Virtual-MFA-Device/MFA-FAQs.mdLenovo201903!
