@@ -13,13 +13,17 @@
 # 身份验证页面：
 
 MFA验证页面：
+
 ![MFA验证页面](../../../image/IAM/Virtual-MFA-Device/MFA动态验证码.png)
 
 MFA扫码验证页面：
+
 ![MFA扫码验证页面](../../../image/IAM/Virtual-MFA-Device/MFA扫码验证.png)
 
 短信验证页面：
+
 ![短信验证页面](../../../image/IAM/Virtual-MFA-Device/短信验证.png)
 
 邮箱验证页面：
+
 ![邮箱验证页面](../../../image/IAM/Virtual-MFA-Device/邮箱验证.png)
