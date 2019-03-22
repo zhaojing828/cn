@@ -43,4 +43,17 @@ items:
                 href: Policy-Management/Policy_v3/Resource.md
       - name: 设置
         href: Setting.md        
+      - name: 虚拟 MFA 设备
+        items:
+          - name: 概述
+            href: Virtual-MFA-Management/MFA-Overview.md
+          - name: MFA 设置
+            href: Virtual-MFA-Management/MFA-Settings.md
+          - name: 登录验证
+            href: Virtual-MFA-Management/Sign-up-Verification.md
+          - name: 第三方应用程序安装及使用指导
+            href: Virtual-MFA-Management/Third-Party-Apps.md
   - name: 常见问题
+    items:
+      - name: MFA 登录验证常见问题
+        href: Virtual-MFA-Management/MFA-FAQs.mdLenovo201903!
