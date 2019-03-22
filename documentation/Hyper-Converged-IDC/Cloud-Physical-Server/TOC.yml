@@ -47,7 +47,7 @@
     items:
       - name: 使用须知
         href: Operation-Guide/Terms-and-Conditions.md
-      - name: 网络和安全性
+      - name: 防火墙配置说明
         items:
           - name: 功能描述
             href: Operation-Guide/Network-And-Security/Description-Network-And-Security.md
