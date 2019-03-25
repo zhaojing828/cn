@@ -100,3 +100,7 @@ items:
     href: Cloud-Desktop-Service-ProtocolSLA.md
   - name: 视频点播服务协议 
     href: Video-on-demand-service-protocol.md
+  - name: 队列服务服务条款
+    href: Queue-Service-Terms-Of-Service.md   
+  - name: 队列服务等级协议（SLA）
+    href: Queue-Service-Terms-Of-Service-SLA.md
