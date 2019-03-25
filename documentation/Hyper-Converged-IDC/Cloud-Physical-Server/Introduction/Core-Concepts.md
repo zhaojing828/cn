@@ -32,15 +32,10 @@
 		<td ><B>开放状态</B></td>		
     </tr>
     <tr>   
-        <td rowspan="5"><B>中国大陆境内</B></td>
-		<td rowspan="2">华北-北京</td>
-		<td >可用区A、可用区C</td>
-		<td >筹备中</td>
-    </tr>
-    <tr>  
-	<td >可用区B</td>
-	<td >已开放</td>
-    </tr>
+        <td rowspan="4"><B>中国大陆境内</B></td>
+		<td >华北-北京</td>
+		<td >可用区A、可用区B、可用区C</td>
+		<td >已开放</td>
     <tr>   
         <td >华东-上海</td>
 		<td >可用区A、可用区B</td>
