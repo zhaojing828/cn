@@ -28,9 +28,9 @@
           - name: 添加域名
             href: Operation-Guide/Domain-Name-Operation/Domainadd.md
           - name: 删除域名
-            href: Operation-Guide/Instance-Management/Domaindelete.md
+            href: Operation-Guide/Domain-Name-Operation/Domaindelete.md
           - name: 修改域名
-            href: Operation-Guide/Instance-Management/Domainmodify.md      
+            href: Operation-Guide/Domain-Name-Operation/Domainmodify.md      
       - name: 解析记录操作
         items:
           - name: 添加解析记录
@@ -68,7 +68,7 @@
     - name: TTL介绍
       href: FAQ/TTL.md
     - name: DNS FLag day说明
-      href: Solutions-to-DNS-FLag-day.md
+      href: FAQ/Solutions-to-DNS-FLag-day.md
   - name: 相关资源
     items:
     - name: 文档历史记录
