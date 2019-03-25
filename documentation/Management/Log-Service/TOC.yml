@@ -22,7 +22,7 @@ items:
         - name: 函数服务日志
           href: Introduction/ResourceLog/FunctionLog.md
         - name: 云搜索Elasticsearch日志
-          href: Introduction/ResourceLog/eslog.md
+          href: Introduction/ResourceLog/esLog.md
         - name: API网关日志
           href: Introduction/ResourceLog/apiLog.md
         - name: 应用负载均衡访问日志
