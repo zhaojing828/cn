@@ -11,7 +11,7 @@ client_ip | 客户端ip | string | eg：192.168.10.1
 client_port | 客户端端口 | double | 1-65535，eg：50398
 lb_vip | 负载均衡虚ip（vip） | string | eg：192.168.10.2
 lb_vport | 负载均衡监听端口（vport） | double | 1-65535，eg：8080
-backend_server_ip_port | 后端服务器的ip和端口 | string	eg：192.168.10.1:8080
+backend_server_ip_port | 后端服务器的ip和端口 | string | eg：192.168.10.1:8080
 request_time/session_time | 请求/连接时间 | double | >0，eg：0.006
 backend_connect_time | 连接建立时间 | double | >0，eg：0.001
 backend_response_time/backend_session_time | 响应时间 | double | >0，eg：0.006
@@ -20,7 +20,7 @@ backend_server_status/- | 后端服务器返回状态码 | double | 类似于htt
 request_length/bytes_received | 请求数据长度/收到的数据 | double | >0，eg：80
 bytes_sent | 已发送的数据 | double | >0，eg：197
 scheme/protocol | scheme/protocol | string | uri scheme 或者 stream 协议；eg: http， https， tcp, udp
-request_method/- | http method	string	GET, POST, DELETE, PUT , OPTION....
+request_method/- | http method | string | GET, POST, DELETE, PUT , OPTION....
 host/- | http host | string | 请求行中的host或请求头中的host或者一条与请求匹配的servername，eg: 192.168.2.3
 request_uri/- | 完整的原始请求的URI | string | eg : / ; /pan/beta/test1?fid=3
 server_protocol/- | 请求使用的协议 | string | 通常是HTTP/1.0或HTTP/1.1
