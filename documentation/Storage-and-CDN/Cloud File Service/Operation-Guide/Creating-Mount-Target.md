@@ -13,7 +13,7 @@
 
 在“创建文件存储”时，需要您选择“虚拟私有云”和“创建挂载目标”中的“子网”，完成这两项内容的选择后，即为该文件存储在创建文件存储的同时创建了一个在所选“虚拟私有云”和“子网”内的挂载目标。
 
-![create-by-fs](../../../../image/Cloud-File-Service/File-Sharing.png)
+![create-by-fs](../../../../image/Cloud-File-Service/creatbyfs.png)
 
 
 
