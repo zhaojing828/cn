@@ -7,8 +7,6 @@
 
 2、点击 **申购证书** ，弹出以下证书申购界面（以申购Symantec单域名免费证书为例），选择证书品牌、证书类型、保护类型、域名数量、证书年限等选项。
 
-目前仅支持购买Symantec单域名免费证书，更多证书类型正在陆续增加中，敬请期待。
-
 ![申购证书](/image/SSL-Certification/申购证书.png)
 
 3、确认申购证书的配置信息，确认无误之后，点击 **立即购买**，弹出以下订单确认界面
@@ -26,5 +24,5 @@
 6、支付完成后，需要进入[申购管理](https://certificate-console.jdcloud.com/jsecssl/orderlist)页面补全证书信息。
 
 # 相关参考
-- [申购管理](https://certificate-console.jdcloud.com/jsecssl/orderlist)
-
+- [Symantec证书申购管理](Symantec-DV-Complete.md)
+- [GeoTrust证书申购管理](GeoTrust-OEV-Complete.md)
