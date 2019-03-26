@@ -67,6 +67,8 @@
         href: Operation-Guide/Install-Agent.md
       - name: 约定
         href: Operation-Guide/Convention.md
+      - name: Jenkins插件  
+        href: Operation-Guide/Jenkins.md
   - name: 最佳实践
     items: 
       - name: 蓝绿部署
