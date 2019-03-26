@@ -4,7 +4,7 @@
 
 云文件存储目前支持NFSv4.1和NFSv4.0协议，适用于linux云主机，兼容的京东云官方镜像版本包括：
 
-- CentOS 6.9 64位及以上版本
+- CentOS 6.9 64位及以上版本，其中：仅CentOS 7.3及以上版本支持NFSv4.1协议，CentOS 6.9 至CentOS 7.2版本支持NFSv4.0协议。
 - Ubuntu 14.04 64位 和 Ubuntu 16.04 64位
 
 
