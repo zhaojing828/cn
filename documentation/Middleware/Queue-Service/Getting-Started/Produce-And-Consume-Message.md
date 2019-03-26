@@ -91,7 +91,7 @@ SDK推荐您使用AWS SQS SDK, 京东云队列服务支持了SQS SDK的接口。
 
 2.初始化，将AK&SK、接入点地址和Region信息填入。
 
-   ```
+   ```Java
    
   final String accessKey = "your accesskey";
   final String secretKey = "your secretkey";
