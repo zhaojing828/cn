@@ -108,9 +108,9 @@ folder1/file3.txt
 
 **2）hooks（非必须）**
 
-location：
+command：
 
-- 脚本的位置，为绝对路径
+- 命令或脚本的位置，为绝对路径
 - 必须
 
 timeout：
