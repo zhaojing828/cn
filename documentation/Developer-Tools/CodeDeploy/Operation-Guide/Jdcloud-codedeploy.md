@@ -12,10 +12,10 @@ files:
     destination: /home/config
 hooks:
    AfterInstall:
-     - location: /opt/Control/Test1.sh
+     - command: /opt/Control/Test1.sh
        timeout: 100
        runas: root
-     - location: /opt/Control/Test2.sh
+     - command: /opt/Control/Test2.sh
        timeout: 100
 permisssions: 
   - object: /home/config/soft
@@ -160,18 +160,18 @@ runas：
 ```
 hooks:
   AfterInstall:
-    - location: /home/bin/stop.sh
+    - command: /home/bin/stop.sh
       timeout: 100
       runas: hadoop
-    - location: /home/bin/stop2.sh
+    - command: /home/bin/stop2.sh
       timeout: 100
       runas: root
   ApplicationStart:
-    - location: /home/bin/start.sh
+    - command: /home/bin/start.sh
       timeout: 100
       runas: root
   BeforeInstall:
-    - location: /home/bin/config.sh
+    - command: /home/bin/config.sh
       timeout: 10
 ```
 将在部署过程中，将在工作流中的对应如下操作：
