@@ -14,7 +14,7 @@
 
 `sudo apt-get install nfs-common`
 
-![]()
+![InstallTools](../../../../image/Cloud-File-Service/mount.png)
 
 
 
@@ -22,13 +22,13 @@
 
 `sudo mkdir nfs`
 
-![]()
+![mkdir](../../../../image/Cloud-File-Service/mkdir.png)
 
 
 
 4.通过挂载目标的IP地址挂载文件存储，挂载目标的IP地址可在“控制台-存储与CDN-云文件服务-文件存储”页面，点击该挂载目标的ID后查看。
 
-![]()
+![MtIp](../../../../image/Cloud-File-Service/MtIp.png)
 
 如，挂载目标的IP为10.0.0.30，挂载到上一步创建的nfs目录。**注意，因挂载工具默认NFS协议为4.1版本，所以CentOS 7.2及以下版本的挂载命令略有不同：**
 
@@ -46,7 +46,7 @@ CentOS 7.3及以上版本运行以下命令：
 
 挂载成功后会出现“Filesystem”为挂载目标IP，“Mounted on”为上一步指定目录的记录。
 
-![]()
+![Mount&Check](../../../../image/Cloud-File-Service/mount_target.png)
 
 **注意**
 
