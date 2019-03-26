@@ -12,8 +12,11 @@
 
 - Jenkins可联通公网
 - 在云部署中已有应用、部署组
-- 在
+- 已知京东云控制台AKSK
+- 符合云部署规范，即在代码根目录有jdcloud-codedeploy.yml文件
+
+在Jenkins中，进入到“构建后操作”，填写以下内容：
+
+- 
 
 
-
-![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-6%EF%BC%88Ch%EF%BC%89.png)
