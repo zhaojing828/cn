@@ -178,7 +178,7 @@ hooks:
 
 - 执行部署前置脚本：以root用户执行/home/bin/config.sh，超时时间为10s
 - 执行启动脚本：以root用户执行/home/bin/start.sh，超时时间为100s
-- 执行部署后置脚本：以hadoop用户执行/home/bin/stop.sh，超时时间为100s，接下来以root用户执行/home/bin/stop2.sh，超时时间为100s。两个location间由上至下顺序执行
+- 执行部署后置脚本：以hadoop用户执行/home/bin/stop.sh，超时时间为100s，接下来以root用户执行/home/bin/stop2.sh，超时时间为100s。两个command间由上至下顺序执行
 
 
 建议在hooks脚本中，设置 set -e
