@@ -53,7 +53,7 @@
             href: Operation-Guide/Networking/Virtual-Network-Interface.md
           - name: 子网
             href: Operation-Guide/Networking/Subnet.md
-          - name: 弹性IP
+          - name: 弹性公网IP
             href: Operation-Guide/Networking/Elastic-IP-For-Physical-Cloud.md
       - name: 防火墙配置说明
         items:
