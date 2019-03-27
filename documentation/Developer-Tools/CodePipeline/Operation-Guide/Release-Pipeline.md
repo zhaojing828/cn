@@ -1,7 +1,7 @@
 # 发布流水线
 
 ## 手动发布
-点击 发布 按钮，手动执行流水线。
+点击 执行 按钮，手动执行流水线。
 
 ![](/image/codepipeline/Release-Pipeline.png) 
 
