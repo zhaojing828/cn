@@ -7,19 +7,24 @@
 一个完整的物模型定义包括5中类型数据的定义：
 
 1. Device Telemetry Data
+
 设备上行的报文流式数据，是一个描述客观事实的观测值，不可被Sever-Side Application修改。
 
 2. Device State Data
+
 设备状态数据，例如设备的运行状态，设备版本号，设备报文数据的发送频率等，相对于报文数据，更新频率较低。状态数据可以被Server-Side Application修改，此状态数据会对应存在Expected Value和Reported Value。
 修改State的Expected Value，需要设备端实现监听Expected Value改变，并触发对应的设备动作。例如设备的运行状态Expected Value由“Start”修改为“Restart”，设备端应该自行执行重启操作。
 
 3. Device Metadata
+
 设备的元数据，例如设备的分组标签，由Sever-Side Application创建和维护。
 
 4. Events
+
 基于设备上行报文（或者state data）数据，云端或设备端（例如Edge Node）通过云端或者设备端规则引擎中的规则计算后创建。或者设备主动上报事件。
 
 5. Commands
+
 Server-Side Application主动调起或者规则引擎中某条规则触发的对设备的控制指令，此类指令不修改Device State Data。例如对于所有的车机设备消息广播指令。
 
 		请注意：
