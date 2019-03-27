@@ -87,7 +87,7 @@ SDK推荐您使用AWS SQS SDK, 京东云队列服务支持了SQS SDK的接口。
 
 关于 Java SDK 的最新版本号，请[查看](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk)。
 
-或者下载[AWS SDK](<https://aws.amazon.com/cn/sdk-for-java/>)自行添加。
+或者下载[AWS SDK](https://aws.amazon.com/cn/sdk-for-java/)自行添加。
 
 2.初始化，将AK&SK、接入点地址和Region信息填入。
 
