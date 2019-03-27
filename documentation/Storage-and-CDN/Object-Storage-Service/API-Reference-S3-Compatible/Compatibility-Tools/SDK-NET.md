@@ -19,7 +19,7 @@
 
 以下为创建client的示例，更多.NET SDK示例请访问[S3 .NET Example Code](https://docs.aws.amazon.com/zh_cn/sdk-for-net/v3/developer-guide/s3-apis-intro.html?shortFooter=true)。
 
-```
+```C#
 using Amazon.S3;
 
 namespace Amazon.Samples.S3
