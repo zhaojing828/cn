@@ -25,7 +25,7 @@ items:
       - name: 购买渠道
         items:	
            - name: 购买渠道
-             href: Pricing/purchase-channel/Purchase-Channel.md
+             href: Pricing/Purchase-Channel/Purchase-Channel.md
  - name: 操作指南
    items:
       - name: 文件存储列表
