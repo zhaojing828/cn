@@ -38,7 +38,7 @@
         href: Getting-Started/Produce-And-Consume-Message.md
   - name: 操作指南
     items:
-      - name: 主题管理
+      - name: 队列管理
         items:
           - name: 创建队列
             href: Operation-Guide/Queue-Management/Create-Queue.md
