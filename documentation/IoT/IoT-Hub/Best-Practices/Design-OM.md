@@ -12,8 +12,8 @@
 
 2. Device State Data
 
-设备状态数据，例如设备的运行状态，设备版本号，设备报文数据的发送频率等，相对于报文数据，更新频率较低。状态数据可以被Server-Side Application修改，此状态数据会对应存在Expected Value和Reported Value。
-修改State的Expected Value，需要设备端实现监听Expected Value改变，并触发对应的设备动作。例如设备的运行状态Expected Value由“Start”修改为“Restart”，设备端应该自行执行重启操作。
+	设备状态数据，例如设备的运行状态，设备版本号，设备报文数据的发送频率等，相对于报文数据，更新频率较低。状态数据可以被Server-Side Application修改，此状态数据会对应存在Expected Value和Reported Value。
+	修改State的Expected Value，需要设备端实现监听Expected Value改变，并触发对应的设备动作。例如设备的运行状态Expected Value由“Start”修改为“Restart”，设备端应该自行执行重启操作。
 
 3. Device Metadata
 
