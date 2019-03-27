@@ -56,6 +56,7 @@ s3:ObjectRemoved:Delete |删除文件
  ![事件通知](../../../../image/Object-Storage-Service/OSS-149.png)
  
  3.在**名称**框中，输入规则名称。
+ 
  **说明**
  
  * 您的bucket最多可以创建100条规则。
@@ -88,8 +89,9 @@ s3:ObjectRemoved:Delete |删除文件
  
 **说明**
 
-* 【http(s)】 ：OSS会向此地址发布消息，您可输入最多5个回调地址。必须为完整的URL，需指定http协议。
-* 【函数服务】：可运行基于OSS事件的Function 函数脚本。了解更多，请参见[函数服务](https://www.jdcloud.com/cn/products/function-service)。
+* 【http(s)】 ：OSS会向此地址发布消息，您可输入最多5个回调地址。必须为完整的URL，需指定http协议。了解更多请参考[回调通知](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
+*  函数服务目前仅支持华北-北京，其他区域暂不可设置【函数服务】。
+* 【函数服务】：可运行基于OSS事件的Function 函数脚本。了解更多，请前往[函数服务](https://www.jdcloud.com/cn/products/function-service)。
 *  函数服务目前仅支持华北-北京，其他区域暂不可设置【函数服务】。
 
 7.点击【保存】。
@@ -97,6 +99,11 @@ s3:ObjectRemoved:Delete |删除文件
 **说明**
 * 发动到选择【http(s)】时，点击保存OSS会向事件通知目标发送一条测试消息，为了您服务的安全，请完成[回调服务器设置签名认证](https://docs.jdcloud.com/cn/object-storage-service/setting-signature-authentication-for-callback-server),从而OSS会完成对该地址的订阅。
 * 消息通知格式参见[消息通知](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
+
+## 您可通过控制台，编辑或者删除事件通知规则
+
+ ![事件通知修改](../../../../image/Object-Storage-Service/OSS-150.png)
+
 
 
 
