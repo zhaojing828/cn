@@ -93,7 +93,8 @@ s3:ObjectRemoved:Delete |删除文件
 *  函数服务目前仅支持华北-北京，其他区域暂不可设置【函数服务】。
 * 【函数服务】：可运行基于OSS事件的Function 函数脚本。了解更多，请前往[函数服务](https://www.jdcloud.com/cn/products/function-service)。
 *  函数服务目前仅支持华北-北京，其他区域暂不可设置【函数服务】。
-
+*  OSS作为函数服务触发器，需满足函数服务关于单个函数最多创建10个触发器的限制，如果您超过限制将导致失败，查看某个函数触发器配置详情，请前往[函数服务控制台](https://function-console.jdcloud.com/services)。
+ 
 7.点击【保存】。
 
 **说明**
