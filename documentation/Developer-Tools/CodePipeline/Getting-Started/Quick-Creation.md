@@ -49,6 +49,7 @@
   
    部署阶段中，添加一个（或多个）部署类型的操作。
    
+   
   ![](/image/codepipeline/cre-deploy-stage.png) 
      
   ![](/image/codepipeline/cre-deploy-action.png)
