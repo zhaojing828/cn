@@ -37,7 +37,7 @@
 1.确认文件可访问
 
 使用curl访问cors.html文件，显示文件内容“请求成功”，确定该object可正常访问。
-```Shell
+```
 curl http://test-cors.oss.cn-east-1.jcloudcs.com/cors.html
 ```
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-084.jpg)
