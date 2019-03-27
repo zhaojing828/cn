@@ -15,12 +15,12 @@ pip install boto3
 ## 创建client
 
 下面我们给出了一个创建client的例子，更多信息请参考：http://boto3.readthedocs.io/en/latest/reference/services/s3.html
-```
 
+```Python
 import boto3  
         
-ACCESS_KEY =‘your accesskey’  
-SECRET_KEY = ‘your secretkey’  
+ACCESS_KEY = 'your accesskey'  
+SECRET_KEY = 'your secretkey'  
 s3 = boto3.client(  
     's3',  
     aws_access_key_id=ACCESS_KEY,  

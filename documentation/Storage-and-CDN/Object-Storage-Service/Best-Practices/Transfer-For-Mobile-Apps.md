@@ -41,7 +41,7 @@
  
 您可以在应用服务器上部署以下示例代码用于生成预签名URL，您可以根据您的业务逻辑调整该示例代码。移动应用在请求OSS前，可请求应用服务器返回预签名URL，需根据OSS访问需求传入预签名的相关参数（如Bucket、Key、HTTP Method等）。
 
-本示例基于S3 JAVA SDK编写，SDK安装与使用可参考[JAVA SDK安装]()。
+本示例基于S3 JAVA SDK编写，SDK安装与使用可参考[JAVA SDK安装](../API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Installation-S3.md)。
 
 ```
 import java.net.URL;
@@ -121,7 +121,7 @@ curl -X PUT -T testfile "http://testbucket.s3.cn-north-1.jcloudcs.com/testkey?X-
 
 ## 配置回调通知
 
-由于移动应用上传数据时，并不通过应用服务器中转，而是直接传输至OSS。若应用服务器需要知道移动应用上传了哪些文件吗，可以通过配置回调通知功能实现。更多信息请参考[回调通知]()，您可以指定存储桶资源变动时及时进行回调通知。
+由于移动应用上传数据时，并不通过应用服务器中转，而是直接传输至OSS。若应用服务器需要知道移动应用上传了哪些文件吗，可以通过配置回调通知功能实现。更多信息请参考[回调通知](../Operation-Guide/Manage-Bucket/Callback-Notification-2.md)，您可以指定存储桶资源变动时及时进行回调通知。
 
 您可按照以下示例配置您的应用服务器作为回调服务器，当回调通知触发时，OSS将会向回调URL发起消息通知，事件消息为JSON格式，您可以从事件消息中解析您需要的内容。
 

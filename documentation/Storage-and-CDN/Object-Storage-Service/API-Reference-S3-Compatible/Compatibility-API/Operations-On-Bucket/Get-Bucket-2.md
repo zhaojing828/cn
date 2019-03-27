@@ -52,7 +52,7 @@ Key| object key<br>Type: String<br>Ancestor: ListBucketResult.Contents
 LastModified | object最后修改时间。<br>Type: Date<br>Ancestor: ListBucketResult.Contents
 MaxKeys| 限定此次返回object的最大数。<br>Type: Date<br>Ancestor: ListBucketResult.Contents
 Name| bucket的名称。<br>Type: String<br>Ancestor: ListBucketResult
-Owner| bucket拥有者。<br>Type: String<br>Children: DisplayName, ID<br>Ancestor: ListBucketResult.Contents | CommonPrefixes
+Owner| bucket拥有者。<br>Type: String<br>Children: DisplayName, ID<br>Ancestor: ListBucketResult.Contents
 Prefix |限定返回的object key必须以prefix作为前缀。<br>Type: String<br>Ancestor: ListBucketResult
 Size| object大小。<br>Type: String<br>Ancestor: ListBucketResult.Contents
 StorageClass| 存储类型：STANDARD、REDUCED_REDUNDANCY<br>Type: String<br>Ancestor: ListBucketResult.Contents

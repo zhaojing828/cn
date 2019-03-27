@@ -28,7 +28,7 @@ items:
       - name: 策略管理
         items:
           - name: 策略管理
-            href: Policy-Managemenent/Policy-Management.md
+            href: Policy-Management/Policy-Management.md 
           - name: 策略语法（v2）
             href: Policy-Management/Policy-Syntax_v2.md
           - name: 策略（v3）
@@ -46,16 +46,14 @@ items:
       - name: 虚拟 MFA 设备
         items:
           - name: 概述
-            href: Virtual-MFA-Management/MFA-Overview.md
+            href: Virtual-MFA-Device/MFA-Overview.md   
           - name: MFA 设置
-            href: Virtual-MFA-Management/MFA-Settings.md
+            href: Virtual-MFA-Device/MFA-Settings.md
           - name: 登录验证
-            href: Virtual-MFA-Management/Sign-up-Verification.md
-          - name: 操作保护
-            href: Virtual-MFA-Management/Operation-Protection.md
+            href: Virtual-MFA-Device/Sign-up-Verification.md
           - name: 第三方应用程序安装及使用指导
-            href: Virtual-MFA-Management/Third-Party-Apps.md
+            href: Virtual-MFA-Device/Third-party-Apps.md
   - name: 常见问题
     items:
       - name: MFA 登录验证常见问题
-        href: Virtual-MFA-Management/MFA-FAQs.md
+        href: Virtual-MFA-Device/MFA-FAQs.md

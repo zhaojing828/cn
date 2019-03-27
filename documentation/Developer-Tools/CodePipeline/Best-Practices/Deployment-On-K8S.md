@@ -19,6 +19,7 @@
  
 4. 配置部署。
   阶段名默认为 部署阶段，添加部署的原子操作。  
+  
      1. 原子操作中选择 Kubernetes集群，输入操作选择前面配置的构建操作。需要用户提前创建好集群，在流水线中提供部署的deployment。
         示例如下：
         ![](/image/codepipeline/best-k8s.png)
@@ -45,13 +46,16 @@
 	```
        其中，image需要用构建操作的产出做替换，
        ![](/image/codepipeline/best-docker.png)  
-       
-     2. 在k8s集群页面，给这个deployment添加一个负载均衡服务。      
+     
+     2. Kubernetes集群服务从容器镜像仓库拉去镜像需要授权，具体授权方式可参考    
+      [集成容器镜像仓库]( https://docs.jdcloud.com/cn/jcs-for-kubernetes/deploy-container-registry)
+      
+     3. 在k8s集群页面，给这个deployment添加一个负载均衡服务。      
 	```
 	kind: Service
 	apiVersion: v1
 	metadata:
-	  name: lb-test
+	  name: lb-show
 	  namespace: default
 	  labels:
 	    k8s-app: kubernetes-test
@@ -59,13 +63,13 @@
 	  ports:
 	    - protocol: TCP
 	      port: 80
-	      targetPort: 80
-	      nodePort: 30090
+	      targetPort: 8088
+	      nodePort: 30190
 	  selector:
-	    app: nginx
+	    app: golang-test-demo
 	  type: LoadBalancer
 	  sessionAffinity: None
-	  externalTrafficPolicy: Cluster  
+	  externalTrafficPolicy: Cluster 
 	```
 
 5. 保存并发布。

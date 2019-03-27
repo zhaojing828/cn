@@ -5,11 +5,9 @@
 ![图片](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-1.png)
 
 2.打开域的上下文 (右键单击) 菜单，选择 **属性**。
-
 ![图片](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-2.png)
 
 3.选择 **信任** 选项卡，然后选择 **新建信任**。键入京东云目录服务的名称，然后选择 **下一步** 。
-
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-3.png)
 
 4.选择 **林信任**。选择 **下一步**。
@@ -33,14 +31,11 @@
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-8.png)
 
 9.在下一个对话框中，确认设置，然后选择 **下一步**。确认已成功创建信任，再次选择 **下一步**。
-
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-9.png)
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-10.png)
 
 10.选择 **否，不要确认传出信任**。选择 **下一步**。
-
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-11.png)
 
 11.选择 **否，不确认传入信任**。选择 **下一步**。
-
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-ad-2019011501/image/DirectoryService/cn/Create-Local-AD-Trust-cn-12.png)

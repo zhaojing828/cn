@@ -12,8 +12,8 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/subnets/{subnetId}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**subnetId**|String|True| |Subnet ID|
 |**regionId**|String|True| |Region ID|
+|**subnetId**|String|True| |Subnet ID|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|

@@ -18,8 +18,8 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}/protocolConvert
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**certificate**|String|False| |https证书,转https格式时必传|
-|**protocolConverts**|ProtocolConvert[]|False| | |
 |**rsaKey**|String|False| |https私钥，转https格式时必传|
+|**protocolConverts**|ProtocolConvert[]|False| | |
 
 ### ProtocolConvert
 |名称|类型|是否必需|默认值|描述|
@@ -30,8 +30,8 @@ https://cdn.jdcloud-api.com/v1/liveDomain/{domain}/protocolConvert
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Object| |
+|**requestId**|String| |
 
 
 ## 返回码

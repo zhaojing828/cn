@@ -67,8 +67,8 @@
             herf: Binlog/describeBinlogDownloadURL.md
           - name: describeBinlogs
             herf: Binlog/describeBinlogs.md
-          - name: describeBinlogs
-            herf: Binlog/describeBinlogs.md
+          - name: clearBinlogs
+            herf: Binlog/clearBinlogs.md
 
       - name: 单库上云
         items:
@@ -132,6 +132,8 @@
             href: Instance-Management/disableInternetAccess.md
           - name: enableInternetAccess
             href: Instance-Management/enableInternetAccess.md
+          - name: exchangeInstanceDns
+            href: Instance-Management/exchangeInstanceDns.md
           - name: failoverInstance
             herf: Instance-Management/failoverInstance.md
           - name: modifyBackupPolicy
@@ -142,6 +144,8 @@
             herf: Instance-Management/modifyInstanceName.md
           - name: modifyInstanceSpec
             herf: Instance-Management/modifyInstanceSpec.md
+          - name: modifyParameterGroup
+            herf: Instance-Management/modifyParameterGroup.md
           - name: rebootInstance
             herf: Instance-Management/rebootInstance.md
           - name: restoreInstance
@@ -149,10 +153,24 @@
 
       - name: 参数组管理
         items:
+          - name: copyParameterGroup
+            herf: Parameter-Group/copyParameterGroup.md
+          - name: createParameterGroup
+            herf: Parameter-Group/createParameterGroup.md
           - name: deleteParameterGroup
             herf: Parameter-Group/deleteParameterGroup.md
+          - name: describeParameterGroupAttachedInstances
+            herf: Parameter-Group/describeParameterGroupAttachedInstances.md
+          - name: describeParameterGroupParameters
+            herf: Parameter-Group/describeParameterGroupParameters.md
+          - name: describeParameterGroups
+            herf: Parameter-Group/describeParameterGroups.md
+          - name: describeParameterModifyRecords
+            herf: Parameter-Group/describeParameterModifyRecords.md
           - name: modifyParameterGroupAttribute
             herf: Parameter-Group/modifyParameterGroupAttribute.md
+          - name: modifyParameterGroupParameters
+            herf: Parameter-Group/modifyParameterGroupParameters.md
 
       - name: 参数管理
         items:
@@ -163,6 +181,8 @@
      
       - name: 性能统计
         items:
+          - name: describeActiveQueryPerformance
+            herf: Performance-Statistics/describeActiveQueryPerformance.md
           - name: describeIndexPerformance
             herf: Performance-Statistics/describeIndexPerformance.md
           - name: describeQueryPerformance
@@ -174,6 +194,10 @@
 
       - name: SQL 拦截
         items:
+          - name: describeIntercept
+            herf: SQL-Interception/describeIntercept.md
+          - name: describeInterceptResult
+            herf: SQL-Interception/describeInterceptResult.md
           - name: disableIntercept
             herf: SQL-Interception/disableIntercept.md
           - name: enableIntercept
@@ -190,6 +214,10 @@
     items:
       - name: MySQL 实例规格
         href: Instance-Specifications/Instance-Specifications-MySQL.md
+      - name: Percona 实例规格
+        href: Instance-Specifications/Instance-Specifications-Percona.md
+      - name: MariaDB 实例规格
+        href: Instance-Specifications/Instance-Specifications-MariaDB.md
       - name: SQL Server 实例规格
         href: Instance-Specifications/Instance-Specifications-SQLServer.md
 

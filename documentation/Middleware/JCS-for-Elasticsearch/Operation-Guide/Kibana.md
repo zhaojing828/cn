@@ -5,7 +5,7 @@
 ### 一键访问Kibana
 您可以通过登录云搜索Elasticsearch控制台，进入集群管理页面，点击操作列的Kibana，即可打开Kibana界面使用，无需安装部署。
 ### Kibana功能
-Kibana 是一个开源的数据分析与可视化平台，您可以通过kibana快速创建和实时展现Elasticsearch查询变化的动态仪表盘。
+Kibana 是一个开源的数据分析与可视化平台，您可以通过kibana快速创建和实时展现Elasticsearch查询变化的动态仪表盘。</br>
 - Kibana架构为Elasticsearch定制，能够与Elasticsearch无缝集成
 - 支持复杂数据分析，提供了近20种数据统计方式
 - 支持时间、标签等各种维度分类
