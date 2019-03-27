@@ -36,6 +36,26 @@
         href: Getting-Started/Create-Resource.md
       - name: 生产和消费消息
         href: Getting-Started/Produce-And-Consume-Message.md
+  - name: 操作指南
+    items:
+      - name: 主题管理
+        items:
+          - name: 创建队列
+            href: Operation-Guide/Queue-Management/Create-Queue.md
+          - name: 管理队列
+            href: Operation-Guide/Queue-Management/Manage-Queue.md
+      - name: 消息管理
+        items:
+          - name: 发送消息
+            href: Operation-Guide/Message-Management/Send-Message.md      
+          - name: 重发消息
+            href: Operation-Guide/Message-Management/Consume-Message.md   
+      - name: 监控报警
+        items:
+          - name: 查看监控信息
+            href: Operation-Guide/Monitoring/Monitoring.md
+          - name: 设置报警规则
+            href: Operation-Guide/Monitoring/Alarm-Rules.md
   - name: 教程
     items:
     status: 0
@@ -45,5 +65,11 @@
   - name: 常见问题
     items:
       - name: FAQ
-        href: FAQ/FAQ.md   
+        href: FAQ/FAQ.md
+  - name: 相关资源
+    items:
+    - name: 文档历史记录
+      href: Related-Resources/Document-History.md
+     - name: 服务条款
+      href: Related-Resources/Related-Agreement.md  
 
