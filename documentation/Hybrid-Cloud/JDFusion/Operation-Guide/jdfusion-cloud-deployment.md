@@ -16,53 +16,53 @@
 - ### 资源批量创建
   通过创建Deployment，并启动执行，能够批量创建，灵活构建各种应用场景，具体操作流程如下：
 
-![](https://github.com/jdcloudcom/cn/tree/yangwla-patch-20/image/JDFusion/create-reses.png")
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/create-reses.png)
 
  1. 首先进入Deployment创建页面，选择云平台，填写名称，描述等基本信息后，点击增加资源按钮，进行资源的批量维护
 
 
-![](https://cf.jd.com/download/attachments/169314398/create-deployment.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/create-deployment.png)
 
 
  2. 选择资源类型，并填写资源别名（注：资源别名仅用于构建引擎创建资源时使用，不会附加在资源的任何属性之上，不要与资源名称混淆），并点击下一步进入资源属性编辑界面（该处操作与资源管理的创界页面基本一致），填写完整后，点击‘确定’，完成该待增资源的描述定义，如果继续增加其他资源，则重复操作此过程即可，最后点击提交
 
 
-![](https://cf.jd.com/download/attachments/169314398/add-resources-1.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/add-resources-1.png)
 
-![](https://cf.jd.com/download/attachments/169314398/add-resources-3.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/add-resources-3.png)
 
 
  3. Deployment创建成功后，会在列表页面查询到该记录，点击右侧‘执行’按钮，开始执行编排任务，进行资源构建（注：同一Deployment记录可反复修改和执行，构建引擎会比较每一次修改的变化情况进行差异化构建，系统支持针对每次执行结果进行回滚）
 
 
-![](https://cf.jd.com/download/attachments/169314398/demolist-deployment.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/demolist-deployment.png)
 
 
  4. 针对Deployment启动执行操作后，会收到‘Deployment执行已经进入任务队列’的提示，待任务执行完毕后，将会收到系统发来消息，报告执行结果，点击可查看详情（注：如果任务执行失败，可在执行报告中查看到详细的失败原因）
 
 
-![](https://cf.jd.com/download/attachments/169314398/demolist-deployment.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/demolist-deployment.png)
 
-![](https://cf.jd.com/download/attachments/169314398/report-deployment.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/report-deployment.png)
 
 
 - #### 资源配置备份及跨云复制构建
   利用Deployment的反向部署功能，能够将云平台既有资源的配置信息导出，并可再次重新启动执行，快速构建资源，恢复应用场景，极大的降低了手工操作的工作量，具体操作流程如下：
 
 
-![](https://cf.jd.com/download/attachments/169314398/backup-reses.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/backup-reses.png)
 
 
  1. 首先进入Deployment创建页面，选择云平台，填写名称，描述等基本信息后，选择云平台既有资源增加至Deployment，进行资源配置信息的批量导入（该处资源别名规则与Deployment创建规则一致）
 
 
-![](https://cf.jd.com/download/attachments/169314398/backup-deployment.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/backup-deployment.png)
 
 
  2. 为安全起见，反向部署生成的Deployment为只读状态，不可执行和回滚，须克隆后，生成相同的Deployment，并进行操作
 
 
-![](https://cf.jd.com/download/attachments/169314398/clone-deployment.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/clone-deployment.png)
 
 
  3. 针对克隆生成的Deployment进行执行，即可批量构建资源，实现应用场景的备份恢复，并且可修改其云平台属性为其他云平台及其他资源属性，可以非常方便的实现资源的跨云复制，迁移和扩容
@@ -204,7 +204,7 @@
  1. 为方便使用变量，系统提供了变量选择器，可快速进行变量提取以及使用，在添加资源的页面，点击下部‘使用变量’按钮，即可调出变量选择器，选择变量并点击复制后，即可在任意位置粘贴使用
 
 
-![](https://cf.jd.com/download/attachments/169314398/res-variables.png)
+![创建实例](https://github.com/jdcloudcom/cn/blob/edit/image/JDFusion/res-variables.png)
 
 
 
