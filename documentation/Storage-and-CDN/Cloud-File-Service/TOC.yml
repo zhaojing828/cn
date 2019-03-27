@@ -1,0 +1,48 @@
+name: 云文件服务
+href: 
+items:
+
+ - name: 产品简介
+   items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 地域和可用区
+        href: Introduction/Regions-and-AvailabilityZones.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 性能
+        href: Introduction/Performance.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md 
+      - name: 应用场景 
+        href: Introduction/Application-Scenarios.md    
+ - name: 产品定价
+   items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 购买渠道
+        items:	
+           - name: 购买渠道
+             href: Pricing/purchase-channel/Purchase-Channel.md
+ - name: 操作指南
+   items:
+      - name: 文件存储列表
+        href: Operation-Guide/File-System-List.md
+      - name: 创建文件存储
+        href: Operation-Guide/Creating-File-System.md
+      - name: 文件存储信息
+        href: Operation-Guide/File-System-Detail.md
+      - name: 创建挂载目标
+        href: Operation-Guide/Creating-Mount-Target.md
+      - name: 删除挂载目标
+        href: Operation-Guide/Deleting-Mount-Target.md
+      - name: 修改挂载目标
+        href: Operation-Guide/Editing-Mount-Target.md
+      - name: 挂载文件存储
+        href: Operation-Guide/Mount-File-System.md
+      - name: 卸载文件存储
+        href: Operation-Guide/Unmount-File-System.md
+      - name: 删除文件存储
+        href: Operation-Guide/Deleting-File-System.md
