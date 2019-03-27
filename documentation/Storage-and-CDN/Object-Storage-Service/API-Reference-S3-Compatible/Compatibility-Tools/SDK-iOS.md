@@ -9,7 +9,7 @@
 为了您更能够正常使用SDK-Ios，请您下载京东云改造版aws-sdk-ios：https://github.com/ZHCliang/aws-sdk-ios
 
 通过CocoaPods引入依赖的Podfile文件如下：
-```
+```Object-C
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 target 'S3UploadDemo' do
