@@ -10,19 +10,19 @@ https://github.com/s3fs-fuse/s3fs-fuse
 
 On CentOS 7:
 
-```
+```Shell
 sudo yum install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
 ```
 
 On Ubuntu 14.04:
 
-```
+```Shell
 sudo apt-get install automake autotools-dev fuse g++ git libcurl4-openssl-dev libfuse-dev libssl-dev libxml2-dev make pkg-config
 ```
 
 **2.安装以及编译**
 
-```
+```Shell
 git clone https://github.com/s3fs-fuse/s3fs-fuse.git
 cd s3fs-fuse
 ./autogen.sh
@@ -33,7 +33,7 @@ sudo make install
 
 **3.创建密码文件**
 
-```
+```Shell
 echo Access_Key_ID:Access_Key_Secret > ~/.passwd-s3fs
 chmod 600 ~/.passwd-s3fs
 ```
@@ -47,7 +47,7 @@ chmod 600：设置密钥文件只能被当前用户访问。
 
 **4.挂载对象存储到本地目录/new**
 
-```
+```Shell
 mkdir /new
 s3fs bucketname /new -o passwd_file=~/.passwd-s3fs -o url="https://s3.cn-north-1.jcloudcs.com"
 ```
@@ -59,7 +59,7 @@ s3fs：手动挂载命令，其中bucketname为bucket名称、/new是本地挂�
 
 **5.查看挂载结果**
 
-```
+```Shell
 df -h
 ```
 
@@ -76,7 +76,7 @@ df -h
 
 1.如果您使用的CentOS 6，请参考以下步骤安装依赖：
 
-```
+```Shell
 yum install automake gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
 
 wget https://github.com/libfuse/libfuse/releases/download/fuse_2_9_4/fuse-2.9.2.tar.gz
@@ -91,7 +91,7 @@ ldconfig
 
 2.使用Mac OS安装S3fs，请参考以下步骤：
 
-```
+```Shell
 git clone https://github.com/s3fs-fuse/s3fs-fuse.git
 cd s3fs-fuse
 ./autogen.sh
