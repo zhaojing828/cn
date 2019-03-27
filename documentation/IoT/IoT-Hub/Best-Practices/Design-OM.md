@@ -22,7 +22,7 @@
 5. Commands
 Server-Side Application主动调起或者规则引擎中某条规则触发的对设备的控制指令，此类指令不修改Device State Data。例如对于所有的车机设备消息广播指令。
 
-			请注意：
+		请注意：
 		* 当前版本不支持Device Metadata和Events，计划在下一个版本升级支持；
 
 ## 如何理解Device Telemetry Data和Device State Data差异？
@@ -33,7 +33,7 @@ Device Telemetry Data是设备上报的遥测数据，是一个测量值，不�
 ## 物模型示例
 请参考附件 [OM示例](../../../../image/IoT/IoT-Hub/Sample-OM.json)
 
-			请注意：
+		请注意：
 		* 请按照附件的物模型示例在您的物模型文件中加入反斜杠转义字符，系统才能正确识别物模型；
 		* 后续版本升级计划提供物模型编辑器，您可以在线使用可视化工具更方便的编辑物模型；
 
