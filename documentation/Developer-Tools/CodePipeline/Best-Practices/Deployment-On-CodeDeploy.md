@@ -45,15 +45,12 @@
 
 为了成功访问部署应用，建议给云主机[绑定公网IP](../../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Network/Associate-Elastic-IP.md)。
 
-在“部署应用”页，指定与云主机、对象存储相同的地域后，点击“新建应用”，
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-1%EF%BC%88Ch%EF%BC%89.png)
+在“新建应用”页，首先填写应用信息。
 
-跳转到“新建应用”页。
+应用名称：cd-demo
 
-在“新建应用”页，首先填写应用信息。应用名称：cd-demo
-
-![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-2%EF%BC%88Ch%EF%BC%89.png)
+     ![](/image/codepipeline/cre-deploy.PNG)
 
 点击"新建"按钮。
 
@@ -67,29 +64,29 @@
 - 使用负载均衡：否
 - 高级选项：保持默认选项，详见操作指南
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-3%EF%BC%88Ch%EF%BC%89.png)
+     ![](/image/codepipeline/cd-demo-group.PNG)
 
-填写部署组的基本信息后，请点击“新建”，将进行应用中部署组的新建。
-
-保存，完成部署应用的准备。
+填写部署组的基本信息后，请点击“新建”，完成部署应用的准备。
 
 ### 新建流水线
 
 详细操作步骤如下：
 
-1. 点击 创建 选择 快速创建。配置流水线名称，如pipeline-demo，单击下一步。
+1. 点击 创建 选择 快速创建。配置流水线名称，如pipeline-demo
+
+     ![](/image/codepipeline/pipeline-demo.PNG)
 
 2. 配置源代码
 
   阶段名默认为 源代码，添加源代码子操作。原子操作中选择京东云-代码托管，选择示例代码JDCloud-Codebuild/hello-java。
   
-     ![](/image/codepipeline/best-source2.PNG)
+     ![](/image/codepipeline/source-best2.PNG)
 
 3. 配置构建。
 
   阶段名默认为 构建阶段，添加构建操作。   
   
-     ![](/image/codepipeline/best-build2.PNG)
+     ![](/image/codepipeline/build-best2.PNG)
 
 -  操作名称：构建操作
 -  操作类型：构建
@@ -104,7 +101,9 @@
  
  阶段名默认为 部署阶段，添加部署操作。 
  
-      ![](/image/codepipeline/best-deploy2.PNG)
+      ![](/image/codepipeline/deploy-best2.PNG)
+      
+       ![](/image/codepipeline/deploy-best2.1.PNG)
       
 -  操作名称：部署操作
 -  操作类型：部署
