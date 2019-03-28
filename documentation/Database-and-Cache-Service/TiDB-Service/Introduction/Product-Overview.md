@@ -10,7 +10,7 @@
 ## 常用操作
 - [创建实例](../Operation-Guide/Instance/Create-Instance.md)
 - [连接实例](../Operation-Guide/Instance/Connect-Instance.md)
-- [节点管理](../Operation-Guide/Node.md)
+- [节点管理](../Operation-Guide/Node-Management.md)
 - [重置密码](../Operation-Guide/Reset-Password.md)
 - [监控](../Operation-Guide/Monitor.md)
   
