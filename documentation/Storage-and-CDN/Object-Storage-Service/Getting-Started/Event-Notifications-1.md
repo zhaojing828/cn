@@ -47,7 +47,7 @@ s3:ObjectRemoved:Delete |删除文件
 
 # 控制台设置事件通知
 
-1.登录京东云控制台，选择对象存储->空间管理->空间设置，选择**事件通知**，如图：
+1.登录京东云控制台，选择对象存储->空间管理->空间设置，选择 **事件通知** ，如图：
 
  ![事件通知](../../../../image/Object-Storage-Service/OSS-148.png)
  
@@ -55,14 +55,14 @@ s3:ObjectRemoved:Delete |删除文件
  
  ![事件通知](../../../../image/Object-Storage-Service/OSS-149.png)
  
- 3.在**名称**框中，输入规则名称。
+ 3.在 **名称** 框中，输入规则名称。
  
  **说明**
  
  * 您的bucket最多可以创建100条规则。
  * 名称限制256个字节，由字母，数字，下滑线（_）,中滑线（-）组成。
  
- 4.在**事件类型**下拉列表中，选择一个或多个需要进行消息通知的事件。
+ 4.在 **事件类型** 下拉列表中，选择一个或多个需要进行消息通知的事件。
  
 **说明**
 
@@ -73,7 +73,7 @@ s3:ObjectRemoved:Delete |删除文件
 * 需要特别注意的是，对于每个存储空间，单个事件不要配置多个相互重叠的前缀或后缀，事件通知服务将按序依次匹配，匹配成功则发出消息通知并终止匹配。
 * 执行顺序以服务端规则为准，与控制台展示顺序存在不一致可能。
 
-5.在**资源描述**处，添加前缀、后缀，完成对资源的描述,达到筛选文件的效果。
+5.在 **资源描述** 处，添加前缀、后缀，完成对资源的描述,达到筛选文件的效果。
 
 **说明**
 
@@ -85,7 +85,7 @@ s3:ObjectRemoved:Delete |删除文件
    -  要关注bucekt中所有的.jpg的图片，则前缀不填，后缀填 .jpg。
    -  要关注bucekt中目录jdcloudoss下的.mp3格式的影片，则前缀填 jdcloudoss/，后缀填 .mp3。
    
- 6.在**发送到** 下拉框中，选择【http(s)】或者【函数服务】，完成接收终端的设置。
+ 6.在 **发送到** 下拉框中，选择【http(s)】或者【函数服务】，完成接收终端的设置。
  
 **说明**
 
@@ -97,8 +97,11 @@ s3:ObjectRemoved:Delete |删除文件
 7.点击【保存】。
 
 **说明**
-* 发动到选择【http(s)】时，点击保存OSS会向事件通知目标发送一条测试消息，为了您服务的安全，请完成[回调服务器设置签名认证](https://docs.jdcloud.com/cn/object-storage-service/setting-signature-authentication-for-callback-server),从而OSS会完成对该地址的订阅。
-* 消息通知格式参见[消息通知](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
+
+*  发动到选择【http(s)】时，点击保存OSS会向事件通知目标发送一条测试消息，为了您服务的安全，请完成[回调服务器设置签名认证]
+(https://docs.jdcloud.com/cn/object-storage-service/setting-signature-authentication-for-callback-server),从而OSS会完成对该地址的订阅。
+
+*  消息通知格式参见[消息通知](https://docs.jdcloud.com/cn/object-storage-service/callback-notification-2)。
 
 ## 您可通过控制台，编辑或者删除事件通知规则
 
