@@ -48,7 +48,7 @@ curl http://test-cors.oss.cn-east-1.jcloudcs.com/cors.html
 
 首先写一个简单的HTML文件，将以下代码复制到本地保存成HTML文件，并将该网页托管在云主机上，云主机的IP地址为47.104.98.151，所以该网页地址为http://47.104.98.151/cors-test.html （测试地址不支持访问，如需访问，请自行配置）
 
-```
+```HTML
 <!DOCTYPE html>
 <html>
 <head>
