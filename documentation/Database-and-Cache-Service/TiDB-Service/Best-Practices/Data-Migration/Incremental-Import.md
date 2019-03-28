@@ -151,7 +151,7 @@ port = 4000
 ```
 
 ## 在 MySQL 插入新的数据
-```Shell
+```SQL
 INSERT INTO t1 VALUES (4, 4), (5, 5);
 ```
 
