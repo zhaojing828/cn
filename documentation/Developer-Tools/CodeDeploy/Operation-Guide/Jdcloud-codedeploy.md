@@ -183,7 +183,7 @@ hooks:
 
 建议在hooks脚本中，设置 set -e
 
-**3）permisssions（非必须）**
+**3）permissions（非必须）**
 
 object: 
 
@@ -224,7 +224,7 @@ type:
 **示例**
 
 ```
-permisssions:
+permissions:
   - object: /opt/soft
     pattern: "*bin*"
     except: [sbin/start]
