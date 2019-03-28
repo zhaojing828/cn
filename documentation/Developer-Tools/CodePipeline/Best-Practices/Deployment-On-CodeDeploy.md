@@ -64,7 +64,9 @@
 - 使用负载均衡：否
 - 高级选项：保持默认选项，详见操作指南
 
-     ![](/image/codepipeline/cd-demo-group.PNG)
+
+      ![](/image/codepipeline/cd-demo-group.PNG)
+     
 
 填写部署组的基本信息后，请点击“新建”，完成部署应用的准备。
 
@@ -101,9 +103,11 @@
  
  阶段名默认为 部署阶段，添加部署操作。 
  
-      ![](/image/codepipeline/deploy-best2.PNG)
+ 
+        ![](/image/codepipeline/deploy-best2.PNG)
       
        ![](/image/codepipeline/deploy-best2.1.PNG)
+       
       
 -  操作名称：部署操作
 -  操作类型：部署
