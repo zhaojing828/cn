@@ -22,7 +22,8 @@ Windows平台可以采用系统命令ping和nslookup，在CMD窗口，执行命�
 
 3.  如果找不到域名的解析地址则会提示找不到
 
-![img]（https://github.com/jdcloudcom/cn/blob/edit/image/dns-img/test-name-2.png）
+![img](https://github.com/jdcloudcom/cn/blob/edit/image/dns-img/test-name-2.png)
+
 
 4.还可以采用nslookup命令进行测试，执行nslookup www.jddnstest.com
 
