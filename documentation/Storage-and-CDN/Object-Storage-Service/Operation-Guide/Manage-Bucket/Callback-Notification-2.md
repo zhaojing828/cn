@@ -26,7 +26,7 @@ OSS回调通知包括 **配置回调通知** 和 **消息通知** 两部分:
 
 **回调通知支持API**：[PUT Bucket notification](../../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-Notification-2.md)、[GET Bucket notification](../../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-Notification-2.md)
 
-**控制台设置回调通知**：请参考[控制台设置事件通知-HTTP\(S\)](../../Getting-Started/Event-Notifications-1.md)完成设置。
+**控制台设置回调通知**：请参考[控制台设置事件通知-HTTP\\(S\\)](../../Getting-Started/Event-Notifications-1.md)完成设置。
 
 ## 配置回调通知
 
