@@ -48,7 +48,7 @@ cd tidb-enterprise-tools-latest-linux-amd64
 
 ## 使用 checker 检查的一个示范
 - 在 MySQL 的 test database 里面创建几张表，并插入数据:
-```Shell
+```SQL
 USE test;
 CREATE TABLE t1 (id INT, age INT, PRIMARY KEY(id)) ENGINE=InnoDB;
 CREATE TABLE t2 (id INT, name VARCHAR(256), PRIMARY KEY(id)) ENGINE=InnoDB;
