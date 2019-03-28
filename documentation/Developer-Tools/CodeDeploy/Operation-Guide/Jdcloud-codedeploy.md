@@ -17,7 +17,7 @@ hooks:
        runas: root
      - command: /opt/Control/Test2.sh
        timeout: 100
-permisssions: 
+permissions: 
   - object: /home/config/soft
     pattern: "**"
     except: [function.php]
