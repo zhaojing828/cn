@@ -26,7 +26,7 @@
 -  应用名称：ci-demo
 -  编译镜像：maven/maven3.6.0-jdk13
 -  代码源：京东云-代码托管
--  代码库：请根据实际情况进行填写，例如JDCloud-Codebuild/hello-java
+-  代码库：选择示例代码，JDCloud-Codebuild/hello-java
 -  分支：master
 -  构建命令：使用源代码根目录下的build.yml
 -  构建类型：应用包
@@ -35,7 +35,10 @@
 
 ### 在云部署中创建应用及部署组
 
-使用云部署前，请先确保已经有云主机且安装成功部署agent。详情可参见 蓝绿部署。
+使用云部署前，请先确保已经有云主机且安装成功部署[Agent](../../../../Developer-Tools/CodeDeploy/Operation-Guide/Install-Agent.md)。
+
+
+为了成功访问部署应用，建议给云主机分配[绑定公网IP](../../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Network/Associate-Elastic-IP.md)。
 
 在“部署应用”页，指定与云主机、对象存储相同的地域后，点击“新建应用”，
 
