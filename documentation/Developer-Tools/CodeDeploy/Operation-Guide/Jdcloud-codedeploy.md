@@ -242,6 +242,17 @@ permissions:
 
 在工作流中执行hooks里的相关脚本时的环境变量
 
+以 key: value 的方式，指明环境变量
+
+**示例**
+
+```
+env:  
+  php_path: /home/config/soft/php/bin
+
+```
+
+
 
 
 
