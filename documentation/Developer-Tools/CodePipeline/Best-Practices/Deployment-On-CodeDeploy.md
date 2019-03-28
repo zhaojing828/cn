@@ -35,10 +35,10 @@
 
 ### 在云部署中创建应用及部署组
 
-使用云部署前，请先确保已经有云主机且安装成功部署[Agent](../../../../../Developer-Tools/CodeDeploy/Operation-Guide/Install-Agent.md)。
+使用云部署前，请先确保已经有云主机且安装成功部署[Agent](../../../../Developer-Tools/CodeDeploy/Operation-Guide/Install-Agent.md)。
 
 
-为了成功访问部署应用，建议给云主机分配[绑定公网IP](../../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Network/Associate-Elastic-IP.md)。
+为了成功访问部署应用，建议给云主机[绑定公网IP](../../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Network/Associate-Elastic-IP.md)。
 
 在“部署应用”页，指定与云主机、对象存储相同的地域后，点击“新建应用”，
 
@@ -108,10 +108,26 @@
 -  部署应用：选择云部署中创建的部署任务，如cd-demo
 -  部署组：选择云部署中创建的部署组
 -  部署命令：提供部署命令，选择 输入部署操作命令，在yaml中贴如下命令：
- 
+
+ ```
+ files:
+  - source: /
+    destination: /home/demo
+hooks:
+  ApplicationStart:
+    - location: /home/demo/bin/start.sh
+      timeout: 10
+      runas: root
+permisssions: {}
+env: {}
+ ```
 
 -  手工确认：如选择手工确认，该操作会在用户点击确认后继续执行。
  
  
-保存并发布。 发布成功可以通过浏览器访问发布的应用。
+保存并发布。 
+
+发布成功，以公网IP：8080访问发布的应用，效果如下：
+
+ ![](/image/codepipeline/success.PNG)
 
