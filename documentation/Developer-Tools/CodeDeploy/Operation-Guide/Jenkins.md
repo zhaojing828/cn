@@ -4,7 +4,7 @@
 
 在Jenkins中，支持通过上传插件的方式，来安装云部署插件。
 
-用户可先将插件下载到本地，下载地址为：https://jdcloud-codedeploy.oss.cn-north-1.jcloudcs.com/codedeploy-plugin.hpi
+用户可先将插件下载到本地，下载地址为：https://jdcloud-codedeploy.oss.cn-north-1.jcloudcs.com/jdcloud-codedeploy.hpi
 
 之后，点击Jenkins插件管理中的“高级”，在“上传插件”中，点击“选择文件”，选择已下载的插件，进行安装。
 
