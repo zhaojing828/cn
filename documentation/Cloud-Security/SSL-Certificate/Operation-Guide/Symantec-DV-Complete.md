@@ -41,11 +41,8 @@
   
 - 配置检测
   - HTTP配置检测链接：http://您的域名/.well-known/pki-validation/fileauth.txt 
-  - HTTPS配置检测链接：https://您的域名/.well-known/pki-validation/fileauth.txt
 
 请确保您的主机服务商没有屏蔽国外访问。如已屏蔽，请联系主机服务商。
-
-有些CA厂商会优先检测HTTPS地址，如果开启HTTPS协议一定要保证正确配置了证书，否则不要开启HTTPS。
 
 配置好之后，请用浏览器访问地址是否正常输出内容。
 
@@ -54,8 +51,3 @@
 - 内容看起来正确，但并不正确，原因是里面包含了HTML元素；
 - 原始地址发生了跳转；
 - 内容已经过期。
-
-4、验证完成后，请查看[证书下载](Download-SSL-Certification.md)页面,下载证书。由于网络以及证书厂商等原因，证书可能无法立刻下载，请稍后重试即可。
-
-# 相关参考
-- [证书下载](Download-SSL-Certification.md)
