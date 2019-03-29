@@ -111,7 +111,7 @@ items:
          href: Vpc-Slb/startSlb.md
        - name: startSlbListener
          href: Vpc-Slb/startSlbListener.md
-       - name: stopSlb.md
+       - name: stopSlb
          href: Vpc-Slb/stopSlb.md
        - name: stopSlbListener
          href: Vpc-Slb/stopSlbListener.md
