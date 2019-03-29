@@ -1,27 +1,32 @@
-# closeLiveRestart
+# checkDomainIcp
 
 
 ## 描述
-关闭回看
+校验域名是否备案
 
 ## 请求方式
-PUT
+GET
 
 ## 请求地址
-https://live.jdcloud-api.com/v1/liveRestart:close
+https://live.jdcloud-api.com/v1/domains:check
 
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**restartDomain**|String|True| |回看的播放域名|
+|**domain**|String|True| |域名|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String|requestId|
+|**result**|Result| |
+|**requestId**|String|ruquestId|
 
+### Result
+|名称|类型|描述|
+|---|---|---|
+|**icpStatus**|Boolean|备案状态|
 
 ## 返回码
 |返回码|描述|
