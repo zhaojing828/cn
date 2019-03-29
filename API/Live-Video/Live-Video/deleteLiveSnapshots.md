@@ -1,22 +1,21 @@
-# addLiveRestartDomain
+# deleteLiveSnapshots
 
 
 ## 描述
-添加回看域名
+删除截图
 
 
 ## 请求方式
-PUT
+DELETE
 
 ## 请求地址
-https://live.jdcloud-api.com/v1/domains:restart
+https://live.jdcloud-api.com/v1/snapshots
 
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**playDomain**|String|True| |直播的播放域名<br>- 回看域名所对应的原播放域名,新建的回看域名将绑定到此播放域名下<br>|
-|**restartDomain**|String|True| |直播回看域名<br>- 直播域名必须已经备案完成<br>|
+|**imgIds**|String|True| |需要删除的截图ID，多个时以逗号（,）分隔<br>|
 
 
 ## 返回参数
@@ -36,16 +35,10 @@ https://live.jdcloud-api.com/v1/domains:restart
 |**503**|Service unavailable|
 
 ## 请求示例
-PUT
+DELETE
 ```
-https://live.jdcloud-api.com/v1/domains:restart
+https://live.jdcloud-api.com/v1/snapshots?imgIds=aaa,bbb,ccc
 
-```
-```
-{
-    "playDomain": "play.yourdomain.com", 
-    "restartDomain": "restart.yourdomain.com"
-}
 ```
 
 ## 返回示例
