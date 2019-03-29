@@ -25,8 +25,6 @@
 - 打包路径：工作空间中的指定目录，为符合云部署规范，请确保jdcloud-codedeploy.yml文件在该目录顶部
 - 包含文件：工作空间中的包含文件
 - 排除文件：工作空间中的排除文件
-- 代理主机：代理主机DNS
-- 代理端口：代理主机端口
 - AccessKey：用于发起部署任务的京东云Access and Secret Key
 - SecretKey：用于发起部署任务的京东云Access and Secret Key
 - 触发部署：是否自动触发云部署，来部署最新编译的结果
