@@ -26,5 +26,5 @@
 6、支付完成后，需要进入[申购管理](https://certificate-console.jdcloud.com/jsecssl/orderlist)页面补全证书信息。
 
 # 相关参考
-- [Symantec证书申购管理](Symantec-DV-Complete.md)
-- [GeoTrust证书申购管理](GeoTrust-OEV-Complete.md)
+- [Symantec DV单域名证书补全信息](Symantec-DV-Complete.md)
+- [GeoTrust OV/EV 证书补全信息](GeoTrust-OEV-Complete.md)
