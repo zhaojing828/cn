@@ -7,7 +7,7 @@
 ### 语法
 ```
 GET /?replication HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> 
 ```
@@ -34,7 +34,7 @@ NoSuchReplicationConfiguration|The replication configuration does not exist.|404
 ### 请求示例
 ```
 GET /?replication HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 10 Feb 2015 00:17:21 GMT
 Authorization: <authorization string>
 ```
