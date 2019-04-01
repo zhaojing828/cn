@@ -7,7 +7,7 @@
 ### 语法
 ```
 DELETE / HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -30,7 +30,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 该请求删除名为"oss-example"的bucket。
 ```
 DELETE / HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: oss-example.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 01 Mar  2006 12:00:00 GMT
 Authorization: <authorization string>
 ```
