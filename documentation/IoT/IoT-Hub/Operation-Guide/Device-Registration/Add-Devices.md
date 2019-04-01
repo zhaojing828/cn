@@ -30,4 +30,6 @@
 	
 
 ## 相关参考
+- [设计物模型] (../../../Best-Practices/Design-OM)
 - [计费规则](../Pricing/Billing-Rules.md)
+
