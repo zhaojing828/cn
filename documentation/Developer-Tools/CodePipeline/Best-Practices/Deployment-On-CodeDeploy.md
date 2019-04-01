@@ -82,13 +82,14 @@
 
   阶段名默认为 源代码，添加源代码子操作。原子操作中选择京东云-代码托管，选择示例代码JDCloud-Codebuild/hello-java。
   
-     ![](/image/codepipeline/source-best2.PNG)
+   ![](/image/codepipeline/source-best2.PNG)
+
 
 3. 配置构建。
 
   阶段名默认为 构建阶段，添加构建操作。   
   
-     ![](/image/codepipeline/build-best2.PNG)
+   ![](/image/codepipeline/build-best2.PNG)
 
 -  操作名称：构建操作
 -  操作类型：构建
@@ -104,9 +105,10 @@
  阶段名默认为 部署阶段，添加部署操作。 
  
  
-        ![](/image/codepipeline/deploy-best2.PNG)
+   ![](/image/codepipeline/deploy-best2.PNG)
+        
       
-       ![](/image/codepipeline/deploy-best2.1.PNG)
+   ![](/image/codepipeline/deploy-best2.1.PNG)
        
       
 -  操作名称：部署操作
