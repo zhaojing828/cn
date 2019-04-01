@@ -10,7 +10,7 @@
 ### 语法
 ```
 PUT /?lifecycle HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: length
 Date: date
 Authorization: authorization string
@@ -51,7 +51,7 @@ Expiration|指定何时对Object执行过期删除操作。<br>类型：Containe
 ### 请求示例
 ```
 PUT /?lifecycle HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: length
 Date: date
 Authorization: authorization string
