@@ -50,7 +50,7 @@
 
 应用名称：cd-demo
 
-     ![](/image/codepipeline/cre-deploy.PNG)
+   ![](/image/codepipeline/cre-deploy.PNG)
 
 点击"新建"按钮。
 
@@ -65,7 +65,7 @@
 - 高级选项：保持默认选项，详见操作指南
 
 
-      ![](/image/codepipeline/cd-demo-group.PNG)
+    ![](/image/codepipeline/cd-demo-group.PNG)
      
 
 填写部署组的基本信息后，请点击“新建”，完成部署应用的准备。
