@@ -5,7 +5,7 @@
 
 ## 请求
 ### 语法
-```
+```HTTP
 GET /?uploads HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <Date>
@@ -50,14 +50,14 @@ CommonPrefixes.Prefix|如果请求中不包含Prefix参数，则此元素仅显�
 
 ## 示例
 ### 请求示例
-```
+```HTTP
 GET /?uploads&max-uploads=3 HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Mon, 1 Nov 2010 20:34:56 GMT
 Authorization: <authorization string>
 ```
 ### 响应示例
-```
+```HTTP
 HTTP/1.1 200 OK
 x-amz-request-id: 656c76696e6727732072657175657374
 Date: Mon, 1 Nov 2010 20:34:56 GMT
