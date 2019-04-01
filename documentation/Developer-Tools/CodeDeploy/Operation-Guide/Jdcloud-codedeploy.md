@@ -147,12 +147,12 @@ runas：
 
 | 环境变量      |   解释 |
 | :--------: | :--------:|
-|  JDCLOUD_APP_ID | 应用ID，可在部署应用页面查看 |
-| JDCLOUD_APP_NAME | 应用名称，可在部署应用页面查看 |
-| JDCLOUD_GROUP_ID | 部署组ID，可在应用详情页查看 |
-| JDCLOUD_GROUP_NAME | 部署组名称，可在应用详情页查看 |
-| JDCLOUD_DEPLOY_ID | 部署任务ID，可在部署历史页查看 |
-| JDCLOUD_LIFECYCLE_EVENT | 工作流关键字 |
+|  JDCLOUD_CODEDEPLOY_APP_ID | 应用ID，可在部署应用页面查看 |
+| JDCLOUD_CODEDEPLOY_APP_NAME | 应用名称，可在部署应用页面查看 |
+| JDCLOUD_CODEDEPLOY_GROUP_ID | 部署组ID，可在应用详情页查看 |
+| JDCLOUD_CODEDEPLOY_GROUP_NAME | 部署组名称，可在应用详情页查看 |
+| JDCLOUD_CODEDEPLOY_DEPLOY_ID | 部署任务ID，可在部署历史页查看 |
+| JDCLOUD_CODEDEPLOY_LIFECYCLE_EVENT | 工作流关键字 |
 
 
 **示例**
