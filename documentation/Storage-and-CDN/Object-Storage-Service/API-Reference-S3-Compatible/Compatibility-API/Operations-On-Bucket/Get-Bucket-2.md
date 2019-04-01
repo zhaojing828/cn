@@ -10,7 +10,7 @@
 ### 语法
 ```
 GET /?list-type=2 HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -68,7 +68,7 @@ StartAfter| 请求中包含此元素，则响应中也包含此元素。<br>Type
 #### 请求示例
 ```
 GET /?list-type=2 HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 x-amz-date: 20160430T233541Z
 Authorization: <authorization string>
 Content-Type: text/plain
@@ -107,7 +107,7 @@ Server: JDCloudOSS
 #### 请求示例
 ```
 GET /?list-type=2&max-keys=3&prefix=E&start-after=ExampleGuide.pdf HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 x-amz-date: 20160430T232933Z
 Authorization: <authorization string>
 ```
@@ -149,7 +149,7 @@ photos/2006/February/sample4.jpg<br>
 **以下示例指定delimiter值为"/"：**
 ```
 GET /?list-type=2&delimiter=/ HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com 
 x-amz-date: 20160430T235931Z
 Authorization: <authorization string>			
 ```
@@ -178,7 +178,7 @@ sample.jpg不包含delimiter字符，所以OSS将它返回到Contents元素中�
 **以下示例指定delimiter值为"/"，prefix值为"photos/2006/"**
 ```
 GET /?list-type=2&prefix=photos/2006/&delimiter=/ HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 x-amz-date: 20160501T000433Z
 Authorization: <authorization string>
 ```
@@ -212,7 +212,7 @@ Authorization: <authorization string>
 在这个示例中，初次请求返回object数量超过1000个。在响应中，OSS返回了值为true的IsTruncated元素以及NextContinuationToken元素。
 ```
 GET /?list-type=2 HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Mon, 02 May 2016 23:17:07 GMT
 Authorization: <authorization string>
 ```
@@ -247,10 +247,8 @@ Server: JDCloudOSS
 
 如下随后的请求中，我们加入了continuation-token作为请求参数，并将之前返回的<NextContinuationToken> 作为该参数值。
 ```
-GET /?list-type=2 HTTP/1.1
 GET /?list-type=2&continuation-token=1ueGcxLPRx1Tr/XYExHnhbYLgveDs2J/wm36Hy4vbOwM= HTTP/1.1
-
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Mon, 02 May 2016 23:17:07 GMT
 Authorization: <authorization string>  
 ```
