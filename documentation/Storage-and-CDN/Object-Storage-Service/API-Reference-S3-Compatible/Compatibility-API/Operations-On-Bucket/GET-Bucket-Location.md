@@ -8,7 +8,7 @@
 
 ### 语法
 
-```
+```HTTP
 GET /?location HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: date
@@ -49,7 +49,7 @@ LocationConstraint|Bucket所在的区域。<br>Type: String<br>Valid Values: hua
 ## 示例
 ### 请求示例
 
-```
+```HTTP
 GET /?location HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 09 Oct 2007 20:26:04 +0000
@@ -58,7 +58,7 @@ Authorization: signatureValue
 
 ### 响应示例
 
-```
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <LocationConstraint>huabei</LocationConstraint>
 ```
