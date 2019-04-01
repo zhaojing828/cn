@@ -13,7 +13,7 @@ OSS支持[回调通知](https://docs.jdcloud.com/cn/object-storage-service/callb
 ### 语法
 ```
 PUT /?notification HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version 4))
 
@@ -85,7 +85,7 @@ HTTP 403 Forbidden|AccessDenied|您不是该Bucket的拥有者
 ### 请求示例
 ```
 PUT /?notification HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> 
 
