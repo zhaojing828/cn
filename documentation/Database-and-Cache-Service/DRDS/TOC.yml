@@ -72,6 +72,5 @@
     items:
     - name: FAQ
       href: FAQ/FAQ.md
-    - name: 使用限制
-      href: FAQ/Restrictions.md   
+
   
