@@ -5,7 +5,7 @@
 ## 请求语法
  
 ```HTTP
-GET /?encryption  HTTP/1.1
+PUT /?encryption  HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 06 Sep 2018 12:00:00 GMT
 Authorization: authorization string  (使用签名版本4)
