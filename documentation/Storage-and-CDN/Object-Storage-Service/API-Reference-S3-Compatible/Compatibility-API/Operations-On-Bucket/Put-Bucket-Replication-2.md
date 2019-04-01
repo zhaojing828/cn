@@ -22,7 +22,7 @@ Replication configuration XML in the body
 
 名称|描述|必须
 ---|---|---
-Content-MD5|对128位MD5进行base64编码。该Header用来确定请求实体在传输中没有损坏。<br>Type: String<br>Default: None|是
+Content-MD5|该Header用来确定请求实体在传输中没有损坏。<br>Type: String<br>Default: None|是
 
 ### 请求实体
 可在请求实体中指定一个或多个复制规则。
