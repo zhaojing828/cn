@@ -21,6 +21,8 @@
 3.创建目录，如创建名为nfs的目录：
 
 `sudo mkdir nfs`
+Ubuntu系统运行如下命令：
+`mkdir nfs`
 
 ![mkdir](../../../../image/Cloud-File-Service/mkdir.png)
 
@@ -40,6 +42,10 @@ CentOS 7.3及以上版本运行以下命令：
 
 `sudo mount -t nfs 10.0.0.30:/ nfs`
 
+在Ubuntu系统的终端下，运行如下命令：
+
+`mount -t nfs 10.0.0.30:/ nfs`
+
 5.通过运行以下命令，验证是否挂载成功：
 
 `df -h`
@@ -52,7 +58,7 @@ CentOS 7.3及以上版本运行以下命令：
 
 1. 云文件服务暂不支持使用传输中的数据加密，即不支持使用以下命令挂载文件系统。
 
-sudo mount -t nfs -o tls 10.0.0.30:/ efs
+sudo mount -t nfs -o tls 10.0.0.30:/ nfs
 
 2. 挂载文件存储时，挂载选项的默认值如下，大多数情况下，请避免修改默认的参数值，以免对性能或稳定性造成影响：
 
