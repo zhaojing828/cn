@@ -6,7 +6,7 @@
  
 ```
 GET /eric-jdcloud/?encryption  HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 06 Sep 2018 12:00:00 GMT
 Authorization: authorization string  (使用签名版本4)
 Content-Length:  length 
@@ -64,7 +64,7 @@ default encryption configuration in the request body
 请求示例：
   ```
 PUT /?encryption HTTP/1.1
-Host: examplebucket.s3.amazonaws.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 06 Sep 2017 12:00:00 GMT
 Authorization: authorization string
 Content-Length: length
