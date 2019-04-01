@@ -7,7 +7,7 @@
 ### 语法
 ```
 DELETE /?cors HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -28,7 +28,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 ### 请求示例
 ```
 DELETE /?cors HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 13 Dec 2011 19:14:42 GMT
 Authorization: <authorization string>
 ```
