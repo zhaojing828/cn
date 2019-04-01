@@ -5,7 +5,7 @@
 
 ## 请求
 ### 语法
-```
+```HTTP
 DELETE /?replication HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
@@ -24,7 +24,7 @@ Authorization: <authorization string>
 
 ## 示例
 ### 请求示例
-```
+```HTTP
 DELETE /?replication HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 11 Feb 2015 05:37:16 GMT
@@ -33,7 +33,7 @@ Date: Wed, 11 Feb 2015 05:37:16 GMT
 Authorization: <authorization string> 
 ```
 ### 响应示例
-```
+```HTTP
 HTTP/1.1 204 No Content  
 x-amz-request-id: 656c76696e672example  
 Date: Wed, 11 Feb 2015 05:37:16 GMT
