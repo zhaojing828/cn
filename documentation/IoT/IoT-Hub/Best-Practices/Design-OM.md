@@ -36,7 +36,7 @@ Device Telemetry Data是设备上报的遥测数据，是一个测量值，不�
 而空调的温控器温度设置值是Device State Data，是可以被设备或者云端的应用修改。
 
 ## 物模型示例
-请参考附件 [OM示例](../../../../image/IoT/IoT-Hub/Sample-OM.json)
+请参考附件 [OM示例](../../../../image/IoT/IoT-Hub/TempHumiditySensor-OM.json)
 
 		请注意：
 		* 请按照附件的物模型示例在您的物模型文件中加入反斜杠转义字符，系统才能正确识别物模型；
