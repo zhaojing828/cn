@@ -7,7 +7,7 @@
 ### 语法
 ```
 PUT /?replication HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: <length>
 Date: <date>
 Authorization: <authorization string> 
@@ -74,7 +74,7 @@ HTTP 400|InvalidArgument|The AWS account specified in the <Account> element must
 ### 请求示例
 ```
 PUT /?replication HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 11 Feb 2015 02:11:21 GMT
 Content-MD5: q6yJDlIkcBaGGfb3QLY69A==
 Authorization: <authorization string>
