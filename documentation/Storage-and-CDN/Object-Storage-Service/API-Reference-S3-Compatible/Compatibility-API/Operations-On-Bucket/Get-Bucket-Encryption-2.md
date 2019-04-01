@@ -6,7 +6,7 @@
  
 ```
 GET /eric-jdcloud/?encryption  HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 06 Sep 2018 12:00:00 GMT
 Authorization: authorization string  (使用签名版本4)
 Content-Length:  0
