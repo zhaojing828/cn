@@ -43,10 +43,4 @@
 7. 支付流程流程完成后，页面会自动跳转到 物联网中心服务 “实例列表”页面，等待实例创建完成，您可以在“实例列表”页面查看新创建的 物联网中心服务 实例。
 
 ## 相关参考
-
-- [设置白名单](Set-Whitelist.md)
-- [连接实例](Connect-Instance.md)
-- [修改密码](../Operation-Guide/Account-Management/Reset-Password.md)
-- [导入数据](Import-Data.md)
-- [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
 - [计费规则](../Pricing/Billing-Rules.md)

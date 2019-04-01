@@ -14,7 +14,7 @@
 
 4.购买的具体操作，请参考[创建实例](../Getting-Started/Create-Instance.md)。
 
-## 入口2：[物联网中心 控制台](https://iot-console.jdcloud.com/)
+## 入口2：[物联网中心 控制台](https://iot-console.jdcloud.com/iothub)
 
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“控制台”，具体见下图。
@@ -22,3 +22,6 @@
 ![控制台](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/console-buy.png)
 
 3.登录控制台，具体操作请参考[创建实例](../Getting-Started/Create-Instance.md)。
+
+		请注意：
+		* 公测期间购买物联网中心服务需要提交申请。
