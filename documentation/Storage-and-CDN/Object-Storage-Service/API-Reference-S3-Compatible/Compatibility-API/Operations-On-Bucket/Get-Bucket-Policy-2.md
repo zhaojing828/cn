@@ -6,7 +6,7 @@
 ### 语法
 ```
 GET /?policy HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -27,7 +27,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 ### 请求示例
 ```
 GET ?policy HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 28 Oct 2009 22:32:00 GMT
 Authorization: <authorization string>
 ```
