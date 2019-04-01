@@ -9,8 +9,8 @@
 ### 语法
 ```xml
 PUT /?acl HTTP/1.1
-x-amz-acl：Permission
-Host: <bucket>.s3.<region>.jcloudcs.com 
+x-amz-acl：<Permission>
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 
@@ -36,7 +36,7 @@ x-amz-acl|指定固定ACL设置Bucket的ACL。<br>Type: String<br>Valid Values: 
 ```xml
 PUT /?acl HTTP/1.1
 x-amz-acl：public-read
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 
