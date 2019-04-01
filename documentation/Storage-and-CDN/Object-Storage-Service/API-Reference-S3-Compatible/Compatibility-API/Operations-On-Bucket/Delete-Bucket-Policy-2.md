@@ -7,7 +7,7 @@
 ### 语法
 ```
 DELETE /?policy HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -28,7 +28,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 ### 请求示例
 ```
 DELETE /?policy HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 04 Apr 2010 20:34:56 GMT  
 Authorization: <authorization string>
 ```
