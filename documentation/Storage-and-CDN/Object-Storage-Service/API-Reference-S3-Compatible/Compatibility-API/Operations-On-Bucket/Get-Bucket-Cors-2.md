@@ -7,7 +7,7 @@
 ### 语法
 ```
 GET /?cors HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -38,7 +38,7 @@ ExposeHeader|暴露给浏览器的header列表，即用户从应用程序中访�
 ### 请求示例
 ```
 GET /?cors HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 13 Dec 2011 19:14:42 GMT
 Authorization: <authorization string>
 ```
