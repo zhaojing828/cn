@@ -5,7 +5,7 @@
 
 ## 请求
 ### 语法
-```
+```HTTP
 DELETE /?website HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
@@ -27,7 +27,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 
 ## 示例
 ### 请求示例
-```
+```HTTP
 DELETE ?website HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Thu, 27 Jan 2011 12:00:00 GMT
@@ -35,7 +35,7 @@ Authorization: <authorization string>
 ```
 
 ### 响应示例
-```
+```HTTP
 HTTP/1.1 204 No Content
 x-amz-request-id: AF1DD829D3B49707
 Date: Thu, 03 Feb 2011 22:10:26 GMT
