@@ -1,6 +1,6 @@
 ## 新建应用
 
-在“部署应用”页，指定地域后，点击“新建应用”，
+在“应用列表”页，指定地域后，点击“新建应用”，
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-1%EF%BC%88Ch%EF%BC%89.png)
 

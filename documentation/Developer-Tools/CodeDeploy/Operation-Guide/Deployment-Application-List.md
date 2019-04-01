@@ -1,6 +1,6 @@
-## 部署应用列表
+## 应用列表
 
-在“部署应用”页，可查看指定地域内的应用列表，
+在“应用列表”页，可查看指定地域内的应用列表，
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Oper-1%EF%BC%88Ch%EF%BC%89.png)
 
