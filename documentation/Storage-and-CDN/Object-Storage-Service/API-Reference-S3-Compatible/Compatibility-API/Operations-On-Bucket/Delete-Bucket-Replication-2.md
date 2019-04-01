@@ -7,7 +7,7 @@
 ### 语法
 ```
 DELETE /?replication HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> 
 ```
@@ -26,7 +26,7 @@ Authorization: <authorization string>
 ### 请求示例
 ```
 DELETE /?replication HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 11 Feb 2015 05:37:16 GMT
 20150211T171320Z
 
