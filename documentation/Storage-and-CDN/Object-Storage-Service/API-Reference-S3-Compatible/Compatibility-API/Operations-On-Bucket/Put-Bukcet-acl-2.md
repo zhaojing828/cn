@@ -7,7 +7,7 @@
 
 ## 请求
 ### 语法
-```xml
+```HTTP
 PUT /?acl HTTP/1.1
 x-amz-acl：<Permission>
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
@@ -33,7 +33,7 @@ x-amz-acl|指定固定ACL设置Bucket的ACL。<br>Type: String<br>Valid Values: 
 
 
 ### 请求示例
-```xml
+```HTTP
 PUT /?acl HTTP/1.1
 x-amz-acl：public-read
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
@@ -43,7 +43,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 ```
 ### 响应示例
 
-```xml
+```HTTP
 HTTP/1.1 200 OK
 x-amz-request-id: 656c76696e672SAMPLE5657374  
 Date: Tue, 04 Apr 2017 20:34:56 GMT  
