@@ -49,7 +49,7 @@ CORSRule包括以下附加可选参数：
 ### 语法
 ```
 PUT /?cors HTTP/1.1
-Host: <Bucket>.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: <length>
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
@@ -108,7 +108,7 @@ ExposeHeader|暴露给浏览器的header列表，即用户从应用程序中访�
 ### 请求示例
 ```
 PUT /?cors HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 x-amz-date: Tue, 21 Aug 2012 17:54:50 GMT
 Content-MD5: 8dYiLewFWZyGgV2Q5FNI4W==
 Authorization: authorization string
