@@ -5,7 +5,7 @@
 
 ## 请求
 ### 语法
-```
+```HTTP
 GET /?cors HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
@@ -36,7 +36,7 @@ ExposeHeader|暴露给浏览器的header列表，即用户从应用程序中访�
 
 ## 示例
 ### 请求示例
-```
+```HTTP
 GET /?cors HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 13 Dec 2011 19:14:42 GMT
@@ -44,7 +44,7 @@ Authorization: <authorization string>
 ```
 
 ### 响应示例
-```
+```HTTP
 HTTP/1.1 200 OK
 x-amz-request-id: 0CF038E9BCF63097
 Date: Tue, 13 Dec 2011 19:14:42 GMT
