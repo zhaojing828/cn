@@ -19,11 +19,5 @@
 4. 点击取消，取消删除实例。
 
 ## 相关参考
-
-- [设置白名单](Set-Whitelist.md)
-- [连接实例](Connect-Instance.md)
-- [修改密码](../Operation-Guide/Account-Management/Reset-Password.md)
-- [导入数据](Import-Data.md)
-- [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
 - [计费规则](../Pricing/Billing-Rules.md)
 
