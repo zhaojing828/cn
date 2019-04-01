@@ -30,7 +30,7 @@
 -  代码源：京东云-代码托管
 -  代码库：选择示例代码，JDCloud-Codebuild/hello-java
 -  分支：master
--  构建命令：使用源代码根目录下的build.yml
+-  构建命令：使用源代码根目录下的jdcloud-build.yml
 -  构建类型：应用包
 -  存储空间：请选择已有的对象存储空间
 -  文件夹名：选填，可以为空
@@ -40,7 +40,7 @@
 
 ### 在云部署中创建应用及部署组
 
-使用云部署前，请先确保已经有云主机且安装成功部署[Agent](../../../../Developer-Tools/CodeDeploy/Operation-Guide/Install-Agent.md)。
+使用云部署前，请先确保已经有云主机且安装成功部署[Agent](../../../CodeDeploy/Operation-Guide/Install-Agent.md)。
 
 
 为了成功访问部署应用，建议给云主机[绑定公网IP](../../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Network/Associate-Elastic-IP.md)。
@@ -123,7 +123,7 @@
     destination: /home/demo
 hooks:
   ApplicationStart:
-    - location: /home/demo/bin/start.sh
+    - command: /home/demo/bin/start.sh
       timeout: 10
       runas: root
 permisssions: {}
