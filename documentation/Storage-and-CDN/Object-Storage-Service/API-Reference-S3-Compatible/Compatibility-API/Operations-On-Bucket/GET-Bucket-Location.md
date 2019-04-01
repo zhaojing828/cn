@@ -10,7 +10,7 @@
 
 ```
 GET /?location HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: date
 Authorization: authorization string (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -51,7 +51,7 @@ LocationConstraint|Bucket所在的区域。<br>Type: String<br>Valid Values: hua
 
 ```
 GET /?location HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Tue, 09 Oct 2007 20:26:04 +0000
 Authorization: signatureValue
 ```
