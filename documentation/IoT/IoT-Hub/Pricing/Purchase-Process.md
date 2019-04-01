@@ -12,7 +12,7 @@
 
 ![MongoDB-buy](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/product-buy.png)
 
-4.购买的具体操作，请参考[创建实例](/../Getting-Started/Create-Instance.md)。
+4.购买的具体操作，请参考[创建实例](../Getting-Started/Create-Instance.md)。
 
 ## 入口2：[物联网中心 控制台](https://iot-console.jdcloud.com/)
 
@@ -21,4 +21,4 @@
 
 ![控制台](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/console-buy.png)
 
-3.登录控制台，具体操作请参考[创建实例](/../Getting-Started/Create-Instance.md)。
+3.登录控制台，具体操作请参考[创建实例](../Getting-Started/Create-Instance.md)。
