@@ -4,7 +4,7 @@
 该操作可设置指定Bucket的policy，仅Bukcet的Owner可操作。更多Bucket Policy相关信息，请访问[基于Bucket Policy的权限控制](../../../Operation-Guide/Access-Control/Access-Control-Base-On-Bucket-Policy.md)。
 ## 请求
 ### 语法
-```
+```HTTP
 PUT /?policy HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: <date>
@@ -35,7 +35,7 @@ Condition|该规则生成的条件，是JSON对象，目前只支持Referer和So
 
 ## 示例
 ### 请求示例
-```
+```HTTP
 PUT /?policy HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com 
 Date: Tue, 04 Apr 2010 20:34:56 GMT  
@@ -60,7 +60,7 @@ Authorization: <authorization string>
 ```
 
 ### 响应示例
-```
+```HTTP
 HTTP/1.1 200 OK  
 x-amz-request-id: 656c76696e6727732SAMPLE7374  
 Date: Tue, 04 Apr 2010 20:34:56 GMT  
