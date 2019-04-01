@@ -4,8 +4,8 @@
  
 ## 请求语法
  
-```
-DELETE /eric-jdcloud/?encryption HTTP/1.1
+```HTTP
+DELETE /?encryption HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 06 Sep 2018 12:00:00 GMT
 Authorization: authorization string  (使用签名版本4)
@@ -33,8 +33,8 @@ Authorization: authorization string  (使用签名版本4)
 
   请求示例：
   
-```
-DELETE /eric-jdcloud/?encryption HTTP/1.1
+```HTTP
+DELETE /?encryption HTTP/1.1
 Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Date: Wed, 06 Sep 2018 12:00:00 GMT
 Authorization: signatureValue   (使用签名版本4)
@@ -43,7 +43,7 @@ Authorization: signatureValue   (使用签名版本4)
 
 响应示例：
   
-```
+```HTTP
 HTTP/1.1 200 OK
 Server: JDCloudOSS
 Date: Wed, 14 Nov 2018 03:48:31 GMT
