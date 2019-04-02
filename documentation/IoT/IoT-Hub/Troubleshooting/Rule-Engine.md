@@ -17,4 +17,4 @@ MongoDB 数据库在登录时需输入账号对应的鉴权库，如鉴权库未
 > mongodb://<username>:<password>@xxxx1.jdcloud.com:27017,xxxx2.jdcloud.com:27017/test?replicaSet=mgset-3937681456 
 
 ## 后续处理
-  如通过以上操作仍未解决问题，请 [提交工单](https://ticket.jdcloud.com/myorder/form?cateId=166&questionId=238) 或 致电客服 400-615-1212 。
+  如通过以上操作仍未解决问题，请致电客服 400-615-1212 。
