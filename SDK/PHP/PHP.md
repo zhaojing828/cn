@@ -53,7 +53,7 @@ use Jdcloud\Vm\VmClient;
 public function testCreateInstances()
 {
 	$vm = new VmClient([
-            'credentials'  => new Credentials('35DDDCFFB86CF2D494F0F3B6B0B3EF68', '93C107EF1F3A0C46C6329C04F561A29E'),
+            'credentials'  => new Credentials('XXXXXXXXX', 'XXXXXXXXX'),
             'version' => 'latest',
             'scheme' => 'https',
             'http'    => [
