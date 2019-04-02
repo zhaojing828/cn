@@ -40,7 +40,7 @@ items:
     - name: 加入通道 
       href: Getting-Started/add-into-channel.md
     - name: 开发链码 
-      href:Getting-Started/development-of-chain-code.md
+      href: Getting-Started/development-of-chain-code.md
     - name: 上传链码 
       href: Getting-Started/upload-chain-code.md     
     - name: 安装链码 
