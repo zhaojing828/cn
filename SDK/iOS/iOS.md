@@ -43,22 +43,22 @@
 * 以下为查询用户主机实例列表的调用实例，具体请查看项目Tests目录下的 `VmTest.swift`.
 
 ```swift
-        // 京东云官网 申请的 AccessKey 和 SecretAccessKey
-        let credentials = Credential(accessKeyId: "your jdcloud ak", secretAccessKey: "your jdcloud sk");
+// 京东云官网 申请的 AccessKey 和 SecretAccessKey
+let credentials = Credential(accessKeyId: "your jdcloud ak", secretAccessKey: "your jdcloud sk");
         
-        // 初始化调用业务线的客户端
-        let vmClient = VmJDCloudClient(credential: credentials)
+// 初始化调用业务线的客户端
+let vmClient = VmJDCloudClient(credential: credentials)
        
-        // 创建请求参数，具体的请求参数查看 OPEN API 调用文档
-        let describeInstancesRequest = DescribeInstancesRequest(regionId: "cn-north-1");
+// 创建请求参数，具体的请求参数查看 OPEN API 调用文档
+let describeInstancesRequest = DescribeInstancesRequest(regionId: "cn-north-1");
        
-        // 全局 debug 设定 打开后可以看到签名数据 方便调试
-        GlobalConfig.debug = true
+// 全局 debug 设定 打开后可以看到签名数据 方便调试
+GlobalConfig.debug = true
         
-        // 执行请求，因有异常抛出需要自行处理，如果返回结果中有 AnyObject 类型需要 自行使用 SwiftJson 等框架处理resultString ，而requestResponse 中不会包含AnyObject 类型的结果
-        try vmClient.describeInstancesAsync(request: describeInstancesRequest) { (statusCode, requestResponse, error,resultString) in
-            // 回调方法执行自己的业务逻辑
-            print(statusCode)
-            print(requestResponse)
-            print(error)
+// 执行请求，因有异常抛出需要自行处理，如果返回结果中有 AnyObject 类型需要 自行使用 SwiftJson 等框架处理resultString ，而requestResponse 中不会包含AnyObject 类型的结果
+try vmClient.describeInstancesAsync(request: describeInstancesRequest) { (statusCode, requestResponse, error,resultString) in
+// 回调方法执行自己的业务逻辑
+ print(statusCode)
+ print(requestResponse)
+ print(error)
 ```
