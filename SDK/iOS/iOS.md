@@ -58,7 +58,8 @@ GlobalConfig.debug = true
 // 执行请求，因有异常抛出需要自行处理，如果返回结果中有 AnyObject 类型需要 自行使用 SwiftJson 等框架处理resultString ，而requestResponse 中不会包含AnyObject 类型的结果
 try vmClient.describeInstancesAsync(request: describeInstancesRequest) { (statusCode, requestResponse, error,resultString) in
 // 回调方法执行自己的业务逻辑
- print(statusCode)
- print(requestResponse)
- print(error)
+  print(statusCode)
+  print(requestResponse)
+  print(error)
+}
 ```
