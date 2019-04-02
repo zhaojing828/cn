@@ -26,14 +26,14 @@
 
 然后使用Composer安装
 ```
-    php composer.phar install
+php composer.phar install
 ``` 
 或
 ```
-    composer install 
+composer install 
 ``` 
 
-您还可以下载sdk源代码自行使用，源代码地址为：[Php SDK](https://github.com/jdcloud-api/jdcloud-sdk-php)。
+您还可以下载sdk源代码自行使用，源代码地址为：[PHP SDK](https://github.com/jdcloud-api/jdcloud-sdk-php)。
 
  
 
