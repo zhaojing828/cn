@@ -39,6 +39,8 @@ items:
         href: Getting-Started/Delete-Object-1.md
       - name: 删除存储空间
         href: Getting-Started/Delete-Bucket-1.md
+      - name: 设置事件通知
+        href: Getting-Started/Event-Notifications-1.md 
  - name: 操作指南
    items:
       - name: 开通服务

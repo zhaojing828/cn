@@ -7,7 +7,7 @@
 #  操作
 
 由于android sdk用chunk 方式进行传输，并且把chunk-signature放置在body中，oss不支持这种case；sdk中支持的参数 S3ClientOptions.builder.disableChunkedEncoding在判断的时候并没有采用，因而需要更深层次的hack，需要继承AWSS3V4Signer.java并且覆盖原始的processRequestPayload（计算payload的签名并放在body的开头）和calculateContentHash（长度包含签名部分），代码如下：
-```
+```Java
 package com.amazonaws.demo.s3transferutility;
  import com.amazonaws.AmazonClientException;
  import com.amazonaws.Request;
@@ -81,7 +81,7 @@ package com.amazonaws.demo.s3transferutility;
 ```
 
 然后利用SignerFactory.registerSigner("JdAWSS3V4Signer", JdAWSS3V4Signer.class)替换标准签名，实现代码如下：
-```
+```Java
 SignerFactory.registerSigner("JdAWSS3V4Signer", JdAWSS3V4Signer.class);
  System.setProperty(SDKGlobalConfiguration.ENABLE_S3_SIGV4_SYSTEM_PROPERTY, "true");
  ClientConfiguration config = new ClientConfiguration();

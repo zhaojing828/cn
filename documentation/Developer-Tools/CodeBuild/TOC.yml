@@ -21,11 +21,11 @@
         href: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
-      - name: 新建项目
+      - name: 新建任务
         href: Getting-Started/Create-Project.md
       - name: 执行构建
         href: Getting-Started/Build.md
-      - name: 项目详情
+      - name: 任务详情
         href: Getting-Started/Detail.md
       - name: 构建历史
         href: Getting-Started/Build-History.md

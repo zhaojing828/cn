@@ -33,7 +33,9 @@
 ## 控制台：自定义域名 
 在OSS Bucket上传对象后，可获取对象的地址，包含两个部分：OSS域名地址+对象文件名，OSS 访问域名格式如下：
 
-```<BucketName>.<Endpoint>```
+```
+<BucketName>.<Endpoint>
+```
 [外网域名- endpoint ](../../API-Reference-S3-Compatible/Regions-And-Endpoints.md)
 
 

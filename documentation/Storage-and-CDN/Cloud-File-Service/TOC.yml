@@ -1,8 +1,8 @@
 name: 云文件服务
 href: 
 items:
-
  - name: 产品简介
+   href:
    items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
@@ -46,9 +46,9 @@ items:
         href: Operation-Guide/Deleting-File-System.md
  - name: 相关资源
    items:
-      -name: 京东云云文件服务公测试用协议
-       href: Related-Resources/Service-Agreement-For-Open-Test.md
-      -name: 京东云云文件服务服务协议
-       href: Related-Resources/Service-Agreement.md
-      -name: 文档历史记录
-       href: Related-Resources/Release-History.md       
+      - name: 京东云云文件服务公测试用协议
+        href: Related-Resources/Service-Agreement-For-Open-Test.md
+      - name: 京东云云文件服务服务协议
+        href: Related-Resources/Service-Agreement.md
+      - name: 文档历史记录
+        href: Related-Resources/Release-History.md       

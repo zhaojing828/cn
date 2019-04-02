@@ -26,7 +26,7 @@ items:
       - name: Redis实例类型API
         items:
           - name: describeInstanceClass
-            href: JCS-for-Redis-Instance-type-APIs/describeInstanceClass.md
+            href: JCS-for-Redis-Instance-Type-APIs/describeInstanceClass.md
       - name: Redis配额APIs
         items:
           - name: describeUserQuota
