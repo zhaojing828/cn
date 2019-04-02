@@ -48,7 +48,6 @@
 
 ![发布2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_2.png)
 
-至此，在API网关控制台的界面操作已经完成，接下来可以对API进行调用。
 
 ## 步骤二: 获取密钥-创建访问授权-绑定分组：
 
@@ -69,6 +68,8 @@
     ![创建授权1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAuth_1.png)
 
     ![创建授权2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAuth_2.png)
+    
+至此，在API网关控制台的界面操作已经完成，接下来可以对API进行调用。
     
 ## 步骤三:调用API
 1.	在调用时，请输入使用订阅密钥时必填的header名称：jdcloud-apim-subscription-key
