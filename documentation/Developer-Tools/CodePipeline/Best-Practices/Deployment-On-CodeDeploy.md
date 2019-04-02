@@ -40,7 +40,7 @@
 
 ### 在云部署中创建应用及部署组
 
-使用云部署前，请先确保已经有云主机且安装成功部署[Agent](../../../CodeDeploy/Operation-Guide/Install-Agent.md)。
+使用云部署前，请先确保已经有云主机且安装成功部署[Agent](../../../../CodeDeploy/Operation-Guide/Install-Agent.md)。
 
 
 为了成功访问部署应用，建议给云主机[绑定公网IP](../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Network/Associate-Elastic-IP.md)。
