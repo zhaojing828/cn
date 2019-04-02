@@ -12,9 +12,9 @@
 
 4.在申请页面提交您的申请表单，如果申请通过审核，我们会为您开通控制台访问物联网中心服务的菜单。
 
-5. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
+5.登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 
-6. 选择“控制台”，具体见下图。
+6.选择“控制台”，具体见下图。
 
 ![控制台](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/console-buy.png)
 
