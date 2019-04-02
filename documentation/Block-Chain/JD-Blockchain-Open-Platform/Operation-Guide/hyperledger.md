@@ -2,7 +2,7 @@
 ## 一键部署
 一键部署列表页面如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image023.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image023.jpg)
  
 ## 查询网络
 搜索区域，输入“网络名称”，点击查询按钮，可模糊查询所有已创建的区块链网络信息。
@@ -10,7 +10,7 @@
 ## 新建网络
 点击一键部署按钮，进入“一键部署”页面，如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image029.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image029.jpg)
  
 (1) “基本信息”参数说明
 
@@ -32,7 +32,7 @@
 
 (3) “高级”--自定义参数
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image033.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image033.jpg)
  
 说明：若不展开“高级”项，则会按照默认设置部署网络；展开“高级”项会按自定义设置部署网络。
 注意： 展开“高级”选项，则必须上传链码。上传链码格式支持go以及zip后缀的文件。
@@ -50,17 +50,17 @@
 
 （4）高级--“自定义参数”
  
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image035.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image035.jpg)
 
 模拟一键部署网络，填写参数如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image037.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image037.jpg)
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image039.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image039.jpg)
  
 点击部署按钮，页面跳转到网络详情页，如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image043.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image043.jpg)
  
 部署状态变化：
 部署网络中->创建通道中->加入通道中-上传链码中->安装链码中->安装示例程序（如选）->网络创建成功
@@ -75,13 +75,13 @@
 
 ### 共识管理
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image045.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image045.jpg)
  
 Ordererer排序服务共识节点
 
 ### 通道管理
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image047.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image047.jpg)
  
 中间4块显示内容说明:
 组织成员:当前通道下的所有组织数量，因mychannel初始加入了2个组织，所以数量为2。
@@ -92,7 +92,7 @@ Ordererer排序服务共识节点
 （1）创建通道
 点击创建通道按钮，创建新channel，页面如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image051.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image051.jpg)
  
 说明：
 
@@ -104,26 +104,26 @@ Ordererer排序服务共识节点
 （2）加入通道
 创建通道成功后，点击加入通道按钮，选择组织、节点加入当前通道。页面如下所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image055.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image055.jpg)
  
 点击加入通道按钮前，需要先下拉选择要加入的“通道”；
 “加入通道”页面，通道不可修改；
 “加入通道”页面，下拉选择某一“组织”，自动获取“节点”信息。
 成功“加入通道”后，页面显示如下所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image059.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image059.jpg)
  
 （3）用户证书
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image061.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image061.jpg)
  
 供开发人员下载MSP证书，以供SDK使用。
 
 （4）节点日志
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image063.png)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image063.png)
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image065.png)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image065.png)
  
 开发人员可实时监控日志功能。
 
@@ -131,27 +131,27 @@ Ordererer排序服务共识节点
 仅支持k8s管理链码，才可以查看链码日志。
 4.链码管理
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image067.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image067.jpg)
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image069.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image069.jpg)
   
 （1）本地上传链码
 点击本地上传，弹出“上传链码”页面如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image073.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image073.jpg)
  
 点击上传，选择.go或.zip后缀的链码文件上传
 参数“链码名”必填，且链码名称只能是小写字母组成！
 参数“版本号”必填，且版本号格式:首末数字/字母，中间由[.或 _ 或-]分隔。如a.10_v-v1
 点击上传，返回到“链码管理”页面如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image078.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image078.jpg)
  
 用户也可在线编辑链码程序，点击上传按钮，可将编写的链码程序上传。
 （2）安装链码
 点击上传链接，弹出“安装链码”页面，如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image082.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image082.jpg)
  
 上述参数说明：
 
@@ -166,18 +166,18 @@ Ordererer排序服务共识节点
 
 安装成功后，在“通道管理”页面，即可看到新安装的链码信息，如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image084.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image084.jpg)
  
 5.应用程序
 “应用程序”页面如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image086.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image086.jpg)
  
 说明：
 一键部署网络时，“附加应用”两个参数“区块链浏览器”和“示例程序”，若勾选，则会在此处显示。
 
 ## 删除网络
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image088.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image088.jpg)
  
 初始进入超级账本页面时，删除按钮为不可用状态，当勾选某一或某些（批量）网络时，删除按钮为可用状态，可删除已勾选的网络。
