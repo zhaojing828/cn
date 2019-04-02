@@ -55,7 +55,7 @@
 
 3.样式名为Stylename的图片样式可通过如下URL访问：
 
-http://s3.cn-south-1.jdcloud-oss.com/bucket/object?x-oss-process=imgalias/Stylename
+http://s3.cn-north-1.jdcloud-oss.com/bucket/object?x-oss-process=imgalias/Stylename
 
 
 示例：
