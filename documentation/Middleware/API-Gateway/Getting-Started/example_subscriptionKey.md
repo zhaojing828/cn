@@ -1,111 +1,88 @@
-使用订阅密钥的方式构建API
+# 使用订阅密钥的方式构建API
+
+
+## 步骤一: 创建API分组-创建API-发布：
 
 以下过程将指导您完成在API网关控制台中创建API，使用订阅密钥的方式授权并进行API调用的过程。
-步骤一: 创建API分组-创建API-发布：
-1. 登录API网关控制台，打开API分组管理。
-2. 点击“创建分组“按钮。
 
 
+### 1. 登录API网关控制台，打开[API分组管理](https://apigateway-console.jdcloud.com/apiGroupList)。
 
-   
-   
-   
-在 API 网关控制台中根据示例创建一个 API 并进行测试
+### 2. 点击“创建分组”按钮
 
-以下过程将指导您完成在API网关控制台中创建API并通过SDK进行测试。
-创建API分组-创建API-发布：
-1. 登录API网关控制台，打开API分组管理。
-2. 点击创建分组。
+![创建分组](../../../../image/Internet-Middleware/API-Gateway/example_subkey_group.png)
 
-创建分组
-3. 跳转新建API分组页面后，填写API分组信息。
+### 3. 跳转新建API分组页面后，填写API分组信息。
 
-新建API分组
-4. 点击确定，提示创建成功，在弹出窗口中选择“管理API”，跳转到此分组的API列表界面。
+![新建API分组](../../../../image/Internet-Middleware/API-Gateway/example_subkey_group2.png)
 
-新建API分组成功
-5. 您可以通过以下两种方式部署API。
+### 4. 点击确定，提示创建成功，在弹出窗口中选择“管理API”，跳转到此分组的API列表界面。
 
-    新建API：点击新建API，配置API的“名称”、“子路径”、“查询参数”、“请求体格式”和“正常返回格式”后，点击确定.
+![新建API分组成功](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPIList_success.png)
 
-新建API1
+### 5. 您可以通过以下两种方式部署API。
 
-导入API2
+（1）新建API：点击“新建API”按钮，在详情页配置API的“名称”、“子路径”、“查询参数”、“请求体格式”和“正常返回格式”后，点击确定，由此成功新建一个API。如果需要生成SDK，则需要定义请求体格式和正常返回格式。如果不需要SDK，请求体格式和正常返回格式部分留空即可。
 
-导入API2
+![新建API1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPI_1.png)
 
-    导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（Yaml文件下载地址）
+![新建API2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPI_2.png)
 
-导入API
+（2）导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（[Yaml文件下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/PetStoreTest_Yaml.zip)）
 
-导入API2
-6. 部署完API后，您可以通过API的高级配置为每个API配置独立的后端地址。
+![导入API1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPI_3.png)
 
-API高级配置1
+![导入API2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPI_4.png)
 
-API高级配置1
+![导入API3](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPI_5.png)
 
-    后端服务配置： 勾选在发布分组时统一配置时，当前API将使用发布分组时配置的统一后端服务。
 
-    不勾选在发布分组时统一配置时，可为当前API后端服务进行单独的配置，服务类型如下：
-        HTTP/HTTPS：可为此API配置HTTP/HTTPS类型的后端地址；
-        Mock后端：可为此API配置API网关提供的Mock后端；
-        Function Service：函数（Function Service）是一项基于事件驱动的函数托管计算服务。如果无可用Function存在，您可以访问函数服务创建新的Function。
+### 6.	点击“版本修订列表”标签页，点击发布，配置好如下几项后，点击确定。
 
-7. 点击“版本修订列表”标签页，点击发布，配置好如下几项后，点击确定。
+- 发布版本：0.0.1；
+- 发布为：线上；
+- 后端服务：唯一后端；
+- 后端服务地址：http://petstore-demo-endpoint.execute-api.com 。
 
-    发布版本：0.0.1；
-    发布为：线上；
-    后端服务：唯一后端；
-    后端服务地址：http://petstore-demo-endpoint.execute-api.com 。
+![发布](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_1.png)
 
-发布
+![发布2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_2.png)
 
-发布2
-8. 发布成功后，点击“生成SDK和文档”，可下载JavaSDK、PythonSDK和API文档。
+至此，在API网关控制台的界面操作已经完成，接下来可以对API进行调用。
 
-生成SDK和文档
-获取密钥-创建访问授权-绑定分组：
-您可以通过两种方式获取密钥：
+## 步骤二: 获取密钥-创建访问授权-绑定分组：
 
-    通过API调用者方式创建访问授权
+1. 打开[订阅密钥](https://apigateway-console.jdcloud.com/subscriptionKey)，点击“创建密钥”按钮。
 
-        打开访问密钥，点击创建访问密钥。
+    ![创建订阅密钥1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createSubkey_1.png)
 
-        创建访问密钥
+2. 填写名称和描述（选填），点击确定。
 
-        填写名称和描述（选填），点击确定。
+    ![创建订阅密钥2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createSubkey_2.png)
 
-        创建访问密钥2
+3. 创建成功后，点击密钥名，查看该订阅密钥的详细信息，拷贝订阅密钥ID。
 
-        点击密钥名，查看此访问密钥的详细信息，拷贝访问密钥ID、APIKey和APISecret。
+    ![密钥详细信息](../../../../image/Internet-Middleware/example_subkey_createSubkey_3.png)
 
-        密钥详细信息
+4. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“订阅密钥”。您可从现有的订阅密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
 
-        打开访问授权，点击“创建授权”。
+    ![创建授权1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAuth_1.png)
 
-        创建授权
+    ![创建授权2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAuth_2.png)
+    
+## 步骤三:调用API
+1.	在调用时，请输入使用订阅密钥时必填的header名称：jdcloud-apim-subscription-key
+2.	在此，使用postman对API进行调用示例：在postman的Headers部分，在KEY位置输入jdcloud-apim-subscription-key，在VALUE位置输入订阅密钥的Key。
+3.	在GET请求部分填写API分组的访问路径与API的请求路径，对API进行调用。
 
-        选择授权类型为API调用者，填写用户标识（访问密钥的访问密钥ID）和描述（选填），点击确定。
+    ![调用API1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_1.png)
 
-        创建授权2
+    ![调用API2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_2.png)
+    
+    ![调用API3](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_3.png)
+    
+    ![调用API4](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_4.png)
 
-    通过京东云用户方式创建访问授权
+## 您可以通过[API网关监控](http://cms-console-north-2a-backup.jdcloud.com/monitor/apigateway)实时获取您的API调用情况：成功数、流量、响应时间、请求异常等信息以及设置异常情况报警。
 
-        打开Access Key管理，点击创建Access Key，手机验证通过后可获取Access Key ID和Access Key Secret。
 
-        Access Key管理
-
-        打开访问授权，点击“创建授权”。
-
-        创建授权
-
-        选择授权类型为京东云用户，填写用户标识（Access Key ID）和描述（选填），点击确定。
-
-        创建授权2
-
-点击“绑定”，将创建的PetStore分组移动到已绑定。
-
-绑定
-
-至此，在API网关控制台的界面操作已经完成，接下来可以通过SDK进行调用。
