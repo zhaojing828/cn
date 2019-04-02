@@ -16,6 +16,7 @@
 - 设备物模型
 	- [设计物模型](../Best-Practices/Design-OM.md)
 - 规则引擎
+	- [创建规则](../Operation-Guide/Rule-Engine/Add-Rules.md)
 
 
 ## 计费
