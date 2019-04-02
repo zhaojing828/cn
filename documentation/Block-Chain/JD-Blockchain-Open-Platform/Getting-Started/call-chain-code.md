@@ -24,22 +24,73 @@ BaaS平台在启动超级账本网络时，自动生成身份许可相关的证�
 
 表-超级账本连接参数表
 
-| 参数名                                               | 属性来源                                | 属性示例                                                                                         |
-|------------------------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------------------|
-| 超级账本界面（图-超级账本网络列表示例图）            |                                       |                                                                                                  |
-| 网络域名                                             | 网络列表中“网络域名”列                | k8s.3.cn                                                                                         |
-| 网络详情界面.共识管理页（图-超级账本共识信息示例图） |                                       |                                                                                                  |
-| Ordererer服务端口                                    | Ordererer列表中“Ports”列              | 32123                                                                                            |
-| 网络详情界面.通道管理页（图-超级账本通道信息示例图） |                                       |                                                                                                  |
-| Channel名                                            | 页面左上角下拉框                      | mychannel                                                                                        |
-| MSP标识                                              | 组织列表视图中“MSP标识”列             | jdMSP                                                                                            |
-| Peer背书服务端口                                     | 组织列表视图中“Ports”列中第一个端口   | 31093                                                                                            |
-| Peer事件服务端口                                     | 组织列表视图中“Ports”列中第二个端口   | 32511                                                                                            |
-| 下载MSP证书界面（图-下载MSP证书示例图）              |                                       |                                                                                                  |
-| 用户名                                               | 下载框中选中的用户名                  | User1                                                                                            |
-| MSP证书下载内容（图- MSP证书下载内容示例图）         |                                       |                                                                                                  |
-| 用户私钥文件                                         | keystore目录下key.pem文件             | msp/keystore/key.pem                                                                             |
-| 用户证书文件                                         | signcerts目录下的pem文件              | msp/signcerts/User1@org0.peer.baas.jd.com-cert.pem                                               |
+<table class="tg">
+  <tr>
+    <th class="tg-s268"><br>&nbsp;&nbsp;属性名称<br>&nbsp;&nbsp;</th>
+    <th class="tg-s268"><br>&nbsp;&nbsp;属性来源<br>&nbsp;&nbsp;</th>
+    <th class="tg-s268"><br>&nbsp;&nbsp;属性示例<br>&nbsp;&nbsp;</th>
+  </tr>
+  <tr>
+    <td class="tg-s268" colspan="3"><br>&nbsp;&nbsp;超级账本界面（图-超级账本网络列表示例图）<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><br>&nbsp;&nbsp;网络域名<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;网络列表中“网络域名”列<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;k8s.3.cn<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268" colspan="3"><br>&nbsp;&nbsp;网络详情界面.共识管理页（图-超级账本共识信息示例图）<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><br>&nbsp;&nbsp;Ordererer服务端口<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;Ordererer列表中“Ports”列<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;32123<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268" colspan="3"><br>&nbsp;&nbsp;网络详情界面.通道管理页（图-超级账本通道信息示例图）<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><br>&nbsp;&nbsp;Channel名<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;页面左上角下拉框<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;mychannel<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><br>&nbsp;&nbsp;MSP标识<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;组织列表视图中“MSP标识”列<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;jdMSP<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><br>&nbsp;&nbsp;Peer背书服务端口<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;组织列表视图中“Ports”列中第一个端口<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;31093<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><br>&nbsp;&nbsp;Peer事件服务端口<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;组织列表视图中“Ports”列中第二个端口<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;32511<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268" colspan="3"><br>&nbsp;&nbsp;下载MSP证书界面（图-下载MSP证书示例图）<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><br>&nbsp;&nbsp;用户名<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;下载框中选中的用户名<br>&nbsp;&nbsp;</td>
+    <td class="tg-s268"><br>&nbsp;&nbsp;User1<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-s268" colspan="3"><br>&nbsp;&nbsp;MSP证书下载内容（图- MSP证书下载内容示例图）<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;用户私钥文件<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;keystore目录下key.pem文件<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;msp/keystore/key.pem<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;用户证书文件<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;signcerts目录下的pem文件<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;msp/signcerts/User1@org0.peer.baas.jd.com-cert.pem<br>&nbsp;&nbsp;</td>
+  </tr>
+</table>
 
 表-超级账本连接参数来源表
 
