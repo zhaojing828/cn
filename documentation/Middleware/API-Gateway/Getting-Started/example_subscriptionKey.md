@@ -60,7 +60,7 @@
 
 3. 创建成功后，点击密钥名，查看该订阅密钥的详细信息，拷贝订阅密钥ID。
 
-    ![密钥详细信息](../../../../image/Internet-Middleware/example_subkey_createSubkey_3.png)
+    ![创建订阅密钥3](../../../../image/Internet-Middleware/example_subkey_createSubkey_3.png)
 
 4. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“订阅密钥”。您可从现有的订阅密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
 
