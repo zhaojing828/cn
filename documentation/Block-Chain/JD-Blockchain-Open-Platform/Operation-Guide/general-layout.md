@@ -1,7 +1,7 @@
 # 概览页面功能介绍
 概览页面如下图所示：
 
-![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image021.jpg)
+![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image021.jpg)
  
 上述仪表盘分别显示：CPU使用量、内存使用量和资源使用情况。
 
