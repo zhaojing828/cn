@@ -32,7 +32,7 @@ jdcloud_signer = "0.1"
 
 ### 使用范例
 
-```rust
+```Rust
 use jdcloud_signer::{Credential, Signer, Client};
 use http::Request;
 use serde_json::Value;
@@ -84,7 +84,7 @@ jdcloud_signer = { version = "0.1", default-features = false }
 
 ### 使用范例
 
-```rust
+```Rust
 use jdcloud_signer::{Credential, Signer};
 use http::Request;
 
