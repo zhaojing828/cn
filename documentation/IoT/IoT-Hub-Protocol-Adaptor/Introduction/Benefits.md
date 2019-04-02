@@ -18,9 +18,4 @@
 ## 相关参考
 
 - [产品概述](../Introduction/Product-Overview.md)
-- [产品规格](../Introduction/Specifications.md)
-- [价格总览](../Pricing/Price-Overview.md)
 - [创建实例](../Getting-Started/Create-Instance.md)
-- [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
-- [数据恢复](../Operation-Guide/Backup/Restore-Instance.md)
-- [设置报警规则](../Operation-Guide/Monitoring/Alarm-Rules.md)
