@@ -36,14 +36,14 @@ items:
 - name: 开发指南 
   items:
     - name: 一键部署 
-      items: Getting-Started/deployment.md
+      href: Getting-Started/deployment.md
     - name: 加入通道 
-      items: Getting-Started/add-into-channel.md
+      href: Getting-Started/add-into-channel.md
     - name: 开发链码 
-      items: Getting-Started/development-of-chain-code.md
+      href:Getting-Started/development-of-chain-code.md
     - name: 上传链码 
-      items: Getting-Started/upload-chain-code.md     
+      href: Getting-Started/upload-chain-code.md     
     - name: 安装链码 
-      items: Getting-Started/instal-chain-code.md
+      href: Getting-Started/instal-chain-code.md
     - name: 调用链码 
-      items: Getting-Started/call-chain-code.md
+      href: Getting-Started/call-chain-code.md
