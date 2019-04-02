@@ -6,5 +6,5 @@
 
 ## 相关参考
 
-- [物联网中心 服务计费规则](../../IoT-Hub/Billing-Rules.md)
-- [物联网中心 服务价格总览](../../IoT-Hub/Price-Overview.md)
+- [物联网中心 服务计费规则](../../IoT-Hub/Pricing/Billing-Rules.md)
+- [物联网中心 服务价格总览](../../IoT-Hub/Pricing/Price-Overview.md)
