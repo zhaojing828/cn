@@ -1,11 +1,11 @@
-# deleteStyleDelimiter
+# getStyleDelimiter
 
 
 ## 描述
-删除bucket的图片样式分隔符配置
+获取bucket的图片样式分隔符配置
 
 ## 请求方式
-DELETE
+GET
 
 ## 请求地址
 https://mps.jdcloud-api.com/v1/regions/{regionId}/buckets/{bucketName}/styleDelimiter/
@@ -22,8 +22,17 @@ https://mps.jdcloud-api.com/v1/regions/{regionId}/buckets/{bucketName}/styleDeli
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
+|**result**|Result| |
 |**requestId**|String| |
 
+### Result
+|名称|类型|描述|
+|---|---|---|
+|**styleDelimiterConf**|StyleDelimiterConf| |
+### StyleDelimiterConf
+|名称|类型|描述|
+|---|---|---|
+|**delimiters**|String[]|图片样式分隔符配置（JSON数组）；支持的分隔符包含：["-", "_", "/", "!"]|
 
 ## 返回码
 |返回码|描述|
