@@ -18,7 +18,7 @@
 
 ![控制台](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/console-buy.png)
 
-3.登录控制台，具体操作请参考[创建实例](../Getting-Started/Create-Instance.md)。
+7.登录控制台，具体操作请参考[创建实例](../Getting-Started/Create-Instance.md)。
 
 		请注意：
 		* 公测期间购买物联网中心服务需要提交申请。
