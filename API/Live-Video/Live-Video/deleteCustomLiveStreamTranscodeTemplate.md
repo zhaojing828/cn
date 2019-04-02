@@ -14,7 +14,7 @@ https://live.jdcloud-api.com/v1/transcodeCustoms/{template}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**template**|String|True| |转码模板
+|**template**|String|True| |转码模板|
 |
 
 ## 请求参数
