@@ -23,7 +23,7 @@ sudo apt-get install g++ cmake libssl-dev uuid-dev
 ### 使用方法
 1)	新建项目工程目录
 2)	编写cmake文件，参考Demo中的例子，引用头文件
-```
+```C++
 include_directories(${PROJECT_SOURCE_DIR}/h)
 include_directories(${PROJECT_SOURCE_DIR}/http)
 include_directories(${PROJECT_SOURCE_DIR}/util)
@@ -31,7 +31,7 @@ include_directories(${PROJECT_SOURCE_DIR}/util/crypto)
 include_directories(${PROJECT_SOURCE_DIR}/util/logging)
 ```
 3)	引用静态库
-```
+```C++
 link_libraries(${PROJECT_SOURCE_DIR}/libjdcloudsigner.a)
 link_libraries(ssl)
 link_libraries(crypto)
@@ -39,7 +39,7 @@ link_libraries(uuid)
 ```
 4)	参考Demo中的main.cpp，调用签名接口.详细请见"调用方法"小节。
 5)	编译链接
-```
+```C++
 cmake .
 make
 ```
@@ -47,7 +47,7 @@ make
 ## macOS
 ### 安装方法
 1)	安装cmake3.5以上版本
-```
+```C++
 brew install cmake
 ```
 2)	从GitHub下载Demo例子，地址为：https://github.com/jdcloud-api/jdcloud-sdk-cpp-signer
@@ -55,7 +55,7 @@ brew install cmake
 ### 使用方法
 1)	新建项目工程目录
 2)	编写cmake文件，参考Demo中的例子，引用头文件
-```
+```C++
 include_directories(${PROJECT_SOURCE_DIR}/h)
 include_directories(${PROJECT_SOURCE_DIR}/http)
 include_directories(${PROJECT_SOURCE_DIR}/util)
@@ -63,14 +63,14 @@ include_directories(${PROJECT_SOURCE_DIR}/util/crypto)
 include_directories(${PROJECT_SOURCE_DIR}/util/logging)
 ```
 3)	引用静态库（其中ssl库为mac系统自带，不用安装）
-```
+```C++
 link_libraries(${PROJECT_SOURCE_DIR}/libjdcloudsigner.a)
 link_libraries(ssl)
 link_libraries(crypto)
 ```
 4)	参考Demo中的main.cpp，调用签名接口。详细请见"调用方法"小节。
 5)	编译链接
-```
+```C++
 cmake .
 make
 ```
@@ -83,7 +83,7 @@ make
 ### 使用方法
 1)	新建项目工程目录
 2)	编写cmake文件，参考Demo中的例子，引用头文件
-```
+```C++
 include_directories(${PROJECT_SOURCE_DIR}/h)
 include_directories(${PROJECT_SOURCE_DIR}/http)
 include_directories(${PROJECT_SOURCE_DIR}/util)
@@ -91,7 +91,7 @@ include_directories(${PROJECT_SOURCE_DIR}/util/crypto)
 include_directories(${PROJECT_SOURCE_DIR}/util/logging)
 ```
 3)	引用静态库
-```
+```C++
 link_libraries(${PROJECT_SOURCE_DIR}/jdcloudsigner.lib)
 link_libraries(${PROJECT_SOURCE_DIR}/libeay32.lib)
 ```
@@ -99,7 +99,7 @@ link_libraries(${PROJECT_SOURCE_DIR}/libeay32.lib)
 5)	编译链接
 
 打开Visual Studio 开发人员命令提示符，执行
-```
+```C++
 cmake .
 devenv Demo.sln /build
 ```
@@ -107,7 +107,7 @@ devenv Demo.sln /build
 使用Visual Studio打开Demo.sln解决方案，编译。
 
 ## 调用方法
-```
+```C++
 // 引用头文件
 #include "Credential.h"
 #include "JdcloudSigner.h"
