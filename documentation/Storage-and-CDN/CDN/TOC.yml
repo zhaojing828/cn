@@ -17,8 +17,16 @@
         items:
           - name: 场景概述
             href: Introduction/Application-Scenarios/Overview.md
-          - name: 视频直播
-            href: Introduction/Application-Scenarios/living.md  
+          - name: 静态页面加速
+            href: Introduction/Application-Scenarios/Website-Acceleration.md 
+          - name: 下载加速
+            href: Introduction/Application-Scenarios/Download-Acceleration.md
+          - name: 视频点播加速
+            href: Introduction/Application-Scenarios/Video-Acceleration.md
+          - name: 视频直播加速
+            href: Introduction/Application-Scenarios/Live-Acceleration.md  
+          - name: CDN边缘计算
+            href: Introduction/Application-Scenarios/CDN-Edge-Computing.md
   - name: 产品定价
     items:
       - name: 计费概述
