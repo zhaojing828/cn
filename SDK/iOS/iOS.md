@@ -18,14 +18,14 @@
 * 使用 Cocoapods 进行包管理的请使用 `pod install` 命令进行安装 需要使用的框架，目标框架会自动引用
     例如：
 
-```shell
-    pod install {framework name}
+```Shell
+pod install {framework name}
 ```
 
 * 使用`swift package manage` 进行包管理的请将引用的包配置在自己的`Package.Swift` 的 `dependencies` 中
 
-```swift
-     dependencies: [
+```Swift
+dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/jdcloud-api/jdcloud-sdk-ios.git", from: "0.0.1"),
     ]
@@ -42,7 +42,7 @@
 
 * 以下为查询用户主机实例列表的调用实例，具体请查看项目Tests目录下的 `VmTest.swift`.
 
-```swift
+```Swift
 // 京东云官网 申请的 AccessKey 和 SecretAccessKey
 let credentials = Credential(accessKeyId: "your jdcloud ak", secretAccessKey: "your jdcloud sk");
         
