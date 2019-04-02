@@ -8,7 +8,7 @@
 
 3.弹出物联网中心服务的产品介绍页，点击**立即申请**。
 
-![Hub-buy](../../../../image/IoT-Hub/iothub-007.png)
+![Hub-buy](../../../../image/IoT/IoT-Hub/iothub-007.png)
 
 4.购买的具体操作，请参考[创建实例](../Getting-Started/Create-Instance.md)。
 
