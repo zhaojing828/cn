@@ -42,7 +42,7 @@
 ![添加采集配置](../../../../../image/Internet-Middleware/API-Gateway/Log_Service_logset_config3.png)
 ![添加采集配置](../../../../../image/Internet-Middleware/API-Gateway/Log_Service_logset_config4.png)
 
-###  第7步：返回至日志集管理中的日志主题列表页面，点击日志集ID/名称，点击“预览”按钮，即可查看到该日志主题之下最新的日志数据。若需要查询日志数据，可到[日志检索]模块(https://logs-console.jdcloud.com/search)查询。
+###  第7步：返回至日志集管理中的日志主题列表页面，点击日志集ID/名称，点击“预览”按钮，即可查看到该日志主题之下最新的日志数据。若需要查询日志数据，可到[日志检索](https://logs-console.jdcloud.com/search)查询。
 ![日志检索](../../../../../image/Internet-Middleware/API-Gateway/Log_Service_logset_preview.png)
 
 ###  第8步：在日志主题列表选中要查看的日志主题，点击“检索”按钮，或者在左侧菜单切换至[日志检索](https://logs-console.jdcloud.com/search)模块，可对日志进行相应的全文检索或键值检索：
