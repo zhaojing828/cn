@@ -18,5 +18,5 @@
 	- [实例列表](../Getting-Started/List-Instance.md)
 	- [删除实例](../Getting-Started/Delete-Instance.md)
 - 实例配置
-	- [服务实例配置](../Operation-Guide/Instance-Configuration/Instance-Configuration.md)
+	- [设置服务](../Operation-Guide/Instance-Configuration/Instance-Configuration.md)
 
