@@ -48,7 +48,6 @@
 
 ![发布2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_2.png)
 
-
 ## 步骤二: 获取密钥-创建访问授权-绑定分组：
 
 1. 打开[订阅密钥](https://apigateway-console.jdcloud.com/subscriptionKey)，点击“创建密钥”按钮。
