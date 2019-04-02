@@ -4,13 +4,11 @@
 
 ## 入口1：[产品介绍页](https://www.jdcloud.com/products/mongodb)
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
-2. 选择“产品>物联网中心”，具体见下图。
+2. 选择“产品>物联网中心”。
 
-![MongoDB](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/productpage.png)
+3.弹出物联网中心服务的产品介绍页，点击**立即申请**。
 
-3.弹出物联网中心服务的产品介绍页，点击**立即购买**。
-
-![MongoDB-buy](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/product-buy.png)
+![Hub-buy](../../../../image/IoT-Hub/iothub-007.png)
 
 4.购买的具体操作，请参考[创建实例](../Getting-Started/Create-Instance.md)。
 
