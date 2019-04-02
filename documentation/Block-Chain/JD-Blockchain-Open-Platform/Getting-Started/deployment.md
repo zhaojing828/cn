@@ -6,6 +6,80 @@
 ![图片](../../../../image/JD-Blockchain-Open-Platform/Getting-Started/Pic/image001.png)
 图-网络部署属性配置示例图
 
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-0pky"><br>&nbsp;&nbsp;参数名<br>&nbsp;&nbsp;</th>
+    <th class="tg-0lax"><br>&nbsp;&nbsp;参数值<br>&nbsp;&nbsp;</th>
+    <th class="tg-0pky"><br>&nbsp;&nbsp;参数说明<br>&nbsp;&nbsp;</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;基础信息<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax" colspan="2"><br>&nbsp;&nbsp;Fabric网络中包含的背书（Peer）组织。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;区块链名<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;myfabric<br>&nbsp;&nbsp;</td>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;Fabric网络标识名。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;版本号<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;1.0.0<br>&nbsp;&nbsp;</td>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;Fabric网络使用的Fabric软件版本号。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;域名<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;baas.jd.com<br>&nbsp;&nbsp;</td>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;Fabric网络对外访问域名。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;持久化存储<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;gluster-heketi-2w7jw<br>&nbsp;&nbsp;</td>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;Fabric网络中使用的Kubernetes持久化存储类型。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><br>&nbsp;&nbsp;组织列表<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax" colspan="2"><br>&nbsp;&nbsp;Fabric网络中包含的Peer组织。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;组织名<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;org0<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;Peer组织在Fabric网络中的唯一标志名。Peer组织只能是小写英文字母和数字构成，并且首字符是英文字母。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;节点数量<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;1<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;组织拥有的Peer节点数量。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;用户数量<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;1<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;组织中参与的用户数量。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="3"><br>&nbsp;&nbsp;附加组件<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;区块链浏览器<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;是<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;Fabric区块链浏览器。<br>&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;示例程序<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;否<br>&nbsp;&nbsp;</td>
+    <td class="tg-0lax"><br>&nbsp;&nbsp;marble示例程序。<br>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+
+
 | 参数名                                               | 默认值                                | 参数说明                                                                                         |
 |------------------------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------------------|
 | 基础信息                                             | Fabric网络中包含的背书（Peer）组织。  |                                                                                                  |
