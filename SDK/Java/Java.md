@@ -8,9 +8,9 @@
 
 # 环境准备 #
 
-1.     京东云Java SDK适用于jdk7及以上版本。
+1. 京东云Java SDK适用于jdk7及以上版本。
 
-2.     在开始调用京东云open API之前，需提前在京东云用户中心账户管理下的AccessKey管理页面申请accesskey和secretKey密钥对（简称AK/SK）。AK/SK信息请妥善保管，如果遗失可能会造成非法用户使用此信息操作您在云上的资源，给你造成数据和财产损失。
+2. 在开始调用京东云open API之前，需提前在京东云用户中心账户管理下的AccessKey管理页面申请accesskey和secretKey密钥对（简称AK/SK）。AK/SK信息请妥善保管，如果遗失可能会造成非法用户使用此信息操作您在云上的资源，给你造成数据和财产损失。
 
 
 
@@ -47,7 +47,7 @@ Java SDK的调用主要分为4步：
 
 以下是查询单个云主机实例详情的调用示例
 
-```
+```Java
 	import com.jdcloud.sdk.JdcloudSdkException;
 	import com.jdcloud.sdk.auth.CredentialsProvider;
 	import com.jdcloud.sdk.auth.StaticCredentialsProvider;
@@ -95,5 +95,7 @@ Java SDK的调用主要分为4步：
 ```
 
 如果需要设置额外的header，例如要调用开启了MFA操作保护的接口，需要传递x-jdcloud-security-token，则按照如下方式：
-
+```
 	 vmClient.setCustomHeader("x-jdcloud-security-token", "xxxx"); 
+	
+```

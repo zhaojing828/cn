@@ -47,6 +47,8 @@ items:
             href: Operation-Guide/Check-Action.md     
   - name: 最佳实践
     items:
+        - name: 构建并部署到京东云-云部署
+          href: Best-Practices/Deployment-On-CodeDeploy.md 
         - name: 构建并部署到Kubernetes集群
           href: Best-Practices/Deployment-On-K8S.md
   
