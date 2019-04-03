@@ -34,17 +34,7 @@
       - name: 实例配置
         items:
           - name: 实例配置
-            href: Operation-Guide/Instance-Configuration/Instance-Configuration.md           
-  - name: 最佳实践
-    items:
-    - name: 使用MongoDB的固定集合
-      href: Best-Practices/Capped-Collections.md
-    - name: MongoDB 开启慢日志分析
-      href: Best-Practices/MongoDB-Profile.md
-    - name: 公网连接MongoDB实例
-      href: Best-Practices/Public-Network-Connect-to-MongoDB-Instance.md
-    - name: 搭建 MongoDB 分片集群
-      href: Best-Practices/Create-Sharded-Cluster.md      
+            href: Operation-Guide/Instance-Configuration/Instance-Configuration.md            
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 用户协议
