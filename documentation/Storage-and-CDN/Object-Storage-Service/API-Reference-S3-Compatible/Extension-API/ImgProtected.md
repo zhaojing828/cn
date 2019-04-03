@@ -102,7 +102,7 @@ Authorization: <Authorization_String>
 请求示例
 ```
 GET /?imgProtected HTTP/1.1
-Host: example-bucket.s3.cn-north-1.jcloudcs.com
+Host: example-bucket.s3.cn-north-1.jdcloud-oss.com
 X-Amz-Date: 20180117T122144Z
 Authorization: signatureValue
 ```
@@ -128,7 +128,7 @@ Cache-Control: no-cache
 请求语法
 ```
 DELETE /?imgProtected HTTP/1.1
-Host: bucket.s3.region.jcloudcs.com
+Host: <bucket>.s3.<region>.jdcloud-oss.com
 Date: Date
 Authorization: <Authorization_String>
 ```
@@ -143,7 +143,7 @@ Authorization: <Authorization_String>
 请求示例
 ```
 DELETE /?imgProtected HTTP/1.1
-Host: example-bucket.s3.cn-north-1.jcloudcs.com
+Host: example-bucket.s3.cn-north-1.jdcloud-oss.com
 X-Amz-Date: 20180117T122640Z
 Authorization: signatureValue
 ```
