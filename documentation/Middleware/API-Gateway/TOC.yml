@@ -55,6 +55,8 @@ items:
           herf: Operation-Guide/Create-APIGroup/Create-Domain.md  
         - name: 访问监控
           herf: Operation-Guide/Create-APIGroup/Monitoring.md  
+        - name: 日志服务
+          herf: Operation-Guide/Create-APIGroup/Log-Service.md  
     - name: API管理
       items:
         - name: 创建API
