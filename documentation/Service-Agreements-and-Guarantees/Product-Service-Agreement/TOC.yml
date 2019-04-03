@@ -106,3 +106,7 @@ items:
     href: Queue-Service-Terms-Of-Service-SLA.md
   - name: 智臻链BaaS平台服务条款
     href: JD-Blockchain-Open-Platform.md
+  - name: 物联网中心服务条款
+    href: IoT-Hub.md
+  - name: 物联网协议适配服务条款
+    href: IoT-Hub-Protocol-Adaptor.md
