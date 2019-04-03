@@ -1,9 +1,9 @@
-{
+﻿{
 	"omId": "TempHumiditySensorModel-2",
 	"instanceId": "r27l9uo50ylmfkko",
 	"payload": "{
     \"profile\": {
-        \"modelName\": \"Name444\"
+        \"modelName\": \"TempHumiditySensorModel-2\"
     },
     \"telemetry\": {
         \"properties\": [{
