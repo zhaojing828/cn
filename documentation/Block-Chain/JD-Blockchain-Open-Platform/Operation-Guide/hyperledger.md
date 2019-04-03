@@ -35,6 +35,7 @@
 ![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image033.jpg)
  
 说明：若不展开“高级”项，则会按照默认设置部署网络；展开“高级”项会按自定义设置部署网络。
+
 注意： 展开“高级”选项，则必须上传链码。上传链码格式支持go以及zip后缀的文件。
 
 | 参数名         | 说明                                                                              |
@@ -102,6 +103,7 @@ Ordererer排序服务共识节点
 | 背书组织       | 是                                                                                | 下拉选择某一组织作为背书组织                           |
 
 （2）加入通道
+
 创建通道成功后，点击加入通道按钮，选择组织、节点加入当前通道。页面如下所示：
 
 ![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image055.jpg)
@@ -128,8 +130,9 @@ Ordererer排序服务共识节点
 开发人员可实时监控日志功能。
 
 （5）链码日志
+
 仅支持k8s管理链码，才可以查看链码日志。
-4.链码管理
+### 链码管理
 
 ![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image067.jpg)
 
@@ -148,7 +151,9 @@ Ordererer排序服务共识节点
 ![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image078.jpg)
  
 用户也可在线编辑链码程序，点击上传按钮，可将编写的链码程序上传。
+
 （2）安装链码
+
 点击上传链接，弹出“安装链码”页面，如下图所示：
 
 ![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image082.jpg)
@@ -168,7 +173,8 @@ Ordererer排序服务共识节点
 
 ![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image084.jpg)
  
-5.应用程序
+### 应用程序
+
 “应用程序”页面如下图所示：
 
 ![图片](https://github.com/jdclouddocs/cn/blob/BaaS-Platform/documentation/Block-Chain/Block-Chain-BaaS-Platform/Getting-Started/Pic/image086.jpg)
