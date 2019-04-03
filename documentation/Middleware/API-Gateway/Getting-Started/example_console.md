@@ -38,7 +38,7 @@
 
 ![导入API2](../../../../image/Internet-Middleware/API-Gateway/exap_create_api_3.png)
 
-- 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（[Yaml文件下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_Yaml.zip)）
+- 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（[Yaml文件下载地址](https://docs-downloads.oss.cn-north-1.jcloudcs.com/PetStoreTest_Yaml.zip)）
 
 ![导入API](../../../../image/Internet-Middleware/API-Gateway/exap_import_api_1.png)
 
@@ -102,6 +102,7 @@
 
   - 打开[Access Key管理](https://uc.jdcloud.com/account/accesskey)，点击创建Access Key，手机验证通过后可获取Access Key ID和Access Key Secret。
 
+
     ![Access Key管理](../../../../image/Internet-Middleware/API-Gateway/exap_Access_Key_admin.png)
 
   - 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
@@ -122,7 +123,7 @@
 
 #### 1.	解压下载的Java SDK。
 
-#### 2.	切换到PetStore目录下，编辑Demo.java文件。（[项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_javaSDK.zip)）
+#### 2.	切换到PetStore目录下，编辑Demo.java文件。（[项目下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/PetStoreTest_javaSDK_jdcloud.zip)）
 
 - accessKeyId为查看密钥详细信息时的APIKey；
 - secretAccessKey为查看密钥详细信息时的APISecret；
@@ -192,7 +193,7 @@ public class Demo {
 
 #### 1.	解压下载的Python SDK，执行setup.py文件。
 
-#### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。（[项目下载地址](../../../../image/Internet-Middleware/API-Gateway/PetStoreTest_pythonSDK.zip)）
+#### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。（[项目下载地址](https://apigateway.oss.cn-north-1.jcloudcs.com/demo/PetStoreTest_pythonSDK_jdcloud.zip)）
 
 ```
 # coding=utf8

@@ -511,4 +511,4 @@
   </tr>
 </table>
 
-[云市场服务商管理规范-PDF下载](/image/Marketplace/PDF/云市场服务商管理规范-converted.pdf)
+[云市场服务商管理规范-PDF下载](https://docs-downloads.oss.cn-north-1.jcloudcs.com/%25E4%25BA%2591%25E5%25B8%2582%25E5%259C%25BA%25E6%259C%258D%25E5%258A%25A1%25E5%2595%2586%25E7%25AE%25A1%25E7%2590%2586%25E8%25A7%2584%25E8%258C%2583-converted.pdf)

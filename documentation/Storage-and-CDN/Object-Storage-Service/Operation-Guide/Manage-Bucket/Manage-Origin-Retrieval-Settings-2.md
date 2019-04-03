@@ -30,7 +30,7 @@
 * 给OSS的header信息默认是不会传递给源站。但是支持用户根据实际业务指定header。
 * querystring信息是否会传递给源站取决于用户的配置。
 * 如果源站是chunked编码返回，那么OSS返回给用户的也是chunked编码。
-* 如果从源站读取的文件将在OSS按照标准存储类型存储。
+* 从源站读取的文件将在OSS按照标准存储类型存储。
 * OSS会将源站的以下头信息返回并存为OSS的头信息：
 
  ``` 
@@ -46,6 +46,8 @@ Expires
 
 
 ## 镜像回源规则设置 
+**说明**
+回源地址不支持配置OSS内网域名。
 
 ### 1.使用OSS Open API ，设置镜像回源。
 参考：[设置镜像回源](https://docs.jdcloud.com/cn/object-storage-service/api/putbacksourceconfiguration?content=API)

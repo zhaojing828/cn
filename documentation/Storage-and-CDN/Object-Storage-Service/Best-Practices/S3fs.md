@@ -49,7 +49,7 @@ chmod 600：设置密钥文件只能被当前用户访问。
 
 ```
 mkdir /new
-s3fs bucketname /new -o passwd_file=~/.passwd-s3fs -o url="https://s3.cn-north-1.jcloudcs.com"
+s3fs bucketname /new -o passwd_file=~/.passwd-s3fs -o url="https://s3.cn-north-1.jdcloud-oss.com"
 ```
 说明
 
@@ -106,12 +106,12 @@ sudo make install
 如果您在Mac OS挂载Bucket时使用的非root账号，请在指定挂载命令是指定当前账户的uid及gid。如下示例：
 
 ```
-sudo s3fs bucketname /new -o passwd_file=~/.passwd-s3fs -o url="https://s3.cn-north-1.jcloudcs.com" -o uid=11111 -o gid=11111
+sudo s3fs bucketname /new -o passwd_file=~/.passwd-s3fs -o url="https://s3.cn-north-1.jdcloud-oss.com" -o uid=11111 -o gid=11111
 ```
 
-3.使用s3fs-fuse工具挂载京东云对象存储，通过cp命令拷贝文件时，若遇到文件mime-type被修改的问题，可通过如下方式解决：
+3.使用s3fs-fuse工具挂载京东云对象存储，通过cp命令拷贝文件时，若遇到文件无content-type的问题，可通过如下方式解决：
 
-- 使用`cp`命令拷贝文件，`s3fs-fuse`工具底层进行的操作依赖于`/etc/mime.types`文件，这个文件决定了`cp`命令目的文件的mime-type属性。
+- 使用`cp`命令拷贝文件，`s3fs-fuse`工具底层进行的操作依赖于`/etc/mime.types`文件，这个文件决定了`cp`命令目的文件的mime-type属性。请查看您目录下是否有该文件。
 
 - 默认情况下，京东云的centos7版本并不包含`/etc/mime.types`文件，所以需要通过拷贝，或者安装`httpd`获得，安装命令为`yum install httpd`
 

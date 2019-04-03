@@ -10,9 +10,9 @@
 ## 常用操作
 - [创建实例](../Operation-Guide/Instance/Create-Instance.md)
 - [连接实例](../Operation-Guide/Instance/Connect-Instance.md)
-- [节点管理](../Operation-Guide/Node.md)
+- [节点管理](../Operation-Guide/Node-Management.md)
 - [重置密码](../Operation-Guide/Reset-Password.md)
 - [监控](../Operation-Guide/Monitor.md)
   
 ## 计费
-分布式数据库 TiDB 支持“**包年包月**”和“**按配置**”两种计费类型。详细说明请参见“[计费规则](../Pricing/Billing-Rules.md)”。
+TiDB 目前处于公测阶段，暂时对通过申请的用户免费。

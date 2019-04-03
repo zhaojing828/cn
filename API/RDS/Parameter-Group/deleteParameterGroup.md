@@ -12,8 +12,8 @@ https://rds.jdcloud-api.com/v1/regions/{regionId}/parameterGroups/{parameterGrou
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**parameterGroupId**|String|True| |Parameter Group ID|
 |**regionId**|String|True| |Region ID|
+|**parameterGroupId**|String|True| |Parameter Group ID|
 
 ## 请求参数
 无

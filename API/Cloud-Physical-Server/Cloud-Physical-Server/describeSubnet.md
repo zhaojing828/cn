@@ -23,8 +23,8 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/subnet
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
@@ -33,11 +33,11 @@ https://cps.jdcloud-api.com/v1/regions/{regionId}/subnet
 ### Subnet
 |名称|类型|描述|
 |---|---|---|
+|**region**|String|地域代码, 如cn-east-1|
 |**az**|String|可用区, 如cn-east-1a|
 |**cidr**|String|子网CIDR|
-|**networkType**|String|网络类型|
-|**region**|String|地域代码, 如cn-east-1|
 |**subnetId**|String|子网ID|
+|**networkType**|String|网络类型|
 
 ## 返回码
 |返回码|描述|

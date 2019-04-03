@@ -2,7 +2,7 @@
 
 - 配置地域与可用区
 
-![配置地域与可用区](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/CPS012.png)
+![配置地域与可用区](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/cn-Create-1RegionAZ.png)
 
 - 配置主机规格：
 参考[产品规格](../Introduction/Specifications.md)。
@@ -13,7 +13,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中“标准镜像”支持CentOS6.6、7.1、7.2和7.5，Ubuntu14.04和16.04；“标准镜像+应用”支持CentOS6.6和CentOS7.2下的Nginx、MySQL和RabbitMQ三个应用。详细情况参见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
 
-![镜像选择](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/CPS014.png)
+![镜像选择](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/cn-Create-3Image.png)
 
 - 配置存储：
 
@@ -21,7 +21,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（说明：某些机型的系统盘或数据盘RAID模式是固定的，请根据实际情况做选择，详情参见[产品规格](../Introduction/Specifications.md)。）
 
-![配置存储](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/CPS015.png)
+![配置存储](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/cn-Create-4Storage.png)
 
 - 配置网络
 
@@ -41,12 +41,19 @@
 - 配置服务器基本信息：
 配置服务器名称、描述、操作系统密码。
 
-![配置服务器](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/CPS018.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **实例名称** ：实例名称是指云物理服务器的别名，用户可以自定义设置，设置完成后可以通过云物理服务器列表中使用别名来筛选。一次购买多台云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台云物理服务器。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **主机名** ：主机名是指云物理服务器操作系统内部的计算机名，用户可以自定义设置，云物理服务器成功生产后可以通过登录云物理服务器内部查看。一次购买多台云物理服务器的情况下，默认在设置名称后面加上数字，以递增的形式来标志多台云物理服务器。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 主机名为可选项，如果不输入主机名，则默认使用“host-内网IPv4地址第三段-内网IPv4地址第四段”为主机名。
+
+![配置服务器](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/cn-Create-7BasicInformation.png)
+
 
 - 配置购买时长：
 购买时长1-9个月、1、2、3年。
 
-![配置购买时长](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/CPS019.png)
+![配置购买时长](https://github.com/jdcloudcom/cn/blob/edit/image/Hyper-Converged-IDC/Cloud-Physical-Server/cn-Create-8Quantity.png)
 
 - 点击“立即购买”按钮，跳转到订单确认页
 

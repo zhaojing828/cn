@@ -37,7 +37,7 @@ items:
        - name: 3.3 雷达图
          href: Operation-Guide/leida.md
        - name: 3.4 榜单
-         href: Operation-Guide/leida.md
+         href: Operation-Guide/table.md
        - name: 3.5 日期热力图
          href: Operation-Guide/hot.md     
     - name: 4. 地图组件配置

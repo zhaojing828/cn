@@ -6,11 +6,11 @@
 
 开启原图保护以后，无法通过下面两种方式访问：
 
-* 外链地址直接访问：1. http://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg 2.http://downloads.oss.cn-north-1.jcloudcs.com/lena.jpg
+* 外链地址直接访问：http://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg
 
-* 使用处理参数访问：1.http://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg?x-oss-process=img/s/200/300 2.http://downloads.oss.cn-north-1.jcloudcs.com/lena.jpg?x-oss-process=img/s/200/300
+* 使用处理参数访问：http://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=img/s/200/300
 
-只能通过样式方式访问图片：http://downloads.oss.cn-north-1.jcloudcs.com/lena.jpg?x-oss-process=imgalias/stylename
+只能通过样式方式访问图片：http://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
 说明：
 

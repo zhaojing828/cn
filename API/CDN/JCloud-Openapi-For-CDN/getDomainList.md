@@ -24,27 +24,27 @@ https://cdn.jdcloud-api.com/v1/domain
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**requestId**|String| |
 |**result**|Result| |
+|**requestId**|String| |
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
-|**domains**|ListDomainItem[]| |
-|**pageNumber**|Integer| |
-|**pageSize**|Integer| |
 |**totalCount**|Integer| |
+|**pageSize**|Integer| |
+|**pageNumber**|Integer| |
+|**domains**|ListDomainItem[]| |
 ### ListDomainItem
 |名称|类型|描述|
 |---|---|---|
-|**auditStatus**|String| |
 |**cname**|String| |
-|**created**|String| |
 |**description**|String| |
 |**domain**|String| |
+|**created**|String| |
 |**modified**|String| |
 |**status**|String| |
 |**type**|String| |
+|**auditStatus**|String| |
 
 ## 返回码
 |返回码|描述|
