@@ -9,7 +9,7 @@
 ### 语法
 ```
 PUT /destinationObject HTTP/1.1
-Host: <destinationBucket>.s3.<region>.jcloudcs.com 
+Host: <destinationBucket>.s3.<region>.jdcloud-oss.com 
 x-amz-copy-source: /source_bucket/sourceObject
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 Date: <date>
@@ -47,7 +47,7 @@ LastModified|返回Object的最后修改时间。<br>Type: String<br>Ancestor: C
 ### 请求示例
 ```
 PUT /my-second-image.jpg HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: oss-example.s3.<region>.jdcloud-oss.com
 Date: Wed, 28 Oct 2009 22:32:00 GMT
 x-amz-copy-source: /bucket/my-image.jpg
 Authorization: <authorization string>
