@@ -8,28 +8,37 @@
 
 ##  图片样式访问规则 
 
--    **URL参数方式访问**
++   **URL参数方式访问**
 
-    ```
-    <文件URL>?x-oss-process=imgalias/<StyleName>
-    ```
+            ```
+            <文件URL>?x-oss-process=imgalias/<StyleName>
 
-    示例：`bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename`
+            ```
+
+    示例：
+    ```
+    bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
+    
+    ```
 
     **这种方式是图片处理默认支持的样式访问方式,您字只需求通过控制台完成新建图片样式的操作即可使用**
 
--    **分隔符方式访问**
++   **分隔符方式访问**
 
-    ```
-    <文件URL><分隔符><StyleName>
-    ```
+        ```
+        <文件URL><分隔符><StyleName>
 
-    示例：`bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?{分隔符}stylename`
+        ```
+
+    示例：
+    
+        ``` bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?{分隔符}stylename ```
 
     当图片的URL带了分隔符，OSS图片处理服务会把该分隔符后面的内容当成样式的名称。分隔符只有在控制台配置成功后才能生效，支持
-    ```
-     `-`、`_`、`/`、`!`
-    ```
+        ```
+         -、_、/、!
+        ```
+        
    样式分隔符。分隔符方式访问为图片处理可选的使用方式。
 
 **说明**
@@ -41,19 +50,20 @@
 ## 设置分隔符 
 
 1.  在[OSS控制台](https://oss-console.jdcloud.com/space)左侧存储空间列表中，单击您要向其设置分隔符的存储空间名称。
+
 2.  单击**图片处理**页签，找到**图片访问设置**按钮。
 
-    ![]()
+    ![](../../../../../image/Object-Storage-Service/OSS-152.png)
 
 3.  单击**图片访问设置**，打开设置窗口。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/4792/15499363472883_zh-CN.png)
+    ![](../../../../../image/Object-Storage-Service/OSS-151.png)
 
     在设置窗口中您可以进行以下设置：
 
     -   原图保护
-
-        开启原图保护后，您需要了解的信息请参见[图片原图保护-原图保护规则](https://docs.jdcloud.com/cn/object-storage-service/source-image-protection).
+    
+        开启原图保护后，您需要了解的信息请参见[图片原图保护-原图保护规则](https://docs.jdcloud.com/cn/object-storage-service/source-image-protection)。
 
         
     -   自定义分隔符。
@@ -66,27 +76,24 @@
 
 ## 示例
 
-假如对image-demo这个bucket创建一个样式：
+假如对downloads这个bucket创建一个样式：
 
-|样式名|样式内容|
-|---|----|
-|panda\_style|image/resize,m\_fill,w\_300,h\_300,limit\_0/auto-orient,0/quality,q\_90/watermark,image\_cGFuZGEucG5n,t\_61,g\_se,y\_10,x\_10|
 
 -   直接参数访问
 
-    [http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=image/resize,m\_fill,w\_300,h\_300,limit\_0/auto-orient,0/quality,q\_90/watermark,image\_cGFuZGEucG5n,t\_61,g\_se,y\_10,x\_10](http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=image/resize,m_fill,w_300,h_300,limit_0/auto-orient,0/quality,q_90/watermark,image_cGFuZGEucG5n,t_61,g_se,y_10,x_10)
+    [https://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg?x-oss-process=img/r/60/q/71/p/s/200/300](https://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg?x-oss-process=img/s/200/300/cc/200/260)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/4792/15499363472884_zh-CN.jpg)
+    ![](https://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg?x-oss-process=img/r/60/q/71/p/s/200/300)
 
 -   通过URL参数，使用样式访问
 
-    [http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=style/panda\_style](http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=style/panda_style)
+    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo](http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=style/panda_style)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/4792/15499363472885_zh-CN.jpg)
+    ![](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
 -   通过样式分隔符，使用样式方式访问
 
-    [http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg@!panda\_style](http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg@!panda_style)
+    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?!imgstyle_demo](https://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg?!imgstyle_demo)
 
     ![](images/2886_zh-CN.jpg@!panda_style)
 
