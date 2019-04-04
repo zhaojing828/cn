@@ -40,7 +40,7 @@
 
 ## 设置分隔符 
 
-1.  在[OSS控制台](https://oss.console.aliyun.com/overview)左侧存储空间列表中，单击您要向其设置分隔符的存储空间名称。
+1.  在[OSS控制台](https://oss-console.jdcloud.com/space)左侧存储空间列表中，单击您要向其设置分隔符的存储空间名称。
 2.  单击**图片处理**页签，找到**访问设置**按钮。
 
     ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/4792/154993634721862_zh-CN.png)
