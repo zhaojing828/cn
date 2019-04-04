@@ -35,7 +35,7 @@
 		
 		说明:
 		- 数据库RDS实例所处的VPC网络设置需要和物联网中心服务的VPC网络设置一致。
-		- 数据库RDS实例创建完成后，需要登录数据库RDS服务实例，初始化数据库。请使用附件的脚本 [数据库初始化脚本](../../../../image/IoT/IoT-Hub/iothub_latest.sql)
+		- 数据库RDS实例创建完成后，需要登录数据库RDS服务实例，初始化数据库。请使用附件的脚本 [数据库初始化脚本](https://docs-iot-downloads.s3.cn-north-1.jdcloud-oss.com/iothub_latest.sql?AWSAccessKeyId=9B860A13DA12A42DCB34BE2ECBE4384D&Expires=1616582821&Signature=GlZ252Tt7fHTGJGcli5M1StFqBQ%3D)
 	
 4. 点击 **确认** ，进入“订单确认”页面。
 6. 在“订单确认”页面，确认实例信息，并阅读《云数据库 物联网中心服务 服务条款》。点击**立即开通**。
