@@ -22,6 +22,5 @@ Region表示OSS的数据中心所在的地域，Endpoint表示OSS对外服务的
 -   使用SDK时，请将 `http://` 或 `https://` + `Endpoint` 作为初始化的参数。以华南-广州的Endpoint为例，建议将初始化参数设置为
 `http://s3.cn-south-1.jdcloud-oss.com` 或者 `https://s3.cn-south-1.jdcloud-oss.com`，不建议将三级域名
  （即`https://bucket.s3.cn-south-1.jdcloud-oss.com`）作为初始化参数。
--   区分内外访问域名例如：s3.cn-south-1.jdcloud-oss.com 指向华南-广州地域的外网访问地址。内网访问地址s3-internal.cn-south-1.jdcloud-oss.com 指向华南-广州地域内网地址，在京东云VPC
-中使用OSS 建议使用内网访问域名，上传与下载流量均免费。
+-   区分内外访问域名例如：s3.cn-south-1.jdcloud-oss.com 指向华南-广州地域的外网访问地址。内网访问地址s3-internal.cn-south-1.jdcloud-oss.com 指向华南-广州地域内网地址，在京东云VPC中使用OSS 建议使用内网访问域名，上传与下载流量均免费。
 - OSS 旧版访问域名 `oss.<Region>.jcloud.com`与`s3.<Region>.jcloud.com` 会依旧提供服务，但是不推荐使用。
