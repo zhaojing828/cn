@@ -41,11 +41,11 @@
 ## 设置分隔符 
 
 1.  在[OSS控制台](https://oss-console.jdcloud.com/space)左侧存储空间列表中，单击您要向其设置分隔符的存储空间名称。
-2.  单击**图片处理**页签，找到**访问设置**按钮。
+2.  单击**图片处理**页签，找到**图片访问设置**按钮。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/4792/154993634721862_zh-CN.png)
+    ![]()
 
-3.  单击**访问设置**，打开设置窗口。
+3.  单击**图片访问设置**，打开设置窗口。
 
     ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/4792/15499363472883_zh-CN.png)
 
@@ -53,16 +53,18 @@
 
     -   原图保护
 
-        开启原图保护后，您需要了解以下信息：
+        开启原图保护后，您需要了解的信息请参见[图片原图保护-原图保护规则](https://docs.jdcloud.com/cn/object-storage-service/source-image-protection).
 
-        -   图片文件只能通过传入stylename和带签名的方式访问。
-        -   将禁止直接访问OSS原文件或传入图片参数修改图片样式的访问。
-        -   您需要选择原图保护后缀，如png、jpg等。
+        
     -   自定义分隔符。
-    设置好您需要的选项之后单击**确定**完成分隔符的设置。
+        * 你可以选择一个或者多个分隔符
+        * 分隔符与原图保护设置可分别设置。
+        
+        
+4.设置好您需要的选项之后单击**确定**完成分隔符的设置。
 
 
-## 示例 {#section_unh_hqc_wdb .section}
+## 示例
 
 假如对image-demo这个bucket创建一个样式：
 
