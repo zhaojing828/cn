@@ -9,30 +9,33 @@
 ##  图片样式访问规则 
 
 *  **URL参数方式访问**
+ ```
+   <文件URL>?x-oss-process=imgalias/<StyleName>
 
-            ```
-            <文件URL>?x-oss-process=imgalias/<StyleName>
-
-            ```
+ ```
 
     示例：
-    ```
-    bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
-    
-    ```
+```
+bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
-    **这种方式是图片处理默认支持的样式访问方式,您字只需求通过控制台完成新建图片样式的操作即可使用**
+```
+
+ **这种方式是图片处理默认支持的样式访问方式,您字只需求通过控制台完成新建图片样式的操作即可使用**
 
 * **分隔符方式访问**
 
-        ```
-        <文件URL><分隔符><StyleName>
+```
+<文件URL><分隔符><StyleName>
 
-        ```
+```
 
     示例：
    
-         bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg{分隔符}stylename 
+ ```
+ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg{分隔符}stylename 
+ 
+ ```
+ 
 
     当图片的URL带了分隔符，OSS图片处理服务会把该分隔符后面的内容当成样式的名称。分隔符只有在控制台配置成功后才能生效，支持
         
