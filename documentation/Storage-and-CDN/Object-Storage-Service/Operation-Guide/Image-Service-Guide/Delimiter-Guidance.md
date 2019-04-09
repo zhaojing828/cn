@@ -32,7 +32,7 @@
 
     示例：
    
-         bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?{分隔符}stylename 
+         bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg{分隔符}stylename 
 
     当图片的URL带了分隔符，OSS图片处理服务会把该分隔符后面的内容当成样式的名称。分隔符只有在控制台配置成功后才能生效，支持
         
