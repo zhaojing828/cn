@@ -12,6 +12,8 @@ items:
         href: Introduction/Features.md
       - name: 性能
         href: Introduction/Performance.md
+      - name: 性能测试
+        href: Introduction/Performance_Test.md        
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 限制说明
