@@ -124,11 +124,18 @@ switch (errorModel.errorCode) {
     }
 }
 ```  
+**7.结束播放**  
+结束播放后，播放器播放状态改为stop即可  
+```
+//停止播放
+[self.jdCloudPlayer stop];
+```  
 
-**7.更多接口**    
-   在播放过程中，可以进行一下功能的设置，设置接口在JDCloudPlayer类中有详细备注，详细解释和示例代码如下： 
+## 更多接口    
+
+在播放过程中，可以进行一下功能的设置，设置接口在JDCloudPlayer类中有详细备注，详细解释和示例代码如下： 
     
-7.1 播放器的各种控制  
+* **播放器的各种控制**  
 播放器的控制接口，基本控制功能有播放、停止、暂停、恢复、重播、Seek。其中Seek功能仅对点播有效。  
 ```
 //播放
@@ -144,7 +151,7 @@ switch (errorModel.errorCode) {
 //跳转到指定时间点的视频画面，秒
 [self.aliPlayer seekToTime:1.5];
 ```  
-7.2 缩放模式    
+* **缩放模式**    
 视频画面的填充模式，如裁剪、填充、全屏等效果；通过scalingMode属性来设置／获取当前所放模式，播放前或者播放中设置均生效  
 ```
 typedef NS_ENUM(NSInteger, JDCloudScalingMode) {
@@ -176,12 +183,12 @@ switch (button.tag) {
             break;
 ```  
 
-7.3 倍速播放  
+* **倍速播放**  
 在播放器创建之后，可设置倍速，播放中也可以设置，仅点播可用，倍速播放支持0.5～2倍的设置。  
 ```
 self.jdCloudPlayer.playRate = 0.5;    
  ```     
-7.4 清晰度切换  
+* **清晰度切换**  
 在播放器创建之后，可设置清晰度，播放中也可以设置，仅点播可用，支持高清、超清、标清。  
 ```
 typedef NS_ENUM(NSInteger, JDCloudPlayerClaritType) {
@@ -209,7 +216,7 @@ switch (button.tag) {
         }
             break;
 ```  
-7.5 播放进度和时间  
+* **播放进度和时间**  
 播放器中显示的当前时间和播放的总时长，在准波播放成功后，可以获取。   
 示例代码：  
 ```
@@ -220,26 +227,26 @@ NSTimeInterval durationTime = self.jdCloudPlayer.duration
  //计算当前播放进度
  Float progress = currentTime / durationTime;
 ```  
-7.6 镜像播放  
+* **镜像播放**  
 镜像功能可使播放的画面左右镜像翻转。示例代码：  
 ```
 self.jdCloudPlayer.isMirrorPlay = YES;
 ```  
-7.7 后台播放  
+* **后台播放**  
 当用户点击home按钮后，播放器进入后台继续读取数据并播放音频。当APP回到前台后，音频继续播放。  
 参考下图设置：Target-Capabilities-Background Modes 打开，选择Audio，AirPlay and Picture in Picture选项即可。  
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE7.png)  
-7.8 纯音频播放  
+* **纯音频播放**  
 设置播放过程中有无画面输出，设置该属性为YES后，底层不再进行视频的渲染动作。播放前后均可设置。  
 ```
 self.jdCloudPlayer.isOnlyAudio = YES;
 ```  
-7.9 截图当前正在播放的图像  
+* **截图当前正在播放的图像**  
 获取当前播放器时间点播放图片。  
 ```
 UIImage *image = [self.jdCloudPlayer thumbnailImageAtCurrentTime];
 ```  
-7.10 播放器过程中音量和亮度控制（系统）  
+* **播放器过程中音量和亮度控制（系统）**   
 ```
 //初始化系统音量空间 设置音量
 self.volumeView = [[MPVolumeView alloc] init];
@@ -247,14 +254,14 @@ self.systemVolume = self.volumeSlider.value;
 //亮度控制
 [UIScreen mainScreen].brightness += 0.01;
 ```  
-7.11 URL播放视频  
+* **URL播放视频**  
 重设播放器的URL。  
 ```
 if (self.jdCloudPlayer && self.jdCloudPlayer.playerView) {
         [self resetPlayWithUrl:self.playUrl];
  }
 ```  
-7.11 截gif和小视频  
+* **截gif和小视频**  
 截取gif和小视频时，先把视频下载到本地，选取截的视频的开始时间和结束时间。  
 ```
 /* 
@@ -283,7 +290,7 @@ if (self.jdCloudPlayer && self.jdCloudPlayer.playerView) {
           progress: (JDCloudProgressBlock)block
  recordGifFinished:(JDCloudRecordGifFinishedBlock)recordGifFinished
 ```  
-7.12 边播边缓存功能  
+* **边播边缓存功能**  
 边播边下缓存功能是在视频被成功播放后，文件会缓存到本地，再次播放视频时会直接使用本地缓存文件，不再走网络请求。  
 ```
 //取当前播放视频URL
@@ -291,15 +298,10 @@ NSString *playUrl = [self.cacheSingleton getProxyUrl:self.playUrl.absoluteString
 //预下载
 [self.cacheSingleton preDownload:playerUrlStr];
 ```  
-7.13 日志   
+* **日志**   
 播放过程中状态发生改变，获取不同播放状态和播放信息作为日志。  
 ```
 //播放过程中状态发生改变
 - (void)updateVodPlayViewDataWithEvent:(JDCloudPlayerEvent)event vodPlayer:(JDCloudPlayer *)vodPlayer 
 ```  
-7.14 结束播放  
-结束播放后，播放器播放状态改为stop即可  
-```
-//停止播放
-[self.jdCloudPlayer stop];
-```  
+
