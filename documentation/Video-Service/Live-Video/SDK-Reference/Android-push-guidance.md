@@ -34,7 +34,7 @@
 
 ## 版本说明
 * **迭代**  
-当前版本为1.0.0  
+当前版本为V1.0.0  
 
 * **体系结构**  
 当前推流 JDCloud_Live Android SDK支持以下体系结构:
@@ -47,7 +47,6 @@ ARMv5 ARMv6 设备计算性能较差，京东云不保证该芯片设备上的�
 
 ## 快速集成
 本章节提供一个快速集成京东云推流SDK基础功能的示例。
-具体可以参考demo工程中的相应文件。
 
 * **获取SDK**  
 Android端推流SDK&播放器SDK请<a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_android.zip">点击下载</a><br/>  
@@ -66,33 +65,33 @@ libs/jdc_live.jar: SDK jar包
 将libs目录copy到目标工程的libs下；
 将jniLibs目录拷贝到目标工程的src\main\jniLibs;
 
-2)修改proguard(混淆)文件，添加如下规则：
-```
--keep class com.jdcloud.media.live.** {
-  *;
-} 
-```
+  2)修改proguard(混淆)文件，添加如下规则：
+  ```
+  -keep class com.jdcloud.media.live.** {
+    *;
+  } 
+  ```
 
-3)在AndroidManifest.xml文件中申请相应权限
-```
-<!-- 使用权限 -->
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.READ_PHONE_SINTERNETWIFI_STATE" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.RECORD_AUDIO" />
-<uses-permission android:name="android.permission.FLASHLIGHT" />
-<uses-permission android:name="android.permission.VIBRATE" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-<!-- 硬件特性 -->
-<uses-feature android:name="android.hardware.camera" />
-<uses-feature android:name="android.hardware.camera.autofocus" />  
-```
+  3)在AndroidManifest.xml文件中申请相应权限
+  ```
+  <!-- 使用权限 -->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.READ_PHONE_SINTERNETWIFI_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.FLASHLIGHT" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <!-- 硬件特性 -->
+  <uses-feature android:name="android.hardware.camera" />
+  <uses-feature android:name="android.hardware.camera.autofocus" />  
+  ```
 
-4）将demo assets目录下的所有文件copy到目标工程的assets目录下即可。  
+  4）将demo assets目录下的所有文件copy到目标工程的assets目录下。  
 
