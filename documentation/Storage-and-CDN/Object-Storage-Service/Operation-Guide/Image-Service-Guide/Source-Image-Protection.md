@@ -18,7 +18,7 @@ a.该规则仅针对非owner用户有效，配置原图保护后，owner用户�
 
 b.原图保护主要针对于图片文件，必须配置被保护图片的后缀。例如配置限制了.png后缀文件，仍然可以访问.jpg后缀的原图。支持可配置的图片格式有png、jpg、jpeg、gif、bmp、webp、svg、jp2（jpeg 2000）、tiff、jbig
 
-c.原图保护支持图片处理新老接口，也同样支持OSS域名及兼容S3域名。
+c.原图保护支持图片处理新老接口，也同样支持OSS域名及兼容S3域名，推荐使用[新版服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)。
 
 ## 配置规则
 
