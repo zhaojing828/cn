@@ -18,29 +18,22 @@ SDK编译环境Xcode 8.0及以上版本，Xcode运行环境OS X 10.10 及以上�
 iOS端推流SDK&播放器SDK请<a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_ios.zip">点击下载</a>
 **工程目录结构**  
 推流SDK的工程目录如下：包含头文件Headers。  
-
-
-
-
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%811.png)  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE1.png)  
 **配置项目**  
-1.手动导入SDK。从Demo中拷贝jdcloud_live_sdk_ios.framework，导入拖入您的Xcode工程中    
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%812.png)      
+1.手动导入SDK。从Demo中拷贝JDCloudPlayerFramework.framework，导入拖入您的Xcode工程中    
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE2.png)      
 2.在 Building Setting > Valid Architectures 删除armv7、armv7s，只保留arm64。    
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%813.png)      
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE3.png)      
 3.在 Building Setting > Enable Bitcode 修改为 NO。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%814.png)   
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE4.png)   
 4.在 Building Setting > Other Linker Flags增加-all_load。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%815.png)   
-5.在 Info.plist 文件中添加麦克风和摄像头权限Privacy - Microphone Usage Description、Privacy - Camera Usage Description。    
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%816.png)   
-6.若新建工程，且使用cocoapods，(未使用cocoapods请自动忽略该配置)。发生如下错误：  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE5.png)   
+5.若新建工程，发生如下错误：  
 ```
-Target 'jdcloud_live_demo' (project 'jdcloud_live_demo') has process command with output   '/Users/pengdandan1/Library/Developer/Xcode/DerivedData/jdcloud_live_demo-fudhfrujrnpeaicbkuwkjszgdbsq/Build/Products/Debug-iphoneos/jdcloud_live_demo.app/Info.plist'
+dyld: Library not loaded: @rpath/JDCloudPlayerFramework.framework/JDCloudPlayerFramework
+  Referenced from: /var/containers/Bundle/Application/5429BB4B-DD9C-4240-9F0F-F64B4EFCE50F/JDCloud_IOS_Player_Test_Demo.app/JDCloud_IOS_Player_Test_Demo
+  Reason: image not found
 ```
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%817.png)   
-解决方案：  
-可进行如下操作：在Xcode菜单栏 -> File -> Workspace Setting，将build system修改为legacy build system，然后clean后编译  
-请参考网址：https://www.jianshu.com/p/8a8444acdca5  
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/ios%E6%8E%A8%E6%B5%818.png)   
+解决方案：动态库设置    
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE6.png)   
 
