@@ -31,5 +31,5 @@
 应用名|集群内创建的部署应用名称
 镜像来源|云编译表示将编译产出的镜像部署到k8s集群内。自定义表示用户可以部署任意公开镜像，如Nginx
 容器组数量|replicas副本数
-镜像拉取保密字典|当用户选择使用云编译的产出镜像时，需要配置imagePullSecrets字段。参见创建自动定期获取临时令牌。
+镜像拉取保密字典|当用户选择使用云编译的产出镜像时，需要配置imagePullSecrets字段。参见[创建自动定期获取临时令牌,长期有效](../../../Elastic-Compute/Container-Registry/Best-Practices/Deploy-Application.md)。
 手动确认|选择流转到下一阶段的方式。如果选择手动流转，本阶段会在用户点击确认后执行
