@@ -30,12 +30,12 @@ c.原图保护支持图片处理新老接口，也同样支持OSS域名及兼容
 
 3.点击 “原图保护设置”进入设置页面，可选择开启原图保护，并设置保护后缀。
 
-![原图2](https://github.com/jdcloudcom/cn/blob/edit/image/Object-Storage-Service/OSS-153.png)
+![原图2](../../../../../image/Object-Storage-Service/OSS-153.png)
 
 **说明**
   自定义分隔符。
-  * 你可以选择一个或者多个分隔符
-  * 分隔符与原图保护设置可分别设置
-  * 详见[自定义分隔符](./Delimiter-Guidance.md)
+  * 你可以选择一个或者多个分隔符;
+  * 分隔符与原图保护设置可分别设置;
+  * 详见[自定义分隔符](./Delimiter-Guidance.md)。
 
 4.设置好您所需的选项后，点击确定完成当前Bucket原图保护的设置。
