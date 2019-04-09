@@ -38,8 +38,9 @@ items:
     - name: 续费流程
       href: 
       status: 0
-    - name: 选择证书
-      href: Operation-Guide/Choose-Your-Certificate.md
+    - name: 如何选择证书
+      href:
+      status: 0
 - name: 操作指南
   items:
     - name: 上传SSL证书
