@@ -1,6 +1,6 @@
 # 操作类型-部署
 
-部署是将软件包/镜像部署至云主机或者Kubernetes集群上，提供部署服务。目前流水线集成了京东云-云部署和京东云-Kubernetes集群用于部署。
+部署是将软件包/镜像部署至云主机或者Kubernetes集群上，提供部署服务。目前流水线集成了[京东云-云部署](../../../Developer-Tools/CodeDeploy/Introduction/Product-Overview.md)和[京东云-Kubernetes集群](../../../Elastic-Compute/JCS-for-Kubernetes/Introduction/Product-Overview.md)用于部署。
 
 
 
@@ -25,7 +25,7 @@
 :---|:---
 操作类型|部署
 操作名称|根据操作类型默认生成操作名，如部署-默认-1.一条流水线里面，操作名保持唯一
-操作提供方|部署系统。以选择Kubernetes集群为例
+操作提供方|部署系统。以选择[Kubernetes集群](../../../Elastic-Compute/JCS-for-Kubernetes/Introduction/Product-Overview.md)为例
 目标集群|选择用户创建的目标集群。将在该集群内部署应用。
 创建应用方式|用户可以选择以表单化的方式创建应用或上传yaml文件的方式创建部署应用
 应用名|集群内创建的部署应用名称
