@@ -46,7 +46,7 @@ npm install --save uuid
 
 **京东云OSS 兼容绝大多数 AWS S3 API。**
 
-在 Node.js 中使用开发工具包时，您使用** require **将开发工具包添加到应用程序。
+在 Node.js 中使用开发工具包时，您使用 `require` 将开发工具包添加到应用程序。
 
 ### 1. 引入整个开发工具包
 
