@@ -60,6 +60,7 @@ libs/jdc_live.jar: SDK jar包
 * **配置项目**    
 引入目标库, 将libs目录下的库文件引入到目标工程中并添加依赖。
 可参考下述配置方式（以Android Studio为例）：  
+
 1)导入SDK
 手动集成：
 将libs目录copy到目标工程的libs下；
