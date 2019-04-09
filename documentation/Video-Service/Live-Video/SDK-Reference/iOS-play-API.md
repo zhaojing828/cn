@@ -228,3 +228,78 @@ self.jdCloudPlayer.isMirrorPlay = YES;
 7.7 后台播放  
 当用户点击home按钮后，播放器进入后台继续读取数据并播放音频。当APP回到前台后，音频继续播放。  
 参考下图设置：Target-Capabilities-Background Modes 打开，选择Audio，AirPlay and Picture in Picture选项即可。  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE7.png)  
+7.8 纯音频播放  
+设置播放过程中有无画面输出，设置该属性为YES后，底层不再进行视频的渲染动作。播放前后均可设置。  
+```
+self.jdCloudPlayer.isOnlyAudio = YES;
+```  
+7.9 截图当前正在播放的图像  
+获取当前播放器时间点播放图片。  
+```
+UIImage *image = [self.jdCloudPlayer thumbnailImageAtCurrentTime];
+```  
+7.10 播放器过程中音量和亮度控制（系统）  
+```
+//初始化系统音量空间 设置音量
+self.volumeView = [[MPVolumeView alloc] init];
+self.systemVolume = self.volumeSlider.value;
+//亮度控制
+[UIScreen mainScreen].brightness += 0.01;
+```  
+7.11 URL播放视频  
+重设播放器的URL。  
+```
+if (self.jdCloudPlayer && self.jdCloudPlayer.playerView) {
+        [self resetPlayWithUrl:self.playUrl];
+ }
+```  
+7.11 截gif和小视频  
+截取gif和小视频时，先把视频下载到本地，选取截的视频的开始时间和结束时间。  
+```
+/* 
+* 截取小视频
+* videoPath  视频下载在本地地址
+  destPath   小视频将要存本地的地址
+  width       小视频的宽度
+  start       开始时间
+  end         结束时间
+  recordVideoFinished  完成回调
+/
++ (void) recordVideo: (NSString*)videoPath
+            destPath: (NSString*)destPath
+          imageWidth: (NSInteger)width
+           startTime: (NSInteger)start
+             endTime: (NSInteger)end
+            progress: (JDCloudProgressBlock)blockrecordVideoFinished:(JDCloudRecordVideoFinishedBlock)recordVideoFinished
+
+//截取生成gif
++ (void) recordGif: (NSString*)videoPath
+          destPath: (NSString*)destPath
+             width: (NSInteger)width
+               fps: (CGFloat)frames
+          duration: (NSInteger)duration
+         startTime: (NSInteger)startTime
+          progress: (JDCloudProgressBlock)block
+ recordGifFinished:(JDCloudRecordGifFinishedBlock)recordGifFinished
+```  
+7.12 边播边缓存功能  
+边播边下缓存功能是在视频被成功播放后，文件会缓存到本地，再次播放视频时会直接使用本地缓存文件，不再走网络请求。  
+```
+//取当前播放视频URL
+NSString *playUrl = [self.cacheSingleton getProxyUrl:self.playUrl.absoluteString];
+//预下载
+[self.cacheSingleton preDownload:playerUrlStr];
+```  
+7.13 日志   
+播放过程中状态发生改变，获取不同播放状态和播放信息作为日志。  
+```
+//播放过程中状态发生改变
+- (void)updateVodPlayViewDataWithEvent:(JDCloudPlayerEvent)event vodPlayer:(JDCloudPlayer *)vodPlayer 
+```  
+7.14 结束播放  
+结束播放后，播放器播放状态改为stop即可  
+```
+//停止播放
+[self.jdCloudPlayer stop];
+```  
