@@ -1,13 +1,13 @@
 ## 阅读对象
-本文档面向所有使用京东云直播SDK的开发、测试人员等, 要求读者具有一定的Android编程开发经验，读者具备阅读 wiki的习惯更佳。  
+本文档面向所有使用京东云直播SDK的开发、测试人员等, 要求读者具有一定的Android编程开发经验。  
 
 ## 运行环境
-•	最低支持版本为Android 5.0 (API level 21)
+•	最低支持版本为Android 5.0 (API level 21)  
 •	支持的CPU架构： arm64-v8a, armeabi-v7a, x86
 
 ## 版本说明
 * **迭代**  
-当前版本为1.0.0  
+当前版本为V1.0.0  
 
 * **体系结构**  
 当前播放SDK支持以下体系结构:
@@ -19,7 +19,6 @@ x86
 
 ## 快速集成
 本章节提供一个快速集成京东云播放SDK基础功能的示例。
-具体可以参考demo工程中的相应文件。
 
 * **获取SDK**  
 Android端推流SDK&播放器SDK请<a href="https://sdk-publish.oss.cn-north-1.jcloudcs.com/sdk/jdcloud_streamer_android.zip">点击下载</a><br/>  
