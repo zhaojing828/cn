@@ -22,10 +22,12 @@
 `yum install fio`
 
 在提示下载安装包大小时选择“y”，完成下载和安装。
+![fio_installed](../../../../image/Cloud-File-Service/fio_installed.png)
 
 3)安装libaio引擎：
 
 `yum install libaio-devel`
+![libaio_installed](../../../../image/Cloud-File-Service/libaio_installed.png)
 
 安装完成后即完成了测试工具的安装工作。
 
@@ -92,7 +94,7 @@
 
   **预期IOPS：** 5000
 
-[!randread_iops]()
+![randread_iops](../../../../image/Cloud-File-Service/randread_iops.png)
 
 
 
@@ -104,7 +106,7 @@
 
  **预期IOPS：** 5000
 
-[!randwrite_iops]()
+![randwrite_iops](../../../../image/Cloud-File-Service/randwrite_iops.png)
 
 
 
@@ -116,7 +118,7 @@
 
   **预期带宽：** 50MiB/s
 
-[!randread_bw]()
+![randread_bw](../../../../image/Cloud-File-Service/randread_bw.png)
 
 
 
@@ -128,4 +130,4 @@
 
   **预期带宽：** 50MiB/s
 
-[!randwrite_bw]()
+![randwrite_bw](../../../../image/Cloud-File-Service/randwrite_bw.png)
