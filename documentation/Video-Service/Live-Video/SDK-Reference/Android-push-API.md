@@ -1,6 +1,5 @@
-## 简单推流示例    
+## 推流示例    
 
-具体可参考demo工程中的 com.jdcloud.media.demo.push.ui.PushActivity 类.  
 1.在布局文件中加入预览View, 当前支持GLSurfaceView和TextureView：  
 ```
 <android.opengl.GLSurfaceView
