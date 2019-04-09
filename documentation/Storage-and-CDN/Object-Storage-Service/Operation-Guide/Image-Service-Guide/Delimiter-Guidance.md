@@ -14,7 +14,7 @@
 
  ```
 
-    示例：
+示例：
 ```
 bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
@@ -29,7 +29,7 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
 ```
 
-    示例：
+示例：
    
  ```
  bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg{分隔符}stylename 
