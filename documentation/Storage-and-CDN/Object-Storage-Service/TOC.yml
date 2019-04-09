@@ -127,6 +127,8 @@ items:
             href: Operation-Guide/Image-Service-Guide/Porn-Recognition.md  
           - name: 图片原图保护
             href: Operation-Guide/Image-Service-Guide/Source-Image-Protection.md
+          - name: 自定义分隔符
+            href: Operation-Guide/Image-Service-Guide/Delimiter-Guidance.md           
           - name: 错误响应
             href: Operation-Guide/Image-Service-Guide/Response-To-Errors.md
       - name: 视频处理指南
@@ -344,7 +346,9 @@ items:
        - name: 兼容S3  SDK-iOS
          href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md      
        - name: 兼容S3 SDK-.NET
-         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-NET.md   
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-NET.md 
+       - name: 兼容S3 SDK-Node.js
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Nodejs.md     
        - name: 旧版 Java SDK（不推荐）
          items:
            - name: 安装
