@@ -46,9 +46,9 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
 **说明**
 
-    *  StyleName是图片样式的名称。
-    *   创建样式、删除样式和修改样式可在控制台操作也可通过OPENAPI操作。
-    *   访问的图片样式必须为图片文件所在的bucket中，否则将报错。
+*  StyleName是图片样式的名称。
+*   创建样式、删除样式和修改样式可在控制台操作也可通过OPENAPI操作。
+*   访问的图片样式必须为图片文件所在的bucket中，否则将报错。
   
 
 ## 设置分隔符 
@@ -91,15 +91,15 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
 -   通过URL参数，使用样式访问
 
-    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo](http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=style/panda_style)
+    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
     ![](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
 -   通过样式分隔符，使用样式方式访问
 
-    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?!imgstyle_demo](https://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg?!imgstyle_demo)
+    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg!imgstyle_demo](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
-    ![](images/2886_zh-CN.jpg@!panda_style)
+    ![](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
 
 三者可以达到同样的效果。
