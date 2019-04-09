@@ -112,5 +112,5 @@ items:
     href: IoT-Hub-Protocol-Adaptor.md
   - name: 云文件服务协议
     href: Cloud-File-Service.md
-  - name: 云文件公测试用协议
+  - name: 云文件服务公测试用协议
     href: Cloud-file-service-public.md
