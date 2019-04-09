@@ -1,6 +1,6 @@
 # 操作类型-部署
 
-部署是将软件包/镜像部署至云主机或者Kubernetes集群上，提供部署服务。目前流水线集成了[京东云-云部署](../../../Developer-Tools/CodeDeploy/Introduction/Product-Overview.md)和[京东云-Kubernetes集群](../../../Elastic-Compute/JCS-for-Kubernetes/Introduction/Product-Overview.md)用于部署。
+部署是将软件包/镜像部署至云主机或者Kubernetes集群上，提供部署服务。目前流水线集成了[京东云-云部署](../../../Developer-Tools/CodeDeploy/Introduction/Product-Overview.md)和[京东云-Kubernetes集群](../../../Elastic-Compute/JCS-for-Kubernetes/Introduction/Product-Overview.md)。
 
 
 
