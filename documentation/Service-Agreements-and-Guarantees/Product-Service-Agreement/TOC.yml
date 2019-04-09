@@ -110,3 +110,7 @@ items:
     href: IoT-Hub.md
   - name: 物联网协议适配服务条款
     href: IoT-Hub-Protocol-Adaptor.md
+  - name: 云文件服务协议
+    href: Cloud-File-Service.md
+  - name: 云文件公测试用协议
+    href: Cloud-file-service-public.md
