@@ -220,14 +220,14 @@ break;
 ## 更多接口    
     在推流过程中，可以进行一下功能的设置，设置接口在JDLive类中有详细备注，详细解释和示例代码如下：  
     
-**前后置摄像头切换**  
+* **前后置摄像头切换**  
 默认是使用前置摄像头（可以通过修改 JDLConfig的配置项 cameraType来修改这个默认值），调用一次switchCamera切换一次，注意切换摄像头前必须保证live对象都已经初始化。  
 ```
 if ([self.live isCaptureRunning]){
 [self.live switchCamera];
 }
 ```
-**闪光灯开关**  
+* **闪光灯开关**  
 只有后置摄像头才可以打开闪光灯（您可以通过JDLConfig里面的cameraType成员来确认当前摄像头是前置还是后置）  
 ```
 if([self.live isFlashLightSupported]){
@@ -236,7 +236,7 @@ if([self.live isFlashLightSupported]){
 NSLog（@” 后置摄像头时，闪光灯可用。”）
   }
 ```
-**美颜和滤镜**  
+* **美颜和滤镜**  
 setVideoBeautyWhiteLevel接口可以设置美颜级别，美颜级别0-5级，等级越高，美颜效果约明显。
 
 ```
@@ -248,13 +248,13 @@ setVideoFilterEffectIndex接口可以设置不同的滤镜效果，我们目前�
 ```
 [self.live setVideoFilterEffectIndex:level];
 ```
-**是否静音**  
+* **是否静音**  
 在推流过程中，可以进行是否静音推流的设置。  
 ```
 [self.live setAudioStreamMute:YES];
 ```
 
-**推流过程中截屏**  
+* **推流过程中截屏**  
   在推流过程中，可以进行截屏，必须要保证是在推流过程中，才能截到推流的某一帧。  
 ```
 JDLPushStreamState pushStatus = [self.live getPushStreamState];
@@ -271,7 +271,7 @@ if (img) {
 }
 ```
 
-**录制推流中视频**  
+* **录制推流中视频**  
 使用 startMediaRecord接口可以启动本地录制，录制格式为 MP4，通过recordFilePath可以指定 MP4 文件的存放路径。  
 ```
 DLPushStreamState pushStatus = [self.live getPushStreamState];
@@ -293,7 +293,7 @@ else{
 }
 ```
 
-**纯音频推流**  
+* **纯音频推流**  
 如果你的直播场景是声音直播，那么需要更新下推流的配置信息。使用以下代码设置纯音频推流并启动推流。纯音频推流可以设置封面。  
 ```
 if([self.live getPushStreamMode] != JDLPushStreamMode_Normal){ //不是正常推流，即已经是纯音频推流
@@ -316,7 +316,7 @@ else if ([buttonTitle isEqualToString:@"不设置"]){
 [self.live resumeNormalPushStream];
 ```
 
-**水印**  
+* **水印**  
 直播视频可以支持打上水印。水印类型支持图片、文字、时间等设置，图片可进行本地照片上传或直接拍摄，文字、时间可进行字体颜色的设置；支持设置透明度；还支持360度的旋转和拉伸。代码示例如下：
 ```
 //导入#import "WaterMarkEditView.h"
@@ -344,7 +344,7 @@ timestampWaterMarkEditView.delegate = self;
     [self.view addSubview:timestampWaterMarkEditView];
 ```
 
-**叠加UIView**  
+* **叠加UIView**  
 除了水印，还在流中可以叠加任意的UIView。例如画笔。  
 以画笔为例：  
 ```
@@ -362,7 +362,7 @@ self.brushView = [[BrushView alloc] init];
                 self.brushLayerId = [self.live addUIViewWithView:self.brushView rect:CGRectMake(0, 0, 1, 1) rotation:0 alpha:1 rotationMode:kJDLNoRotation];
 ```
 
-**音频调用**  
+* **音频调用**  
 在直播时可以设置自己喜欢的音乐加入直播中，可以从iOS的本地媒体库中获取音乐文件。音频调用的接口如下：  
 ```
 //开始播放背景音乐  audioPath 本地音乐文件 
@@ -397,13 +397,13 @@ if(self.strMusicUrl && ![ self.strMusicUrl isEqualToString:@""]){
 }
 ```  
 
-**音频升降调**  
+* **音频升降调**  
 setAudioEffectCustomFlag在直播过程中自定义音频升降调效果类型，类型为0-7。
 ```
 [self.live setAudioEffectCustomFlag:level];
 ```
 
-**混音**  
+* **混音**  
 推流过程中支持背景混音，支持背景音乐和麦克风的音轨混合，同时可以对其音量进行适当调节。  
 ```
 // track 1背景音乐
@@ -414,7 +414,7 @@ setAudioEffectCustomFlag在直播过程中自定义音频升降调效果类型�
 [self.live setAudioMixEnable:YES withTrackId:0];
 [self.live setAudioMixVolume:translucentValue withTrackId:0];
 ```    
-**变声**  
+* **变声**  
 在直播过程中，可以对声音进行处理。变声类型包括：大叔、萝莉、机器人、庄重等，还可以选择关闭变声。  
 ```
 //设置音频变声效果类型
@@ -422,7 +422,7 @@ setAudioEffectCustomFlag在直播过程中自定义音频升降调效果类型�
 [self.live setAudioEffectType:type];
 ``` 
 
-**镜像推流**  
+* **镜像推流**  
 镜像设置。镜像相关接口有两个，setPushStreamHFlip推流镜像和setPreviewHFlip预览镜像。setPushStreamHFlip设置仅对播放画面生效，setPreviewHFlip仅对预览画面生效，两者互不影响
 ```
 //预览视图镜像
@@ -431,13 +431,13 @@ setAudioEffectCustomFlag在直播过程中自定义音频升降调效果类型�
 [self.live setPushStreamHFlip:isOn];
 ```
 
-**音频降噪**  
+* **音频降噪**  
 在直播过程中，可以对周边噪音进行处理,以保证主播的声音更加清晰。处理的参数范围为： 1-4 ，默认0：关闭降噪。  
 ```
 [self.live setAudioNoiseHandleParam:isOn?3:0];
 ```
 
-**自动对焦**   
+* **自动对焦**   
 手动点击屏幕，会根据手指聚焦的坐标进行自动对焦。   
 ```
 //摄像头自动变焦
@@ -446,7 +446,7 @@ setAudioEffectCustomFlag在直播过程中自定义音频升降调效果类型�
 [self.live setCaptureExposureAtPoint:point];
 ```  
 
-**悬浮窗推流**   
+* **悬浮窗推流**   
 悬浮窗推流是在不销毁之前推流页面的情况下，改变推流预览的尺寸。悬浮窗加在window上，可以出现在任何ViewController中。  
 ```
 self.isNeedFloatPush = isOn;
@@ -456,7 +456,7 @@ if(self.isNeedFloatPush){
 }
 ```  
 
-**耳返**  
+* **耳返**  
 指的是当主播带上耳机来唱歌时，耳机中要能实时反馈主播的声音，这是由于主播自己的声音是通过头部骨骼（固体）传入耳朵，而观众听到声音最终是通过空气介质传入耳朵，这两种方式听的声音是有很大差异的，因此主播有需求直接听到观众端的效果。示例代码如下：
 ```
 if([self.live isHeadsetPlugIn]){
@@ -467,7 +467,7 @@ else{
 }
 ``` 
 
-**旋转锁定**   
+* **旋转锁定**   
 在推流过程中，屏幕转动时，不想改变直播视频方向，可以设置屏幕旋转锁定，这样直播推流就只有竖直状态。  
 ```
 self.isOrientationLock = isOn;
