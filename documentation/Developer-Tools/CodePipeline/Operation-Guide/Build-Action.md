@@ -1,6 +1,6 @@
 # 操作类型-构建
 
-构建是基于用户提供的源代码，生成软件包/镜像的自动化编译过程。目前流水线集成了[京东云-云编译](../../../Developer-Tools/CodeBuild/Introduction/Product-Overview.md)产品用于构建。
+构建是基于用户提供的源代码，生成软件包/镜像的自动化编译过程。目前流水线集成了[京东云-云编译](../../../Developer-Tools/CodeBuild/Introduction/Product-Overview.md)。
 
 ## 参数说明
 
