@@ -68,7 +68,7 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
         
     -   自定义分隔符。
-        * 你可以选择一个或者多个分隔符
+        * 你可以选择一个或者多个分隔符;
         * 分隔符与原图保护设置可分别设置。
         
         
