@@ -8,10 +8,10 @@
 
 1. 请执行下方指令确认您是否已经正确安装 docker 和 docker-compose，已安装会返回正确版本号。
 
-   ```
-   docker --version
-   docker-compose --version
-   ```
+      ```
+      docker --version
+      docker-compose --version
+      ```
 
 2. 请按照下方所述方法确认您下载的安装包是否正确。
 
