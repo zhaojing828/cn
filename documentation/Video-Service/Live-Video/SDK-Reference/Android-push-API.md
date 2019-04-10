@@ -270,4 +270,29 @@ mStreamer.hideBgVideo();//隐藏视频
 mStreamer.setCameraPreviewRect(0.f, 0.f, 1.f, 1.f);
 ```
 * **画笔推流**  
-在直播过程中，主播使用画笔画出任意文字、图形等，通过与摄像头画面合成后，再一起推送给观众端，主播端在页面上涂鸦，观众看到的就是带涂鸦的画面。涂鸦内容于主播画面已经完成了叠加，无需其他传输渠道。无论移动端、flash等播放器，看到的涂鸦画面完全一致。
+在直播过程中，主播使用画笔画出任意文字、图形等，通过与摄像头画面合成后，再一起推送给观众端，主播端在页面上涂鸦，观众看到的就是带涂鸦的画面。涂鸦内容于主播画面已经完成了叠加，无需其他传输渠道。无论移动端、flash等播放器，看到的涂鸦画面完全一致。  
+
+ViewCapture显示画笔推流，首先需要初始化：  
+```
+ViewCapture mPaintViewCapture = new ViewCapture(mStreamer.getGLRender());//利用GLRender实例化ViewCapture。
+
+// 连接图像混合器
+
+mPaintViewCapture.getSrcPin().connect(mStreamer.getImgTexMixer().getSinkPin(PAINT_VIEW_IDX));//
+
+// 设置参数显示PaintView，详细参数说明参照API说明文档
+
+mStreamer.showPaintView(PAINT_VIEW_IDX, 0, 0, 1, 1, 1);
+```
+开始画笔推流：    
+```
+mPaintViewCapture.setTargetResolution(mStreamer.getTargetWidth(),mStreamer.getTargetHeight());//设置分辨率
+
+mPaintViewCapture.setUpdateFps(mStreamer.getTargetFps());//设置帧率
+
+mPaintViewCapture.start(mPaintView);//为ViewCapture设置view
+```
+结束画笔推流：  
+```
+mPaintViewCapture.stop();7.2.画笔推流
+```  
