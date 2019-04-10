@@ -45,8 +45,12 @@ items:
    items:
       - name: 开通服务
         href: Operation-Guide/Sign-Up-Service-2.md
-      - name: 对象存储概览页
+      - name: OSS概览页
         href: Operation-Guide/Overview-Page-2.md
+      - name: OSS访问域名和地域
+        href: Operation-Guide/OSS-Endpoint-Guide/Oss-endpont-list.md
+      - name: OSS访问域名使用规则
+        href: Operation-Guide/OSS-Endpoint-Guide/Endpoint-Using-Rulers.md           
       - name: 存储空间管理
         items:
            - name: 空间概览
