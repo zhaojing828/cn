@@ -8,10 +8,7 @@
 
 扫描以下二维码可体验推流SDK、播放SDK的功能及效果。iOS支持8.0以上系统、Android支持5.0及以上 (API level 21)  
 说明：由于受到微信和QQ限制，请使用手机自带扫码或其他扫码软件扫描安装。<br />
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/SDK-ios%E4%BA%8C%E7%BB%B4%E7%A0%81.png" width="200" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/live-video/SDK%E5%AE%89%E5%8D%93%E4%BA%8C%E7%BB%B4%E7%A0%81.png" width="200" style="margin-left:20px" />
-
+![SDK下载二维码.png](../../../../image/live-video/SDK下载二维码.png)
 -   **SDK下载**
 
 京东云直播SDK按不同终端分为两个压缩包提供，如您是开发人员，需集成京东云的直播SDK，可按以下方式下载：  
