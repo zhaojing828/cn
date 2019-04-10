@@ -140,7 +140,7 @@ recordGif():根据视频和指定时间段，生成gif动图，
 JDCloudVideoCache  cache=new JDCloudVideoCache(cachePath);  
 整个APP周期，缓存只能新建一次，可以采用单例模式。  
 JDCloudVideoCache cache=DemoApplication.getCache(mContext)；  
-播放视频时候，在cache中获取播放地址：  
+播放视频时，在cache中获取播放地址：  
 String proxyUrl = cache.getProxyUrl(videoURL);  
 mJDCloudVideoView.setVideoPath(proxyUrl);  
 
