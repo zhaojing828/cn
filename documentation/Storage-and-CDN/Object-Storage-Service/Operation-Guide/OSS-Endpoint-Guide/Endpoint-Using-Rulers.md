@@ -147,9 +147,9 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
  
  **说明：**   
     
-同一个Region的ECS和OSS之间内网互通，不同Region的ECS和OSS之间内网不互通,只能使用外网访问域名。
+同一个Region的ECS和OSS之间内网互通，不同Region的VM和OSS之间内网不互通,只能使用外网访问域名。
 
-例如，您的OSS有两个Bucket，并且购买了华北-北京（s3-internal.cn-north-1.jdcloud-oss.com）的ECS：
+例如，您的OSS有两个Bucket，并且购买了华北-北京（s3-internal.cn-north-1.jdcloud-oss.com）的VM：
 
 *  其中一个Bucket名称为examplebeijing，Region为华北-北京，那么在华北-北京的ECS中可以使用`s3-internal.cn-north-1.jdcloud-oss.com`
 来访问 beijingres 的资源。
