@@ -94,7 +94,7 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
 
 ## 通过内网访问OSS服务 
 
-内网指的是京东云产品之间的内网通信网络，例如您通过ECS云服务器访问OSS服务。内网产生的流入和流出流量均免费，其他费用照常计费。
+内网指的是京东云产品之间的内网通信网络，例如您通过云主机（VM）访问OSS服务。内网产生的流入和流出流量均免费，其他费用照常计费。
 
 内网访问OSS有如下两种方式：
 
@@ -109,14 +109,14 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
 -   Bucket：OSS存储空间
 -   Endpoint：Bucket所在数据中心的访问域名，您需要填写内网Endpoint
 -   Object：上传到OSS上的文件
-  示例：如您的Region为华北-北京（s3-internal.cn-north-1.jdcloud-oss.com），Bucket名称为123，Object访问路径为myfile/aaa.txt，那么您的外网访问地址为：
+  示例：如您的Region为华北-北京（s3-internal.cn-north-1.jdcloud-oss.com），Bucket名称为123，Object访问路径为myfile/aaa.txt，那么您的内网访问地址为：
 
 ```
 123.s3-internal.cn-north-1.jdcloud-oss.com/myfile/aaa.txt
 ```
 
 
--   **访问方式二：通过ECS使用OSS SDK配置内网访问域名。**
+-   **访问方式二：通过VM使用OSS SDK配置内网访问域名。**
 
     以Java SDK为例，对位于华北-北京的Bucket进行操作时，需要在对类实例化时设置Endpoint：
 
@@ -148,7 +148,7 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
  
  **说明：**   
     
-同一个Region的ECS和OSS之间内网互通，不同Region的VM和OSS之间内网不互通,只能使用外网访问域名。
+同一个Region的VM和OSS之间内网互通，不同Region的VM和OSS之间内网不互通,只能使用外网访问域名。
 
 例如，您的OSS有两个Bucket，并且购买了华北-北京（s3-internal.cn-north-1.jdcloud-oss.com）的VM：
 
