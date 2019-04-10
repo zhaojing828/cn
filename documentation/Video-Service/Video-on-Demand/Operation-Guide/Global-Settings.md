@@ -34,13 +34,14 @@
 
 点播产品支持对播放域名安全相关的配置，在域名设置界面，点击想要配置的域名，会进入域名“访问设置”页面。
 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE-%E8%AE%BF%E9%97%AE%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2.png)
+
+![域名设置-访问设置页面.png](../../../../image/Video-on-Demand/域名设置-访问设置页面.png)
 
 **A.Referer防盗链**
 
 通过配置访问的referer黑白名单来对访问者身份进行识别和过滤，从而限制资源被访问的情况，点击Referer防盗链后面的修改配置选项，在弹出的窗口中进行规则配置。
 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E8%AE%BF%E9%97%AE%E8%AE%BE%E7%BD%AE-referer%E9%98%B2%E7%9B%97%E9%93%BE%E8%AE%BE%E7%BD%AE.png)
+![访问设置-referer防盗链设置.png](../../../../image/Video-on-Demand/访问设置-referer防盗链设置.png)
 
 **B.URL鉴权**
 
@@ -50,14 +51,14 @@
 
 2.开启URL鉴权后，hls格式暂时在控制台无法预览播放
 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E8%AE%BF%E9%97%AE%E8%AE%BE%E7%BD%AE-URL%E9%89%B4%E6%9D%83.png)
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E8%AE%BF%E9%97%AE%E8%AE%BE%E7%BD%AE-URL%E9%89%B4%E6%9D%83%E7%94%9F%E6%88%90%E5%99%A8.png)
+![访问设置-URL鉴权.png](../../../../image/Video-on-Demand/访问设置-URL鉴权.png)
+![访问设置-URL鉴权生成器.png](../../../../image/Video-on-Demand/访问设置-URL鉴权生成器.png)
 
 **C.IP黑名单**
 
 通过黑名单来对访问者身份进行识别和过滤，添加到黑名单的IP，将无法访问当前加速域名。
 
-![](https://github.com/jdcloudcom/cn/blob/cn-Video-on-Demand/image/Video-on-Demand/%E8%AE%BF%E9%97%AE%E8%AE%BE%E7%BD%AE-IP%E9%BB%91%E5%90%8D%E5%8D%95.png)
+![访问设置-IP黑名单.png](../../../../image/Video-on-Demand/访问设置-IP黑名单.png)
 
 ### 4.3 URL鉴权说明
 
