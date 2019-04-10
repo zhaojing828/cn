@@ -99,7 +99,6 @@ items:
       href: Best-Practices/Push-with-the-OBS-tool.md
 - name: 教程
   status: 0
-  items:
 - name: 问题排查
   items:
     - name: 推流连接失败
