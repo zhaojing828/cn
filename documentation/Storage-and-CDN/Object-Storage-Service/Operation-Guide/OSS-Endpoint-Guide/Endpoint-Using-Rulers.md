@@ -14,7 +14,7 @@ BucketName为您的存储空间名称，Endpoint为存储空间对应的地域�
 **说明：** 
 
 -   OSS以HTTP RESTful API的形式对外提供服务，当访问不同的地域（Region）时，需要不同的访问域名。
--   Endpoint分内网和外网访问域名。例如：s3.cn-south-1.jdcloud-oss.com 指向华南-广州地域的外网访问地址。内网访问地址s3-internal.cn-south-1.jdcloud-oss.com 指向华南-广州地域内网地址，在京东云VPC中使用OSS 建议使用内网访问域名，上传与下载流量均免费。Region和Endpoint对照表请参考[访问域名和数据中心](./Oss-endpont-list.md)。
+-   Endpoint分内网和外网访问域名。例如：s3.cn-south-1.jdcloud-oss.com 指向华南-广州地域的外网访问地址。内网访问地址s3-internal.cn-south-1.jdcloud-oss.com 指向华南-广州地域内网地址，在京东云VPC中使用OSS 建议使用内网访问域名，上传与下载流量均免费。Region和Endpoint对照表请参考[访问域名和地域](./Oss-endpont-list.md)。
 -   您也可以通过[设置自定义域名](https://docs.jdcloud.com/cn/object-storage-service/set-custom-domain-name-2)，将OSS的外网访问域名替换为您的自有域名。
 
 ## 通过外网访问OSS服务
