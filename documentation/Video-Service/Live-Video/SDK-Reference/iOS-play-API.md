@@ -234,8 +234,8 @@ self.jdCloudPlayer.isMirrorPlay = YES;
 ```  
 * **后台播放**  
 当用户点击home按钮后，播放器进入后台继续读取数据并播放音频。当APP回到前台后，音频继续播放。  
-参考下图设置：Target-Capabilities-Background Modes 打开，选择Audio，AirPlay and Picture in Picture选项即可。  
-![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/ios%E6%92%AD%E6%94%BE7.png)  
+参考下图设置：Target-Capabilities-Background Modes 打开，选择Audio，AirPlay and Picture in Picture选项即可。   
+![ios播放7.png](../../../../image/live-video/ios播放7.png)
 * **纯音频播放**  
 设置播放过程中有无画面输出，设置该属性为YES后，底层不再进行视频的渲染动作。播放前后均可设置。  
 ```
