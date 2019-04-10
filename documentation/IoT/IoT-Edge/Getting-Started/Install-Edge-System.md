@@ -64,7 +64,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
      ![](../../../../image/IoT/IoT-Edge/AKSK.png)
 
-     将该页面中的AK,SK填入配置文件对应项目中。***建议:基于安全考虑，您可参考[访问控制](https://docs.jdcloud.com/cn/iam/), 配置一个最小权限子账户，仅授权该Bucket的读写权限。之后，将子账户的AK/SK填入[UserConfig]。***
+     将该页面中的AK,SK填入配置文件对应项目中。***建议:基于安全考虑，您可参考[访问控制](https://docs.jdcloud.com/cn/iam), 配置一个最小权限子账户，仅授权该Bucket的读写权限。之后，将子账户的AK/SK填入[UserConfig]。***
 
    - OSS部分，请进入[对象存储](https://oss-console.jdcloud.com/)页面，点击左侧空间管理
 
