@@ -98,7 +98,7 @@ mJDCloudVideoView.seekTo(position);
 mJDCloudVideoView.setSpeed(speedLevel); 
 ```
 * **获取播放进度和时间**  
-播放器中显示的当前时间和播放的总时长，在准波播放成功后，可以获取。  
+播放器中显示的当前时间和播放的总时长，在准备播放成功后，可以获取。  
 示例代码：    
 ```
 //获取当前播放时间,单位：毫秒
