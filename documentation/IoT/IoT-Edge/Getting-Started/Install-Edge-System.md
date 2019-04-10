@@ -14,37 +14,41 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
   
 
 ## 操作步骤
-1. 进入Ubuntu系统，打开terminal。
+1. 安装Edge系统前，请先安装docker和docker-compose。
 
+    ```
+    sudo apt install docker
+    sudo apt install docker-compose
+    ```
     
 
-2. 解压缩Edge安装包
+2. 解压缩Edge安装包至任意目录下
 
     ```
     sudo tar zxvf jdc-edge-install.tar.gz –C ${destdir}
     ```
 
-3. 编辑之前下载好的配置文件**UserConfig.toml**
-
+3. 编辑配置文件**UserConfig.toml**
+    ```
+    vim ${destdir}/sys-mgmt-agent/res/UserConfig.toml
+    ```
+    [Edge]部分:请将完成创建Edge页面下保存的配置信息填入该区域：
     ```
     [Edge]
     Edgename = ''
     Region = ''
     HubHost = ''
     ComposefileUrl = ''
+    ```
+    [UserConfig]部分：需要您自行获取后填写。
+    ```
     [UserConfig]
     AK = ''
     SK = ''
     OSSRegion = ''
     OSSBucket = ''
     ```
-
-    其中：
-
-    [Edge]部分在创建Edge时，由系统自动生成。**请勿编辑修改！**
-
-    [UserConfig]部分需要您填写。
-
+    **其中：**
     - AK/SK ： 请登录[京东云控制台](https://console.jdcloud.com/)，点击右上角账户，如下图所示，点击Access Key管理
 
       ![](../../../../image/IoT/IoT-Edge/账号.png)
@@ -59,18 +63,11 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
       ![](../../../../image/IoT/IoT-Edge/edgeoss1.png)
 
-        点击空间名称，进入空间详情
+        点击空间名称，进入空间详情，将下图红框所示内容填入配置文件对应项目中。
       ![](../../../../image/IoT/IoT-Edge/edgeoss2.png)
 
-    ​       
 
-    ​       将上图红框所示内容填入配置文件对应项目中。
-
-4. 将编辑好的配置文件拷贝至Edge安装包解压后的路径 
-   ```bash
-   cp UserConfig.toml ${destdir}/sys-mgmt-agent/res
-   ```
-5. 执行安装脚本，完成Edge系统安装。
+5. 进入解压缩后的目录${destdir}，执行安装脚本，完成Edge系统安装。
 
     ```
     sudo ./install.sh
@@ -80,5 +77,5 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
 ## 相关参考
 
-- [导入数据](Import-Data.md)
+- [创建边缘节点](Create-Edgenode.md)
 
