@@ -24,7 +24,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
     sudo tar zxvf jdc-edge-install.tar.gz –C /opt
     ```
 
-3. 编辑之前下载好的配置文件
+3. 编辑之前下载好的配置文件**UserConfig.toml**
 
     ```
     [Edge]
@@ -47,30 +47,31 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
     - AK/SK ： 请登录[京东云控制台](https://console.jdcloud.com/)，点击右上角账户，如下图所示，点击Access Key管理
 
-    
+      ![](../../../../image/IoT/IoT-Edge/账号.png)
 
     ​	进入Access Key 管理页面，
 
-    
+      ![](../../../../image/IoT/IoT-Edge/AKSK.png)
 
     ​	将该页面中的AK,SK填入配置文件对应项目中。
 
     - OSS部分，请进入[对象存储](https://oss-console.jdcloud.com/)页面，点击左侧空间管理
 
-      
+      ![](../../../../image/IoT/IoT-Edge/edgeoss1.png)
 
       点击空间名称，进入空间详情
+      ![](../../../../image/IoT/IoT-Edge/edgeoss2.png)
 
     ​       
 
     ​       将上图红框所示内容填入配置文件对应项目中。
 
-4. 将编辑好的配置文件拷贝至Edge安装包解压后的路径下
+4. 将编辑好的配置文件拷贝至Edge安装包解压后的路径
 
 5. 执行安装脚本，完成Edge系统安装。
 
     ```
-    sudo ./intall.sh
+    sudo ./install.sh
     ```
 
     
