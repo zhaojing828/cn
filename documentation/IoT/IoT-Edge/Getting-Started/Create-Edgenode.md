@@ -21,15 +21,10 @@
 
     注意：公测期间，仅支持X86-64架构，Ubuntu18.04以上系统。
 
-4. 在“"新建边缘节点-第二步"页面，下载并妥善保存配置文件和Edge系统安装文件，稍后，请按照页面下方操作指南进行Edge系统的安装。
+4. 在“"新建边缘节点-第二步"页面，请下载Edge系统安装文件并妥善保存配置信息，稍后，请按照页面下方操作指南进行Edge系统的安装。
 
 5. 点击**完成创建**，页面会自动跳转到 “边缘节点列表”页面，等待边缘节点创建完成，您可以在“边缘节点列表”页面查看新创建的边缘节点。
 
 ## 相关参考
 
-- [设置白名单](Set-Whitelist.md)
-- [连接实例](Connect-Instance.md)
-- [修改密码](../Operation-Guide/Account-Management/Reset-Password.md)
-- [导入数据](Import-Data.md)
-- [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
-- [计费规则](../Pricing/Billing-Rules.md)
+- [安装Edge系统](Install-Edge-System.md)
