@@ -98,7 +98,8 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
 
 内网访问OSS有如下两种方式：
 
--   访问方式一：在访问的时候以URL的形式来表示OSS的资源。OSS的URL构成如下。
+-   **访问方式一：在访问的时候以URL的形式来表示OSS的资源。OSS的URL构成如下。**
+
 
 ```
 <Schema>://<Bucket>.<内网Endpoint>/<Object> 
@@ -115,7 +116,7 @@ OSS访问域名需携带Object访问路径才可以被访问，仅访问域名�
 ```
 
 
--   访问方式二：通过ECS使用OSS SDK配置内网访问域名。
+-   **访问方式二：通过ECS使用OSS SDK配置内网访问域名。**
 
     以Java SDK为例，对位于华北-北京的Bucket进行操作时，需要在对类实例化时设置Endpoint：
 
