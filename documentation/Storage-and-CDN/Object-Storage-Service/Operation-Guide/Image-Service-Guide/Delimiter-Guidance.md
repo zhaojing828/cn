@@ -11,7 +11,6 @@
 *  **URL参数方式访问**
  ```
    <文件URL>?x-oss-process=imgalias/<StyleName>
-
  ```
 
 示例：
