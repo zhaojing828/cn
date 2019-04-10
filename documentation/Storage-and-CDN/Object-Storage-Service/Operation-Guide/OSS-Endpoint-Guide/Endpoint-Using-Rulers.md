@@ -28,35 +28,35 @@ BucketName为您的存储空间名称，Endpoint为存储空间对应的地域�
 -   **访问方式一：访问时以URL的形式来表示OSS的资源。OSS的URL构成如下：**
 
 
-    ```
-    <Schema>://<Bucket>.<外网Endpoint>/<Object> 
-    
-    ```
+```
+<Schema>://<Bucket>.<外网Endpoint>/<Object> 
 
-    -   Schema：HTTP或者为HTTPS
-    -   Bucket：OSS存储空间名称
-    -   Endpoint：Bucket所在地域的访问域名，您需要填写外网Endpoint
-    -   Object：上传到OSS上的文件
-    
-    示例：如您的Region为华北-北京（s3.cn-north-1.jdcloud-oss.com），Bucket名称为123，Object访问路径为myfile/aaa.txt，那么您的外网访问地址为：
-    
+```
 
-    ```
-    123.s3.cn-north-1.jdcloud-oss.com/myfile/aaa.txt
-    
-    ```
+-   Schema：HTTP或者为HTTPS
+-   Bucket：OSS存储空间名称
+-   Endpoint：Bucket所在地域的访问域名，您需要填写外网Endpoint
+-   Object：上传到OSS上的文件
 
-    **说明：** 
-    
-    OSS访问域名需携带Object访问路径才可以被访问，仅访问域名，如`123.s3.cn-north-1.jdcloud-oss.com`，会有报错提示。
-   
-   您还可以直接将Object的URL放入HTML中使用，如下所示：
+示例：如您的Region为华北-北京（s3.cn-north-1.jdcloud-oss.com），Bucket名称为123，Object访问路径为myfile/aaa.txt，那么您的外网访问地址为：
 
-      ```HTML
 
-      <img src="https:// 123.s3.cn-north-1.jdcloud-oss.com/myfile/aaa.png">
-      
-      ```
+```
+123.s3.cn-north-1.jdcloud-oss.com/myfile/aaa.txt
+
+```
+
+**说明：** 
+
+OSS访问域名需携带Object访问路径才可以被访问，仅访问域名，如`123.s3.cn-north-1.jdcloud-oss.com`，会有报错提示。
+
+您还可以直接将Object的URL放入HTML中使用，如下所示：
+
+```HTML
+
+<img src="https:// 123.s3.cn-north-1.jdcloud-oss.com/myfile/aaa.png">
+
+```
 
 -   **访问方式二： 通过OSS SDK配置外网访问域名。**
 
@@ -100,57 +100,59 @@ BucketName为您的存储空间名称，Endpoint为存储空间对应的地域�
 
 -   访问方式一：在访问的时候以URL的形式来表示OSS的资源。OSS的URL构成如下。
 
-    ```
-    <Schema>://<Bucket>.<内网Endpoint>/<Object> 
-    ```
+```
+<Schema>://<Bucket>.<内网Endpoint>/<Object> 
+```
 
-    -   Schema：HTTP或者为HTTPS
-    -   Bucket：OSS存储空间
-    -   Endpoint：Bucket所在数据中心的访问域名，您需要填写内网Endpoint
-    -   Object：上传到OSS上的文件
-      示例：如您的Region为华北-北京（s3-internal.cn-north-1.jdcloud-oss.com），Bucket名称为123，Object访问路径为myfile/aaa.txt，那么您的外网访问地址为：
+-   Schema：HTTP或者为HTTPS
+-   Bucket：OSS存储空间
+-   Endpoint：Bucket所在数据中心的访问域名，您需要填写内网Endpoint
+-   Object：上传到OSS上的文件
+  示例：如您的Region为华北-北京（s3-internal.cn-north-1.jdcloud-oss.com），Bucket名称为123，Object访问路径为myfile/aaa.txt，那么您的外网访问地址为：
 
-    ```
-    123.s3-internal.cn-north-1.jdcloud-oss.com/myfile/aaa.txt
-    ```
+```
+123.s3-internal.cn-north-1.jdcloud-oss.com/myfile/aaa.txt
+```
 
 
 -   访问方式二：通过ECS使用OSS SDK配置内网访问域名。
 
     以Java SDK为例，对位于华北-北京的Bucket进行操作时，需要在对类实例化时设置Endpoint：
 
-    ```Java
-         public class S3SdkTest{
-          public static void main(String[ ] args)  {
-              final String accessKey = "<your accesskey>";
-              final String secretKey = "<your secretkey>";
-              final String endpoint = "https://s3-internal.cn-north-1.jdcloud-oss.com";
-              ClientConfiguration config = new ClientConfiguration();
+```Java
+     public class S3SdkTest{
+      public static void main(String[ ] args)  {
+          final String accessKey = "<your accesskey>";
+          final String secretKey = "<your secretkey>";
+          final String endpoint = "https://s3-internal.cn-north-1.jdcloud-oss.com";
+          ClientConfiguration config = new ClientConfiguration();
 
-              AwsClientBuilder.EndpointConfiguration endpointConfig =
-                      new AwsClientBuilder.EndpointConfiguration(endpoint, "cn-north-1");
+          AwsClientBuilder.EndpointConfiguration endpointConfig =
+                  new AwsClientBuilder.EndpointConfiguration(endpoint, "cn-north-1");
 
-              AWSCredentials awsCredentials = new BasicAWSCredentials(accessKey,secretKey);
-              AWSCredentialsProvider awsCredentialsProvider = new AWSStaticCredentialsProvider(awsCredentials);
+          AWSCredentials awsCredentials = new BasicAWSCredentials(accessKey,secretKey);
+          AWSCredentialsProvider awsCredentialsProvider = new AWSStaticCredentialsProvider(awsCredentials);
 
-              AmazonS3 s3 = AmazonS3Client.builder()
-                      .withEndpointConfiguration(endpointConfig)
-                      .withClientConfiguration(config)
-                      .withCredentials(awsCredentialsProvider)
-                      .disableChunkedEncoding()
-                      .withPathStyleAccessEnabled(true)
-                      .build();
-          }
+          AmazonS3 s3 = AmazonS3Client.builder()
+                  .withEndpointConfiguration(endpointConfig)
+                  .withClientConfiguration(config)
+                  .withCredentials(awsCredentialsProvider)
+                  .disableChunkedEncoding()
+                  .withPathStyleAccessEnabled(true)
+                  .build();
       }
-    ```
+  }
+```
 
  
  **说明：**   
     
-    同一个Region的ECS和OSS之间内网互通，不同Region的ECS和OSS之间内网不互通,只能使用外网访问域名。
+同一个Region的ECS和OSS之间内网互通，不同Region的ECS和OSS之间内网不互通,只能使用外网访问域名。
 
-    例如，您的OSS有两个Bucket，并且购买了华北-北京（s3-internal.cn-north-1.jdcloud-oss.com）的ECS：
+例如，您的OSS有两个Bucket，并且购买了华北-北京（s3-internal.cn-north-1.jdcloud-oss.com）的ECS：
 
-    *  其中一个Bucket名称为examplebeijing，Region为华北-北京，那么在华北-北京的ECS中可以使用`s3-internal.cn-north-1.jdcloud-oss.com`来访问 beijingres 的资源。
-    *  另外一个Bucket名称为exampleguangzhou，Region为华南-广州，那么在华北-北京的ECS用内网地址`s3-internal.cn-south-1.jdcloud-oss.com`是无法访问OSS的，必须使用外网地址`s3.cn-south-1.jdcloud-oss.com`。
+*  其中一个Bucket名称为examplebeijing，Region为华北-北京，那么在华北-北京的ECS中可以使用`s3-internal.cn-north-1.jdcloud-oss.com`
+来访问 beijingres 的资源。
+*  另外一个Bucket名称为exampleguangzhou，Region为华南-广州，那么在华北-北京的ECS用内网地址`s3-internal.cn-south-1.jdcloud-oss.com`
+是无法访问OSS的，必须使用外网地址`s3.cn-south-1.jdcloud-oss.com`。
 
