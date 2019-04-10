@@ -45,8 +45,12 @@ items:
    items:
       - name: 开通服务
         href: Operation-Guide/Sign-Up-Service-2.md
-      - name: 对象存储概览页
+      - name: OSS概览页
         href: Operation-Guide/Overview-Page-2.md
+      - name: OSS访问域名和地域
+        href: Operation-Guide/OSS-Endpoint-Guide/Oss-endpont-list.md
+      - name: OSS访问域名使用规则
+        href: Operation-Guide/OSS-Endpoint-Guide/Endpoint-Using-Rulers.md           
       - name: 存储空间管理
         items:
            - name: 空间概览
@@ -127,6 +131,8 @@ items:
             href: Operation-Guide/Image-Service-Guide/Porn-Recognition.md  
           - name: 图片原图保护
             href: Operation-Guide/Image-Service-Guide/Source-Image-Protection.md
+          - name: 自定义分隔符
+            href: Operation-Guide/Image-Service-Guide/Delimiter-Guidance.md           
           - name: 错误响应
             href: Operation-Guide/Image-Service-Guide/Response-To-Errors.md
       - name: 视频处理指南
@@ -344,7 +350,9 @@ items:
        - name: 兼容S3  SDK-iOS
          href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-iOS.md      
        - name: 兼容S3 SDK-.NET
-         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-NET.md   
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-NET.md 
+       - name: 兼容S3 SDK-Node.js
+         href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Nodejs.md     
        - name: 旧版 Java SDK（不推荐）
          items:
            - name: 安装

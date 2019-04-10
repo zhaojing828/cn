@@ -9,43 +9,43 @@
 ##  图片样式访问规则 
 
 *  **URL参数方式访问**
+ ```
+   <文件URL>?x-oss-process=imgalias/<StyleName>
 
-            ```
-            <文件URL>?x-oss-process=imgalias/<StyleName>
+ ```
 
-            ```
+示例：
+```
+bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
-    示例：
-    ```
-    bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
-    
-    ```
+```
 
-    **这种方式是图片处理默认支持的样式访问方式,您字只需求通过控制台完成新建图片样式的操作即可使用**
+ **这种方式是图片处理默认支持的样式访问方式,您字只需求通过控制台完成新建图片样式的操作即可使用**
 
 * **分隔符方式访问**
 
-        ```
-        <文件URL><分隔符><StyleName>
+```
+<文件URL><分隔符><StyleName>
 
-        ```
+```
 
-    示例：
+示例：
    
-         bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?{分隔符}stylename 
+ ```
+ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg{分隔符}stylename 
+ 
+ ```
+ 
 
-    当图片的URL带了分隔符，OSS图片处理服务会把该分隔符后面的内容当成样式的名称。分隔符只有在控制台配置成功后才能生效，支持
-        
-         -、_、/、!
+当图片的URL带了分隔符，OSS图片处理服务会把该分隔符后面的内容当成样式的名称。分隔符只有在控制台配置成功后才能生效，支持
+  `  -、_、/、!` 样式分隔符。分隔符方式访问为图片处理可选的使用方式。
+
        
-        
-   样式分隔符。分隔符方式访问为图片处理可选的使用方式。
-
 **说明**
 
-    *  StyleName是图片样式的名称。
-    *   创建样式、删除样式和修改样式可在控制台操作也可通过OPENAPI操作。
-    *   访问的图片样式必须为图片文件所在的bucket中，否则将报错。
+*  StyleName是图片样式的名称。
+*   创建样式、删除样式和修改样式可在控制台操作也可通过OPENAPI操作。
+*   访问的图片样式必须为图片文件所在的bucket中，否则将报错。
   
 
 ## 设置分隔符 
@@ -68,7 +68,7 @@
 
         
     -   自定义分隔符。
-        * 你可以选择一个或者多个分隔符
+        * 你可以选择一个或者多个分隔符;
         * 分隔符与原图保护设置可分别设置。
         
         
@@ -88,15 +88,15 @@
 
 -   通过URL参数，使用样式访问
 
-    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo](http://image-demo.oss-cn-hangzhou.aliyuncs.com/example.jpg?x-oss-process=style/panda_style)
+    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
     ![](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
 -   通过样式分隔符，使用样式方式访问
 
-    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?!imgstyle_demo](https://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg?!imgstyle_demo)
+    [https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg!imgstyle_demo](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
-    ![](images/2886_zh-CN.jpg@!panda_style)
+    ![](https://downloads.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/imgstyle_demo)
 
 
 三者可以达到同样的效果。
