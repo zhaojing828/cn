@@ -30,7 +30,6 @@ BucketName为您的存储空间名称，Endpoint为存储空间对应的地域�
 
 ```
 <Schema>://<Bucket>.<外网Endpoint>/<Object> 
-
 ```
 
 -   Schema：HTTP或者为HTTPS
