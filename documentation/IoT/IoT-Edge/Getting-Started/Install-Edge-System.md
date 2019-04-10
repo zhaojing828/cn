@@ -21,7 +21,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 2. 解压缩Edge安装包
 
     ```
-    sudo tar zxvf jdc-edge-install.tar.gz –C /opt
+    sudo tar zxvf jdc-edge-install.tar.gz –C ${destdir}
     ```
 
 3. 编辑之前下载好的配置文件**UserConfig.toml**
@@ -59,15 +59,17 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
       ![](../../../../image/IoT/IoT-Edge/edgeoss1.png)
 
-      点击空间名称，进入空间详情
+        点击空间名称，进入空间详情
       ![](../../../../image/IoT/IoT-Edge/edgeoss2.png)
 
     ​       
 
     ​       将上图红框所示内容填入配置文件对应项目中。
 
-4. 将编辑好的配置文件拷贝至Edge安装包解压后的路径
-
+4. 将编辑好的配置文件拷贝至Edge安装包解压后的路径 
+   ```bash
+   cp UserConfig.toml ${destdir}/sys-mgmt-agent/res
+   ```
 5. 执行安装脚本，完成Edge系统安装。
 
     ```
