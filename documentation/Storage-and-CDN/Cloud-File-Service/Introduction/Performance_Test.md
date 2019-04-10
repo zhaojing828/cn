@@ -23,6 +23,11 @@
 
 在提示下载安装包大小时选择“y”，完成下载和安装。
 ![fio_installed](../../../../image/Cloud-File-Service/fio_installed.png)
+安装完成后，请输入：
+
+`fio -v`
+
+验证fio版本。请确认安装v3.1及以上版本的fio进行测试，以取得更准确的测试结果。
 
 3)安装libaio引擎：
 
