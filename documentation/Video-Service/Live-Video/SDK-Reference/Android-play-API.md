@@ -48,7 +48,7 @@ public boolean onError(IMediaPlayer iMediaPlayer,int i,int errorIndex) {
 ```
 mJDCloudVideoView.setVideoPath(videoUrl);
 mJDCloudVideoView.start();//首次播放
-jdcVideoView.switchDataSource(videoURL);//调用start启动播放后,切换视//频。
+jdcVideoView.switchDataSource(videoURL);//调用start启动播放后,切换视频。
 ```  
 4.暂停播放，暂停后可以用start()再次播放。
 ```
