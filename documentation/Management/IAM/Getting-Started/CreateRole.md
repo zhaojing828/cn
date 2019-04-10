@@ -13,7 +13,7 @@
 
 ![角色类型选择页面](../../../../image/IAM/RoleManagement/角色类型选择页面.jpg)
 
-![创建用户角色页面](../../../../image/IAM/RoleManagement/创建用户角色页面.jpg)
+![创建用户角色页面](../../../../image/IAM/RoleManagement/创建用户角色页面.png)
 
 
 ## 给子用户授予扮演角色的权限
