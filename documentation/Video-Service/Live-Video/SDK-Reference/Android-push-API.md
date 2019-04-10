@@ -102,7 +102,7 @@ mStreamer.onResume();
         // 一般在这里停止摄像头采集
         mStreamer.stopCameraPreview();
 // 如果希望App切后台后，停止录制主播端的声音，可以在此切换为
-//DummyAudio采集，该模块会代替mic采集模块产生静音数据，同时释放占用的//mic资源
+//DummyAudio采集，该模块会代替mic采集模块产生静音数据，同时释放占用的mic资源
         mStreamer.setUseDummyAudioCapture(true);
 mStreamer.startImageCapture(mBgImagePath);
     }
