@@ -28,8 +28,7 @@
 
 - [产品概述](../Introduction/Product-Overview.md)
 - [产品规格](../Introduction/Specifications.md)
-- [价格总览](../Pricing/Price-Overview.md)
-- [创建实例](../Getting-Started/Create-Instance.md)
-- [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
-- [数据恢复](../Operation-Guide/Backup/Restore-Instance.md)
-- [设置报警规则](../Operation-Guide/Monitoring/Alarm-Rules.md)
+- [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
+- [安装Edge系统](../Getting-Started/Install-Edge-System.md)
+- [部署边缘计算模块](../Operation-Guide/Deploy-Edge-Module.md)
+
