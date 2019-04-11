@@ -62,13 +62,13 @@ Yunnan("云南","yunnan")
 
 Zhejiang("浙江","zhejiang")
 
-internals 保留ip（内网地址）
+Qinghai("青海","qinghai")
 
 World 海外ip
 
-any 无法匹配进上述view中的ip地址
+any 未识别地区
 
-Unknown("未知","unknown"),无法匹配进上述view中的ip，理论上不会出现
+unknown 上述都匹配不进去的情况匹配进unknown
 
 ## 运营商简称参照表
 
@@ -86,14 +86,14 @@ Btte("电信通","btte")
 
 World("国外","world")
 
-internals 保留ip（内网地址）
-
 Huashu("华数","huashu")
 
 bctv 广电
 
 ocn 东方有限
 
-any 无法匹配进上述view中的ip地址
+specail 运营商10网段(基本为移动)
 
-Unknown("未知","unknown"),以上都不匹配后，会匹配进unknown，理论上不会出现
+any 未识别运营商
+
+unknown 上述都匹配不进去的情况匹配进unknown
