@@ -22,10 +22,10 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    sudo apt install docker-compose
    ```
 
-2. 解压缩Edge安装包至任意目录下
+2. 解压缩Edge安装包至任意目录下（${destdir}）
 
    ```
-   sudo tar zxvf jdc-edge-install.tar.gz –C ${destdir}
+   tar zxvf jdc-edge-install.tar.gz –C ${destdir}
    ```
 
 3. 编辑配置文件**UserConfig.toml**
