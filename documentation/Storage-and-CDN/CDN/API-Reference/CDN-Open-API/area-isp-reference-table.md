@@ -68,6 +68,7 @@ World 海外ip
 
 any 未识别地区
 
+unknown 上述都匹配不进去的情况匹配进unknown
 
 ## 运营商简称参照表
 
@@ -94,3 +95,5 @@ ocn 东方有限
 specail 运营商10网段(基本为移动)
 
 any 未识别运营商
+
+unknown 上述都匹配不进去的情况匹配进unknown
