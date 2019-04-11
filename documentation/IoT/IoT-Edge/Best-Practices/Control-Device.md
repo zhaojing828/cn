@@ -1,41 +1,62 @@
-# 使用Command控制Edge子设备开启和关闭
+# 控制Edge子设备的开启和关闭
 
-MongoDB固定集合(Capped collections)是固定大小的循环集合，遵循插入顺序以支持创建，读取和删除操作的高性能。 通过循环，当分配给集合的固定大小被耗尽时，它将开始删除集合中最旧的文档，而不用提供任何明确的命令。
+目前，物联网智能边缘计算支持两种方式控制子设备的开启和关闭。
 
-固定集合按照磁盘存储的顺序存储文档，因此可确保文档大小不会超过磁盘上分配的空间。固定集合比较适合存储日志信息，缓存数据或其他高容量数据。
+## 前提条件
 
-## 创建固定集合
+- 已注册京东云账号，并完成实名认证。如果还没有账号请 [注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud%26ReturnUrl=%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3dhttp%3A%2F%2Fuc.jdcloud.com%2Fredirect%2FloginRouter%3FreturnUrl%3Dhttps%253A%252F%252Fwww.jdcloud.com%252Fhelp%252Fdetail%252F734%252FisCatalog%252F1)，或 [实名认证](https://uc.jdcloud.com/account/certify)。
+- 已创建 物联网中心服务 实例。
+- 已创建 边缘节点并部署完成边缘计算模块。
 
-要创建一个固定集合，可使用 createCollection 命令，指定capped选项的值为true，以及以字节为单位的最大集合大小。
+## 通过控制台下发设备状态
 
-    > db.createCollection( "log", { capped: true, size: 100000 } )
+1. 登录 [物联网中心服务 控制台](https://iot-console.jdcloud.com/iothub)。
 
-除了指定集合大小，还可以使用max参数限制集合中的文档数量。
+2. 在 设备管理 页面找到您之前部署边缘计算时创建的摄像头设备，点击右侧“设备属性更新”。
 
-    > db.createCollection("log", { capped : true, size : 5242880, max : 5000 } )
+   ![设备属性下发](../../../../image/IoT/IoT-Edge/controlcam01.png)
 
-如果要查看集合是否固定，请使用以下isCapped命令。
+3. 打开设备：在streaming的参数处填入‘on’ ，点击更新
 
-    > db.cappedLogCollection.isCapped()
+   关闭设备：在streaming的参数处填入‘off’ ，点击更新
+   
+4. 您可以进入您创建的用于存储边缘计算结果的OSS目录下查看。如果摄像头开启，则不断有图片和结果上传。如果摄像头关闭，则不会有数据产生。
 
-如果想要将一个集合转换为有上限的集合，则可以使用以下代码进行操作。
+**特别提示**：公测期间您可以在物联网智能边缘计算-边缘节点详情里，直接控制设备的开关。
 
-    > db.runCommand({"convertToCapped": "mycoll", size: 100000});
+## 在边缘节点控制
 
-此代码将现有的post转换为固定集合。
+1. 打开边缘节点的Termail
 
-## 查询固定集合
-默认情况下，在固定集合上查询将以插入顺序显示结果。 但是，如果要以相反的顺序检索文档，请使用sort命令：
+2. 查询 metadata service 地址
+    ```
+    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' edgex-core-metadata
+    ```
+   查询 command service 地址
+    ```
+    docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' edgex-core-command
+    ```
+3. 查询内部设备 id 和 streaming 命令 id
+    ```
+    curl http://${metadata_addr}:48081/api/v1/device/name/${yourdevicename}
+    ```
+    其中：${metadata_addr} 为上一条指令中查询出来的 metadata service 地址
+         ${yourdevicename} 为您在边缘计算部署时创建的设备名称。
+4. 向 command 服务发送 streaming 命令
 
-    db.cappedCollection.find().sort( { $natural: -1 } )
+    **打开设备**
 
-使用固定集合需要关注以下几点 ：
+    ```
+    curl -v -H 'Content-Type: application/json' -X PUT -d '{"streaming":"on"}'http://${cmd_addr}:48082/api/v1/device/${device_id}/command/${cmd_id}   
+    ```
 
-- 无法从固定集合中删除文档。
-- 固定集合中没有默认索引。
-- 在插入新文档时，MongoDB不需要在磁盘上实际寻找一个容纳新文档的位置。它可以随便地将新文档插入集合的尾部。这样就使得在固定集合中的插入操作非常快。
-- 在读取文档的同时，MongoDB按照磁盘上存储的顺序返回文档。这样使读取操作非常快。
+    *命令发送成功后,设备服务收到消息, 显示log - Run camera(${yourdevicename}) ， 摄像头设备开始捕捉图片并储存在本机目录 $HOME/edgedata/${yourdevicename}下，JPEG 图片被上传到您创建的 OSS 目录下。*
 
+    **关闭设备**
 
+    ```
+    curl -v -H 'Content-Type: application/json' -X PUT -d '{"streaming":"off"}'http://${cmd_addr}:48082/api/v1/device/${device_id}/command/${cmd_id}   
+    ```
 
-详细说明，请参见"[MongoDB官方文档](https://docs.mongodb.com/v3.2/core/capped-collections/)"。
+    *命令发送成功后,设备服务收到消息, 显示log - Stop camera(${yourdevicename}) ， 摄像头设备停止捕捉图片。*
+    
