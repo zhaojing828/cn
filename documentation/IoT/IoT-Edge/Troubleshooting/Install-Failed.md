@@ -1,4 +1,4 @@
-# 安装Edge System系统失败
+# 安装Edge系统失败
 
 ## 问题描述
 
@@ -15,13 +15,15 @@
 
 2. 请按照下方所述方法确认您下载的安装包是否正确。
 
-   - 进入边缘节点详情页，点击查看配置信息，记录安装包MD5值
+   - 进入边缘节点详情页，点击查看配置信息，记录安装包MD5值，并将其保存为md5.txt文件，内容如下：
+   ```
+   e0ierfndmjs9a7649b6f2cm3d8gbfu387 jdc-edge-install.tar.gz
+   ```
+   - 将md5.txt和jdc-edge-install.tar.gz安装包放至同一目录下，输入下方指令，校验安装包是否正确
 
-   - 输入下方指令，校验安装包是否正确
-
-     ```
-     MD5:DM5值 jdc-edge-install.tar.gz
-     ```
+   ```
+   md5sum -c md5.txt
+   ```
 
 3. 请确认您填写的用户配置文件（UserConfig.toml）是否正确，具体请参考 [安装Edge系统](../Getting-Started/Install-Edge-System.md) 。
 
