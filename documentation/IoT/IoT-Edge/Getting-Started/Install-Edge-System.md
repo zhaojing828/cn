@@ -20,6 +20,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    ```
    sudo apt install docker
    sudo apt install docker-compose
+   sudo dpkg --remove --force-dependsgolang-docker-crediential-helpers
    ```
 
 2. 解压缩Edge安装包至任意目录下（${destdir}）
