@@ -55,6 +55,7 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 
 例一：testbucket中存在文件名为`animal.jpg!imgStyle` 的文件，同时testbucket中存在名为`imgStyle`的图片样式，
 访问文件URL`testbucket.s3.cn-north-1.jdcloud-oss.com/animal.jpg!imgStyle`,若名为animal.jpg的文件存储在则将返回经过处理的图片，若不存在则返回404。
+
 例二：testbucket中存在文件名为`animal.jpg!imgStyle` 的文件，同时testbucket中不存在名为`imgStyle`的图片样式，
 访问文件URL`testbucket.s3.cn-north-1.jdcloud-oss.com/animal.jpg!imgStyle`,则返回`animal.jpg!imgStyle`文件。
 
