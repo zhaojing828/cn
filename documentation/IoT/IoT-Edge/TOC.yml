@@ -42,7 +42,7 @@
     items:
       - name: 边缘计算操作
         items:
-          - name: 部署边缘计算
+          - name: 部署边缘计算模块
             href: Operation-Guide/Edge-Module/Deploy-Edge-Module.md
           - name: 查看边缘计算结果
             href: Operation-Guide/Edge-Module/View-Module-Result.md
