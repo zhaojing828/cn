@@ -9,15 +9,13 @@
 - 已经创建好了一个物联网中心实例。如果还没有创建，请登录 [物联网中心控制台](<https://iot-console.jdcloud.com/iothub>) 创建实例。
 
 ## 操作步骤
-1. 登录 [物联网智能边缘计算控制台](<https://iot-console.jdcloud.com/iotedge>)。
+1. 登录 [物联网智能边缘计算控制台](https://iot-console.jdcloud.com/iotedge)。
 
 2. 在“边缘节点列表”页面，点击 **新建边缘节点** ，进入“新建边缘节点”页面。
 
-    ![新建边缘节点](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-003.png)
-
 3. 在“新建边缘节点-第一步”页面，按页面提示填写相应信息。
 
-    ![新建边缘节点第一步](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-003.png)
+    ![新建边缘节点第一步](../../../../image/IoT/IoT-Edge/Createedge01.png)
 
     注意：公测期间，仅支持X86-64架构，Ubuntu18.04以上系统。
 
