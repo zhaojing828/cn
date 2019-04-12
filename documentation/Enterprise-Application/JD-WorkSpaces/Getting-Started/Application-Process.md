@@ -1,3 +1,2 @@
-## 开通JD WorkSpaces
-申请开通JD WorkSpaces是购买创建云桌面的前提。<br>
-申请开通JD WorkSpaces将为您部署一套安全、独享的Workspace基础设施，此套设施为Workspace管理系统。
+## 开通Workspace
+申请开通Workspace是购买创建云桌面的前提。<br>
