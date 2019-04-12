@@ -42,7 +42,7 @@ href:
       - name: 用户管理
         href: Getting-Started/Active-Directory-Manager.md
       - name: 创建（购买）云桌面
-        href: Getting-Started/Purchase-WorkSpace.md
+        href: Getting-Started/Purchase-Workspace.md
       - name: 云桌面实例管理
         href: Getting-Started/Workspace-Instance.md
       - name: 云桌面实例详情
