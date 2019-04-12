@@ -20,5 +20,5 @@
 - [产品功能](../Introduction/Features.md)
 - [价格总览](../Pricing/Price-Overview.md)
 - [计费规则](../Pricing/Billing-Rules.md)
-- [部署计算模块](../Operation-Guide/Deploy-Edge-Module.md)
-- [查看计算结果](../Operation-Guide/View-Module-Result.md)
+- [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
+- [查看边缘计算结果](../Operation-Guide/Edge-Module/View-Module-Result.md)
