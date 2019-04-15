@@ -84,4 +84,4 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
 ## 相关参考
 
-- [创建边缘节点](Create-Edgenode.md)
+- [创建边缘计算节点](Create-Edgenode.md)
