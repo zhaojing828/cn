@@ -41,8 +41,9 @@
             href: Function-OpenAPI/getTrigger.md  
           - name: listTrigger
             href: Function-OpenAPI/listTrigger.md               
-          - name: testInvoke
-            href: Function-OpenAPI/testInvoke.md              
-            
+          - name: invoke
+            href: Function-OpenAPI/invoke.md           
+          - name: asyncInvoke
+            href: Function-OpenAPI/asyncInvoke.md        
             
      
