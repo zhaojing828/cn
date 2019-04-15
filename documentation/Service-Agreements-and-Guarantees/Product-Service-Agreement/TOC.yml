@@ -100,3 +100,17 @@ items:
     href: Cloud-Desktop-Service-ProtocolSLA.md
   - name: 视频点播服务协议 
     href: Video-on-demand-service-protocol.md
+  - name: 队列服务服务条款
+    href: Queue-Service-Terms-Of-Service.md   
+  - name: 队列服务等级协议（SLA）
+    href: Queue-Service-Terms-Of-Service-SLA.md
+  - name: 智臻链BaaS平台服务条款
+    href: JD-Blockchain-Open-Platform.md
+  - name: 物联网中心服务条款
+    href: IoT-Hub.md
+  - name: 物联网协议适配服务条款
+    href: IoT-Hub-Protocol-Adaptor.md
+  - name: 云文件服务协议
+    href: Cloud-File-Service-terms-of-service.md
+  - name: 云文件服务公测试用协议
+    href: Cloud-file-service-public-beta-terms-of-service.md

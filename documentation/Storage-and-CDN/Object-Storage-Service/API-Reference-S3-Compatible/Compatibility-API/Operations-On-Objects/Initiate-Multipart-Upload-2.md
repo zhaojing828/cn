@@ -7,7 +7,7 @@
 ### 语法
 ```
 POST /ObjectName?uploads HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com 
+Host: <bucket>.s3.<region>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -47,7 +47,7 @@ UploadID|分片上传ID。<br>Type: String<br>Ancestors: InitiateMultipartUpload
 ### 请求示例
 ```
 POST /example-object?uploads HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: oss-example.s3.<region>.jdcloud-oss.com
 Date: Mon, 1 Nov 2010 20:34:56 GMT
 Authorization: <authorization string>
 ```

@@ -18,11 +18,9 @@ v1
 |**deleteNodeGroup**|DELETE|cluster 摘除 nodeGroup 并删除 nodeGroup|
 |**describeCluster**|GET|查询单个集群详情。|
 |**describeClusters**|GET|查询集群列表|
-|**describeImages**|GET|查询服务配置信息，提供详细的 master 和 node 镜像信息。|
 |**describeNodeGroup**|GET|查询单个节点组详情|
 |**describeNodeGroups**|GET|查询节点组列表|
 |**describeQuotas**|GET|查询(k8s 集群)配额|
-|**describeServerConfig**|GET|查询(k8s 集群)服务配置信息|
 |**describeVersions**|GET|查询版本信息|
 |**modifyCluster**|PATCH|修改集群的 名称 和 描述。|
 |**modifyNodeGroup**|PATCH|修改节点组的 名称 和 描述|

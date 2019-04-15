@@ -96,7 +96,7 @@ cn-south-1 | 华南-广州
 
 [Node.js](/SDK/nodejs/Nodejs.md)
 
-[PHP](/SDK/PHP.md)
+[PHP](/SDK/PHP/PHP.md)
 
 [.Net](/SDK/dotnet/dotnet.md)
 

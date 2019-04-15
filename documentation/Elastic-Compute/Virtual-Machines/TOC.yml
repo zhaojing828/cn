@@ -284,7 +284,7 @@ items:
           - name: SSH启动报错/var/empty/sshd must be owned by root and not group or world-writable
             href: Linux-Troubleshooting/Fault-Class/SSH-startup-error-be-owned-by-root-and-not-group-or-world-writable.md
           - name: SSH 登录时出现如下错误：Maximum amount of failed attempts was reached
-            href: Linux-Troubleshooting/Fault-Class/Linux-Troubleshooting/Fault-Class/SSH-login-Failed.md
+            href: Linux-Troubleshooting/Fault-Class/SSH-login-Failed.md
           - name: SSH 登录时出现如下错误：ssh_exchange_identification： read： Connection reset by peer
             href: Linux-Troubleshooting/Fault-Class/ssh_exchange_identification.md
           - name: SSH 服务启动时出现如下错误：main process exited, code=exited
