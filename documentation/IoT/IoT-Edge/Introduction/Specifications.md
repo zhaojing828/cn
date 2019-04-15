@@ -13,6 +13,6 @@
         
 - [价格总览](../Pricing/Price-Overview.md)
 - [计费规则](../Pricing/Billing-Rules.md)
-- [创建边缘节点](../Getting-Started/Create-Edgenode.md)
+- [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
 - [安装Edge系统](../Getting-Started/Install-Edge-System.md)
-- [部署边缘计算](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
+- [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
