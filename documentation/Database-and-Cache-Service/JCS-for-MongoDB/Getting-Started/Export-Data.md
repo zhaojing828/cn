@@ -28,18 +28,18 @@
     
 8. 自动备份为物理备份数据，请按以下步骤操作。
     
-1）将备份文件解压到指定路径
+    1）将备份文件解压到指定路径
 
 ```
 tar -C /xxx/data (mongod数据存储路径) -xf /yyy/mongo-xxxx.tar(备份文件下载路径)
 ```
-2）单节点模式启动mongod
+    2）单节点模式启动mongod
 
 ```
 mongod --dbpath /xxx/data
 ```
 
-3）通过mongo shell登录mongo，删除local库
+    3）通过mongo shell登录mongo，删除local库
 
 ```
 mongo [--options]
@@ -47,13 +47,13 @@ use local
 db.dropDatabase()
 ```
 
-4）以副本集的方式启动当前节点
+    4）以副本集的方式启动当前节点
 
 ```
 mongod --dbpath /xxx/data --replSet <replName>
 ```
 
-5）通过mongo shell登录mongo，在副本集的一个且仅一个成员上使用rs.initiate()
+    5）通过mongo shell登录mongo，在副本集的一个且仅一个成员上使用rs.initiate()
 
 ```
 mongo [--options]
@@ -66,7 +66,7 @@ rs.initiate( {
 [rs.initiate()用法](https://docs.mongodb.com/master/reference/method/rs.initiate/#rs.initiate)
 
 
-6）向副本集中添加新的成员（请确保新添加成员--dbpath目录下数据为空）
+    6）向副本集中添加新的成员（请确保新添加成员--dbpath目录下数据为空）
 
 ```
 rs.add()
