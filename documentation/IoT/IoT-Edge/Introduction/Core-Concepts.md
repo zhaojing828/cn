@@ -14,4 +14,4 @@
 
 - [产品概述](../Introduction/Product-Overview.md)
 - [产品规格](../Introduction/Specifications.md)
-- [创建边缘节点](../Getting-Started/Create-Edgenode.md)
+- [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
