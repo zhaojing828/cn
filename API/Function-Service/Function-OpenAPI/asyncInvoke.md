@@ -1,14 +1,14 @@
-# deleteVersion
+# asyncInvoke
 
 
 ## 描述
-删除版本
+异步测试执行函数
 
 ## 请求方式
-DELETE
+POST
 
 ## 请求地址
-https://function.jdcloud-api.com/v1/regions/{regionId}/functions/{functionName}/versions/{versionName}
+https://function.jdcloud-api.com/v1/regions/{regionId}/functions/{functionName}/versions/{versionName}:asyncinvoke
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -17,7 +17,9 @@ https://function.jdcloud-api.com/v1/regions/{regionId}/functions/{functionName}/
 |**regionId**|String|True| |Region ID|
 
 ## 请求参数
-无
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**event**|String|True| |异步执行函数的输入事件|
 
 
 ## 返回参数
