@@ -2,5 +2,5 @@
 
 请右键点击核验单“图片另存为”至本地后打印即可
 
-![Beijing-multi-domain-verification-form-cn-1.jpg](../../../../image/ICP-License-Service/Beijing-multi-domain-verification-form-cn-1.jpg)
+![Beijing-multi-domain-verification-form-cn-1.jpg](../../../../../image/ICP-License-Service/Beijing-multi-domain-verification-form-cn-1.jpg)
 
