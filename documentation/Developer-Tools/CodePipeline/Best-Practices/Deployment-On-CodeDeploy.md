@@ -120,7 +120,7 @@
 -  部署命令：提供部署命令，选择 输入部署操作命令，在yaml中贴如下命令：
 
  ```
- files:
+files:
   - source: /
     destination: /home/demo
 hooks:
