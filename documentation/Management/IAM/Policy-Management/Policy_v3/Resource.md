@@ -85,16 +85,9 @@ JRN示例：
 | 安全令牌服务 | jrn:iam::accountId:role/{roleName}|
 
 ### 互联网中间件
+
 | 产品线名称 |                           JRN示例                            |
 | :---------: | :---------------------------------------------------------- |
 | 消息队列JCQ      | jrn:jcq:regionId:accountId:/topics/{topicName<br>jrn:jcq:regionId:accountId:/topics/{topicName}/subscriptions/{consumerGroupId} |
-| 云搜索Elasticsearch  |  jrn:es:regionId:accountId:instances/{instanceId}|
-| 分布式服务框架 | jrn:jdsf:regionId:accountId:deployapps/{appId}
-<br> jrn:jdsf:regionId:accountId:registries/{registryId}
-<br> jrn:jdsf:regionId:accountId:registries/{registryId}/services/{serviceName}
-<br> jrn:jdsf:regionId:accountId:registries/{registryId}/services/{serviceName}/instances/{instanceId}
-<br> jrn:jdsf:regionId:accountId:traces/{instanceId}
-<br> jrn:jdsf:regionId:accountId:traces/{instanceId}/services/{serviceName}
-<br> jrn:jdsf:regionId:accountId:traces/{instanceId}/tracings/{traceId}
-<br> jrn:jdsf:regionId:accountId:appconfig/{appConfigId}
-|
+| 云搜索Elasticsearch  |  jrn:es:regionId:accountId:instances/{instanceId} |
+| 分布式服务框架 | jrn:jdsf:regionId:accountId:deployapps/{appId} |
