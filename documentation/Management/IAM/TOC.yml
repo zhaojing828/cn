@@ -25,10 +25,6 @@ items:
         href: Getting-Started/CreatePolicy.md
       - name: 创建角色（可选）
         href: Getting-Started/CreateRole.md
-      - name: 为子用户，群组，角色授权
-        href: Getting-Started/AttachPolicy.md
-      - name: 子用户，角色登录控制台
-        href: Getting-Started/ConsoleLogin.md
   - name: 操作指南
     items:
       - name: 概览
