@@ -38,4 +38,4 @@
 - [创建边缘计算节点](../../Getting-Started/Create-Edgenode.md)
 - [安装Edge系统](../../Getting-Started/Install-Edge-System.md)
 - [部署边缘计算模块](../Edge-Module/Deploy-Edge-Module.md)
-- [控制边缘节点子设备](../../Getting-Started/Best-Practices/Control-Device.md)
+- [控制边缘节点子设备](../../Best-Practices/Control-Device.md)
