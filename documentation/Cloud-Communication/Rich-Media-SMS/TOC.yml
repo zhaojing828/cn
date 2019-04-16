@@ -30,6 +30,6 @@ items:
 - name: 相关协议
   items:
     - name: 服务协议
-      href: Service-Agreements-and-Guarantees/RichMedia-Message-Term.md
+      href: Service-Agreements-and-Guarantees/Rich-Media-SMS-Term.md
     - name: SLA服务协议
-      href: Service-Agreements-and-Guarantees/RichMedia-Message-SLA.md
+      href: Service-Agreements-and-Guarantees/Rich-Media-SMS-SLA.md
