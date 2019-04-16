@@ -46,8 +46,7 @@ bucket.s3.cn-north-1.jdcloud-oss.com/lena.jpg?x-oss-process=imgalias/stylename
 *   创建样式、删除样式和修改样式可在控制台操作也可通过OPENAPI操作。
 
 *   设置多个分隔符后，访问图片的时候如果url中包含多个分隔符，会按照 `- `→ `_ ` → `/` →` ! ` 的顺序执行，并多次处理，具体规则请看下面例子：
-
-例子：
+示例：
 
 若bucket设置的图片样式名称为：`imgStyle` 。请求中包含了多个合法的分隔符，且bucke设置了这些分隔符，如：`http://downloads.s3.cn-north-1.jcloudcs.com/lena.jpg-imgStyle_imgStyle`。根据匹配顺序`- `→ `_ ` → `/` →` ! ` ，系统先将 `-` 匹配为分隔符，该分隔符后的内容为图片样式名，即`imgStyle_imgStyle`，该分隔符前的内容为文件url，即object key为`lena.jpg`，若bucket未设置名为`imgStyle_imgStyle`的样式，系统将认为此处 `-` 不作为分隔符使用。继续匹配bucket中已设置的下一个分隔符 `_` 。同样，图片样式名为`imgStyle`，object key为`lena.jpg-imgStyle`，并且bucket已经设置了名为`imgStyle`的样式，匹配成功，返回处理结果。
 
