@@ -22,7 +22,13 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    sudo apt install docker-compose
    sudo dpkg --remove --force-depends golang-docker-credential-helpers
    ```
-
+   并添加用户组docker，将当前用户${USER}添加至docker用户组下，当前用户${USER}可用whoami获取。
+   ```
+   sudo groupadd docker
+   sudo gpasswd –a $(USER) docker
+   ```
+   注意：完成操作后，请重启系统。
+   
 2. 解压缩Edge安装包至任意目录下（${destdir}）
 
    ```
