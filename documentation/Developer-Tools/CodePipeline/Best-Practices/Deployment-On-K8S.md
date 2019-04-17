@@ -181,7 +181,7 @@ out_dir: 'output'
 	kind: Service
 	apiVersion: v1
 	metadata:
-	  name: lb-show
+	  name: lb-demo
 	  namespace: default
 	  labels:
 	    k8s-app: kubernetes-test
@@ -189,10 +189,10 @@ out_dir: 'output'
 	  ports:
 	    - protocol: TCP
 	      port: 80
-	      targetPort: 8088
+	      targetPort: 8080
 	      nodePort: 30190
 	  selector:
-	    app: golang-test-demo
+	    app: golang-deployment
 	  type: LoadBalancer
 	  sessionAffinity: None
 	  externalTrafficPolicy: Cluster 
