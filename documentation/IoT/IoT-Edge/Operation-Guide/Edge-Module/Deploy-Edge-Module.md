@@ -9,7 +9,7 @@
 
 ## 操作步骤
 
-1. 登录 [物联网智能边缘计算控制台](<https://iot-console.jdcloud.com/iotedge>)。
+1. 登录 [物联网智能边缘计算控制台](https://iot-console.jdcloud.com/iotedge)。
 
 2. 在“边缘计算列表”页面，点击 **新建部署** ，进入“新建部署”页面。
 
