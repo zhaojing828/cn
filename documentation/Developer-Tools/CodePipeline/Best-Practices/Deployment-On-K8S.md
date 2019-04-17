@@ -13,6 +13,7 @@
 
 请确保云编译任务、Kubernetes集群和流水线在同一个区域。
 
+
 ### Clone示例代码至代码托管
 
 代码示例地址为：https://code.jdcloud.com/JDCloud-Codebuild/golang-demo
@@ -80,6 +81,9 @@ out_dir: 'output'
 
 保存，完成云编译任务的准备。
 
+     ![](/image/codepipeline/best-k8s-build.PNG)
+     
+     ![](/image/codepipeline/best-k8s-build2.PNG)
 
 ### 在Kubernetes集群中创建集群
 
@@ -111,26 +115,27 @@ out_dir: 'output'
 
 1. 点击 创建 选择 快速创建。配置流水线名称，如pipeline-k8s-demo
 
-     ![](/image/codepipeline/pipeline-demo.PNG)
+     ![](/image/codepipeline/pipeline-k8s-demo.PNG)
 
 2. 配置源代码
 
   阶段名默认为 源代码，添加源代码操作。操作中选择京东云-代码托管，选择示例代码JDCloud-Codebuild/golang-demo。
   
-   ![](/image/codepipeline/source-best2.PNG)
+   ![](/image/codepipeline/best-k8s-source.PNG)
 
 
 3. 配置构建。
 
   阶段名默认为 构建阶段，添加构建操作。   
   
-   ![](/image/codepipeline/build-best2.PNG)
+   ![](/image/codepipeline/best-k8s-build3.PNG)
 
--  操作名称：构建操作
+
 -  操作类型：构建
+-  操作名称：使用默认的名称即可
 -  操作提供方：云编译
 -  代码源：构建任务的源代码，选择上一步中创建的源代码操作。
--  任务：选择云编译中创建的编译任务，如ci-demo
+-  任务：选择云编译中创建的编译任务，如Golang-Demo
 -  手工确认：如选择手工确认，该操作会在用户点击确认后继续执行。
      
    
@@ -138,36 +143,23 @@ out_dir: 'output'
 4. 配置部署。
  
  阶段名默认为 部署阶段，添加部署操作。 
-  
-     1. 原子操作中选择 Kubernetes集群，输入操作选择前面配置的构建操作。需要用户提前创建好集群，在流水线中提供部署的deployment。
-        示例如下：
-        ![](/image/codepipeline/best-k8s.png)
-        样例deployment：
-	```
-	apiVersion: apps/v1beta1
-	kind: Deployment
-	metadata:
-	  name: golang-test-demo-deployment
-	spec:
-	  replicas: 3
-	  template:
-	    metadata:
-	      labels:
-		app: golang-test-demo
-	    spec:
-	      containers:
-		- name: golang-test-demo
-		  image: nginx:1.7.9
-		  ports:
-		    - containerPort: 8088
-	      imagePullSecrets:
-		- name: my-secret	
-	```
-       其中，image需要用构建操作的产出做替换，
-       ![](/image/codepipeline/best-docker.png)  
+ 
+     ![](/image/codepipeline/best-k8s-deploy.PNG)
      
-     2. Kubernetes集群服务从容器镜像仓库拉去镜像需要授权，具体授权方式可参考    
-      [集成容器镜像仓库]( https://docs.jdcloud.com/cn/jcs-for-kubernetes/deploy-container-registry)
+-  操作类型：部署
+-  操作名称：使用默认的名称即可
+-  操作提供方：Kubernetes集群
+-  目标集群：选择已经创建的k8s集群
+-  创建部署方式：选择页面填写应用详情
+    -  应用名：如golang-deployment
+    -  镜像来源：选择云编译，部署编译产出的镜像到k8s集群
+    -  容器组数量(replicas)：填写副本数
+    -  
+    
+    
+-  手工确认：如选择手工确认，该操作会在用户点击确认后继续执行。
+
+ 
       
      3. 在k8s集群页面，给这个deployment添加一个负载均衡服务。      
 	```
