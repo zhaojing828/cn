@@ -7,7 +7,7 @@
 - 集成服务（Integration Service）
 - 报表服务（Reporting Service）
 - 分析服务（Analysis Service）
-- 服务代理（Servie Broker）
+- 服务代理（Service Broker）
 - 复制功能
 
 # 二. 子账号限制
