@@ -8,17 +8,48 @@ Oracle是业界使用最广泛的商业级数据库，目前很多用户都有�
 - 操作系统环境：centos 6.5 64位
 - 数据库版本： oracle 11.2.0.4
 
-## 2. IP规划
+## 2. 环境规划
+### IP规划
 
 |主机名|公共IP|私有IP|虚拟IP|scan IP|
 |-|-|-|-|-|
 |oracle-rac1|10.10.10.101|192.168.100.101|10.10.10.103|10.10.10.105 scan-ip|
 |oracle-rac2|10.10.10.102|192.168.100.102|10.10.10.104|10.10.10.105 scan-ip|
 
+### ASM共享存储规划
+
+|磁盘组|冗余类型|磁盘LIST|
+|-|-|-|
+|OCR|NORMAL|VOLCRS01、VOLCRS01、VOLCRS03|
+|DATA|EXTERNAL|VOLDATA01、VOLDATA02、VOLDATA03|
+
+### 配置/etc/hosts文件：
+
+两个节点
+```
+#pub
+10.10.10.101 oracle-rac1
+10.10.10.102 oracle-rac2
+#vip
+10.10.10.103 oracle-rac1-vip
+10.10.10.104 oracle-rac2-vip 
+#priv
+192.168.100.101 oracle-rac1-priv 
+192.168.100.102 oracle-rac2-priv 
+#scan-ip
+10.10.10.105 scan-ip
+```
+
 ## 3. 安装配置n2n
 由于Oracle RAC需要网络具有组播功能，因此在云端需要借助n2n软件实现
 
 ### 3.1 安装n2n
+安装svn需要的rpm
+```
+yum -y install subversion
+sudo yum install openssl-devel
+```
+
 在两台云主机上均执行下面的命令
 ```
 cd /usr/src
@@ -39,6 +70,10 @@ echo "/opt/n2n/sbin/supernode -l 65530" >> /etc/rc.local
 ```
 
 两个节点运行客户端，并写入到/etc/rc.local
+
+注意：server端ip，是supernode的ip
+- edge0: private网卡
+- edge1: public网卡
 
 - **节点1**
 ```
@@ -161,6 +196,22 @@ swapon /home/oracle/myswaps/swapfile1
 # vi /etc/fstab添加如下内容：
 echo "/home/oracle/myswaps/swapfile1 swap swap defaults 0 0" >>/etc/fstab
 ```
+
+### 4.6 准备软件
+一共需要三个安装文件：
+- p13390677_112040_Linux-x86-64_2of7.zip
+- p13390677_112040_Linux-x86-64_1of7.zip
+- p13390677_112040_Linux-x86-64_3of7.zip
+
+1. 将oracle软件的安装介质，上传到/home/oracle:
+
+p13390677_112040_Linux-x86-64_2of7.zip
+
+p13390677_112040_Linux-x86-64_1of7.zip
+
+2. 将grid软件的安装介质，上传到/home/grid:
+
+p13390677_112040_Linux-x86-64_3of7.zip
 
 ## 5. 安装oracle rac的依赖包
 
