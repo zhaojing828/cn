@@ -42,7 +42,7 @@ s3R = Aws::S3::Resource.new(
 
 ## 使用示例
 
-以下为部分使用示例，更多说明请参考[Class: Aws::S3::Client](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html)
+以下为部分使用示例，更多说明请参考[Class: Aws::S3::Client](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html)。
 
 ### 创建存储空间
 初始化Client示例，并使用其创建存储空间：
