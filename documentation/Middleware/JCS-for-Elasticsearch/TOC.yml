@@ -64,7 +64,9 @@
         - name: 快照指定索引
           href: Operation-Guide/indexsnapshot.md
         - name: 删除快照
-          href: Operation-Guide/deletesnapshot.md 
+          href: Operation-Guide/deletesnapshot.md
+      - name: 访问控制
+        href: Operation-Guide/control.md
       - name: Kibana
         href: Operation-Guide/Kibana.md 
       - name: 监控集群
