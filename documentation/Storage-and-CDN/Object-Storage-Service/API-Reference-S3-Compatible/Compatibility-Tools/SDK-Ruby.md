@@ -75,7 +75,7 @@ region = 'cn-north-1'
 cred = Aws::Credentials.new('<your-ak>','<your-sk>')
 
 #初始化Resource
-s3R = Aws::S3::Client.new(
+s3R = Aws::S3::Resource.new(
   credentials: cred,
   endpoint: endpoint,
   region: region
