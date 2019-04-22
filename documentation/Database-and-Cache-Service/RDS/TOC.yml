@@ -321,9 +321,9 @@
       - name: 导入 PostgreSQL 
         items:
         - name: 从本地 PostgreSQL 导入
-          href: Best-Practices/Data-Migration/Import-Data-Into-MariaDB-Instance/Local-to-PostgreSQL.md
+          href: Best-Practices/Data-Migration/Import-Data-Into-PostgreSQL-Instance/Local-to-PostgreSQL.md
         - name: 从云主机 PostgreSQL 导入
-          href: Best-Practices/Data-Migration/Import-Data-Into-MariaDB-Instance/VM-to-PostgreSQL.md
+          href: Best-Practices/Data-Migration/Import-Data-Into-PostgreSQL-Instance/VM-to-PostgreSQL.md
     - name: 将备份文件恢复到自建数据库
       items:
       - name: 将备份恢复到自建 MySQL
