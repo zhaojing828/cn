@@ -16,7 +16,7 @@ JDCloudElasticSearchRead  | 云搜索Elasticsearch管理员权限 | 系统类型
 
 #### 自定义策略
 
-如果系统策略不能满足您的使用需求，也可以根据访问控制的[操作指南]( https://docs.jdcloud.com/cn/iam/policy-management)，自定义策略授权给子账号，目前云搜索Elasticsearch支持的操作级别的权限如下：</br>
+如果系统策略不能满足您的使用需求，可以参考访问控制的[操作指南]( https://docs.jdcloud.com/cn/iam/policy-management)，通过[自定义策略]( https://iam-console.jdcloud.com/policy/generator)授权给子账号对应的操作权限，目前ES支持的操作级别的权限如下：</br>
 
 接口名称 | 权限描述 | 权限类型 | 资源范围 |  
 :---: | :--- | :--- | :--- | 
