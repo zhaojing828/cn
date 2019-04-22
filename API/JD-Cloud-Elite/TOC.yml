@@ -22,4 +22,4 @@
       - name: 获取云存服务信息            
         items:
           - name: getStoreService
-            href: elite云存服务相关接口/getStoreService.md            
+            href: Elite-CloudStore-APIs/getStoreService.md            
