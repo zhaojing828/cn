@@ -168,4 +168,4 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
     NAME              READY   STATUS    RESTARTS   AGE
     test-s3fs-pod-2   1/1     Running   0          11s
     ```
-    执行完成后，在上一步创建的名称为SUCCESS的文件中即可看到输出内容“helloworld”；
+    执行完成后，在上一步创建的名称为SUCCESS的文件中即可看到输出内容“helloworld”。
