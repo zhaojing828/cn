@@ -4,7 +4,7 @@
 进行分片上传时，文件（Object）会被切成若干个Part，这些Part被称为分片。当您将这些Part上传到OSS服务端后，可以调用CompleteMultipartUpload将这些片（Part）组合成一个完整的Object。
 
 **说明**
-* 使用控制台上传传输大文件时，会产生Part。
+* 使用控制台上传文件时，会产生Part。
 * 使用支持断点续传的OSS管理工具传输文件时，也会产生Part。
 * 您也可通过直接调用API 实现分片上传，请参见[分片上传](https://docs.jdcloud.com/cn/object-storage-service/initiate-multipart-upload-2)
 * 您也可以通过调用CompleteMultipartUpload，将Part组合成一个完整的Object。详见[CompleteMultipartUpload](https://docs.jdcloud.com/cn/object-storage-service/complete-multipart-upload-2)。
