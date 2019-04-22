@@ -54,7 +54,9 @@
       - name: Elasticsearch日志
         href: Operation-Guide/eslog.md
       - name: 自定义词库
-        href: Operation-Guide/dic.md  
+        href: Operation-Guide/dic.md 
+      - name: 协调节点
+        href: Operation-Guide/coordination_node.md   
       - name: 快照
         items: 
         - name: 创建快照
