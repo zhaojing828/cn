@@ -6,10 +6,10 @@
 **说明**
 * 使用控制台上传文件时，会产生Part。
 * 使用支持断点续传的OSS管理工具传输文件时，也会产生Part。
-* 您也可通过直接调用API 实现分片上传，请参见[分片上传](https://docs.jdcloud.com/cn/object-storage-service/initiate-multipart-upload-2)
+* 您也可直接调用API 实现分片上传，请参见[分片上传](https://docs.jdcloud.com/cn/object-storage-service/initiate-multipart-upload-2)
 * 您也可以通过调用CompleteMultipartUpload，将Part组合成一个完整的Object。详见[CompleteMultipartUpload](https://docs.jdcloud.com/cn/object-storage-service/complete-multipart-upload-2)。
 * Part在完成Object前，不能被读取。删除Bucket时，必须先将该Bucket中的Object和Part删除。分片主要是由分片上传操作产生，您可通过直接调用[Abort Multipart Upload](https://docs.jdcloud.com/cn/object-storage-service/abort-multipart-upload-2)。
-删除未完成的Part，也可通过控制台分片管理完成删除。
+删除未完成的Part，也可通过控制台-分片管理删除Part。
 
 ## 控制台-分片管理
 
@@ -37,7 +37,7 @@
 
 ### 您可查看每个分片上传任务中分片详情
 
-1.点击折叠按钮，展示分片上传任务中分片详情。如图：
+点击折叠按钮，展示分片上传任务中分片详情。如图：
 
 ![分片管理](../../../../image/Object-Storage-Service/OSS-155.png)
 
