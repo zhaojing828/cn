@@ -199,19 +199,13 @@ echo "/home/oracle/myswaps/swapfile1 swap swap defaults 0 0" >>/etc/fstab
 
 ### 4.6 准备软件
 一共需要三个安装文件：
-- p13390677_112040_Linux-x86-64_2of7.zip
 - p13390677_112040_Linux-x86-64_1of7.zip
+- p13390677_112040_Linux-x86-64_2of7.zip
 - p13390677_112040_Linux-x86-64_3of7.zip
 
-1. 将oracle软件的安装介质，上传到/home/oracle:
+将oracle软件的安装介质（前两个文件），上传到/home/oracle:
 
-p13390677_112040_Linux-x86-64_2of7.zip
-
-p13390677_112040_Linux-x86-64_1of7.zip
-
-2. 将grid软件的安装介质，上传到/home/grid:
-
-p13390677_112040_Linux-x86-64_3of7.zip
+将grid软件的安装介质（第三个文件），上传到/home/grid:
 
 ## 5. 安装oracle rac的依赖包
 
