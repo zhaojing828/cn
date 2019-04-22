@@ -6,4 +6,10 @@
 更多关于 IAM 的介绍可前往[IAM访问控制]( https://docs.jdcloud.com/cn/iam/product-overview)查看。</br>
 ### ES访问控制策略
 云搜索Elasticsearch的访问控制功能是通过[访问控制 IAM]( https://docs.jdcloud.com/cn/iam/product-overview)（Identity and Access Management， IAM）来实现的，用户需要前往[访问控制菜单]( https://iam-console.jdcloud.com/summary)设置子账户和用户角色的权限。</br></br>
-现在系统已经预置2种策略，用户可以按需授权给子账户。此外，用户也可以根据访问控制的[操作指南]( https://docs.jdcloud.com/cn/iam/policy-management)，自定义策略授权给子账号，目前云搜索Elasticsearch已经支持操作级别的访问控制管理。
+现在系统已经预置2种策略，用户可以按需授权给子账户。此外，用户也可以根据访问控制的[操作指南]( https://docs.jdcloud.com/cn/iam/policy-management)，自定义策略授权给子账号，目前云搜索Elasticsearch已经支持操作级别的访问控制管理。</br>
+系统预置策略如下：</br>
+
+系统策略名称 | 权限描述 | 类型 | 资源范围 | 备注 
+:---: | :--- | :--- | :--- | :---
+JDCloudElasticSearchAdmin  | 云搜索Elasticsearch读权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有创建和管理 es所有集群实例的权限，包括访问Kibana的权限 |
+JDCloudElasticSearchRead  | 云搜索Elasticsearch管理员权限 | 系统类型 | 主账号下云搜索Elasticsearch的所有资源 | 可以让用户拥有查看 ES 集群实例的权限，包括访问kibana的权限，但是不具有创建、删除等操作的权限。 |
