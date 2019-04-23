@@ -12,13 +12,13 @@
 ## 常用操作
 
 - 快速上手
-  - [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
-  - [安装Edge系统](../Getting-Started/Install-Edge-System.md)
+    - [创建边缘计算节点](../Getting-Started/Create-Edgenode.md)
+    - [安装Edge系统](../Getting-Started/Install-Edge-System.md)
 - 边缘计算
-  - [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
-  - [查看边缘计算结果](../Operation-Guide/Edge-Module/View-Module-Result.md)
+    - [部署边缘计算模块](../Operation-Guide/Edge-Module/Deploy-Edge-Module.md)
+    - [查看边缘计算结果](../Operation-Guide/Edge-Module/View-Module-Result.md)
 - 设备操作
-  - [控制边缘节点子设备](../Best-Practices/Control-Device.md)
+    - [控制边缘节点子设备](../Best-Practices/Control-Device.md)
 
 ## 计费
 
