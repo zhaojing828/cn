@@ -14,7 +14,7 @@ SQL Server支持根据实例的备份在同一个地域中创建一个新实例�
 
 ![根据备份创建1](../../../../../../image/RDS/SQL-Server-Create-From-Backup-1.png)
 
-## 2. 选择新创建实例的规格
+## 2. 输入新创建实例的相关信息
 在弹出的页面中可看到选择的备份名称，备份创建时间及地域信息。
 
 选择新创建实例的规格，VPC可用区及实例名称等信息，具体步骤可参考[创建实例](https://docs.jdcloud.com/cn/rds/create-instance)
