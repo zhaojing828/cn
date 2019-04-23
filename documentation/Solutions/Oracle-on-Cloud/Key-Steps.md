@@ -272,11 +272,17 @@ rpm -ivh pdksh-5.2.14-21.x86_64.rpm
 pdksh conflicts with ksh-20120801-37.el6_9.x86_64
 rpm -e ksh-20120801-37.el6_9.x86_64
 ```
+假如冲突，卸载ksh
+```
+pdksh conflicts with ksh-20120801-37.el6_9.x86_64
+rpm -e ksh-20120801-37.el6_9.x86_64
+```
+
 - cvuqdisk
 可在在Oracle安装介质中可以找到
 ```
+yum install -y smartmontools
 rpm -ivh cvuqdisk-1.0.9-1.rpm
-依赖于：yum install -y smartmontools
 ```
 
 安装asmlib的相关包，oracleasmlib、oracleasm-support、Kmod-oracleasm
@@ -327,7 +333,7 @@ echo "* hard memlock 18874368" >> /etc/security/limits.conf
 echo "session required pam_limits.so" >> /etc/pam.d/login
 ```
 
-4. disable iptables 和selinux
+4. disable iptables ,selinux 和 ntp server
 ```
 chkconfig --list iptables
 chkconfig iptables off
@@ -335,17 +341,24 @@ chkconfig --list iptables
 service iptables stop
 service network restart
 echo "SELINUX=disabled" >>/etc/selinux/config
-```
 
-5. disable ntp server
-```
 /sbin/service ntpd stop
 chkconfig ntpd off
 mv /etc/ntp.conf /etc/ntp.conf.bk
 rm /var/run/ntpd.pid
 ```
 
-6. 配置asmlib，分区规划（6个分区）
+5. 共享磁盘
+
+(1). 购买支持多点挂载的硬盘
+
+京东云控制台的操作： 位置在 “弹性计算\云硬盘” ，注意一定要选择“多点挂载”
+
+(2). 两台节点分别挂载共享硬盘
+
+京东云控制台的操作： 位置在“弹性计算\云主机” ，选择购买的共享disk进行挂载
+
+6. 分区规划（6个分区）
 ```
 parted /dev/vdb mklabel gpt
 parted /dev/vdb mkpart primary 0 10000 
@@ -376,14 +389,34 @@ parted /dev/vdb p
 /usr/sbin/oracleasm listdisks #
 ```
 
+9. 扫描识别asm硬盘
+```
+/usr/sbin/oracleasm scandisks #一个节点创建磁盘后，另一个节点扫描磁盘即可
+```
+
+10 .检查输出asm清单
+两个节点分别执行
+```
+/usr/sbin/oracleasm listdisks 
+```
+
 ## 7. grid安装
 
 1. 环境核验
+用grid用户解压grid软件的安装介质
+
 ```
+su - grid
+unzip p13390677_112040_Linux-x86-64_3of7.zip -d /home/grid
 /home/grid/grid/runcluvfy.sh stage -pre crsinst -n oracle-rac1,oracle-rac2 -verbose 
 ```
 
 2. 准备响应文件
+```
+cp /home/grid/grid/response/grid_install.rsp grid_install_jdtest.rsp
+```
+
+3. 编辑文件grid_install_jdtest.rsp文件, 修改的参数如下
 ```
 ORACLE_HOSTNAME=oracle-rac1
 INVENTORY_LOCATION=/u01/app/oraInventory
@@ -417,7 +450,27 @@ oracle.install.asm.monitorPassword=Grid123
 /u01/crs/11.2.0/root.sh
 ```
 
-4. grid安装完成，查看集群资源的输出如下：
+4. 设置grid的用户密码
+(1). 创建和写入文件 cfgrsp.properties
+```
+cd /home/grid/grid/response
+cat << EOF > cfgrsp.properties 
+oracle.assistants.asm|S_ASMPASSWORD=Grid123
+oracle.assistants.asm|S_ASMMONITORPASSWORD=Grid123
+EOF
+```
+(2). 修改文件属性
+```
+chmod 600 cfgrsp.properties
+```
+
+(3). 执行configToolAllCommands，生成密码信息
+```
+/u01/app/grid_home/cfgtoollogs/configToolAllCommands RESPONSE_FILE=/home/grid/grid/response/cfgrsp.properties
+```
+
+
+5. grid安装完成，查看集群资源的输出如下：
 ```
 crs_stat -t
 Name Type Target State Host 
@@ -456,14 +509,14 @@ CRS-4533: Event Manager is online
 # **************************************************************
 ```
 
-5. 创建asmdisk group
+6. 创建asmdisk group
 ```
 su – grid
 asmca -silent -createDiskGroup -sysAsmPassword Grid123 -diskString '/dev/oracleasm/disks/*' -diskGroupName DATA -diskList '/dev/oracleasm/disks/VOLDATA01' -redundancy EXTERNAL -compatible.asm 11.2 -compatible.rdbms 11.2
 asmca -silent -addDisk -sysAsmPassword Grid123 -diskGroupName DATA -diskList '/dev/oracleasm/disks/VOLDATA02','/dev/oracleasm/disks/VOLDATA03'
 ```
 
-6. 查看信息：
+7. 查看信息：
 ```
 select name,path,STATE,GROUP_NUMBER 
 from v$asm_disk;
@@ -476,11 +529,13 @@ from v$asm_diskgroup;
 
 1. 安装前验证：
 ```
+#grid用户执行
 /home/grid/grid/runcluvfy.sh stage -pre dbinst -n oracle-rac1,oracle-rac2 -verbose
 ```
 
 2. 编译响应文件
 ```
+#oracle用户执行
 vi u01/soft/oracle/database/response/db_install_jdtest.rsp
 ```
 
@@ -502,25 +557,36 @@ oracle.install.db.CLUSTER_NODES=rac1,rac2
 DECLINE_SECURITY_UPDATES=true
 ```
 
-3. 执行静默安装oracle软件
+3. 安装oracle软件的时候，修改目录权限
+
+因为/u01/app的权限变成了root，所以需要修改一下.两个节点执行:
+```
+chown -R oracle:oinstall /u01/app
+chmod -R 775 /u01/app/
+chown -R grid:oinstall /u01/app/grid_base
+chown -R grid:oinstall /u01/app/grid_home
+```
+
+
+4. 执行静默安装oracle软件
 ```
 ./runInstaller -silent -ignoreSysPrereqs -ignorePrereq -responseFile /home/oracle/database/response/db_install_jdtest.rsp
 ```
 
-4. 根据提示执行下面的脚本:
+5. 根据提示执行下面的脚本:
 ```
 /u01/app/oracle/product/11.2.0/db_1/root.sh
 ```
-
 
 ## 9. 安装DB
 
 1. 准备响应文件
 ```
-vi /u01/soft/oracle/database/response/dbca_jdtest.rsp
+#oracle用户执行
+cp /home/oracle/database/response/dbca.rsp /home/oracle/database/response/dbca_jdtest.rsp
 ```
-
-2. 修改参考:
+2. 修改参考
+编辑文件dbca_jdtest.rsp, 修改的参数如下：
 ```
 GDBNAME = "orcl"
 SID = "orcl"
@@ -531,6 +597,22 @@ STORAGETYPE=ASM
 DISKGROUPNAME=DATA
 RECOVERYGROUPNAME=DATA
 CHARACTERSET = "ZHS16GBK"
+```
+检查$ORACLE_HOME/bin/oracle文件属性
+```
+su - grid #切换到grid用户
+```
+检查文件属性：
+```
+ls -l $ORACLE_HOME/bin/oracle
+```
+输出结果应该为：
+```
+-rwsr-sr-x 1 grid oinstall
+```
+如果不是-rwsr-sr-x ，执行属性修改：
+```
+chmod 6755 $ORACLE_HOME/bin/oracle
 ```
 
 3. 静默创建数据库
