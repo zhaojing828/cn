@@ -31,38 +31,35 @@ sudo gpasswd –a $(USER) docker
    
 2. 解压缩Edge安装包至任意目录下（${destdir}）
 
-   ```
-   tar zxvf jdc-edge-install.tar.gz –C ${destdir}
-   
-   ```
+```
+tar zxvf jdc-edge-install.tar.gz –C ${destdir}
+```
 
 3. 编辑配置文件**UserConfig.toml**
 
-   ```
-   vim ${destdir}/sys-mgmt-agent/res/UserConfig.toml
-   ```
+```
+vim ${destdir}/sys-mgmt-agent/res/UserConfig.toml
+```
 
    [Edge]部分:请将完成创建Edge页面下保存的配置信息填入该区域：
 
-   ```
-   [Edge]
-   Edgename = ''
-   Region = ''
-   HubHost = ''
-   ComposefileUrl = ''
-   
-   ```
+```
+[Edge]
+Edgename = ''
+Region = ''
+HubHost = ''
+ComposefileUrl = '' 
+```
 
    [UserConfig]部分：需要您自行获取后填写。
 
-   ```
-   [UserConfig]
-   AK = ''
-   SK = ''
-   OSSRegion = ''
-   OSSBucket = ''
-   
-   ```
+```
+[UserConfig]
+AK = ''
+SK = ''
+OSSRegion = ''
+OSSBucket = ''  
+```
 
    **其中：**
 
