@@ -50,10 +50,10 @@
 
    ![](/image/codebuild/best-ct.PNG)
    
--  应用名称：ci-demo
--  编译镜像：maven/maven3.6.0-jdk13
+-  应用名称：golang-demo
+-  编译镜像：golang/golang 1.12
 -  代码源：京东云-代码托管
--  代码库：选择示例代码，JDCloud-Codebuild/golang-demo
+-  代码库：选择示例代码，devops-demo/golang-demo
 -  分支：master
 -  构建命令：选择插入构建命令
  ```
@@ -87,7 +87,9 @@ out_dir: 'output'
 
 ### 登录镜像仓库查看推送镜像
 
-登录 容器镜像仓库-- 镜像列表，选择云编译中选择的镜像仓库，查看镜像。
+云编译执行成功之后，将产出镜像推送至用户选择的容器镜像仓库。
+
+用户可在 容器镜像仓库-- 镜像列表，选择云编译中选择的镜像仓库，查看构建产出镜像。
 
    ![](/image/codebuild/best-image.PNG)
 
