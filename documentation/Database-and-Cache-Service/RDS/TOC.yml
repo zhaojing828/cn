@@ -44,7 +44,17 @@
       - name: 计费规则
         href: Pricing/Billing-Rules.md
       - name: 价格总览
-        href: Pricing/Price-Overview.md
+        items:
+          - name: MySQL 价格
+            href: Pricing/Price-Overview/MySQL-Price.md
+          - name: Percona 价格
+            href: Pricing/Price-Overview/Percona-Price.md
+          - name: MariaDB 价格
+            href: Pricing/Price-Overview/MariaDB-Price.md
+          - name: SQL Server 价格
+            href: Pricing/Price-Overview/SQL-Server-Price.md
+          - name: PostgreSQL 价格
+            href: Pricing/Price-Overview/PostgreSQL-Price.md            
       - name: 购买流程
         href: Pricing/Purchase-Procedure.md
       - name: 续费流程
