@@ -17,16 +17,16 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
 1. 安装Edge系统前，请先安装docker和docker-compose。
 
-   ```
-   sudo apt install docker
-   sudo apt install docker-compose
-   sudo apt-get install pass
-   ```
+```
+sudo apt install docker
+sudo apt install docker-compose
+sudo apt-get install pass
+```
    并添加用户组docker，将当前用户${USER}添加至docker用户组下，当前用户${USER}可用whoami获取。
-   ```
-   sudo groupadd docker
-   sudo gpasswd –a $(USER) docker
-   ```
+```
+sudo groupadd docker
+sudo gpasswd –a $(USER) docker
+```
    注意：完成操作后，请重启系统。
    
 2. 解压缩Edge安装包至任意目录下（${destdir}）
@@ -37,29 +37,29 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
 3. 编辑配置文件**UserConfig.toml**
 
-   ```
-   vim ${destdir}/sys-mgmt-agent/res/UserConfig.toml
-   ```
+```
+vim ${destdir}/sys-mgmt-agent/res/UserConfig.toml
+```
 
    [Edge]部分:请将完成创建Edge页面下保存的配置信息填入该区域：
 
-   ```
-   [Edge]
-   Edgename = ''
-   Region = ''
-   HubHost = ''
-   ComposefileUrl = ''
-   ```
+```
+[Edge]
+Edgename = ''
+Region = ''
+HubHost = ''
+ComposefileUrl = ''
+```
 
    [UserConfig]部分：需要您自行获取后填写。
 
-   ```
-   [UserConfig]
-   AK = ''
-   SK = ''
-   OSSRegion = ''
-   OSSBucket = ''
-   ```
+```
+[UserConfig]
+AK = ''
+SK = ''
+OSSRegion = ''
+OSSBucket = ''
+```
 
    **其中：**
 
@@ -82,9 +82,9 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
 5. 进入解压缩后的目录${destdir}，执行安装脚本，完成Edge系统安装。
 
-   ```
-   sudo ./install.sh
-   ```
+```
+sudo ./install.sh
+```
 
    
 
