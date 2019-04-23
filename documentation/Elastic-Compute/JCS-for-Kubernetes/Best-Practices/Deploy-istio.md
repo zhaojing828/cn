@@ -9,6 +9,7 @@
 2. 在[Istio版本页面](https://github.com/istio/istio/releases)下载需要的版本，或参考本文示例，直接下载1.0.6；
 
     ```
+    
     wget https://github.com/istio/istio/releases/download/1.0.6/istio-1.0.6-linux.tar.gz
 
     tar -zxvf istio-1.0.6-linux.tar.gz
@@ -24,6 +25,7 @@
 3. 进入Istio 安装的根目录，将istioctl客户端添加到PATH，并安装istio-demo；
 
     ```
+    
     export PATH=$PWD/bin:$PATH
     kubectl apply -f install/kubernetes/istio-demo.yaml
     ```
@@ -36,6 +38,7 @@
     
     输出如下
     ```
+    
     NAME           STATUS   AGE
     default        Active   16h
     istio-system   Active   7m37s
@@ -52,6 +55,7 @@
     输出如下
 
     ```
+    
     NAME                                      READY   STATUS      RESTARTS   AGE
     grafana-5f88cdf98b-mbvgp                  1/1     Running     0          10m
     istio-citadel-5bbbc98c6d-v7kxq            1/1     Running     0          10m
@@ -102,6 +106,7 @@
     输出如下：
 
     ```
+    
     NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
     details       ClusterIP   10.0.255.166   <none>        9080/TCP   10s
     kubernetes    ClusterIP   10.0.248.1     <none>        443/TCP    16h
@@ -118,6 +123,7 @@
     输出如下：
 
     ```
+    
     NAME                              READY   STATUS    RESTARTS   AGE
     details-v1-5c8dc9bffb-5v5bl       2/2     Running   0          3m17s
     productpage-v1-7dd5bcc8c8-z6hpv   2/2     Running   0          3m16s
@@ -140,12 +146,14 @@
     ```
     kubectl get svc istio-ingressgateway -n istio-system
     
+    
     NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                                                                                                                   AGE
     istio-ingressgateway   LoadBalancer   10.0.250.151   114.XXX.XXX.XXX   80:31380/TCP,443:31390/TCP,31400:31400/TCP,15011:30570/TCP,8060:30615/TCP,853:32610/TCP,15030:30259/TCP,15031:31241/TCP   47m
     ```
 4. 使用上一步中集群返回的external-IP和服务名称验证集群中的服务是否运行正常，以productpage微服务为例，执行命令如下：
 
     ```
+    
     curl -I http://{external-IP}/productpage
     
     HTTP/1.1 200 OK
@@ -165,6 +173,7 @@
   * 执行如下命令取消评价星级展示，刷新上一步中的浏览器地址会发现页面不再展示星级评价内容
 
     ```
+    
     kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml
 
     kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml
@@ -179,6 +188,7 @@
   * 查看上一步操作中对应的yaml文件验证，发现v1和v3两个版本的reviews各50%
 
     ```
+    
     - destination:
         host: reviews
         subset: v1
@@ -191,10 +201,12 @@
   * 再次执行如下命令后，刷新上一步中的浏览器地址会发现评价星级始终为红色，原因是对应的yaml文件中的配置，将服务流量全部切换为v3了；
 
     ```
+    
     kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-v3.yaml        
 
     yaml文件对应配置如下：
-     - destination:
+    
+    - destination:
         host: reviews
         subset: v3
     ```
