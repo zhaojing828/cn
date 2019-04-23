@@ -16,7 +16,7 @@ gem install aws-sdk-s3 -V
 
 ## 初始化
 
-您可以初始化S3示例，用于管理存储空间和文件等OSS资源。使用Ruby SDK发起OSS请求，您需要使用您的AccessKey和SecretKey初始化一个S3Client，并根据需要修改Endpoint、Region等默认配置项。
+您可以初始化S3实例，用于管理存储空间和文件等OSS资源。使用Ruby SDK发起OSS请求，您需要使用您的AccessKey和SecretKey初始化一个S3实例，并根据需要修改Endpoint、Region等默认配置项。
 
 ```Ruby
 require 'aws-sdk-s3'
@@ -45,7 +45,7 @@ s3R = Aws::S3::Resource.new(
 以下为部分使用示例，更多说明请参考[Class: Aws::S3::Client](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html)。
 
 ### 创建存储空间
-初始化Client示例，并使用其创建存储空间：
+初始化Client实例，并使用其创建存储空间：
 ```Ruby
 require 'aws-sdk-s3'
 
@@ -66,7 +66,7 @@ s3C.create_bucket(bucket: bucket)
 ```
 
 ### 上传文件
-初始化Resource示例，并使用其上传文件（支持5G以上文件）：
+初始化Resource实例，并使用其上传文件（支持5G以上文件）：
 ```Ruby
 require 'aws-sdk-s3'
 
