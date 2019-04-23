@@ -12,6 +12,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
     Yaml文件内容如下：
 
     ```
+    
     apiVersion: v1
     kind: Secret
     metadata:
@@ -27,6 +28,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
 
   * Yaml文件内容如下：
     ```
+    
     apiVersion: extensions/v1beta1
     kind: DaemonSet
     metadata:
@@ -78,6 +80,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
     `
   * 执行如下命令，确定所有Daemonset处于running状态：
     ```
+    
     kubectl get daemonset s3fs-mount
 
     NAME         DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
@@ -98,6 +101,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
     
     Yaml文件内容如下：
     ```
+    
     kind: Pod
     apiVersion: v1
     metadata:
@@ -123,6 +127,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
       执行如下命令，确定pod处于running状态：
 
       ```
+      
       kubectl get pod test-s3fs-pod-1
 
       NAME              READY   STATUS    RESTARTS   AGE
@@ -138,6 +143,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
     
     Yaml文件内容如下：
     ```
+    
     kind: Pod
     apiVersion: v1
     metadata:
@@ -163,6 +169,7 @@ S3fs是基于FUSE的文件系统，允许Linux 挂载Bucket在本地文件系统
     执行如下命令，确定pod处于running状态：
 
     ```
+    
     kubectl get pod test-s3fs-pod-2
 
     NAME              READY   STATUS    RESTARTS   AGE
