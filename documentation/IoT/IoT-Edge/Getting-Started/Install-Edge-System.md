@@ -21,6 +21,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    sudo apt install docker
    sudo apt install docker-compose
    sudo apt-get install pass
+   
    ```
    并添加用户组docker，将当前用户${USER}添加至docker用户组下，当前用户${USER}可用whoami获取。
    ```
@@ -33,6 +34,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
    ```
    tar zxvf jdc-edge-install.tar.gz –C ${destdir}
+   
    ```
 
 3. 编辑配置文件**UserConfig.toml**
@@ -49,6 +51,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    Region = ''
    HubHost = ''
    ComposefileUrl = ''
+   
    ```
 
    [UserConfig]部分：需要您自行获取后填写。
@@ -59,6 +62,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
    SK = ''
    OSSRegion = ''
    OSSBucket = ''
+   
    ```
 
    **其中：**
@@ -84,6 +88,7 @@ Edge系统需要您手动在边缘节点上进行安装和配置。
 
    ```
    sudo ./install.sh
+   
    ```
 
    
