@@ -48,7 +48,7 @@ vim ${destdir}/sys-mgmt-agent/res/UserConfig.toml
 Edgename = ''
 Region = ''
 HubHost = ''
-ComposefileUrl = '' 
+ComposefileUrl = ''
 ```
 
    [UserConfig]部分：需要您自行获取后填写。
@@ -58,7 +58,7 @@ ComposefileUrl = ''
 AK = ''
 SK = ''
 OSSRegion = ''
-OSSBucket = ''  
+OSSBucket = ''
 ```
 
    **其中：**
@@ -82,10 +82,9 @@ OSSBucket = ''
 
 5. 进入解压缩后的目录${destdir}，执行安装脚本，完成Edge系统安装。
 
-   ```
-   sudo ./install.sh
-   
-   ```
+```
+sudo ./install.sh
+```
 
    
 
