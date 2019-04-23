@@ -31,9 +31,9 @@ sudo gpasswd –a $(USER) docker
    
 2. 解压缩Edge安装包至任意目录下（${destdir}）
 
-   ```
-   tar zxvf jdc-edge-install.tar.gz –C ${destdir}
-   ```
+```
+tar zxvf jdc-edge-install.tar.gz –C ${destdir}
+```
 
 3. 编辑配置文件**UserConfig.toml**
 
