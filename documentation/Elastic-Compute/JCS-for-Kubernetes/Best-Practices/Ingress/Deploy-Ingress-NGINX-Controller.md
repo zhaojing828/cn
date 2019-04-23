@@ -8,7 +8,7 @@ Ingress 是从Kubernetes集群外部访问集群内部服务的入口，概念�
    --|-----|--
    [ Services ]
   ```
-Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中默认不会自动启用，您可以在一个pod中部署任意类型的自定义Ingress Controller。本文将以ginx-ingress controller为例，说明Controller部署和Ingress定义。更多外部类型的Ingresss Controller参考[Kubernetes官方文档](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)。
+Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中默认不会自动启用，您可以在一个pod中部署任意类型的自定义Ingress Controller。本文将以Nginx-ingress controller为例，说明Controller部署和Ingress定义。更多外部类型的Ingresss Controller参考[Kubernetes官方文档](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)。
 
 一、环境准备
 1. 从github下载nginx-ingress controller最新的安装部署文件,并将部署文件解压缩到本地目录：
