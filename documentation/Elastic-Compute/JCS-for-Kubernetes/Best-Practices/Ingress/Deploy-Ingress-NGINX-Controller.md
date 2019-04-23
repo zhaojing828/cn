@@ -183,7 +183,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
     metadata:
       name: k8s-app-monitor-agent-ingress
       annotations:
-        metadata.annotations.kubernetes.io/ingress.class: "nginx"
+        metadata.annotations.kubernetes.io/ingress.class: "nginx"     #指定Ingress Resource创建时使用的Ingress Controller，本例使用上述创建的Nginx Controller
     spec:
       rules:
       - host: k8s-ingress-nginx-controller-test.jdcloud
