@@ -2,11 +2,11 @@
 
 
 ## 简介
-CFS(Cloud-File-Service)的API包含CFS相关接口。
+CFS(Cloud-File-Service)的API包含文件服务的相关接口。
 
 
 ### 版本
-v1
+v1.0.1
 
 
 ## API
