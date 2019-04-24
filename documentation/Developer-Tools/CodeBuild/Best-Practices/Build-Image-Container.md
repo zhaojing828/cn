@@ -15,7 +15,7 @@
 
 ### Clone示例代码至代码托管
 
-代码示例地址为：https://code.jdcloud.com/JDCloud-Codebuild/hello-java
+代码示例地址为：https://code.jdcloud.com/devops-demo/golang-demo
 
 请将此示例代码clone至代码托管中，代码托管的地址为：https://code.jdcloud.com/
 
@@ -46,27 +46,18 @@
 
 ### 在云编译中创建编译任务
 
-在云编译中新建任务，具体信息如下：
+云编译任务列表页面，点击 新建任务。
 
--  应用名称：ci-demo
--  编译镜像：maven/maven3.6.0-jdk13
+具体信息如下：
+
+   ![](/image/codebuild/best-ct.PNG)
+   
+-  应用名称：golang-demo
+-  编译镜像：golang/golang 1.12
 -  代码源：京东云-代码托管
--  代码库：选择示例代码，JDCloud-Codebuild/golang-demo
+-  代码库：选择示例代码，devops-demo/golang-demo
 -  分支：master
--  构建命令：使用源代码根目录下的jdcloud-build.yml
--  构建类型：镜像
--  镜像仓库：选择已经创建的镜像仓库
--  高级设置：保持默认选项即可
-
-
-
-
-保存并执行，编译构建任务。
-
-### 通过云编译实现单测
-
-在代码中实现单元测试的方式，通过云编译实现单测。在编译脚本（jdcloud-build.yml）中，执行单测命令，示例如下。
-
+-  构建命令：选择插入构建命令
  ```
 cmds:
   - name: Make output
@@ -82,13 +73,26 @@ cmds:
 out_dir: 'output'
 
  ```
+-  构建类型：镜像
+-  镜像仓库：选择已经创建的镜像仓库
+-  高级设置：保持默认选项即可
+
+
+保存并执行，编译构建任务。
+
  
 ### 查看构建日志
 
 在任务详情页面可以查看最新的构建日志，也可以下构建历史中查看历次的构建历史。
 
+   ![](/image/codebuild/best-log.PNG)
 
 ### 登录镜像仓库查看推送镜像
 
+云编译执行成功之后，将产出镜像推送至用户指定的容器镜像仓库。
+
+用户可在 容器镜像仓库-- 镜像列表，选择云编译中选择的镜像仓库，查看构建产出镜像。
+
+   ![](/image/codebuild/best-image.PNG)
 
 
