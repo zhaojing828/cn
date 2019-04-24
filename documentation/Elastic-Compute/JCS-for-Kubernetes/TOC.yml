@@ -87,6 +87,10 @@
             href: Best-Practices/Deploy-Applications/Deploy-PV.md
          -  name: 部署Service
             href: Best-Practices/Deploy-Applications/Deploy-Service.md
+     - name: Ingress
+       items:
+         -  name: 部署 Nginx-ingress controller
+            href: Best-Practices/Ingress/Deploy-Ingress-NGINX-Controller.md
      - name: 创建原生容器Pod
        items:
          - name: 部署Virtual-Kubelet
