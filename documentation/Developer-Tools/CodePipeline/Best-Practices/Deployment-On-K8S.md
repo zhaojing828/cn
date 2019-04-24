@@ -195,7 +195,7 @@ out_dir: 'output'
 	  ports:
 	    - protocol: TCP
 	      port: 80
-	      targetPort: 8080
+	      targetPort: 8088
 	      nodePort: 30190
 	  selector:
 	    app: golang-deployment
@@ -207,8 +207,8 @@ out_dir: 'output'
  
 保存并发布。 
 
-发布成功，以公网IP：8080访问发布的应用，效果如下：
+发布成功，以公网IP访问发布的应用，效果如下：
 
- ![](/image/codepipeline/success.PNG)
+ ![](/image/codepipeline/best-success.PNG)
 
 
