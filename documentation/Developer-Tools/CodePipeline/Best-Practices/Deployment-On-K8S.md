@@ -123,6 +123,7 @@ out_dir: 'output'
 15.完成相关设置后，点击确定，即可进入弹性计算>>Kubernetes集群>>集群服务>>集群，查看创建的Kubernetes集群，创建过程一般需要几分钟，还请耐心等待。
 
 
+
 **生成长期有效的临时令牌**
 
 参见[自动定期获取临时令牌，长期有效](../../../Elastic-Compute/VContainer-Registry/Best-Practices/Deploy-Application.md)。
