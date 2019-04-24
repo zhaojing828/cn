@@ -80,12 +80,7 @@ out_dir: 'output'
 保存，完成云编译任务的准备。
 
 
-     ![](/image/codepipeline/best-k8s-build.PNG)
-     
-     ![](/image/codepipeline/best-k8s-build2.PNG)
-     
-     
-        ![](/image/codepipeline/best-k8s-build.PNG)
+        ![](/image/codepipeline/best-ct.PNG)
 	
 
 ### 在Kubernetes集群中创建集群
