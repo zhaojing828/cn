@@ -44,9 +44,7 @@
  6. 镜像仓库URI自动生成，注册表URI/镜像仓库名称  
  7. 点击确定  
 
-**三、生成长期有效的临时令牌**
 
-参见[自动定期获取临时令牌，长期有效](../../../Elastic-Compute/VContainer-Registry/Best-Practices/Deploy-Application.md)。
 
 
 ### 在云编译中创建编译任务
@@ -56,7 +54,7 @@
 -  应用名称：Golang-Demo
 -  编译镜像：golang/golang:1.12
 -  代码源：京东云-代码托管
--  代码库：选择示例代码，JDCloud-Codebuild/golang-demo
+-  代码库：选择示例代码，devops-demo/golang-demo
 -  分支：master
 -  构建命令：插入构建命令，如下
  ```
@@ -124,6 +122,13 @@ out_dir: 'output'
 
 15.完成相关设置后，点击确定，即可进入弹性计算>>Kubernetes集群>>集群服务>>集群，查看创建的Kubernetes集群，创建过程一般需要几分钟，还请耐心等待。
 
+
+**生成长期有效的临时令牌**
+
+参见[自动定期获取临时令牌，长期有效](../../../Elastic-Compute/VContainer-Registry/Best-Practices/Deploy-Application.md)。
+
+
+
 ### 新建流水线
 
 详细操作步骤如下：
@@ -173,7 +178,7 @@ out_dir: 'output'
 -  手工确认：如选择手工确认，该操作会在用户点击确认后继续执行。
 
  
-4.为了成功访问部署应用，在k8s集群页面，给这个deployment添加一个负载均衡服务。  
+4.为了成功访问部署应用，在Kubernetes集群-Service页面，给这个deployment添加一个负载均衡服务。  
 
 创建yaml如下：
 
