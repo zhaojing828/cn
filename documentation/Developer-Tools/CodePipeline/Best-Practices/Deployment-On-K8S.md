@@ -140,7 +140,7 @@ out_dir: 'output'
 
 2. 配置源代码
 
-  阶段名默认为 源代码，添加源代码操作。操作中选择京东云-代码托管，选择示例代码JDCloud-Codebuild/golang-demo。
+  阶段名默认为 源代码，添加源代码操作。操作中选择京东云-代码托管，选择示例代码devops-demo/golang-demo。
   
    ![](/image/codepipeline/best-k8s-source.PNG)
 
