@@ -123,6 +123,8 @@ out_dir: 'output'
 
 在“部署应用”页，指定与云主机、对象存储相同的地域后，点击“新建应用”，
 
+使用分布式服务框架：请按照默认选择“否”
+
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-1%EF%BC%88Ch%EF%BC%89.png)
 
 跳转到“新建应用”页。
