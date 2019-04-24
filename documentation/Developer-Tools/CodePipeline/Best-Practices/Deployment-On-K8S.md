@@ -126,7 +126,7 @@ out_dir: 'output'
 
 **生成长期有效的临时令牌**
 
-参见[自动定期获取临时令牌，长期有效](../../../Elastic-Compute/VContainer-Registry/Best-Practices/Deploy-Application.md)。
+参见[自动定期获取临时令牌，长期有效](../../../Elastic-Compute/Container-Registry/Best-Practices/Deploy-Application.md)。
 
 
 
