@@ -14,6 +14,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 1. 从github下载nginx-ingress controller最新的安装部署文件,并将部署文件解压缩到本地目录：
 
     ```
+    
     wget https://github.com/nginxinc/kubernetes-ingress/archive/v1.4.5.tar.gz
 
     tar -zxvf v1.4.5.tar.gz
@@ -65,6 +66,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 6. 执行如下命令，确定部署nginx-ingress controller的Deployment运行正常：
 
     ```
+    
     kubectl get deployment -n nginx-ingress
 
     NAME            DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
@@ -73,6 +75,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 7. 在 Kubernetes集群中，每个Pod都具有唯一的内部 IP 地址，但是Deployment中的Pod随时可能被删除或创建，导致Pod IP地址不断变化。因此需要创建一个Service对外暴露Pod中的应用。Service具有唯一的固定IP地址且能够为后端添加的成员Pod提供负载均衡。在京东云Kubernetes集群中您可以使用LoadBalance类型的Service，为Service关联创建一个应用负载均衡，并通过负载均衡绑定的公网IP，将Service后端关联的nginx-ingress controller应用暴露到公网：
 
     ```
+    
     apiVersion: v1
     kind: Service
     metadata:
@@ -97,11 +100,13 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
     将上述Service定义到Yaml文件，执行如下命令创建对应的Service：
 
     ```
+    
     kubectl create -f X.yaml        # 请使用对应的Yaml文件名称替换X.yaml
     ```
 8. 等待一段时间，确定Service已经配置完成，并获取Service上配置的External IP字段
 
     ```
+    
     kubectl get svc -n nginx-ingress
 
     NAME            TYPE           CLUSTER-IP    EXTERNAL-IP    PORT(S)                      AGE
@@ -112,6 +117,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 9. 最后，在Ingress controller的Deployment部署文件nginx-ingress.yaml中增加一对环境变量"-args -external-service=nginx-ingress",配置Ingress controller使用Service名称关联的External IP作为公网入口IP：
 
     ```
+    
     args:
       - -nginx-configmaps=$(POD_NAMESPACE)/nginx-config
       - -default-server-tls-secret=$(POD_NAMESPACE)/default-server-secret
@@ -122,6 +128,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 10. 执行如下命令确定nginx-ingress controller相关的Pod运行正常，即可完成nginx ingress controller部署：
 
     ```
+    
     kubectl get pod -n nginx-ingress
 
     输出结果：
@@ -135,6 +142,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 1. 在集群中部署一个Deployment，运行一个Nginx webserver，返回pod主机名、IP地址、端口、请求URI和服务器本地时间，详情参考下方Yaml文件：
 
     ```
+    
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -159,6 +167,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
     ```
 2. 执行如下命令,将上述Deployment部署到集群中：
     ```
+    
     kubectl create -f X.yaml        # X.yaml请使用对应的Yaml文件名称替换
 
     kubectl get deployment nginx-deployment
@@ -168,6 +177,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 3. 创建一个nodeport类型的service，将第1步中创建的deployment中部署的应用暴露出去：
 
     ```
+    
     kubectl expose deployment nginx-deployment --target-port=80 --port=60000 --protocol=TCP --name=servicetest-jdcloud --type=NodePort
     
     kubectl get svc servicetest-jdcloud
@@ -178,6 +188,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 4. 创建一个ingress resouce，将第2步中创建的service作为ingress 的backend：
 
     ```
+    
     apiVersion: extensions/v1beta1
     kind: Ingress
     metadata:
@@ -198,6 +209,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 5. 执行如下命令，将上述ingress resource部署到集群中：
 
     ```
+    
     kubectl create -f X.yaml        # X.yaml请使用对应的Yaml文件名称替换
 
     kubectl get ingress k8s-app-monitor-agent-ingress
