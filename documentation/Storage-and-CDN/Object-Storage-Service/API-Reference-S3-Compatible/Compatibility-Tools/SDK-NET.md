@@ -19,7 +19,7 @@
 
 以下为创建client的示例，更多.NET SDK示例请访问[S3 .NET Example Code](https://docs.aws.amazon.com/zh_cn/sdk-for-net/v3/developer-guide/s3-apis-intro.html?shortFooter=true)。
 
-```
+```C#
 using Amazon.S3;
 
 namespace Amazon.Samples.S3
@@ -28,7 +28,7 @@ namespace Amazon.Samples.S3
     {
         const string accessKeyId = "<yourAccessKeyId>";
         const string accessKeySecret = "<yourAccessKeySecret>";
-        const string endpoint = "s3.cn-north-1.jcloudcs.com";
+        const string endpoint = "s3.cn-north-1.jdcloud-oss.com";
         
         private static IAmazonS3 s3Client;
         

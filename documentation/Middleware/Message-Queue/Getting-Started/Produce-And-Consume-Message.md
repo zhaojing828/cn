@@ -41,7 +41,7 @@
 以Java SDK为例进行说明，其他方式及开发语言请参考其他章节。
 
 1. 引入依赖
-```
+```XML
 <dependency>
    <groupId>com.jdcloud</groupId>
    <artifactId>jcq-java-sdk</artifactId>

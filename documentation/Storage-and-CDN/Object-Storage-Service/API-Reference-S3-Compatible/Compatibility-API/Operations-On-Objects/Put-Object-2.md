@@ -9,7 +9,7 @@
 ### 语法
 ```
 PUT /ObjectName HTTP/1.1
-Host: <bucket>.s3.<region>.jcloudcs.com
+Host: <bucket>.s3.<region>.jdcloud-oss.com
 Date: <date>
 Authorization: <authorization string> (see Authenticating Requests (AWS Signature Version4))
 ```
@@ -43,7 +43,7 @@ x-amz-storage-class| Object存储类型，如果未指定，默认为标准存�
 ### 请求示例
 ```
 PUT /my-image.jpg HTTP/1.1
-Host: oss-example.s3.<region>.jcloudcs.com 
+Host: oss-example.s3.<region>.jdcloud-oss.com 
 Date: Wed, 12 Oct 2009 17:50:00 GMT
 Authorization: <authorization string>
 Content-Type: text/plain

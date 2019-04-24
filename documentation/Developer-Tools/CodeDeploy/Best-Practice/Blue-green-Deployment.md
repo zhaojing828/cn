@@ -36,7 +36,7 @@
 
 ```
 # 华北-北京
-wget -c http://devops-hb.oss-internal.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-external-v0.01.403.a81f9eb.20181127121007.bin -O installer && sh installer -- -a zero-agent  /usr/local/share/jdcloud/ifrit && rm -f installer
+wget -c http://devops-hb.s3.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-external-v0.01.403.a81f9eb.20181127121007.bin -O installer && sh installer -- -a zero-agent  /usr/local/share/jdcloud/ifrit && rm -f installer
 ```
 
 执行结果如下：
@@ -77,9 +77,9 @@ wget -c http://devops-hb.oss-internal.cn-north-1.jcloudcs.com/ifrit/ifrit-agent-
 
 ### 在云编译中进行编译构建
 
-在云编译中新建应用，具体信息如下：
+在云编译中新建任务，具体信息如下：
 
--  应用名称：codedeploy-ci-demo03
+-  任务名称：codedeploy-ci-demo03
 -  编译镜像：maven/maven3.6.0-jdk8
 -  源提供商：京东云-代码托管
 -  仓库地址：请根据实际情况进行填写，例如devops-demo/java-demo
@@ -169,20 +169,20 @@ out_dir: 'output'
 
 - 部署描述：非必须，为本次部署的描述信息
 - 部署来源：支持多种部署来源，请选择云编译
-- 云编译应用名称：请填写codedeploy-ci-demo03
+- 云编译任务名称：请填写codedeploy-ci-demo03
 - 云编译构建序号：请填写上一步中编译成功的构建序号
 - 文件类型：请选择.tar.gz
 - 部署操作命令：请选择“输入部署操作命令”，使用“表单填写”功能，填写具体操作命令，如下：
 ```
-部署路径: 源文件/目录：/       目标目录：/home
-停止脚本路径：/home/bin/stop.sh     
-启动脚本路径：/home/bin/start.sh
-检查脚本路径：
+部署路径: 源目录或文件：/       目标目录：/home
+停止脚本：/home/bin/stop.sh     
+启动脚本：/home/bin/start.sh
+检查脚本：
 脚本执行账户：  root       
 脚本超时时间（s）：100
 ```
 
-注意：初次部署无需填写停止脚本路径。
+注意：初次部署无需填写停止脚本。
 
 ![Alt text](https://github.com/jdcloudcom/cn/blob/edit/image/CodeDeploy/Ch/Pra-6%EF%BC%88Ch%EF%BC%89.png)
 

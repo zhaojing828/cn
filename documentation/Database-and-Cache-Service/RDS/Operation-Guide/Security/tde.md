@@ -28,7 +28,7 @@
 1. 登录RDS控制台，点击实例，进入到 **“安全管理”** 页面
 2. 选择 **“TDE透明数据加密”** ，点击开关，开启实例级别的TDE
 3. 对要开启TDE的数据库，执行以下SQL。 以数据库db1为例
-```
+```SQL
 USE master
 GO
 SELECT name FROM sys.certificates WHERE name LIKE 'TDE%'
