@@ -165,7 +165,7 @@ out_dir: 'output'
  
  阶段名默认为 部署阶段，添加部署操作。 
  
-     ![](/image/codepipeline/best-k8s-deploy.PNG)
+   ![](/image/codepipeline/best-k8s-deploy.PNG)
      
 -  操作类型：部署
 -  操作名称：使用默认的名称即可
@@ -209,6 +209,6 @@ out_dir: 'output'
 
 发布成功，以公网IP访问发布的应用，效果如下：
 
- ![](/image/codepipeline/best-success.PNG)
+![](/image/codepipeline/best-success.PNG)
 
 
