@@ -80,7 +80,7 @@ out_dir: 'output'
 保存，完成云编译任务的准备。
 
 
-        ![](/image/codepipeline/best-ct.PNG)
+![](/image/codepipeline/best-ct.PNG)
 	
 
 ### 在Kubernetes集群中创建集群
@@ -126,7 +126,7 @@ out_dir: 'output'
 
 **生成长期有效的临时令牌**
 
-参见[自动定期获取临时令牌，长期有效](../../../Elastic-Compute/VContainer-Registry/Best-Practices/Deploy-Application.md)。
+参见[自动定期获取临时令牌，长期有效](../../../Elastic-Compute/Container-Registry/Best-Practices/Deploy-Application.md)。
 
 
 
@@ -165,7 +165,7 @@ out_dir: 'output'
  
  阶段名默认为 部署阶段，添加部署操作。 
  
-     ![](/image/codepipeline/best-k8s-deploy.PNG)
+   ![](/image/codepipeline/best-k8s-deploy.PNG)
      
 -  操作类型：部署
 -  操作名称：使用默认的名称即可
@@ -209,6 +209,6 @@ out_dir: 'output'
 
 发布成功，以公网IP访问发布的应用，效果如下：
 
- ![](/image/codepipeline/best-success.PNG)
+![](/image/codepipeline/best-success.PNG)
 
 
