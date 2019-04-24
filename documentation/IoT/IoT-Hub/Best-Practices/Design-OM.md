@@ -39,7 +39,7 @@ Device Telemetry Data是设备上报的遥测数据，是一个测量值，不�
 请参考附件 [OM示例](https://docs-iot-downloads.s3.cn-north-1.jdcloud-oss.com/TempHumiditySensor-OM.json?AWSAccessKeyId=9B860A13DA12A42DCB34BE2ECBE4384D&Expires=1616582744&Signature=HIFHuXqsebOKiss55QEvD6Veycw%3D)
 
 		请注意：
-		* 请按照附件的物模型示例在您的物模型文件中加入反斜杠转义字符，系统才能正确识别物模型；
+		* 请按照附件的物模型示例编辑您的物模型；
 		* 后续版本升级计划提供物模型编辑器，您可以在线使用可视化工具更方便的编辑物模型；
 
 
