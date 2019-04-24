@@ -38,9 +38,7 @@ items:
       - name: 删除文件
         href: Getting-Started/Delete-Object-1.md
       - name: 删除存储空间
-        href: Getting-Started/Delete-Bucket-1.md
-      - name: 分片管理
-        href: Getting-Started/Part-Manage-1.md        
+        href: Getting-Started/Delete-Bucket-1.md      
       - name: 设置事件通知
         href: Getting-Started/Event-Notifications-1.md 
  - name: 操作指南
