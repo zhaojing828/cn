@@ -7,6 +7,7 @@
 
 您可以使用以下语言编写函数：
 公测期间，函数服务支持Python运行时，Python 3.6语言，详情请参考[函数编程模型](../Operation-Guide/buildfunction/programming-model/basic-concept.md)。
+
 |运行时类型     | 相关文档    |
 | ---------- | ---------- |
 | Python 2.7  | [函数编程模型](../Operation-Guide/buildfunction/programming-model/basic-concept.md)|
