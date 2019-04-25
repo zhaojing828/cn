@@ -165,8 +165,8 @@ vi /root/.jdc/config
 
 ```
 [default]
-access_key = 4332FC1AF6D790660EEC9A7E4124380F
-secret_key = E1380087654E1CB0E64AB8A5536E568E
+access_key = YourAccessKeyID
+secret_key = YourAccessKeySecret
 region_id = cn-north-1
 endpoint = monitor.cn-north-1.jdcloud-api.com
 scheme = https
@@ -174,12 +174,12 @@ timeout = 20
 ```  
 不同地域的region_id 和 上报的网关endpoint地址如下：  
 
-地域 |region_id |endpoint
----|---|---
-华北-北京 |cn-north-1| monitor.cn-north-1.jdcloud-api.com
-华南-广州 |cn-south-1| monitor.cn-south-1.jdcloud-api.com
-华东-宿迁 |cn-east-1 |monitor.cn-east-1.jdcloud-api.com
-华东-上海 |cn-east-2 | monitor.cn-east-2.jdcloud-api.com
+地域 |region_id |公网endpoint|内网endpoint
+---|---|---|---
+华北-北京 |cn-north-1| monitor.cn-north-1.jdcloud-api.com |monitor.internal.cn-north-1.jdcloud-api.com
+华南-广州 |cn-south-1| monitor.cn-south-1.jdcloud-api.com |monitor.internal.cn-south-1.jdcloud-api.com
+华东-宿迁 |cn-east-1 |monitor.cn-east-1.jdcloud-api.com  |monitor.internal.cn-east-1.jdcloud-api.com
+华东-上海 |cn-east-2 | monitor.cn-east-2.jdcloud-api.com |monitor.internal.cn-east-2.jdcloud-api.com
 
 ### 上报监控数据  
 使用 put-metric-data 接口上报监控数据，示例如下：  
