@@ -15,13 +15,22 @@
 华东-宿迁 |monitor.cn-east-1.jdcloud-api.com
 华东-上海 |monitor.cn-east-2.jdcloud-api.com
 
-3.  支持批量上报方式。单次请求最多包含 50 个数据点；数据大小不超过 256k。
+3. 内网域名  
+
+地域 | 域名
+---|---
+华北-北京 |monitor.internal.cn-north-1.jdcloud-api.com
+华南-广州 |monitor.internal.cn-south-1.jdcloud-api.com
+华东-宿迁 |monitor.internal.cn-east-1.jdcloud-api.com
+华东-上海 |monitor.internal.cn-east-2.jdcloud-api.com
+
+4.  支持批量上报方式。单次请求最多包含 50 个数据点；数据大小不超过 256k。
 
 注：OpenAPI入门使用请参看<a href="http://docs.jdcloud.com/cn/common-declaration/api/introduction">公共说明</a>
 
 ### 请求方式
 
-POST   https://{公网域名}/v1/customMetrics
+POST   https://{域名}/v1/customMetrics
 
 例如： POST    https://monitor.cn-north-1.jdcloud-api.com/v1/customMetrics
 
