@@ -21,7 +21,7 @@
 |保持宽高比指定宽，高加彩边缩放|Scale width border|swb/w/h/str|W缩放结果宽<br>H缩放结果高<br>取值范围[1,9999]<br>Str背景填充颜色，_开头<br>取值范围[_000000,_FFFFFF]|指定宽度，高度自适应，缩放后图片等于指定宽高，若自适应高度与指定高度不符，填充背景为Str指定的颜色，对应RRGGBB（也支持RGB）| 
 
 
-示例：将图片保持宽高比内缩放，缩放后宽高不大于200*300
+示例：将图片保持宽高比内缩放，缩放后宽高不大于200 x 300
 
 http://s3.cn-north-1.jdcloud-oss.com/downloads/example.jpg?x-oss-process=img/s/200/300
 
