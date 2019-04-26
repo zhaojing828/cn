@@ -1,22 +1,23 @@
 # 入门示例
 
-目前，我们已经提供如下语言的入门示例：
+目前，我们已经提供对Spring Cloud、Dubbo等主流微服务框架的支持，并已实现对多种语言的支撑。
 
-
--   Python ：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-python)
-
-
--   Dotnet：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-dotnet)
-
+根据框架选择入门示例：
 
 -   Spring Cloud：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud)
 
-
 -   Spring Cloud + K8S：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud-kubernetes)
-
 
 -   Dubbo：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-dubbo)
 
+
+根据语言选择入门示例：
+
+-   Java ：：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud)
+
+-   Python ：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-python)
+
+-   Dotnet：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-dotnet)
 
 -   Go ：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-go)
 
