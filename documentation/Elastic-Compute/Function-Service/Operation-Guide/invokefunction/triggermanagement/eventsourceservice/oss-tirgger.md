@@ -6,7 +6,7 @@
  
 触发器示例：ossTrigger.yml
 
-```
+```YAML
 triggerConfig:
    events:
        s3:ObjectCreated:Put
