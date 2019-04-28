@@ -120,9 +120,9 @@ Function将输出内容通过规范化，以如下JSON格式返回API网关：
 
 ```JSON
 {     
-    "statusCode": httpStatusCode,     
-    "headers": {"headerName":"headerValue",...},     
-    "body": "..." 
+   "statusCode":httpStatusCode,     
+   "headers":{"headerName":"headerValue",...},     
+   "body":"..." 
  } 
 ```
 
