@@ -118,8 +118,8 @@ API网关触发器配置详清参见[API网关触发器](../triggermanagement/ev
 
 Function将输出内容通过规范化，以如下JSON格式返回API网关：
 
-```
-{     
+```JSON
+{     
     "statusCode": httpStatusCode,     
     "headers": {"headerName":"headerValue",...},     
     "body": "..." 
