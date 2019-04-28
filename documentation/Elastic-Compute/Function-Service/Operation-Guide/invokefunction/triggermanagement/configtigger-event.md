@@ -9,7 +9,7 @@
 ### 事件格式
 
 
-```
+```YAML
 {
      "Records": [
         {
@@ -69,7 +69,7 @@ OSS触发器配置详清参见[OSS触发器](../triggermanagement/eventsourceser
 
 当以函数服务作为API网关的后端服务时，API网关会把请求参数通过一个固定的Mapping结构传给Function的请求参数 `event`，Function通过如下结构去获取和处理需要的参数。
 
-```
+```YAML
 {
     "version":"0",
     "id":"6a7e8feb-b491-4cf7-a9f1-bf3703467718",
