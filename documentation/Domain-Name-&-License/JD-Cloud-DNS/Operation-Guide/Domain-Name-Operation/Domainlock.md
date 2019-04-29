@@ -8,11 +8,11 @@
 
 找到需要加锁的域名，单击操作栏中的“锁定”按钮。
 
-![lock1](/Users/xiangyue3/Desktop/lock1.png)
+![lock1](../../../../../image/dns-img/lock1.png)
 
 根据提示，选择是否开启操作保护。
 
-![lock2](/Users/xiangyue3/Desktop/lock2.png)
+![lock2](../../../../../image/dns-img/lock2.png)
 
 如果设置了操作保护，则解锁时需要进行身份验证，身份验证通过以后才能解锁。
 
@@ -24,7 +24,7 @@
 
 找到需要解锁的域名，单击操作栏中的“解锁”按钮。
 
-![unlock1](/Users/xiangyue3/Desktop/unlock1.png)
+![unlock1](../../../../../image/dns-img/unlock1.png)
 
 1、未添加操作控制 
 
@@ -34,6 +34,5 @@
 2、已添加操作控制
 完成身份验证后，即解除锁定。以手机认证为例，需要输入账号绑定的手机验证码以后，才能解锁。
 
+![unlock2](../../../../../image/dns-img/unlock2.png)
 
-
-![unlock2](/Users/xiangyue3/Desktop/unlock2.png)
