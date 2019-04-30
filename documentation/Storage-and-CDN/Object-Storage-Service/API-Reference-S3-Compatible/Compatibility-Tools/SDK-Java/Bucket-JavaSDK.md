@@ -15,14 +15,14 @@
 
 ```Java
 String bucket_name = "<yourBucketName>";
-        try {
-            // 创建存储空间。
-            s3.createBucket(bucket_name);
-            System.out.format("creat OSS bucket %s...",  bucket_name);
-        } catch (AmazonServiceException e) {
-            // 捕获异常。
-            e.printStackTrace();
-        }
+try {
+    // 创建存储空间。
+    s3.createBucket(bucket_name);
+    System.out.format("creat OSS bucket %s...",  bucket_name);
+} catch (AmazonServiceException e) {
+    // 捕获异常。
+    e.printStackTrace();
+}
 ```
 
 <div id="user-content-2"></div>
