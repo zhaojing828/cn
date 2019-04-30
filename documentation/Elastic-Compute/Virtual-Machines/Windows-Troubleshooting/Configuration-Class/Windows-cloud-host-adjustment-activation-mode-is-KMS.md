@@ -36,7 +36,7 @@ slmgr /ipk "KMS-Client-Setup-Key"
 | Windows Server 2012 R2 标准版 64位 中文版   | D2N9P-3P6X9-2R39C-7RTCD-MDVJX  | 
 |Windows Server 2008 R2 数据中心版 64位 中文版  |74YFP-3QFB3-KQT8W-PMXWJ-7M648  |
 
-（如您使用的Windows Server镜像为已下线的早期镜像，可以前往Microsoft官网查找对应激活密钥：https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11)）
+（如您使用的Windows Server镜像为已下线的早期镜像，可以前往Microsoft官网查找对应激活密钥：https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11) ）
 
 6、 设置激活服务器地址
 
