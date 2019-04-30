@@ -4,10 +4,10 @@
 存储空间（Bucket）是存储对象（Object）的容器。
 
 ## 存储空间功能操作
-* 创建存储空间（bucket）：[创建存储空间（bucket）](Creat-Bucket-JavaSDK#user-content-1)
-* 列出同一地域中Bucket：[列举Bucket ](Creat-Bucket-JavaSDK#user-content-2)
-* 列举Bucket中文件：[ List Objects](Creat-Bucket-JavaSDK#user-content-3)
-* 删除Bucket：[ 删除Bucket](Creat-Bucket-JavaSDK#user-content-4)
+* 创建存储空间（bucket）：[创建存储空间（bucket）](Bucket-JavaSDK#user-content-1)
+* 列出同一地域中Bucket：[列举Bucket ](Bucket-JavaSDK#user-content-2)
+* 列举Bucket中文件：[ List Objects](Bucket-JavaSDK#user-content-3)
+* 删除Bucket：[ 删除Bucket](Bucket-JavaSDK#user-content-4)
 
 <div id="user-content-1"></div>
 
