@@ -7,15 +7,13 @@
 2. 选择“产品>云通信>物联网卡服务”。
 3.弹出的产品介绍页，点击**立即购买**。
 
-![MongoDB-buy](../../../image/image/productpage.png)
+![物联网卡服务](../../../../image/Query-Card-Service/productpage.png)
 
-4.购买的具体操作，请参考[创建实例](../Getting-Started/Create-Instance.md)。
-
-## 入口2：[MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb)
+## 入口2：控制台
 
 1. 登录京东云官网[https://www.jdcloud.com/](https://www.jdcloud.com/)。
 2. 选择“控制台”，具体见下图。
 
 ![控制台](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/console-buy.png)
 
-3.登录控制台，具体操作请参考[创建实例](../Getting-Started/Create-Instance.md)。
+3.登录控制台，具体操作请参考[物联网卡购买](../Getting-Started/Create-Instance.md)。
