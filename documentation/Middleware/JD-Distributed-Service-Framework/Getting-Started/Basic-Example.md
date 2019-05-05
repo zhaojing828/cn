@@ -28,6 +28,8 @@
 1. 要求jdk版本1.8以上；<br />
 2. 下载示例项目：[示例项目下载地址](https://github.com/jdcloud-cmw/jdsf-demo-springcloud)<br />
 3. 本Demo为idea项目，构建工具为maven。如果您的环境也是idea+maven，那么可以直接下载使用。否则请按照自己的工具和环境来创建项目；<br />
+4. 如果在配置文件中没有配置spring.cloud.consul.discovery.prefer-ip-address=true，那么需要在云主机的host文件中加上 本机名 本机IP；<br />
+5. VPC的安全策略要能让注册中心的Consul拥有访问权限，保证服务探活正常。<br />
 
 
 # 项目结构
