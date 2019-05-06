@@ -38,7 +38,9 @@ items:
       - name: 删除文件
         href: Getting-Started/Delete-Object-1.md
       - name: 删除存储空间
-        href: Getting-Started/Delete-Bucket-1.md      
+        href: Getting-Started/Delete-Bucket-1.md    
+      - name: 分片管理
+        href: Getting-Started/Part-Manage-1.md           
       - name: 设置事件通知
         href: Getting-Started/Event-Notifications-1.md 
  - name: 操作指南
@@ -335,10 +337,16 @@ items:
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Installation-S3.md
             - name: 初始化
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Initialization-S3.md
+            - name: 存储空间
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Bucket-JavaSDK.md              
             - name: 简单上传
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Simple-Upload-S3.md
             - name: 分片上传
-              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Multipart-Upload-S3.md              
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Multipart-Upload-S3.md
+            - name: 下载
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/getObject-JavaSDK.md                
+            - name: 管理对象
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Manage-Object-JavaSDK.md
        - name:  兼容S3  SDK-Python（推荐）
          href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Python.md   
        - name: 兼容S3  SDK-Go

@@ -16,7 +16,7 @@
 
 ### 操作步骤
 
-1. 进入[OSS管理控制台](https://oss-console.jdcloud.com/space)。
+1.进入[OSS管理控制台](https://oss-console.jdcloud.com/space)。
 
 2.在左侧存储空间列表中，单击目标存储空间名称，打开该存储空间概览页面。
 
@@ -39,7 +39,8 @@
 
 ### 您可查看每个分片上传任务中分片详情
 
-点击折叠按钮，展示分片上传任务中分片详情。如图：
+点击折叠按钮，展示分片上传任务中分片详情。
+如下图：
 
 ![分片管理](../../../../image/Object-Storage-Service/OSS-155.png)
 
