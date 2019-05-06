@@ -69,7 +69,7 @@
         href: Operation-Guide/Convention.md
       - name: Jenkins插件  
         href: Operation-Guide/Jenkins.md
-      - name: 使用分布式服务框架  
+      - name: 使用微服务平台  
         href: Operation-Guide/JDSF.md
   - name: 最佳实践
     items: 
