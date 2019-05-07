@@ -29,7 +29,7 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/querySendStatus
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String| |
+|**requestId**|String|请求Id|
 
 ### Result
 |名称|类型|描述|

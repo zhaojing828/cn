@@ -24,7 +24,7 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/queryOneTemplate
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String||
+|**requestId**|String|请求Id|
 
 ### Result
 |名称|类型|描述|
@@ -35,8 +35,8 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/queryOneTemplate
 |**type**|String|短信类型|
 |**title**|String|短信标题|
 |**isTuiding**|String|是否支持退订:0 不支持;1 支持|
-|**message**|String||
-|**status**|String|短信审核状态|
+|**message**|String|响应消息|
+|**status**|String|请求状态|
 ### RespQueryOneTemplateResourceList
 |名称|类型|描述|
 |---|---|---|
@@ -50,3 +50,5 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/queryOneTemplate
 |返回码|描述|
 |---|---|
 |**200**|OK|
+|**400**|INVALID_ARGUMENT|
+|**500**|INTERNAL|
