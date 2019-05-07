@@ -43,7 +43,6 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**description**|String|False| |云硬盘描述|
 |**diskType**|String|True| |云硬盘类型，取值为ssd、premium-hdd、ssd.gp1、ssd.io1、hdd.std1之一|
 |**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB；ssd 类型取值范围[20,1000]GB,步长为10G;premium-hdd 类型取值范围[20,3000]GB，步长为10G; ssd.io1 类型取值范围[20,16000]GB,步长为10G; ssd.gp1 类型取值范围[20,16000]GB,步长为10G; hdd.std1 类型取值范围[20,16000]GB,步长为10G|
-|**iops**|Int|False| |户指定购买的iops值，该参数当且仅当ssd.io1型的盘生效, iops值的步长为10|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
 |**charge**|ChargeSpec|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
 |**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
