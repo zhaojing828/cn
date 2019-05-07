@@ -17,34 +17,34 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/queryOneTemplate
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**templateId**|String|False| |templateId参数|
+|**templateId**|String|False| |短信Id|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String|requestId参数|
+|**requestId**|String||
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
 |**data**|RespQueryOneTemplateResourceList[]| |
-|**description**|String|description参数|
-|**mediaLength**|String|mediaLength参数|
-|**type**|String|type参数|
-|**title**|String|title参数|
-|**isTuiding**|String|isTuiding参数|
-|**message**|String|message参数|
-|**status**|String|status参数|
+|**description**|String|描述信息|
+|**mediaLength**|String||
+|**type**|String||
+|**title**|String|短信标题|
+|**isTuiding**|String||
+|**message**|String||
+|**status**|String||
 ### RespQueryOneTemplateResourceList
 |名称|类型|描述|
 |---|---|---|
-|**size**|String|size参数|
-|**name**|String|name参数|
-|**type**|String|type参数|
-|**url**|String|url参数|
-|**content**|String|content参数|
+|**size**|String||
+|**name**|String||
+|**type**|String||
+|**url**|String||
+|**content**|String||
 
 ## 返回码
 |返回码|描述|
