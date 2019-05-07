@@ -30,21 +30,21 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/queryOneTemplate
 |名称|类型|描述|
 |---|---|---|
 |**data**|RespQueryOneTemplateResourceList[]| |
-|**description**|String|描述信息|
-|**mediaLength**|String||
-|**type**|String||
+|**description**|String|短信描述|
+|**mediaLength**|String|短信内容大小|
+|**type**|String|短信类型|
 |**title**|String|短信标题|
-|**isTuiding**|String||
+|**isTuiding**|String|是否支持退订:0 不支持;1 支持|
 |**message**|String||
-|**status**|String||
+|**status**|String|短信审核状态|
 ### RespQueryOneTemplateResourceList
 |名称|类型|描述|
 |---|---|---|
-|**size**|String||
-|**name**|String||
-|**type**|String||
-|**url**|String||
-|**content**|String||
+|**size**|String|本项内容的字节长度|
+|**name**|String|本项内容的名字|
+|**type**|String|本项内容的类型,只能为txt/jpg/png/gif/mp3/mp4格式|
+|**url**|String|类型为非txt时候的访问链接|
+|**content**|String|类型为txt时候的具体内容|
 
 ## 返回码
 |返回码|描述|
