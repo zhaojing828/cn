@@ -38,14 +38,14 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/addTemplate
 |名称|类型|描述|
 |---|---|---|
 |**result**|Result| |
-|**requestId**|String||
+|**requestId**|String|请求Id|
 
 ### Result
 |名称|类型|描述|
 |---|---|---|
 |**data**|RespAddTemplateData[]| |
-|**message**|String||
-|**status**|String||
+|**message**|String|响应消息|
+|**status**|String|请求状态|
 ### RespAddTemplateData
 |名称|类型|描述|
 |---|---|---|
@@ -55,3 +55,5 @@ https://rms.jdcloud-api.com/v1/regions/{regionId}/addTemplate
 |返回码|描述|
 |---|---|
 |**200**|OK|
+|**400**|INVALID_ARGUMENT|
+|**500**|INTERNAL|
