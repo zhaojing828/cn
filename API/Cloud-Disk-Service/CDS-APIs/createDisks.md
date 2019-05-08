@@ -8,9 +8,9 @@
 - 磁盘大小
     - ssd：范围[20,1000]GiB，步长为10GiB, iops为固定值
     - premium-hdd：范围[20,3000]GiB，步长为10GiB, iops为固定值
-    - hdd.std1: 容量型hdd，范围[20,16000]GiB，步长为10GiB, iops为计算得出，与购买磁盘的容量成正比
-    - ssd.gp1: 通用型ssd，范围[20,16000]GiB，步长为10GiB, iops为计算得出，与购买磁盘的容量成正比。
-    - ssd.io1: 性能型ssd，范围[20,16000]GiB，步长为10GiB, iops可以通过购买容量计算得出，或者为用户指定。
+    - hdd.std1: 容量型hdd，范围[20,4000]GiB，步长为10GiB, iops为计算得出，与购买磁盘的容量成正比
+    - ssd.gp1: 通用型ssd，范围[20,4000]GiB，步长为10GiB, iops为计算得出，与购买磁盘的容量成正比。
+    - ssd.io1: 性能型ssd，范围[20,4000]GiB，步长为10GiB, iops可以通过购买容量计算得出，或者为用户指定。
 - 其他
     - 创建完成后，云硬盘状态为 available
     - 可选参数快照 ID用于从快照创建新盘
@@ -42,7 +42,7 @@ https://disk.jdcloud-api.com/v1/regions/{regionId}/disks
 |**name**|String|True| |云硬盘名称|
 |**description**|String|False| |云硬盘描述|
 |**diskType**|String|True| |云硬盘类型，取值为ssd、premium-hdd、ssd.gp1、ssd.io1、hdd.std1之一|
-|**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB；ssd 类型取值范围[20,1000]GB,步长为10G;premium-hdd 类型取值范围[20,3000]GB，步长为10G; ssd.io1 类型取值范围[20,16000]GB,步长为10G; ssd.gp1 类型取值范围[20,16000]GB,步长为10G; hdd.std1 类型取值范围[20,16000]GB,步长为10G|
+|**diskSizeGB**|Integer|True| |云硬盘大小，单位为 GiB；ssd 类型取值范围[20,1000]GB,步长为10G;premium-hdd 类型取值范围[20,3000]GB，步长为10G; ssd.io1 类型取值范围[20,4000]GB,步长为10G; ssd.gp1 类型取值范围[20,4000]GB,步长为10G; hdd.std1 类型取值范围[20,4000]GB,步长为10G|
 |**snapshotId**|String|False| |用于创建云硬盘的快照ID|
 |**charge**|ChargeSpec|False| |计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
 |**multiAttachable**|Boolean|False| |云硬盘是否支持一盘多主机挂载，默认为false（不支持）|
