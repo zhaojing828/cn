@@ -38,7 +38,6 @@ spec:
 |	ssd|SSD云盘  | [20-1000]Gi  |10G |
 |premium-hdd	|高效云盘 | [20-3000]Gi  |10G|
 
-
 5、PersistentVolume 可以以资源提供者支持的任何方式挂载到主机上。  
   - 京东云云硬盘目前只支持一种模式ReadWriteOnce——该卷可以被单个节点以读/写模式挂载；  
   - 访问模式包括：  
@@ -62,7 +61,6 @@ spec:
     - matchExpressions：这是一个要求列表，通过指定关键字，值列表以及与关键字和值相关的运算符组成。有效的运算符包括 In、NotIn、Exists 和 DoesNotExist。  
 
 2、访问模式包括：ReadWriteOnce——该卷可以被单个节点以读/写模式挂载。在命令行中，访问模式缩写为：RWO - ReadWriteOnce  
-
 
 3、京东云为PersistentVolume提供了插件，插件类型为：jdcloudElasticBlockStore  
   
@@ -110,14 +108,14 @@ spec:
 
 当集群中的静态 PV 都不匹配新建的 PersistentVolumeClaim 时，集群可能会尝试动态地为 PVC 创建卷。
 
-- 关于京东云云硬盘规格：  
+1、京东云云硬盘规格说明
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
 |	ssd|SSD云盘  | [20-1000]Gi  |10G |
 |premium-hdd	|高效云盘 | [20-3000]Gi  |10G| 
 
-创建PVC
+2、创建PVC
 ```
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -131,15 +129,19 @@ spec:
     requests:
       storage: 20Gi
 ```  
-查看集群的PVC  
+3、查看集群的PVC  
+
 `kubectl get pvc`  
+
 输出:  
 ```
 NAME                                         STATUS    VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 pvc1                                         Bound     pvc-73d8538b-ebd6-11e8-a857-fa163eeab14b   20Gi       RWO            jdcloud-ssd    18s
 ```  
-查看集群的PV  
+4、查看集群的PV  
+
 `kubectl get pv`  
+
 输出：  
 ```
 NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS    CLAIM                                                STORAGECLASS   REASON    AGE
