@@ -29,6 +29,7 @@ reclaimPolicy: Retain
 1、provisioner：设置参数值[kubernetes.io/jdcloud-ebs](https://kubernetes.io/docs/concepts/storage/storage-classes/)，且不可修改，标识使用京东云云硬盘Provisioner插件创建。
 
 2、reclaimPolicy：由 storage class 动态创建的 Persistent Volume 会在的 reclaimPolicy 字段中指定回收策略，可以是 Delete 或者 Retain。如果 storageClass 对象被创建时没有指定 reclaimPolicy ，它将默认为 Delete。
+
 3、parameters  
   - type：设置参数值为ssd或premium-hdd，分别对应京东云的SSD云盘和高效云盘；
   - fstype：设置文件系统类型，可选参数值为xfs和ext4，如未指定fstype，将使用ext4作为默认的文件系统类型；例如：fstype=ext4；
@@ -43,9 +44,10 @@ reclaimPolicy: Retain
 |华东-上海  |可用区A	cn-east-2a   |
 |华东-上海	|可用区B	cn-east-2b   |
 |华南-广州	|可用区A	cn-south-1a  |
-3、您可在创建持久化存储声明（ Persistent Volume Claim）时，通过storageClassName字段关联某一指定的storageclass资源，根据storageClass定义动态创建并绑定一个持久化存储（Persistent Volume）或直接绑定具有相同storageClassName且参数符合要求的持久化存储（Persistent Volume）；更多详情参考[部署持久化存储](https://docs.jdcloud.com/cn/jcs-for-kubernetes/deploy-pv)  ；
 
-4、更多storageClass参数说明，参考[Kubernetes 参数说明文档](https://kubernetes.io/docs/concepts/storage/storage-classes/)；  
+4、您可在创建持久化存储声明（ Persistent Volume Claim）时，通过storageClassName字段关联某一指定的storageclass资源，根据storageClass定义动态创建并绑定一个持久化存储（Persistent Volume）或直接绑定具有相同storageClassName且参数符合要求的持久化存储（Persistent Volume）；更多详情参考[部署持久化存储](https://docs.jdcloud.com/cn/jcs-for-kubernetes/deploy-pv)  ；
+
+5、更多storageClass参数说明，参考[Kubernetes 参数说明文档](https://kubernetes.io/docs/concepts/storage/storage-classes/)。 
 
 
  
