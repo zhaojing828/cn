@@ -15,5 +15,5 @@ v1
 |**describeCerts**|GET|查看证书列表|
 |**describeCert**|GET|查看证书详情|
 |**uploadCert**|POST|上传证书|
-|**downloadCert**|GET|下载证书<br>敏感操作，可开启<a href="https://docs.jdcloud.com/IAM/Operation-Protection">MFA操作保护</a>|
-|**deleteCerts**|DELETE|删除证书<br>敏感操作，可开启<a href="https://docs.jdcloud.com/IAM/Operation-Protection">MFA操作保护</a>|
+|**downloadCert**|GET|下载证书<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
+|**deleteCerts**|DELETE|删除证书<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
