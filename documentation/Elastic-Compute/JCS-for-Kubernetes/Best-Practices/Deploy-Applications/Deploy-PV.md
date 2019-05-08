@@ -130,6 +130,7 @@ spec:
       storage: 20Gi
 ```  
 3、查看集群的PVC  
+
 `kubectl get pvc`  
 
 输出:  
@@ -138,6 +139,7 @@ NAME                                         STATUS    VOLUME                   
 pvc1                                         Bound     pvc-73d8538b-ebd6-11e8-a857-fa163eeab14b   20Gi       RWO            jdcloud-ssd    18s
 ```  
 4、查看集群的PV  
+
 `kubectl get pv`  
 
 输出：  
