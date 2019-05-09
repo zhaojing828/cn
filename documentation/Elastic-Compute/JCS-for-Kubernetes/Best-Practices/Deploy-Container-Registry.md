@@ -34,7 +34,7 @@ data:
   ak: NE*******************xQjk= #需要修改成用户Access Key的base64位编码
   sk: RU*******************4QTE= #需要修改成用户的Access Key Secret的base64编码
 ```
-3、创建cronjod.yaml文件:
+3、创建cronjod.yaml文件:  
 `
 vi cronjob.yaml
 `  
