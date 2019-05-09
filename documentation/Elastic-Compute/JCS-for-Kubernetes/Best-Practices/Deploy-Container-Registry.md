@@ -12,22 +12,32 @@ kubectl create secret docker-registry my-secret --docker-server=myregistry-cn-no
 ```  
 
 **对于长期使用，自动获取容器镜像仓库登录权限**  
-1、创建secret.yaml文件：  
+1、把用户的Access Key和Access Key Secret进行base 64位编码。  
+`
+printf  22BC1***********02C8C  | base64   #22BC1***********02C8C为Access Key、Access Key Secret
+`
+输出内容即为Access Key和Access Key Secret进行base 64位编码。    
+2、创建secret.yaml文件：  
 `
 vi secret.yaml
 `  
+内容如下：
 ```
 apiVersion: v1
 kind: Secret
 metadata: 
   name: c-tokens-fresher-secret
+  
 type: Opaque
 data: 
-  ak: NE*******************xQjk= #需要修改成用户的Access Key ID
-  sk: RU*******************4QTE= #需要修改成用户的Access Key Secret
+  ak: NE*******************xQjk= #需要修改成用户Access Key的base64位编码
+  sk: RU*******************4QTE= #需要修改成用户的Access Key Secret的base64编码
 ```
-2、创建  
-
+2、创建cronjod。yaml文件
+`
+vi cronjob.yaml
+`  
+内容如下：
 ```
 apiVersion: batch/v1
 kind: Job
@@ -43,7 +53,7 @@ spec:
       hostNetwork: true
       containers:
       - name: init-jcr-token-refresher
-        env: 
+        env:
         - name: ACCESS_KEY
           valueFrom:
             secretKeyRef:
@@ -55,7 +65,8 @@ spec:
               name: c-tokens-fresher-secret
               key: sk
         imagePullPolicy: Always
-        image: jdcloudiaas/jcrtoken:cronjob
+        image: jcrtoken-refresher:1.0_78ac093
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -80,9 +91,9 @@ kind: CronJob
 metadata:
   name: jdcloud-jcr-credential-cron
 spec:
-  schedule: "*/30 * * * *"
+  schedule: "*/5 * * * *"
   successfulJobsHistoryLimit: 2
-  failedJobsHistoryLimit: 2  
+  failedJobsHistoryLimit: 2
   jobTemplate:
     spec:
       backoffLimit: 4
@@ -104,8 +115,8 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: c-tokens-fresher-secret
-                  key: sk 
+                  key: sk
             imagePullPolicy: Always
-            image: jdcloudiaas/jcrtoken:cronjob
-```
+            image: jcrtoken-refresher:1.0_78ac093
+```  
 
