@@ -4,6 +4,7 @@
 例：注册表为myregistry，镜像仓库为myrepo，镜像版本号为latest，地域选择华北-北京为cn-north-1。用户可根据具体情况修改。
 
 **对于一次性使用，临时令牌有效期内有效，有一定时效性**  
+该方案只能实现某个注册表下的所有容器镜像的获取权限。
 1、获取临时令牌，Docker客户端登录命令中，-p后面的一串字符串为docker-password的内容。  
 例：Docker客户端登录命令：docker login -u jdcloud -p cWj36rigll1J2k8u 1227-cn-north-1.jcr.service.jdcloud.com。即cWj36rigll1J2k8u为docker-password内容。  
 2、创建命名为my-secret的secret，执行以下命令，相关内容需要根据情况进行修改：  
