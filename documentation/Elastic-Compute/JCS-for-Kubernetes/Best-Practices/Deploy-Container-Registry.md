@@ -21,7 +21,6 @@ apiVersion: v1
 kind: Secret
 metadata: 
   name: c-tokens-fresher-secret
-
 type: Opaque
 data: 
   ak: NE*******************xQjk= #需要修改成用户的Access Key ID
