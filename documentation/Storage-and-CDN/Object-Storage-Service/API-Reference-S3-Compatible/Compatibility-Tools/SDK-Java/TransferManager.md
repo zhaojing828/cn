@@ -125,7 +125,7 @@ try {
     MultipleFileDownload xfer = xfer_mgr.downloadDirectory(
             bucket_name, key_prefix, new File(dir_path));
     //检查传输状态
-    XferMgrProgress.showTransferProgress(xfer);
+    XferMgrProgress.showMultiUploadProgress(xfer);
     //等待传输完成
     XferMgrProgress.waitForCompletion(xfer);
 } catch (AmazonServiceException e) {
@@ -135,7 +135,7 @@ try {
 ```
 
 ## 获取传输进度
-XferMgrProgress类提供waitForCompletion、showTransferProgress等静态方法。
+XferMgrProgress类提供waitForCompletion、showTransferProgress、showMultiUploadProgress等静态方法。
 ```Java
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
