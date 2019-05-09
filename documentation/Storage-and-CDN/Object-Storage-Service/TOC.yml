@@ -155,6 +155,10 @@ items:
             href: Operation-Guide/Video-Service-Guide/Delete-Video-Task.md	
  - name:  API文档
    items:
+      - name: 强一致性
+        href: API-Reference/Introduction/Strong-Consistency.md
+      - name: OSS与文件系统的对比
+        href: API-Reference/Introduction/OSS-Compared-With-File-System.md
       - name: 兼容S3 API 概述
         href:  API-Reference-S3-Compatible/Introduction-2.md
       - name: 服务器域名
@@ -267,10 +271,6 @@ items:
         items:
            - name: 基本概念
              href: API-Reference/Introduction/Basic-Concepts.md
-           - name: 强一致性
-             href: API-Reference/Introduction/Strong-Consistency.md
-           - name: OSS与文件系统的对比
-             href: API-Reference/Introduction/OSS-Compared-With-File-System.md 
            - name: OSS术语表
              href: API-Reference/Introduction/OSS-Concepts.md 
            - name: API 概览
