@@ -85,7 +85,7 @@ try {
     MultipleFileUpload xfer = xfer_mgr.uploadDirectory(bucket_name,
             key_prefix, new File(dir_path), true);
     //检查传输状态
-    XferMgrProgress.showTransferProgress(xfer);
+    XferMgrProgress.showMultiUploadProgress(xfer);
     //等待传输完成
     XferMgrProgress.waitForCompletion(xfer);
 } catch (AmazonServiceException e) {
@@ -125,7 +125,7 @@ try {
     MultipleFileDownload xfer = xfer_mgr.downloadDirectory(
             bucket_name, key_prefix, new File(dir_path));
     //检查传输状态
-    XferMgrProgress.showMultiUploadProgress(xfer);
+    XferMgrProgress.showTransferProgress(xfer);
     //等待传输完成
     XferMgrProgress.waitForCompletion(xfer);
 } catch (AmazonServiceException e) {
