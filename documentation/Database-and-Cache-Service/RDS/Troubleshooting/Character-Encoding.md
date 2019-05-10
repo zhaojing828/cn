@@ -41,7 +41,7 @@ show variables like '%character%'
 此参数是客户端可以设置的，具体设置方式见下文详解。
 
 ### character\_set_server
-此参数是服务端的设置，此参数值可以通过参数组进行修改，可以参考 [修改参数](../Operation-Guide/Parameter-Group/Modify-Parameter.md)；注意：此参数修改完后，需要重启实例才能生效。
+此参数是服务端的设置，此参数值可以通过参数组进行修改，可以参考 [修改参数](../Operation-Guide/Parameter-Group/Modify-Parameter.md)；注意：此参数修改完后，记得重启实例才能确保 `character_set_database` 默认值与 `character_set_server` 保持同步。
 
 ### character\_set_system
 此参数可以不用关心
