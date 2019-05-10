@@ -120,5 +120,36 @@ spec:
             imagePullPolicy: Always
             image: jdcloudiaas/jcrtoken:credhelper
 ```  
-3、创建资源时，imagePullSecrets使用jcr-pull-secret。例：创建deployment
-
+3、创建资源时，imagePullSecrets使用jcr-pull-secret。
+```
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: lizily-nginx
+  name: lizily-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: lizily-nginx
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        run: lizily-nginx
+    spec:
+      containers:
+      - image: testcronjob-cn-north-1.jcr.service.jdcloud.com/ngnix:latest
+        imagePullPolicy: Always
+        name: lizily-nginx
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+      - name: jcr-pull-secret
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+```
