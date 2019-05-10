@@ -120,4 +120,5 @@ spec:
             imagePullPolicy: Always
             image: jdcloudiaas/jcrtoken:credhelper
 ```  
+3、创建资源时，imagePullSecrets使用jcr-pull-secret。例：创建deployment
 
