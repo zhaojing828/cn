@@ -66,7 +66,7 @@ spec:
               name: c-tokens-fresher-secret
               key: sk
         imagePullPolicy: Always
-        image: jcrtoken-refresher:1.0_78ac093
+        image: jdcloudiaas/jcrtoken:credhelper
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -118,6 +118,6 @@ spec:
                   name: c-tokens-fresher-secret
                   key: sk
             imagePullPolicy: Always
-            image: jcrtoken-refresher:1.0_78ac093
+            image: jdcloudiaas/jcrtoken:credhelper
 ```  
 
