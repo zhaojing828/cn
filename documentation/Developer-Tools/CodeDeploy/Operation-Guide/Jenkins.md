@@ -13,7 +13,7 @@
 
 在Jenkins中，由“系统管理”-->"管理插件"，可进入到管理插件页面。
 
-搜索“JDCloud CodeDeploy”即可按照插件
+搜索“JDCloud CodeDeploy”即可按照插件。
 
 2、上传插件
 
