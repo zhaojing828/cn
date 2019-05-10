@@ -1,7 +1,7 @@
 # TransferManager
 
 ## 概述
-您可以使用 AWS SDK for Java [TransferManager](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html?com/amazonaws/services/s3/transfer/TransferManager.html)类进行上传、下载以及获取传输进度。
+您可以使用 AWS SDK for Java [TransferManager](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/index.html?com/amazonaws/services/s3/transfer/TransferManager.html)类进行上传、下载以及获取传输进度。更多详细说明请参考[AWS SDK for Java/TransferManager](https://docs.aws.amazon.com/zh_cn/sdk-for-java/v1/developer-guide/examples-s3-transfermanager.html?shortFooter=true)
 
 ### 初始化TransferManager
 
