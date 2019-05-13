@@ -3,7 +3,7 @@
 本文介绍云解析的续费入口。
 
 
-## 入口1：[云解析 控制台](<https://dns-console.jdcloud.com/list>)
+## 入口1：[云解析 控制台](https://dns-console.jdcloud.com/list)
 
 1. 进入京东云控制台。
 
@@ -15,7 +15,7 @@
 
   ![renew2](../../../../image/dns-img/renew2.png)
 
-## 入口2：[续费管理控制台](<https://renewal-console.jdcloud.com/renew/domainservice>)
+## 入口2：[续费管理控制台](https://renewal-console.jdcloud.com/renew/domainservice)
 
 1. 进入京东云控制台。
 
