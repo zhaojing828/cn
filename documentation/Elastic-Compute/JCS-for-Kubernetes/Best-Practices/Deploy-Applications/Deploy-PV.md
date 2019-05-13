@@ -31,7 +31,7 @@ spec:
 
 3、fsType：指定文件系统类型；目前仅支持ext4和xfs两种；  
 
-4、capacity：PV 将具有特定的存储容量。这是使用 PV 的容量属性设置的。
+4、capacity：PV 将具有特定的存储容量。这是使用 PV 的容量属性设置的。更多详情参考[云硬盘帮助文档](https://docs.jdcloud.com/cn/cloud-disk-service/features)；
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
@@ -136,7 +136,7 @@ spec:
 
 当集群中的静态 PV 都不匹配新建的 PersistentVolumeClaim 时，集群可能会尝试动态地为 PVC 创建卷。
 
-1、京东云云硬盘规格说明
+1、京东云云硬盘规格说明参考下表；更多详情参考[云硬盘帮助文档](https://docs.jdcloud.com/cn/cloud-disk-service/features)；
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
