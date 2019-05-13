@@ -35,11 +35,11 @@ spec:
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
-|	ssd|SSD云盘  | [20-1000]Gi  |10G |
-|premium-hdd	|高效云盘 | [20-3000]Gi  |10G|
-|hdd.std1	|容量型hdd | [20-16000]Gi  |10G|
-|ssd.gp1	|通用型ssd | [20-16000]Gi  |10G|
-|ssd.io1	|性能型ssd | [20-16000]Gi  |10G|
+|	ssd|SSD云盘  | [20-1000]GiB  |10GiB |
+|premium-hdd	|高效云盘 | [20-3000]GiB  |10GiB|
+|hdd.std1	|容量型hdd | [20-16000]GiB  |10GiB|
+|ssd.gp1	|通用型ssd | [20-16000]GiB  |10GiB|
+|ssd.io1	|性能型ssd | [20-16000]GiB  |10GiB|
 
 5、PersistentVolume 可以以资源提供者支持的任何方式挂载到主机上。  
   - 京东云云硬盘目前只支持一种模式ReadWriteOnce——该卷可以被单个节点以读/写模式挂载；  
@@ -140,11 +140,11 @@ spec:
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
-|	ssd|SSD云盘  | [20-1000]Gi  |10G |
-|premium-hdd	|高效云盘 | [20-3000]Gi  |10G|
-|hdd.std1	|容量型hdd | [20-16000]Gi  |10G|
-|ssd.gp1	|通用型ssd | [20-16000]Gi  |10G|
-|ssd.io1	|性能型ssd | [20-16000]Gi  |10G| 
+|	ssd|SSD云盘  | [20-1000]GiB  |10GiB |
+|premium-hdd	|高效云盘 | [20-3000]GiB  |10GiB|
+|hdd.std1	|容量型hdd | [20-16000]GiB  |10GiB|
+|ssd.gp1	|通用型ssd | [20-16000]GiB  |10GiB|
+|ssd.io1	|性能型ssd | [20-16000]GiB  |10GiB| 
 
 2、创建PVC
 ```
