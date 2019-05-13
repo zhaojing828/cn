@@ -8,22 +8,22 @@
 1. 进入京东云控制台。
 
 2. 通过页头导航或左侧菜单栏，依次点击 **产品** > **域名服务** > **云解析** ，进入云解析服务。
-  ![renew1](/Users/xiangyue3/Desktop/renew1.png)
+  ![renew1](../../../../image/dns-img/renew1.png)
 
 3. 找到需要续费的域名，在操作项中点击 **续费**，进入“续费页面”，进行续费操作
-  ![renew2](/Users/xiangyue3/Desktop/renew2.png)
+  ![renew2](../../../../image/dns-img/renew2.png)
 
 ## 入口2：[续费管理控制台](<https://renewal-console.jdcloud.com/renew/domainservice>)
 
 1. 进入京东云控制台。
 
 2. 通过页头导航，依次点击 **产品** > **续费管理** ,打开“续费管理”页面；也可以通过左侧菜单，依次点击 **管理** > **续费管理** ,打开“续费管理”页面。
-   ![renew4](/Users/xiangyue3/Desktop/renew4.png)
+   ![renew4](../../../../image/dns-img/renew4.png)
 
 3. 在“续费管理”页面，点击 **云解析**，查看 云解析 实例。
 
 4. 在操作项中点击 **续费**，进入“续费页面”，进行续费操作
-   ![renew3](/Users/xiangyue3/Desktop/renew3.png)
+   ![renew3](../../../../image/dns-img/renew3.png)
 
 
 
