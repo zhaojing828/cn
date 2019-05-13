@@ -120,7 +120,12 @@ spec:
             imagePullPolicy: Always
             image: jdcloudiaas/jcrtoken:cronjob
 ```  
-3、创建资源时，imagePullSecrets使用jcr-pull-secret。
+3、执行
+```
+kubectl create -f secret.yaml
+kubectl create -f cronjob.yaml
+```
+4、创建资源时，imagePullSecrets使用jcr-pull-secret。
 ```
 apiVersion: extensions/v1beta1
 kind: Deployment
