@@ -66,7 +66,7 @@ spec:
               name: c-tokens-fresher-secret
               key: sk
         imagePullPolicy: Always
-        image: jdcloudiaas/jcrtoken:credhelper
+        image: jdcloudiaas/jcrtoken:cronjob
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -118,7 +118,7 @@ spec:
                   name: c-tokens-fresher-secret
                   key: sk
             imagePullPolicy: Always
-            image: jdcloudiaas/jcrtoken:credhelper
+            image: jdcloudiaas/jcrtoken:cronjob
 ```  
 3、创建资源时，imagePullSecrets使用jcr-pull-secret。
 ```
