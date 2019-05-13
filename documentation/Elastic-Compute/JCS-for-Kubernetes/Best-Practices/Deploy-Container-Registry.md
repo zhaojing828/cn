@@ -151,7 +151,7 @@ spec:
         run: lizily-nginx
     spec:
       containers:
-      - image: testcronjob-cn-north-1.jcr.service.jdcloud.com/ngnix:latest
+      - image: myregistry-cn-north-1.jcr.service.jdcloud.com/ngnix:latest
         imagePullPolicy: Always
         name: lizily-nginx
       dnsPolicy: ClusterFirst
