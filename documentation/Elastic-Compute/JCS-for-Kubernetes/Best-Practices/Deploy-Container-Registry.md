@@ -11,7 +11,7 @@
 ```
 kubectl create secret docker-registry my-secret --docker-server=myregistry-cn-north-1.jcr.service.jdcloud.com --docker-username=jdcloud --docker-password=cWj36rigll1J2k8u --docker-email=l****@jd.com
 ```  
-3、创建资源的时候，magePullSecrets使用my-secret:  
+3、创建资源的时候，imagePullSecrets使用my-secret:  
 例
 ```
 apiVersion: extensions/v1beta1
