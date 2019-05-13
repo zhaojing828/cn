@@ -329,7 +329,7 @@
 6. **注销本京东云账户并不代表本京东云账户注销前的账户行为和相关责任得到豁免或减轻**。
 
 
-   [京东云隐私政策-PDF下载](https://docs-downloads.oss.cn-north-1.jcloudcs.com/%25E4%25BA%25AC%25E4%25B8%259C%25E4%25BA%2591%25E9%259A%2590%25E7%25A7%2581%25E6%2594%25BF%25E7%25AD%2596pdf.pdf) 
+   [京东云隐私政策-PDF下载](https://github.com/jdcloudcom/cn/blob/jccsgithub-patch-6/image/Service-Agreements-and-Guarantees/Platform-Agreement/Privacy-Policy.pdf) 
       
 
  
