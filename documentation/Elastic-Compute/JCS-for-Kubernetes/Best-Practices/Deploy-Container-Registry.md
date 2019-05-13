@@ -126,7 +126,7 @@ spec:
 kubectl create -f secret.yaml
 kubectl create -f cronjob.yaml
 ```
-4、创建资源时，imagePullSecrets使用jcr-pull-secret：
+4、创建资源时，image选取使用ak和sk用户下的镜像，imagePullSecrets使用jcr-pull-secret：
 例：
 ```
 apiVersion: extensions/v1beta1
