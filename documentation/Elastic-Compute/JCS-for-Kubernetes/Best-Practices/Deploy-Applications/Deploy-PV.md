@@ -104,6 +104,31 @@ spec:
           name: pv-static
 ```
 
+**4. 您也可以直接创建使用静态存储的pod**
+```
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-static
+spec:
+  volumes:
+    - name: pv-static
+      jdcloudElasticBlockStore:
+        volumeID: vol-ogcbkdjg7x
+        fsType: xfs
+  containers:
+    - name: busybox-static
+      image: busybox
+      command:
+         - sleep
+         - "600"
+      imagePullPolicy: Always
+      volumeMounts:
+        - mountPath: "/usr/share/mybusybox/"
+          name: pv-static
+```
+
+
 ## 二、使用京东云云硬盘定义动态存储
 
 当集群中的静态 PV 都不匹配新建的 PersistentVolumeClaim 时，集群可能会尝试动态地为 PVC 创建卷。
