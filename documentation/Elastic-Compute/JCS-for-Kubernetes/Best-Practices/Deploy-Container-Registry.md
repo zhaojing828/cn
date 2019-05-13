@@ -159,30 +159,22 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    run: lizily-nginx
-  name: lizily-nginx
+    run: nginx
+  name: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: lizily-nginx
-  strategy:
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
-    type: RollingUpdate
+      run: nginx
   template:
     metadata:
       labels:
-        run: lizily-nginx
+        run: nginx
     spec:
       containers:
       - image: myregistry-cn-north-1.jcr.service.jdcloud.com/myrepo:latest
         imagePullPolicy: Always
-        name: lizily-nginx
-      dnsPolicy: ClusterFirst
+        name: nginx
       imagePullSecrets:
       - name: jcr-pull-secret
-      restartPolicy: Always
-      terminationGracePeriodSeconds: 30
 ```
