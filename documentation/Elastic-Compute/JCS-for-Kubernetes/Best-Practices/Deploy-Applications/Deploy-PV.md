@@ -20,7 +20,7 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   jdcloudElasticBlockStore:
-    volumeID: vol-ogcbkdjg7x
+    volumeID: vol-ogcbkdjg7x      #云硬盘ID请使用与kubernetes集群同地域的且状态为可用的云硬盘ID替换
     fsType: xfs
 ```     
 **参数说明：**
@@ -117,7 +117,7 @@ spec:
   volumes:
     - name: pv-static
       jdcloudElasticBlockStore:
-        volumeID: vol-ogcbkdjg7x
+        volumeID: vol-ogcbkdjg7x      #云硬盘ID请使用与kubernetes集群同地域的且状态为可用的云硬盘ID替换
         fsType: xfs
   containers:
     - name: busybox-static
