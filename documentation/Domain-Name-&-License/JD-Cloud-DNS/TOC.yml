@@ -21,6 +21,8 @@
         href: Pricing/Price-Overview.md
       - name: 购买流程
         href: Pricing/Purchase-Process.md 
+      - name: 续费流程
+        href: Pricing/Renew-Process.md
   - name: 操作指南
     items:
       - name: 域名操作
