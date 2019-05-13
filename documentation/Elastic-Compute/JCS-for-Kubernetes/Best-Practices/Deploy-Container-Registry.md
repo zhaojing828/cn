@@ -11,6 +11,32 @@
 ```
 kubectl create secret docker-registry my-secret --docker-server=myregistry-cn-north-1.jcr.service.jdcloud.com --docker-username=jdcloud --docker-password=cWj36rigll1J2k8u --docker-email=l****@jd.com
 ```  
+3、创建资源的时候，magePullSecrets使用my-secret:  
+例
+```
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: nginx
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - image: myregistry-cn-north-1.jcr.service.jdcloud.com/myrepo:latest
+        imagePullPolicy: Always
+        name: nginx
+      imagePullSecrets:
+      - name: my-secret
+```  
 
 **对于长期使用，自动获取容器镜像仓库登录权限**  
 该方案可以实现对该账户下所有注册表的容器镜像的获取权限。  
@@ -151,7 +177,7 @@ spec:
         run: lizily-nginx
     spec:
       containers:
-      - image: myregistry-cn-north-1.jcr.service.jdcloud.com/ngnix:latest
+      - image: myregistry-cn-north-1.jcr.service.jdcloud.com/myrepo:latest
         imagePullPolicy: Always
         name: lizily-nginx
       dnsPolicy: ClusterFirst
