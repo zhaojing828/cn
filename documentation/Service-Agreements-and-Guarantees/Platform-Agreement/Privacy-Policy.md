@@ -331,6 +331,7 @@
 
    [京东云隐私政策-PDF下载](https://github.com/jdcloudcom/cn/blob/jccsgithub-patch-6/image/Service-Agreements-and-Guarantees/Platform-Agreement/Privacy-Policy.pdf) 
       
-                                                                                                           文档版本号：019051319
+
+文档版本号：019051319
  
  
