@@ -63,9 +63,9 @@
 
 7. 修改文件属主，并确定文件所属为 MySQL 用户
 
-
-        chown -R mysql:mysql $HOME/tmp_snapshot
-
+```
+    chown -R mysql:mysql $HOME/tmp_snapshot
+```
 
 8. 启动 MySQL 进程
 
