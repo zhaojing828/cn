@@ -9,7 +9,7 @@
 
 登录【态势感知】->【配置变更】->【资产管理】，点击具体资产信息。
 
-![](../../../../image/Situational-Awareness/bash3_1.png)
+![](../../../../image/Situational-Awareness/bash3_1.jpg)
 
 ![](../../../../image/Situational-Awareness/bash2.png)
 
