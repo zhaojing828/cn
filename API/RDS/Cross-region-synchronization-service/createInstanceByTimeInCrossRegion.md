@@ -1,24 +1,24 @@
-# createInstanceByTime
+# createInstanceByTimeInCrossRegion
 
 
 ## 描述
-根据源实例备份创建一个新实例，并通过追加日志的方式，将新实例的数据恢复到跟源实例指定时间点的数据状态一样。<br>例如根据实例A在“2018-06-18 23:00:00”时间点创建一个实例B，就是新建一个实例B，该实例B的数据跟实例A在“2018-06-18 23:00:00”这个时间点的数据完全一致。<br>对于SQL Server，主备切换后30分钟内，不支持按时间点恢复/创建，例如在10:05分用户进行了主备切换，那么10:05 ~ 10:35这个时间段不能进行按时间点恢复/创建。
+根据跨地域备份同步服务时间点创建实例。
 
 ## 请求方式
 POST
 
 ## 请求地址
-https://rds.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:createInstanceByTime
+https://rds.jdcloud-api.com/v1/regions/{regionId}/backupSynchronicities:createInstanceByTimeInCrossRegion
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
-|**instanceId**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**restoreTime**|String|True| |根据源实例的哪个时间点创建新实例|
+|**serviceId**|String|True| |跨地域备份同步服务ID|
 |**instanceSpec**|RestoredNewDBInstanceSpec|True| |新建实例规格|
 
 ### RestoredNewDBInstanceSpec
