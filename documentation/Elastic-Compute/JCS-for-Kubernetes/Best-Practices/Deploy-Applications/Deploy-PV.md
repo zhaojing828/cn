@@ -20,7 +20,7 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   jdcloudElasticBlockStore:
-    volumeID: vol-ogcbkdjg7x
+    volumeID: vol-ogcbkdjg7x      #云硬盘ID请使用与kubernetes集群同地域的且状态为可用的云硬盘ID替换
     fsType: xfs
 ```     
 **参数说明：**
@@ -31,12 +31,15 @@ spec:
 
 3、fsType：指定文件系统类型；目前仅支持ext4和xfs两种；  
 
-4、capacity：PV 将具有特定的存储容量。这是使用 PV 的容量属性设置的。
+4、capacity：PV 将具有特定的存储容量。这是使用 PV 的容量属性设置的。更多详情参考[云硬盘帮助文档](https://docs.jdcloud.com/cn/cloud-disk-service/features)；
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
-|	ssd|SSD云盘  | [20-1000]Gi  |10G |
-|premium-hdd	|高效云盘 | [20-3000]Gi  |10G|
+|	ssd|SSD云盘  | [20-1000]GiB  |10GiB |
+|premium-hdd	|高效云盘 | [20-3000]GiB  |10GiB|
+|hdd.std1	|容量型hdd | [20-16000]GiB  |10GiB|
+|ssd.gp1	|通用型ssd | [20-16000]GiB  |10GiB|
+|ssd.io1	|性能型ssd | [20-16000]GiB  |10GiB|
 
 5、PersistentVolume 可以以资源提供者支持的任何方式挂载到主机上。  
   - 京东云云硬盘目前只支持一种模式ReadWriteOnce——该卷可以被单个节点以读/写模式挂载；  
@@ -104,16 +107,44 @@ spec:
           name: pv-static
 ```
 
+**4. 您也可以直接创建使用静态存储的pod**
+```
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-static
+spec:
+  volumes:
+    - name: pv-static
+      jdcloudElasticBlockStore:
+        volumeID: vol-ogcbkdjg7x      #云硬盘ID请使用与kubernetes集群同地域的且状态为可用的云硬盘ID替换
+        fsType: xfs
+  containers:
+    - name: busybox-static
+      image: busybox
+      command:
+         - sleep
+         - "600"
+      imagePullPolicy: Always
+      volumeMounts:
+        - mountPath: "/usr/share/mybusybox/"
+          name: pv-static
+```
+
+
 ## 二、使用京东云云硬盘定义动态存储
 
 当集群中的静态 PV 都不匹配新建的 PersistentVolumeClaim 时，集群可能会尝试动态地为 PVC 创建卷。
 
-1、京东云云硬盘规格说明
+1、京东云云硬盘规格说明参考下表；更多详情参考[云硬盘帮助文档](https://docs.jdcloud.com/cn/cloud-disk-service/features)；
 
 |StorageClass type | 云硬盘类型   |容量范围  |步长|
 | ------ | ------ | ------ |------ |
-|	ssd|SSD云盘  | [20-1000]Gi  |10G |
-|premium-hdd	|高效云盘 | [20-3000]Gi  |10G| 
+|	ssd|SSD云盘  | [20-1000]GiB  |10GiB |
+|premium-hdd	|高效云盘 | [20-3000]GiB  |10GiB|
+|hdd.std1	|容量型hdd | [20-16000]GiB  |10GiB|
+|ssd.gp1	|通用型ssd | [20-16000]GiB  |10GiB|
+|ssd.io1	|性能型ssd | [20-16000]GiB  |10GiB| 
 
 2、创建PVC
 ```
