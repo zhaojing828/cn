@@ -14,7 +14,7 @@ curl -fsSL http://deploy-code-vpc.jdcloud.com/dl-ifrit-agents/install_deploy | b
 
 以向华北-北京地域的云主机安装Agent为例，
 
-![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting16.png)
+![Alt text](https://github.com/jdcloudcom/cn/blob/codedeploy/image/CodeDeploy/starting20.png)
 
 
 **获取Agent状态**
