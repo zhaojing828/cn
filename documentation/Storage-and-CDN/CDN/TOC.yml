@@ -195,5 +195,7 @@
             href: API-Reference/Live-Video-Open-Api/Query-online-Number.md
           - name: 设置推流IP白名单
             href: API-Reference/Live-Video-Open-Api/Set-Push-IP-Whitelist.md
+          - name: 设置referer黑白名单
+            href: API-Reference/Live-Video-Open-Api/Set-Live-Referer.md
   - name: FAQ
     href: FAQ/FAQ.md
