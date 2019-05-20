@@ -30,4 +30,4 @@ ADD (DELETE ON OBJECT::[DBO].[tb2] BY [USER2])
 WITH (STATE=ON)
 ```
 
-> 详细的SQL语法可参考微软文档 [CREATE DATABASE AUDIT](https://docs.microsoft.com/zh-cn/sql/t-sql/statements/create-database-audit-specification-transact-sql?view=sql-server-2017)
+详细的SQL语法可参考微软文档 [CREATE DATABASE AUDIT](https://docs.microsoft.com/zh-cn/sql/t-sql/statements/create-database-audit-specification-transact-sql?view=sql-server-2017)
