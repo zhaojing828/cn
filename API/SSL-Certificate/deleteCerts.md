@@ -2,7 +2,7 @@
 
 
 ## 描述
-删除证书<br>敏感操作，可开启<a href="https://docs.jdcloud.com/IAM/Operation-Protection">MFA操作保护</a>
+删除证书<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>
 
 ## 请求方式
 DELETE
