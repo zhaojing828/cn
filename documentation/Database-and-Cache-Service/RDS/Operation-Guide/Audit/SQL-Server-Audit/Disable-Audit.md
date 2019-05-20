@@ -26,5 +26,8 @@ and t2.name = 'xxxxxx'   -- xxxxxx为要删除审计规则的名称
 
 3. 删除自定义审计规则
 ```SQL
+ALTER DATABASE AUDIT SPECIFICATION [Audit Name]    --Audit Name为要修改的审计名称
+WITH (STATE=OFF);
+
 DROP DATABASE AUDIT SPECIFICATION [Audit Name]  -- Audit Name为要删除审计规则的名称
 ```
