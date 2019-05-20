@@ -19,7 +19,7 @@
 ```SQL
 SELECT * FROM SYS.DATABASE_AUDIT_SPECIFICATIONS
 ```
-2. 查看审计规则的具体内容
+2. 查看审计规则的具体内容，确认要删除的规格正确无误
 ```SQL
 SELECT t1.* FROM SYS.DATABASE_AUDIT_SPECIFICATION_DETAILS t1, SYS.DATABASE_AUDIT_SPECIFICATIONS t2
 where t1.database_specification_id = t2.database_specification_id
