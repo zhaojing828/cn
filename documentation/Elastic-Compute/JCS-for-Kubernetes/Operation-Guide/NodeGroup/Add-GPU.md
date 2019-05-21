@@ -158,6 +158,14 @@ spec:
         name: pause
 ```
 
+**注**：GPU节点规格及节点label对应关系参考下表：
+
+|GPU规格 | Node节点Label key   |Node节点Label value  |
+| ------ | ------ | ------ |
+|p.n1p40系列|jdcloud.com/jke-accelerator  | nvidia-tesla-p40 |
+|p.n1v100系列	|jdcloud.com/jke-accelerator | nvidia-tesla-v100  |
+
+
 2. 以daemonset的方式部署NVIDIA GPU驱动：
 
 `
