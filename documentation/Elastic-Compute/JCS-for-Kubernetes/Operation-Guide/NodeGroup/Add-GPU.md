@@ -12,7 +12,7 @@
 
  3. 更多详情参考[创建工作节点组](https://docs.jdcloud.com/cn/jcs-for-kubernetes/create-nodegroup)帮助文档。
 
- **注：**GPU型当前仅在华北-北京单可用区公测提供；
+ **注**：GPU型当前仅在华北-北京单可用区公测提供；
 
 ## **安装GPU节点驱动：**
 
@@ -200,4 +200,4 @@ spec:
 
 ### **三、部署自定义版本的NVIDIA GPU驱动**
 
-您也可以根据NVIDIA GPU型号及NVIDIA官方提供的最新版本驱动构建自定义镜像，完成NVIDIA驱动的安装，详情参考[部署自定义版本的NVIDIA GPU驱动](https://docs.jdcloud.com/cn/jcs-for-kubernetes/custom-gpu-driver)。zhge
+您也可以根据NVIDIA GPU型号及NVIDIA官方提供的最新版本驱动构建自定义镜像，完成NVIDIA驱动的安装，详情参考[部署自定义版本的NVIDIA GPU驱动](https://docs.jdcloud.com/cn/jcs-for-kubernetes/custom-gpu-driver)。

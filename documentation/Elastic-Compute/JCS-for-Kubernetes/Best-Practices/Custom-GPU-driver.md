@@ -74,7 +74,7 @@ cd GPUDriver/image            #进入GPUDriver/image目录
 
 sh docker-build.sh            #运行docker-build.sh
 ```
-**注：**执行脚本前，请保证本地docker环境已安装完成
+**注**：执行脚本前，请保证本地docker环境已安装完成
 
 7. 脚本执行成功后，执行docker images查看生成的镜像
 
@@ -158,4 +158,4 @@ spec:
         name: pause
 ```
 
-使用上述Yaml文件部署以Daemonset的方式将NVIDIA驱动部署到Kubernetes集群工作节点组。
+使用上述Yaml文件部署将NVIDIA驱动以Daemonset的方式部署到Kubernetes集群工作节点组。
