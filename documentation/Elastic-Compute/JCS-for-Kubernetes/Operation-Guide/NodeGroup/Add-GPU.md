@@ -196,8 +196,8 @@ spec:
 
 等待一段时间后，执行kubectl logs gpu-pod，并参考下图验证输出结果。
 
-![验证GPU驱动](../../../../image/Elastic-Compute/JCS-for-Kubernetes/checkGPUdriver.png)
+![验证GPU驱动](../../../../../image/Elastic-Compute/JCS-for-Kubernetes/checkGPUdriver.png)
 
 ### **三、部署自定义版本的NVIDIA GPU驱动**
 
-您也可以根据NVIDIA GPU型号及NVIDIA官方提供的最新版本驱动构建自定义镜像，完成NVIDIA驱动的安装，详情参考[部署自定义版本的NVIDIA GPU驱动](https://docs.jdcloud.com/cn/jcs-for-kubernetes/custom-gpu-driver)。
+您也可以根据NVIDIA GPU型号及NVIDIA官方提供的最新版本驱动构建自定义镜像，完成NVIDIA驱动的安装，详情参考[部署自定义版本的NVIDIA GPU驱动](https://docs.jdcloud.com/cn/jcs-for-kubernetes/custom-gpu-driver)。zhge
