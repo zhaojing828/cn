@@ -380,6 +380,8 @@
     items:
     - name: 内存使用率
       href: Troubleshooting/Memory-Use-Rate.md          
+    - name: 云数据库 MySQL 字符集编码问题 
+      href: Troubleshooting/Character-Encoding.md 
   - name: 相关资源
     items:
     - name: 文档历史记录

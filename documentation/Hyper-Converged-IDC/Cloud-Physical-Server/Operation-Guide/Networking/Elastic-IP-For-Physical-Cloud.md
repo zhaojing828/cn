@@ -54,7 +54,7 @@
 
 ## 价格总览
 
-详情参见公网IP[价格总览](../Pricing/Price-Overview.md)。
+详情参见公网IP[价格总览](../../Pricing/Price-Overview.md)。
 
 ## 创建弹性公网IP
 

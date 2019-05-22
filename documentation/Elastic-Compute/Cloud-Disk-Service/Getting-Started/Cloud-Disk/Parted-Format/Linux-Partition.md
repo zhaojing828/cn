@@ -7,7 +7,7 @@
 
 在Linux系统下您可以使用京东云提供的脚本检测是否有尚未分区的数据盘，自动完成数据盘的格式化并挂载，省去了您输入复杂的命令和步骤。
 
-<p><a title="挂载脚本.zip" href="https://docs-downloads.oss.cn-north-1.jcloudcs.com/auto_fdisk%25281%2529.sh" target="_self"><span style="color: rgb(0, 0, 0); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">挂载脚本.zip</span></a>
+<p><a title="挂载脚本.zip" href="https://iaas-cns-download.s3.cn-north-1.jdcloud-oss.com/DOCS/auto_fdisk.sh" target="_self"><span style="color: rgb(0, 0, 0); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">挂载脚本.zip</span></a>
 </p>
 <br>
 您可以通过如下两种方式使用该脚本：
@@ -100,7 +100,11 @@ mkdir -p /mnt/vdb1 && mount -t ext4 /dev/vdb1 /mnt/vdb1
 ```
 blkid /dev/vdb1
 ```
-6.写入/etc/fstab文件实现云硬盘挂载
+6.使用查到的UUID和挂载目标位置替换下列代码并执行，即写入/etc/fstab文件实现云硬盘在云主机下次启动时自动挂载
+
+```
+echo "UUID="以第五步查到的UUID替换此处"             /mnt/vdb1                 ext4    defaults,nofail        0 0" >> /etc/fstab
+```
 ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/CloudDisk/cloud-disk/parted-format/parted_007.png)
 
 
