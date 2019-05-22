@@ -115,6 +115,8 @@
             href: API-Reference/CDN-Open-API/Set-range.md
           - name: 设置referer黑白名单
             href: API-Reference/CDN-Open-API/Set-referer.md
+          - name: 查询referer黑白名单
+            href: API-Reference/CDN-Open-API/Query-Referer.md
           - name: 分区域运营商详细数据统计
             href: API-Reference/CDN-Open-API/Area-isp-detail-statistics.md
           - name: 回源带宽统计
