@@ -173,10 +173,6 @@
             href: API-Reference/CDN-Open-API/Set-IP-Blacklist.md
           - name: 查询IP黑名单
             href: API-Reference/CDN-Open-API/Query-IP-Blacklist.md
-          - name: 设置URL鉴权
-            href: API-Reference/CDN-Open-API/Set-Url-Authentication.md
-          - name: 查询URL鉴权
-            href: API-Reference/CDN-Open-API/Query-Url-Authentication.md
           - name: 设置UA访问控制
             href: API-Reference/CDN-Open-API/Set-UA.md
           - name: 查询UA访问控制
