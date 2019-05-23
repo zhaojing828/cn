@@ -80,6 +80,8 @@ Windows下提供多种FTP客户端，以下以FileZilla为例访问FTP Server。
 - 用户名及密码：FTP Server上创建的FTP登录用户
 - 端口：21
 
+[待补充示例图]()
+
 登录成功后，即可使用FTP进行上传下载。
 
 ## 关闭FTP服务
