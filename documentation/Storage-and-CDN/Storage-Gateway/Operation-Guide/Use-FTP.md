@@ -70,6 +70,7 @@ ftp <IP>
 Windows下提供多种FTP客户端，以下以FileZilla为例访问FTP Server。
 
 **1. 安装FileZilla**
+
 下载[FileZilla](https://filezilla-project.org/)并安装。
 
 **2. 登录FTP**
