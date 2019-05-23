@@ -7,4 +7,5 @@
 
 **操作指南**
 
-1、
+1、打开[控制台-弹性计算-原生容器-容器实例](https://cns-console.jdcloud.com/host/container/list)或者[控制台-弹性计算-原生容器-Pod](https://cns-console.jdcloud.com/host/pod/list),选择操作-更多-编辑标签。具体操作请参考[标签编辑](https://docs.jdcloud.com/cn/tag-service/tag-editor)。  
+2、打开[控制台-弹性计算-原生容器-容器实例](https://cns-console.jdcloud.com/host/container/list)或者[控制台-弹性计算-原生容器-Pod](https://cns-console.jdcloud.com/host/pod/list),选择页面右上角标签筛选按钮，可进行筛选操作。具体操作请参考[标签筛选](https://docs.jdcloud.com/cn/tag-service/tag-filter)。  
