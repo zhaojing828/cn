@@ -12,5 +12,7 @@
 
 **续费操作**
 
-1、打开[控制台-弹性计算-原生容器-容器实例](https://cns-console.jdcloud.com/host/container/list)或者[控制台-弹性计算-原生容器-Pod](https://cns-console.jdcloud.com/host/pod/list),选择操作-更多-续费
+1、打开[控制台-弹性计算-原生容器-容器实例](https://cns-console.jdcloud.com/host/container/list)或者[控制台-弹性计算-原生容器-Pod](https://cns-console.jdcloud.com/host/pod/list),选择操作-更多-续费。  
+2、进入续费操作页面，即可进行续费操作，支持对容器实例或者Pod单独续费，也支持将绑定的其他资源一并续费。  
 
+关于续费管理，请打开[控制台-管理-续费管理-原生容器实例](https://renewal-console.jdcloud.com/renew/nativecontainer)或者[控制台-管理-续费管理-原生容器Pod]（https://renewal-console.jdcloud.com/renew/pod），请参考[续费管理帮助文档](https://docs.jdcloud.com/cn/online-buying/renew-management)  
