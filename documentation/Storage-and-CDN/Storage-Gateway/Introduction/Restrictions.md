@@ -14,6 +14,10 @@
 - 存储网关目前不支持随机写、文件锁、软链接、硬链接。
 - NFS来访客户端需使用Root用户挂载使用，暂不支持其他用户访问。
 
+### FTP相关限制
+
+- 不支持mput、mget、append命令
+
 ### 相关参考
 - [产品概述](../Introduction/Product-Overview.md)
 - [核心概念](../Introduction/Core-Concepts.md)
