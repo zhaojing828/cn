@@ -22,4 +22,5 @@
 - [产品概述](../Introduction/Product-Overview.md)
 - [核心概念](../Introduction/Core-Concepts.md)
 - [部署存储网关](../Operation-Guide/Installation-Configuration.md)
-- [使用存储网关](../Operation-Guide/Use-Storage-Gateway.md)
+- [使用NFS访问](../Operation-Guide/Use-Storage-Gateway.md)
+- [使用FTP访问](../Operation-Guide/Use-FTP.md)
