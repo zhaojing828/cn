@@ -209,13 +209,12 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
 5. 执行如下命令，将上述ingress resource部署到集群中：
 
     ```
-    
     kubectl create -f X.yaml        # X.yaml请使用对应的Yaml文件名称替换
 
     kubectl get ingress k8s-app-monitor-agent-ingress
 
     NAME                            HOSTS                                       ADDRESS   PORTS   AGE
-    
+
     k8s-app-monitor-agent-ingress   k8s-ingress-nginx-controller-test.jdcloud             80      23d
     ```
 6. 在本地服务器的/etc/hosts中增加DNS配置：IP为第二部分、第8项中创建的为nginx-ingress controller提供公网入口的LoadBalance类型service的external IP，域名为ingress resource rule中配置的虚拟主机名：k8s-ingress-nginx-controller-test.jdcloud；
