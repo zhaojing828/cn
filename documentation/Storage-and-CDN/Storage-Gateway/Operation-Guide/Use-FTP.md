@@ -28,7 +28,9 @@ passwd <username>
 - /sbin/nologin：为了保证安全性，建议指定该参数，禁止用户通过ssh登入存储网关系统。
 - passwd：为该用户设置密码。
 
-## 使用FTP Client访问存储网关
+注：由于FTP为明文传输，公网使用可能导致安全风险；强烈建议您将存储网关与FTP Client部署在**同一VPC**下，并使用内网IP访问。
+
+## Linux下使用FTP访问存储网关
 **1. 安装FTP Client**
 
 使用以下命令安装FTP Client。
@@ -62,6 +64,23 @@ ftp <IP>
 - mput
 - mget
 - append
+
+## Windows下使用FTP访问存储网关
+
+Windows下提供多种FTP客户端，以下以FileZilla为例访问FTP Server。
+
+**1. 安装FileZilla**
+下载[FileZilla](https://filezilla-project.org/)并安装。
+
+**2. 登录FTP**
+
+使用FileZilla登录FTP需要配置以下内容：
+
+- 主机：存储网关内网ip；
+- 用户名及密码：FTP Server上创建的FTP登录用户
+- 端口：21
+
+登录成功后，即可使用FTP进行上传下载。
 
 ## 关闭FTP服务
 
