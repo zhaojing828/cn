@@ -1,5 +1,5 @@
 
-# 续费流程
+## 续费流程
 
 针对不同计费类容器实例和Pod，续费操作实现功能不同：
 - 按配置计费实例续费：将按配置的实例的计费方式转为包年包月，续费时间段为1个月~ 9个月、1年、2年、3年。  
@@ -9,6 +9,8 @@
 - 批量续费：在[控制台-管理-续费管理](https://renewal-console.jdcloud.com/renew/nativecontainer)支持对多个资源进行批量续费处理，根据用户所选续费时长，延长选中的资源使用时长。  
 
 关于续费管理，请参考[续费管理](https://docs.jdcloud.com/cn/online-buying/renew-management)  
-关于容器实例续费操作，请参考  
-关于Pod续费操作，请参考  
+
+**续费操作**
+
+1、打开[控制台-弹性计算-原生容器-容器实例](https://cns-console.jdcloud.com/host/container/list)或者[控制台-弹性计算-原生容器-Pod](https://cns-console.jdcloud.com/host/pod/list),选择操作-更多-续费
 
