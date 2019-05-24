@@ -27,3 +27,9 @@ API网关不仅支持在发布API分组的过程中为分组配置统一的后�
 - 在高级配置中，当不勾选“在发布分组时统一配置”时，可选择Mock后端服务类型，使用Mock作为后端时，实际请求不会调用到真实后端服务。
 
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/back-end-Mock3.png)
+
+
+##  配置规则：
+- API分组可以配置的后端服务：HTTP/HTTPS、Mock
+- API可以配置的后端服务：HTTP/HTTPS、Mock、函数(Function Service)
+- 当某个API分组中所有接口都是同一个后端时，只需给该分组配置后端；当某个API分组中的大部分接口是同一个后端，少数为其他后端时，可以给分组配置数量较多的后端，给其他后端的API单独配置。
