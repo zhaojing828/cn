@@ -39,10 +39,6 @@
             href: Cloud-Physical-Server/modifyBandwidth.md
           - name: describeInstances
             href: Cloud-Physical-Server/describeInstances.md
-          - name: describeRegiones
-            href: Cloud-Physical-Server/describeRegiones.md
-          - name: describeSubnet
-            href: Cloud-Physical-Server/describeSubnet.md
           - name: associateElasticIp
             href: Cloud-Physical-Server/associateElasticIp.md
           - name: disassociateElasticIp
@@ -59,8 +55,6 @@
             href: Cloud-Physical-Server/applyElasticIps.md
           - name: describeElasticIp
             href: Cloud-Physical-Server/describeElasticIp.md
-          - name: deleteelasticIp
-            href: Cloud-Physical-Server/deleteelasticIp.md
           - name: modifyElasticIpBandwidth
             href: Cloud-Physical-Server/modifyElasticIpBandwidth.md
       - name: 子网相关接口
