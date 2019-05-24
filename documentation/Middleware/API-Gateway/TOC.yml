@@ -69,7 +69,7 @@ items:
           herf: Operation-Guide/Back-end Services/back-end services-HTTP.md
         - name: Mock后端服务
           herf: Operation-Guide/Back-end Services/Back-end Services-Mock.md
-        - name: Mpck后端服务
+        - name: 函数后端服务
           herf: Operation-Guide/Back-end Services/Back-end Services-Function.md
     - name: 访问授权
       items:
