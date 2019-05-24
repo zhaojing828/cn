@@ -13,7 +13,7 @@ http://域名/{AppName}/{StreamName}_码率标识.m3u8。
 ## 步骤1.新建模板
 
 登录直播控制台，进入“模板管理”-“转码模板管理”页面，查看“通用转码模板”，查看以下系统预制转码模板是否符合您的转码需求，如果满足，则无需再创建新模板，在转码配置中直接调用相应模板即可。   
-![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/9%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png)  
+![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/9%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF%E9%9C%80%E4%BF%AE%E6%94%B9.png)  
 如果预制转码模板不能满足您的转码需求，请进入“自定义转码模板”页面添加自定义转码模板。
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/10%E6%96%B0%E5%BB%BA%E8%BD%AC%E7%A0%81%E6%A8%A1%E6%9D%BF.png)
 点击“添加转码模板”，按照您的实际转码输出需求，填写相应的转码视频、音频参数，点击“立即创建”即可成功创建转码模板。创建成功的转码模板会展示在转码模板列表当中。  
