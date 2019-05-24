@@ -7,7 +7,7 @@
 record/{Date}/{SourceId}/{AppName}/{StreamName}/{StartTime}_{EndTime}。
 {Date} 为直播流录制日期
 
-{SourceID} Source ID是一组域名关联的唯一任务ID，对于同一组推流和播放域名来说，SourceId是随机生成的、唯一的，不会变化。<br>
+{SourceID} Source ID是一组域名关联的唯一任务ID，对于同一组推流和播放域名来说，SourceId是随机生成的、唯一的，不会变化。
 一组域名的ID号在控制台“域名管理”-“基本信息”可查。
 
 {AppName} 为直播应用名称
