@@ -16,7 +16,7 @@ API网关不仅支持在发布API分组的过程中为分组配置统一的后�
 ##  操作步骤：
 - 在API列表页，点击“发布”按钮后，可选择Mock作为后端，实际请求不会调用到真实后端服务。
 
- ![API列表](../../../../image/Internet-Middleware/API-Gateway/back-end-Mock1.png)
+ ![API列表](../../../../../image/Internet-Middleware/API-Gateway/back-end-Mock1.png)
  
 
 - 在版本修订列表页，点击“发布”按钮后，可选择Mock后端服务，实际请求不会调用到真实后端服务。
