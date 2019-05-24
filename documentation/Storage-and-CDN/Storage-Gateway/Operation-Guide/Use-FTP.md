@@ -87,9 +87,9 @@ Windows下提供多种FTP客户端，以下以FileZilla为例访问FTP Server。
 
 ![ftpwin](../../../../image/Storage-Gateway/storagegateway-8.png)
 
-## 关闭/重启FTP服务
+## 停止/重启FTP服务
 
-FTP服务脚本路径为`/root/bin/ftpgw`，关闭/重启命令如下：
+FTP服务脚本路径为`/root/bin/ftpgw`，停止/重启命令如下：
 ```
 ./ftpgw stop    #停止ftp服务
 ./ftpgw restart    #重启ftp服务
