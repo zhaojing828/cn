@@ -5,6 +5,7 @@
 ### 鉴权 URL 构成
 
 http://DomainName/Path/Filename?参数&auth_token=expire-uniqid-rand-signature
+
 signature =md5sum("uri-expire-uniqid-rand-private_key")
 
 ### 鉴权字段描述
@@ -36,5 +37,5 @@ http://cdn.example.com/video/standard/1K.html?fa=121&jd=121
 - CDN服务器会根据该签名字符串计算signature:
 signature = md5sum("/video/standard/1K.html-1592409600-0-0-jdcloud1234") =06d97bc9e43ded48d991994006cfa127
 - 则请求时url为：
-http://cdn.example.com/video/standard/1K.html ?fa=121&jd=121&auth_token=1592409600-0-0-06d97bc9e43ded48d991994006cfa127
+http://cdn.example.com/video/standard/1K.html?fa=121&jd=121&auth_token=1592409600-0-0-06d97bc9e43ded48d991994006cfa127
 计算出来的 signature 与用户请求中带的 signature =06d97bc9e43ded48d991994006cfa127值一致，于是鉴权通过。
