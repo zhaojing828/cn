@@ -11,9 +11,9 @@
 
 **2. 启动FTP服务**
 
-FTP服务启动脚本路径为`/root/bin/ftp.sh`，命令示例如下：
+FTP服务启动脚本路径为`/root/bin/ftpgw`，启动命令如下：
 ```
-./ftp.sh
+./ftpgw start
 ```
 
 **3. 创建FTP登录用户**
@@ -87,10 +87,10 @@ Windows下提供多种FTP客户端，以下以FileZilla为例访问FTP Server。
 
 ![ftpwin](../../../../image/Storage-Gateway/storagegateway-8.png)
 
-## 关闭FTP服务
+## 关闭/重启FTP服务
 
-查找FTP后台进程PID并执行kill命令，示例如下：
+FTP服务启动脚本路径为`/root/bin/ftpgw`，启动命令如下：
 ```
-ps -ef | grep vsftpd
-kill -9 <PID>
+./ftpgw stop    #停止ftp服务
+./ftpgw restart    #重启ftp服务
 ```
