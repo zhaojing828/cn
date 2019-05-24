@@ -89,7 +89,7 @@ Windows下提供多种FTP客户端，以下以FileZilla为例访问FTP Server。
 
 ## 关闭/重启FTP服务
 
-FTP服务启动脚本路径为`/root/bin/ftpgw`，启动命令如下：
+FTP服务脚本路径为`/root/bin/ftpgw`，关闭/重启命令如下：
 ```
 ./ftpgw stop    #停止ftp服务
 ./ftpgw restart    #重启ftp服务
