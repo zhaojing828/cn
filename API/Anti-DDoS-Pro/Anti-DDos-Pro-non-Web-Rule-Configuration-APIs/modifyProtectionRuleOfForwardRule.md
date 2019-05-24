@@ -33,10 +33,10 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**dstNewConnLimitValue**|Long|True| |目的新建连接速率|
 |**dstConcurrentConnLimitEnable**|Integer|True| |目的并发连接, 0: 关闭, 1: 开启|
 |**dstConcurrentConnLimitValue**|Long|True| |目的并发连接速率|
-|**datagramRangeMin**|Long|True| |报文最小长度, 取值范围[0, datagramRangeMax)|
-|**datagramRangeMax**|Long|True| |报文最大长度, 取值范围(datagramRangeMin, 1518]|
-|**geoBlackList**|String[]|False| |geo 拦截地域编码列表, 可设置编码列表由 describeGeoAreas 接口查询可得|
-
+|**datagramRangeMin**|Long|True| |报文最小长度, 取值范围\[0, datagramRangeMax）|
+|**datagramRangeMax**|Long|True| |报文最大长度, 取值范围（datagramRangeMin, 1518\]|
+|**geoBlackList**|String\[\]|False| |geo 拦截地域编码列表, 可设置编码列表由 describeGeoAreas 接口查询可得|
+ 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|

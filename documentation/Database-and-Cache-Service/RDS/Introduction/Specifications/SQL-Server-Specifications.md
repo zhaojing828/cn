@@ -18,3 +18,5 @@
 | |db.sqlsvr.s1.2xlarge|1200|
 |16核 64GB|db.sqlsvr.s1.4xlarge|1000|
 | |db.sqlsvr.s1.4xlarge|1200|
+| |db.sqlsvr.s1.4xlarge|1600|
+| |db.sqlsvr.s1.4xlarge|2000|

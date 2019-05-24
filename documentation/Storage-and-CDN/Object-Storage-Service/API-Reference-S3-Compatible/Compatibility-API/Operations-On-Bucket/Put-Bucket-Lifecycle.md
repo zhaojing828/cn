@@ -8,9 +8,9 @@
 
 ## 请求
 ### 语法
-```
+```HTTP
 PUT /?lifecycle HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: length
 Date: date
 Authorization: authorization string
@@ -49,9 +49,9 @@ Expiration|指定何时对Object执行过期删除操作。<br>类型：Containe
 
 ## 示例
 ### 请求示例
-```
+```HTTP
 PUT /?lifecycle HTTP/1.1
-Host: <BUCKET_NAME>.s3.<REGION>.jcloudcs.com
+Host: <BUCKET_NAME>.s3.<REGION>.jdcloud-oss.com
 Content-Length: length
 Date: date
 Authorization: authorization string
@@ -71,7 +71,7 @@ Content-MD5: MD5
 </LifecycleConfiguration>
 ```
 ### 响应示例
-```
+```HTTP
 HTTP/1.1 200 OK
 x-amz-request-id: 9E26D08072A8EF9E
 Date: Wed, 14 May 2014 02:11:22 GMT

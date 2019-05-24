@@ -187,7 +187,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 **说明：**
 
-* 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/put-bucket-lifecycle.md)。
+* 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md)。
 * 目前仅支持删除对象，暂不支持 **转化存储类型与未合成分片过期自动删除** 。
 
 
@@ -246,6 +246,8 @@ OSS 存储空间的删除目前必须满足以下条件：
 #### 上传对象
 
 点击上图中，【Upload】选项,支持文件与文件夹上传。上传完成后自动刷新文件列表。
+
+**s3browser** 免费版支持分片上传，大于1GB文件推荐使用该工具上传到OSS。 
 
 <div id="user-content-10"></div>
 
