@@ -14,13 +14,13 @@ API网关不仅支持在发布API分组的过程中为分组配置统一的后�
 
 ## 操作步骤：
 
-在API列表页，点击“发布”按钮后，可通过填写后端服务地址为该API分组配置统一的HTTP/HTTPS后端。
- ![API列表](../../../../../image/Internet-Middleware/API-Gateway/back-end-HTTP1.png)
+- 在API列表页，点击“发布”按钮后，可通过填写后端服务地址为该API分组配置统一的HTTP/HTTPS后端。
+  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/back-end-HTTP1.png)
 
-在版本修订列表页，点击“发布”按钮后，可通过填写后端服务地址为该API分组配置统一的HTTP/HTTPS后端。
+- 在版本修订列表页，点击“发布”按钮后，可通过填写后端服务地址为该API分组配置统一的HTTP/HTTPS后端。
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/back-end-HTTP2.png)
 
-在高级配置中，当不勾选“在发布分组时统一配置”时，可选择HTTP/HTTPS的后端服务类型，填入API调用的真实后端服务地址，从而为当前API配置HTTP/HTTPS类型的后端。
+- 在高级配置中，当不勾选“在发布分组时统一配置”时，可选择HTTP/HTTPS的后端服务类型，填入API调用的真实后端服务地址，从而为当前API配置HTTP/HTTPS类型的后端。
  ![API列表](../../../../../image/Internet-Middleware/API-Gateway/back-end-HTTP3.png)
 
 
