@@ -28,7 +28,9 @@ passwd <username>
 - /sbin/nologin：为了保证安全性，建议指定该参数，禁止用户通过ssh登入存储网关系统。
 - passwd：为该用户设置密码。
 
-注：由于FTP为明文传输，公网使用可能导致安全风险；强烈建议您将存储网关与FTP Client部署在**同一VPC**下，并使用内网IP访问。
+注：
+- 由于FTP为明文传输，公网使用可能导致安全风险；强烈建议您将存储网关与FTP Client部署在**同一VPC**下，并使用内网IP访问。
+- FTP Server支持多个Client同时登录访问；当多个Client同时操作一个文件时，后操作会覆盖先前的操作。
 
 ## Linux下使用FTP访问存储网关
 **1. 安装FTP Client**
