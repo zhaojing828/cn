@@ -22,7 +22,6 @@
 登录直播控制台，进入“模板管理”-“截图模板管理”页面，点击“添加截图模板”  
 按照您的实际截图需求，填写相应的截图文件参数，点击“立即创建”即可成功创建截图模板。创建成功的截图模板会展示在截图模板列表当中。    
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/35%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
-![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/36%E5%BD%95%E5%88%B6%E7%AE%A1%E7%90%86.png) 
 ![](https://github.com/jdcloudcom/cn/blob/cn-Live-Video/image/live-video/37%E6%88%AA%E5%9B%BE%E7%AE%A1%E7%90%86.png) 
 
 ## 步骤2.新建截图配置  
