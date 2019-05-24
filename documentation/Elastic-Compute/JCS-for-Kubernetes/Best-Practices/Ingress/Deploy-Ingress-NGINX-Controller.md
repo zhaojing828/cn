@@ -204,6 +204,7 @@ Ingress controller负责实现Ingress。Ingress controller在Kubernetes集群中
             backend:
               serviceName: servicetest-jdcloud
               servicePort: 60000
+    ```
 
      
 5. 执行如下命令，将上述ingress resource部署到集群中：
