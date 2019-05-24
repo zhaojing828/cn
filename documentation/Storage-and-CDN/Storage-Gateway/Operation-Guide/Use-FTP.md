@@ -44,7 +44,9 @@ ftp <IP>
 说明：
  - IP：存储网关内网ip；
  - 用户名及密码：连接后输入用户名及密码（FTP Server创建的用户）完成登录。
-登录成功后，即可访问FTP共享目录。
+
+登录成功后，即可访问FTP共享目录，如下图：
+![ftplinux](../../../../image/Storage-Gateway/storagegateway-7.png)
 
 **3. 使用FTP**
 
@@ -81,9 +83,9 @@ Windows下提供多种FTP客户端，以下以FileZilla为例访问FTP Server。
 - 用户名及密码：FTP Server上创建的FTP登录用户
 - 端口：21
 
-[待补充示例图]()
+登录成功后，即可使用FTP进行上传下载，如下图：
 
-登录成功后，即可使用FTP进行上传下载。
+![ftpwin](../../../../image/Storage-Gateway/storagegateway-8.png)
 
 ## 关闭FTP服务
 
