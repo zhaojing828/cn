@@ -14,7 +14,7 @@
 
 ### 用户访问加密 URL 构成
 
-http:// DomainName/Filename?auth_key=timestamp-rand-uid-md5hash
+http://DomainName/Filename?auth_key=timestamp-rand-uid-md5hash
 
 
 ### 鉴权字段描述
@@ -34,7 +34,7 @@ http:// DomainName/Filename?auth_key=timestamp-rand-uid-md5hash
 ### 示例说明
 
 1、通过 req_auth 请求对象:
-http:// cdn.example.com/sports/football
+http://cdn.example.com/sports/football
 
 2、密钥设为：
 jdlivekeyexample123 (由用户自行设置)
