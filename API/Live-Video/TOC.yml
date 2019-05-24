@@ -205,5 +205,11 @@ items:
 #    href: Loading.md
   - name: SDK调用方式
     href: Example/SDK-Java.md
+  - name: 参考文档
+    items:
+      - name: 地域简称参照表
+        href: Reference/Region.md
+      - name: 运营商简称参照表
+        href: Reference/Operator.md
 
 
