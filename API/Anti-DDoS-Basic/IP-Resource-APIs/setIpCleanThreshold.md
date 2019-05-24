@@ -12,8 +12,7 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/setIpCleanThreshold
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域编码. 基础防护已支持华北-北京, 华东-宿迁, 华东-上海, 华南-广州
-|
+|**regionId**|String|True| |地域编码. 基础防护已支持华北-北京, 华东-宿迁, 华东-上海, 华南-广州|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|

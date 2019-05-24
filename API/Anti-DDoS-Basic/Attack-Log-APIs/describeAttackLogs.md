@@ -18,7 +18,7 @@ https://baseanti.jdcloud-api.com/v1/attacklog
 |**pageSize**|Integer|False|10|分页大小|
 |**startTime**|String|True| |开始时间, UTC 时间, 格式: yyyy-MM-dd'T'HH:mm:ssZ|
 |**endTime**|String|True| |结束时间, UTC 时间, 格式: yyyy-MM-dd'T'HH:mm:ssZ|
-|**ip**|String[]|False| |基础防护已防护的公网 IP, ip 不为空时, 查询 ip 对应的攻击记录, ip 为空时, 查询用户所有攻击记录<br>- 使用 <a href="http://docs.jdcloud.com/anti-ddos-basic/api/describeelasticipresources">describeElasticIpResources</a> 接口查询基础防护已防护的私有网络弹性公网 IP<br>- 使用 <a href="http://docs.jdcloud.com/anti-ddos-basic/api/describecpsipresources">describeCpsIpResources</a> 接口查询基础防护已防护的云物理服务器公网IP 和 弹性公网 IP<br>|
+|**ip**|String[]|False| |基础防护已防护的公网 IP, ip 不为空时, 查询 ip 对应的攻击记录, ip 为空时, 查询用户所有攻击记录<br>- 使用 <a href="http://docs.jdcloud.com/anti-ddos-basic/api/describeelasticipresources">describeElasticIpResources</a> 接口查询基础防护已防护的私有网络弹性公网 IP<br>- 使用 <a href="http://docs.jdcloud.com/anti-ddos-basic/api/describecpsipresources">describeCpsIpResources</a> 接口查询基础防护已防护的云物理服务器公网IP 和 弹性公网 IP|
 
 
 ## 返回参数
