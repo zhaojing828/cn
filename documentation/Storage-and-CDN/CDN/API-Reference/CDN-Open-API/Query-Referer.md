@@ -21,7 +21,7 @@
 | msg      | 提示信息                                                  |
 | data     | 返回数据                                                  |
 |domain   | 加速域名                                                 |
-|referType   |refer类型，取值：block（黑名单），allow（白名单）      |
+|referType   |refer类型，取值：黑名单，白名单      |
 |referList | 逗号隔开的域名列表，如果referList传空则为删除  |
 |allowEmpty | 是否允许空refer访问，取值：on(允许),off（拒绝），默认是on |
 
@@ -55,7 +55,7 @@ https://opencdn.jcloud.com/api/queryReferConfig
   "msg": "成功",
   "data": {
       "domain" :"www.a.com",
-      "referType" :"block",
+      "referType" :"黑名单",
       "referList" :"www.b.com,www.c.com",
       "allowEmpty" :"on"
   }
