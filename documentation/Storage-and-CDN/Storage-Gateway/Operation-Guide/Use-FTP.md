@@ -18,7 +18,7 @@ FTP服务启动脚本路径为`/root/bin/ftpgw`，启动命令如下：
 
 **3. 创建FTP登录用户**
 
-使用FTP Client登录时，需要进行用户验证；因此需提前创建FTP用户，创建命令示例如下：
+使用FTP Client登录时，需要进行用户验证，且不支持匿名用户访问；因此需提前创建FTP用户，创建命令示例如下：
 ```
 useradd -s /sbin/nologin <username>
 passwd <username>
