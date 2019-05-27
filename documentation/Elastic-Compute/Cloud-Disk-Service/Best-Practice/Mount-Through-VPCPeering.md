@@ -6,7 +6,7 @@
 
 2. 由于对等连接（VPC Peering）要求对等连接的两端私有网络 CIDR 不可以重叠，因此需要在“控制台”-“私有网络”-“私有网络（VPC）”列表页中分别查看文件存储挂载目标所在VPC和对等连接另一端VPC的CIDR是否有重叠。为了描述方便，下文将对等连接另一端需要访问文件存储的VPC成为“VPC 2“。
 
-![VPCcheck](../../../../../image/CloudDisk/cloud-disk/VPCpeering_VPCcheck.png)
+![VPCcheck](../../../image/CloudDisk/cloud-disk/VPCpeering_VPCcheck.png)
 
 如果对等连接另一端的VPC还未创建，可参考“VPC配置（<https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration>）”中的“创建VPC”部分内容进行创建。注意CIDR不可与文件存储挂载目标所在VPC的CIDR重叠。
 
