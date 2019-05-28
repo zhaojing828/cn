@@ -33,3 +33,6 @@ items:
    items:
       - name: 文档发布历史
         href: Related-Resources/Document-History.md
+      - name: 镜像版本历史
+        href: Related-Resources/Images-History.md
+        
