@@ -37,27 +37,27 @@ Kbps=1024bps。
 
 |原生容器实例电源状态|对应数字|
 |-----|-----|
-|Creating|1|
+|创建中|1|
 |Created|2|
 |Starting|3|
-|Running|4|
-|Stopping|5|
-|Stopped|6|
-|Deleting|7|
+|运行|4|
+|停止中|5|
+|停止|6|
+|删除中|7|
 |Unknown|8|
-|Error|9|
+|错误|9|
 
 |原生容器Pod电源状态|对应数字|
 |-----|-----|
-|Creating|1|
+|创建中|1|
 |Created|2|
 |Starting|3|
-|Running|4|
-|Stopping|5|
-|Stopped|6|
-|Deleting|7|
+|运行|4|
+|停止中|5|
+|停止|6|
+|删除中|7|
 |Unknown|8|
-|Error|9|
-|Succeeded|10|
-|Failed|11|
+|错误|9|
+|成功|10|
+|失败|11|
 
