@@ -1,59 +1,39 @@
 # restoreDisk
 
+
 ## 描述
+-   仅可对制作快照的源硬盘进行数据恢复操作。
+-   仅源硬盘处于可用状态时才能使用快照进行数据恢复操作。
+-   云硬盘恢复后，当前数据将被清除，请您谨慎操作。
 
-从已有快照恢复一块云硬盘
 
-云硬盘状态必须为 available
-快照状态必须为 available，且快照必须是从由待恢复的云硬盘创建的
+## 请求方式
+POST
 
-## HTTP请求
+## 请求地址
+https://disk.jdcloud-api.com/v1/regions/{regionId}/disks/{diskId}:restore
 
-POST <https://disk.jcloudcs.com/v1/regions/{regionId}/disks/{diskId}:restore>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**regionId**|String|True| |地域ID|
+|**diskId**|String|True| |云硬盘ID|
 
 ## 请求参数
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**snapshotId**|String|True| |用于恢复云盘的快照ID|
 
-### 路径参数
 
-| Param | Type | Required | Desc |
-|---|---|---|---|
-| regionId | string | Yes | 地域 ID |
-| diskId | string | Yes | 云硬盘 ID |
+## 返回参数
+无
 
-### 请求Body
 
-```json
-{
-    "snapshotId": string
-}
-```
-
-- 详细描述
-
-| Param | Type | Required | Desc |
-|---|---|---|---|
-| snapshotId | string | Yes | 用于恢复云盘的快照 ID |
-
-## 成功的响应
-
-```json
-{
-    "requestId": string
-}
-```
-
-- 错误码
-
-| Code | Status | Message |
-|---|---|---|
-| 400 | INVALID_ARGUMENT | Malformed disk id 'xxx' |
-| 400 | INVALID_ARGUMENT | Malformed snapshot id 'xxx' |
-| 400 | INVALID_ARGUMENT | Invalid region 'xxx' |
-| 400 | FAILED_PRECONDITION | Invalid disk status 'xxx' |
-| 400 | FAILED_PRECONDITION | Invalid snapshot status 'xxx' |
-| 400 | FAILED_PRECONDITION | Snapshot was not created by this disk |
-| 404 | NOT_FOUND | Disk 'xxx' not found |
-| 404 | NOT_FOUND | Snapshot 'xxx' not found |
-| 500 | INTERNAL | Internal server error |
-| 500 | UNKNOWN | Unknown server error |
-| 503 | SERVICE UNAVAILABLE | Service unavailable |
+## 返回码
+|返回码|描述|
+|---|---|
+|**200**|OK|
+|**400**|Invalid parameter|
+|**401**|Authentication failed|
+|**404**|Not found|
+|**500**|Internal server error|
+|**503**|Service unavailable|
