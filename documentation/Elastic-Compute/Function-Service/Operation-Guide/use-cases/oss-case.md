@@ -4,7 +4,7 @@
 
 场景：应用程序可以通过为其Bucket关联函数，通过事件触发函数实现对用户上传文件直接进行处理，并可将结果存入OSS或其他服务，简化了应用开发和使用流程。
 
-本示例介绍如何配置OSS触发器，实现上传本地文件（以.gif为后缀）至指定OSS Bucket中后执行删除。
+本示例介绍如何配置OSS触发器，实现上传文件至指定OSS Bucket。
 
  
 ## 创建OSS Bucket
@@ -26,16 +26,69 @@
  
  登陆函数服务控制台，在华北-北京region，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
-* 函数模板：自定义函数模板
-* 函数名称：OSSfunction（您可以设置自己的函数名）
+* 函数模板：Python 3.6 上传文件至对象存储OSS
+* 函数名称：uploadOSS（您可以设置自己的函数名）
 * 函数入口：根据提示填写，默认index.handler
-* 函数代码：编写OSS函数代码
+* 函数代码：模板代码
+  
+```Python
+
+import boto3
+
+
+def handler(event, context):
+  access_key = '用户AK'
+  secret_key = '用户SK'
+  region = 'cn-north-1'
+
+  bucket_name = 'function-test'
+  object_name = 'filesource'
+
+  endpoint = 'https://s3.{}.jdcloud-oss.com'.format(region)
+  s3 = boto3.client(
+    service_name='s3',
+    aws_access_key_id=access_key,
+    aws_secret_access_key=secret_key,
+    endpoint_url=endpoint
+  )
+
+  # create bucket
+  try:
+    response = s3.create_bucket(Bucket=bucket_name, CreateBucketConfiguration={'LocationConstraint': region})
+    if response['ResponseMetadata']['HTTPStatusCode'] != 200:
+      return "create bucket failed"
+  except Exception as e:
+    print(str(e))
+    return "create bucket failed"
+
+  # upload file
+  f = open('/tmp/test', 'w+')
+  f.write('template')
+  f.flush()
+  f.close
+  try:
+    object_data = open('/tmp/test', 'rb')
+    response = s3.put_object(Bucket=bucket_name, Key=object_name, Body=object_data)
+    if response['ResponseMetadata']['HTTPStatusCode'] != 200:
+      print("upload file failed")
+      return "upload file failed"
+  except Exception as e:
+    print(str(e))
+    print("upload file failed")
+    return "upload file failed"
+
+  print("upload file successfully")
+  return "upload file successfully"
+
+
+
 * 函数执行内存：128MB
 * 超时时间：100秒
 * 描述、环境变量及高级配置：无需填写
 * 触发器：不配置触发器
 单击”完成“，完成函数创建。
 
+```
 
 ## 测试函数
 
