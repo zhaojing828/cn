@@ -30,3 +30,34 @@
 bps表示每秒传输bit数，ps为per second，意同/s；
 
 Kbps=1024bps。
+
+
+**电源状态说明**   
+原生容器实例和Pod支持根据电源状态设置报警规则。[容器实例监控](https://cms-console.jdcloud.com/containerMonitor),[Pod](https://cms-console.jdcloud.com/monitor/pod)。  
+
+|原生容器实例电源状态|对应数字|
+|-----|-----|
+|Creating|1|
+|Created|2|
+|Starting|3|
+|Running|4|
+|Stopping|5|
+|Stopped|6|
+|Deleting|7|
+|Unknown|8|
+|Error|9|
+
+|原生容器Pod电源状态|对应数字|
+|-----|-----|
+|Creating|1|
+|Created|2|
+|Starting|3|
+|Running|4|
+|Stopping|5|
+|Stopped|6|
+|Deleting|7|
+|Unknown|8|
+|Error|9|
+|Succeeded|10|
+|Failed|11|
+
