@@ -80,7 +80,7 @@ def handler(event, context):
   print("upload file successfully")
   return "upload file successfully"
 
-
+```
 
 * 函数执行内存：128MB
 * 超时时间：100秒
@@ -88,7 +88,7 @@ def handler(event, context):
 * 触发器：不配置触发器
 单击”完成“，完成函数创建。
 
-```
+
 
 ## 测试函数
 
