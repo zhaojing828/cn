@@ -21,7 +21,10 @@
 
 ![](../../../image/User/newrealname/%E6%97%B6%E9%97%B4%E6%8B%A6%E6%88%AA.png)
 
- ## 2. 确认知晓并同意变更须知
+## 2. 确认知晓并同意变更须知
+
+![](../../../image/User/newrealname/15%E6%9B%B4%E6%96%B0%E9%A1%BB%E7%9F%A5.png)
+ 
 ## 3. 认证流程同[企业实名认证操作指引](https://docs.jdcloud.com/cn/real-name-verification/business-account-verification)
 
  
