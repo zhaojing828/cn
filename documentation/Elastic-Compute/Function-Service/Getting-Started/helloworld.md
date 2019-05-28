@@ -16,6 +16,7 @@
 def handler(event,context):
 print(event)
 return "hello world"
+
 ```
      
   * 函数执行内存：默认128MB；  
