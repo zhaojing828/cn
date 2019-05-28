@@ -33,7 +33,7 @@ Kbps=1024bps。
 
 
 **电源状态说明**   
-原生容器实例和Pod支持根据电源状态设置报警规则。[容器实例监控](https://cms-console.jdcloud.com/containerMonitor),[Pod](https://cms-console.jdcloud.com/monitor/pod)。  
+原生容器实例和Pod支持根据电源状态设置报警规则。在[容器实例监控](https://cms-console.jdcloud.com/containerMonitor),[Pod](https://cms-console.jdcloud.com/monitor/pod)进行设置。  
 
 |原生容器实例电源状态|对应数字|
 |-----|-----|
