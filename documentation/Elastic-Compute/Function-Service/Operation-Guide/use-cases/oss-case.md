@@ -1,18 +1,17 @@
 # OSS触发器示例
 
-京东云OSS可将事件（例如：在Bucket中删除对象）映射至Function函数，将event参数传递至Function处理函数来调用您的函数。
+使用函数服务，对象存储OSS可将事件（例如：上传文件至Bucket中、删除Bucket中的文件）映射至Function函数，将event参数传递至Function处理函数来调用您的函数。
 
-场景：应用程序可以通过为其Bucket关联函数，通过事件触发函数实现对用户上传文件直接进行处理，并可将结果存入OSS或其他服务，简化了应用开发和使用流程。
 
-本示例介绍如何配置OSS触发器，实现上传文件至指定OSS Bucket。
+本示例介绍如何配置OSS触发器，实现从OSS Bucket触发器的Bucket中下载文件至临时磁盘存储。
 
  
 ## 创建OSS Bucket
 
-1．   创建触发器前，请您先开通OSS对象存储服务，并创建一个region为华北-北京的Bucket。<br>
-2．   登陆OSS控制台，在华北-北京地域，创建名为”donwloadfunction“的新空间（Bucket），“访问权限”为“私有读写”。<br>
-3．   在新创建的Bucket中上传test.txt本地文件。<br>
-4．   完成。<br>
+
+1．   创建触发器前，请您先开通OSS对象存储服务，登陆OSS控制台，在华北-北京地域，创建名为”donwloadfunction“的新空间（Bucket），“访问权限”为“私有读写”。<br>
+2．   在新创建的Bucket中上传test.txt本地文件。<br>
+3．   完成。<br>
 
 详细操作指南参见[创建存储空间](/documentation/Storage-and-CDN/Object-Storage-Service/Operation-Guide/Manage-Bucket/Create-Bucket-2.md)。
 
@@ -22,11 +21,11 @@
 
 ## 创建函数
 
- 注意：函数和OSS Bucket需在同一region。
+ 注意：函数和OSS Bucket需在同一地域。
  
  登陆函数服务控制台，在华北-北京地域，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
-* 函数模板：Python 3.6 从对象存储OSSbucket中下载文件至临时磁盘空间
+* 函数模板：Python 3.6 从对象存储OSS bucket中下载文件
 * 函数名称：downloadOSS（您可以设置自己的函数名）
 * 函数入口：根据提示填写，默认index.handler
 * 函数代码：参考代码如下，用户AK、SK信息需手动录入
@@ -154,7 +153,7 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
 
 
-3.执行成功后，可在控制台查看实时函数执行日志，完成从bucket：downloadfunction下载test.txt至函数的临时磁盘空间。
+3.执行成功后，可在控制台查看实时函数执行日志，完成从bucket：downloadfunction下载test.txt文件至该函数的临时磁盘。
  
 
 ## 创建OSS触发器
@@ -164,7 +163,7 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 1.在“OSSfunction”函数详情页面，选择”触发器”tab,单击“创建触发器”。
 
 * 触发器类型：OSS触发器
-* Bucket：选择已创建准备绑定Function的Bucket:"downloadfunction"
+* Bucket：选择已创建的对象存储OSS Bucket:"downloadfunction"
 * 事件类型：s3:ObjectCreated:*
 * 前缀：空
 * 后缀：空
