@@ -11,7 +11,6 @@
 | DDoS 基础防护 | baseanti    |
 | 区块链 | bds  |
 | 专线服务	 |bgw  |
-| 产创云续费系统查询 |	ccy  |
 | cdn	| cdn |
 | 自定义域名 |	cds |
 | BI |	cloudbi |
