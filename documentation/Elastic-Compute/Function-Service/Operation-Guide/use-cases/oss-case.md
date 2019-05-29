@@ -163,7 +163,7 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 1.在“OSSfunction”函数详情页面，选择”触发器”tab,单击“创建触发器”。
 
 * 触发器类型：OSS触发器
-* Bucket：选择已创建准备绑定Function的Bucket:"downloadfunction"
+* Bucket：选择已创建的对象存储OSS Bucket:"downloadfunction"
 * 事件类型：s3:ObjectCreated:*
 * 前缀：空
 * 后缀：空
