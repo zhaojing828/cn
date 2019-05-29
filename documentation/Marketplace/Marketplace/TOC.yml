@@ -20,26 +20,36 @@ items:
         items:
         - name: 修改服务价格
           herf: Management-Backstage/Revise-The-Price.md
+              ISV/Management-Backstage/Revise-The-Price.md
         - name: 镜像类商品发布介绍
           herf: Management-Backstage/Image-Release.md
+              ISV/Management-Backstage/Image-Release.md
         - name: 软件类商品发布介绍
           herf: Management-Backstage/Software-Release.md
+              ISV/Management-Backstage/Software-Release.md
         - name: 下载类商品发布介绍
           herf: Management-Backstage/Download-Release.md
+              ISV/Management-Backstage/Download-Release.md
         - name: 线下服务类商品发布介绍
           herf: Management-Backstage/Offline-Service-Release.md
+              ISV/Management-Backstage/Offline-Service-Release.md
         - name: 选择发布商品的类型（交付方式）
           herf: Management-Backstage/Delivery-Method.md
+              ISV/Management-Backstage/Delivery-Method.md
         - name: 服务商结算
           herf: Management-Backstage/ISV-Balance.md
+              ISV/Management-Backstage/ISV-Balance.md
       - name: 商品接入
         items:
         - name: 第三方镜像安全规范
           herf: Product-Enter/Image-Safe-Standard.md
+              ISV/Product-Enter/Image-Safe-Standard.md
         - name: 第三方镜像制作规范
           herf: Product-Enter/Image-Make-Standard.md
+              ISV/Product-Enter/Image-Make-Standard.md
         - name: 京东云市场主动通知生成方式帮助文档
           herf: Product-Enter/Notify-Interface-Standard.md
+              ISV/Product-Enter/Notify-Interface-Standard.md
   - name: 服务相关
     items:
       - name: 订购协议
