@@ -22,17 +22,17 @@
 ## 创建集群
 
  1. 打开控制台，选择[弹性计算>>Kubernetes集群>>集群服务>>集群](https://cns-console.jdcloud.com/host/kubernetes/list)   
- ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/JCS-for-Kubernetes/新建Kubernetes集群集群信息.png)。  
- 2. 地域及可用区：选择创建地域，点击“创建”按钮，建议您根据业务情况选择集群所在地域及可用区；默认选中指定地域下的所有可用区，建议使用默认模式；也可取消选中某个或某几个可用区，但需要至少保证有一个可用区被选中。
+ ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/新建Kubernetes集群集群信息.png)。  
+ 2. 选择地域及可用区：选择创建地域，点击“创建”按钮，建议您根据业务情况选择集群所在地域及可用区；默认选中指定地域下的所有可用区，建议使用默认模式；也可取消选中某个或某几个可用区，但需要至少保证有一个可用区被选中。
 
  3. 设置名称、描述：名称不可为空，只支持中文、数字、大小写字母、英文下划线 “ _ ”及中划线 “ - ”，且不能超过32字符；描述为非必填项，长度不超过256字符。
 
- 4. 集群版本：目前支持1.12.3版本。
+ 4. 管理节点版本：目前支持1.12.3版本。
 
  5. 管理节点CIDR：与其他私有网络的CIDR不可重叠，CIDR掩码取值范围为24 ~ 27。CIDR的设置规则参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)帮助文档。
 
  6. 证书认证、基础认证：默认全部开启，建议全部保留；需要至少保留一个为开启状态；
-  * 证书认证：基于base64编码的证书，用于客户端到集群服务端点的认证；建议开启证书认证;
+  * 证书认证：基于base64编码的证书，用于客户端到集群服务端点的认证；建议开启证书认证；
   * 基础认证：开启后允许客户端使用用户名、密码在集群服务端点认证。
 
  7. 添加Accesskey：选择启动状态下的Accesskey；如果无可用Access Key，请前往Access Key管理页面创建新的Access Key，并在开启状态。可参考[Accesskey管理](https://docs.jdcloud.com/cn/account-management/accesskey-management)。
@@ -52,7 +52,7 @@
   * 为了避免因CIDR重叠导致工作节点相关的子网无法创建，建议新建私有网络；
   * 私有网络CIDR取值范围为16 ~ 18。
 
-2. 选择工作节点组版本：默认选择当前最新的节点组版本，点击下拉列表显示当前工作节点组支持的所有版本。
+2. 选择工作节点组版本：默认选择与当前最新的节点组版本，点击下拉列表显示当前工作节点组支持的所有版本。
 
 3. 规格：根据具体业务情况选择不同云主机规格类型，支持云主机第二代规格。可参考[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family)。
 
