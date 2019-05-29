@@ -32,7 +32,7 @@
 ## 新建工作节点组：  
 创建新集群时需要添加一个工作节点组，在创建集群页面上即可配置工作节点组相关的参数。
 
- ![](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/JCS-for-Kubernetes/新建Kubernetes集群工作节点组.png) 
+ ![新建集群增加工作节点组](../../../../image/Elastic-Compute/JCS-for-Kubernetes/新建Kubernetes集群工作节点组.png) 
 
 1. 私有网络：选择部署工作节点组资源的私有网络。
   * 京东云将在选择的私有网络中新建四个子网，包括工作节点子网、Pod子网、Service子网和Service-LB子网；
