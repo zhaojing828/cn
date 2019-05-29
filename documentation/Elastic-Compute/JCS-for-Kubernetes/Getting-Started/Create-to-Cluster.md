@@ -31,9 +31,9 @@
 
  5. 管理节点CIDR：与其他私有网络的CIDR不可重叠，CIDR掩码取值范围为24 ~ 27。CIDR的设置规则参考[VPC配置](https://docs.jdcloud.com/cn/virtual-private-cloud/vpc-configuration)帮助文档。
 
- 6. 客户端证书、基础鉴权：默认全部开启，建议全部保留；需要至少保留一个为开启状态；
-  * 客户端证书：基于base64编码的证书，用于客户端到集群服务端点的认证;
-  * 基础鉴权：开启后允许客户端使用用户名、密码在集群服务端点认证。
+ 6. 证书认证、基础认证：默认全部开启，建议全部保留；需要至少保留一个为开启状态；
+  * 证书认证：基于base64编码的证书，用于客户端到集群服务端点的认证；建议开启证书认证;
+  * 基础认证：开启后允许客户端使用用户名、密码在集群服务端点认证。
 
  7. 添加Accesskey：选择启动状态下的Accesskey；如果无可用Access Key，请前往Access Key管理页面创建新的Access Key，并在开启状态。可参考[Accesskey管理](https://docs.jdcloud.com/cn/account-management/accesskey-management)。
 
