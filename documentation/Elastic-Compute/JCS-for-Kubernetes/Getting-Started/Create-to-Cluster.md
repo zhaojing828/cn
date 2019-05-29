@@ -37,6 +37,8 @@
 
  7. 添加Accesskey：选择启动状态下的Accesskey；如果无可用Access Key，请前往Access Key管理页面创建新的Access Key，并在开启状态。可参考[Accesskey管理](https://docs.jdcloud.com/cn/account-management/accesskey-management)。
 
+ 8. 集群监控：开启后将提供Kubernetes集群基础监控和集群workload自定义监控；详情参考[集群监控](https://docs.jdcloud.com/cn/jcs-for-kubernetes/cluster-monitor)。
+
 ## 新建工作节点组：  
 
 创建新集群时需要添加一个工作节点组，在创建集群页面上即可配置工作节点组相关的参数。
