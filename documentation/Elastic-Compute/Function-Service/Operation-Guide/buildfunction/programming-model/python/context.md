@@ -4,7 +4,7 @@
 
  其定义如下：
 
-```
+```Python
 class FunctionMeta:
     def __init__(self, invoked_function_id, function_name, function_version, function_handler, memory_size, timeout):
         self.invoked_function_id = invoked_function_id
