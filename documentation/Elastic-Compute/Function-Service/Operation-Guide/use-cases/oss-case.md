@@ -1,9 +1,9 @@
 # OSS触发器示例
 
-京东云OSS可将事件（例如：上传文件至Bucket中）映射至Function函数，将event参数传递至Function处理函数来调用您的函数。
+使用函数服务，对象存储OSS可将事件（例如：上传文件至Bucket中、删除Bucket中的文件）映射至Function函数，将event参数传递至Function处理函数来调用您的函数。
 
 
-本示例介绍如何配置OSS触发器，实现从OSS Bucket触发器中下载文件至临时磁盘存储。
+本示例介绍如何配置OSS触发器，实现从OSS Bucket触发器的Bucket中下载文件至临时磁盘存储。
 
  
 ## 创建OSS Bucket
@@ -21,7 +21,7 @@
 
 ## 创建函数
 
- 注意：函数和OSS Bucket需在同一region。
+ 注意：函数和OSS Bucket需在同一地域。
  
  登陆函数服务控制台，在华北-北京地域，进入“概览”页面或”函数列表“页面，单击”创建函数“。
 
@@ -153,7 +153,7 @@ OSS事件源会以 event 的形式作为输入参数传递给函数，您可以�
 在“请选择测试事件”下拉列表中选择已保存的测试事件“test” ，单击“测试”。
 
 
-3.执行成功后，可在控制台查看实时函数执行日志，完成从bucket：downloadfunction下载test.txt至函数的临时磁盘空间。
+3.执行成功后，可在控制台查看实时函数执行日志，完成从bucket：downloadfunction下载test.txt文件至该函数的临时磁盘。
  
 
 ## 创建OSS触发器
