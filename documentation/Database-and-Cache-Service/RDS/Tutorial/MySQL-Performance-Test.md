@@ -32,7 +32,7 @@ $ make install
 参见 [创建账号](../Operation-Guide/Account/Create-Account/MySQL-Create-Account.md)。
 
 ### 创建库
-参见 [创建库](../Operation-Guide/Database-Management/Create-Database.md), 记得创建库的时候需要给之前创建的账号授予新建库的读写权限。
+参见 [创建库](../Operation-Guide/Database-Management/Create-Database.md), 需要创建一个库名为 ***sbtest*** 的库，并且记得创建库的时候需要给之前创建的账号授予新建库的读写权限。
 
 ## 测试命令
 ### 准备数据
