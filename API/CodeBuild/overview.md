@@ -4,6 +4,7 @@
 ## 简介
 云编译相关接口
 
+
 ### 版本
 v1
 
@@ -11,15 +12,15 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
-|**CreateJobRequest**|POST|创建编译任务|
-|**DeleteJobRequest**|DELETE|删除编译任务|
-|**DeleteJobsRequest**|DELETE|批量删除编译任务|
-|**GetBuildLogRequest**|GET|查询构建日志|
-|**GetBuildStatusRequest**|GET|查询构建状态|
-|**GetBuildRequest**|GET|查询构建历史|
-|**GetExternalLinkRequest**|GET|下载编译产出包|
-|**GetJobRequest**|GET|查看编译任务|
-|**GetJobsRequest**|GET|批量查看编译任务|
-|**StartJobRequest**|POST|启动编译任务|
-|**StopBuildRequest**|POST|停止编译任务|
-|**UpdateJobRequest**|POST|更新编译任务|
+|**createDemo**|GET|创建Demo|
+|**createJob**|POST|新建构建任务|
+|**deleteJob**|DELETE|删除一个编译任务|
+|**deleteJobs**|DELETE|批量删除编译任务|
+|**getBuildLog**|GET|查询构建任务执行日志|
+|**getBuildStatus**|GET|查询构建任务执行的状态|
+|**getExternalLink**|GET|生成带有效期的包地址|
+|**getJob**|GET|根据id获取构建任务的配置信息|
+|**getJobs**|GET|查询获取编译任务列表，并显示最后一次编译的一些信息<br>/v2/regions/cn-south-1/jobs/?sorts.1.name=status&sorts.1.direction=asc&pageNumber=1&pageSize=10&filters.1.name=name&filters.1.values.1=我的job<br>|
+|**startJob**|POST|根据id启动一个编译任务|
+|**stopBuild**|POST|停止构建任务|
+|**updateJob**|PUT|更新编译任务|
