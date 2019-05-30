@@ -5,7 +5,7 @@ Kibana是一个开源的数据分析和可视化的平台，用户可以使用Ki
 ### 存储数据
 #### 定义索引mapping
 进入ES控制台，在实例列表页单击kibana，跳转到kibana web页面，点击左侧导航栏的Dev Tools进入页面可进行数据的存储。索引名称blog_index，类型名称为user，字段title和name的类型均为text，字段age的类型为integer。然后就可以通过Management->Index Patterns添加index pattern。
-
+![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/kibana_save1.png)
 ```
 PUT blog_index
 {
