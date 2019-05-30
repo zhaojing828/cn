@@ -20,7 +20,7 @@ v1
 |**getBuildStatus**|GET|查询构建任务执行的状态|
 |**getExternalLink**|GET|生成带有效期的包地址|
 |**getJob**|GET|根据id获取构建任务的配置信息|
-|**getJobs**|GET|查询获取编译任务列表，并显示最后一次编译的一些信息<br>/v2/regions/cn-south-1/jobs/?sorts.1.name=status&sorts.1.direction=asc&pageNumber=1&pageSize=10&filters.1.name=name&filters.1.values.1=我的job<br>|
+|**getJobs**|GET|查询获取编译任务列表，并显示最后一次编译的一些信息|
 |**startJob**|POST|根据id启动一个编译任务|
 |**stopBuild**|POST|停止构建任务|
 |**updateJob**|PUT|更新编译任务|
