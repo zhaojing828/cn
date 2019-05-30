@@ -12,7 +12,6 @@ v1
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
-|**createDemo**|GET|创建Demo|
 |**createJob**|POST|新建构建任务|
 |**deleteJob**|DELETE|删除一个编译任务|
 |**deleteJobs**|DELETE|批量删除编译任务|
