@@ -7,37 +7,19 @@ items:
   href: Data-security-concepts/data-security-concepts.md
 - name: 云端数据保护职责
   href: Data-proteciton-responsibilities/Data-proteciton-responsibilities.md
-- name: 基础架构安全
+- name: 京东云数据安全实践
   items:
-    - name: 基础设施安全
-      href: Infrastructure/Infrastructure-Security.md
-    - name: 物理与环境安全
-      href: Infrastructure/Physical-Environmental-Security.md
-    - name: 网络安全
-      href: Infrastructure/Network-Security.md
-    - name: 数据安全
-      href: Infrastructure/Data-Security.md
-- name: 云产品服务安全
-  items:
-    - name: 计算服务
-      href: Product-Service-Security/Compute-Service.md
-    - name: 网络服务
-      href: Product-Service-Security/Network-Service.md   
-    - name: 存储与 CDN 服务
-      href: Product-Service-Security/Storage-and-CDN-Service.md
-    - name: 云数据库与缓存服务
-      href: Product-Service-Security/Databases-and-Caching-Services.md
-    - name: 大数据分析服务
-      href: Product-Service-Security/Big-Data-Service.md
-    - name: 管理与监控服务
-      href: Product-Service-Security/Manage-Service.md
-    - name: 内容安全服务
-      href: Product-Service-Security/Content-Security-Service.md
-    - name: 安全产品服务
-      href: Product-Service-Security/Security-Product-Service.md
-- name: 运营管理安全
-  href: Operations-Management/Operations-Management.md
-- name: 京东云安全生态
-  href: Security-Of-Ecology/Security-Of-Ecology.md	  
+    - name: 京东云数据安全保护体系
+      href: Data-security-protection-system/Data-security-protection-system.md
+    - name: 网络与基础设施保障
+      href: Network-and-infrastructure-support/Network-and-infrastructure-support.md
+    - name: 身份与访问控制
+      href: Identity-and-access-control/Identity-and-access-control.md
+    - name: 数据全生命周期安全保障
+      href: Data-life-cycle/Data-life-cycle.md
+    - name: 安全运营保障
+      href：Security-Operation/Security-Operation.md
+- name: 结语
+  href: conclusion/conclusion.md  
 - name: 下载链接
-href: Download-Link/Related-Resources.md
+  href: Download-Link/Related-Resources.md
