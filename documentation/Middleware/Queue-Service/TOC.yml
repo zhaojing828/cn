@@ -34,7 +34,7 @@
         href: Getting-Started/Getting-Started.md
       - name: 创建资源
         href: Getting-Started/Create-Resource.md
-      - name: 生产和消费消息
+      - name: 发送和接收消息
         href: Getting-Started/Produce-And-Consume-Message.md
   - name: 操作指南
     items:
