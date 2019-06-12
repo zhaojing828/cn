@@ -2,7 +2,7 @@ name: 数据安全白皮书
 href: 
 items:
 - name: 概要
-  href: summary.md
+  href: summary/summary.md
 - name: 京东云数据安全观
   href: Data-security-concepts/data-security-concepts.md
 - name: 云端数据保护职责
@@ -10,15 +10,15 @@ items:
 - name: 京东云数据安全实践
   items:
     - name: 京东云数据安全保护体系
-      href: Data-security-protection-system/Data-security-protection-system.md
+      href: Data-security-practices/Data-security-protection-system.md
     - name: 网络与基础设施保障
-      href: Network-and-infrastructure-support/Network-and-infrastructure-support.md
+      href: Data-security-practices/Network-and-infrastructure-support.md
     - name: 身份与访问控制
-      href: Identity-and-access-control/Identity-and-access-control.md
+      href: Data-security-practices/Identity-and-access-control.md
     - name: 数据全生命周期安全保障
-      href: Data-life-cycle/Data-life-cycle.md
+      href: Data-security-practices/Data-life-cycle.md
     - name: 安全运营保障
-      href：Security-Operation/Security-Operation.md
+      href：Data-security-practices/Security-Operation.md
 - name: 结语
   href: conclusion/conclusion.md  
 - name: 下载链接
