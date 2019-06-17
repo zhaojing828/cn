@@ -16,8 +16,10 @@ NAT网关(NAT Gateway)是一款托管的VPC公网网关，作为VPC环境下公�
 	- [调整NAT网关规格](../Operation-Guide/Nat-Gateway-Management/Change-Nat-Gateway-Type.md)
 	- [编辑NAT网关](../Operation-Guide/Nat-Gateway-Management/Edit-Nat-Gateway.md)
 	- [删除NAT网关](../Operation-Guide/Nat-Gateway-Management/Delete-Nat-Gateway.md)
+	
 - 查看NAT网关监控信息
 	- [查看NAT网关监控信息](../Operation-Guide/View-Nat-Gateway-Monitoring/View-Nat-Gateway-Monitoring.md)
+	
 - 查看NAT网关计费信息
 	- [查看NAT网关计费信息](../Operation-Guide/View-Nat-Gateway-Billing/View-Nat-Gateway-Billing.md)
   
