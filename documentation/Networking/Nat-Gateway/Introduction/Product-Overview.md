@@ -9,20 +9,19 @@ NAT网关(NAT Gateway)是一款托管的VPC公网网关，作为VPC环境下公�
 
 ## 常用操作
 
-- 弹性公网IP管理
-	- [创建弹性公网IP](../Operation-Guide/Elastic-IP-Management/Create-Elastic-IP.md)
-	- [删除弹性公网IP](../Operation-Guide/Elastic-IP-Management/Delete-Elastic-IP.md)
-	- [绑定弹性公网IP](../Operation-Guide/Elastic-IP-Management/Associate-Elastic-IP.md)
-	- [解绑弹性公网IP](../Operation-Guide/Elastic-IP-Management/Disassociate-Elastic-IP.md)
-	- [修改弹性公网IP带宽](../Operation-Guide/Elastic-IP-Management/Modify-Elastic-IP.md)
-- 弹性公网IP资源信息查看
-	- [弹性公网IP资源信息查看](../Operation-Guide/View-Elastic-IP-Detail/View-Elastic-IP-Detail.md)
-- 弹性公网IP监控信息查看
-	- [弹性公网IP监控信息查看](../Operation-Guide/View-Elastic-IP-Monitoring/View-Elastic-IP-Monitoring.md)
-- 弹性公网IP计费信息查看
-	- [弹性公网IP计费信息查看](../Operation-Guide/View-Elastic-IP-Billing/View-Elastic-IP-Billing.md)
-- 导出弹性公网IP列表
-	- [导出弹性公网IP列表](../Operation-Guide/Export-Elastic-IP-List/Export-Elastic-IP-List.md)
+- NAT网关管理
+	- [创建NAT网关](../Operation-Guide/Nat-Gateway-Management/Create-Nat-Gateway.md)
+	- [启停NAT网关](../Operation-Guide/Nat-Gateway-Management/Start-Stop-Nat-Gateway.md)
+	- [调整NAT网关规格](../Operation-Guide/Nat-Gateway-Management/Change-Nat-Gateway-Type.md)
+	- [编辑NAT网关](../Operation-Guide/Nat-Gateway-Management/Edit-Nat-Gateway.md)
+	- [删除NAT网关](../Operation-Guide/Nat-Gateway-Management/Delete-Nat-Gateway.md)
+- 查看NAT网关监控信息
+	- [查看NAT网关监控信息](../Operation-Guide/View-Nat-Gateway-Monitoring/View-Nat-Gateway-Monitoring.md)
+- 查看NAT网关计费信息
+	- [查看NAT网关计费信息](../Operation-Guide/View-Nat-Gateway-Billing/View-Nat-Gateway-Billing.md)
   
 ## 计费
+
+NAT 网关服务费用包含两部分：网关费用（按小时计费）和访问 Internet的公网带宽费用（按配置计费），详情参见[NAT网关计费概述](../Pricing/Billing-Overview.md)
+  
 
