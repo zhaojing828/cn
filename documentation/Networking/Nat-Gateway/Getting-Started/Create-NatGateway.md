@@ -2,7 +2,7 @@
 创建一个测试环境包括一个VPC，两个Subnet，一台云主机和一台NAT网关，验证NAT网关的Internet连通性
 
 ## 创建VPC，Subnet和云主机
-1. 创建一个测试VPC(test-vpc)，在测试VPC中创建两个测试子网(subnet1,subnet2)，详细步骤请参见[VPC配置](../../../Database-and-Cache-Service/JCS-for-Redis/Introduction/Benefits.md)和[子网配置](../../../Database-and-Cache-Service/JCS-for-Redis/Introduction/Benefits.md)
+1. 创建一个测试VPC(test-vpc)，在测试VPC中创建两个测试子网(subnet1,subnet2)，详细步骤请参见[VPC配置](../../Virtual-Private-Cloud/Operation-Guide/Subnet-Configuration.md)和[子网配置](../../../Database-and-Cache-Service/JCS-for-Redis/Introduction/Benefits.md)
 
 2. 在测试子网subnet1中创建一台测试没有公网IP的云主机(test-vm)，详细步骤参见[创建实例](../../../Database-and-Cache-Service/JCS-for-Redis/Introduction/Benefits.md)
 
