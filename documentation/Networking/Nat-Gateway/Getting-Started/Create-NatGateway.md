@@ -1,7 +1,9 @@
 # 入门指南
+
 创建一个测试环境包括一个VPC，两个Subnet，一台云主机和一台NAT网关，验证NAT网关的Internet连通性
 
 ## 创建VPC，Subnet和云主机
+
 1. 创建一个测试VPC(test-vpc)，在测试VPC中创建两个测试子网(subnet1,subnet2)，详细步骤请参见[VPC配置](../../Virtual-Private-Cloud/Operation-Guide/VPC-Configuration.md)和[子网配置](../../Virtual-Private-Cloud/Operation-Guide/Subnet-Configuration.md)
 
 2. 在测试子网subnet1中创建一台测试没有公网IP的云主机(test-vm)，详细步骤参见[创建实例](../../../Elastic-Compute/Virtual-Machines/Operation-Guide/Instance/Create-Instance.md)
@@ -9,6 +11,7 @@
 3. 创建两个路由表(rt1,rt2), rt1关联子网subnet1，rt2关联子网subnet2，详细步骤请参见[路由表配置](../../Virtual-Private-Cloud/Operation-Guide/Route-Table-Configuration.md)
 
 ## 创建NAT网关
+
 1. 打开私有网络控制台 https://cns-console.jdcloud.com/host/vpc/list
 
 2. 在左侧导航栏，点击**NAT 网关**
@@ -32,6 +35,7 @@
 7. 返回NAT网关页面确认新购买NAT网关已显示，状态为运行中
 
 ## 配置路由表
+
 1. 打开私有网络控制台 https://cns-console.jdcloud.com/host/vpc/list
 
 2. 在左侧导航栏，点击**路由表**
@@ -45,6 +49,7 @@
 6. 选择**路由策略**，点击**编辑**，增加一条路由，目的为**0.0.0.0/0**  下一跳类型为**NAT 网关**，确认后点击**保存**
 
 ## 验证NAT网关Internet连通性
+
 1. 确认在虚机所在子网内已经创建了一台没有关联公网IP的虚机
 
 2. 打开云主机控制台 https://cns-console.jdcloud.com/host/compute/list
