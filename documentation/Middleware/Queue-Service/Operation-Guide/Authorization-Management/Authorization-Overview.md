@@ -1,8 +1,6 @@
 # 授权管理（访问控制）
 
-授权管理主要解决的问题是用户如何在不暴露自身账号和密码以及AK/SK的情况下，安全地授权他人访问自身资源。
-
-而服务[访问控制 IAM](https://docs.jdcloud.com/cn/iam/product-overview)（Identity and Access Management， IAM）正是为了方便管理者依据不同使用者的需求进行权限分配，提高了资源的利用率和资源的安全性。
+授权管理主要解决的问题是用户如何在不暴露自身账号和密码以及AK/SK的情况下，安全地授权他人访问自身资源。而服务[访问控制 IAM](https://docs.jdcloud.com/cn/iam/product-overview)（Identity and Access Management， IAM）正是为了方便管理者依据不同使用者的需求进行权限分配，提高了资源的利用率和资源的安全性。
 
 队列服务的授权管理通过访问控制 IAM来实现的，为了适应用户的不同使用场景分为两种授权方式：主账号对IAM子用户的授权和跨主账号的授权
 
