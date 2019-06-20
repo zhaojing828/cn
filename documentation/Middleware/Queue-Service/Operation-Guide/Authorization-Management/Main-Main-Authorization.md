@@ -27,7 +27,7 @@
      | JDCloudQueueServiceConsumeMessage | 队列服务消费消息权限 | 系统策略 | 主账号下队列服务的所有资源 | 可以从已有queue接收消息以及进行修改消息的可见性超时时间和清空队列的操作 |
      | JDCloudQueueServiceManageQueue    | 队列服务队列管理权限 | 系统策略 | 主账号下队列服务的所有资源 | 可以创建、修改或者删除队列并且获得队列列表及详情信息         |
 
-   - 自定义策略，[参考](https://docs.jdcloud.com/cn/iam/createpolicy)，**资源ID填写队列名称**。
+   - 自定义策略，[参考](https://docs.jdcloud.com/cn/iam/createpolicy)，[策略语法可参考](https://docs.jdcloud.com/cn/iam/policy-management)，**资源ID填写队列名称**。
 
 2. 登陆主账号B创建一个IAM子用户SubB，并授予**JDCloudStsAdmin**安全令牌系统策略，[参考](https://docs.jdcloud.com/cn/iam/createsubuser)。
 
