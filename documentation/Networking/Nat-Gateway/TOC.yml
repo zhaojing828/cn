@@ -46,13 +46,9 @@ items:
           - name: 启停NAT网关
             href: Operation-Guide/Nat-Gateway-Management/Start-Stop-Nat-Gateway.md
       - name: 查看NAT网关监控信息
-        items:
-          - name: 查看NAT网关监控信息
-            href: Operation-Guide/View-Nat-Gateway-Monitoring/View-Nat-Gateway-Monitoring.md
+        href: Operation-Guide/View-Nat-Gateway-Monitoring/View-Nat-Gateway-Monitoring.md
       - name: 查看NAT网关计费信息
-        items:
-          - name: 查看NAT网关计费信息
-            href: Operation-Guide/View-Nat-Gateway-Billing/View-Nat-Gateway-Billing.md   
+        href: Operation-Guide/View-Nat-Gateway-Billing/View-Nat-Gateway-Billing.md   
   - name: 最佳实践
     items:
           - name: NAT实例向NAT网关迁移
