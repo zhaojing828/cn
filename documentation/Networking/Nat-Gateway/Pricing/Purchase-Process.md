@@ -20,4 +20,4 @@
 
 ## 操作步骤
 
-详细创建实例操作步骤请参见创建NAT网关实例。
+详细创建实例操作步骤请参见[创建NAT网关](../Operation-Guide/Nat-Gateway-Management/Create-Nat-Gateway.md)。
