@@ -1,4 +1,4 @@
-# NAT网关调整规格
+# 调整NAT网关规格
 1. 打开私有网络控制台 https://cns-console.jdcloud.com/host/vpc/list
 
 2. 在左侧导航栏，点击**NAT 网关**
