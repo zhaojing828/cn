@@ -58,7 +58,7 @@ items:
   - name: 最佳实践
     items:
           - name: NAT实例向NAT网关迁移
-            href: Nat-Gateway/Best-Practices/Migration-From-Instance-To-Nat-Gateway.md  
+            href: Best-Practices/Migration-From-Instance-To-Nat-Gateway.md  
   - name: 问题排查
     items:
     status: 0      
