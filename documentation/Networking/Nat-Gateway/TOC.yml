@@ -41,7 +41,7 @@ items:
             href: Operation-Guide/Nat-Gateway-Management/Create-Nat-Gateway.md
           - name: 删除NAT网关
             href: Operation-Guide/Nat-Gateway-Management/Delete-Nat-Gateway.md
-          - name: 变更NAT网关规格
+          - name: 调整NAT网关规格
             href: Operation-Guide/Nat-Gateway-Management/Change-Nat-Gateway-Type.md
           - name: 编辑NAT网关
             href: Operation-Guide/Nat-Gateway-Management/Edit-Nat-Gateway.md
