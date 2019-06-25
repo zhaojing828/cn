@@ -28,7 +28,8 @@
 
 ![新建API2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPI_2.png)
 
-（2）导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（[Yaml文件下载地址](https://apigateway.s3.cn-north-1.jdcloud-oss.com/demo/demo_PetStoreTest_Yaml.zip）
+（2）导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。([Yaml文件下载地址](https://apigateway.s3.cn-north-1.jdcloud-oss.com/demo/demo_PetStoreTest_Yaml.zip))
+
 
 ![导入API1](../../../../image/Internet-Middleware/example_SignatureKey_apilist3.png)
 
@@ -54,21 +55,16 @@
 
 1. 打开[签名密钥](https://apigateway-console.jdcloud.com/accessSecretKey)，点击“创建密钥”按钮。
 
-    ![创建签名密钥1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createSubkey_1.png)
+    ![创建签名密钥1](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey1.png)
 
 2. 填写名称和描述（选填），点击确定。
 
-    ![创建签名密钥2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createSubkey_2.png)
+    ![创建签名密钥2](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey2.png)
 
-3. 创建成功后，点击密钥名，查看该订阅密钥的详细信息，拷贝订阅密钥ID。
+3. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“API网关签名密钥”。您可从现有的订阅密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
 
-    ![创建订阅密钥3](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createSubkey_3.png)
-
-4. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“API网关签名密钥”。您可从现有的订阅密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
-
-    ![创建授权1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAuth_1.png)
-
-    ![创建授权2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAuth_2.png)
+    ![创建授权](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey3.png)
+    
     
 至此，在API网关控制台的界面操作已经完成，接下来可以对API进行调用。
     
