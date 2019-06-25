@@ -30,6 +30,8 @@
    | JDCloudQueueServiceProduceMessage | 队列服务生产消息权限 | 系统策略 | 主账号下队列服务的所有资源 | 可以向已有queue发送消息                                      |
    | JDCloudQueueServiceConsumeMessage | 队列服务消费消息权限 | 系统策略 | 主账号下队列服务的所有资源 | 可以从已有queue接收消息以及进行修改消息的可见性超时时间和清空队列的操作 |
    | JDCloudQueueServiceManageQueue    | 队列服务队列管理权限 | 系统策略 | 主账号下队列服务的所有资源 | 可以创建、修改或者删除队列并且获得队列列表及详情信息         |
+    | JDCloudResourceTagAdmin           | 标签服务管理员权限   | 系统策略 | 主账号下的所有资源         | 可以编辑资源标签，进行标签级别的资源筛选，如果想使用标签功能需要授予 |
+    | JDCloudResourceTagRead            | 标签服务读权限       | 系统策略 | 主账号下的所有资源         | 可以查看标签，进行标签级别的资源筛选，建议授予此读权限       |
 
 3. 或者创建自定义策略再进行授权，[参考](https://docs.jdcloud.com/cn/iam/createpolicy)。（[策略语法可参考](https://docs.jdcloud.com/cn/iam/policy-management)，**资源ID填写队列名称**）
 
