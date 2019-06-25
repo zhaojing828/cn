@@ -48,7 +48,7 @@
 
 ![发布2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_2.png)
 ### 7.  发布成功后，点击“生成SDK和文档”，可下载JavaSDK、PythonSDK和API文档。
-
+![发布3](../../../../image/Internet-Middleware/API-Gateway/example_Signature Key_apilist5.png)
 
 ## 步骤二: 获取密钥-创建访问授权-绑定分组：
 
