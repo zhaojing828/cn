@@ -14,11 +14,11 @@
 
 ### 3. 跳转新建API分组页面后，填写API分组信息。
 
-![新建API分组](../../../../image/Internet-Middleware/API-Gateway/example_Signature Key_apilist.png)
+![新建API分组](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_apilist.png)
 
 ### 4. 点击确定，提示创建成功，在弹出窗口中选择“管理API”，跳转到此分组的API列表界面。
 
-![新建API分组成功](../../../../image/Internet-Middleware/API-Gateway/example_Signature Key_apilist2.png)
+![新建API分组成功](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_apilist2.png)
 
 ### 5. 您可以通过以下两种方式部署API。
 
@@ -30,11 +30,11 @@
 
 （2）导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。（[Yaml文件下载地址](https://apigateway.s3.cn-north-1.jdcloud-oss.com/demo/demo_PetStoreTest_Yaml.zip)）
 
-![导入API1](../../../../image/Internet-Middleware/example_Signature Key_apilist3.png.png)
+![导入API1](../../../../image/Internet-Middleware/example_SignatureKey_apilist3.png.png)
 
 ![导入API2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPI_4.png)
 
-![导入API3](../../../../image/Internet-Middleware/API-Gateway/example_Signature Key_apilist4.png)
+![导入API3](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_apilist4.png)
 
 
 ### 6. 点击“版本修订列表”标签页，点击发布，配置好如下几项后，点击确定。
@@ -48,7 +48,7 @@
 
 ![发布2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_2.png)
 ### 7.  发布成功后，点击“生成SDK和文档”，可下载JavaSDK、PythonSDK和API文档。
-![发布3](../../../../image/Internet-Middleware/API-Gateway/example_Signature Key_apilist5.png)
+![发布3](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_apilist5.png)
 
 ## 步骤二: 获取密钥-创建访问授权-绑定分组：
 
