@@ -55,15 +55,15 @@
 
 ## 步骤二: 获取密钥-创建访问授权-绑定分组：
 
-1. 打开[签名密钥](https://apigateway-console.jdcloud.com/accessSecretKey)，点击“创建密钥”按钮。
+### 1. 打开[签名密钥](https://apigateway-console.jdcloud.com/accessSecretKey)，点击“创建密钥”按钮。
 
     ![创建签名密钥1](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey1.png)
 
-2. 填写名称和描述（选填），点击确定。
+### 2. 填写名称和描述（选填），点击确定。
 
     ![创建签名密钥2](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey2.png)
 
-3. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“API网关签名密钥”。您可从现有的API网关签名密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
+### 3. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“API网关签名密钥”。您可从现有的API网关签名密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
 
     ![创建授权](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey3.png)
     
