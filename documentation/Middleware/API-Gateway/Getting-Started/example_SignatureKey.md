@@ -8,7 +8,7 @@
 
 ### 1. 登录API网关控制台，打开[API分组管理](https://apigateway-console.jdcloud.com/apiGroupList)。
 
-### 2. 点击“创建分组”按钮
+### 2. 点击“创建分组”按钮。
 
 ![创建分组](../../../../image/Internet-Middleware/API-Gateway/example_subkey_group.png)
 
@@ -47,8 +47,11 @@
 ![发布](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_1.png)
 
 ![发布2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_deploy_2.png)
+
 ### 7.  发布成功后，点击“生成SDK和文档”，可下载JavaSDK、PythonSDK和API文档。
+
 ![发布3](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_apilist5.png)
+
 
 ## 步骤二: 获取密钥-创建访问授权-绑定分组：
 
@@ -60,24 +63,121 @@
 
     ![创建签名密钥2](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey2.png)
 
-3. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“API网关签名密钥”。您可从现有的订阅密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
+3. 打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”，选择授权类型为“API网关签名密钥”。您可从现有的API网关签名密钥列表中选择目标密钥，并对API分组进行授权。当不同的授权类型访问同一个API分组时，API网关将在API调用过程中优先验证“订阅密钥”类型的授权信息。
 
     ![创建授权](../../../../image/Internet-Middleware/API-Gateway/example_SignatureKey_createSignatureKey3.png)
     
     
 至此，在API网关控制台的界面操作已经完成，接下来可以对API进行调用。
     
+    
 ## 步骤三:调用API
-1.	在
-2.	在此
-3.	在GET请求部分填写API分组的访问路径与API的请求路径，对API进行调用。
 
-    ![调用API1](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_1.png)
+### （1）通过Java SDK调用
 
-    ![调用API2](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_2.png)
-    
-    ![调用API3](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_3.png)
-    
-    ![调用API4](../../../../image/Internet-Middleware/API-Gateway/example_subkey_consumeAPI_4.png)
+#### 1.	解压下载的Java SDK。
+
+#### 2.	切换到PetStore目录下，编辑Demo.java文件。([项目下载地址](https://apigateway.s3.cn-north-1.jdcloud-oss.com/demo/demo_PetStoreTest_javaSDK_jdcloud.zip))
+
+- accessKeyId为查看密钥详细信息时的APIKey；
+- secretAccessKey为查看密钥详细信息时的APISecret；
+- 根据发布时选择的环境，选择对应的环境地址；
+- 其余为API的调用。
+   
+ ```Java
+package net.jdcloud.PetStore;
+
+import com.jdcloud.sdk.auth.CredentialsProvider;
+import com.jdcloud.sdk.auth.StaticCredentialsProvider;
+import com.jdcloud.sdk.client.Environment;
+import com.jdcloud.sdk.http.HttpRequestConfig;
+import com.jdcloud.sdk.http.Protocol;
+import net.jdcloud.PetStore.client.PetStoreClient;
+import net.jdcloud.PetStore.model.*;
+
+import java.math.BigDecimal;
+
+/**
+ * Demo
+ */
+public class Demo {
+
+    private static String accessKeyId = "";
+    private static String secretKey = "";
+    private static CredentialsProvider credentialsProvider = new StaticCredentialsProvider(accessKeyId, secretKey);
+    private static PetStoreClient client = PetStoreClient.builder()
+            .credentialsProvider(credentialsProvider)
+            .httpRequestConfig(new HttpRequestConfig.Builder().connectionTimeout(10000).protocol(Protocol.HTTPS).build())
+//                .environment(new Environment.Builder().endpoint("xue0ivjzhif3-test.cn-north-1.jdcloud-api.net").build()) // 测试环境地址
+//                .environment(new Environment.Builder().endpoint("xue0ivjzhif3-preview.cn-north-1.jdcloud-api.net").build()) // 预发环境地址
+            .environment(new Environment.Builder().endpoint("xue0ivjzhif3.cn-north-1.jdcloud-api.net").build()) // 线上环境地址
+            .build();
+
+    public static void main (String[] args){
+        TestFunctionRequest testFunctionRequest = new TestFunctionRequest();
+        TestFunctionResponse testFunctionResponse = client.testFunction(testFunctionRequest);
+        System.out.println(testFunctionResponse.getResult());
+
+        GetPetInfoRequest getPetInfoRequest = new GetPetInfoRequest();
+        getPetInfoRequest.setPetId(1);
+        GetPetInfoResponse getPetInfoResponse = client.getPetInfo(getPetInfoRequest);
+        System.out.println(getPetInfoResponse.getResult());
+
+        CreatePetRequest createPetRequest = new CreatePetRequest();
+        net.jdcloud.PetStore.model.createpet.Body createpetBody = new net.jdcloud.PetStore.model.createpet.Body();
+        createpetBody.setId(1);
+        createpetBody.setPrice(BigDecimal.valueOf(12.3));
+        createpetBody.setType("cat");
+        createPetRequest.setBody(createpetBody);
+        CreatePetResponse createPetResponse = client.createPet(createPetRequest);
+        System.out.println(createPetResponse.getResult());
+
+    }
+}
+```
+
+### （2）通过Python SDK调用
+
+#### 1.	解压下载的Python SDK，执行setup.py文件。
+
+#### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。([项目下载地址](https://apigateway.s3.cn-north-1.jdcloud-oss.com/demo/demo_PetStoreTest_pythonSDK_jdcloud.zip))
+
+```Python
+# coding=utf-8
+
+from jdcloud_apim_sdk.core.credential import Credential
+from jdcloud_apim_sdk.core.config import Config
+from jdcloud_apim_sdk.core.const import SCHEME_HTTPS, SCHEME_HTTP
+from client.PetStore_client import *
+from apis.get_pet_info_request import *
+from apis.create_pet_request import *
+from apis.test_function_request import *
+
+
+if __name__ == "__main__":
+    access_key = ''
+    secret_key = ''
+    credential = Credential(access_key, secret_key)
+    # config = Config('xueki79b37y4-test.cn-north-1.jdcloud-api.net', scheme=SCHEME_HTTPS) # 测试环境地址
+    # config = Config('xueki79b37y4-preview.cn-north-1.jdcloud-api.net', scheme=SCHEME_HTTPS) # 预发环境地址
+    config = Config('xueki79b37y4.cn-north-1.jdcloud-api.net', scheme=SCHEME_HTTPS)  # 线上环境地址
+    client = PetStoreClient(credential, config)
+
+    parameters = dict()
+    body = ''
+    header = dict()
+
+    get_pet_info_request = GetPetInfoRequest(parameters= {"petId": 1}, body=body, header=header)
+    GetPetInfo_response = client.send(get_pet_info_request)
+    print(GetPetInfo_response)
+
+    create_pet_request = CreatePetRequest(parameters=parameters, body={"id":1, "price": 12, "type": "cat"}, header=header)
+    CreatePet_response = client.send(create_pet_request)
+    print(CreatePet_response)
+
+    test_function_request = TestFunctionRequest(parameters=parameters, body=body, header=header)
+    TestFunction_response = client.send(test_function_request)
+    print(TestFunction_response)
+```
 
 ### 您可以通过[API网关监控](http://cms-console-north-2a-backup.jdcloud.com/monitor/apigateway)实时获取您的API调用情况：成功数、流量、响应时间、请求异常等信息以及设置异常情况报警。
