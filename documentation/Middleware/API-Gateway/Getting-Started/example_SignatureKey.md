@@ -114,9 +114,6 @@ public class Demo {
             .build();
 
     public static void main (String[] args){
-        TestFunctionRequest testFunctionRequest = new TestFunctionRequest();
-        TestFunctionResponse testFunctionResponse = client.testFunction(testFunctionRequest);
-        System.out.println(testFunctionResponse.getResult());
 
         GetPetInfoRequest getPetInfoRequest = new GetPetInfoRequest();
         getPetInfoRequest.setPetId(1);
