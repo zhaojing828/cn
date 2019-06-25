@@ -14,11 +14,11 @@
 
 ### 3. 跳转新建API分组页面后，填写API分组信息。
 
-![新建API分组](../../../../image/Internet-Middleware/API-Gateway/example_subkey_group2.png)
+![新建API分组](../../../../image/Internet-Middleware/API-Gateway/example_Signature Key_apilist.png)
 
 ### 4. 点击确定，提示创建成功，在弹出窗口中选择“管理API”，跳转到此分组的API列表界面。
 
-![新建API分组成功](../../../../image/Internet-Middleware/API-Gateway/example_subkey_createAPIList_success.png)
+![新建API分组成功](../../../../image/Internet-Middleware/API-Gateway/example_Signature Key_apilist2.png)
 
 ### 5. 您可以通过以下两种方式部署API。
 
